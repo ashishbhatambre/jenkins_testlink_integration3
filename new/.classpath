@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+	<classpathentry kind="lib" path="D:/intern/selenium-server-standalone-2.39.0.jar"/>
+	<classpathentry kind="lib" path="D:/testlink-api-client-20091130/testlink-api-client-2.0.jar"/>
+	<classpathentry kind="lib" path="D:/xmlrpc-common-3.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ashish/Desktop/xmlrpc-client-3.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/xmlrpc.jar"/>
+	<classpathentry kind="lib" path="D:/intern/selenium-server-standalone-2.41.0.jar"/>
+	<classpathentry kind="lib" path="D:/ws-commons-util-1.0.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
