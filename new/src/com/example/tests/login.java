@@ -13,6 +13,8 @@ import com.thoughtworks.selenium.*;
 import org.testng.Reporter;
 import org.testng.annotations.*;
 import testlink.api.java.client.TestLinkAPIResults;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 
 
@@ -116,7 +118,9 @@ public class login implements IConstantes{
 			 e.printStackTrace();
 		 }*/
 		 system.out.println("TESTCASE PASSED");
-		 
+		 Assert.assertNotNull( System.currentTimeMillis() );
+		
+		Assert.assertTrue( System.currentTimeMillis() > 0 );
 		 }
 	}
 
