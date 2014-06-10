@@ -39,7 +39,7 @@ public class TestCurrentTime
 	public void testCurrentTime() 
 	{
 		Assert.assertNotNull( System.currentTimeMillis() );
-		
+		System.out.println("testCurrentTime PASSED");
 		Assert.assertTrue( System.currentTimeMillis() > 0 );
 	}
 	
