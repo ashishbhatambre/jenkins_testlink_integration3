@@ -1,0 +1,17 @@
+name=verify cancel button on searching the document for user group -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_prv_project/
+clickHrefByLinkText=Documents
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=modifiedStartDate
+typeElementById=modifiedStartDate=08/20/2013
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=UG_Prv_Project#NEXT#Documents#NEXT#&Document_Folder&#NEXT#List Documents 

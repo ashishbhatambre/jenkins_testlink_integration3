@@ -1,0 +1,29 @@
+name=Creating the Task with special character
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=1000
+clickHrefByLinkText=Tasks
+wait=1000
+clickHrefByLinkText= task1
+wait=1000
+clickHrefByLinkText=Create
+wait=1000
+waitUntilByName=title
+typeElementByName=title=#$%rfts%$^$%&sg 3q453q45
+waitUntilByName=description
+typeElementByName=description=$4w56WE$%^W#GSfrt345E$%^#^%Gw456w45^SHGW$%^$
+selectOptionValueByNameValue=priority=2 - High
+waitUntilByName=status
+selectOptionValueByNameValue=status=Alert
+waitUntilByName=startDate
+typeElementByName=startDate=03/4/2013
+typeElementByName=endDate=03/5/2013
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.

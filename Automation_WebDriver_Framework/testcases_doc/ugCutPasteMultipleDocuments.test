@@ -1,0 +1,28 @@
+name=Cut and Paste multiple documents to another document folder for usergroup -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Child_Folder
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+selectCheckBoxFromList=_listItem=2
+wait=500
+waitUntilById=selectDocuments_Cut
+clickElementById=selectDocuments_Cut
+wait=500
+searchElementValueByTagName=Body=2 document(s) cut to clipboard.
+wait=500
+clickHrefByLinkText= ASDFEv#@$
+wait=500
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=2 document(s) pasted.

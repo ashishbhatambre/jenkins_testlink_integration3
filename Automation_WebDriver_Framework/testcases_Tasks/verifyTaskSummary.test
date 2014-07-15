@@ -1,0 +1,12 @@
+name=Verify Summary Folder in Task
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Summary
+wait=500
+searchElementValueByTagName=Body=Project-Wide Start Date:	02/18/2013

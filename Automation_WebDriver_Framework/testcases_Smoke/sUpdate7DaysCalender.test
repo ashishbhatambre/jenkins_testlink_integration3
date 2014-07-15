@@ -1,0 +1,18 @@
+name=Ability to set default Calender to 7days in Task Manager settings in private project as site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+clickHrefByLinkText=Task Manager Settings
+wait=500
+waitUntilById=task_calendar
+clickElementById=task_calendar
+wait=300
+waitUntilById=includeWeekends
+selectOptionValueByIdValue=includeWeekends=7 Day (Includes Weekends)
+waitUntilById=adminCalendar_submit
+clickElementById=adminCalendar_submit
+wait=300
+searchElementValueByTagName=Body=The default calendar has been updated.

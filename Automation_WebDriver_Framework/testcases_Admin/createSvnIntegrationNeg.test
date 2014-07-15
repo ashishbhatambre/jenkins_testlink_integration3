@@ -1,0 +1,20 @@
+name=Inability to create subversion integration with required Approval when subversion already created
+component=Integrations
+role=Admin
+artifact=NA
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Integrations
+wait=300
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=type
+selectOptionValueByIdValue=type=Subversion
+typeElementById=title=Posting2
+typeElementById=description=Integration to subversion2
+wait=300
+waitUntilById=system_submit
+clickElementById=system_submit
+wait=300
+searchElementValueByTagName=Body= The integration server could not be created. Please verify your configuration and try again. Verify parameters for valid hostname. Detailed Error: Integration error: Unexpected Error - com.vasoftware.sf.common.SfSystemException: Unable to initialize external system. Another integration already exists. [exid59dab24dd60f8369700004a2]

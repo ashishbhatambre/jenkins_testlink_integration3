@@ -1,0 +1,21 @@
+name=Search task by "Search Keywords" with "name and description" enabled 
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Search Tasks
+wait=500
+waitUntilById=inProgress
+clickElementById=inProgress
+wait=300
+waitUntilById=searchText
+typeElementById=searchText=date
+wait=300
+waitUntilById=searchTasks_Search
+runJavaScriptPopToMain=javascript:submitForm(document.searchTasks, 'Search')
+wait=300
+searchElementValueByTagName=Body=(3 Items)

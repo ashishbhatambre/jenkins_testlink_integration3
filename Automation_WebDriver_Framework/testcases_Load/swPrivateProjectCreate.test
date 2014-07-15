@@ -1,0 +1,15 @@
+name=Ability to create project for site-wide role usage
+component=Projects
+role=Admin
+artifact=NA
+url=sf/sfmain/do/myProjects
+wait=300
+clickElementById=createProject
+waitUntilById=title
+typeElementById=title=SWPrivate
+waitUntilById=description
+typeElementById=description=This is Private project
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Project Home 

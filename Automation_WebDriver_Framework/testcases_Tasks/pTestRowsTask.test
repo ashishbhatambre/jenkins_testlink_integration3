@@ -1,0 +1,16 @@
+name=Task Rows from 15 to 75 for Public project
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= test_EventTask#@
+wait=500
+clickElementById=rows-icon
+wait=500
+clickElementById=ipp_75
+wait=500
+searchElementValueByTagName=Body=PubProject#NEXT#Tasks#NEXT#test_EventTask#@#NEXT#List Tasks 

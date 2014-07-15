@@ -1,0 +1,14 @@
+name=Document Rows from 15 to 75 for Child public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickElementById=rows-icon
+wait=500
+clickElementById=ipp_75
+wait=500
+searchElementValueByTagName=Body=Child_Pub_Project#NEXT#Documents#NEXT#Doc_Str_View#NEXT#List Documents 

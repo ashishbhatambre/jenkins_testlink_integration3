@@ -1,0 +1,14 @@
+name=Ability to create a Tracker Field in public project
+component=Tracker Admin
+role=Global Role
+artifact=NA
+wait=200
+waitUntilById=defaultValue_dmmy0
+clickElementById=defaultValue_dmmy0
+wait=200
+waitUntilById=fieldForm_Save
+clickElementById=fieldForm_Save
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=Field created successfully.

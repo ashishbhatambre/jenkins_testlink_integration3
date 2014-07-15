@@ -1,0 +1,19 @@
+name=Delet Sub child Document Folder 
+component=Documents
+role=Direct Role_Admin Permisssion
+artifact=NA
+wait=300
+clickHrefByLinkText= Pu_SubChildDF
+wait=300
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_delete
+clickHrefByLinkText=Delete
+wait=300
+acceptJavaScriptConfirm
+wait=300
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Folder deleted successfully.
+
+ 

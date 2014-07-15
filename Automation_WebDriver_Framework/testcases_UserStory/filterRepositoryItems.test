@@ -1,0 +1,25 @@
+name= Ability to Multi-Select for the dropdown fields in Search Filter for other than List Artifact pages - Repository Details -> Commits this week page for commited by column.
+component=SourceCode
+role=Global Role
+artifact=artf154930-TC(artf157865)
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Source Code
+wait=500
+clickHrefByLinkText=9
+wait=500
+waitUntilById=btn_filter!!string!!createdBy
+clickElementById=btn_filter!!string!!createdBy
+waitUntilByName=multiselect__filter!!string!!createdBy
+selectButtonByValue=user1
+wait=500
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=Commits  (9 Items)
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

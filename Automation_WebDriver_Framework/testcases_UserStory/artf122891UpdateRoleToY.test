@@ -1,0 +1,20 @@
+name=Ability to update the Restrict Role Case 4:Activity Reports-Yes Task and/or Tracker-Yes.
+component=Role
+role=Global Role
+artifact=artf122891
+wait=200
+url=sf/sfmain/do/listRolesAdmin
+wait=300
+waitUntilById=globalRoles
+clickElementById=globalRoles
+wait=300
+clickHrefByLinkText=RestrictedRole
+wait=300
+clickHrefByLinkText=Activity Reports
+waitUntilById=datamartWildcard
+clickElementById=datamartWildcard
+wait=300
+waitUntilById=editRole_Edit
+clickElementById=editRole_Edit
+wait=300
+searchElementValueByTagName=Body=Global Project Role updated successfully.

@@ -1,0 +1,17 @@
+name=Ability to Set Column Configuration As Default 
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+wait=200
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=CloneTracker1
+wait=200
+waitUntilById=columns-icon
+clickElementById=columns-icon
+waitUntilById=defaultFolderPreferences
+clickElementById=defaultFolderPreferences
+wait=200
+searchElementValueByTagName=Body=SWPrivate#NEXT#Trackers

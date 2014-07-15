@@ -1,0 +1,37 @@
+name=click update and View button after changing the Task progress in task edit page
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= task2
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+wait=300
+waitUntilById=editTask_Cancel
+clickElementById=editTask_Cancel
+wait=300
+waitUntilById=status
+clickElementById=status
+wait=300
+waitUntilById=taskstatus
+selectOptionValueByIdValue=taskstatus=Warning
+wait=300
+waitUntilById=accomplished
+typeElementById=accomplished=Task changed to Warning state
+waitUntilById=planned
+typeElementById=planned=Planned for Task2
+waitUntilById=issues
+typeElementById=issues=No more Issues yet
+wait=300
+waitUntilById=viewTask_SaveAndView
+clickElementById=viewTask_SaveAndView
+wait=300
+searchElementValueByTagName=Body=Task updated successfully.

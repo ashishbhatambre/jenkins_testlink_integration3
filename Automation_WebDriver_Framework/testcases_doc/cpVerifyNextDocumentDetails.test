@@ -1,0 +1,14 @@
+name=View Next document by clicking "Next" button from document details page for public child project with global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=800
+url=sf/projects/child_pub_project/
+wait=800
+clickHrefByLinkText=Documents
+wait=800
+clickHrefByLinkText=save_document
+wait=800
+clickHrefByLinkText=Next >
+wait=800
+searchElementValueByTagName=Body=Child_Pub_Project#NEXT#Documents#NEXT#Doc_Str_View#NEXT#Document Details 

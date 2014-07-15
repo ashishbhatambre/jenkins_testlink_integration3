@@ -1,0 +1,15 @@
+name=Ability to Stop Monitoring an artifact
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickHrefByLinkText=QA:ClosedArtf
+waitUntilById=button_monitor_object
+clickElementById=button_monitor_object
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Artifact is no longer monitored.

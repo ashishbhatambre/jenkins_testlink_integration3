@@ -1,0 +1,16 @@
+name=Ability to Go to previous artifact via < Previous button 
+component=Tracker 
+role=Direct Role
+artifact=NA
+wait=200
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickHrefByLinkText=QA:PendingArtf
+wait=200
+clickHrefByLinkText=< Previous
+wait=200
+searchElementValueByTagName=body=Public#NEXT#Trackers

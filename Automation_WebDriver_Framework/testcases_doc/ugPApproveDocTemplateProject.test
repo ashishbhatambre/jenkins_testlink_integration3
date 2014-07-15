@@ -1,0 +1,18 @@
+name=Approving the Project Create by Doc Template via usergoup -> public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+waitUntilById=pendingProjects
+clickElementById=pendingProjects
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=handleProjectRequests_Approve
+clickElementById=handleProjectRequests_Approve
+wait=300
+searchElementValueByTagName=Body=Approved request to create project: UG_Doc_PubProject

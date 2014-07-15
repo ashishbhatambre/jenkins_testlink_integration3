@@ -1,0 +1,32 @@
+name=Tracker Search_Using a keyword and selecting the checkbox - 'Title'.
+component=Trackers
+role=Site Admin
+artifact=artf161257 
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_search
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=search
+waitUntilById=inAllTextFields
+clickElementById=inAllTextFields
+waitUntilById=inTitle
+clickElementById=inTitle
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=300
+searchElementValueByTagName=body=(2 Items)
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_new
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=artifact
+waitUntilById=inAllTextFields
+clickElementById=inAllTextFields
+waitUntilById=inTitle
+clickElementById=inTitle
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=300
+searchElementValueByTagName=body=Tracker Search Results

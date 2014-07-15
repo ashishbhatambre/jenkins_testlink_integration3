@@ -1,0 +1,22 @@
+name=Filter Document by "Last Edited On" in root folder 
+component=Documents
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/projects/public/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilById=_filter!!date!!dateLastModified
+typeElementById=_filter!!date!!dateLastModified=08/21/2013
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300

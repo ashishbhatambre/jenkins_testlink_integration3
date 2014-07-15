@@ -1,0 +1,21 @@
+name=Ability to update a file in File Release by user with create role in private project
+component=FRS
+role=Direct Role_Create Permission
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.private/frs.package1
+wait=300
+clickHrefByLinkText=Private_Release1
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=frsFilesSelection_Edit
+clickElementById=frsFilesSelection_Edit
+wait=300
+typeValueForFileField=C:\Uploaded_Files\index.html
+wait=300
+waitUntilById=frsFile_submit
+clickElementById=frsFile_submit
+wait=600
+searchElementValueByTagName=Body=File edited successfully.

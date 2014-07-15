@@ -1,0 +1,30 @@
+name=Delete Releases from package for public project
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=123Package_Notes
+wait=500
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Notes2
+waitUntilById=applyfilterbutton
+clickElementById=applyfilterbutton
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectReleases_Delete
+clickHrefByLinkText=Delete
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Release deleted successfully.
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

@@ -1,0 +1,19 @@
+name=Ability to search artifact by Modified date in Private Project
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=lastModifiedDateOption
+clickElementById=lastModifiedDateOption
+waitUntilById=submittedNumberOfPeriods
+typeElementById=submittedNumberOfPeriods=5
+wait=200
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+searchElementValueByTagName=body=QA:ClosedArtf

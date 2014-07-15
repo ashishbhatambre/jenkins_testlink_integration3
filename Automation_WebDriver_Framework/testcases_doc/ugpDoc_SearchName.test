@@ -1,0 +1,17 @@
+name=Search Docuement by name enabled in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugpproject/docman.root.ugpfolder
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=titleQuery
+typeElementById=titleQuery=Doc_Final
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=ugpProject#NEXT#Documents
+wait=300

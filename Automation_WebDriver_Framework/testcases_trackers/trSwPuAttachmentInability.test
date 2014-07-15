@@ -1,0 +1,28 @@
+name=Inability to create attachment "without selecting file" in Public Project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickHrefByLinkText=QA:PendingArtf
+wait=200
+waitUntilById=attachments
+clickElementById=attachments
+wait=200
+clickHrefByLinkText=Add Attachments
+wait=200
+switchToPopupWindow
+waitUntilById=addAttachment_submit
+clickElementById=addAttachment_submit
+wait=200
+searchElementValueByTagName=Body=Attachment is a required field.
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=SWPublic#NEXT#Trackers

@@ -1,0 +1,15 @@
+name=Ability to cancel the tracker edit
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/tracker/do/adminTracker/projects.private/tracker.tracker1
+waitUntilById=admin_tracker.edit
+clickElementById=admin_tracker.edit
+waitUntilById=title
+typeElementById=title=prTracker
+waitUntilById=description
+typeElementById=description=Tracker for Private Project
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+searchElementValueByTagName=body=Private#NEXT#Project Admin 

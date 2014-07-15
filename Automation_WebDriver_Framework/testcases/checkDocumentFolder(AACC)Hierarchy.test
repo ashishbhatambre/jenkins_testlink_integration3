@@ -1,0 +1,10 @@
+name=check Document folder(AACC) Hierarchy
+component=Project Admin
+role=NA
+artifact=NA
+url=sf/sfmain/do/myProjects
+clickHrefByLinkText=proj1
+clickHrefByLinkText=Documents
+clickHrefByLinkText=Root Folder
+clickHrefByLinkText= AACC
+searchElementValueByTagName=Body=proj1/Documents/Root Folder/AA/AACC/List Documents 

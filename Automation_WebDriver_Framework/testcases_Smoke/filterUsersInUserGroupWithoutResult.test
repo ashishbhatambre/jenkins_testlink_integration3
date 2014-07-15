@@ -1,0 +1,22 @@
+name=Inability to filter Users in user group with invalid filter criteria
+component=User Groups
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=User Groups
+wait=500
+clickHrefByLinkText=PrvProjUsers
+wait=500
+waitUntilById=_filter!!contains!!fullName
+typeElementById=_filter!!contains!!fullName=yoga
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=No results found.
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

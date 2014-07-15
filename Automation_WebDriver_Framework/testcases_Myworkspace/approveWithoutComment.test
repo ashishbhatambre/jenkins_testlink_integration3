@@ -1,0 +1,6 @@
+name=Approve the project without comment
+selectCheckBoxFromList=_listItem=0
+waitUntilById=handleProjectRequests_Approve
+clickElementById=handleProjectRequests_Approve
+wait=300
+searchElementValueByTagName=Body=Approved request to create project

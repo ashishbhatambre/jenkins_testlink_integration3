@@ -1,0 +1,29 @@
+name=Ability to set user permission to the project Group
+component=Project Group
+role=Admin
+artifact=NA
+wait=300
+url=sf/rbac/do/permissionAdmin/pgroups.testedprojects
+wait=500
+clickHrefByLinkText=AdminRole
+wait=500
+waitUntilById=members
+clickElementById=members
+waitUntilById=_userPickerDiv
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=user1_adminPermission
+waitUntilById=add
+clickHrefByLinkText=Add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body= user1 was added to the role.
+wait=500
+clickHrefByLinkText=Return
+wait=500

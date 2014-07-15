@@ -1,0 +1,34 @@
+name=Ability to create Child Planning Folder 
+component=Tracker 
+role=Direct Role
+artifact=NA
+wait=200
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan1
+wait=200
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=Plan2
+waitUntilById=pfdescription
+typeElementById=pfdescription=Child Planning Folder for QA Testing
+waitUntilById=selectedStatus
+selectOptionValueByIdIndex=selectedStatus=1
+waitUntilById=capacity
+typeElementById=capacity=40
+waitUntilById=startDate
+typeElementById=startDate=12/28/2013
+waitUntilById=endDate
+typeElementById=endDate=11/28/2014
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=Public#NEXT#Trackers

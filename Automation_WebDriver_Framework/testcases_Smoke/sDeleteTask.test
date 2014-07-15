@@ -1,0 +1,27 @@
+name=Ability to delete Task in private project as site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= session_task
+wait=500
+waitUntilByName=_filter!!contains!!title
+typeElementByName=_filter!!contains!!title=$6436%#@$%@##%^
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+selectCheckBoxFromList=_listCheckAll
+waitUntilById=listTasksSelect_Delete
+clickElementById=listTasksSelect_Delete
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=1 task(s) deleted successfully.
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300

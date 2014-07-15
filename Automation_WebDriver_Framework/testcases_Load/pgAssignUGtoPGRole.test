@@ -1,0 +1,31 @@
+name=Ability ot assign User Group to Project Group
+component=Project Groups
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/listProjectGroupsAdmin
+wait=500
+clickHrefByLinkText=Misc
+wait=500
+clickHrefByLinkText=Permissions
+wait=500
+clickHrefByLinkText=ProjectGroup_AdminRole
+wait=500
+waitUntilById=groups
+clickElementById=groups
+wait=500
+waitUntilById=addGroupsToRoleButtonLink
+clickElementById=addGroupsToRoleButtonLink
+wait=500
+waitUntilById=searchString
+typeElementById=searchString=pgusergroup
+wait=300
+waitUntilById=addGroup_search
+clickElementById=addGroup_search
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=addGroup_groups
+clickElementById=addGroup_groups
+wait=500
+searchElementValueByTagName=Body=pgUserGroup was added to the role.

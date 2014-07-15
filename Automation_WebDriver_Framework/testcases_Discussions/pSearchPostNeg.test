@@ -1,0 +1,16 @@
+name=Search Posts without text for public project Discussion
+component=Discussions
+role=Global Role
+artifact=NA
+wait=100
+url=sf/projects/pubproject
+wait=100
+clickHrefByLinkText=Discussions
+wait=100
+waitUntilById=submitSearchPosts
+clickHrefByLinkText=Search Posts
+wait=100
+waitUntilById=searchPosts_Search
+clickElementById=searchPosts_Search
+wait=100
+searchElementValueByTagName=Body= Enter some text to search for.

@@ -1,0 +1,14 @@
+name=Document Search_Search for a phrase (without quotes).
+component=Documents
+role=Site Admin
+artifact=artf155307
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Text
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=500
+searchElementValueByTagName=Body=(1 Item)

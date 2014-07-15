@@ -1,0 +1,14 @@
+name=Reject Project by FPA
+component=My Workspace
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/listProjectsAdmin/?selectedTab=pendingProjects
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=handleProjectRequests_Reject
+clickElementById=handleProjectRequests_Reject
+wait=300
+searchElementValueByTagName=Body=Rejected request to create project:#NEXT#Project_Track

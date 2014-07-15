@@ -1,0 +1,35 @@
+name=Document Search_Using a document ID.
+component=Documents
+role=Site Admin
+artifact=artf155317
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Doc1014
+waitUntilById=metaDataScope
+clickElementById=metaDataScope
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=600
+searchElementValueByTagName=Body=Document Search Results
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Doc1014
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=600
+searchElementValueByTagName=Body=No results found.
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=titleQuery
+typeElementById=titleQuery=Doc1014
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=600
+searchElementValueByTagName=Body=No results found.
+

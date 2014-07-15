@@ -1,0 +1,22 @@
+name=Verifying the Cancel Button on Creating the Task Folder
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+waitUntilById=newTaskGroup
+clickElementById=newTaskGroup
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementByName=title=task1
+wait=1000
+runJavaScriptPopToMain=javascript:cancelCreateTaskGroup()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+searchElementValueByTagName=Body=NewProject#NEXT#Tasks#NEXT#Summary 

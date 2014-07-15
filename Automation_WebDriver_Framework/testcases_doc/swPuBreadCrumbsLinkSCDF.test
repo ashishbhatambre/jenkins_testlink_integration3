@@ -1,0 +1,12 @@
+name=Navigate to subchild folder from breadcrumbs link in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= SW_Pu_DocumentFolder_Sub
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Documents#NEXT#SW_Pu_SubChildDF#NEXT#Document1#NEXT#SW_Pu_DocumentFolder_Sub#NEXT#List Documents  

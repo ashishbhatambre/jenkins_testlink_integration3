@@ -1,0 +1,8 @@
+name=Verifing All Monitoring Objects-> All/Mine
+url=sf/sfmain/do/myMonitoringSettings
+wait=300
+clickHrefByLinkText=All
+wait=300
+clickHrefByLinkText=Mine
+wait=300
+searchElementValueByTagName=Body=My Workspace

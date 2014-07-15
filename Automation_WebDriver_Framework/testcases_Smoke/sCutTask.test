@@ -1,0 +1,19 @@
+name=Ability to cut the Task in private project as site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= session2
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+clickHrefByLinkText=Cut
+wait=500
+searchElementValueByTagName=Body=1 task(s) cut to clipboard.

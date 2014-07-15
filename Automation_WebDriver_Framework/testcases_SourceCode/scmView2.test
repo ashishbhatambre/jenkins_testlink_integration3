@@ -1,0 +1,20 @@
+name=Source code view by show annotations
+component=Sourcecode
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=view
+wait=500
+clickHrefByLinkText=show annotations
+wait=500
+clickHrefByLinkText=Source Code
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=objectSelection_ViewSource
+clickElementById=objectSelection_ViewSource
+wait=500
+clickHrefByLinkText=9
+wait=500
+searchElementValueByTagName=Body=[repo1]#NEXT#Version1

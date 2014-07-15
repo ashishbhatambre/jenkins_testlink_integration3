@@ -1,0 +1,14 @@
+name=Ability to Download Package in File Release as user with sitewide role in private project
+component=FRS
+role=Sitewide Role
+artifact=NA
+wait=300
+url=sf/frs/do/listReleases/projects.swprivate/frs.package1
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectReleases_Download
+clickElementById=selectReleases_Download
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#File Releases
+

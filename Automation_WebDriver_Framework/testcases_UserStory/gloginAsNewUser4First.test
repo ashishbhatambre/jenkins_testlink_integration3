@@ -1,0 +1,15 @@
+name=Login As Newuser4  with setting password newuser4
+wait=300
+url=sf/sfmain/do/home
+typeElementByName=username=newuser4
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+wait=300
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.

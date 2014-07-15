@@ -1,0 +1,34 @@
+name=Add specific user to Users Monitoring folder list in document folder by "Add" option from Found User list for public child project with global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Doc_List
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=500
+clickHrefByLinkText=Users Monitoring Folder
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=yy_admin_per
+selectOptionValueByIdValue=foundMultipleTemp=TeamForge Administrator
+wait=500
+clickHrefByLinkText=Add
+wait=500
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=800
+runJavaScriptPopToMain=javascript:close()
+wait=800
+withoutPopCloseSwitchToMainWindow
+wait=800
+searchElementValueByTagName=Body=Child_Pub_Project#NEXT#Documents#NEXT#Doc_Str_View#NEXT#Doc_List#NEXT#List Documents 

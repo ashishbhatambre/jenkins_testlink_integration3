@@ -1,0 +1,18 @@
+name=Ability to view the alert message if the users are not selecting while assigning users to User Group
+component=User Groups
+role=Admin
+artifact=NA
+wait=500
+clickHrefByLinkText=TestUsers
+wait=500
+waitUntilById=_SfButton_adduser
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=You must select at least one user.

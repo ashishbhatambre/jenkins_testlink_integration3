@@ -1,0 +1,77 @@
+name=Verify that Subprojects are not displayed to the user when Prevent Inheritance is enabled in project role
+component=Users
+role=NA
+artifact= Tasks - artf180125 TC - artf180090 [Create 4 users as 'user1' 'user2' 'user3' and 'user4']
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Users
+wait=500
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilByName=username
+typeElementByName=username=usr1
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=usr1
+typeElementByName=email=usr1@collab.net
+typeElementByName=companyName=cspl
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+wait=500
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=500
+searchElementValueByTagName=Body=User#NEXT#usr1#NEXT#has been created successfully.
+wait=500
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilByName=username
+typeElementByName=username=usr2
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=usr2
+typeElementByName=email=usr2@collab.net
+typeElementByName=companyName=cspl
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+wait=500
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=500
+searchElementValueByTagName=Body=User#NEXT#usr2#NEXT#has been created successfully.
+wait=500
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilByName=username
+typeElementByName=username=usr3
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=usr3
+typeElementByName=email=usr3@collab.net
+typeElementByName=companyName=cspl
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+wait=500
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=500
+searchElementValueByTagName=Body=User#NEXT#usr3#NEXT#has been created successfully.
+wait=500
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilByName=username
+typeElementByName=username=usr4
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=usr4
+typeElementByName=email=usr4@collab.net
+typeElementByName=companyName=cspl
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+wait=400
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=400
+searchElementValueByTagName=Body=User#NEXT#usr4#NEXT#has been created successfully.

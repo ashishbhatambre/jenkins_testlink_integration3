@@ -1,0 +1,16 @@
+name=Delete Multiple Document in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+selectCheckBoxFromList=_listItem=0
+wait=300
+selectCheckBoxFromList=_listItem=1
+waitUntilById=selectDocuments_Delete
+clickElementById=selectDocuments_Delete
+wait=300
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=2 documents deleted successfully.

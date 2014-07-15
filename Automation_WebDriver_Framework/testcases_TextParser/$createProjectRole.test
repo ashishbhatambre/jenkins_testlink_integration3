@@ -1,0 +1,29 @@
+name=Creating Project Role using text ${}
+component=Project Admin
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Permissions
+wait=300
+waitUntilById=displayList
+selectOptionValueByIdValue=displayList=Roles created for this project
+wait=300
+waitUntilById=listRoles_create
+clickElementById=listRoles_create
+wait=300
+waitUntilById=title
+typeElementById=title=${Role<for>Project</for>}
+waitUntilById=description
+typeElementById=description=${Role &created&}&for Project&
+wait=300
+waitUntilById=requestable
+clickElementById=requestable
+wait=300
+waitUntilById=createRole_submit
+clickElementById=createRole_submit
+wait=300
+searchElementValueByTagName=Body=Role created successfully. 

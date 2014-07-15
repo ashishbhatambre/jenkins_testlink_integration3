@@ -1,0 +1,16 @@
+name=Search Task with particular Task folder
+component=Task
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Search Tasks
+wait=500
+waitUntilById=taskGroups
+selectOptionValueByIdValue=taskGroups=test_task
+wait=300
+waitUntilById=searchTasks_Search
+runJavaScriptPopToMain=javascript:submitForm(document.searchTasks, 'Search')
+wait=300
+searchElementValueByTagName=Body=(3 Items)

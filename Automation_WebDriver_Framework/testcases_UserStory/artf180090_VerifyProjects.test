@@ -1,0 +1,34 @@
+name=Verify that Subprojects are not displayed to the user when Prevent Inheritance is enabled in project role
+component=Users
+role=NA
+artifact= Tasks - artf180125 TC - artf180090 [Goto My Workspace > Projects > All Projects]
+wait=300
+url=sf/sfmain/do/myProjects
+wait=300
+waitUntilById=all
+clickElementById=all
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Project1
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=Project1
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Project3
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=No results found.
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300

@@ -1,0 +1,32 @@
+name=Ability to Add Field using Text Entry in tracker Settings
+component=Project Admin
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=TRACK123##$^#$%
+wait=200
+waitUntilById=admin
+clickElementById=admin
+wait=200
+clickHrefByLinkText=Add Field
+wait=200
+waitUntilById=fieldname
+typeElementById=fieldname=Message
+waitUntilById=selectedDisplayType
+selectOptionValueByIdValue=selectedDisplayType=Text Entry
+wait=200
+waitUntilById=helpText
+typeElementById=helpText=Text entry Field used to post your messages.
+wait=200
+waitUntilById=fieldForm_Save
+clickElementById=fieldForm_Save
+wait=200
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Field created successfully.

@@ -1,0 +1,25 @@
+name=cut and paste the document to same document folder in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+clickHrefByLinkText=$ugpLiveFolder$
+wait=300
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_cut
+clickHrefByLinkText=Cut
+wait=300
+searchElementValueByTagName=Body= Folder cut successfully.
+wait=300
+url=sf/docman/do/listDocuments/projects.ugproject/docman.root
+wait=300
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_paste
+clickHrefByLinkText=Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body= Unable to paste items to this location.
+searchElementValueByTagName=Body= The items were cut from and pasted to the same folder.

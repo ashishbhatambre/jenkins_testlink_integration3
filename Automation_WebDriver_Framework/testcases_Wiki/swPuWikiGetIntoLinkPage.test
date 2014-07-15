@@ -1,0 +1,8 @@
+name=Ability to view Wiki Link Page in public project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+clickHrefByLinkText=LinkPage2
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Wiki

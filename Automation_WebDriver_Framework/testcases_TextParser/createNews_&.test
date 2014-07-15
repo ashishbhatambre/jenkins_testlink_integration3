@@ -1,0 +1,14 @@
+name=create news post with text starts with &text&
+component=Home Page
+role=NA
+artifact=NA
+wait=300
+clickHrefByLinkText=Create News Post
+waitUntilById=title
+typeElementById=title=&Test_News Post&
+waitUntilById=body
+typeElementById=body=&New Project$ Related news&
+waitUntilById=createNewsPost_submit
+clickElementById=createNewsPost_submit
+wait=300
+searchElementValueByTagName=Body=News Post created successfully.

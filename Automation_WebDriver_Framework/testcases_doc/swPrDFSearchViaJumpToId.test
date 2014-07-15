@@ -1,0 +1,21 @@
+name=Search Document Folder(Root-Child-Sub Child) Via Jump To Id 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=200
+waitUntilById=idsString
+typeElementById=idsString=docf1011
+wait=200
+runJavaScriptPopToMain=javascript:quickJump()
+wait=200
+waitUntilById=idsString
+typeElementById=idsString=docf1165
+wait=200
+runJavaScriptPopToMain=javascript:quickJump()
+wait=200
+waitUntilById=idsString
+typeElementById=idsString=docf1137
+wait=200
+runJavaScriptPopToMain=javascript:quickJump()
+wait=200
+searchElementValueByTagName=Body=Documents

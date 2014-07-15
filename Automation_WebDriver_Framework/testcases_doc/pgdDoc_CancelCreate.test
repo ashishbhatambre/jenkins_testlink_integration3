@@ -1,0 +1,22 @@
+name=Cancel create document 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgdfolder
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_Final
+wait=300
+waitUntilById=description
+typeElementById=description=Doc_Final
+wait=300
+selectOptionValueByIdIndex=status=1
+wait=300
+typeValueForFileField=c:\Uploaded_Files\test.pdf
+wait=300
+clickHrefByLinktext=Cancel
+wait=600
+searchElementValueByTagName=Body=pgProject#NEXT#Documents

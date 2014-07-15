@@ -1,0 +1,28 @@
+name=Inablity to Cut and paste the planning Folder to Root folder
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder1
+wait=500
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+wait=200
+clickHrefByLinkText=Cut
+wait=200
+searchElementValueByTagName=Body=Folder cut successfully.
+wait=200
+clickHrefByLinkText= Root Folder
+wait=200
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_paste
+clickHrefByLinkText=Paste
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=Unable to paste items to this location.
+searchElementValueByTagName=Body=The items were cut from and pasted to the same folder.

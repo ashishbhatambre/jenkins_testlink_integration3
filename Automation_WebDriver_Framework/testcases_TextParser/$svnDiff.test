@@ -1,0 +1,3 @@
+name=Svn files Differences
+runCommands=vcscript/svndiff1.cmd
+verifyCommandOutput=Checked out revision 5.

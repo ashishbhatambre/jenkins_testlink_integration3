@@ -1,0 +1,26 @@
+name=Verify User Monitoring the Discussion Forum for public project
+component=Discussions
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/pubproject/
+wait=300
+clickHrefByLinkText=Discussions
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectForumsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectForumsForm
+wait=300
+waitUntilById=selectForumsForm_who
+clickHrefByLinkText=Users Monitoring Selected
+wait=300
+switchToPopupWindow
+wait=300
+searchElementValueByTagName=Body=Users Monitoring This Folder 
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300

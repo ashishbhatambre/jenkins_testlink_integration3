@@ -1,0 +1,30 @@
+name=Cut & Paste a Docuement B
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+By Admin Role User
+wait=300
+url=sf/projects/Private/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectDocuments_Cut
+clickElementById=selectDocuments_Cut
+wait=600
+searchElementValueByTagName=Body=1 document(s) cut to clipboard.
+wait=500
+clickHrefByLinkText= $Private_Document&
+wait=300
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=1 document(s) pasted.
+

@@ -1,0 +1,13 @@
+name=Navigate to subchild folder from breadcrumbs link for project group -> public project 
+component=Documents
+role=Global Role
+artifact=NA
+url=sf/projects/pg_pub_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= ASDFEv#@$
+wait=300
+clickHrefByLinkText=ASDFEv#@$
+wait=300
+searchElementValueByTagName=Body=PG_Pub_Project#NEXT#Documents#NEXT#P_RootFolder#NEXT#P_DocFolder#NEXT#P_Child_Folder#NEXT#ASDFEv#@$#NEXT#List Documents 

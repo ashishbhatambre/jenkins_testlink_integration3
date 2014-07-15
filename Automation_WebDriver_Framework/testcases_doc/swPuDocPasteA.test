@@ -1,0 +1,21 @@
+namePaste a Docuement in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+wait=300
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=Document "Doc_1" pasted successfully.
+wait=300
+searchElementValueByTagName=Body=1 document(s) pasted.
+wait=300

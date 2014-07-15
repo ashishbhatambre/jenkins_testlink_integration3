@@ -1,0 +1,33 @@
+name=Verifying the Previous button in associating Document for project group ->private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText=save&view_document
+wait=500
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=recentlyEditedIds
+selectOptionValueByIdIndex=recentlyEditedIds=5
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+waitUntilById=description
+typeElementById=description=Test Association
+wait=1000
+clickHrefByLinkText=< Previous
+wait=1000
+searchElementValueByTagName=Body=Add Association Wizard
+wait=1000
+runJavaScriptPopToMain=javascript:window.close()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000

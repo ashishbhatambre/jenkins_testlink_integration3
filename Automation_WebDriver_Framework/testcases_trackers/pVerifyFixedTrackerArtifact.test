@@ -1,0 +1,16 @@
+name=Ability to verify Fixed Tracker artifact in public project
+component=File Releases
+role=Global Role
+artifact=NA
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=File Releases
+wait=200
+clickHrefByLinkText=Package#
+wait=200
+clickHrefByLinkText=Notes11
+wait=200
+waitUntilById=resolvedInArtifacts
+clickElementById=resolvedInArtifacts
+wait=200
+searchElementValueByTagName=Body=PubProject#NEXT#File Releases

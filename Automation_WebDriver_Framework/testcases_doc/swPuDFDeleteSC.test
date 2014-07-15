@@ -1,0 +1,17 @@
+name=Delet Sub child Document Folder in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic/docman.root.document1.sw_pu_subchilddf
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_delete
+clickHrefByLinkText=Delete
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body= Folder deleted successfully.
+wait=300
+ 

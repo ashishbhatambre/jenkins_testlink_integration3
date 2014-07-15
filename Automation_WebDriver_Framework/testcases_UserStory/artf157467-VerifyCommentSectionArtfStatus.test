@@ -1,0 +1,17 @@
+name=Verifying the edited artifact comment section with Status changed for artf157467
+component=Tracker
+role=Global Role
+artifact=artf157467
+wait=300
+url=sf/projects/newproject
+wait=600
+clickHrefByLinkText=Trackers
+wait=600
+clickHrefByLinkText=NewTracker
+wait=600
+clickHrefByLinkText=artifactNew
+wait=600
+searchElementValueByTagName=Body=Status changed from Open to Pending
+wait=600
+clickHrefByLinkText=Return
+wait=600

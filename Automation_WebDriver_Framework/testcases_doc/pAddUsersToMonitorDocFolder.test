@@ -1,0 +1,35 @@
+name=Add specific user to Users Monitoring folder list in document folder by "Add" option from Found User list for public project with global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Books_List
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=500
+clickHrefByLinkText=Users Monitoring Folder
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=tester2_normalPermission
+selectOptionValueByIdValue=foundMultipleTemp=yy_admin_per
+selectOptionValueByIdValue=foundMultipleTemp=tester1_adminPermission
+wait=500
+clickHrefByLinkText=Add
+wait=500
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=1000
+runJavaScriptPopToMain=javascript:close()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+searchElementValueByTagName=Body=PubProject#NEXT#Documents#NEXT#$Document_Folder$#NEXT#Books_List#NEXT#List Documents 

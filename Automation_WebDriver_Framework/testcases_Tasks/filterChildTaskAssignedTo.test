@@ -1,0 +1,23 @@
+name=Filter Task by User Assigned to task in Child folder
+component=Task
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= C_Task
+wait=500
+waitUntilById=btn_filter!!string!!assignedToUsername
+clickElementById=btn_filter!!string!!assignedToUsername
+waitUntilByName=multiselect__filter!!string!!assignedToUsername
+selectButtonByValue=user2
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body= No results found.
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

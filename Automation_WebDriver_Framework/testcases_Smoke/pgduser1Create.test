@@ -1,0 +1,33 @@
+name=User Creation
+component=User Groups
+role=Admin
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Users
+wait=500
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+wait=500
+waitUntilByName=username
+typeElementByName=username=pgduser1
+wait=300
+typeElementByName=password=Collabnet1!
+wait=300
+typeElementByName=confirmPassword=Collabnet1!
+wait=300
+typeElementByName=fullName=pgduser1_pgadminPermission	
+wait=300
+typeElementByName=email=pgdser1@collab.net
+wait=300
+typeElementByName=companyName=CSPL
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+wait=500
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=500
+searchElementValueByTagName=Body=User #NEXT#pgduser1#NEXT# has been created successfully.
+wait=500

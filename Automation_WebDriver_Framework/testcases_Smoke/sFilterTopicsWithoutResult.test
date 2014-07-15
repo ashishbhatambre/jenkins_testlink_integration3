@@ -1,0 +1,20 @@
+name=Inability to filtering Topics with non existing id for private project by site admin user
+component=Discussions
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Discussions
+wait=300
+clickHrefByLinkText=Forum_Discussions
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=file2
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=No results found.
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

@@ -1,0 +1,12 @@
+name=View Document Details in public project
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder
+wait=300
+selectCheckBoxFromList=_listItem=1
+wait=300
+clickHrefByLinkText=Details
+wait=800
+searchElementValueByTagName=Body=ppgProject/Documents/Root Folder/pgdPFolder/Document Details 

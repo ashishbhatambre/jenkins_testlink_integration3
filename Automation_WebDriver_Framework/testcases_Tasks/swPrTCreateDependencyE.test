@@ -1,0 +1,27 @@
+name=Create Task Dependency
+component=Tasks
+role=Sitewide Role_Edit Permission
+artifact=NA
+wait=300
+waitUntilById=dependencies
+clickElementById=dependencies
+wait=300
+waitUntilById=add_predecessor
+clickElementById=add_predecessor
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=associationIdString
+typeElementById=associationIdString=task1002
+wait=300
+waitUntilById=addDependency_submitItems
+clickElementById=addDependency_submitItems
+wait=300
+waitUntilById=addDependency_submitDescription
+clickElementById=addDependency_submitDescription
+wait=300
+searchElementValueByTagName=Body=1 dependency(ies) were created successfully. Click Close to return to the main window.
+wait=300
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=300
+withoutPopCloseSwitchToMainWindow

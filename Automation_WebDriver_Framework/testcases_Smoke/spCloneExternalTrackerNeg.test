@@ -1,0 +1,21 @@
+name=Inability to clone external Tracker without source Id in public project as site admin user
+component=Tracker
+wait=200
+url=sf/projects/ft_pub_project/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Tracker Settings
+wait=300
+waitUntilById=selectionMenuButton_CloneMenu_selectTrackers
+clickElementById=selectionMenuButton_CloneMenu_selectTrackers
+wait=300
+waitUntilById=selectTrackers_cloneExternalTracker
+clickElementById=selectTrackers_cloneExternalTracker
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=cloneTrackerAcrossProjectIdForm_next
+clickElementById=cloneTrackerAcrossProjectIdForm_next
+wait=300
+searchElementValueByTagName=Body= Source Tracker Id is a required field.

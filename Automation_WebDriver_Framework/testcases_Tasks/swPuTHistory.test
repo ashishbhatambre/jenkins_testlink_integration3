@@ -1,0 +1,8 @@
+name=Ability to view Task History in public project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+waitUntilById=history
+clickElementById=history
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

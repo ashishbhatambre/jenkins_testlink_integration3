@@ -1,0 +1,36 @@
+name=Search Docuement by "Created or Edited By User" 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swprivate/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+clickImage=sf-images/icons/user_picker_icon.png.pagespeed.ce.u4aP3C3kYZ.png
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=name
+typeElementById=name=swuser1
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Documents

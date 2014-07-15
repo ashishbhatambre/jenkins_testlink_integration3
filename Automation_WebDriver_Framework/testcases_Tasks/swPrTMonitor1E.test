@@ -1,0 +1,21 @@
+name=Verify whether the task is already monitored.
+component=Tasks
+role=Sitewide Role_Edit Permission
+artifact=NA
+wait=300
+url=sf/projects/swprivate/
+wait=300
+clickHrefByLinkText=Tasks
+wait=900
+clickHrefByLinkText= SWA_TaskFolder
+wait=300
+selectCheckBoxFromList=_listItem=2 
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+waitUntilById=listTasksSelect_Monitor
+clickElementById=listTasksSelect_Monitor
+wait=700
+searchElementValueByTagName=Body=1 item(s) are now being monitored.
+wait=300
+

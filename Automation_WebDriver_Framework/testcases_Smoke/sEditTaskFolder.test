@@ -1,0 +1,27 @@
+name=Ability to rename the Task Folder in private project as site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= session
+wait=500
+clickHrefByLinkText=Edit
+waitUntilById=TaskGroupList_rename
+clickHrefByLinkText=Rename
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=title
+typeElementById=title=session_task
+wait=600
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=600
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=600
+runJavaScriptPopToMain=javascript:finishFolderRename()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600

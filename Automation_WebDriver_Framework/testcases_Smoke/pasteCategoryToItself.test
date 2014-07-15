@@ -1,0 +1,13 @@
+name=Inability to paste sub category in the source location
+component=Categories
+wait=300
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+wait=500
+waitUntilById=editCategory_paste
+clickHrefByLinkText=Paste
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Unable to paste items to this location.
+searchElementValueByTagName=Body=A folder cannot be pasted into itself.

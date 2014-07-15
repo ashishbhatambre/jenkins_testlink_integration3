@@ -1,0 +1,4 @@
+name=Verifying myProjects Link
+url=sf/sfmain/do/myProjects
+wait=300
+searchElementValueByTagName=Body=My Workspace

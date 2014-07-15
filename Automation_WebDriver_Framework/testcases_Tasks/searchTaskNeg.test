@@ -1,0 +1,15 @@
+name=Searching the Task without task name
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Search Tasks
+wait=500
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=300
+searchElementValueByTagName=Body=You have not entered any search criteria.

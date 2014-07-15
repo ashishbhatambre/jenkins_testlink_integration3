@@ -1,0 +1,20 @@
+name=Verifying that Auto focus to search text box once open any one of the multi select widget user with view permission
+component=Tracker
+role=Project Role
+artifact=artf165729 - TestcaseID (artf170505)
+wait=200
+url=sf/sfmain/do/home
+wait=200
+typeElementByName=username=user123
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=200
+url=sf/projects/filtertext/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=T1
+wait=200
+waitUntilById=btn_filter!!numeric!!priority
+clickElementById=btn_filter!!numeric!!priority
+searchElementValueByTagName=Body=Enter Keywords

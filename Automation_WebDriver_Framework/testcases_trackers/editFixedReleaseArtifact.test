@@ -1,0 +1,25 @@
+name=Ability to edit Fixed Release field in artifact 
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText=NewTracker
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=500
+waitUntilByName=resolvedReleasePath
+selectOptionValueByNameValue=resolvedReleasePath=Package@ > File31
+wait=500
+waitUntilById=viewArtifactForm_Save
+clickElementById=viewArtifactForm_Save
+wait=500
+searchElementValueByTagName=Body=Artifact data updated successfully.
+wait=500
+clickHrefByLinkText=Trackers

@@ -1,0 +1,13 @@
+name=Login To CTF [usr1]
+component=Login
+role=NA
+artifact=TC - artf180090
+wait=300
+url=sf/sfmain/do/home
+wait=300
+waitUntilByName=username
+typeElementByName=username=usr1
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page

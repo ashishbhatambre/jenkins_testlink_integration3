@@ -1,0 +1,21 @@
+name=Ability to remove File Release Association as user with create role in public project
+component=FRS
+role=Direct Role_Create Permission
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.public/frs.package1
+wait=300
+wait=300
+clickHrefByLinkText=Public_Release1
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=associationListForm_remove
+clickElementById=associationListForm_remove
+wait=300
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=1 association(s) were deleted.

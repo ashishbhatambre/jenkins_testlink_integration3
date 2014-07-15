@@ -1,0 +1,163 @@
+name=Verifying the Board Views with Non Permitted users [newuser1,newuser2,newuser3] and Permitter user [tester2] 
+component=Boards
+role=Global Role
+artifact=artf139713
+wait=300
+url=sf/sfmain/do/home
+wait=300
+typeElementByName=username=newuser1
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+wait=300
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Board View
+wait=300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder2
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan2
+wait=400
+clickSpanElementByCssSelector=combo-arrow=3
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan1
+wait=400
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home
+wait=300
+typeElementByName=username=newuser2
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+wait=300
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Board View
+wait=300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder2
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan2
+wait=400
+clickSpanElementByCssSelector=combo-arrow=3
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan1
+wait=400
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home
+wait=300
+typeElementByName=username=newuser3
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+wait=300
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Board View
+wait=300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder2
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan2
+wait=400
+clickSpanElementByCssSelector=combo-arrow=3
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan1
+wait=400
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home
+wait=300
+typeElementByName=username=tester2
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+wait=300
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Board View
+wait=300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder2
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan2
+wait=400
+clickSpanElementByCssSelector=combo-arrow=3
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan1
+wait=1000
+dragElementToByCSS=item ui-corner-all ui-draggable=artifact5=scroll-area=artifact1
+wait=400
+switchToPopupWindow
+wait=400
+searchElementValueByTagName=Body=You do not have sufficient permission to perform this operation.
+wait=400
+withoutCloseSwitchToMainWindow
+wait=400

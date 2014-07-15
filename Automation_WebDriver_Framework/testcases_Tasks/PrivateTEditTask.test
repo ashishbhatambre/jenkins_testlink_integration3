@@ -1,0 +1,19 @@
+name=Ability to Edit Task in private project
+component=Tasks
+role=Site admin role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.private/taskmgr.pra_taskfolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+wait=300
+waitUntilById=comment
+typeElementById=comment=v2
+wait=300
+waitUntiById=editTask_Save
+clickElementById=editTask_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Task updated successfully.

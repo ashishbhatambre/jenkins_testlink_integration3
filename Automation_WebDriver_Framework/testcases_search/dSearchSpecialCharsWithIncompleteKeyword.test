@@ -1,0 +1,18 @@
+name= Document Search_Using wild card with the Search keyword to search documents which include special characters.
+component=Documents
+role=Site Admin
+artifact=artf155303
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1.searchfolder2.searchfolder3
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=keywordQuery
+typeElementById=keywordQuery="Text$*"
+waitUntilById=metaDataScope
+clickElementById=metaDataScope
+waitUntilById=documentScope
+clickElementById=documentScope
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=500
+searchElementValueByTagName=Body=(1 Item)

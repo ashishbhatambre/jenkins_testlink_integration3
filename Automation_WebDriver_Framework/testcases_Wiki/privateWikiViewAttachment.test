@@ -1,0 +1,9 @@
+name=Ability to view the attachments of a wiki page in private project
+component=Wiki
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=attachments
+clickElementById=attachments
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Wiki

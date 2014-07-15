@@ -1,0 +1,12 @@
+name=Ability to set up wiki configuration as user with admin role in private project
+component=Wiki
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/wiki/do/adminWiki/projects.swprivate/wiki
+waitUntilById=commentRequired
+clickElementById=commentRequired
+waitUntilById=adminWiki_save
+clickElementById=adminWiki_save
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Wiki

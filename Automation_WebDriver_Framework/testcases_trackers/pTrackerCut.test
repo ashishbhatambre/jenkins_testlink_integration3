@@ -1,0 +1,26 @@
+name=Ability to cut & Paste artifact for public Project
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= GroupPlan
+wait=4000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=500
+waitUntilById=selectArtifactsForm_Cut
+clickElementById=selectArtifactsForm_Cut
+wait=200
+searchElementValueByTagName=Body=1 artifact(s) cut to the clipboard.
+wait=200
+clickHrefByLinkText= TeamPlan
+wait=4000
+waitUntilById=selectArtifactsForm_Paste
+clickElementById=selectArtifactsForm_Paste
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=1 artifact(s) pasted from the clipboard.

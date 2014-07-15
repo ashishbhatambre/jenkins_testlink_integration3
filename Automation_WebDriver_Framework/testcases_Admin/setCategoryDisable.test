@@ -1,0 +1,17 @@
+name=Ability to set the category as disabled
+component=Category
+role=Admin
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Categories
+wait=500
+waitUntilById=disableCategory
+clickElementById=disableCategory
+wait=300
+waitUntilById=adminCategories_updateEnable
+runJavaScriptPopToMain=javascript:submitForm(document.adminCategories, 'updateEnable')
+wait=300
+searchElementValueByTagName=Body=Categorization disabled site-wide.

@@ -1,0 +1,31 @@
+name=Edit document inside Sub Child Folder in public project
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgfolder.ddddforname_to_attach_more_than.pgscfolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=500
+clickHrefByLinkText=Edit / Update
+wait=300
+waitUntilById=title
+typeElementById=title=ViewVersion
+wait=300
+wait=300
+waitUntilById=description
+typeElementById=description=This is updated description
+wait=300
+selectOptionValueByIdIndex=status=1
+wait=300
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=Online Document
+wait=300
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+wait=600
+searchElementValueByTagName=Body=Document updated successfully.

@@ -1,0 +1,23 @@
+name=Ability to cancel user group creation
+component=User Groups
+role=Admin
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=User Groups
+wait=300
+waitUntilById=allGroups
+clickElementById=allGroups
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=fullName
+typeElementById=fullName=PrvUsers
+waitUntilById=description
+typeElementById=description=users who are under testing work to the Private project.
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=Site#NEXT#Administration

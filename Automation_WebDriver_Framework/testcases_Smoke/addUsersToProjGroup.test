@@ -1,0 +1,15 @@
+name=Ability to add Users to the Project group
+component=Project Groups
+wait=300
+url=sf/sfmain/do/userMembership/pgroups.testedprojects
+wait=500
+waitUntilById=addUserLink
+clickElementById=addUserLink
+wait=800
+selectButtonByValue=user1
+selectButtonByValue=user2
+wait=800
+waitUntilById=addUser_finish
+clickElementById=addUser_finish
+wait=1000
+searchElementValueByTagName=Body=User(s) added to the Project Group: user1_adminPermission (user1) , user2_normalPermission (user2) .

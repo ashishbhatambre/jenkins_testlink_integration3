@@ -1,0 +1,5 @@
+name=Verifying DashBoard link
+wait=300
+clickHrefByLinkText=Dashboard
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

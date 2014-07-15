@@ -1,0 +1,27 @@
+name=Ability to export from Fixed Tracker Artifact in private project
+component=FRS
+role=Sitewide Role
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.swprivate/frs.package1
+wait=300
+clickHrefByLinkText=Private_Release
+wait=700
+waitUntilById=resolvedInArtifacts
+clickElementById=resolvedInArtifacts
+wait=700
+clickHrefByLinkText=Export
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=addAll
+clickElementById=addAll
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=1300
+searchElementValueByTagName=Body=Export Complete:
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300

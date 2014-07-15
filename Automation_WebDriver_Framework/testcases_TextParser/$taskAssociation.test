@@ -1,0 +1,44 @@
+name=Adding association to task usign ${}
+component=Tasks
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+clickHrefByLinkText= $task$details
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=associationIdString
+typeElementById=associationIdString=doc1008
+wait=300
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+wait=300
+typeElementById=description=${Associtation}*&added&
+wait=300
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=1000
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=1000
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000

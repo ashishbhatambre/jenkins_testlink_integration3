@@ -1,0 +1,29 @@
+name=Creating Tracker Report using ${<>}
+component=Reports
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+clickHrefByLinkText=Reports
+waitUntilById=reports
+clickElementById=reports
+waitUntilByName=reporttype
+selectOptionValueByNameValue=reporttype=Tracker Report
+waitUntilById=createReport_submit
+clickElementById=createReport_submit
+waitUntilByName=name
+typeElementByName=name=${Tracker<I>Report1</I>}
+waitUntilByName=description
+typeElementByName=description=${Tracker<I>Report1</I>}${testing report}
+waitUntilById=trackers
+selectOptionValueByIdValue=trackers=${NewTracker<I>}
+waitUntilById=priority
+selectOptionValueByIdValue=priority=2 - High
+wait=300
+waitUntilById=trackerReport_next
+clickElementById=trackerReport_next
+wait=300
+waitUntilById=trackerReport_generate
+clickElementById=trackerReport_generate
+wait=300
+searchElementValueByTagName=Body=${test test}#NEXT#Reports#NEXT#Modify Tracker Report

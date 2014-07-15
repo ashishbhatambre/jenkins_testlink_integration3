@@ -1,0 +1,27 @@
+name=Ability to Edit the user name and navigate the page without updating data.
+component=MySettings
+role=NA
+artifact= TC - artf172986
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=neha
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+clickHrefByLinkText=My Settings
+wait=300
+waitUntilById=view_user.edit
+clickElementById=view_user.edit
+wait=300
+waitUntilById=fullName
+typeElementById=fullName=neha
+wait=300
+clickHrefByLinkText=My Workspace
+wait=300
+searchElementValueByTagName=Body=My Workspace
+wait=500
+url=sf/sfmain/do/logout
+wait=500

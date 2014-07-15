@@ -1,0 +1,21 @@
+name=Ability to filter Task By Name in private project
+component=Tasks
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.swprivate/taskmgr.swa_taskfolder
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=TA1
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

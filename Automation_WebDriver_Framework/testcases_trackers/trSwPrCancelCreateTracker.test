@@ -1,0 +1,20 @@
+name=Ability to cancel Tracker creation
+component=Tracker Admin
+role=Sitewide Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.swprivate
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+waitUntilById=projectAdminTracker_create
+clickElementById=projectAdminTracker_create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=Tracker1
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=Tracker for the project Private
+wait=200
+selectButtonByValue=icon_01.png
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+searchElementValueByTagName=Body=SWPrivate#NEXT#Project Admin

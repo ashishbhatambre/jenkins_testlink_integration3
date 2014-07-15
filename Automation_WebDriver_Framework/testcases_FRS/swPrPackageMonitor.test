@@ -1,0 +1,36 @@
+name=Ability to monitor File Release as user with sitewide role in private project
+component=FRS
+role=Sitewide Role
+artifact=NA
+wait=300
+url=sf/frs/do/viewSummary/projects.swprivate/frs
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectPackages
+clickElementById=selectionMenuButton_MonitorMenu_selectPackages
+waitUntilById=selectPackages_Monitor
+clickElementById=selectPackages_Monitor
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=already being monitored.
+wait=800
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectPackages
+clickElementById=selectionMenuButton_MonitorMenu_selectPackages
+waitUntilById=selectPackages_UnMonitor
+clickElementById=selectPackages_UnMonitor
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectPackages
+clickElementById=selectionMenuButton_MonitorMenu_selectPackages
+waitUntilById=selectPackages_Monitor
+clickElementById=selectPackages_Monitor
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=1 item(s) are now being monitored.

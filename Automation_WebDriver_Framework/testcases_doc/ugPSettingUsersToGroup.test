@@ -1,0 +1,24 @@
+name=Ability to assign users to user group in public project,Admin,ugSettingUsersToGroup.test
+component=Documents
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=UG_Pub_Project_Users
+wait=500
+waitUntilById=_SfButton_adduser
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=priya_adminPermission
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=p1_adminPermission
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Selected users were added to the user group.

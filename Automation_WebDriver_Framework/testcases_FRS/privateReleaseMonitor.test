@@ -1,0 +1,26 @@
+name=Ability to remove file monitoring in private project
+component=FRS
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/frs/do/listReleases/projects.private/frs.package1
+wait=900
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectReleases
+clickElementById=selectionMenuButton_MonitorMenu_selectReleases
+waitUntilById=selectReleases_Monitor
+clickElementById=selectReleases_Monitor
+wait=600
+searchElementValueByTagName=Body=1 item(s) are now being monitored.
+wait=600
+selectCheckBoxFromList=_listItem=0
+wait=600
+waitUntilById=selectionMenuButton_MonitorMenu_selectReleases
+clickElementById=selectionMenuButton_MonitorMenu_selectReleases
+waitUntilById=selectReleases_UnMonitor
+clickElementById=selectReleases_UnMonitor
+wait=600
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.
+wait=600
+

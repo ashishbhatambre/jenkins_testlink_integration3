@@ -1,0 +1,31 @@
+name=Edit Task with ${<letters>}
+component=Tasks
+role=NA
+artifact=NA
+wait=200
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+clickHrefByLinkText=${dollarTask}
+wait=300
+waitUntilByName=_filter!!contains!!title
+typeElementByName=_filter!!contains!!title=${newTask}
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+selectCheckBoxFromList=_listCheckAll
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+waitUntilById=title
+typeElementById=title=${<newTask><b>test</b>}
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=4 - Low
+waitUntilByName=status
+selectOptionValueByNameValue=status=Complete
+waitUntilByName=comment
+typeElementById=comment=${updating the <center>Task</center> with symbols}
+wait=300
+clickHrefByLinkText=Update
+wait=300
+searchElementValueByTagName=Body=Task updated successfully.

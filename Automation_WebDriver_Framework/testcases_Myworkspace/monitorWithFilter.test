@@ -1,0 +1,10 @@
+name=Monitoring objects using Filter
+url=sf/sfmain/do/myMonitoringSettings
+wait=300
+clickHrefByLinkText=All Monitored Objects
+waitUntilById=_filter!!contains!!objectTitle
+typeElementById=_filter!!contains!!objectTitle=task
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=My Workspace

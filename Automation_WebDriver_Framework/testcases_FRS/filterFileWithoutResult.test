@@ -1,0 +1,22 @@
+name=Filtering File in FileRelease NoResultsFound
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=FilePackage#123
+wait=500
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=file2
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=No results found.
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

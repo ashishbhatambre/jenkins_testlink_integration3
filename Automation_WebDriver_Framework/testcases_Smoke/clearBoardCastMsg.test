@@ -1,0 +1,7 @@
+name=Ability to clear Boardcast message
+component=Broadcast message
+wait=300
+waitUntilById=broadcastMessage_clear
+clickElementById=broadcastMessage_clear
+wait=300
+searchElementValueByTagName=Body=Site Administration#NEXT#System Tools#NEXT#Broadcast Message 

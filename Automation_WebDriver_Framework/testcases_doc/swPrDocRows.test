@@ -1,0 +1,18 @@
+name=Verify the displaying Items per page  through Rows button
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swprivate/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilById=rows-icon
+clickElementById=rows-icon
+waitUntilById=ipp_15
+clickElementById=ipp_15
+wait=300
+searchElementValueByTagName=Body=SWPrivate
+wait=300

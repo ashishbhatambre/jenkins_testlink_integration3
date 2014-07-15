@@ -1,0 +1,18 @@
+name=Setting Users to user group-Negative Case
+component=User Groups
+wait=300
+clickHrefByLinkText=User Groups
+wait=500
+clickHrefByLinkText=PrvUsers
+wait=500
+waitUntilById=_userPickerDiv
+clickHrefByLinkText=Add
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=You must select at least one user.

@@ -1,0 +1,10 @@
+name=check Document folder(AABA) Hierarchy
+component=Project Admin
+role=NA
+artifact=NA
+url=sf/sfmain/do/myProjects
+clickHrefByLinkText=proj1
+clickHrefByLinkText=Documents
+clickHrefByLinkText=Root Folder
+clickHrefByLinkText= AABA
+searchElementValueByTagName=Body=proj1/Documents/Root Folder/AA/AAB/AABA/List Documents 

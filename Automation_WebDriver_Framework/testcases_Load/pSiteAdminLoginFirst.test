@@ -1,0 +1,19 @@
+name= Ability to reset password as site admin user
+component=Login
+role=Admin
+artifact=NAt
+wait=200
+url=sf/sfmain/do/home
+wait=300
+waitUntilByName=username
+typeElementByName=username=siteadmin
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+waitUntilByName=newPassword
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.

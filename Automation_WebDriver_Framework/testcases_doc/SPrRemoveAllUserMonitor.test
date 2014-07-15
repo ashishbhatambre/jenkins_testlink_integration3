@@ -1,0 +1,28 @@
+name=Remove All Users to Monitor Folder in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Users Monitoring Folder
+wait=300
+switchToPopupWindow
+wait=300
+clickHrefByLinkText=Add
+wait=300
+waitUntilById=addAll
+clickElementById=addAll
+wait=300
+clickHrefByLinkText=Remove All
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Private_Sub#NEXT#Documents

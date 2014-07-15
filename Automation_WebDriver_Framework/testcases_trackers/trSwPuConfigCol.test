@@ -1,0 +1,28 @@
+name=Ability to configure Tracker Columns in public project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+wait=200
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=CloneTracker1
+wait=200
+waitUntilById=columns-icon
+clickElementById=columns-icon
+waitUntilById=configureFolderPreferences
+clickElementById=configureFolderPreferences
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=selectTrackerColumns_ApplyAndSave
+clickElementById=selectTrackerColumns_ApplyAndSave
+waitUntilById=preferenceName
+typeElementById=preferenceName=ColStyle1
+waitUntilById=folderPreferenceNamePopUpForm_Apply
+clickElementById=folderPreferenceNamePopUpForm_Apply
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=SWPublic#NEXT#Trackers

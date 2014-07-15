@@ -1,0 +1,21 @@
+name=Verifying the edited artifact comment section with Planning Folder changed for artf157467
+component=Tracker
+role=Global Role
+artifact=artf157467
+wait=300
+url=sf/projects/newproject
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=TRACK123##$^#$%
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=600
+searchElementValueByTagName=Body=Planning Folder changed from Plan_Folder1 to Folder_Renamed
+wait=600
+clickHrefByLinkText=Return
+wait=600

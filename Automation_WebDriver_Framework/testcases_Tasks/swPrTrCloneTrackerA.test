@@ -1,0 +1,27 @@
+name=Clone External Tracker SW_Pr_Admin Role
+wait=300
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Tracker Settings
+waitUntilById=SWPrTracker
+clickElementById=SWPrTracker
+waitUntilById=selectionMenuButton_CloneMenu_selectTrackers
+clickElementById=selectionMenuButton_CloneMenu_selectTrackers
+wait=300
+waitUntilById=selectTrackers_cloneTracker
+clickElementById=selectTrackers_cloneTracker
+switchToPopupWindow
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=SWPr_CloneTracker
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=Tracker created via Clonning
+wait=300
+clickHrefByLinkText=Create
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=Tracker cloned successfully.
+wait=500
+

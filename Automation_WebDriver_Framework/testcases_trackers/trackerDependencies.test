@@ -1,0 +1,37 @@
+name=Ability to add Parent Dependencies to an artifact in the Planning Folder
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder1
+wait=4000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=500
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=200
+waitUntilById=dependencies
+clickElementById=dependencies
+waitUntilById=selectionMenuButton_createParentMenu
+clickElementById=selectionMenuButton_createParentMenu
+clickElementById=yui-gen1
+wait=300
+waitUntilById=title
+typeElementById=title=parentArtifact
+waitUntilById=description
+typeElementById=description=artifact for the Tracker1 folder Parent Artifact
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=2 - High
+waitUntilByName=assignedUser
+selectOptionValueByNameValue=assignedUser=user2_normalPermission
+wait=200
+waitUntilById=createArtifactDependencyForm_Save
+clickElementById=createArtifactDependencyForm_Save
+wait=200
+searchElementValueByTagName=Body=Related artifact created successfully.

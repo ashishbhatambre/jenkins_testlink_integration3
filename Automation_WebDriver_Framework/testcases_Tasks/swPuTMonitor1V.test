@@ -1,0 +1,22 @@
+name=Verify Already Monitoring Functonality SW_Pu_All
+component=Tasks
+role=Sitewide Role_View Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= SWA_TaskFolder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+waitUntilById=listTasksSelect_UnMonitor
+clickElementById=listTasksSelect_UnMonitor
+wait=300
+searchElementValueByTagName=Body=SWPublic
+wait=300

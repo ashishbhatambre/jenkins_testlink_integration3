@@ -1,0 +1,10 @@
+name=Verify Search Documents link
+component=Project
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+searchElementValueByTagName=Body=NProject
+wait=300

@@ -1,0 +1,27 @@
+name=Ability to export from Fixed Tracker Artifact in public project
+component=FRS
+role=Direct Role
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.public/frs.package1
+wait=300
+clickHrefByLinkText=Public_Release1
+wait=300
+waitUntilById=resolvedInArtifacts
+clickElementById=resolvedInArtifacts
+wait=300
+clickHrefByLinkText=Export
+wait=300
+switchToPopupWindow
+wait=600
+waitUntilById=addAll
+clickElementById=addAll
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=300
+searchElementValueByTagName=Body=Export Complete
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300

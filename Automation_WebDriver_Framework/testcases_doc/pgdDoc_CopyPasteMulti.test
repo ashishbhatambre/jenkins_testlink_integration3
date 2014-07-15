@@ -1,0 +1,21 @@
+name=Copy & Paste multiple Documents 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgdfolder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=selectDocuments_Copy
+clickElementById=selectDocuments_Copy
+wait=800
+searchElementValueByTagName=Body=2 document(s) copied to clipboard.
+wait=300
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+acceptJavaScriptConfirm
+wait=800
+searchElementValueByTagName=Body=2 document(s) pasted.

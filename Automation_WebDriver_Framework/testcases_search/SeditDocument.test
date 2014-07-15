@@ -1,0 +1,24 @@
+name=Ability to edit document name description and other fields.
+component=Documents
+role=Site Admin
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+wait=300
+clickHrefByLinkText=Question
+wait=300
+clickHrefByLinkText=Edit / Update
+waitUntilById=title
+typeElementById=title=Solution
+waitUntilById=description
+typeElementById=description=File has multiple version
+waituntilById=createOption:fromText
+clickElementById=createOption:fromText
+waitUntilById=textContent
+typeElementById=textContent=Solution Kit
+waitUntilById=versionComment
+typeElementById=versionComment=v2
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Document updated successfully.

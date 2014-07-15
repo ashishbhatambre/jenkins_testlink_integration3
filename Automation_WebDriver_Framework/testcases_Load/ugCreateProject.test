@@ -1,0 +1,19 @@
+name=Ability to create private project
+component=Projects
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/myProjects
+wait=300
+waitUntilById=createProject
+clickElementById=createProject
+waitUntilById=title
+typeElementById=title=UG_Prv_Project
+waitUntilById=description
+typeElementById=description=This project is for users present in "prvprojusers" group
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=300
+url=sf/sfmain/do/myProjects/
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

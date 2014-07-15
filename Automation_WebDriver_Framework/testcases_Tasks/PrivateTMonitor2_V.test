@@ -1,0 +1,15 @@
+name=Ability to stop monitoring task in private project
+component=Tasks
+role=View role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.private/taskmgr.pra_taskfolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+waitUntilById=listTasksSelect_UnMonitor
+clickElementById=listTasksSelect_UnMonitor
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.

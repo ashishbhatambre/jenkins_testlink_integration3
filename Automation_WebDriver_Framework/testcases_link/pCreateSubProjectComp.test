@@ -1,0 +1,19 @@
+name=Create SubProjects Component for Public Project
+component=Project Home
+role=Admin Role
+artifact=NA
+waitUntilById=CreatePageComponentLink
+clickElementById=CreatePageComponentLink
+waitUntilById=title
+typeElementById=title=pSubProject_Component
+wait=300
+selectButtonByValue=subprojects
+wait=300
+selectButtonByValue=0
+wait=300
+selectButtonByValue=false
+selectOptionValueByIdIndex=subprojects=1
+waitUntilById=component_html
+clickElementById=component_html
+wait=300
+searchElementValueByTagName=Body=PProject#NEXT#Project Home  

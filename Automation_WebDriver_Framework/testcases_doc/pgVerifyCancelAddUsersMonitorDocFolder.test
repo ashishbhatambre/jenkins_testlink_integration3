@@ -1,0 +1,25 @@
+name=Cancel add user to users monitoring folder list by clicking cancel button in "Find a User" page for project group -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=500
+clickHrefByLinkText=Users Monitoring Folder
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+wait=800
+searchElementValueByTagName=Body=Find a User
+wait=800
+runJavaScriptPopToMain=javascript: window.close()
+wait=800
+withoutPopCloseSwitchToMainWindow
+wait=800

@@ -1,0 +1,39 @@
+name=Add user to "Users Monitoring This Item"  from document details page for public child project with global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Doc_List
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=500
+clickHrefByLinkText=Users Monitoring
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=yy_admin_per
+selectOptionValueByIdValue=foundMultipleTemp=TeamForge Administrator
+wait=500
+clickHrefByLinkText=Add
+wait=500
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=800
+runJavaScriptPopToMain=javascript:close()
+wait=800
+withoutPopCloseSwitchToMainWindow
+wait=800
+searchElementValueByTagName=Body=[Show Project Path]
+		
+Child_Pub_Project/Documents/Doc_Str_View/Doc_List/Document Details 

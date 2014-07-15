@@ -1,0 +1,20 @@
+name=Ability to cancel task folder creation in public project
+component=Tasks
+role=Direct role_Admin permission
+artifact=NA
+wait=300
+url=sf/taskmgr/do/viewSummary/projects.public/taskmgr
+wait=500
+waitUntilById=newTaskGroup
+clickElementById=newTaskGroup
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=title
+typeElementById=title=PUA_TaskFolder
+wait=500
+runJavaScriptPopToMain=javascript:cancelCreateTaskGroup()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=Public#NEXT#Tasks

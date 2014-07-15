@@ -1,0 +1,17 @@
+name=Ability to Approve the Project Created using Task Template
+component=Projects
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+waitUntilById=pendingProjects
+clickElementById=pendingProjects
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=handleProjectRequests_Approve
+clickElementById=handleProjectRequests_Approve
+wait=300
+searchElementValueByTagName=Body=Approved request to create project: Tasks_Project

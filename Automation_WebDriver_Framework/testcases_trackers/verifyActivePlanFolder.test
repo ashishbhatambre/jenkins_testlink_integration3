@@ -1,0 +1,12 @@
+name=Ability to view active Planning Folders in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickSpanElementByCssSelector=StatusFilter
+wait=200
+searchElementValueByTagName=Body=Planning Folders#NEXT#Active#NEXT#

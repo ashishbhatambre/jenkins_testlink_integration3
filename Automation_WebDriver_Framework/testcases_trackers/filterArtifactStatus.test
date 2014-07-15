@@ -1,0 +1,23 @@
+name=Ability to filter the artifact with Status
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=10000
+waitUntilById=btn_filter!!string!!status
+clickElementById=btn_filter!!string!!status
+waitUntilByName=multiselect__filter!!string!!status
+selectButtonByValue=Open
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=200
+searchElementValueByTagName=Body=NewTracker    (1 Item)
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

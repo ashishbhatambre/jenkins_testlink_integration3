@@ -1,0 +1,31 @@
+name=Ability to add a new file in File Release as user with admin role in public project
+component=FRS
+role=Direct Role_Admin Permission
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.public/frs.package1
+wait=300
+clickHrefByLinkText=Public_Release
+wait=300
+waitUntilById=frsfilesList_create
+clickElementById=frsfilesList_create
+wait=300
+waitUntilById=file
+typeValueForFileField=C:\Uploaded_Files\Jellyfish.jpg
+wait=300
+waitUntilById=frsFile_submit
+clickElementById=frsFile_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=File added successfully.
+wait=300
+waitUntilById=frsfilesList_create
+clickElementById=frsfilesList_create
+wait=300
+waitUntilById=file
+typeValueForFileField=C:\Uploaded_Files\test.pdf
+wait=300
+waitUntilById=frsFile_submit
+clickElementById=frsFile_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=File added successfully.
+

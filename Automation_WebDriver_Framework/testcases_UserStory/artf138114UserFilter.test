@@ -1,0 +1,17 @@
+name=Filter options on users for an artifact artf138114
+component=Users
+role=NA
+artifact=artf138114
+wait=300
+url=sf/sfmain/do/listUsersAdmin
+wait=300
+selectOptionValueByIdValue=_filter!!boolean!!isRestrictedUser=Restricted
+wait=300
+clickHrefByLinkText=Filter
+wait=500
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+searchElementValueByTagName=Body=Users

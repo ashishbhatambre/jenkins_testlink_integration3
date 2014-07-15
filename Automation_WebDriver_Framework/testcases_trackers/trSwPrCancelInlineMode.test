@@ -1,0 +1,15 @@
+name=Cancel inline edit mode
+component=Tracker 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickHrefByLinkText=Edit Inline
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+searchElementValueByTagName=Body=SWPrivate#NEXT#Trackers

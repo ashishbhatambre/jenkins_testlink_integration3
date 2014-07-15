@@ -1,0 +1,23 @@
+name=Filter Document by Document ID in root folder for public child project by global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Doc_List
+wait=500
+waitUntilByName=_filter!!contains!!id
+typeElementByName=_filter!!contains!!id=doc1102
+wait=500
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=Doc_List (1 Item)
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

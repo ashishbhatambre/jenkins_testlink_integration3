@@ -1,0 +1,21 @@
+name=Filter Sub Child Document by Name in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugpproject/docman.root.ugpfolder.ddddforname_to_attach_more_than.ugpscfolder
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Doc_Draft
+wait=300
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=ugpProject#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=800
+
+ 

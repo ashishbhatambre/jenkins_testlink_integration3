@@ -1,0 +1,21 @@
+name=Creating Package with text starting ${}
+component=FRS
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=File Releases
+wait=300
+clickHrefByLinkText=Create
+waitUntilById=title
+typeElementById=title=${Package}
+waitUntilByName=description
+typeElementByName=description=Package created to test the ${Text}
+waitUntilById=isPublished
+clickElementById=isPublished
+wait=300
+waitUntilById=createPackage_submit
+clickElementById=createPackage_submit
+wait=300
+searchElementValueByTagName=Body=Package created successfully.

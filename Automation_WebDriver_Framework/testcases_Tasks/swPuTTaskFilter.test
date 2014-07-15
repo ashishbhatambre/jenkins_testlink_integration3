@@ -1,0 +1,20 @@
+name=Ability to filter Task By Name in public project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=300
+clickHrefByLinkText= SWA_TaskFolder
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=TA2
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=300
+searchElementValueByTagName=Body=SWPublic/Tasks
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

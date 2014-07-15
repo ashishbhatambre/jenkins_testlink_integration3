@@ -1,0 +1,14 @@
+name=Tracker Search_by grouping Boolean Operators
+component=Trackers
+role=Site Admin
+artifact=artf161279
+wait=300
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=(tracker OR artifact) AND 701
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=(1 Item)

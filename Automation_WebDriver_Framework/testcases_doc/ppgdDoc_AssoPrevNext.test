@@ -1,0 +1,32 @@
+name=Verify the functionality of Previous & Next Button in Association wizard in public project
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder
+wait=300
+selectCheckBoxFromList=_listItem=2
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=associationIdString
+typeElementById=associationIdString=doc1005
+wait=300
+clickHrefByLinkText=Next >
+wait=600
+clickHrefByLinkText=< Previous
+wait=600
+clickHrefByLinkText=Cancel
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=ppgProject#NEXT#Documents

@@ -1,0 +1,15 @@
+name=Create News Component
+waitUntilById=CreatePageComponentLink
+clickElementById=CreatePageComponentLink
+waitUntilById=title
+typeElementById=title=News
+wait=300
+selectButtonByValue=news
+wait=300
+selectButtonByValue=0
+wait=300
+selectButtonByValue=false
+waitUntilById=component_html
+clickElementById=component_html
+wait=300
+searchElementValueByTagName=Body=NProject#NEXT#Project Home

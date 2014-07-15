@@ -1,0 +1,25 @@
+name=Filter Document by Document Last Edited by in Sub-Child folder for public child project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= ASDFEv#@$
+wait=500
+waitUntilById=btn_filter!!string!!lastModifiedBy
+clickElementById=btn_filter!!string!!lastModifiedBy
+waitUntilByName=multiselect__filter!!string!!lastModifiedBy
+selectButtonByValue=tester1
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=PDF_File
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

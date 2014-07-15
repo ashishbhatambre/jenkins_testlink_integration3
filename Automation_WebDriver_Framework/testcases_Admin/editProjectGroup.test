@@ -1,0 +1,22 @@
+name=Ability to edit the Project Group description
+component=Project Group
+role=NA
+artifact=NA
+wait=500
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Project Groups
+wait=500
+clickHrefByLinkText=TestedProjects
+wait=500
+waitUntilById=edit_group.edit
+clickElementById=edit_group.edit
+wait=500
+waitUntilById=description
+typeElementById=description=edited project group.
+wait=500
+waitUntilById=editProjectGroup_submit
+clickElementById=editProjectGroup_submit
+wait=500
+searchElementValueByTagName=Body=Site Administration#NEXT#Project Groups#NEXT#TestedProjects 

@@ -1,0 +1,6 @@
+name=Svn File Removed from repository
+component=SourceCode
+role=Global Role
+artifact=NA
+runCommands=vcscript/svnrm.cmd
+verifyCommandOutput=Committed revision 9.

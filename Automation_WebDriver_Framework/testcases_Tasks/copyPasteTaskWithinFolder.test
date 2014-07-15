@@ -1,0 +1,24 @@
+name=Copy and Paste task within the Folder
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= task2
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+clickHrefByLinkText=Copy
+wait=500
+searchElementValueByTagName=Body=1 task(s) copied to clipboard.
+wait=300
+waitUntilById=listTasksSelect_Paste
+clickHrefByLinkText=Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=1 task(s) pasted from clipboard.

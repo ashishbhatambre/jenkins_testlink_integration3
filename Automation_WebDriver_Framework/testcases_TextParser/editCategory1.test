@@ -1,0 +1,20 @@
+name=Edit Category with text starts with ${} ${<>}
+component=Category
+role=NA
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+url=sf/categorization/do/adminCategories
+wait=300
+clickHrefByLinkText= ${Categoty1}
+wait=300
+waitUntilById=title
+typeElementById=title=${Categoty1<li>}
+waitUntilById=description
+typeElementById=description=${Categry<a>}
+waitUntilById=adminCategories_update
+clickElementById=adminCategories_update
+wait=300
+searchElementValueByTagName=Body=Category updated successfully.

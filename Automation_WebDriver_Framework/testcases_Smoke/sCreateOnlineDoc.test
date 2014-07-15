@@ -1,0 +1,24 @@
+name=Ability to create Online Document in  private project as site admin user
+component=Document
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= DOC_786
+wait=500
+clickHrefByLinkText=Add Document
+wait=500
+waitUntilById=title
+typeElementById=title=OnlineFile
+waitUntilById=description
+typeElementById=description=File Created by online
+wait=500
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=This is the Document created for the Doc_786 folder.
+wait=500
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=500
+searchElementValueByTagName=Body=Document created successfully.

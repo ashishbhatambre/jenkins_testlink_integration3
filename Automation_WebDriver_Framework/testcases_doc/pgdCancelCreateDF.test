@@ -1,0 +1,20 @@
+name=Cancel Create Document Folder 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root
+wait=300
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+waitUntilById=title
+typeElementById=title=Folder
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=pgProject#NEXT#Documents
+

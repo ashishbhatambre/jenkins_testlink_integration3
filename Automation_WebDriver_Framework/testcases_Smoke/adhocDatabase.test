@@ -1,0 +1,21 @@
+name=Ability to view the Adhoc Database result and server status
+component=System Tools
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=System Tools
+wait=500
+clickHrefByLinkText=Ad Hoc Database Query
+wait=500
+selectButtonByValue=ods
+wait=500
+typeElementById=query=select * from project;
+waitUntilById=adhocQueryForm_submit
+clickElementById=adhocQueryForm_submit
+wait=500
+clickHrefByLinkText=Server Status
+wait=500
+clickHrefByLinkText=Refresh
+wait=500
+searchElementValueByTagName=Body=System#NEXT#Tools

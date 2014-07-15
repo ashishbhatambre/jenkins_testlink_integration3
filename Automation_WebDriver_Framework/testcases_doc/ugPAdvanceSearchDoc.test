@@ -1,0 +1,19 @@
+name=Search Document Via Advance Search for usergroup public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=400
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=400
+clickHrefByLinkText=Advanced Search
+wait=400
+waitUntilByName=term
+typeElementByName=term=Books_List
+waitUntilById=applications
+selectOptionValueByIdValue=applications=Documents
+wait=400
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+wait=400
+searchElementValueByTagName=Body=Search

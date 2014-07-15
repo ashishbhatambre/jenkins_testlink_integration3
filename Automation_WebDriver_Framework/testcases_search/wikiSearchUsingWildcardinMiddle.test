@@ -1,0 +1,12 @@
+name=Wiki Search_using wildcards in the middle of any word 
+component=Wiki
+role=Site Admin
+artifact=artf163032      
+wait=300
+url=sf/wiki/do/viewPage/projects.project_search/wiki/HomePage
+wait=300
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+typeElementById=keywordQuery=Ul*e
+clickElementById=searchWikiPages_submit
+searchElementValueByTagName=Body=subpage

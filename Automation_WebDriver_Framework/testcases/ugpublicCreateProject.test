@@ -1,0 +1,62 @@
+name=Create Project ugpProject -> Site Admin User
+component=Projects
+role=NA
+artifact=NA
+url=sf/sfmain/do/myProjects
+wait=300
+clickElementById=createProject
+waitUntilById=title
+typeElementById=title=ugpProject
+waitUntilById=description
+typeElementById=description=This is a Public Project has User Group Role 
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=500
+searchElementValueByTagName=Body=ugpProject#NEXT#Project Home  
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Permissions
+waitUntilById=defaultAccessPermissions
+clickElementById=defaultAccessPermissions
+waitUntilById=editDefaultPermissions
+clickElementById=editDefaultPermissions
+waitUntilById=public
+selectButtonByValue=1
+waitUntilById=editDefaultAccessPermissions_submit
+clickElementById=editDefaultAccessPermissions_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Project access level was updated successfully.
+wait=300
+waitUntilById=projectInfoWildcard
+selectOptionValueByIdValue=projectInfoWildcard=All logged in users
+waitUntilById=pageViewWildcard
+selectOptionValueByIdValue=pageViewWildcard=All project members
+waitUntilById=trackerViewWildcard
+selectOptionValueByIdValue=trackerViewWildcard=All project members
+waitUntilById=trackerCreateWildcard
+selectOptionValueByIdValue=trackerCreateWildcard=All project members
+waitUntilById=scmViewWildcard
+selectOptionValueByIdValue=scmViewWildcard=All project members
+waitUntilById=scmCommitWildcard
+selectOptionValueByIdValue=scmCommitWildcard=All project members
+waitUntilById=docmanViewWildcard
+selectOptionValueByIdValue=docmanViewWildcard=All project members
+waitUntilById=taskmgrViewWildcard
+selectOptionValueByIdValue=taskmgrViewWildcard=All project members
+waitUntilById=discussionViewWildcard
+selectOptionValueByIdValue=discussionViewWildcard=All project members
+waitUntilById=discussionPostWildcard
+selectOptionValueByIdValue=discussionPostWildcard=All project members
+waitUntilById=discussionPrivateViewWildcard
+selectOptionValueByIdValue=discussionPrivateViewWildcard=All project members
+waitUntilById=discussionPrivatePostWildcard
+selectOptionValueByIdValue=discussionPrivatePostWildcard=All project members
+waitUntilById=frsViewWildcard
+selectOptionValueByIdValue=frsViewWildcard=All project members
+waitUntilById=wikiCreateWildcard
+selectOptionValueByIdValue=wikiCreateWildcard=Users with Role Permissions
+waitUntilById=editDefaultAccessApplicationPermissions_submit
+clickElementById=editDefaultAccessApplicationPermissions_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Application permissions updated successfully.

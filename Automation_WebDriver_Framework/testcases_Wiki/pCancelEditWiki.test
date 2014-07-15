@@ -1,0 +1,12 @@
+name=Ability to Cancel Wiki page edit in public project
+component=Wiki
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=view_wiki_page.edit
+clickElementById=view_wiki_page.edit
+wait=300
+waitUntilById=edit_wiki_page.cancel
+clickElementById=edit_wiki_page.cancel
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Wiki#NEXT#Home page#NEXT#View Wiki Page 

@@ -1,0 +1,16 @@
+name=Create Task Monitoring 
+component=Tasks
+role=Sitewide Role_Delete Permission
+artifact=NA
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+waitUntilById=listTasksSelect_Monitor
+clickElementById=listTasksSelect_Monitor
+wait=300
+searchElementValueByTagName=Body=1 item(s) are now being monitored.
+wait=300

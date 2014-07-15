@@ -1,0 +1,27 @@
+name=Ability to create Task with special characters in private project as site admin user
+component=Wiki
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= session2
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilByName=title
+typeElementByName=title=$6436%#@$%@##%^
+waitUntilByName=description
+typeElementByName=description=$#%^%&*$%@#$*^%(%&$235346457$^&#%@$^$
+selectOptionValueByNameValue=priority=2 - High
+waitUntilByName=status
+selectOptionValueByNameValue=status=Alert
+waitUntilByName=startDate
+typeElementByName=startDate=03/4/2013
+typeElementByName=endDate=03/5/2013
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.

@@ -1,0 +1,49 @@
+name=Selecting Attach document to document review Email for public child project with global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=500
+url=sf/projects/child_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Child_Doc_Folder
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=review
+clickElementById=review
+wait=500
+clickHrefByLinkText=Start a Review
+wait=500
+waitUntilById=title
+typeElementById=title=Doc_Review
+waitUntilById=dueDate
+typeElementById=dueDate=12/24/2014
+wait=300
+waitUntilById=description
+typeElementById=description=Save Document review for the public project by tester2
+wait=300
+waitUntilById=createDocumentReview_userPicker
+clickElementById=createDocumentReview_userPicker
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=tester2_normalPermission
+waitUntilById=add
+clickElementById=add
+wait=300
+runJavaScriptPopToMain=javascript:submitForm(document.userPicker, 'ok')
+withoutPopCloseSwitchToMainWindow
+wait=300
+waitUntilById=attachDocument
+selectButtonByValue=on
+waitUntilById=createDocumentReview_submit
+clickElementById=createDocumentReview_submit
+wait=300
+searchElementValueByTagName=Body=Document review created successfully.

@@ -1,0 +1,40 @@
+name=Add users to document Users Monitoring Selected list from List Documents > Monitor > Stop Monitoring Selected option for user group -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_prv_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Tree_View
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+waitUntilById=selectDocuments_who
+clickElementById=selectDocuments_who
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+wait=300
+selectOptionValueByIdValue=foundMultipleTemp=yy_admin_per
+selectOptionValueByIdValue=foundMultipleTemp=yoga_adminPermission
+wait=300
+clickHrefByLinkText=Add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=1000
+runJavaScriptPopToMain=javascript:close()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+waitUntilById=selectDocuments_unmonitor
+clickElementById=selectDocuments_unmonitor
+wait=1000
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.

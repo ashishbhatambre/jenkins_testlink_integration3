@@ -1,0 +1,13 @@
+name=Ability to paste the artifact in private project as site admin user
+component=Tracker
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText=CloneTraqueur
+wait=500
+waitUntilById=selectArtifactsForm_Paste
+clickHrefByLinkText=Paste
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=1 artifact(s) pasted from the clipboard.

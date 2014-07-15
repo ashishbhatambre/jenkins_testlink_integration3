@@ -1,0 +1,23 @@
+name=Verify that ability to Reject multiple SCM Adapter Repository Access requests as SCM Integration Permission user when requires approval is enabled in Integrations
+component=Integration
+role=NA
+artifact= Tasks artf171712 TC - artf171710 [Go to Admin > Integrations >Pending SCM Integrations,select all repo's check box and click on approve]
+wait=300
+waitUntilById=admin_link
+clickHrefByLinkText=Admin
+wait=500
+clickHrefByLinkText=Integrations
+wait=500
+waitUntilById=integrationRequests
+clickElementById=integrationRequests
+wait=500
+waitUntilByName=selectedObjects
+selectCheckBoxFromList=selectedObjects=0
+selectCheckBoxFromList=selectedObjects=1
+selectCheckBoxFromList=selectedObjects=2
+selectCheckBoxFromList=selectedObjects=3
+wait=500
+waitUntilById=objectSelection_Approve
+clickElementById=objectSelection_Approve
+wait=500
+searchElementValueByTagName=Body=Repository created successfully.

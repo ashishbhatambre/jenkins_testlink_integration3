@@ -1,0 +1,34 @@
+name=Tracker Search_Verify the ability to save a search with a valid name from search results page 
+component=Trackers
+role=Site Admin
+artifact=artf165302 
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_search
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=100
+waitUntilById=inTitle
+clickElementById=inTitle
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=(1 Item)
+wait=300
+clickHrefByLinkText=Save Search from Results
+wait=300
+switchToPopupWindow
+wait=400
+typeElementByName=searchOrFilterName=Save_Search
+wait=300
+waitUntilById=saveSearchOrFilter_submit
+clickElementById=saveSearchOrFilter_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=body=Search saved.
+wait=300
+waitUntilById=mySearchesToggle
+clickElementById=mySearchesToggle
+wait=300
+searchElementValueByTagName=body=Save_Search

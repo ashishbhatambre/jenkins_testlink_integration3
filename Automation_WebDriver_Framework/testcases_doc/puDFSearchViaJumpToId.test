@@ -1,0 +1,25 @@
+name=Search Document Folder By Via Jump To Id in public project
+component=Documents
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1017
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=Documents
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1018
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=Documents
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1020
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=PDocuments

@@ -1,0 +1,18 @@
+name=Monitor document by clicking "Monitor" button from document details page for private child project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Folder1_View
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Monitor
+runJavaScriptPopToMain=javascript:submitForm(document.selectDocuments, 'Monitor')
+wait=300
+searchElementValueByTagName=Body=Item doc1060 is already being monitored.

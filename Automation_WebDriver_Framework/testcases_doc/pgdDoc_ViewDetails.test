@@ -1,0 +1,13 @@
+name=View Document Details 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgdfolder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=300
+clickHrefByLinkText=Details
+wait=300
+searchElementValueByTagName=Body=pgProject#NEXT#Documents

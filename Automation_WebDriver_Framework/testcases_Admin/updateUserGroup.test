@@ -1,0 +1,23 @@
+name=Ability to update User Group name
+component=Project Admin
+role=NA
+artifact=NA
+wait=300
+url=sf/global/do/listGroupsAdmin
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickHrefByLinkText=Clear
+wait=300
+clickHrefByLinkText=PrvUsers
+wait=300
+waitUntilById=edit_group.edit
+clickElementById=edit_group.edit
+waitUntilById=fullName
+typeElementById=fullName=PrvProjUsers
+wait=500
+waitUntilById=createGroup_submit
+clickElementById=createGroup_submit
+wait=500
+searchElementValueByTagName=Body=User Group#NEXT#PrvProjUsers#NEXT#has been updated successfully.

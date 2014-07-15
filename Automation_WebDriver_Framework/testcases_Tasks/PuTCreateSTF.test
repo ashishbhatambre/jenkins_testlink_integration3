@@ -1,0 +1,25 @@
+name=Ability to create Sub-Task Folder in public project
+component=Tasks
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.public/taskmgr.pua_taskfolder
+wait=300
+waitUntilById=newTask
+clickElementById=newTask
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=PUA_SubTaskFolder
+wait=300
+waitUntilById=createTaskGroupForm_submit
+clickElementById=createTaskGroupForm_submit
+wait=300
+searchElementValueByTagName=Body=Task folder created successfully.
+wait=300
+clickHrefByLinkText=Close
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Tasks

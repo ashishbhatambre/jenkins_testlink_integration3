@@ -1,0 +1,14 @@
+name=Ability to paste task into another sub folder in private project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.swprivate/taskmgr.swa_taskfolder.swa_subtaskfolder
+wait=300
+waitUntilById=listTasksSelect_Paste
+clickElementById=listTasksSelect_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=1 task(s) pasted from clipboard.
+wait=300

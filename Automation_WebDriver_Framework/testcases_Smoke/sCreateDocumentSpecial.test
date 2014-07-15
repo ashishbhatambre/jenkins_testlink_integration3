@@ -1,0 +1,24 @@
+name=Ability to create Document with special characters in private project as site admin
+component=Document
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Doc2
+wait=500
+clickHrefByLinkText=Add Document
+wait=500
+waitUntilById=title
+typeElementById=title=@#$edrawer@#$FAEW$R%$#@%fWS#E$@#
+waitUntilById=description
+typeElementById=description=34098f@#$FD@$%#$^$%
+wait=500
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=This is the Document created using special characters.
+wait=500
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=800
+searchElementValueByTagName=Body=Document created successfully.

@@ -1,0 +1,18 @@
+name=Ability to expand all parent-child aritfact cards in planning board
+component=Trackers(Boards)
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projectboards/do/viewPlanningBoard/projects.newproject/tracker
+wait=200
+clickSpanElementByCssSelector=combo-arrow=0
+wait=200
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder1
+wait=200
+clickSpanElementByCssSelector=artifact-expander
+wait=200
+clickSpanElementByCssSelector=artifact-expander=1
+wait=200
+clickElementByName=includeClosed
+wait=200
+searchElementValueByTagName=Body=1 Cards

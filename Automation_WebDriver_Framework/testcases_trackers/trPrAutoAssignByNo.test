@@ -1,0 +1,18 @@
+name=Ability to create auto assignment as None
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.private
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=autoAssign
+clickElementById=autoAssign
+wait=200
+clickElementById=noAutoAssignment
+waitUntilById=adminTrackerForm_Save
+clickElementById=adminTrackerForm_Save
+wait=200
+searchElementValueByTagName=body=Auto assignment rules updated successfully.

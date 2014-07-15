@@ -1,0 +1,14 @@
+name=View Previous document by clicking "Previous" button from document details page for project group -> public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText=save_document
+wait=500
+clickHrefByLinkText=< Previous
+wait=500
+searchElementValueByTagName=Body=To set the active version, edit and unlock the document.

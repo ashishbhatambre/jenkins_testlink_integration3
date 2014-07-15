@@ -1,0 +1,8 @@
+name=Ability to move to previous artifact via < Previous Button in view artifact page in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=< Previous
+wait=500
+searchElementValueByTagName=Body=Artifact artf1006 : BoardArtifact1

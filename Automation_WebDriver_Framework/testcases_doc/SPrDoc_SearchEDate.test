@@ -1,0 +1,20 @@
+name=Search Docuement by "Last Edited date values" in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Document
+waitUntilById=modifiedStartDate
+typeElementById=modifiedStartDate=08/30/2013
+waitUntilById=modifiedEndDate
+typeElementById=modifiedEndDate=12/22/2013
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=Private_Sub#NEXT#Documents

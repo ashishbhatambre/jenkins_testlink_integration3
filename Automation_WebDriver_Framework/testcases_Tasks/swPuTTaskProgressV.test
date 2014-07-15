@@ -1,0 +1,9 @@
+name=Verify My Task Progress Link 
+component=Tasks
+role=Sitewide Role_View Permission
+artifact=NA
+wait=300
+waitUntilById=myProgress
+clickElementById=myProgress
+wait=900
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

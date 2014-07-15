@@ -1,0 +1,25 @@
+name=Ability to filter the artifact with Submitted Users from multiple selection of users as user with create only permission
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=200
+waitUntilById=btn_filter!!string!!submittedByUsername
+clickElementById=btn_filter!!string!!submittedByUsername
+waitUntilByName=multiselect__filter!!string!!submittedByUsername
+clickElementById=ui-multiselect-_filter!!string!!submittedByUsername-option-5
+clickElementById=ui-multiselect-_filter!!string!!submittedByUsername-option-6
+wait=200
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=200
+searchElementValueByTagName=Body=(4 Items)
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

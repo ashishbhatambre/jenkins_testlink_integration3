@@ -1,0 +1,16 @@
+name=Ability to search Doc via Jump to id after navigating to a Documents
+component=Documents
+role=Global Role
+artifact=artf165997
+wait=300
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=400
+clickElementByName=DocMan
+wait=400
+waitUntilById=idsString
+typeElementById=idsString=doc1003
+wait=400
+runJavaScriptPopToMain=javascript:quickJump()
+wait=400
+searchElementValueByTagName=Body=(1 Item)

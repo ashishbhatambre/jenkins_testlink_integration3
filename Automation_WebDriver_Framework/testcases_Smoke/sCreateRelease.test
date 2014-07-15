@@ -1,0 +1,26 @@
+name=Ability to create File Release for package (without files) in private project as site admin user
+component=FRS
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=QWR243@
+wait=500
+waitUntilById=releaseList_create
+clickHrefByLinkText=Add
+wait=300
+waitUntilById=title
+typeElementById=title=QWR243@_Release
+waitUntilById=description
+typeElementById=description=Releases for the package created by site admin
+waitUntilById=status
+selectOptionValueByIdIndex=status=0
+waitUntilById=maturity
+selectOptionValueByIdIndex=maturity=5
+wait=300
+waitUntilById=createRelease_submit
+clickElementById=createRelease_submit
+wait=500
+searchElementValueByTagName=Body=Release created successfully.
+wait=500

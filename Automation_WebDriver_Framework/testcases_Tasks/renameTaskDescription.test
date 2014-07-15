@@ -1,0 +1,23 @@
+name=Rename the Task Description
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= test_task
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=500
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+waitUntilById=description
+typeElementById=description=Task description have updated with new text.
+wait=300
+waitUntilById=editTask_Save
+clickElementById=editTask_Save
+wait=300
+searchElementValueByTagName=Body=Task updated successfully.

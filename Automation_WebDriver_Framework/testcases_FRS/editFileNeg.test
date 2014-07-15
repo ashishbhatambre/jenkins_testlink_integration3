@@ -1,0 +1,23 @@
+name=Update the File in Release without adding file
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=FilePackage#123
+wait=500
+clickHrefByLinkText=File3
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=frsFilesSelection_Edit
+clickHrefByLinkText=Update
+wait=300
+waitUntilById=frsFile_submit
+clickElementById=frsFile_submit
+wait=500
+searchElementValueByTagName=Body= A file is required. 

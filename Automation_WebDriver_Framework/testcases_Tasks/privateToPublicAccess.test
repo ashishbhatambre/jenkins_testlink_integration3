@@ -1,0 +1,23 @@
+name=Ability to Change project Access Permission to Public
+component=Tasks
+role=NA
+artifact=NA
+wait=300
+url=sf/rbac/do/permissionAdmin/projects.project_data
+wait=300
+waitUntilById=defaultAccessPermissions
+clickElementById=defaultAccessPermissions
+waitUntilById=editDefaultPermissions
+clickElementById=editDefaultPermissions
+waitUntilById=public
+wait=500
+selectButtonByValue=1
+waitUntilById=editDefaultAccessPermissions_submit
+clickElementById=editDefaultAccessPermissions_submit
+wait=500
+searchElementValueByTagName=Body=Project access level was updated successfully.
+wait=500
+waitUntilById=editDefaultAccessApplicationPermissions_submit
+clickElementById=editDefaultAccessApplicationPermissions_submit
+wait=500
+searchElementValueByTagName=Body=Application permissions updated successfully.

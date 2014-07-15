@@ -1,0 +1,26 @@
+name=Copy and paste the Document within the Document folder for project group -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= ASDFEv#@$
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Copy
+clickElementById=selectDocuments_Copy
+wait=300
+searchElementValueByTagName=Body=1 document(s) copied to clipboard.
+wait=300
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Document "PDF_File" pasted successfully.
+searchElementValueByTagName=Body=1 document(s) pasted.

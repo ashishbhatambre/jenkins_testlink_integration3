@@ -1,0 +1,22 @@
+name=Verify Cancel Button on editing the Document
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=500
+clickHrefByLinkText=Edit / Update
+wait=500
+typeElementById=versionComment=Document Updated with version comment
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=NewProject#NEXT#Documents#NEXT#&Document_Folder&#NEXT#Document Details

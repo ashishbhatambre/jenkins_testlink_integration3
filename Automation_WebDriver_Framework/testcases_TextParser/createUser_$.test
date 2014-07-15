@@ -1,0 +1,33 @@
+name=Create User ${}
+component=Users
+role=NA
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Users
+wait=300
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilById=UsernameField
+typeElementById=UsernameField=muser1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+waitUntilById=confirmpwd
+typeElementById=confirmpwd=Collabnet1!
+waitUntilById=fullName
+typeElementById=fullName=${User1_Normal}
+waitUntilById=email
+typeElementById=email=scmuser@collab.net
+waitUntilById=companyName
+typeElementById=companyName=${CSPL}
+waitUntilById=localeString
+selectOptionValueByIdIndex=localeString=1
+waitUntilById=licenseType
+selectOptionValueByIdIndex=licenseType=0
+wait=300
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=300
+searchElementValueByTagName=Body=User muser1 has been created successfully.

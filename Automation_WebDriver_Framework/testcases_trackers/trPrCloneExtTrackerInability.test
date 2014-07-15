@@ -1,0 +1,25 @@
+name=Inability to Clone External Tracker without ID
+component=Tracker Admin 
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.private
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+waitUntilById=selectionMenuButton_CloneMenu_selectTrackers
+clickElementById=selectionMenuButton_CloneMenu_selectTrackers
+waitUntilById=selectTrackers_cloneExternalTracker
+clickElementById=selectTrackers_cloneExternalTracker
+wait=200
+switchToPopupWindow
+waitUntilById=cloneTrackerAcrossProjectIdForm_next
+clickElementById=cloneTrackerAcrossProjectIdForm_next
+wait=200
+searchElementValueByTagName=Body=Source Tracker Id is a required field. 
+wait=200
+clickHrefByLinkText=Cancel
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=Private#NEXT#Project Admin

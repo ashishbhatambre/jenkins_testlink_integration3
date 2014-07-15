@@ -1,0 +1,55 @@
+name=Ability to create Task in private projectSW_Pr_Create Role
+component=Tasks
+role=Sitewide_Create role
+artifact=NA
+wait=300 
+url=sf/taskmgr/do/listTasks/projects.swprivate/taskmgr.swa_taskfolder
+wait=300
+waitUntilById=listTasksSelect_Create
+clickElementById=listTasksSelect_Create
+wait=300
+waitUntilById=title
+typeElementById=title=TAC1
+waitUntilById=description
+typeElementById=description=Task1_Create Role
+wait=300
+selectOptionValueByNameValue=priority=2 - High
+wait=300
+selectOptionValueByNameValue=status=OK
+wait=300
+typeElementByName=startDate=08/07/2013
+wait=300
+typeElementByName=endDate=08/08/2013
+wait=300
+typeElementByName=estimatedHours=4
+wait=300
+typeElementByName=requiredHours=3
+waitUntilById=createTask_Save
+clickElementById=createTask_Save
+wait=300
+searchElementValueByTagName=Body=Task created successfully.
+waitUntilById=listTasksSelect_Create
+clickElementById=listTasksSelect_Create
+wait=300
+waitUntilById=title
+typeElementById=title=TAC2
+waitUntilById=description
+typeElementById=description=Task2_Create Role
+wait=300
+selectOptionValueByNameValue=priority=3 - Medium
+wait=300
+selectOptionValueByNameValue=status=Warning
+wait=300
+typeElementByName=startDate=08/07/2013
+wait=300
+typeElementByName=endDate=08/08/2013
+wait=300
+typeElementByName=estimatedHours=4
+wait=300
+typeElementByName=requiredHours=3
+waitUntilById=createTask_Save
+clickElementById=createTask_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Task created successfully.
+
+

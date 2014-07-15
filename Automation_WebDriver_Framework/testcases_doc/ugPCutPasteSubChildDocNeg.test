@@ -1,0 +1,26 @@
+name=Cut and Paste the Document within the Sub-child document folder for usergroup public project global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= ASDFEv#@$
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Cut
+clickElementById=selectDocuments_Cut
+wait=300
+selectElementValueByTagName=Body=1 document(s) cut to clipboard.
+wait=300
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=Unable to paste items to this location.
+searchElementValueByTagName=Body=The items were cut from and pasted to the same folder.

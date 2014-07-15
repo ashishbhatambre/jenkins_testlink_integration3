@@ -1,0 +1,18 @@
+name=Inability to create a tracker field without name in private project
+component=Trackers Admin 
+role=Direct Role_Admin Permission_Admin Permission
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Add Field
+waitUntilById=fieldForm_Save
+clickElementById=fieldForm_Save
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=Create Field

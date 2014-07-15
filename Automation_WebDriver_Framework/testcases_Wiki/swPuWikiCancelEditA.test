@@ -1,0 +1,13 @@
+name=Ability to cancel edit in wiki page as user with admin role in public project
+component=Wiki
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+waitUntilById=editorPrefSelect
+selectOptionValueByIdValue=editorPrefSelect=Plain Editor
+waitUntilById=editorarea
+typeElementById=editorarea=%%( color: rgb(255, 255, 153); )%%( background-color: rgb(153, 51, 0); )%%( font-size: larger; )%%( font-family: georgia; )__Hai Hello,__%%%%%%%% !!! %%( font-size: larger; )%%( text-align: right; )''This is the %%( background-color: rgb(255, 204, 0); )Wiki Page%% created for the%%( color: rgb(255, 102, 0); ) %%( color: rgb(153, 51, 102); )%%( text-decoration: underline; )Project %%which is under Testing.%%%%%%%%''%%%%
+waitUntilById=edit_wiki_page.cancel
+clickElementById=edit_wiki_page.cancel
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Wiki

@@ -1,0 +1,10 @@
+name=Ability to view Task WorkLoad in private project
+component=Tasks
+role=Direct Role_Edit Permission
+artifact=NA
+wait=300
+url=sf/taskmgr/do/viewSummary/projects.private/taskmgr
+waitUntilById=workload
+clickElementById=workload
+wait=700
+searchElementValueByTagName=Body=Private#NEXT#Tasks

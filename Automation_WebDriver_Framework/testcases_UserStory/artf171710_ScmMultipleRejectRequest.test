@@ -1,0 +1,21 @@
+name=Verify that ability to Reject multiple SCM Adapter Repository Access requests as SCM Integration Permission user when requires approval is enabled in Integrations
+component=Integration
+role=NA
+artifact= Tasks artf171712 TC - artf171710 [Goto Admin > Integrations >SCM Access Requests,Select check boxes of Repository Access Request item of 'scmatest1' and 'scmatest2' and click on Reject]
+wait=300
+waitUntilById=admin_link
+clickHrefByLinkText=Admin
+wait=500
+clickHrefByLinkText=Integrations
+wait=500
+waitUntilById=scmAccessRequests
+clickElementById=scmAccessRequests
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=27
+selectCheckBoxFromList=_listItem=28
+wait=500
+waitUntilById=selectAccessRequestForm_Reject
+clickElementById=selectAccessRequestForm_Reject
+wait=500
+searchElementValueByTagName=Body=Repository access request rejected.

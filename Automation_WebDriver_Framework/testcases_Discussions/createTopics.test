@@ -1,0 +1,17 @@
+name=Topics created to Forum [with Attachments]
+component=Discussions
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=NewForum
+wait=500
+waitUntilById=listTopic_create
+clickElementById=listTopic_create
+waitUntilById=title
+typeElementById=title=Testing
+waitUntilById=content
+typeElementById=content=Test process for project.
+waitUntilById=createTopic_submit
+clickElementById=createTopic_submit
+wait=500
+searchElementValueByTagName=Body=Topic created successfully.

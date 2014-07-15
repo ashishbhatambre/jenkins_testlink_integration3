@@ -1,0 +1,23 @@
+name=Cut & Paste multiple Documents 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgdfolder
+wait=300
+selectCheckBoxFromList=_listItem=0
+wait=300
+selectCheckBoxFromList=_listItem=1
+waitUntilById=selectDocuments_Cut
+clickElementById=selectDocuments_Cut
+wait=600
+searchElementValueByTagName=Body=2 document(s) cut to clipboard.
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgdfolder.ddddforname_to_attach_more_than.pgdscfolder
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=600
+searchElementValueByTagName=Body=2 document(s) pasted.
+wait=300

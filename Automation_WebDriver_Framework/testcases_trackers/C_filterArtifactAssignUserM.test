@@ -1,0 +1,25 @@
+name=Ability to filter the artifact with Assigned Users from Multiselect option as user with Create only permission
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=200
+waitUntilById=btn_filter!!string!!assignedToUsername
+clickElementById=btn_filter!!string!!assignedToUsername
+waitUntilByName=multiselect__filter!!string!!assignedToUsername
+selectButtonByValue=user1
+selectButtonByValue=user2
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=200
+searchElementValueByTagName=Body=	user2_normalPermission
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

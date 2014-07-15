@@ -1,0 +1,18 @@
+name=Ability to delete the artifact as private project in site admin user
+component=Tracker
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText= list3
+wait=10000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=500
+waitUntilById=selectArtifactsForm_delete
+clickHrefByLinkText=Delete
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=1 artifact(s) deleted successfully.

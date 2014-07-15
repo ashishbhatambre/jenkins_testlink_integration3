@@ -1,0 +1,16 @@
+name=creatArtifact
+component=Tracker
+role=NA
+artifact=NA
+url=sf/sfmain/do/myProjects
+clickHrefByLinkText=proj1
+clickHrefByLinkText=Trackers
+clickHrefByLinkText=test
+clickHrefByLinkText=Submit New Artifact
+waitUntilById=title
+typeElementById=title=test artifact
+typeElementById=description=test artifact
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Artifact submitted successfully.

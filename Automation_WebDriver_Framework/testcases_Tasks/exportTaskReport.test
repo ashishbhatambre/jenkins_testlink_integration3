@@ -1,0 +1,41 @@
+name=Export Task Report
+component=Task
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=Export
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=exportType
+selectButtonByValue=.xml
+wait=500
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Task ID
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Task Name
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Task Folder
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Description
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Priority
+waitUntilById=addOne
+clickElementById=addOne
+wait=500
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=500
+runJavaScriptPopToMain=javascript:close()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Reports#NEXT#Modify Task Report

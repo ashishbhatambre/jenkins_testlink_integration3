@@ -1,0 +1,10 @@
+name=Global Search_Without selecting any option under "In Projects" field.     
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168141           
+clickHrefByLinkText=Jump to ID
+clickElementById=search
+typeElementById=term=CloneTracker1
+selectOptionValueByIdIndex=applications=9
+clickElementById=searchForm_submit
+searchElementValueByTagName=Body=Trackers (4)

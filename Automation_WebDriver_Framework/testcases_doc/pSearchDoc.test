@@ -1,0 +1,17 @@
+name=Search Document and Verifying the details of searched document for public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=titleQuery
+typeElementById=titleQuery=page1
+wait=300
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Documents#NEXT#Root Folder#NEXT#Books#NEXT#Document Details

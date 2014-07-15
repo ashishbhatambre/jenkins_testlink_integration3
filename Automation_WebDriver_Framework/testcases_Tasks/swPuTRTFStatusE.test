@@ -1,0 +1,12 @@
+name=Verify Root Task Folder Status Link 
+component=Tasks
+role=Sitewide Role_Edit Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Tasks
+wait=500
+clickElementById=summary
+wait=500
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

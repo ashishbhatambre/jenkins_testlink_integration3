@@ -1,0 +1,15 @@
+name=Create Project ugProject -> Site Admin User
+component=Projects
+role=Admin Permission
+artifact=NA
+url=sf/sfmain/do/myProjects
+wait=300
+clickElementById=createProject
+waitUntilById=title
+typeElementById=title=ugProject
+waitUntilById=description
+typeElementById=description=This is a Project which has user group role
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=500
+searchElementValueByTagName=Body=ugProject#NEXT#Project Home  

@@ -1,0 +1,9 @@
+name=Verify task Summery Change Request
+component=Tasks 
+role=Direct Role_View Permission
+artifact=NA
+wait=300
+waitUntilById=changeRequests
+clickElementById=changeRequests
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Tasks

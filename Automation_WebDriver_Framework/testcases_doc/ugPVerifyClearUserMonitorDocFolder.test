@@ -1,0 +1,38 @@
+name=Clear Name in Find a User page from Users Monitoring folder list in document folder for usergroup public project with global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_pub_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Users Monitoring Folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+waitUntilById=name
+typeElementById=name=p1
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=500
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=p1_adminPermission
+wait=500
+clickHrefByLinkText=Add
+wait=500
+clickHrefByLinkText=Clear
+wait=500
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=UG_Pub_Project#NEXT#Documents#NEXT#$Document_Folder$#NEXT#

@@ -1,0 +1,9 @@
+name=Verify Search Tracker link
+component=Project
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+waitUntilbyId=searchTracker
+clickElementById=searchTracker
+wait=300
+searchElementValueByTagName=Body=NProject#NEXT#Trackers

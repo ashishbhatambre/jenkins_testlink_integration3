@@ -1,0 +1,20 @@
+name=Display Number of cards in Planning Board Swimlanes
+component=Tracker
+role=Global Role
+artifact=artf161533
+wait=300
+url=sf/tracker/do/listTrackers/projects.newproject/tracker
+wait=400
+clickHrefByLinkText=Plan
+wait=1300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=1300
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=1300
+searchElementValueByTagName=body=2 Cards
+wait=1300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=1300
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder1
+wait=1300
+searchElementValueByTagName=body=1 Cards

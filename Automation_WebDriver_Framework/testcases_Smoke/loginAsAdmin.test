@@ -1,0 +1,10 @@
+name=Login As Admin user
+component=login
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=admin
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page

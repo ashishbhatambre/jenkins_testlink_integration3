@@ -1,0 +1,22 @@
+name=Ability to create User Groups as Admin
+component=User Groups
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=User Groups
+wait=500
+waitUntilById=allGroups
+clickElementById=allGroups
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=fullName
+typeElementById=fullName=TestUsers
+waitUntilById=description
+typeElementById=description=users who are under testing work for the Public project.
+waitUntilById=createGroup_submit
+clickElementById=createGroup_submit
+wait=500
+searchElementValueByTagName=Body=User Group#NEXT#TestUsers#NEXT#has been created successfully.

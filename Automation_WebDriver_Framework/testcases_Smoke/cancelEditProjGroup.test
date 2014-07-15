@@ -1,0 +1,19 @@
+name=Ability to cancel Project Group description update
+component=Project Groups
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Project Groups
+wait=500
+clickHrefByLinkText=TestedProjects
+wait=500
+waitUntilById=edit_group.edit
+clickElementById=edit_group.edit
+wait=500
+waitUntilById=description
+typeElementById=description=edited project group.
+wait=500
+clickHrefByLinkText=Cancel
+wait=500
+searchElementValueByTagName=Body=Site Administration#NEXT#Project Groups#NEXT#TestedProjects 

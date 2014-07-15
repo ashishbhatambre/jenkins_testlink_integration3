@@ -1,0 +1,19 @@
+name=Ability to create restricted user
+component=Users
+role=Admin
+artifact=NA
+url=ctf/main/listUsersAdmin
+wait=300
+clickHrefByLinkText=Single
+wait=4000
+custom=qa-name=username=type=newuser3
+custom=qa-name=password=type=Collabnet1!
+custom=qa-name=confirmPassword=type=Collabnet1!
+custom=qa-name=fullName=type=newuser3_DeleteOnlyPermission
+custom=qa-name=email=type=newuser3@collab.net
+custom=qa-name=organization=type=cspl
+custom=qa-name=licenseType=select=ALM
+custom=qa-name=restrictedUser=checkboxclick=1
+clickSpanElementByCssSelector=widgets-btn-grouped ng-scope
+wait=500
+searchElementValueByTagName=Body=The user "newuser3" was successfully created.

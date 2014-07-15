@@ -1,0 +1,16 @@
+name=Search task by task ID
+component=Task
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Search Tasks
+wait=500
+waitUntilById=taskId
+typeElementById=taskId=task1004
+wait=300
+waitUntilById=searchTasks_Search
+runJavaScriptPopToMain=javascript:submitForm(document.searchTasks, 'Search')
+wait=300
+searchElementValueByTagName=Body=(1 Item)

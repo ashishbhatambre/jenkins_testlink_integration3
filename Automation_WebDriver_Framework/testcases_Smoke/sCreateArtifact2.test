@@ -1,0 +1,21 @@
+name=Ability to create arifact with open status in private project as site admin
+component=Tracker
+wait=300
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+wait=500
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen2
+wait=500
+waitUntilById=title
+typeElementById=title=ARTI2
+waitUntilById=description
+typeElementById=description=artifact for the list1 PlanFolder
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=2 - High
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=1000
+searchElementValueByTagName=Body=Artifact submitted successfully.

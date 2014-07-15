@@ -1,0 +1,23 @@
+name=Ability to Search wiki page in public porject
+component=Wiki
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Wiki
+wait=200
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Wiki
+wait=200
+waitUntilById=searchWikiPages_submit
+clickElementById=searchWikiPages_submit
+wait=200
+searchElementValueByTagName=Body=PubProject#NEXT#Wiki#NEXT#Search Wiki Pages
+wait=200
+clickHrefByLinkText=Return
+wait=200
+searchElementValueByTagName=Body=PubProject#NEXT#Wiki#NEXT#Home page#NEXT#View Wiki Page
+wait=200

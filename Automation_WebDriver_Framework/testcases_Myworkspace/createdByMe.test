@@ -1,0 +1,5 @@
+name=My Page_Created by Me
+waitUntilById=createdByMe
+clickElementById=createdByMe
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

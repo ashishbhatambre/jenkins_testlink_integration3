@@ -1,0 +1,29 @@
+name=status Rollup in Task Manager settings for pubproject
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Task Manager Settings
+wait=300
+waitUntilById=rollup
+clickElementById=rollup
+wait=300
+waitUntilById=alertpercentage
+typeElementById=alertpercentage=30
+waitUntilById=warningpercentage
+typeElementById=warningpercentage=60
+waitUntilById=okpercentage
+typeElementById=okpercentage=70
+waitUntilById=completepercentage
+typeElementById=completepercentage=100
+waitUntilById=notstartedpercentage
+typeElementById=notstartedpercentage=10
+wait=300
+waitUntilById=taskStatusRollupPreference_submit
+clickElementById=taskStatusRollupPreference_submit
+wait=300
+searchElementValueByTagName=Body=Task status rollup percentages saved.

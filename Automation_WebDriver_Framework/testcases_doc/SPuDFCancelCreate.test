@@ -1,0 +1,19 @@
+name=Cancel create Document Folder in Sub Project in inherited public project
+component=Projects
+role=DirectRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.public_sub/docman.root
+wait=300
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+waitUntilById=title
+typeElementById=title=Folder
+runJavaScriptPopToMain=javascript:cancelFolderCreate()
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Public_Sub#NEXT#Documents
+wait=300
+

@@ -1,0 +1,28 @@
+name=Ability to cancel association creation to an artifact
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/tracker/do/listTrackers/projects.private/tracker
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=associationIdString
+typeElementById=associationIdString=artf1066
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=Private

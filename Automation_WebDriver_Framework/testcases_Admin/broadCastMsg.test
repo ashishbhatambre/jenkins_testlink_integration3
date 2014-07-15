@@ -1,0 +1,21 @@
+name=Ability to add Broadcast message
+component=System Tools
+role=NA
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=System Tools
+wait=500
+clickHrefByLinkText=Broadcast Message
+wait=500
+waitUntilById=broadcastMessageField
+typeElementById=broadcastMessageField=This Box is Under testing.
+wait=300
+waitUntilById=broadcastMessage_submit
+clickHrefByLinkText=Broadcast
+wait=500
+clickHrefByLinkText=Broadcast Message
+wait=500
+searchElementValueByTagName=Body=This Box is Under testing.

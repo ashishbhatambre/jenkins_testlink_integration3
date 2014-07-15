@@ -1,0 +1,36 @@
+name=Ability to create Tracker in Public Project
+component=Tracker Admin
+role=Global Role
+artifact=NA
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+waitUntilById=projectAdminTracker_create
+clickElementById=projectAdminTracker_create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=Stories
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=Stories list for the project PrvProject
+wait=200
+selectButtonByValue=icon_01.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+wait=200
+searchElementValueByTagName=Body=Tracker created successfully.
+wait=200
+waitUntilById=projectAdminTracker_create
+clickHrefByLinkText=Create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=Hints
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=Hints for the project PrvProject
+wait=200
+selectButtonByValue=icon_45.png
+wait=200
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+wait=200
+searchElementValueByTagName=Body=Tracker created successfully.

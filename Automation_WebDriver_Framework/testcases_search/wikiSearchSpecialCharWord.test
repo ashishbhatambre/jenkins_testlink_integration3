@@ -1,0 +1,12 @@
+name=Wiki Search_With keyword containing special characters with double quotes 
+component=Wiki
+role=Site Admin
+artifact=artf163015       
+wait=300
+url=sf/wiki/do/viewPage/projects.project_search/wiki/HomePage
+wait=300
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+typeElementById=keywordQuery="&status$"
+clickElementById=searchWikiPages_submit
+searchElementValueByTagName=Body=Link3

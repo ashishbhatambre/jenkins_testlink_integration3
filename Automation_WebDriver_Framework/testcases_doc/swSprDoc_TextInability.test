@@ -1,0 +1,21 @@
+name=Inability to create document without file in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root.folder
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_Inability
+wait=300
+waitUntilById=description
+typeElementById=description=Doc_Inability
+wait=300
+selectButtonByValue=fromText
+wait=300
+clickHrefByLinkText=Save
+wait=300
+searchElementValueByTagName=Body= Text is required. 
+wait=300

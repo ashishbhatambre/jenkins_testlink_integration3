@@ -1,0 +1,32 @@
+name=Add users to Users Monitoring folder list in document folder by "Add All" option from Found User list for project group - >public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= P_Child_Folder
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=500
+clickHrefByLinkText=Users Monitoring Folder
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+wait=300
+waitUntilById=addAll
+clickElementById=addAll
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=600
+runJavaScriptPopToMain=javascript:close()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=PG_Prv_Project#NEXT#Documents#NEXT#P_RootFolder#NEXT#P_DocFolder#NEXT#P_Child_Folder#NEXT#List Documents 

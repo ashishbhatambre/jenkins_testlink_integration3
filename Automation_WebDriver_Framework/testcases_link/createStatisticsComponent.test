@@ -1,0 +1,16 @@
+name=Create Project Statistics Component
+waitUntilById=CreatePageComponentLink
+clickElementById=CreatePageComponentLink
+waitUntilById=title
+typeElementById=title=StatisticsComponent
+wait=300
+selectButtonByValue=graphs
+wait=300
+selectButtonByValue=0
+wait=300
+selectButtonByValue=false
+wait=300
+waitUntilById=component_html
+clickElementById=component_html
+wait=300
+searchElementValueByTagName=Body=NProject#NEXT#Project Home

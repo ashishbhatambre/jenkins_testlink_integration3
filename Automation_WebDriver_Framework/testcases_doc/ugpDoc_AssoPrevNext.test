@@ -1,0 +1,33 @@
+name=Verify the functionality of Previous & Next Button in Association wizard in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugpproject/docman.root.ugpfolder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=2
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=recentlyEditedIds
+selectOptionValueByIdIndex=recentlyEditedIds=0
+wait=300
+clickHrefByLinkText=Next >
+wait=600
+clickHrefByLinkText=< Previous
+wait=600
+clickHrefByLinkText=Cancel
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=ugpProject#NEXT#Documents

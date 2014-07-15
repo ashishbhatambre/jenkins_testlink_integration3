@@ -1,0 +1,16 @@
+name=Ability to update category tilte and description
+component=Admin
+role=NA
+artifact=NA
+wait=500
+clickHrefByLinkText= TestCategory
+wait=500
+waitUntilById=title
+typeElementById=title=ProjectCategory
+waitUntilById=description
+typeElementById=description=Category have edited for project.
+wait=300
+waitUntilById=adminCategories_update
+clickElementById=adminCategories_update
+wait=300
+searchElementValueByTagName=Body=Category updated successfully.

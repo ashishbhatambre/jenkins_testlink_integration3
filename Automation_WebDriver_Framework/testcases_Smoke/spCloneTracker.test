@@ -1,0 +1,32 @@
+name=Ability to clone tracker in public project as site admin user
+component=Tracker
+wait=300
+url=sf/projects/ft_pub_project/
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+clickHrefByLinkText=Tracker Settings
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=500
+waitUntilById=selectionMenuButton_CloneMenu_selectTrackers
+clickElementById=selectionMenuButton_CloneMenu_selectTrackers
+wait=500
+waitUntilById=selectTrackers_cloneTracker
+clickElementById=selectTrackers_cloneTracker
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=CloneTRACKER
+wait=500
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=copy of Tracker2
+wait=800
+waitUntilById=cloneTrackerForm_submit
+clickElementById=cloneTrackerForm_submit
+wait=800
+withoutPopCloseSwitchToMainWindow
+wait=800
+searchElementValueByTagName=Body=Tracker cloned successfully.

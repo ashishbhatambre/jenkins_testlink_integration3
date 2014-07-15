@@ -1,0 +1,22 @@
+name=Ability to remove users from monitoring list in private project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.swprivate/wiki/HomePage
+wait=500
+clickHrefByLinkText=Users Monitoring
+wait=300
+switchToPopupWindow
+wait=300
+selectButtonByValue=swuser1
+wait=300
+waitUntilById=selectUsers_removeUsers
+clickElementById=selectUsers_removeUsers
+acceptJavaScriptConfirm
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Wiki

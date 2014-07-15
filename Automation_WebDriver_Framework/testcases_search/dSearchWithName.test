@@ -1,0 +1,15 @@
+name=Document Search_Using 'Document Name field'.
+component=Documents
+role=Site Admin
+artifact=artf155299
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1.searchfolder2
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=titleQuery
+typeElementById=titleQuery=Test_Document1
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=500
+searchElementValueByTagName=Body=Test_Document1
+

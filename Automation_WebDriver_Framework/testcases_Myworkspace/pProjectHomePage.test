@@ -1,0 +1,10 @@
+name=Public Project Home Configure ON link
+component=Project Home
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=300
+clickSpanElementByCssSelector=labelRight
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Project Home 

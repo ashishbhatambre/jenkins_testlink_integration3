@@ -1,0 +1,25 @@
+name=Ability to create Document by uploading a PDF file in private project as site admin user
+component=Document
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Doc2
+wait=500
+clickHrefByLinkText=Add Document
+wait=500
+waitUntilById=title
+typeElementById=title=PDF_File
+waitUntilById=description
+typeElementById=description=pdf file is attached
+wait=500
+selectButtonByValue=fromFile
+wait=500
+waitUntilById=file
+typeValueForFileField=C:\Uploaded_Files\test.pdf
+wait=500
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=500
+searchElementValueByTagName=Body=Document created successfully.

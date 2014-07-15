@@ -1,0 +1,10 @@
+name=Global Search_Without selecting any checkbox    
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168137          
+clickHrefByLinkText=Jump to ID
+clickElementById=search
+typeElementById=term=CloneTracker1
+selectOptionValueByIdIndex=applications=8
+clickElementById=searchForm_submit
+searchElementValueByTagName=Body=Trackers (4)

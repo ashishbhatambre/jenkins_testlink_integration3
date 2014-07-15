@@ -1,0 +1,25 @@
+name=Removing the File Association
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=File Releases
+wait=300
+clickHrefByLinkText=Package@
+wait=300
+clickHrefByLinkText=File31
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=associationListForm_remove
+clickElementById=associationListForm_remove
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=1 association(s) were deleted.

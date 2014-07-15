@@ -1,0 +1,31 @@
+name=cut and Paste Task
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= task1
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=2
+wait=300
+clickHrefByLinkText=Cut
+searchElementValueByTagName=Body=1 task(s) cut to clipboard.
+wait=500
+clickHrefByLinkText= task2
+wait=500
+waitUntilById=listTasksSelect_Paste
+clickHrefByLinkText=Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=Task "t1" pasted Successfully.
+searchElementValueByTagName=Body=1 task(s) pasted from clipboard.

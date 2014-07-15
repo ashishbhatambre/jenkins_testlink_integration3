@@ -1,0 +1,8 @@
+name=Navigate to document folder from breadcrumbs link 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate/docman.root.document1
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Documents

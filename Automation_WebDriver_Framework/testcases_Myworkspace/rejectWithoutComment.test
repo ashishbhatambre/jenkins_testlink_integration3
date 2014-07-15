@@ -1,0 +1,7 @@
+name=Reject the project without comment
+wait=300
+selectCheckBoxFromList=_listItem=0
+waitUntilById=handleProjectRequests_Reject
+clickElementById=handleProjectRequests_Reject
+wait=300
+searchElementValueByTagName=Body=Rejected request to create project

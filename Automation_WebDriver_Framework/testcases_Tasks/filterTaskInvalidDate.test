@@ -1,0 +1,24 @@
+name=Filter Task usign invalid date Formate
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= test_task
+wait=500
+waitUntilByName=_filter!!date!!startDate
+typeElementByName=_filter!!date!!startDate=2013/04/03
+waitUntilById=applyfilterbutton
+clickElementById=applyfilterbutton
+wait=500
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=The filter provided was invalid. Please ensure that all fields are in a valid format.
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

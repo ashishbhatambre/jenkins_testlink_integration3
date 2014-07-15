@@ -1,0 +1,28 @@
+name=Ability to create Select Date field in the Tracker
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.private
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Add Field
+wait=200
+waitUntilById=fieldname
+typeElementById=fieldname=Date Effort
+wait=200
+selectOptionValueByIdIndex=selectedDisplayType=3
+wait=200
+waitUntilById=helpText
+typeElementById=helpText=Date Input Type
+wait=200
+waitUntilById=fieldForm_Save
+clickElementById=fieldForm_Save
+wait=200
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Field created successfully.

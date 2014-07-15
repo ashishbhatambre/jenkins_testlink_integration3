@@ -1,0 +1,8 @@
+name=Ability to view the Wiki Link page in public project
+component=Wiki
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+clickHrefByLinkText=LinkPage1
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Wiki

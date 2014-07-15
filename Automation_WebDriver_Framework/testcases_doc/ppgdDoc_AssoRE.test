@@ -1,0 +1,35 @@
+name=Associate Doc via Recently Edited in public project
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+selectOptionValueByIdIndex=recentlyEditedIds=1
+wait=300
+clickHrefByLinkText=Next >
+wait=300
+waitUntilById=description
+typeElementById=description=Association via Recently Edited
+wait=300
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=1000
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=300
+clickHrefByLinkText=Close
+withoutPopCloseSwitchToMainWindow
+wait=300

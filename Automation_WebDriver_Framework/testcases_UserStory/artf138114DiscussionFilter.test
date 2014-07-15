@@ -1,0 +1,44 @@
+name=Ability to automate the functionality of Filter options in discussion for artf138114
+component=Role
+role=Global Role
+artifact=artf138114
+wait=300
+url=sf/discussion/do/listForums/projects.newproject/discussion
+wait=300
+clickHrefByLinkText=NewForum
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Testing
+wait=1000
+clickHrefByLinkText=Filter
+wait=1000
+clickElementByCssSelector=FilterRight
+wait=1000
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+searchElementValueByTagName=Body=Discussions
+wait=300
+url=sf/frs/do/listReleases/projects.newproject/frs.filepackage
+wait=300
+waitUntilById=releaseList_create
+clickHrefByLinkText=Add
+waitUntilById=title
+typeElementById=title=File2
+typeElementByName=description=File2 created for Package FilePackage
+waitUntilById=createRelease_submit
+clickElementById=createRelease_submit
+wait=300
+searchElementValueByTagName=Body=Releases created successfully.
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=File2
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=500
+url=sf/sfmain/do/logout
+wait=500
+searchElementValueByTagName=Body=Home

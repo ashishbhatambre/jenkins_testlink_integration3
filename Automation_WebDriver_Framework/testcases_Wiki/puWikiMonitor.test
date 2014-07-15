@@ -1,0 +1,14 @@
+name=Ability to monitor Wiki Page in public project
+component=Wiki
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=button_monitor_object
+clickElementById=button_monitor_object
+wait=300
+searchElementValueByTagName=Body=Wiki Page is no longer monitored.
+wait=300
+waitUntilById=button_monitor_object
+clickElementById=button_monitor_object
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Wiki Page is now being monitored.

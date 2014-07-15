@@ -1,0 +1,28 @@
+name=Inability to create duplicate category
+component=Categories
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Categories
+wait=500
+waitUntilById=new_category
+clickElementById=new_category
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilByName=title
+typeElementByName=title=Division
+waitUntilByName=description
+typeElementByName=description=Category are created to paste the subcategory.
+wait=600
+waitUntilById=createCategory_submit
+clickElementById=createCategory_submit
+wait=600
+searchElementValueByTagName=Body=Category name already exists in the current parent category.
+wait=600
+runJavaScriptPopToMain=javascript:cancelFolderCreate()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=Site Administration#NEXT#Project Categories#NEXT#Edit Category

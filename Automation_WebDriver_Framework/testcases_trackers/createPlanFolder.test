@@ -1,0 +1,13 @@
+name=Ability to create Planing folder
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+waitUntilById=capacity
+typeElementById=capacity=40
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#List Trackers and Planning Folders

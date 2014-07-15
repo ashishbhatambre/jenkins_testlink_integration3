@@ -1,0 +1,9 @@
+name=Ability to view task Back Link in public project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+waitUntilById=backlinks
+clickElementById=backlinks
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Wiki

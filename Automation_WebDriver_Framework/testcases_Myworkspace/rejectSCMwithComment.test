@@ -1,0 +1,17 @@
+name=Reject scm repo with comment
+component=My Workspace
+role=Admin Role
+artifact=NA
+wait=300
+clickHrefByLinkText=My Workspace
+clickHrefByLinkText=Pending SCM Integrations
+wait=300
+clickHrefByLinkText=Rep2
+wait=300
+selectButtonByValue=Reject
+waitUntilById=comment
+typeElementById=comment=Rep2 has been rejected
+waitUntilById=repositoryRequest_submit
+clickElementById=repositoryRequest_submit
+wait=300
+searchElementValueByTagName=Body=Rejected request to create repository Rep2.

@@ -1,0 +1,21 @@
+name=Search Document Folder(Root-Child-Sub Child) Via Jump To Id in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1064
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1065
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1066
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=Documents

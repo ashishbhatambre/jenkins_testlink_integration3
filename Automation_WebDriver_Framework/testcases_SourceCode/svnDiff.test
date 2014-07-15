@@ -1,0 +1,6 @@
+name=Svn files Differences
+component=SourceCode
+role=Global Role
+artifact=NA
+runCommands=vcscript/svndiff.cmd
+verifyCommandOutput=Checked out revision 5.

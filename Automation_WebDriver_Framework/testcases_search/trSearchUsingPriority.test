@@ -1,0 +1,16 @@
+name=Search using 'Priority' field: Select either a single or multiple value.
+component=Trackers
+role=Site Admin
+artifact=artf161286 
+wait=300
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=searchTracker
+clickElementById=searchTracker
+wait=300
+selectOptionValueByIdIndex=priorities=3
+selectOptionValueByIdIndex=priorities=4
+selectOptionValueByIdIndex=priorities=5
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=(3 Items)

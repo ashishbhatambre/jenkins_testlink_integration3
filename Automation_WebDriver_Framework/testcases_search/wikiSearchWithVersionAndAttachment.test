@@ -1,0 +1,17 @@
+name=Wiki Search_using 'Search Text' field with all checkboxs selected  
+component=Wiki
+role=Site Admin
+artifact=artf163012  
+wait=300
+url=sf/wiki/do/viewPage/projects.project_search/wiki/HomePage
+wait=300
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+wait=300
+waitUntilbyId=keywordQuery
+typeElementById=keywordQuery=Teamforge
+clickElementById=inAttachments
+clickElementById=allVersionsScope
+clickElementById=searchWikiPages_submit
+searchElementValueByTagName=Body=Link1
+searchElementValueByTagName=Body=Home page

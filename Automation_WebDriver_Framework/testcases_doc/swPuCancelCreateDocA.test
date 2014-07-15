@@ -1,0 +1,29 @@
+name=Cancel Create Document in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_1
+wait=300
+waitUntilById=description
+typeElementById=description=This is .doc document
+wait=300
+selectOptionValueByIdIndex=status=0
+wait=300
+typeValueForFileField=C:\Uploaded_Files\link.txt
+wait=300
+waitUntilById=versionComment
+typeElementById=versionComment=Version1
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Documents

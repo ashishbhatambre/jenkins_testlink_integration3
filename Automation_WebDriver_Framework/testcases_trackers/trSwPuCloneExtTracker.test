@@ -1,0 +1,26 @@
+name=Ability to Clone External Tracker 
+component=Tracker Admin
+role=Sitewide Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.swpublic
+wait=200
+clickHrefByLinkText=Tracker Settings
+waitUntilById=selectionMenuButton_CloneMenu_selectTrackers
+clickElementById=selectionMenuButton_CloneMenu_selectTrackers
+waitUntilById=selectTrackers_cloneExternalTracker
+clickElementById=selectTrackers_cloneExternalTracker
+wait=200
+switchToPopupWindow
+waitUntilById=sourceTrackerId
+typeElementById=sourceTrackerId=tracker1005
+waitUntilById=cloneTrackerAcrossProjectIdForm_next
+clickElementById=cloneTrackerAcrossProjectIdForm_next
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=ExtCloneTracker1
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=External Cloned Tracker
+waitUntilById=cloneTrackerAcrossProjectDetailsForm_create
+clickElementById=cloneTrackerAcrossProjectDetailsForm_create
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=SWPublic#NEXT#Project Admin

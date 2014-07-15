@@ -1,0 +1,39 @@
+name=Create Task Association using "Recently Edited" Items
+component=Tasks
+role=Sitewide Role_Edit Permission
+artifact=NA
+wait=300
+url=sf/projects/swprivate/
+wait=300
+clickHrefByLinkText=Tasks
+wait=900
+clickHrefByLinkText= SWA_TaskFolder
+wait=600
+clickHrefByLinkText=TAC2
+wait=500
+waitUntilById=associations
+clickElementById=associations
+wait=300
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+selectButtonByValue=recentlyEditedBox
+wait=300
+waitUntilById=recentlyEditedIds
+selectOptionValueByIdIndex=recentlyEditedIds=0
+wait=300
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+wait=300
+waitUntilById=description
+typeElementById=description=Association with Task1
+wait=300
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=300
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=300
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=300
+withoutPopCloseSwitchToMainWindow

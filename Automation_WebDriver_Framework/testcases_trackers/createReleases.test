@@ -1,0 +1,27 @@
+name=creating the Releases for the package of file release in private project
+component=FRS
+role=Global Role
+aritfact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=File Releases
+wait=200
+clickHrefByLinkText=Package@
+wait=200
+clickHrefByLinkText=Add
+wait=200
+waitUntilById=title
+typeElementById=title=File11
+typeElementByName=description=File created for Package FilePackage
+clickElementById=createRelease_submit
+wait=200
+searchElementValueByTagName=Body=Release created successfully.
+wait=200
+clickHrefByLinkText=Add
+wait=200
+waitUntilById=title
+typeElementById=title=File31
+typeElementByName=description=File created for Package FilePackage
+clickElementById=createRelease_submit
+wait=200
+searchElementValueByTagName=Body=Release created successfully.

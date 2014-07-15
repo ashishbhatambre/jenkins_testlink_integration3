@@ -1,0 +1,24 @@
+name=Ability to create membership to project(s)
+component=Project Admin
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/userMembership/projects.nproject
+waitUntilById=addUserLink
+clickElementById=addUserLink
+wait=600
+selectButtonByValue=tuser1
+wait=300
+clickHrefByLinkText=Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=User(s) added to the project: tuser1_adminPermission (tuser1) .
+wait=300
+url=sf/sfmain/do/userMembership/projects.pproject
+waitUntilById=addUserLink
+clickElementById=addUserLink
+wait=600
+selectButtonByValue=ptester1
+wait=500
+clickHrefByLinkText=Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=User(s) added to the project: ptester1_adminPermission (ptester1) .

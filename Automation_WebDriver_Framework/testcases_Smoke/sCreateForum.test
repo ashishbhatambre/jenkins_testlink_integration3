@@ -1,0 +1,26 @@
+name=Ability to create Forum in private project as site admin user
+component=Discussions
+wait=300
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Discussions
+wait=300
+waitUntilById=listForums_create
+clickElementById=listForums_create
+waitUntilById=title
+typeElementById=title=Forum_Discussions
+waitUntilById=description
+typeElementById=description=discussions on private project
+waitUntilById=forumForm_submit
+clickElementById=forumForm_submit
+wait=800
+waitUntilById=listForums_create
+clickElementById=listForums_create
+waitUntilById=title
+typeElementById=title=Forum
+waitUntilById=description
+typeElementById=description=discussions forum on private projectf
+waitUntilById=forumForm_submit
+clickElementById=forumForm_submit
+wait=500
+searchElementValueByTagName=Body=Forum created successfully.

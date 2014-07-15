@@ -1,0 +1,18 @@
+name=Monitoring the Current Document Folder for public child project by global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Doc_List
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+waitUntilById=monitor_current_folder
+clickElementById=monitor_current_folder
+wait=300
+searchElementValueByTagName=Body=Document Folder is now being monitored.

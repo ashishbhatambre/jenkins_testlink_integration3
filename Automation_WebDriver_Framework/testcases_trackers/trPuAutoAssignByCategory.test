@@ -1,0 +1,20 @@
+name=Ability to do Auto Assignment by Category 
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.public
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+waitUntilById=autoAssign
+clickElementById=autoAssign
+wait=200
+clickElementById=autoAssignByCategory
+wait=200
+selectOptionValueByIdIndex=adminTrackerForm_categoryAutoAssignUser()=1
+wait=200
+waitUntilById=adminTrackerForm_Save
+clickElementById=adminTrackerForm_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Auto assignment rules updated successfully.

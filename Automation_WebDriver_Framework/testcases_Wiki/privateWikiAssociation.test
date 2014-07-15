@@ -1,0 +1,28 @@
+name=Ability to create Wiki Association in private project
+component=Wiki
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=associationIdString
+typeElementById=associationIdString=page1004
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+waitUntilById=description
+typeElementById=description=Wiki Page Associate to Document post1001.
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=1000
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+searchElementValueByTagName=Body=Private#NEXT#Wiki

@@ -1,0 +1,23 @@
+name=Ability to update Status Field in artifact
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=200
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=200
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=Pending
+wait=200
+waitUntilById=viewArtifactForm_Save
+clickElementById=viewArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact data updated successfully.

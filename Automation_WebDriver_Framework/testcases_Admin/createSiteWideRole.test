@@ -1,0 +1,23 @@
+name=Ability to create SiteWide Role
+component=Role
+role=Admin
+artifact=NA
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Roles
+wait=500
+waitUntilById=siteWideRoles
+clickElementById=siteWideRoles
+wait=300
+waitUntilById=listSiteRoles_create
+clickElementById=listSiteRoles_create
+waitUntilById=title
+typeElementById=title=role1
+waitUntilById=description
+typeElementById=description=creating SiteWide Role for users.
+wait=300
+waitUntilById=createSiteWideRoleForm_submit
+clickElementById=createSiteWideRoleForm_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Site-wide Role created successfully.

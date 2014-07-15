@@ -1,0 +1,15 @@
+name=Ability to Tracker summary in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=200
+waitUntilById=showHideChartButton
+clickElementById=showHideChartButton
+wait=200
+searchElementValueByTagName=Body=NewTracker

@@ -1,0 +1,24 @@
+name=Setting Integrated Application
+component=ReviewBoard
+role=Global Role
+aritfact=NA
+wait=300
+url=sf/projects/newproject
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Project Toolbar
+waitUntilById=pluggableApp
+clickElementById=pluggableApp
+wait=300
+clickHrefByLinkText=Add
+waitUntilById=configurePluggableApplication_ConfigureAndAdd
+clickElementById=configurePluggableApplication_ConfigureAndAdd
+wait=300
+typeElementById=PlugAppPrefix=EB
+wait=300
+clickElementByName=param_syncRepo
+waitUntilById=configurePluggableApplication_Save
+clickElementById=configurePluggableApplication_Save
+wait=300
+searchElementValueByTagName=Body=Review Board added successfully.

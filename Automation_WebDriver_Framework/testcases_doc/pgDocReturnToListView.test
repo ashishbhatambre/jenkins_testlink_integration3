@@ -1,0 +1,16 @@
+name=Return to list documents page by clicking Return button from document view page for project group -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=500
+url=sf/projects/pg_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= PG_Child_Folder
+wait=500
+clickHrefByLinkText=document_Renamed
+wait=500
+clickHrefByLinkText=Return
+wait=500
+searchElementValueByTagName=Body=PG_Prv_Project#NEXT#Documents#NEXT#PG_RootFolder#NEXT#PG_DocFolder#NEXT#PG_Child_Folder#NEXT#List Documents 

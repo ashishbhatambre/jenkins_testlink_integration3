@@ -1,0 +1,48 @@
+name=Ability to export Task Report in private project as site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Reports
+wait=300
+waitUntilById=reports
+clickElementById=reports
+wait=500
+clickHrefByLinkText=EventReport
+wait=500
+clickHrefByLinkText=Export
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=exportType
+selectButtonByValue=.xml
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Task ID
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Task Name
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Task Folder
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Description
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Priority
+waitUntilById=addOne
+clickElementById=addOne
+wait=500
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=500
+runJavaScriptPopToMain=javascript:close()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Reports#NEXT#Modify Task Report
+wait=500

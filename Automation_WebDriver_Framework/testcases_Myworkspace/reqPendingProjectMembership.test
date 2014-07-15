@@ -1,0 +1,20 @@
+name=Re-Request Membership for a project
+component=Project
+role=Restricted User
+artifact=NA
+wait=300
+url=sf/sfmain/do/myProjects?selectedTab=all
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=PProject
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=700
+selectCheckBoxFromList=_listItem=0
+wait=700
+waitUntilById=selectProjects_join
+clickElementById=selectProjects_join
+wait=400
+searchElementValueByTagName=Body=You have a pending membership request for this project. 
+wait=300
+

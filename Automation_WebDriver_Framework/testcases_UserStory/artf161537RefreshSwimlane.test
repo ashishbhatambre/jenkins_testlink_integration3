@@ -1,0 +1,30 @@
+name= QA automation for artf157251 : Refresh Swim lanes independently of the other
+component=Tracker
+role=Global Role
+artifact=artf161537
+wait=300
+url=sf/projects/newproject/
+ wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder1
+wait=400
+clickElementByCssSelector=i=icon-refresh=0
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=400
+clickElementByCssSelector=i=icon-refresh=1
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan1
+wait=400
+clickElementByCssSelector=i=icon-refresh=2
+wait=400
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Board View
+wait=300
+clickHrefByLinkText=List

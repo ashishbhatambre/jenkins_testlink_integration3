@@ -1,0 +1,28 @@
+name=creating new doc and Searching the Document with no text for project group->public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText=Add Document
+wait=500
+waitUntilById=title
+typeElementById=title=P_D2
+waitUntilById=description
+typeElementById=description=document2 for pg_pub_project
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=This is Document for the Project "PG_Pub_Project"
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=You have not entered any search criteria.

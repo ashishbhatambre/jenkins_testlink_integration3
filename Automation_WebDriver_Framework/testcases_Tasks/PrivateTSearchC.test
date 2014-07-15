@@ -1,0 +1,21 @@
+name=Search Task by name_Pr_Create Role
+component=Tasks
+role=Create role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/searchTasks/projects.private/taskmgr
+wait=300
+waitUntilById=searchText
+typeElementById=searchText=TA1
+wait=300
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Tasks
+wait=300
+waitUntilById=searchCriteriaToggle
+clickElementById=searchCriteriaToggle
+wait=300
+clickHrefByLinkText=Cancel
+wait=500
+searchElementValueByTagName=Body=Private#NEXT#Tasks

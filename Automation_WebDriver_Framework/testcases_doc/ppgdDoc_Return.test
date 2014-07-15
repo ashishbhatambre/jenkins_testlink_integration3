@@ -1,0 +1,14 @@
+name=Verify Return button functionality in public project
+component=Documents
+role=Project Group Role
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+clickHrefByLinkText=Return
+wait=600
+searchElementValueByTagName=Body=ppgProject#NEXT#Documents

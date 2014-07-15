@@ -1,0 +1,20 @@
+name=Deleting the Multiple Documents for project group -> private project 
+component=Documents
+role=Global Role
+artifact=NA
+url=sf/projects/pg_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= ASDFEv#@$
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=selectDocuments_Delete
+clickElementById=selectDocuments_Delete
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=2 documents deleted successfully.

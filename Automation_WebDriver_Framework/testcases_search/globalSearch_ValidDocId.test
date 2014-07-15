@@ -1,0 +1,12 @@
+name=Global Search_documents_using a valid and a complete document ID  
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168483        
+clickHrefByLinkText=Jump to ID
+waitUntilById=search
+clickElementById=search
+waitUntilById=term
+typeElementById=term=doc1005
+selectOptionValueByIdIndex=applications=1
+clickElementById=searchForm_submit
+searchElementValueByTagName=Body=Search

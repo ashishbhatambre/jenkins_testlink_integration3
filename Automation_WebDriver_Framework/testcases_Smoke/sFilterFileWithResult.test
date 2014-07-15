@@ -1,0 +1,20 @@
+name=Ability to filter File in FileReleases in private project as site admin user
+component=FRS
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=YTDF
+wait=500
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Releases_YTDF
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#File Releases#NEXT#YTDF#NEXT#List Releases  
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

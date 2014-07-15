@@ -1,0 +1,26 @@
+name=Ability to Click on Rank button when Planning folders are expanded and artifacts are in expanded state
+component=Trackers
+role=Global Role
+artifact=artf169647 TestcaseID (artf169641)
+wait=500
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText= Plan1
+wait=500
+clickImage=sf-images/nanotree/images/cat_plus_nolines.gif
+wait=500
+clickImage=sf-images/nanotree/images/cat_plus_nolines.gif
+wait=500
+clickImage=sf-images/nanotree/images/cat_plus_last.gif
+wait=500
+clickImage=sf-images/nanotree/images/cat_plus_last.gif
+wait=500
+clickImage=sf-images/nanotree/images/cat_plus_last.gif
+wait=500
+clickImage=sf-images/nanotree/images/cat_plus_last.gif
+wait=1000
+clickImage=sf-images/tracker/xrankOff.png.pagespeed.ic.KAb3qbieJk.png
+wait=500
+searchElementValueByTagName=Body=Trackers

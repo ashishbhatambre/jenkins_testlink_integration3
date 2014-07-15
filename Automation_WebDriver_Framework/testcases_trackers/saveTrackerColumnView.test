@@ -1,0 +1,36 @@
+name=Ability to save the configure column field in Tracker Component
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=200
+waitUntilById=columns-icon
+clickElementById=columns-icon
+wait=200
+waitUntilById=configureFolderPreferences
+clickElementById=configureFolderPreferences
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=availableColumns
+selectOptionByIdValues=availableColumns=Planned For
+selectOptionByIdValues=availableColumns=Submitted On
+selectOptionByIdValues=availableColumns=Tracker Name
+waitUntilById=addAll
+clickElementById=addAll
+waitUntilById=selectTrackerColumns_ApplyAndSave
+clickElementById=selectTrackerColumns_ApplyAndSave
+waitUntilByName=preferenceName
+typeElementById=preferenceName=TrackerList
+clickElementById=defaultPreference
+waitUntilById=folderPreferenceNamePopUpForm_Apply
+clickElementById=folderPreferenceNamePopUpForm_Apply
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#NewTracker#NEXT#List Artifacts

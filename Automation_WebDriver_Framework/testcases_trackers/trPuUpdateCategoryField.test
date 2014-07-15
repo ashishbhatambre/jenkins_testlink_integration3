@@ -1,0 +1,26 @@
+name=Update Tracker Category Field 
+component=Tracker Admin
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/sfmain/do/editProject/projects.public
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Category
+wait=200
+waitUntilById=displayLinesMultiselect
+typeElementById=displayLinesMultiselect=5
+waitUntilById=helpText
+typeElementById=helpText=Updated Category Field
+wait=200
+clickHrefByLinkText=Add
+waitUntilById=value_dmmy0
+typeElementById=value_dmmy0=Review
+wait=200
+clickHrefByLinkText=Save Field
+wait=200
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Field data updated successfully.

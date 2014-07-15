@@ -1,0 +1,13 @@
+name=login As Tester1
+component=Login
+role=Admin Role
+artifact=NA
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=ptester1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet2@
+wait=300
+clickHrefByLinkText=Log In
+wait=200
+searchElementValueByTagName=Body=My#NEXT#Workspace

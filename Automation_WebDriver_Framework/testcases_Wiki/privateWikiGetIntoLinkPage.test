@@ -1,0 +1,8 @@
+name=Ability to get into Wiki Link Page in private project
+component=Wiki
+role=Direct Role
+artifact=NA
+wait=300
+clickHrefByLinkText=LinkPage1
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Wiki

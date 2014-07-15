@@ -1,0 +1,11 @@
+name=Global Search_Without selecting any option under "In" field. 
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168139           
+clickHrefByLinkText=Jump to ID
+waitUntilById=search
+clickElementById=search
+waitUntilById=term
+typeElementById=term=CloneTracker1
+clickElementById=searchForm_submit
+searchElementValueByTagName=Body=You must select at least one application to search. 

@@ -1,0 +1,23 @@
+name=Ability to dhange status type of a artifact in Private Project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=200
+clickHrefByLinkText=QA:ReqArtf
+wait=200
+waitUntilById=selectedStatus
+selectOptionValueByIdIndex=selectedStatus=1
+waitUntilById=viewArtifactForm_Save
+clickElementById=viewArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact data updated successfully.

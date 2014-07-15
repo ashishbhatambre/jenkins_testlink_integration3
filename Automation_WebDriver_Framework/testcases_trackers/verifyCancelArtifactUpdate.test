@@ -1,0 +1,22 @@
+name=Ability to Cancel Artifact update in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder1
+wait=200
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=200
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilByName=assignedUser
+selectOptionValueByNameValue=assignedUser=user2_normalPermission 
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+searchElementValueByTagName=Body=Artifact data updated successfully.

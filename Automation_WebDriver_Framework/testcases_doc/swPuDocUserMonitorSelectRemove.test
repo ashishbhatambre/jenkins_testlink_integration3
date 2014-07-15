@@ -1,0 +1,27 @@
+name=Remove users to document Users Monitoring in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic/docman.root.document1
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+runJavaScriptPopToMain=javascript:openWinForId()
+wait=300
+switchToPopupWindow
+wait=300
+selectButtonByValue=swuser2
+wait=300
+waitUntilById=selectUsers_removeUsers
+clickElementById=selectUsers_removeUsers
+acceptJavaScriptConfirm
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Documents

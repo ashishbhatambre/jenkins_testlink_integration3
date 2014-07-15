@@ -1,0 +1,20 @@
+name=QA Automation task for artf159945 : Throws Teamforge system error while doing document search with Search keyword has special 
+component=Documents
+role=Global Role
+artifact=artf165267 
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=test/
+wait=400
+clickElementById=metaDataScope
+wait=300
+clickElementById=searchDocuments_submit
+wait=1300
+searchElementValueByTagName=Body=Invalid search syntax. Please check the Search Keywords and Document Name for search syntax errors. 

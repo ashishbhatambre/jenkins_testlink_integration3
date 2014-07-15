@@ -1,0 +1,19 @@
+name=Search Task using name 
+component=Tasks
+role=Sitewide Role_Delete Permission
+artifact=NA
+wait=300
+waitUntilById=searchText
+typeElementById=searchText=TA1
+wait=300
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks
+wait=300
+waitUntilById=searchCriteriaToggle
+clickElementById=searchCriteriaToggle
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

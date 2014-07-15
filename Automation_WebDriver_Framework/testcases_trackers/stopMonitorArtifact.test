@@ -1,0 +1,19 @@
+name=Ability to Stop Monitoring an artifact by clicking "Stop Monitor" button from document details page
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Folder_Renamed
+wait=10000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=2
+wait=500
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=button_monitor_object
+clickElementById=button_monitor_object
+wait=200
+searchElementValueByTagName=Body=Artifact is no longer monitored.

@@ -1,0 +1,16 @@
+name=Verify Monitoring Functionality_Create Monitoring
+component=Tasks 
+role=Direct Role_Delete Permission
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.public/taskmgr.pua_taskfolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+runJavaScriptPopToMain=javascript:submitForm(document.listTasksSelect, 'Monitor')
+wait=300
+searchElementValueByTagName=Body=1 item(s) are now being monitored.
+wait=300

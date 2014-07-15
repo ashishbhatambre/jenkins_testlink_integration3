@@ -1,0 +1,19 @@
+name=Ability to delete the users from user group
+component=User Groups
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=User Groups
+wait=500
+clickHrefByLinkText=PrvProjUsers
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=removeGroupMembers_Remove
+clickElementById=removeGroupMembers_Remove
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=Selected users were removed from the user group.

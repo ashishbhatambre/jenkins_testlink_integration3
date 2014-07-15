@@ -1,0 +1,26 @@
+name=Create Document with Version Comment in inherited public project
+component=Documents
+role=DirectRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.public_sub/docman.root.folder
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_VersionComment
+wait=300
+waitUntilById=description
+typeElementById=description=Doc_VersionComment
+wait=300
+selectButtonByValue=fromUrl
+wait=300
+typeElementById=urlContent=https://localhost:new/any
+waitUntilById=versionComment
+typeElementById=versionComment=Version1
+wait=300
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body=Document created successfully.
+wait=300

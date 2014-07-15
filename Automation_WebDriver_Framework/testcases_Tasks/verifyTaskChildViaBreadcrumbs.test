@@ -1,0 +1,8 @@
+name=Navigate to child folder from breadcrumbs link
+component=Task
+role=Global Role
+artifact=NA
+wait=1000
+clickHrefByLinkText=C_Task
+wait=1000
+searchElementValueByTagName=Body=NewProject#NEXT#Tasks#NEXT#test_task#NEXT#C_Task#NEXT#List Tasks 

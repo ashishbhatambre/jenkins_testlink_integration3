@@ -1,0 +1,116 @@
+name=Verify that ability to Reject SCM Adapter repository deletion request as SCM Integration Permission user when requires approval is enabled in Integration
+component=Integration-SourceCode
+role=SiteWide Role/Project Role
+artifact=artf171056 Testcase Id(artf170873)
+wait=200
+url=sf/sfmain/do/home
+wait=200
+waitUntilByName=username
+typeElementByName=username=admin
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=200
+searchElementValueByTagName=Body=My Page
+wait=200
+url=sf/scm/do/listRepositories/projects.newproject/scm
+wait=300
+waitUntilById=create_repo
+clickHrefByLinkText=Create Repository
+wait=300
+waitUntilById=systemId
+selectOptionValueByIdValue=systemId=server1
+typeElementById=directoryName=scmAdapter
+typeElementById=repositoryName=scmAdaRepo
+typeElementById=description=repository created for svn adaptor.
+wait=300
+waitUntilById=createRepositoryForm_Save
+clickElementById=createRepositoryForm_Save
+wait=300
+searchElementValueByTagName=Body=Repository scmAdaRepo was requested.
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=200
+clickHrefByLinkText=Integrations
+wait=200
+waitUntilById=integrationRequests
+clickElementById=integrationRequests
+wait=300
+waitUntilByName=selectedObjects
+selectCheckBoxFromList=selectedObjects=0
+wait=300
+waitUntilById=objectSelection_Approve
+clickElementById=objectSelection_Approve
+wait=300
+searchElementValueByTagName=Body=Repository created successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home
+wait=200
+url=sf/sfmain/do/home
+wait=200
+waitUntilByName=username
+typeElementByName=username=scmuser123
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Source Code
+wait=200
+waitUntilByName=_listItem
+SelectCheckBoxFromList=_listItem=2
+wait=200
+waitUntilById=objectSelection_Delete
+clickElementById=objectSelection_Delete
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=Repository deletion request submitted.
+wait=200
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home
+wait=200
+url=sf/sfmain/do/home
+wait=200
+waitUntilByName=username
+typeElementByName=username=scmadmin
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=200
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=200
+clickHrefByLinkText=Integrations
+wait=200
+waitUntilById=scmAccessRequests
+clickElementById=scmAccessRequests
+wait=200
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=200
+waitUntilById=systemRequestForm_Reject
+clickElementById=systemRequestForm_Reject
+wait=200
+searchElementValueByTagName=Body=System requests rejected: 1
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home
+wait=200
+url=sf/sfmain/do/home
+wait=200
+waitUntilByName=username
+typeElementByName=username=scmuser123
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=200
+searchElementValueByTagName=Body=My Page
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Source Code
+wait=200
+searchElementValueByTagName=Body=scmAdaRepo

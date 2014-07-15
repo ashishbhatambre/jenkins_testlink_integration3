@@ -1,0 +1,6 @@
+name=subversion repo checkout
+component=SourceCode
+role=Global Role
+artifact=NA
+runCommands=vcscript/svnrun.cmd
+verifyCommandOutput=Committed revision 8.

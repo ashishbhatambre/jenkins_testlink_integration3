@@ -1,0 +1,7 @@
+name=Private Project Configure ON link
+wait=300
+url=sf/projects/nproject/
+wait=300
+clickSpanElementByCssSelector=labelRight
+wait=300
+searchElementValueByTagName=Body=NProject#NEXT#Project Home 

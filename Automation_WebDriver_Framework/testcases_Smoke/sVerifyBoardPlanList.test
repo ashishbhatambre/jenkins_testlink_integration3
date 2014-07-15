@@ -1,0 +1,13 @@
+name=Verifying the Board View with Listed Planning Folders
+component=Boards
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickSpanElementByCssSelector=combo-arrow=0
+wait=500
+searchElementValueByTagName=Body=list1#NEXT#list3
+wait=500
+clickHrefByLinkText=List
+wait=500

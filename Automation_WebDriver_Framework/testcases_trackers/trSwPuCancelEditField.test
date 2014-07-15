@@ -1,0 +1,19 @@
+name=Ability to cancel Tracker update in public project
+component=Tracker Admin
+role=Sitewide Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.swpublic
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+waitUntilById=admin_tracker.edit
+clickElementById=admin_tracker.edit
+waitUntilById=title
+typeElementById=title=puTracker
+waitUntilById=description
+typeElementById=description=Tracker for Public Project
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+searchElementValueByTagName=body=SWPublic#NEXT#Project Admin

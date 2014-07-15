@@ -1,0 +1,21 @@
+name=Create Document with Draft State in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_Draft
+wait=300
+waitUntilById=description
+typeElementById=description=Doc_Draft
+wait=300
+typeValueForFileField=C:\Uploaded_Files\Test.doc
+wait=300
+waitUntilById=createDocument_submit
+clickElementById=createDocument_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Document created successfully.

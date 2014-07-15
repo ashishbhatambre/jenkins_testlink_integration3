@@ -1,0 +1,32 @@
+name=Ability to assign project-wide role to Member(s)
+component=Project Admin
+role=Admin
+artifact=NA
+wait=300
+url=sf/rbac/do/permissionAdmin/projects.private
+wait=300
+clickHrefByLinkText=ProjectAdminRole
+wait=300
+waitUntilById=members
+clickElementById=members
+wait=300
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=name
+typeElementById=name=tmuser1
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=tmuser1 was added to the role.

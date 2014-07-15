@@ -1,0 +1,18 @@
+name=Filter Document by Name in Child Folder in inherited public project
+component=Documents
+role=DirectRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.public_sub/docman.root.folder.ddddforname_to_attach_more_than
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Doc_Online
+wait=300
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=Public_Sub#NEXT#Documents
+wait=300
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

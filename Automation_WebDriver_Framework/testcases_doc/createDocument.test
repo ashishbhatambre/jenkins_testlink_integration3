@@ -1,0 +1,25 @@
+name=Creating Document from text option
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Test_Doc
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+waitUntilById=title
+typeElementById=title=projectDoc1
+waitUntilById=description
+typeElementById=description=New Project Document1
+wait=300
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=This is Document for the Project "New Project"
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body=Document created successfully.

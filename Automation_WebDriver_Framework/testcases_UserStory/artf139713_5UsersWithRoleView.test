@@ -1,0 +1,117 @@
+name=Checking Planning Folder User and Role Permissions should apply for the Planning Board as well
+component=Boards
+role=Global Role
+artifact=artf139713
+wait=300
+url=sf/sfmain/do/home
+wait=300
+typeElementByName=username=newuser1
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Plan
+wait=300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder1
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan1
+wait=6000
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home
+wait=300
+typeElementByName=username=newuser2
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Plan
+wait=300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder1
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan1
+wait=6000
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home
+wait=300
+typeElementByName=username=newuser3
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Plan
+wait=300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder1
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan1
+wait=400
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home
+wait=300
+typeElementByName=username=tester2
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Plan
+wait=300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder1
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan1
+wait=6000
+dragElementToByCSS=item ui-corner-all ui-draggable=artifact8=scroll-area=parentArtifact
+wait=400
+searchElementValueByTagName=Body=You do not have sufficient permission to perform this operation.
+wait=400

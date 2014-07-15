@@ -1,0 +1,19 @@
+name=Ability to monitor the discussion that is already monitored in private project as site admin user
+component=Discussions
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Discussions
+wait=500
+clickHrefByLinkText=Forum_Discussions
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectTopicsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectTopicsForm
+wiat=500
+waitUntilById=selectTopicsForm_Monitor
+clickElementById=selectTopicsForm_Monitor
+wait=500
+searchElementValueByTagName=Body=Item topc1002 is already being monitored.

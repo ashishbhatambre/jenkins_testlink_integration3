@@ -1,0 +1,24 @@
+name=Ability to edit Task Report in private project as site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Reports
+wait=500
+waitUntilById=reports
+clickElementById=reports
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=listReports_Edit
+clickHrefByLinkText=Edit
+wait=500
+typeElementById=description=Task Report Modified the status to Alert by site admin user
+wait=500
+waitUntilById=status
+selectOptionValueByIdValue=status=Alert
+wait=500
+waitUntilById=taskReport_generate
+clickElementById=taskReport_generate
+wait=800
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Reports#NEXT#Modify Task Report

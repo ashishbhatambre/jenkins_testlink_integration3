@@ -1,0 +1,30 @@
+name=Ability to clone Tracker in public project
+component=Tracker Admin
+role=Global Role
+artifact=NA
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=200
+waitUntilById=selectionMenuButton_CloneMenu_selectTrackers
+clickElementById=selectionMenuButton_CloneMenu_selectTrackers
+waitUntilById=selectTrackers_cloneTracker
+clickElementById=selectTrackers_cloneTracker
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=CloneTrackerPublicProject
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=Copy of the Tracker02
+waitUntilById=cloneTrackerForm_submit
+clickElementById=cloneTrackerForm_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=Tracker cloned successfully.

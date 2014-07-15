@@ -1,0 +1,9 @@
+name=Ability to view the wiki Show Details link in public project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+waitUntilById=view_wiki_page.showPageDetails
+clickElementById=view_wiki_page.showPageDetails
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Wiki

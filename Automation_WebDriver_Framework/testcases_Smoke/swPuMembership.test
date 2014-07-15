@@ -1,0 +1,24 @@
+name=Ability to add member(s) to project 
+component=Project Admin
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/userMembership/projects.swpublic
+wait=500
+waitUntilById=addUserLink
+clickElementById=addUserLink
+wait=500
+selectButtonByValue=swuser1
+wait=500
+selectButtonByValue=swuser2
+wait=500
+selectButtonByValue=swuser3
+wait=500
+selectButtonByValue=swuser4
+wait=500
+selectButtonByValue=swuser5
+wait=500
+clickElementById=addUser_finish
+wait=500
+searchElementValueByTagName=Body=User(s) added to the project: swuser1_AdminPermission (swuser1) , swuser2_CreateEditPermission (swuser2) , swuser3_DeletePermission (swuser3) , swuser4_ViewPermission (swuser4) , swuser5_EditPermission (swuser5) .
+wait=500

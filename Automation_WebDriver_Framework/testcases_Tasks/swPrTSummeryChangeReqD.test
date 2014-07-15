@@ -1,0 +1,9 @@
+name=Verify Task Change Request link
+component=Tasks
+role=Sitewide Role_Delete Permission
+artifact=NA
+wait=300
+waitUntilById=changeRequests
+clickElementById=changeRequests
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

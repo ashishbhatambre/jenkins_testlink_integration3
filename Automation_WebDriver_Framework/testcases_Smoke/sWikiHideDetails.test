@@ -1,0 +1,11 @@
+name=Ability to Hide Details in private project as site admin user
+component=Wiki
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Wiki
+wait=500
+waitUntilById=view_wiki_page.hidePageDetails
+clickElementById=view_wiki_page.hidePageDetails
+wait=500
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Wiki#NEXT#Home page#NEXT#View Wiki Page 

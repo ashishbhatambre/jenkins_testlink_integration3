@@ -1,0 +1,19 @@
+name=Creating Forum for the Public project
+component=Discussions
+role=Global Role
+artifact=NA
+wait=400
+url=sf/projects/pubproject/
+wait=400
+clickHrefByLinkText=Discussions
+wait=400
+waitUntilById=listForums_create
+clickElementById=listForums_create
+waitUntilById=title
+typeElementById=title=GroupDiscussion
+waitUntilById=description
+typeElementById=description=Forum creation for project
+waitUntilById=forumForm_submit
+clickElementById=forumForm_submit
+wait=400
+searchElementValueByTagName=Body=Forum created successfully.

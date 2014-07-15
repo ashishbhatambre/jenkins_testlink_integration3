@@ -1,0 +1,20 @@
+name=Inability to edit document using invalid date Format in private project as site admin user
+component=Document
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Doc2
+wait=300
+waitUntilByName=_filter!!date!!dateLastModified
+typeElementByName=_filter!!date!!dateLastModified=2013/04/03
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=The filter provided was invalid. Please ensure that all fields are in a valid format.
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

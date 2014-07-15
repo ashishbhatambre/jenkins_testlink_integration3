@@ -1,0 +1,24 @@
+name=Remove users from monitoring list in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Users Monitoring Folder
+wait=300
+switchToPopupWindow
+wait=300
+selectCheckBoxFromList=users=2
+wait=300
+clickHrefByLinkText=Remove
+wait=300
+acceptJavaScriptConfirm
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Private_Sub#NEXT#Documents

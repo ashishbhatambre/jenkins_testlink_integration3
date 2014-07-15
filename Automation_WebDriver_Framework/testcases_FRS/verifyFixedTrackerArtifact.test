@@ -1,0 +1,17 @@
+name=Verifying Fixed Tracker artifact in FileReleases
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=File Releases
+wait=300
+clickHrefByLinkText=Package@
+wait=300
+clickHrefByLinkText=File31
+wait=300
+waitUntilById=resolvedInArtifacts
+clickElementById=resolvedInArtifacts
+wait=300
+searchElementValueByTagName=Body=(1 Item)

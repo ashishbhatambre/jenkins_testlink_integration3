@@ -1,0 +1,25 @@
+name=Filter Task By Name 
+component=Tasks
+role=Sitewide Role_View Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= SWA_TaskFolder
+wait=300
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=TA2
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=900
+searchElementValueByTagName=Body=TA2
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

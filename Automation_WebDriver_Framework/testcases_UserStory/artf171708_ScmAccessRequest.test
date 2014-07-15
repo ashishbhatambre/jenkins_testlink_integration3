@@ -1,0 +1,20 @@
+name=Verify that ability to approve SCM Adapter Repository Access request as SCM Integration Permission user when requires approval is enabled in Integration
+component=Integration
+role=NA
+artifact= Tasks artf171712 TC - artf171708  [Goto Admin > Integrations >SCM Access Requests,Select the check box of Repository Access]
+wait=300
+waitUntilById=admin_link
+clickHrefByLinkText=Admin
+wait=500
+clickHrefByLinkText=Integrations
+wait=500
+waitUntilById=scmAccessRequests
+clickElementById=scmAccessRequests
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=27
+wait=500
+waitUntilById=selectAccessRequestForm_Approve
+clickElementById=selectAccessRequestForm_Approve
+wait=500
+searchElementValueByTagName=Body=Repository access request closed.

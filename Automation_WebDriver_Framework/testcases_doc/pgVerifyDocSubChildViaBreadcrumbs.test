@@ -1,0 +1,14 @@
+name=Navigate to subchild folder from breadcrumbs link for project group -> private project 
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= ASDFEv#@$
+wait=500
+clickHrefByLinkText=ASDFEv#@$
+wait=500
+searchElementValueByTagName=Body=PG_Prv_Project#NEXT#Documents#NEXT#PG_RootFolder#NEXT#PG_DocFolder#NEXT#PG_Child_Folder#NEXT#ASDFEv#@$#NEXT#List Documents 

@@ -1,0 +1,21 @@
+name=Search document by "Search Keywords" with "Search Name and Description" and "Search Within Document" enabled for private child project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_prv_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Doc
+waitUntilById=metaDataScope
+clickElementById=metaDataScope
+wait=300
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=Document Search Results  (2 Items)

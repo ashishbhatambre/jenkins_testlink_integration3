@@ -1,0 +1,23 @@
+name=Filter Document by Document Name in Sub Child folder in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= SW_Pu_SubChildDF
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Doc_1
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Documents
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300

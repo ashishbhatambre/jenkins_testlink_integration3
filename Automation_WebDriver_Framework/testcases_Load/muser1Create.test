@@ -1,0 +1,26 @@
+name=Ability to create restricted user
+component=Users
+role=Admin
+artifact=NA
+url=sf/sfmain/do/listUsersAdmin
+wait=300
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilByName=username
+typeElementByName=username=tmuser1
+wait=300	
+typeElementByName=password=Collabnet1!
+wait=300
+typeElementByName=confirmPassword=Collabnet1!
+wait=300
+typeElementByName=fullName=tmuser1_adminPermission	
+wait=300
+typeElementByName=email=tmuser1@collab.net
+wait=300
+typeElementByName=companyName=CSPL
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=400
+searchElementValueByTagName=Body=User #NEXT#tmuser1#NEXT# has been created successfully.

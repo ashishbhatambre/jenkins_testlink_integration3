@@ -1,0 +1,16 @@
+name=Ability to monitor the Task in private project as site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= session2
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=500
+waitUntilById=monitor_current_folder
+clickElementById=monitor_current_folder
+wait=500
+searchElementValueByTagName=Body=Task Folder is now being monitored.

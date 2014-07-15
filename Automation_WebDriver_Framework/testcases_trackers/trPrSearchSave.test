@@ -1,0 +1,32 @@
+name=Ability to save search result in Private Project
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=name
+waitUntilById=inAttachments
+clickElementById=inAttachments
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+waitUntilById=_SfButton_SaveSearch
+clickHrefByLinkText=Save Search from Results
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilByName=searchOrFilterName
+typeElementByName=searchOrFilterName=Search Result1
+waitUntilById=type
+clickElementById=type
+waitUntilById=saveSearchOrFilter_submit
+clickElementById=saveSearchOrFilter_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=Search saved.

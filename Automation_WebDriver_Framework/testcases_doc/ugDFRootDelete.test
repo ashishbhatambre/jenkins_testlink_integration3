@@ -1,0 +1,15 @@
+name=Delete Root Document Folder 
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugproject/docman.root
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Delete
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=You cannot delete the top-level document folder.
+wait=300

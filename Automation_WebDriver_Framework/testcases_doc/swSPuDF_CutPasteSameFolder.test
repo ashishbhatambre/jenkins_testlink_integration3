@@ -1,0 +1,25 @@
+name=Cut & Paste Document Folder in Same Parent in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root.folder.ddddforname_to_attach_more_than.scfolder
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Cut
+wait=500
+searchElementValueByTagName=Body=Folder cut successfully.
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root.folder.ddddforname_to_attach_more_than?_message=1378274218138
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Paste
+wait=300
+acceptJavaScriptConfirm
+wait=600
+searchElementValueByTagName=Body=Unable to paste items to this location.
+wait=600
+searchElementValueByTagName=Body=The items were cut from and pasted to the same folder.
+wait=200

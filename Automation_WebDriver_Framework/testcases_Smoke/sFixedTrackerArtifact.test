@@ -1,0 +1,48 @@
+name=Ability to export from Fixed Tracker Artifact in FRS for private project by site admin user
+component=FRS
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=Releases_YTDF
+wait=500
+waitUntilById=resolvedInArtifacts
+clickElementById=resolvedInArtifacts
+wait=500
+clickHrefByLinkText=Export
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=exportType
+selectButtonByValue=.xml
+wait=500
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Artifact ID
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Tracker ID
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Project Name
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Description
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Priority
+waitUntilById=addOne
+clickElementById=addOne
+wait=500
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=500
+runJavaScriptPopToMain=javascript:close()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#File Releases#NEXT#YTDF#NEXT#Releases_YTDF#NEXT#View Release

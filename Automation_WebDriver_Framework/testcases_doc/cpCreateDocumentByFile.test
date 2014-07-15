@@ -1,0 +1,24 @@
+name= create document to Child Doc Folder by uploding .xls file for Child public project global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Child_Doc_Folder
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=FileDoc
+waitUntilById=description
+typeElementById=description=Public  Child Project Document with file uploaded
+wait=300
+typeValueForFileField=C:\Uploaded_Files\Matrix_TestCase_new.xls
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body=Document created successfully.

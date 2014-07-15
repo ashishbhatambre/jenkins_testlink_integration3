@@ -1,0 +1,23 @@
+name=Filter Task by Task Status in Child folder
+component=Task
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= C_Task
+wait=500
+waitUntilById=btn_filter!!string!!status
+clickElementById=btn_filter!!string!!status
+waitUntilByName=multiselect__filter!!string!!status
+selectButtonByValue=Warning
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=(2 Items)
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

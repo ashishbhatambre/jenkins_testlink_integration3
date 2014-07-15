@@ -1,0 +1,8 @@
+name=Ability click tasks into Private Project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/viewSummary/projects.swprivate/taskmgr
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

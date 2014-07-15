@@ -1,0 +1,9 @@
+name=Ability to view Wiki Show Details links in public project
+component=Wiki
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=view_wiki_page.showPageDetails
+clickElementById=view_wiki_page.showPageDetails
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Wiki

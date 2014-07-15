@@ -1,0 +1,20 @@
+name=My Page_Created by Me_view_Return
+waitUntilById=createdByMe
+clickElementById=createdByMe
+wait=300
+url=sf/sfmain/do/viewAllMyCreatedArtifacts/
+wait=300
+clickHrefByLinkText=Return
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace
+url=sf/sfmain/do/viewAllMyCreatedTasks/
+wait=300
+clickHrefByLinkText=Return
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace
+wait=300
+url=sf/sfmain/do/viewAllMyCreatedDocumentReview
+wait=300
+clickHrefByLinkText=Return
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

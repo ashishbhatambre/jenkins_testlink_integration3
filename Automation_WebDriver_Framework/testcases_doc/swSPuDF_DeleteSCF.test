@@ -1,0 +1,13 @@
+name=Delet Sub Child Folder in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root.infolder.scfolder.ddddforname_to_attach_more_than
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Delete
+acceptJavaScriptConfirm
+wait=600
+searchElementValueByTagName=Body=Folder deleted successfully.

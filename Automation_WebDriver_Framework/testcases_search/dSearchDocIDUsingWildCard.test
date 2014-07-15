@@ -1,0 +1,16 @@
+name=Document Search_Using wild cards for document IDs
+component=Documents
+role=Site Admin
+artifact=artf155318
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=doc10*
+waitUntilById=metaDataScope
+clickElementById=metaDataScope
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=500
+searchElementValueByTagName=Body=Document Search Results
+

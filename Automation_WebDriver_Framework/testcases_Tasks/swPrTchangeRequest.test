@@ -1,0 +1,8 @@
+name=Ability to verify Change Request in task in private project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=300
+clickElementById=changerequest
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

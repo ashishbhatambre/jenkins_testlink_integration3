@@ -1,0 +1,24 @@
+name=Verify that Changing Parent project does remove all inherited rights from Project Role
+component=Project admin
+role=NA
+artifact= Tasks - artf180125 TC - artf180120 [Goto 'Project3' > Project Admin > Eidt Parent Project as 'Project2']
+wait=300
+url=sf/projects/project3
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+waitUntilById=project_admin.editparent
+clickElementById=project_admin.editparent
+wait=500
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Project2
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=800
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=800
+waitUntilById=listPotentialParentProjects_edit
+clickElementById=listPotentialParentProjects_edit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Project2 set as parent project successfully.

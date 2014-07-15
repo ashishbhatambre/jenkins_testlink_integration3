@@ -1,0 +1,10 @@
+name=Ability to view Wiki Page in HTML Format in private project
+component=Wiki
+role=Direct Role
+artifact=NA
+url=sf/wiki/do/viewPage/projects.private/wiki/HomePage
+wait=300
+waitUntilById=view_wiki_page.html
+clickElementById=view_wiki_page.html
+wait=300
+searchElementValueByTagName=Body=Wiki

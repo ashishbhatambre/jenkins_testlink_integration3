@@ -1,0 +1,15 @@
+name=Ability to Approval the Subversion integration 
+component=Integrations
+role=Admin
+artifact=NA
+wait=300
+waitUntilById=integrationRequests
+clickElementById=integrationRequests
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=objectSelection_Approve
+clickElementById=objectSelection_Approve
+wait=300
+searchElementValueByTagName=Body=Approved.

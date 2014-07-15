@@ -1,0 +1,27 @@
+name=ChildSingleFieldDefault
+component=Login
+role=NA
+artifact=NA
+url=sf/sfmain/do/myProjects
+clickHrefByLinkText=proj1
+clickHrefByLinkText=Project Admin
+clickHrefByLinkText=Tracker Settings
+clickHrefByLinkText=test
+
+clickHrefByLinkText=Add Field
+typeElementById=fieldname=S2
+selectOptionValueById=selectedDisplayType
+selectOptionValueByIdIndex=selectedDisplayType=1
+selectOptionValueByIdIndex=selectedParentField=1
+clickHrefByLinkText=Add
+typeElementById=value_dmmy0=tc1
+clickHrefByLinkText=Add
+typeElementById=value_dmmy1=tc2
+clickElementById=value_dmmy0
+clickElementById=value_dmmy0
+selectOptionValueByNameValue=parentValues(dmmy0)=tp1
+selectOptionValueByNameValue=parentValues(dmmy1)=tp2
+clickHrefByLinkText=Save Field
+acceptJavaScriptConfirm
+
+searchElementValueByTagName=Body=Field created successfully.

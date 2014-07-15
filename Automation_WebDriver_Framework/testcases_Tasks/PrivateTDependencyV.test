@@ -1,0 +1,10 @@
+name=Ability to view Task Dependency Link in private project
+component=Tasks
+role=View Role
+artifact=NA
+wait=300
+waitUntilById=dependencies
+clickElementById=dependencies
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Tasks
+wait=300

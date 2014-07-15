@@ -1,0 +1,14 @@
+name=Create Task Monitoring 
+component=Tasks
+role=Sitewide Role_Create Permission
+artifact=NA
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+runJavaScriptPopToMain=javascript:submitForm(document.listTasksSelect, 'Monitor')
+wait=300
+searchElementValueByTagName=Body=1 item(s) are now being monitored.

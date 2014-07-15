@@ -1,0 +1,9 @@
+name=Ability to view the show details
+component=Wiki
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=view_wiki_page.showPageDetails
+clickElementById=view_wiki_page.showPageDetails
+wait=400
+searchElementValueByTagName=Body=NewProject#NEXT#Wiki#NEXT#Home page#NEXT#View Wiki Page 

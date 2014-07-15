@@ -1,0 +1,9 @@
+name=Ability to perform wiki Predefined Search of Orphaned Pages public project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+waitUntilById=predefined_orphaned
+clickElementById=predefined_orphaned
+wait=800
+searchElementValueByTagName=Body=SWPublic#NEXT#Wiki

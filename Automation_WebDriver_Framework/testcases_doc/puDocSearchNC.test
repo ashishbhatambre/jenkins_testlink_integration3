@@ -1,0 +1,20 @@
+name=Search Docuement without any criteria 
+component=Documents
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/projects/Public/
+wait=300
+clickHrefByLinkText=Documents
+wait=600
+clickHrefByLinkText= Document1
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=700
+searchElementValueByTagName=Body=You have not entered any 
+search criteria.
+wait=300

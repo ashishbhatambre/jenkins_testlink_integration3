@@ -1,0 +1,109 @@
+name=Ability to create docuement(s)
+component=Documents
+role=Site Admin
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Test_Document
+wait=300
+waitUntilById=description
+typeElementById=description=This document is created and used for search suite 
+wait=300
+selectButtonByValue=fromText
+wait=300
+waitUntilById=textContent
+typeElementById=textContent=Search Suite Document/Text
+wait=300
+waitUntilById=versionComment
+typeElementById=versionComment=Version1
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Document created successfully.
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1.searchfolder2
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Test_Document1
+wait=300
+waitUntilById=description
+typeElementById=description=This document is created and used for search/suite Text
+wait=300
+selectButtonByValue=fromUrl
+wait=300
+typeElementById=urlContent=https://localhost:new/any
+waitUntilById=versionComment
+typeElementById=versionComment=Version1
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Document created successfully.
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1.searchfolder2.searchfolder3
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Test_Document2
+wait=300
+waitUntilById=description
+typeElementById=description=This document is created and used for search suite Text$Parsing
+wait=300
+selectOptionValueByIdIndex=status=1
+wait=300
+typeValueForFileField=C:\Uploaded_Files\Matrix_TestCase_new.xls
+wait=300
+waitUntilById=versionComment
+typeElementById=versionComment=Version1
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Document created successfully.
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Question
+wait=300
+waitUntilById=description
+typeElementById=description=This kit using for automation testing
+wait=300
+selectOptionValueByIdIndex=status=1
+wait=300
+typeValueForFileField=C:\Uploaded_Files\index.html
+wait=300
+waitUntilById=versionComment
+typeElementById=versionComment=Version1
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Document created successfully.
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=701 File
+wait=300
+waitUntilById=description
+typeElementById=description=This kit has numeric name 7010 -701...
+wait=300
+selectOptionValueByIdIndex=status=0
+selectButtonByValue=fromText
+wait=300
+waitUntilById=textContent
+typeElementById=textContent=701 702 .... 7070
+waitUntilById=versionComment
+typeElementById=versionComment=Version1
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Document created successfully.

@@ -1,0 +1,14 @@
+name=Ability to paste the task in to task folder in private project as site admin
+component=Task
+wait=300
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= session2
+wait=500
+waitUntilById=listTasksSelect_Paste
+clickElementById=listTasksSelect_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=1 task(s) pasted from clipboard.
+wait=300

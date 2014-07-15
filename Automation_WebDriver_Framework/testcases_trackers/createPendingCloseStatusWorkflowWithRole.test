@@ -1,0 +1,34 @@
+name=Ability to create workflow transition for Pending->closed status with roles assigned
+component=Tracker Admin
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=workflow
+clickElementById=workflow
+wait=200
+clickHrefByLinkText=Pending
+wait=200
+waitUntilById=newToValue
+selectOptionValueByIdValue=newToValue=Closed
+waitUntilById=editTransitionForm_add
+clickElementById=editTransitionForm_add
+wait=200
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=roles_fldv1140
+clickElementById=roles_fldv1140
+waitUntilById=rolesfldv1140
+selectOptionValueByIdValue=rolesfldv1140=AdminRole
+waitUntilByName=requiredFields(fldv1140)
+selectOptionValueByNameValue=requiredFields(fldv1140)=Customer
+waitUntilById=editTransitionForm_save
+clickElementById=editTransitionForm_save
+wait=200
+searchElementValueByTagName=Body=Workflow transition roles updated successfully

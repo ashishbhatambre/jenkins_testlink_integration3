@@ -1,0 +1,9 @@
+name=Mass Reject the requested projects without comment
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+waitUntilById=handleProjectRequests_Reject
+clickElementById=handleProjectRequests_Reject
+wait=300
+searchElementValueByTagName=Body=Rejected request to create project

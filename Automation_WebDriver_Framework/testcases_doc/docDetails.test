@@ -1,0 +1,35 @@
+name=Update the Document with attaching the Files and update version
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Test_Doc
+wait=500
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=projectDoc1
+clickHrefByLinkText=Filter
+waitUntilByName=_listCheckAll
+clickElementByName=_listCheckAll
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=documentPropertiesVersion_submit
+clickElementById=documentPropertiesVersion_submit
+wait=500
+clickHrefByLinkText=Edit / Update
+wait=500
+selectButtonByValue=fromFile
+waitUntilById=file
+typeValueForFileField=C:\Uploaded_Files\Jellyfish.jpg
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+searchElementValueByTagName=Body=Document updated successfully.
+wait=300
+waitUntilById=documentPropertiesVersion_submit
+clickElementById=documentPropertiesVersion_submit
+wait=300
+searchElementValueByTagName=Body=Active document version updated.

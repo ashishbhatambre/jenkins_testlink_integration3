@@ -1,0 +1,31 @@
+name=Inability to create document review without required fields 
+component=Documents
+role=Direct Role_Admin Permisssion
+artifact=NA
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+clickHrefByLinkText=Doc_5
+wait=300
+waitUntilById=review
+clickElementById=review
+wait=300
+clickHrefByLinkText=Start a Review
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_1 Review
+wait=300
+waitUntilById=dueDate
+typeElementById=dueDate=12/24/2014
+wait=300
+waitUntilById=createDocumentReview_submit
+clickElementById=createDocumentReview_submit
+wait=300
+searchElementValueByTagName=Body=At least one reviewer is required. 
+
+
+
+
+

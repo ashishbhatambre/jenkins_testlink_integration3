@@ -1,0 +1,21 @@
+name=Ability to Search Document Via Advance Search for child private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=300
+clickHrefByLinkText=Advanced Search
+wait=300
+waitUntilByName=term
+typeElementByName=term=folder1_view
+waitUntilById=applications
+selectOptionValueByIdValue=applications=Documents
+wait=300
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+waitUntilById=DocumentFolder
+clickElementById=DocumentFolder
+wait=300
+searchElementValueByTagName=Body=Child_Prv_Project

@@ -1,0 +1,39 @@
+name=Topics created to Forum using Symbol ${}
+component=Discussions
+role=NA
+artifact=NA
+wait=400
+clickHrefByLinkText=&Forum&
+waitUntilById=listTopic_create
+clickElementById=listTopic_create
+waitUntilById=title
+typeElementById=title=&Testing&
+waitUntilById=content
+typeElementById=content=${Test process for project.}
+waitUntilById=createTopic_submit
+clickElementById=createTopic_submit
+wait=400
+searchElementValueByTagName=Body=Topic created successfully.
+wait=400
+clickHrefByLinkText=${<Forum*!>}
+waitUntilById=listTopic_create
+clickElementById=listTopic_create
+waitUntilById=title
+typeElementById=title=${<Forum> Discussion1}
+waitUntilById=content
+typeElementById=content=Forum for story filter.
+wait=300
+clickHrefByLinkText=Attach another file
+wait=300
+clickHrefByLinkText=Attach another file
+wait=300
+typeFileFieldValueForName=file[1]=D:\link.txt
+wait=300
+typeFileFieldValueForName=file[2]=D:\Test.doc
+wait=300
+typeFileFieldValueForName=file[3]=D:\Reports\Category.html
+wait=300
+waitUntilById=createTopic_submit
+clickElementById=createTopic_submit
+wait=400
+searchElementValueByTagName=Body=Topic created successfully.

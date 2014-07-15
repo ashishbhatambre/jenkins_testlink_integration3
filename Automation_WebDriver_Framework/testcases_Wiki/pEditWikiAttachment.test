@@ -1,0 +1,30 @@
+name=Ability to edit the Wiki Link Page by adding files [text-doc-.xlsx] in Public project
+component=Wiki
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/pubproject/
+wait=300
+clickHrefByLinkText=Wiki
+wait=300
+clickHrefByLinkText=Pub Project
+wait=300
+waitUntilById=view_wiki_page.edit
+clickElementById=view_wiki_page.edit
+wait=300
+clickHrefByLinkText=Attach another file
+clickHrefByLinkText=Attach another file
+wait=300
+typeFileFieldValueForName=file[1]=C:\Uploaded_Files\link.txt
+wait=300
+typeFileFieldValueForName=file[2]=C:\Uploaded_Files\Test.doc
+wait=300
+typeFileFieldValueForName=file[3]=C:\Uploaded_Files\test.pdf
+wait=300
+waitUntilById=changenote
+typeElementById=changenote=Wiki Link Page with attachment
+wait=300
+waitUntilById=edit_wiki_page.update
+runJavaScriptPopToMain=javascript:submitJSPWikiForm('ok','Save')
+wait=300
+searchElementValueByTagName=Body=Attachment added.No changes made to wiki page content.

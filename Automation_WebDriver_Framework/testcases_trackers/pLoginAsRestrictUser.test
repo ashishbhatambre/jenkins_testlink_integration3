@@ -1,0 +1,13 @@
+name=Ability to login As restricted user
+component=Login
+role=NA
+artifact=NA
+wait=200
+url=sf/sfmain/do/home
+wait=200
+typeElementByName=username=tester1
+typeElementByName=password=Collabnet2@
+wait=200
+clickHrefByLinkText=Log In
+wait=200
+searchElementValueByTagName=Body=My Page

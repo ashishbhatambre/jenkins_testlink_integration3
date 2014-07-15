@@ -1,0 +1,20 @@
+name=Login As restricted users with admin permissions - setting password (yoga)
+component=Login
+role=NA
+artifact=NA
+wait=300
+url=sf/sfmain/do/home
+wait=500
+typeElementByName=username=yoga
+typeElementByName=password=Collabnet1!
+wait=500
+clickHrefByLinkText=Log In
+wait=500
+searchElementValueByTagName=Body=Change User Password
+wait=500
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+wait=500
+clickElementById=forcePasswordChangeForm_submit
+wait=500
+searchElementValueByTagName=Body=User Password changed successfully.

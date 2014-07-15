@@ -1,0 +1,11 @@
+name=Ability to set Artifact Row Count as 25
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/tracker/do/listArtifacts/projects.private/tracker.tracker1
+waitUntilById=rows-icon
+clickElementById=rows-icon
+waitUntilById=ipp_25
+clickElmentById=ipp_25
+wait=200
+searchElementValueByTagName=body=Private#NEXT#Trackers

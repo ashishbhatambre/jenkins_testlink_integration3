@@ -1,0 +1,30 @@
+name=Ability to filter Release in private project
+component=FRS
+role=Direct Role
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.private/frs.package1
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Release1
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Private_Release
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=Private_Release
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

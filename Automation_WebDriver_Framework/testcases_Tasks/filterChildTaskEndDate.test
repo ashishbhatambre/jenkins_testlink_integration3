@@ -1,0 +1,21 @@
+name=Filter Task by End Date in Child folder
+component=Task
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= C_Task
+wait=500
+waitUntilByName=_filter!!date!!endDate
+typeElementById=_filter!!date!!endDate=03/18/2013
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body= No results found.
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

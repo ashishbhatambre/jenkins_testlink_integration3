@@ -1,0 +1,11 @@
+name=Inability to login as site admin with wrong password
+component=Login
+wait=300
+url=sf/sfmain/do/home
+wait=300
+waitUntilByName=username
+typeElementByName=username=yadmin
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Invalid Login

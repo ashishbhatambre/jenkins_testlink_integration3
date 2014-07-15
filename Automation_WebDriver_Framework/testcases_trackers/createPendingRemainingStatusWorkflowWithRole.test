@@ -1,0 +1,27 @@
+name=Ability to create workflow transition for Pending->Remaining status with roles selected
+component=Tracker Admin
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=workflow
+clickElementById=workflow
+wait=200
+clickHrefByLinkText=Pending
+wait=200
+waitUntilById=roles_fldv-any
+clickElementById=roles_fldv-any
+waitUntilById=rolesfldv-any
+selectOptionValueByIdValue=rolesfldv-any=AdminRole
+waitUntilByName=requiredFields(fldv-any)
+selectOptionValueByNameValue=requiredFields(fldv-any)=Customer
+waitUntilById=editTransitionForm_save
+clickElementById=editTransitionForm_save
+wait=200
+searchElementValueByTagName=Body=Auto assignment rules updated successfully.

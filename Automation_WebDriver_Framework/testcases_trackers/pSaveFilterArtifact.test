@@ -1,0 +1,32 @@
+name=Ability to filter artifacts and save in Tracker component for public project
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Hints
+wait=200
+waitUntilById=btn_filter!!numeric!!priority
+clickElementById=btn_filter!!numeric!!priority
+waitUntilByName=multiselect__filter!!numeric!!priority
+selectButtonByValue=4
+wait=200
+clickHrefByLinkText=Filter
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=saveNamedFilter
+clickHrefByLinkText=Save...
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=searchOrFilterName
+typeElementById=searchOrFilterName=FilterPriority4
+waitUntilById=saveSearchOrFilter_submit
+clickElementById=saveSearchOrFilter_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=Trackers

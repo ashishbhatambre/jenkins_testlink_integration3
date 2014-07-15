@@ -1,0 +1,26 @@
+name=Ability to delete the Workflow transition in tracker administration
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=NewTracker
+wait=200
+waitUntilById=workflow
+clickElementById=workflow
+wait=200
+clickHrefByLinkText=Closed
+wait=200
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=editTransitionForm_deleteTransition
+clickElementById=editTransitionForm_deleteTransition
+wait=200
+waitUntilById=editTransitionForm_save
+clickElementById=editTransitionForm_save
+wait=200
+searchElementValueByTagName=Body=Workflow transition roles updated successfully

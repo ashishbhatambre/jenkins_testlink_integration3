@@ -1,0 +1,14 @@
+name=create a role by admin
+component=Roles
+role=Admin
+artifact=NA
+url=sf/sfmain/do/listRolesAdmin
+wait=300
+waitUntilById=listSiteRoles_create
+clickElementById=listSiteRoles_create
+waitUntilById=title
+typeElementById=title=developer
+typeElementById=description=create a role developer
+clickElementById=createSiteWideRoleForm_submit
+wait=300
+searchElementValueByTagName=Body=Site-wide Role created successfully.

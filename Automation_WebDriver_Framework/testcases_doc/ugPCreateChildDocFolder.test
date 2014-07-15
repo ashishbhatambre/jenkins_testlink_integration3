@@ -1,0 +1,28 @@
+name=creating child Document Folder for usergroup Public project by global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Books_List
+wait=500
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=Child_Folder
+wait=300
+waitUntilById=createDocumentFolder_submit
+clickElementById=createDocumentFolder_submit
+wait=600
+searchElementValueByTagName=Body=Folder created successfully.
+wait=600
+runJavaScriptPopToMain=javascript:finishDocument()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600

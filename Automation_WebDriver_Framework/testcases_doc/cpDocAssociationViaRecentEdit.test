@@ -1,0 +1,35 @@
+name=Document Asociation usign Recently edited object for public child project with global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Doc_List
+wait=500
+clickHrefByLinkText=DocWithFinal
+wait=500
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=recentlyEditedIds
+selectOptionValueByIdIndex=recentlyEditedIds=3
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+waitUntilById=description
+typeElementById=description=Test Association
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=1000
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=1000
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000

@@ -1,0 +1,17 @@
+name=Search Task using name 
+component=Tasks
+role=Sitewide Role_Edit Permission
+artifact=NA
+wait=300
+url=sf/taskmgr/do/searchTasks/projects.swprivate/taskmgr
+waitUntilById=searchText
+typeElementById=searchText=TAC1
+waitUntilById=inDescription
+clickElementById=inDescription
+waitUntilById=inProgress
+clickElementById=inProgress
+wait=300
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=300
+searchElementValueByTagName=Body= (1 Item)

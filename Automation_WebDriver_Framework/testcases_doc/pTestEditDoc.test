@@ -1,0 +1,30 @@
+name=Renaming the Document Folder for public proj
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Books
+wait=500
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+wait=500
+waitUntilById=editCategory_new
+clickHrefByLinkText=Rename
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=Books_List
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=600
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=600
+runJavaScriptPopToMain=javascript:finishFolderRename()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600

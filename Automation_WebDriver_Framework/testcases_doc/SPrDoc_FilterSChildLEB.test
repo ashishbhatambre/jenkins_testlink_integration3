@@ -1,0 +1,19 @@
+name=Filter Document by "Last Edited By" in sub child folder in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder.ddddforname_to_attach_more_than.scfolder
+wait=300
+waitUntilById=_filter!!string!!lastModifiedBy
+selectOptionValueByIdIndex=_filter!!string!!lastModifiedBy=1
+wait=300
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=Private_Sub#NEXT#Documents
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+

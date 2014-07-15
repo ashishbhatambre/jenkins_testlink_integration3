@@ -1,0 +1,43 @@
+name=Ability to export Tracker in private project as site admin user
+component=Tracker
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText= list1
+wait=500
+clickHrefByLinkText=Export
+wait=500
+switchToPopupWindow
+wait=500
+selectButtonByValue=.xml
+wait=500
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Artifact ID
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Title
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Submitted By
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Description
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Submitted On
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=500
+runJavaScriptPopToMain=javascript:close()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Trackers#NEXT#Planning Folders#NEXT#list1#NEXT#List Artifacts

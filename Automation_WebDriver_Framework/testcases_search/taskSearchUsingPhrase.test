@@ -1,0 +1,14 @@
+name=Enter a phrase under 'Search Text' and search for exact match. 
+component=Tasks
+role=Site Admin
+artifact=artf168906
+wait=300
+url=sf/taskmgr/do/listTasks/projects.project_search/taskmgr.searchfolder
+wait=300
+clickHrefByLinkText=Search Tasks
+waitUntilById=searchText
+typeElementById=searchText="knowledge about"
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=500
+searchElementValueByTagName=Body=(2 Items)

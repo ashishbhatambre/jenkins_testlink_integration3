@@ -1,0 +1,22 @@
+name=Document cut and paste to same folder for project group -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= PG_1
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+clickHrefByLinkText=Cut
+wait=500
+searchElementValueByTagName=Body=1 document(s) cut to clipboard.
+wait=500
+clickHrefByLinkText=Paste
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Unable to paste items to this location.
+searchElementValueByTagName=Body=The items were cut from and pasted to the same folder.

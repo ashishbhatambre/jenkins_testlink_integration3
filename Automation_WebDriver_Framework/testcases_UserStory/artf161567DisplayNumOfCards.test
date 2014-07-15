@@ -1,0 +1,21 @@
+name=Display Number of Artifact cards in swimlanes for planning folder.
+component=Tracker
+role=Global Role
+artifact=artf161567
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Board View
+wait=400
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan1
+wait=400
+clickElementByName=includeClosed
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Folder_Renamed
+wait=400
+searchElementValueByTagName=Body=1 Cards

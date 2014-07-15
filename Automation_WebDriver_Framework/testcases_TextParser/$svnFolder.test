@@ -1,0 +1,6 @@
+name=subversion repo Folders with documents
+runCommands=vcscript/svnFolder1.cmd
+verifyCommandOutput=Checked out revision 1.
+verifyCommandOutput=Committed revision 1.
+verifyCommandOutput=Committed revision 2.
+verifyCommandOutput=Committed revision 3.

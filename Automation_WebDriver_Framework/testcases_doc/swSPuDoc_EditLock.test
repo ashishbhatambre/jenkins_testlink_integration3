@@ -1,0 +1,17 @@
+name=Edit Document Lock in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root.folder
+wait=300
+clickHrefByLinkText=Doc_Online
+wait=300
+clickHrefByLinkText=Edit / Update
+waitUntilById=locked
+clickElementById=locked
+wait=300
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+wait=300
+searchElementValueByTagName=Body=Document updated successfully.

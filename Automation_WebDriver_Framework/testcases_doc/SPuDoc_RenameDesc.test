@@ -1,0 +1,27 @@
+name=Rename and Modify Document Description  in inherited public project
+component=Documents
+role=DirectRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.public_sub/docman.root.folder
+wait=300
+clickHrefByLinkText=Doc_VersionComment
+wait=300
+clickHrefByLinkText=Edit / Update
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_VerComment
+wait=300
+waitUntilById=description
+typeElementById=description=Doc_VerComment
+wait=300
+selectOptionValueByIdIndex=status=1
+wait=300
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=Document_Online
+wait=300
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+wait=300
+searchElementValueByTagName=Body=Document updated successfully.

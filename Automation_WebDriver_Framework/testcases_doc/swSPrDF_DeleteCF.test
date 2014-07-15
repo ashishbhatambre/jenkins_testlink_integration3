@@ -1,0 +1,14 @@
+name=Delete Child Folder in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root.infolder.scfolder
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Delete
+wait=300
+acceptJavaScriptConfirm
+wait=600
+searchElementValueByTagName=Body=Folder deleted successfully.

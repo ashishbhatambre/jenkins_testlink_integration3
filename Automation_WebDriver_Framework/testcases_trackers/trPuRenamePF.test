@@ -1,0 +1,17 @@
+name=Ability to rename Planning Folder 
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/planning/do/viewPlanningFolder/projects.public/planning.plan1
+wait=200
+clickHrefByLinkText=Edit
+waitUntilById=edit_planning
+clickElementById=edit_planning
+switchToPopupWindow
+waitUntilById=pfname
+typeElementById=pfname=puPlan
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=Public#NEXT#Trackers

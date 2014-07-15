@@ -1,0 +1,17 @@
+name=Create Text Component
+waitUntilById=CreatePageComponentLink
+clickElementById=CreatePageComponentLink
+waitUntilById=title
+typeElementById=title=Text_Component
+wait=300
+selectButtonByValue=html
+wait=300
+selectButtonByValue=0
+wait=300
+selectButtonByValue=false
+clickSpanElementByCssSelector=mceEditor defaultSkin
+waitUntilById=contents
+typeElementById=contents=HTML Document
+wait=300
+clickElementById=component_html
+searchElementValueByTagName=Body=NProject#NEXT#Project Home 

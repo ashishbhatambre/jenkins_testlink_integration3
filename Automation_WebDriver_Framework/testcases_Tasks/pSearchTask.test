@@ -1,0 +1,26 @@
+name=Search Task in public project
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+waitUntilByName=endDate
+typeElementByName=endDate=05/20/2013
+wait=300
+waitUntilById=createTask_Save
+clickElementById=createTask_Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.
+wait=500
+clickHrefByLinkText=Search Tasks
+wait=500
+waitUntilById=searchText
+typeElementById=searchText=ET3
+waitUntilById=status
+selectOptionValueByIdValue=status=Alert
+waitUntilById=priority
+selectOptionValueByIdValue=priority=2 - High
+wait=300
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=300
+searchElementValueByTagName=Body=Tasks

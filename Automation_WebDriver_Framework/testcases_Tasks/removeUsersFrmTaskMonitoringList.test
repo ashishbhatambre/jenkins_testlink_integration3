@@ -1,0 +1,32 @@
+name=Remove the selected users in users monitoring Folder list for task folder when particular site-option token is set
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= test_task
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=500
+clickHrefByLinkText=Users Monitoring Folder
+wait=500
+switchToPopupWindow
+wait=500
+selectButtonByValue=user2
+selectButtonByValue=newuser1
+selectButtonByValue=yadmin
+wait=300
+waitUntilById=selectUsers_removeUsers
+clickElementById=selectUsers_removeUsers
+wait=1000
+acceptJavaScriptConfirm
+wait=1000
+runJavaScriptPopToMain=javascript:close()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+searchElementValueByTagName=Body=NewProject#NEXT#Tasks#NEXT#test_task#NEXT#List Tasks 

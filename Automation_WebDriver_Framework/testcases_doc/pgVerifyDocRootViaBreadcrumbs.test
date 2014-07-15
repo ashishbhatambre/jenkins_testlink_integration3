@@ -1,0 +1,8 @@
+name=Navigate to root folder from breadcrumbs link for project group -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=PG_DocFolder
+wait=500
+searchElementValueByTagName=Body=PG_Prv_Project#NEXT#Documents#NEXT#PG_RootFolder#NEXT#PG_DocFolder#NEXT#List Documents 

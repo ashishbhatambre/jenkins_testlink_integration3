@@ -1,0 +1,14 @@
+name=Enter only a special character in the 'Search Text'.
+component=Tasks
+role=Site Admin
+artifact=artf168905
+wait=300
+url=sf/taskmgr/do/listTasks/projects.project_search/taskmgr.searchfolder
+wait=300
+clickHrefByLinkText=Search Tasks
+waitUntilById=searchText
+typeElementById=searchText=&@$
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=500
+searchElementValueByTagName=Body=No results found.

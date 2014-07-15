@@ -1,0 +1,22 @@
+name=Clone external Tracker without source Id
+component=Tracker Admin
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+waitUntilById=selectionMenuButton_CloneMenu_selectTrackers
+clickElementById=selectionMenuButton_CloneMenu_selectTrackers
+wait=200
+waitUntilById=selectTrackers_cloneExternalTracker
+clickElementById=selectTrackers_cloneExternalTracker
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=cloneTrackerAcrossProjectIdForm_next
+clickElementById=cloneTrackerAcrossProjectIdForm_next
+wait=200
+searchElementValueByTagName=Body= Source Tracker Id is a required field.

@@ -1,0 +1,43 @@
+name=Ability create Planning Folder in public project
+component=Tracker  Admin
+role=Global Role
+artifact=NA
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=GroupPlan
+waitUntilById=pfdescription
+typeElementById=pfdescription=Planning Folder for the NewTracker
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=In progress
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=TeamPlan
+waitUntilById=pfdescription
+typeElementById=pfdescription=Planning Folder for the NewTracker
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=In progress
+waitUntilById=capacity
+typeElementById=capacity=40
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=Tracker

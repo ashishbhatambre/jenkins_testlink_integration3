@@ -1,0 +1,14 @@
+name=Delete Single Document in public project
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder
+wait=300
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectDocuments_Delete
+clickElementById=selectDocuments_Delete
+wait=300
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=1 document deleted successfully.

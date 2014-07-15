@@ -1,0 +1,29 @@
+name=Ability to Filter package in public project
+component=FRS
+role=Sitewide Role
+artifact=NA
+wait=400
+url=sf/frs/do/viewSummary/projects.swpublic/frs
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=release
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=1500
+searchElementValueByTagName=Body=No results found.
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Public_Package
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=1300
+searchElementValueByTagName=Body=Public_Package
+wait=300
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

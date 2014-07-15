@@ -1,0 +1,40 @@
+name=Ability to Associate item using Association Id for docuement in child private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+switchToPopupWindow
+wait=300
+waitUntilById=associationIdString
+typeElementById=associationIdString=doc1006
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+wait=300
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=1000
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=1000
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000

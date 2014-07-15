@@ -1,0 +1,19 @@
+name=ugpuser1 Creation
+component=Users
+role=NA
+artifact=NA
+url=ctf/main/listUsersAdmin
+wait=300
+clickHrefByLinkText=Single
+wait=4000
+custom=qa-name=username=type=ugpuser1
+custom=qa-name=password=type=Collabnet1!
+custom=qa-name=confirmPassword=type=Collabnet1!
+custom=qa-name=fullName=type=ugpuser1_adminPermission
+custom=qa-name=email=type=ugpuser1@collab.net
+custom=qa-name=organization=type=cspl
+custom=qa-name=licenseType=select=ALM
+custom=qa-name=restrictedUser=checkboxclick=1
+clickSpanElementByCssSelector=widgets-btn-grouped ng-scope
+wait=500
+searchElementValueByTagName=Body=The user "ugpuser1" was successfully created.

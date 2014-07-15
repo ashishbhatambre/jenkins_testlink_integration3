@@ -1,0 +1,18 @@
+name=Filter Document by "Last Edited On" in Sub Child Folder 
+component=Documents
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.public/docman.root.document1.ddddforname_to_attach_more_than.pu_subchilddf
+wait=300
+waitUntilById=_filter!!date!!dateLastModified
+typeElementById=_filter!!date!!dateLastModified=08/21/2013
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300

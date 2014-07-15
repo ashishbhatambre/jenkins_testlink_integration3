@@ -1,0 +1,20 @@
+name=Filter Document by "Last Edited On" in root folder in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+waitUntilById=_filter!!date!!dateLastModified
+typeElementById=_filter!!date!!dateLastModified=08/21/2013
+wait=300
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=Private_Sub#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=800
+searchElementValueByTagName=Body=Private_Sub#NEXT#Documents

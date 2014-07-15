@@ -1,0 +1,26 @@
+name=Edit Task Report for public project
+component=Report
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Reports
+wait=500
+waitUntilById=reports
+clickElementById=reports
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=listReports_Edit
+clickElementById=listReports_Edit
+wait=300
+waitUntilById=description
+typeElementById=description=Task Report in PubProject Modified the status to OK
+wait=300
+waitUntilById=status
+selectOptionValueByIdValue=status=OK
+wait=300
+waitUntilById=taskReport_generate
+clickElementById=taskReport_generate
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Reports#NEXT#Modify Task Report

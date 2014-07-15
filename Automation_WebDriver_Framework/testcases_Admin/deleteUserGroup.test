@@ -1,0 +1,29 @@
+name=Ability to delete user group
+component=User Groups
+role=Admin
+artifact=NA
+url=sf/global/do/createGroup/
+wait=300
+waitUntilById=fullName
+typeElementById=fullName=PrvUsers1
+waitUntilById=description
+typeElementById=description=users who are under testing work to the Private project.
+wait=300
+waitUntilById=createGroup_submit
+clickElementById=createGroup_submit
+wait=300
+searchElementValueByTagName=Body=User Group#NEXT#PrvUsers1#NEXT#has been created successfully.
+wait=300
+waitUntilById=_filter!!contains!!fullName
+typeElementById=_filter!!contains!!fullName=PrvUsers1
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+waitUntilByName=_listCheckAll
+clickElementByName=_listCheckAll
+waitUntilById=listGroupsAdmin_Remove
+clickElementById=listGroupsAdmin_Remove
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=User Group#NEXT#PrvUsers1#NEXT#has been deleted successfully.

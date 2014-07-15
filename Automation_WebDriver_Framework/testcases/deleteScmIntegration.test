@@ -1,0 +1,18 @@
+name=Ability to Delete subversion integration
+component=Integrations
+role=Admin
+artifact=NA
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Integrations
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectSystemsForm_delete
+clickElementById=selectSystemsForm_delete
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=SCM integration deleted.

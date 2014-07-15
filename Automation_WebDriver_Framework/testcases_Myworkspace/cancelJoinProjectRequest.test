@@ -1,0 +1,15 @@
+name=Verify that Cancel button functionality in Respond to Join Project Request
+component=My Workspace
+role=Admin Role
+artifact=NA
+wait=300
+clickHrefByLinkText=My Workspace
+wait=300
+waitUntilById=myApproval
+clickElementById=myApproval
+wait=300
+clickHrefByLinkText=I want to join this project
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

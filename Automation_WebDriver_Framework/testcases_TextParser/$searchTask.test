@@ -1,0 +1,17 @@
+name=Search Task using text ${}
+component=Tasks
+role=NA
+artifact=NA
+wait=300
+clickHrefByLinkText=Search Tasks
+wait=300
+waitUntilById=searchText
+typeElementById=searchText=${dollar<b>Task</b>}
+waitUntilById=status
+selectOptionValueByIdValue=status=Alert
+waitUntilById=priority
+selectOptionValueByIdValue=priority=2 - High
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=300
+searchElementValueByTagName=Body=${test test}#NEXT#Tasks#NEXT#${dollarTask}#NEXT#Search Tasks 

@@ -1,0 +1,23 @@
+name=Return to list tasks page by clicking Return button from task view page
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= Sub_Task
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+wait=300
+waitUntilById=editTask_Cancel
+clickElementById=editTask_Cancel
+wait=500
+clickHrefByLinkText=Return
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Tasks#NEXT#test_task#NEXT#C_Task#NEXT#Sub_Task#NEXT#List Tasks 

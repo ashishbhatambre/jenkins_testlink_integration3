@@ -1,0 +1,43 @@
+name=Ability to create Tracker Field with Input Type as Multiple Select 
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.private
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Add Field
+waitUntilById=fieldname
+typeElementById=fieldname=Release Effort
+wait=200
+selectOptionValueByIdIndex=selectedDisplayType=2
+waitUntilById=displayLinesMultiselect
+typeElementById=displayLinesMultiselect=10
+waitUntilById=helpText
+typeElementById=helpText=Multi Input Type
+wait=200
+clickHrefByLinkText=Add
+wait=200
+waitUntilById=value_dmmy0
+typeElementById=value_dmmy0=High
+waitUntilById=defaultValue_dmmy0
+clickElementById=defaultValue_dmmy0
+wait=200
+clickHrefByLinkText=Add
+wait=200
+waitUntilById=value_dmmy1
+typeElementById=value_dmmy1=Low
+waitUntilById=defaultValue_dmmy1
+clickElementById=defaultValue_dmmy1
+wait=200
+clickHrefByLinkText=Alphabetize
+waitUntilById=fieldForm_Save
+clickElementById=fieldForm_Save
+wait=200
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=body=Field created successfully.

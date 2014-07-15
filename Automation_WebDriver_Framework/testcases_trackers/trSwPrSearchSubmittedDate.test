@@ -1,0 +1,17 @@
+name=Ability to search Artifact by Submitted date in private project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=submittedDateOption
+clickElementById=submittedDateOption
+waitUntilById=submittedNumberOfPeriods
+typeElementById=submittedNumberOfPeriods=5
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+searchElementValueByTagName=body=QA:OpenArtf

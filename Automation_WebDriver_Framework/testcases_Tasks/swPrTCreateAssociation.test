@@ -1,0 +1,32 @@
+name=Ability to create Task Association in private project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.swprivate/taskmgr.swa_taskfolder
+wait=300
+clickHrefByLinkText=TA1
+waitUntilById=associations
+clickElementById=associations
+wait=300
+clickElementById=addAssociationLink
+switchToPopupWindow
+wait=300
+selectButtonByValue=recentlyEditedBox
+wait=300
+selectOptionValueByIdIndex=recentlyEditedIds=0
+wait=300
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+wait=300
+waitUntilById=description
+typeElementById=description=Association with Task1
+wait=300
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=300
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=300
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

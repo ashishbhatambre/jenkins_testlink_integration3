@@ -1,0 +1,28 @@
+name=Ability to export from Tracker Reported Artifact as user with create role in private project
+component=FRS
+role=Direct Role
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.private/frs.package1
+wait=300
+wait=300
+clickHrefByLinkText=Private_Release1
+wait=300
+waitUntilById=foundInArtifacts
+clickElementById=foundInArtifacts
+wait=600
+clickHrefByLinkText=Export
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=addAll
+clickElementById=addAll
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=600
+searchElementValueByTagName=Body=Export Complete
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600

@@ -1,0 +1,18 @@
+name=Ability to rename Child Planning Folder in public project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+url=sf/planning/do/viewPlanningFolder/projects.swpublic/planning.plan1.plan2
+wait=200
+clickHrefByLinkText=Edit
+waituntilById=edit_planning
+clickElementById=edit_planning
+wait=200
+switchToPopupWindow
+waitUntilById=pfname
+typeElementById=pfname=swPuCPlan
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=SWPublic#NEXT#Trackers

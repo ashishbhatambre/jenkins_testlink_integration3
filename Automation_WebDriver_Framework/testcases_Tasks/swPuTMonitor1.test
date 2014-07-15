@@ -1,0 +1,18 @@
+name=Ability to monitor already monitored task in public project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.swpublic/taskmgr.swa_taskfolder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+waitUntilById=listTasksSelect_UnMonitor
+clickElementById=listTasksSelect_UnMonitor
+wait=300
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.
+wait=300

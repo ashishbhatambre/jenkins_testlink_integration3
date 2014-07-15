@@ -1,0 +1,39 @@
+name=Ability to move artifact to another tracker
+component=Trackers
+role=Site Admin
+artifact=NA
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_search
+wait=500
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=2
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=viewArtifact_edit
+clickElementById=viewArtifact_edit
+wait=300
+selectOptionValueByIdIndex=trkType=1
+waitUntilById=editArtifactForm_Save
+clickElementById=editArtifactForm_Save
+wait=300
+acceptJavaScriptConfirm
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_search
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=viewArtifact_edit
+clickElementById=viewArtifact_edit
+wait=300
+selectOptionValueByIdIndex=trkType=2
+waitUntilById=editArtifactForm_Save
+clickElementById=editArtifactForm_Save
+wait=300
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Artifact moved from Tracker_Search to Tracker 701.

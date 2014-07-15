@@ -1,0 +1,20 @@
+name=Cancel Document Edit 
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugproject/docman.root.ugfolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=500
+clickHrefByLinkText=Edit / Update
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_DraftR
+wait=300
+clickHrefByLinkText=Cancel
+wait=600
+searchElementValueByTagName=Body=ugProject#NEXT#Documents

@@ -1,0 +1,13 @@
+name=Ability to view Change Request in public project
+component=Tasks
+role=Direct role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.public/taskmgr.pua_taskfolder
+wait=300
+clickHrefByLinkText=TA1
+wait=300
+waitUntilById=changerequest
+clickElementById=changerequest
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Tasks

@@ -1,0 +1,24 @@
+name=Ability to cut & Paste the planning folder for private project by site admin
+component=Planning Folder
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText= list2
+wait=500
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+wait=500
+clickHrefByLinkText=Cut
+wait=1000
+clickHrefByLinkText= list1
+wait=500
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_paste
+clickHrefByLinkText=Paste
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Folder pasted successfully.

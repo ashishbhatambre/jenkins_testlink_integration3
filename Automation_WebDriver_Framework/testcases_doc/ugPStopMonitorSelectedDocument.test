@@ -1,0 +1,21 @@
+name=Stop Monitoring Selected document List Documents > Monitor > Stop Monitoring Selected option for usergroup public project with global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_pub_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Child_Folder
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+waitUntilById=selectDocuments_UnMonitor
+clickElementById=selectDocuments_UnMonitor
+wait=300
+searchElementValueByTagName=Body=Item(s) is no longer monitored.

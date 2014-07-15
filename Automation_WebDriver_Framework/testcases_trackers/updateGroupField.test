@@ -1,0 +1,34 @@
+name=Ability to update Group field in tracker in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=NewTracker
+wait=200
+clickHrefByLinkText=Group
+wait=200
+waitUntilById=helpText
+typeElementById=helpText=Select any one among the values.
+wait=200
+runJavaScriptPopToMain=JavaScript:{addNewRow();changeParentDisplay();changeDefaultColumnDisplay()}
+wait=200
+typeElementById=value_dmmy0=group1
+wait=200
+runJavaScriptPopToMain=JavaScript:{addNewRow();changeParentDisplay();changeDefaultColumnDisplay()}
+waitUntilById=value_dmmy1
+typeElementById=value_dmmy1=group2
+wait=200
+waitUntilById=defaultValue_dmmy0
+clickElementById=defaultValue_dmmy0
+waitUntilById=fieldForm_save
+clickElementById=fieldForm_save
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=Field data updated successfully.

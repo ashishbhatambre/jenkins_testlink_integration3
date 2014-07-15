@@ -1,0 +1,14 @@
+name=Ability to cancel the Edit Wiki page in private project as site admin user
+component=Wiki
+wait=300
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Wiki
+wait=300
+waitUntilById=view_wiki_page.edit
+clickElementById=view_wiki_page.edit
+wait=300
+waitUntilById=edit_wiki_page.cancel
+clickElementById=edit_wiki_page.cancel
+wait=1000
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Wiki#NEXT#HomePage#NEXT#View Wiki Page 

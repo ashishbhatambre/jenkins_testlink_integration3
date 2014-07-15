@@ -1,0 +1,13 @@
+name=Filter a Document with an Invalid Date Format in public project
+component=Documents
+role=Project Group Role
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder
+wait=300
+waituntilById=_filter!!date!!dateLastModified
+typeElementById=_filter!!date!!dateLastModified=17/16/15
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=1000
+searchElementValueByTagName=Body=The filter provided was invalid. Please ensure that all fields are in a valid format.
+wait=1000

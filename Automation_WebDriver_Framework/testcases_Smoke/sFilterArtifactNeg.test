@@ -1,0 +1,22 @@
+name=Ability to filter with non existing artifact id in private project as site admin user
+component=Tracker
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=traqueur2
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=art5
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=No results found.
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=500

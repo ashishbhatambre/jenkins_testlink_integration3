@@ -1,0 +1,15 @@
+name=Ability to view task Process in private project
+component=Tasks
+role=Sitewide_Create role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.swprivate/taskmgr.swa_taskfolder
+wait=300
+clickHrefByLinkText=TAC1
+wait=300
+waitUntilById=status
+clickElementById=status
+wait=300
+selectOptionValueByNameValue=status=Warning
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

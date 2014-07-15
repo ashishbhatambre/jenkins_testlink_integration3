@@ -1,0 +1,15 @@
+name=Ability to delete the package in private project as site admin user
+component=FRS
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=File Releases
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectPackages_Delete
+clickElementById=selectPackages_Delete
+wait=1000
+acceptJavaScriptConfirm
+wait=1000
+searchElementValueByTagName=Body=Package deleted successfully.

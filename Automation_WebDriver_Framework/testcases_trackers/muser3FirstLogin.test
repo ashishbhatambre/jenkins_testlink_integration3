@@ -1,0 +1,21 @@
+name=Ability to change password after first login
+component=Login
+role=Project-wide Delete Role
+artifact=NA
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=tmuser3
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=200
+clickHrefByLinkText=Log In
+wait=200
+searchElementValueByTagName=Body=Change User Password
+wait=200
+typeElementByName=newPassword=Collabnet2@
+wait=200
+typeElementByName=confirmNewPassword=Collabnet2@
+wait=200
+clickElementById=forcePasswordChangeForm_submit
+wait=200
+searchElementValueByTagName=Body=User Password changed successfully.

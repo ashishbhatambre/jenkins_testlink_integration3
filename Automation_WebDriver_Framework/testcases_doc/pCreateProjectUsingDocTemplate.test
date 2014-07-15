@@ -1,0 +1,20 @@
+name=Create projects based on project templates with documents enabled for public project-Document
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/createProject
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_PubProject
+waitUntilById=description
+typeElementById=description=Project Created by admin permission user using Document enabled Template
+waitUntilById=templateId
+selectOptionValueByIdValue=templateId=PubProject_Doc_Template
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=500
+searchElementValueByTagName=Body=Create Project
+wait=500
+clickHrefByLinkText=Return
+wait=500

@@ -1,0 +1,29 @@
+name=Ability to update Name and Description in artifact in public project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=200
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=200
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=200
+waitUntilById=viewArtifact_edit
+clickElementById=viewArtifact_edit
+wait=200
+waitUntilById=title
+typeElementById=title=artifactNew
+waitUntilById=description
+typeElementById=description=New artifact updated
+wait=200
+waitUntilById=editArtifactForm_Save
+clickElementById=editArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact data updated successfully.

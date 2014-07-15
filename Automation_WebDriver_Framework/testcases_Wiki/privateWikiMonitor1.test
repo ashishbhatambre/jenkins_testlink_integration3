@@ -1,0 +1,9 @@
+name=Ability to remove from monitoring a wiki page in private project
+component=Wiki
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=button_monitor_object
+clickElementById=button_monitor_object
+wait=300
+searchElementValueByTagName=Body=Wiki Page is no longer monitored.

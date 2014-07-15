@@ -1,0 +1,20 @@
+name= Source Code Repository creation
+component=Sourcecode
+role=Global Role
+artifact=NA
+wait=300
+url=sf/scm/do/listRepositories/projects.newproject/scm
+wait=300
+waitUntilById=create_repo
+clickHrefByLinkText=Create Repository
+wait=300
+waitUntilById=systemId
+selectOptionValueByIdValue=systemId=Posting
+typeElementById=directoryName=repo1
+typeElementById=repositoryName=NewRepo01
+typeElementById=description=repository created for subversion.
+wait=300
+waitUntilById=createRepositoryForm_Save
+clickElementById=createRepositoryForm_Save
+wait=300
+searchElementValueByTagName=Body=Repository NewRepo01 was created successfully.

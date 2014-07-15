@@ -1,0 +1,18 @@
+name=Save the Page in My Task Progress in Task Summary
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Summary
+wait=500
+waitUntilById=myProgress
+clickElementById=myProgress
+wait=500
+waitUntilById=myTaskProgress_Save
+runJavaScriptPopToMain=javascript:submitForm(document.myTaskProgress, 'Save')
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Tasks#NEXT#Summary 

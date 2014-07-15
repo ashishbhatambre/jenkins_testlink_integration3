@@ -1,0 +1,15 @@
+name=Verify task Process Functionality 
+component=Tasks
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.swpublic/taskmgr.swa_taskfolder
+wait=800
+clickHrefByLinkText=TA1
+wait=500
+waitUntilById=status
+clickElementById=status
+wait=500
+selectOptionValueByNameValue=status=Warning
+wait=500
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

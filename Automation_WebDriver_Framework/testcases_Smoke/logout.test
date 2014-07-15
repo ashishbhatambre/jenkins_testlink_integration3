@@ -1,0 +1,8 @@
+name=Logout,Login,logout.test
+component=Login
+role=Admin
+artifact=artf1001
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home

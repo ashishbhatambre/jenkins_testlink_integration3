@@ -1,0 +1,23 @@
+name=Ability to create attachment to Wiki page in public project
+component=Wiki
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+waitUntilById=attachments
+clickElementById=attachments
+waitUntilById=_SfButton_AddAttachment
+clickHrefByLinkText=Add Attachments
+wait=300
+switchToPopupWindow
+wait=300
+typeValueForFileField=C:\Uploaded_Files\link.txt
+waitUntilById=addAttachment_submit
+clickElementById=addAttachment_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+waitUntilById=attachments
+clickElementById=attachments
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Wiki
+wait=300

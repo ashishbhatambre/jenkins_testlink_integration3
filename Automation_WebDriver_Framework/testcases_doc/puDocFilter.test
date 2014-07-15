@@ -1,0 +1,18 @@
+name=Verify Filter Functionality of a Docuement 
+component=Documents
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.public/docman.root.document1
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Doc_5
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300

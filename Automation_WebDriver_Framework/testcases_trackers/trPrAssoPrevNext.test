@@ -1,0 +1,37 @@
+name=Ability to verify Next > and < Previous functionality in Association wizard 
+component=Tracker 
+role=Direct Role
+artifact=NA
+wait=200
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=1000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1 
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+switchToPopupWindow
+waitUntilById=recentlyEditedIds
+selectOptionValueByIdIndex=recentlyEditedIds=1
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+wait=200
+clickHrefByLinkText=< Previous
+wait=200
+clickHrefByLinkText=Cancel
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=body=Private

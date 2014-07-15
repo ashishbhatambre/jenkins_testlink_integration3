@@ -1,0 +1,5 @@
+name=Verify the Admin Link  when logged as an user with SiteWideRole
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+searchElementValueByTagName=Body=Site Administration

@@ -1,0 +1,42 @@
+name=setting the artifact dependency for Parent-child planning folders with Negative cases
+component=Tracker
+role=Global Role
+artifact=artf139713
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText= Board_Plan1
+wait=4000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=500
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=dependencies
+clickElementById=dependencies
+waitUntilById=choose_parent
+clickElementById=choose_parent
+wait=500
+switchToPopupWindow
+wait=500
+selectButtonByValue=entry
+waitUntilById=dependencyIdString
+typeElementById=dependencyIdString=artf1009
+waitUntilById=addDependencyForm_submitItems
+clickElementById=addDependencyForm_submitItems
+wait=500
+searchElementValueByTagName=Body=Unable to create dependency artf1006 -> artf1009: chosen parent is closed.
+wait=500
+waitUntilById=dependencyIdString
+typeElementById=dependencyIdString=artf1005
+waitUntilById=addDependencyForm_submitItems
+clickElementById=addDependencyForm_submitItems
+wait=1000
+searchElementValueByTagName=Body=The artifact dependency cannot be created because the parent and child artifact must belong to the same planning folder hierarchy.
+wait=1000
+runJavaScriptPopToMain=javascript:window.close()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=500

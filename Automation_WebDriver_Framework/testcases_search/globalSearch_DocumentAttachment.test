@@ -1,0 +1,16 @@
+name= Global Search_documents_search for attachment content 
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168487
+clickHrefByLinkText=Jump to ID
+waitUntilById=search
+clickElementById=search
+waitUntilById=term
+typeElementById=term=Kit
+waitUntilById=searchAttachments
+clickElementById=searchAttachments
+waitUntilById=applications
+selectOptionValueByIdIndex=applications=1
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+searchElementValueByTagName=Body=Documents (2)

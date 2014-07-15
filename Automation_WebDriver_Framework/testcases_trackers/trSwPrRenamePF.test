@@ -1,0 +1,22 @@
+name=Ability to rename Planning Folder in private project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+wait=200
+url=sf/planning/do/viewPlanningFolder/projects.swprivate/planning.plan1
+wait=200
+clickHrefByLinkText=Edit
+wait=200
+waitUntilById=edit_planning
+clickElementById=edit_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=swPrPlan
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=SWPrivate#NEXT#Trackers

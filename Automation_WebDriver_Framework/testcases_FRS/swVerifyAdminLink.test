@@ -1,0 +1,8 @@
+name=Ability to view the admin Link  when logged as user with SiteWideRole
+component=FRS
+role=NA
+artifact=NA
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+searchElementValueByTagName=Body=Site Administration

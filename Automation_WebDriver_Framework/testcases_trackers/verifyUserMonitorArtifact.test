@@ -1,0 +1,27 @@
+name=Ability to view users  monitoring for an artifact in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Folder_Renamed
+wait=10000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=2
+wait=200
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=200
+clickHrefByLinkText=Users Monitoring
+wait=200
+switchToPopupWindow
+wait=200
+runJavaScriptPopToMain=javascript:close()
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Tracker1#NEXT#View Artifact
+wait=500

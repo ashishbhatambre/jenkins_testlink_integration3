@@ -1,0 +1,13 @@
+name=Ability to cut Category to clipboard
+component=Category
+role=NA
+artifact=NA
+wait=300
+clickHrefByLinkText= category1
+wait=300
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_cut
+clickHrefByLinkText=Cut
+wait=300
+searchElementValueByTagName=Body=Category and subcategories cut to clipboard successfully.

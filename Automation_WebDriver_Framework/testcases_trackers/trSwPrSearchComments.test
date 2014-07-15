@@ -1,0 +1,17 @@
+name=Ability to search Artifact by comments in private project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=Fast
+waitUntilById=inComments
+clickElementById=inComments
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+searchElementValueByTagName=body= (2 Items)

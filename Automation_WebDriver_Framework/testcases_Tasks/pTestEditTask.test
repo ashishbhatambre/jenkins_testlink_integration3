@@ -1,0 +1,30 @@
+name=Renaming the Task Folder for public project
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+clickHrefByLinkText= EventTask1
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=TaskGroupList_rename
+clickHrefByLinkText=Rename
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=test_EventTask#@
+wait=300
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=1000
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=1000
+runJavaScriptPopToMain=javascript:finishFolderRename()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000

@@ -1,0 +1,40 @@
+name=Document Search_Search using a wild card for numbers.
+component=Documents
+role=Site Admin
+artifact=artf155320
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=70*
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=800
+searchElementValueByTagName=Body=701 File
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=70*
+waitUntilById=metaDataScope
+clickElementById=metaDataScope
+waitUntilById=documentScope
+clickElementById=documentScope
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=800
+searchElementValueByTagName=Body=701 File
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=titleQuery
+typeElementById=titleQuery=70*
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=800
+searchElementValueByTagName=Body=701 File
+
+

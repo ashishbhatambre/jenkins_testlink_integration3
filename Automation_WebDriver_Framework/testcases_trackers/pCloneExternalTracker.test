@@ -1,0 +1,19 @@
+name=Ability to clone external tracker in public project
+component=Tracker Admin
+role=Global Role
+artifact=NA
+wait=200
+waitUntilById=sourceTrackerId
+typeElementById=sourceTrackerId=tracker1007
+waitUntilById=cloneTrackerAcrossProjectIdForm_next
+clickElementById=cloneTrackerAcrossProjectIdForm_next
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=cloneExtTracker
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=clone the external tracker tracker02
+waitUntilById=cloneTrackerAcrossProjectDetailsForm_create
+runJavaScriptPopToMain=javascript:submitForm(document.cloneTrackerAcrossProjectDetailsForm, 'create')
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=Tracker cloned successfully.

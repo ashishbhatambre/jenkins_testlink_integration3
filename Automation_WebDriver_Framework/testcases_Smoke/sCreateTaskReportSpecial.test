@@ -1,0 +1,26 @@
+name=Ability to create Task Report with special characters in private project as site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Reports
+wait=500
+waitUntilById=reports
+clickElementById=reports
+wait=500
+waitUntilByName=reporttype
+selectOptionValueByNameValue=reporttype=Task Report
+waitUntilById=createReport_submit
+clickElementById=createReport_submit
+waitUntilById=name
+typeElementById=name=#@$45e324%#$%
+waitUntilById=status
+selectOptionValueByIdValue=status=OK
+selectOptionValueByIdValue=status=Complete
+waitUntilById=priority
+selectOptionValueByIdValue=priority=4 - Low
+wait=500
+waitUntilById=taskReport_generate
+clickElementById=taskReport_generate
+wait=500
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Reports#NEXT#Modify Task Report

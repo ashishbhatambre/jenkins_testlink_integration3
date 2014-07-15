@@ -1,0 +1,9 @@
+name=Verify Summery Change Request 
+component=Tasks
+role=Sitewide Role_Edit Permission
+artifact=NA
+wait=300
+waitUntilById=changeRequests
+clickElementById=changeRequests
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

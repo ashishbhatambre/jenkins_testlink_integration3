@@ -1,0 +1,11 @@
+name=Ability to show Details of a wiki page in private project as site admin user
+component=Wiki
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Wiki
+wait=300
+waitUntilById=view_wiki_page.showPageDetails
+clickElementById=view_wiki_page.showPageDetails
+wait=300
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Wiki#NEXT#Home page#NEXT#View Wiki Page 

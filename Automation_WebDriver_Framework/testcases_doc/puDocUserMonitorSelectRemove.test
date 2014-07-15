@@ -1,0 +1,33 @@
+name=Remove users from document Monitoring 
+component=Documents
+role=Direct Role_Admin Permisssion
+artifact=NA
+wait=300
+url=sf/projects/public/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+runJavaScriptPopToMain=javascript:openWinForId()
+wait=300
+switchToPopupWindow
+wait=300
+selectButtonByValue=tmuser2
+wait=300
+waitUntilById=selectUsers_removeUsers
+clickElementById=selectUsers_removeUsers
+wait=300
+acceptJavaScriptConfirm
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Documents

@@ -1,0 +1,24 @@
+name=Ability to edit Document by uploading jpg file in private project as site admin user
+component=Document
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= *(1234567890)*abcdefghijklmnopqrstuvwxyz&%&@()$!@#%$^&*(^&^&(*#$%%^&^*
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=800
+clickHrefByLinkText=Edit / Update
+wait=800
+selectButtonByValue=fromFile
+waitUntilById=file
+typeValueForFileField=C:\Uploaded_Files\Jellyfish.jpg
+wait=800
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+wait=1000
+searchElementValueByTagName=Body=Document updated successfully.

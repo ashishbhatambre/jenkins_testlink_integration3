@@ -1,0 +1,22 @@
+name=Ability to create Release as user with admin role in public project
+component=FRS
+role=Direct Role_Admin Permission
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.public/frs.package1
+wait=300
+clickHrefByLinkText=Public_Package
+wait=300
+waitUntilById=releaseList_create
+clickElementById=releaseList_create
+waitUntilById=title
+typeElementById=title=Release1
+waitUntilById=description
+typeElementById=description=Release created for Public_Package
+wait=300
+selectOptionValueByIdIndex=maturity=7
+wait=300
+waitUntilById=createRelease_submit
+clickElementById=createRelease_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Release created successfully.

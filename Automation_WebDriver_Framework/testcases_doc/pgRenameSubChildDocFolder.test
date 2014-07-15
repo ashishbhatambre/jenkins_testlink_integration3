@@ -1,0 +1,29 @@
+name=Renaming the Document Sub-Child Folder for project group -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_prv_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= SubDocFolder
+wait=300
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_new
+clickHrefByLinkText=Rename
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=ASDFEv#@$
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=300
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=300
+runJavaScriptPopToMain=javascript:finishFolderRename()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300

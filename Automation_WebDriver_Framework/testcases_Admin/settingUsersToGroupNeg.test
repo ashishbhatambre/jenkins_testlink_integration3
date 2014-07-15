@@ -1,0 +1,19 @@
+name=Inability to add users to user group
+component=User Groups
+role=Admin
+artifact=NA
+wait=300
+clickHrefByLinkText=User Groups
+wait=300
+clickHrefByLinkText=PrvUsers
+wait=300
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=You must select at least one user.

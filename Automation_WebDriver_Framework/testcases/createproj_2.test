@@ -1,0 +1,20 @@
+name=create_proj
+component=My Workspace
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/myProjects
+wait=300
+waitUntilById=createProject
+clickElementById=createProject
+waitUntilById=title
+typeElementById=title=test_proj1
+waitUntilById=description
+typeElementById=description=description_of_test_proj1
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=300
+url=sf/sfmain/do/myProjects/
+searchElementValueByTagName=Body=My Workspace
+
+

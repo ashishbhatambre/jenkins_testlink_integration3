@@ -1,0 +1,16 @@
+name=Tracker Search_Using a keyword in 'Search Text' field and the checkboxes - 'All Text Fields' and 'Include comments'.
+component=Trackers
+role=Site Admin
+artifact=artf161260 
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_search
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=verify
+waitUntilById=inComments
+clickElementById=inComments
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=(1 Item)

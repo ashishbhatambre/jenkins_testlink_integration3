@@ -1,0 +1,20 @@
+name=Global Search_Search for users using user Full Name without double quotes 
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168349
+wait=300
+clickHrefByLinkText=Jump to ID
+waitUntilById=search
+clickElementById=search
+waitUntilById=term
+typeElementById=term=newuser1
+selectOptionValueByIdIndex=applications=9
+selectOptionValueByIdIndex=projects=0
+clickElementById=searchForm_submit
+wait=300
+clickHrefByLinkText=Return
+typeElementById=term=swuser1 newuser1
+selectOptionValueByIdIndex=applications=9
+selectOptionValueByIdIndex=projects=0
+clickElementById=searchForm_submit
+searchElementValueByTagName=Body=Users (2)

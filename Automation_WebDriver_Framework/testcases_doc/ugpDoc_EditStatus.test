@@ -1,0 +1,17 @@
+name=Edit document status in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugpproject/docman.root.ugpfolder
+wait=300
+clickHrefByLinkText=Doc_VersionComment
+wait=300
+clickHrefByLinkText=Edit / Update
+wait=300
+selectOptionValueByIdIndex=status=1
+wait=300
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+wait=300
+searchElementValueByTagName=Body=Document updated successfully.

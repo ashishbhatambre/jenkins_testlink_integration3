@@ -1,0 +1,23 @@
+name=Cut & Paste Docuemnt Folder into Another Folder in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root.folder.ddddforname_to_attach_more_than.scfolder
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Cut
+wait=600
+searchElementValueByTagName=Body=Folder cut successfully.
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root.infolder
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Paste
+wait=300
+acceptJavaScriptConfirm
+wait=600
+searchElementValueByTagName=Body=Folder pasted successfully.
+

@@ -1,0 +1,12 @@
+name=Approve scm repo with comment
+clickHrefByLinkText=Pending SCM Integrations
+wait=300
+clickHrefByLinkText=Rep1
+wait=300
+selectButtonByValue=Approve
+waitUntilById=comment
+typeElementById=comment=Rep1 has been approved
+waitUntilById=repositoryRequest_submit
+clickElementById=repositoryRequest_submit
+wait=300
+searchElementValueByTagName=Body=Accepted request to create repository Rep1.

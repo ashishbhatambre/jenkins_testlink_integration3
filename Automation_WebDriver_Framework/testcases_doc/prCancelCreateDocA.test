@@ -1,0 +1,26 @@
+name=Cancel Create Document
+component=Documents
+role=Direct Role
+artifact=NA
+url=sf/projects/private/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_1
+wait=300
+waitUntilById=description
+typeElementById=description=This is .doc document
+wait=300
+typeValueForFileField=C:\Uploaded_files\link.txt
+wait=300
+waitUntilById=versionComment
+typeElementById=versionComment=Version1
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=Private/Documents/

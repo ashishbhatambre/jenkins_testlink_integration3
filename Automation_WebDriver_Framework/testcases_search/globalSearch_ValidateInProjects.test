@@ -1,0 +1,9 @@
+name=Global Search_Validate "In Projects" field.   
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168275        
+clickHrefByLinkText=Jump to ID
+waitUntilById=search
+clickElementById=search
+searchElementValueByTagName=Body=SWPrivate
+searchElementValueByTagName=Body=All Projects

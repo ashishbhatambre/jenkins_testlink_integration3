@@ -1,0 +1,11 @@
+name=Ability to search task without any criteria
+component=Tasks
+role=Create role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/searchTasks/projects.private/taskmgr
+wait=300
+waitUnrilById=searchTasks_Search
+clickElementById=searchTasks_Search
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=You have not entered any search criteria.

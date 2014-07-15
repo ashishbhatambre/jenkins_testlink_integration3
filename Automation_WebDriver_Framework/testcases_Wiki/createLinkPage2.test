@@ -1,0 +1,24 @@
+name=Ability to create Second Link Page in wiki 
+component=Wiki
+role=Global Role
+artifact=NA
+wait=400
+url=sf/projects/newproject/
+wait=400
+clickHrefByLinkText=Wiki
+wait=400
+clickHrefByLinkText=Wiki Page
+wait=400
+waitUntilById=editorPrefSelect
+selectOptionValueByIdValue=editorPrefSelect=Plain Editor
+wait=400
+waitUntilById=editorarea
+typeElementById=editorarea=!!! %%( background-color: rgb(255, 204, 0); )%%( font-family: georgia; )Wiki Link page 2%%%%%%( font-family: georgia; ) %%was created as the %%( color: rgb(153, 51, 102); )second link%% to the page.
+wait=400
+waitUntilById=editorPrefSelect
+selectOptionValueByIdValue=editorPrefSelect=WYSIWYG Editor
+wait=400
+waitUntilById=create_wiki_page.save
+clickElementById=create_wiki_page.save
+wait=400
+searchElementValueByTagName=Body=Wiki Page created successfully.

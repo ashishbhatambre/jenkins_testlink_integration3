@@ -1,0 +1,14 @@
+name=Ability to set up task roll up in private project
+component=Tasks
+role=Sitewide_Admin Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/adminGeneralSettings/projects.swprivate/taskmgr
+wait=300
+waitUntilById=warningpercentage
+typeElementById=warningpercentage=15
+wait=300
+waitUntilById=taskStatusRollupPreference_submit
+clickElementById=taskStatusRollupPreference_submit
+wait=400
+searchElementValueByTagName=Body=Task status rollup percentages saved.

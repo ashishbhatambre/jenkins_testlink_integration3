@@ -1,0 +1,41 @@
+name=Ability to create child artifact via Dependencies for public project
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/pubproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= GroupPlan
+wait=4000
+clickImage=sf-images/nanotree/images/cat_plus_nolines.gif
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=500
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=200
+waitUntilById=dependencies
+clickElementById=dependencies
+wait=200
+waitUntilById=selectionMenuButton_createChildMenu
+clickElementById=selectionMenuButton_createChildMenu
+wait=200
+clickElementById=yui-gen5
+wait=200
+waitUntilById=title
+typeElementById=title=childArtifact
+waitUntilById=description
+typeElementById=description=artifact for the Tracker1 folder Child Artifact
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=4 - Low
+waitUntilByName=assignedUser
+selectOptionValueByNameValue=assignedUser=tester2_normalPermission
+wait=200
+waitUntilById=createArtifactDependencyForm_Save
+clickElementById=createArtifactDependencyForm_Save
+wait=200
+searchElementValueByTagName=Body=Related artifact created successfully.

@@ -1,0 +1,19 @@
+name=Ability to Delete tracker
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=3
+wait=200
+waitUntilById=selectTrackers_delete
+clickElementById=selectTrackers_delete
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=Tracker deleted successfully.

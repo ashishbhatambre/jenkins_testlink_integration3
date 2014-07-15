@@ -1,0 +1,16 @@
+name=Ability to set a password for user with Delete only permission [newuser3]
+component=Login
+role=NA
+artifact=NA
+url=sf/sfmain/do/home
+wait=200
+typeElementByName=username=newuser3
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+wait=200
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=200
+searchElementValueByTagName=Body=User Password changed successfully.

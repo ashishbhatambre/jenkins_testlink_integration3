@@ -1,0 +1,21 @@
+name=Monitor Current Folder in inherited public project
+component=Documents
+role=DirectRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.public_sub/docman.root.folder
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Monitor Current Folder
+wait=300
+searchElementValueByTagName=Body=Document Folder is now being monitored.
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Stop Monitoring Folder
+wait=300
+searchElementValueByTagName=Body=Document Folder is no longer monitored.
+wait=300

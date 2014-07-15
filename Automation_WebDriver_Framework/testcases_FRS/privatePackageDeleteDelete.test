@@ -1,0 +1,13 @@
+name=Ability to delete a Package by user with delete role in private project
+component=FRS
+role=Direct Role_Delete Permission
+artifact=NA
+wait=400
+url=sf/frs/do/viewSummary/projects.private/frs
+wait=900
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectPackages_Delete
+clickElementById=selectPackages_Delete
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Package deleted successfully.

@@ -1,0 +1,21 @@
+name=Ability to dhange Group type of a artifact in Public Project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickElementByCssSelector=FilterRight
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=200
+clickHrefByLinkText=QA:ReqArtf
+waitUntilById=group
+selectOptionValueByIdIndex=group=0
+waitUntilById=viewArtifactForm_Save
+clickElementById=viewArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact data updated successfully.

@@ -1,0 +1,27 @@
+name=Edit a Docuement 
+component=Documents
+role=Direct Role_Edit Permission
+artifact=NA
+wait=300
+url=sf/projects/Private/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+clickHrefByLinkText=DocC_1
+wait=300
+waitUntilById=documentPropertiesVersion_submit
+clickElementById=documentPropertiesVersion_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Active document version updated.
+wait=600
+clickHrefByLinkText=Edit / Update
+wait=300
+waitUntilById=title
+typeElementById=title=Private_Document_1
+wait=300
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+wait=600
+searchElementValueByTagName=Body=Document updated successfully.

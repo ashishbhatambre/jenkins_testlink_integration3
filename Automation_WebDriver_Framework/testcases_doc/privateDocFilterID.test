@@ -1,0 +1,19 @@
+name=Filter Document by Document ID in root folder 
+component=Documents
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private/docman.root.document1
+wait=300
+waitUntilById=_filter!!contains!!id
+typeElementById=_filter!!contains!!id=doc1001
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300

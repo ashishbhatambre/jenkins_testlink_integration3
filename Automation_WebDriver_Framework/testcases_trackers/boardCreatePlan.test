@@ -1,0 +1,25 @@
+name=Ability to Create Planning Folder With "In progress"
+component=Tracker
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=Board_Plan1
+waitUntilById=pfdescription
+typeElementById=pfdescription=Planning Folder for the BoardTest
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=In progress
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#List Trackers and Planning Folders

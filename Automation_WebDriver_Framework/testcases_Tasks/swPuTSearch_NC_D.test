@@ -1,0 +1,11 @@
+name=Search task without enter any criteria 
+component=Tasks
+role=Sitewide Role_Delete Permission
+artifact=NA
+wait=300
+url=sf/taskmgr/do/searchTasks/projects.swpublic/taskmgr
+wait=300
+waitUnrilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=300
+searchElementValueByTagName=Body=You have not entered any search criteria.

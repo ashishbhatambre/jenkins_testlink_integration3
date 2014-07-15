@@ -1,0 +1,47 @@
+name=Ability to create Tracker Field with Select Users Input Type 
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.public
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Add Field
+wait=200
+waitUntilById=fieldname
+typeElementById=fieldname=User Effort
+waitUntilById=selectedDisplayType
+selectOptionValueByIdIndex=selectedDisplayType=4
+wait=200
+waitUntilById=isRequiredCheckbox
+clickElementById=isRequiredCheckbox
+clickImage=sf-images/icons/user_picker_icon.png
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=name
+typeElementById=name=tmuser1
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=200
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=200
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+waitUntilById=displayWidth
+typeElementById=displayWidth=28
+waitUntilById=helpText
+typeElementById=helpText=User(s) Input Type
+waitUntilById=fieldForm_Save
+clickElementById=fieldForm_Save
+wait=200
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Field created successfully.

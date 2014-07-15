@@ -1,0 +1,8 @@
+name=Navigate to child folder from breadcrumbs link fro public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=Child_Folder
+wait=500
+searchElementValueByTagName=Body=PubProject#NEXT#Documents#NEXT#$Document_Folder$#NEXT#Books_List#NEXT#Child_Folder#NEXT#List Documents 

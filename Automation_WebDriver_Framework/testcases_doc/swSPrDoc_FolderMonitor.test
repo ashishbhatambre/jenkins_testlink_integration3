@@ -1,0 +1,21 @@
+name=Monitor Current Folder in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Monitor Current Folder
+wait=300
+searchElementValueByTagName=Body=Document Folder is now being monitored.
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Stop Monitoring Folder
+wait=300
+searchElementValueByTagName=Body=Document Folder is no longer monitored.
+wait=300

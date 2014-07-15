@@ -1,0 +1,13 @@
+name=Ability to login via user credentials
+component=Login
+role=Project-wide View Role
+artifact=NA
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=tmuser4
+waitUntilById=pwd
+typeElementById=pwd=Collabnet2@
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

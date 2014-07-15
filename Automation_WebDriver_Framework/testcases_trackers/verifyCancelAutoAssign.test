@@ -1,0 +1,22 @@
+name=Ability to Cancel setting up auto assignment in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=autoAssign
+clickElementById=autoAssign
+wait=200
+waitUntilById=autoAssignByRelease
+selectButtonByValue=R
+wait=200
+clickHrefByLinkText=Cancel
+wait=200			
+searchElementValueByTagName=Body=NewProject#NEXT#Project Admin#NEXT#Tracker Settings#NEXT#Tracker1 Administration 

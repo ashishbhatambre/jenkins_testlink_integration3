@@ -1,0 +1,21 @@
+name=Ability to search wiki page in private project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.swprivate/wiki/HomePage
+wait=300
+waitUntilByid=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+wait=300
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Home
+wait=300
+waitUntilById=allVersionsScope
+clickElementById=allVersionsScope
+waitUntilById=inAttachments
+clickElementById=inAttachments
+waitUntilById=searchWikiPages_submit
+clickElementById=searchWikiPages_submit
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Wiki

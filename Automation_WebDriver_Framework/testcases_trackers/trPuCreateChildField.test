@@ -1,0 +1,27 @@
+name=Ability to create child field 
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.public
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Add Field
+waitUntilById=fieldname
+typeElementById=fieldname=Child Effort
+wait=200
+selectOptionValueByIdIndex=selectedDisplayType=1
+wait=200
+waitUntilById=selectedParentField
+selectOptionValueByIdIndex=selectedParentField=1
+waitUntilById=helpText
+typeElementById=helpText=Single child Input Type
+wait=200
+waitUntilById=fieldForm_Save
+clickHrefByLinkText=Save Field
+wait=200
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Field created successfully.

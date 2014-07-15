@@ -1,0 +1,30 @@
+name=Ability to Create the child planning folder
+component=Tracker
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Board_Plan1
+wait=4000
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=Board_Plan2
+waitUntilById=pfdescription
+typeElementById=pfdescription=Planning Folder for the BoardTest
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=In progress
+waitUntilById=capacity
+typeElementById=capacity=40
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Planning Folders#NEXT#Board_Plan1#NEXT#List Artifacts
+wait=200

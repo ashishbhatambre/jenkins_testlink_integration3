@@ -1,0 +1,21 @@
+name=Filter Sub Child Folder Document by ID 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgdfolder.ddddforname_to_attach_more_than.pgdscfolder
+wait=300
+waitUntilById=_filter!!contains!!id
+typeElementById=_filter!!contains!!id=doc1015
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=pgProject#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+searchElementValueByTagName=Body=pgProject#NEXT#Documents
+ 

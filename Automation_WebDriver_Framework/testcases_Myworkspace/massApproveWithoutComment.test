@@ -1,0 +1,9 @@
+name=Mass Approve the requested project without comment
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+waitUntilById=handleProjectRequests_Approve
+clickElementById=handleProjectRequests_Approve
+wait=300
+searchElementValueByTagName=Body=Approved request to create project

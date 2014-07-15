@@ -1,0 +1,38 @@
+name=Ability to Create a Tracker with some XSS alert Script
+component=Tracker 
+role=Global Role
+artifact= TC -artf175964
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+waitUntilById=projectAdminTracker_create
+clickHrefByLinkText=Create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=<snip>';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT></snip>
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=<snip>';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT></snip>
+wait=200
+selectButtonByValue=icon_25.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+wait=200
+searchElementValueByTagName=Body=Tracker created successfully.
+searchElementValueByTagName=Body=<snip>';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
+wait=200
+waitUntilById=projectAdminTracker_create
+clickHrefByLinkText=Create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
+wait=200
+selectButtonByValue=icon_43.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+wait=200
+searchElementValueByTagName=Body=Tracker created successfully.
+searchElementValueByTagName=Body=';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>

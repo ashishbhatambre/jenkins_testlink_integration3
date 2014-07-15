@@ -1,0 +1,22 @@
+name=Create Document with Draft State in public project
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_Draft
+wait=300
+waitUntilById=description
+typeElementById=description=Doc_Draft
+wait=300
+typeValueForFileField=c:\Uploaded_Files\Test.doc
+wait=300
+waitUntilById=createDocument_submit
+clickElementById=createDocument_submit
+wait=700
+searchElementValueByTagName=Body=Document created successfully.
+wait=300

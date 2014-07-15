@@ -1,0 +1,13 @@
+name=Ability to perform Wiki Predefined Search All Pages in public project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+waitUntilById=predefined_all
+clickElementById=predefined_all
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Wiki
+wait=900
+clickHrefByLinkText=Return
+wait=900
+searchElementValueByTagName=Body=SWPublic#NEXT#Wiki

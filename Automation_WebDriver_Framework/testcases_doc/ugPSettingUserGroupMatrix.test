@@ -1,0 +1,36 @@
+name=Ability to assign the User group in public project,Project Admin,ugPSettingUserGroupMatrix.test
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_pub_project
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+clickHrefByLinkText=Permissions
+wait=500
+waitUntilById=groupRoleMatrix
+clickElementById=groupRoleMatrix
+wait=300
+waitUntilById=addGroupButtonLink
+clickElementById=addGroupButtonLink
+wait=300
+waitUntilById=searchString
+typeElementById=searchString=ug_pub_project_users
+waitUntilById=addGroup_search
+clickElementById=addGroup_search
+wait=300
+clickElementByName=_listItem
+wait=300
+waitUntilById=addGroup_roles
+runJavaScriptPopToMain=javascript:submitForm(document.addGroup, 'roles')
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=addGroupRoles_finish
+clickElementById=addGroupRoles_finish
+waitUntilById=groupRoleMatrix_Save
+clickElementById=groupRoleMatrix_Save
+wait=300
+searchElementValueByTagName=Body=Updated role assignments for 0 user group(s). Total role assignment

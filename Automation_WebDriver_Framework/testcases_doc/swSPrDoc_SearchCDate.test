@@ -1,0 +1,20 @@
+name=Search Docuement by "Created On date values" in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root.folder
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Document
+waitUntilById=createdStartDate
+typeElementById=createdStartDate=08/31/2013
+waitUntilById=createdEndDate
+typeElementById=createdEndDate=11/22/2013
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=SWPrivate_Sub#NEXT#Documents

@@ -1,0 +1,25 @@
+name=Rename Document Root Folder in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Rename
+wait=300
+switchToPopupWindow
+waitUntilById=title
+typeElementById=title=Root_Folder
+wait=300
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=300
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=300
+runJavaScriptPopToMain=javascript:finishFolderRename()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=SWPrivate_Sub#NEXT#Documents

@@ -1,0 +1,23 @@
+name=Searching the Document via Jump To ID for child private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1035
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=doc1065
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=Documents

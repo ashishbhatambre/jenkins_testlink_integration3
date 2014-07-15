@@ -1,0 +1,39 @@
+name= Verify the behavior of count when a user deletes the child artifact
+component=Tracker
+role=Global Role
+artifact=(UserStory - artf145097) artf159318
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=List View
+wait=300
+clickHrefByLinkText= Plan_Backlog
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=400
+waitUntilById=selectArtifactsForm_delete
+clickElementById=selectArtifactsForm_delete
+wait=400
+acceptJavaScriptConfirm
+wait=400
+clickHrefByLinkText=Board View
+wait=400
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Backlog
+wait=400
+searchElementValueByTagName=Body=0 Cards
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Folder_Renamed
+wait=400
+searchElementValueByTagName=Body=2 Cards
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_ChildPlan
+wait=400
+searchElementValueByTagName=Body=2 Cards

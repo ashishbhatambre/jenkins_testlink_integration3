@@ -1,0 +1,30 @@
+name=Wiki Search via jum to id-advance search-search Wiki link for an artifact artf139703
+component=Wiki
+role=Global Role
+artifact=artf139703
+wait=300
+url=sf/projects/newproject/
+wait=400
+clickHrefByLinkText=Wiki
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Wiki
+waitUntilById=searchWikiPages_submit
+clickElementById=searchWikiPages_submit
+waitUntilById=idsString
+typeElementById=idsString=wiki1007
+wait=400
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=400
+clickHrefByLinkText=Advanced Search
+waitUntilByName=term
+typeElementByName=term=wiki
+wait=400
+selectOptionValueByIdValue=applications=Wiki
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+wait=400
+searchElementValueByTagName=Body=Search

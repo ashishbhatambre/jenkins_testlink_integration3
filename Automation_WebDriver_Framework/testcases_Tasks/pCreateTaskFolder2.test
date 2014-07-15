@@ -1,0 +1,25 @@
+name=Creating Folder2 for Task in public proj
+component=Task
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/pubproject/
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+waitUntilById=newTaskGroup
+clickElementById=newTaskGroup
+wait=300
+switchToPopupWindow
+wait=500
+waitUntilById=title
+typeElementByName=title=EventTask2
+waitUntilById=createTaskGroupForm_submit
+clickElementById=createTaskGroupForm_submit
+wait=600
+searchElementValueByTagName=Body=Task folder created successfully.
+wait=600
+runJavaScriptPopToMain=javascript:finishCreateTaskGroup()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600

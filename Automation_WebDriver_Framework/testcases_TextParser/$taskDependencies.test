@@ -1,0 +1,39 @@
+name=Creating Task Dependency using task with ${}text
+component=Tasks
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+clickHrefByLinkText= &events&
+wait=300
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=listTasksSelect_Edit
+runJavaScriptPopToMain=javascript:submitForm(document.listTasksSelect, 'Edit')
+waitUntilById=editTask_Cancel
+runJavaScriptPopToMain=javascript:submitForm(document.editTask, 'Cancel')
+wait=300
+waitUntilById=dependencies
+clickElementById=dependencies
+wait=300
+waitUntilById=add_predecessor
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=associationIdString
+typeElementById=associationIdString=task1014
+waitUntilById=addDependency_submitItems
+clickElementById=addDependency_submitItems
+wait=300
+waitUntilById=addDependency_submitDescription
+clickElementById=addDependency_submitDescription
+wait=1000
+searchElementValueByTagName=Body=1 dependency(ies) were created successfully. Click Close to return to the main window.
+wait=1000
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=1000
+withoutPopCloseSwitchToMainWindow

@@ -1,0 +1,15 @@
+name=Verify Change Request Help Infor in Task Summary
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Summary
+wait=500
+waitUntilById=changeRequests
+clickElementById=changeRequests
+wait=300
+searchElementValueByTagName=Body=Tasks which have a pending cascading dependency change must be approved individually.

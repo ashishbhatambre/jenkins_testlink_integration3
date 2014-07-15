@@ -1,0 +1,33 @@
+name=Ability to search the tracker with search criteria as Priority
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+waitUntilById=priorities
+selectOptionValueByIdValue=priorities=1 - Highest
+waitUntilById=assignedTo
+selectOptionValueByIdValue=assignedTo=user2_normalPermission
+waitUntilById=submittedBy
+selectOptionValueByIdValue=submittedBy=user1_adminPermission
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+waitUntilById=_SfButton_RefineSearch
+clickElementById=_SfButton_RefineSearch
+wait=200
+waitUntilById=assignedPlanningFolderDisplay
+clickElementById=assignedPlanningFolderDisplay
+wait=200
+switchToPopupWindow
+wait=200
+clickHrefByLinkText= Plan_Folder2
+wait=200
+waitUntilById=planningFolderPopup_submit
+clickElementById=planningFolderPopup_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT# Search All Trackers 

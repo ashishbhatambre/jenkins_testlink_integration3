@@ -1,0 +1,20 @@
+name=Create project based on project templates with documents enabled 
+component=Projects
+role=Admin Permission
+artifact=NA
+wait=300
+url=sf/sfmain/do/myProjects?selectedTab=all
+wait=300
+waitUntilById=createProject
+clickElementById=createProject
+wait=300
+waitUntilByName=title
+typeElementByName=title=SWPrivate Template Project
+typeElementByName=description=Project created using template
+wait=300
+selectOptionValueByIdIndex=templateId=3
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=400
+searchElementValueByTagName=Body=SWPrivate Template Project
+wait=300

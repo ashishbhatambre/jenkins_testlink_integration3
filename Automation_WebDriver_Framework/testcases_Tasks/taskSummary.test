@@ -1,0 +1,45 @@
+name=task MyTaskProgress
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= task1
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=testTask
+waitUntilById=description
+typeElementById=description=task under test
+selectOptionValueByNameValue=priority=3 - Medium
+waitUntilById=assignedto
+selectOptionValueByIdValue=assignedto=user1_adminPermission
+selectOptionValueByNameValue=status=Complete
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.
+wait=500
+clickHrefByLinkText=Summary
+wait=500
+clickHrefByLinkText=My Task Progress
+wait=500
+selectOptionValueByIdValue=status_task1004=Warning
+waitUntilByName=accomplished_task1004
+typeElementByName=accomplished_task1004=Testtask
+waitUntilByName=planned_task1004
+typeElementByName=planned_task1004=Plan for the Folder Plan_Folder1
+waitUntilByName=issues_task1004
+typeElementByName=issues_task1004=No Issues
+wait=300
+waitUntilById=myTaskProgress_Save
+clickElementById=myTaskProgress_Save
+wait=300
+searchElementValueByTagName=Body=Task progress updated for 1 task(s).

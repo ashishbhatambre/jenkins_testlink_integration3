@@ -1,0 +1,10 @@
+name=Ability to view Root Task Folder in private project
+component=Tasks
+role=Create Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/viewSummary/projects.private/taskmgr
+wait=300
+clickElementById=summary
+wait=500
+searchElementValueByTagName=Body=Private#NEXT#Tasks

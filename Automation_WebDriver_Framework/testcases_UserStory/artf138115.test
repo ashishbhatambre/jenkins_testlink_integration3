@@ -1,0 +1,37 @@
+name= Improved Tracker Listing with View Limit on rows and columns
+component=Tracker
+role=Global Role
+artifact=artf138115
+wait=400
+url=sf/projects/newproject/
+wait=400
+clickHrefByLinkText=Trackers
+wait=400
+clickHrefByLinkText=NewTracker
+wait=400
+waitUntilById=rows-icon
+clickElementById=rows-icon
+wait=400
+waitUntilById=ipp_75
+clickElementById=ipp_75
+waitUntilById=columns-icon
+clickElementById=columns-icon
+wait=400
+waitUntilById=configureFolderPreferences
+clickElementById=configureFolderPreferences
+wait=400
+switchToPopupWindow
+wait=400
+waitUntilById=availableColumns
+selectOptionByIdValues=availableColumns=Planned For
+selectOptionByIdValues=availableColumns=Submitted On
+waitUntilById=addAll
+clickElementById=addAll
+wait=400
+waitUntilById=selectTrackerColumns_Apply
+clickElementById=selectTrackerColumns_Apply
+wait=400
+withoutPopCloseSwitchToMainWindow
+wait=400
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#NewTracker#NEXT#List Artifacts
+wait=400

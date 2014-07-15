@@ -1,0 +1,16 @@
+name=Ability to search Tasks via Jump to id after navigating to a Tasks
+component=Tasks
+role=Global Role
+artifact=artf165997
+wait=300
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=400
+clickElementByName=TaskMgr
+wait=400
+waitUntilById=idsString
+typeElementById=idsString=task1004
+wait=400
+runJavaScriptPopToMain=javascript:quickJump()
+wait=400
+searchElementValueByTagName=Body=(1 Item)

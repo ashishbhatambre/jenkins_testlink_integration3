@@ -1,0 +1,21 @@
+name=Search wiki page with text start with ${}
+component=Wiki
+role=NA
+artifact=NA
+url=sf/projects/test_test/
+wait=200
+clickHrefByLinkText=Wiki
+wait=200
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=${Wiki}
+wait=200
+clickElementById=searchWikiPages_submit
+wait=200
+searchElementValueByTagName=Body=Invalid search syntax. Please check the search text for syntax errors. 
+wait=200
+clickHrefByLinkText=Return
+wait=200
+searchElementValueByTagName=Body=${test test}#NEXT#Wiki#NEXT#Home page#NEXT#View Wiki Page
+wait=200

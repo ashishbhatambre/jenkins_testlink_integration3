@@ -1,0 +1,25 @@
+name=Creating Task with Users Assigned to task in Sub-Child Folder
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= Sub_Task
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=TaskWithUsers
+waitUntilById=description
+typeElementById=description=Task Created with User assigned to task
+selectOptionValueByNameValue=priority=1 - Highest
+selectOptionValueByNameValue=status=Warning
+selectOptionValueByIdValue=assignedto=user2_normalPermission
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.

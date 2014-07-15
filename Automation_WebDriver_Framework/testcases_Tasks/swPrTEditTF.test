@@ -1,0 +1,25 @@
+name=Ability to edit Task Folder in private project
+component=Tasks
+role=Sitewide_Admin Role
+artifact=NA
+wait=500
+url=sf/taskmgr/do/listTasks/projects.swprivate/taskmgr.swa_taskfolder.swa_subtaskfolder
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Rename
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=SWA_STaskFolder
+wait=300
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=300
+searchElementValueByTagName=Body=Folder renamed successfully.
+runJavaScriptPopToMain=javascript:finishFolderRename()
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks
+wait=300

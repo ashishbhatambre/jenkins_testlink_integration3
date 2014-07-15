@@ -1,0 +1,24 @@
+name=Ability to Edit Planning Folder in public project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+url=sf/planning/do/viewPlanningFolder/projects.swpublic/planning.plan1
+wait=200
+clickHrefByLinkText=Edit
+waitUntilById=edit_planning
+clickElementById=edit_planning
+wait=200
+switchToPopupWindow
+waitUntilById=selectedStatus
+selectOptionValueByIdIndex=selectedStatus=2
+waitUntilById=capacity
+typeElementById=capacity=70
+waitUntilById=startDate
+typeElementById=startDate=10/28/2013
+waitUntilById=endDate
+typeElementById=endDate=11/28/2014
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=SWPublic#NEXT#Trackers

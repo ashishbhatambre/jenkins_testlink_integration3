@@ -1,0 +1,13 @@
+name=Ability to login as swuser2_Login
+component=FRS
+role=NA
+artifact=NA
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=swuser2
+waitUntilById=pwd
+typeElementById=pwd=Collabnet2@
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Workspace

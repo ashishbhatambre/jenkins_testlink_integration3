@@ -1,0 +1,32 @@
+name=Previous Next Document Navigaton in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+selectOptionValueByIdIndex=recentlyEditedIds=0
+wait=800
+clickHrefByLinkText=Next >
+wait=300
+waitUntilById=description
+typeElementById=description=Association_1
+wait=800
+clickHrefByLinkText=< Previous
+wait=300
+runJavaScriptPopToMain=javascript:window.close()
+wait=300
+searchElementValueByTagName=Body=Private_Sub#NEXT#Documents

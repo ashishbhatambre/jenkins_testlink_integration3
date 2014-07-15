@@ -1,0 +1,17 @@
+name=Edit Lock Status 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgdfolder
+wait=300
+clickHrefByLinkText=Doc_Online
+wait=300
+clickHrefByLinkText=Edit / Update
+waitUntilById=locked
+clickElementById=locked
+wait=300
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+wait=600
+searchElementValueByTagName=Body=Document updated successfully.

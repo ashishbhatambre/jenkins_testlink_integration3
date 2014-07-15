@@ -1,0 +1,14 @@
+name=Search using 'Priority': Select either one or more.
+component=Tasks
+role=Site Admin
+artifact=artf168917
+wait=300
+url=sf/taskmgr/do/listTasks/projects.project_search/taskmgr.searchfolder
+wait=300
+clickHrefByLinkText=Search Tasks
+waitUntilById=priority
+selectOptionValueByIdIndex=priority=4
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=500
+searchElementValueByTagName=Body=(1 Item)

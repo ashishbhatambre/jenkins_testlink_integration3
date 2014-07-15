@@ -1,0 +1,11 @@
+name=Search Document Review Via Jump To Id in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docr1229
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=Documents

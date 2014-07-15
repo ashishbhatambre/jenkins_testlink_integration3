@@ -1,0 +1,15 @@
+name=Ability to search artifact by Priority in Private Project
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=priorities
+selectOptionValueByIdIndex=priorities=4
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+searchElementValueByTagName=body= (3 Items)

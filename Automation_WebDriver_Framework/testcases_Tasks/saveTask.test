@@ -1,0 +1,28 @@
+name=Save the Task With Save Button
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= task2
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=title
+typeElementById=title=TaskSave
+waitUntilById=description
+typeElementById=description=Save it using Save button
+selectOptionValueByNameValue=priority=3 - Medium
+selectOptionValueByNameValue=status=OK
+typeElementByName=startDate=03/18/2013
+typeElementByName=endDate=04/19/2013
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.

@@ -1,0 +1,10 @@
+name=Verify  the Categories Link 
+component=Admin
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/listProjectsAdmin
+wait=300
+clickHrefByLinkText=Categories
+wait=700
+searchElementValueByTagName=Body=Site Administration

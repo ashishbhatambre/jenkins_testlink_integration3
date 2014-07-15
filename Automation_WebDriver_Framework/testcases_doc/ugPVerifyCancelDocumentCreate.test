@@ -1,0 +1,21 @@
+name=Verifying Cancel Button on create document for usergroup public project global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_pub_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+waitUntilById=title
+typeElementById=title=save_document
+waitUntilById=description
+typeElementById=description=Document is saved by option "Save"
+wait=400
+typeValueForFileField=D:\Excel File\5_Aug_13_Build 380\Category.html
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=UG_Pub_Project#NEXT#Documents#NEXT#$Document_Folder$#NEXT#List Documents

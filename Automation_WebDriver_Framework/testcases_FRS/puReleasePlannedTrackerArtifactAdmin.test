@@ -1,0 +1,29 @@
+name=Ability to export from Planned Tracker Artifact as user with admin role in public project
+component=FRS
+role=Direct Role_Admin Permission
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.public/frs.package1
+wait=300
+wait=300
+clickHrefByLinkText=Public_Release
+wait=300
+waitUntilById=plannedTrackerArtifacts
+clickElementById=plannedTrackerArtifacts
+wait=300
+clickHrefByLinkText=Export
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=addAll
+clickElementById=addAll
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=300
+searchElementValueByTagName=Body=Export#NEXT#Complete
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#File Releases

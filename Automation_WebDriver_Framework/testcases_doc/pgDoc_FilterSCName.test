@@ -1,0 +1,19 @@
+name=Filter Sub Child Document by Name 
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+clickHrefByLinkText= pgSC_Folder
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Doc_Draft
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+searchElementValueByTagName=Body=pgProject#NEXT#Documents

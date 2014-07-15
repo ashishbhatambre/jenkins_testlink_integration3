@@ -1,0 +1,27 @@
+name=Verify Remove User Monitoring Functionality 
+component=Tasks
+role=Sitewide Role_Edit Permission
+artifact=NA
+wait=300
+clickHrefByLinkText= SWA_TaskFolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+clickHrefByLinkText=Users Monitoring Selected
+wait=300
+switchToPopupWindow
+wait=300
+selectButtonByValue=swuser3
+wait=300
+waitUntilById=selectUsers_removeUsers
+clickElementById=selectUsers_removeUsers
+acceptJavaScriptConfirm
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

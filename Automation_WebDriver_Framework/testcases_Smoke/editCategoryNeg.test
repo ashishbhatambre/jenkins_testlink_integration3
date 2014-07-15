@@ -1,0 +1,15 @@
+name=Inability to paste the sub category to the source location
+component=Categories
+wait=500
+clickHrefByLinkText= ProjectCategory
+wait=500
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+wait=500
+waitUntilById=editCategory_paste
+clickHrefByLinkText=Paste
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Unable to paste items to this location.
+searchElementValueByTagName=Body=The items were cut from and pasted to the same folder.

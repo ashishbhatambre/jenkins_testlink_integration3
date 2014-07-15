@@ -1,0 +1,32 @@
+name=Ability to associate Wiki page in private project as site admin user
+component=Wiki
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Wiki
+wait=300
+waitUntilById=view_wiki_page.showPageDetails
+clickElementById=view_wiki_page.showPageDetails
+wait=300
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=associationIdString
+typeElementById=associationIdString=task1001
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+waitUntilById=description
+typeElementById=description=Wiki Page Associate to Document post1001.
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=1000
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=1000
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000

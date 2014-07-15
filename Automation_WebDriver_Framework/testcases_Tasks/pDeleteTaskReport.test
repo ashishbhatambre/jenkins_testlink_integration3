@@ -1,0 +1,11 @@
+name=Delete Task Report for Public Project
+component=Report
+role=Global Role
+artifact=NA
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+clickHrefByLinkText=Delete
+wait=300
+searchElementValueByTagName=Body=Deleted 1 report(s)

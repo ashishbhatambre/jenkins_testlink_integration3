@@ -1,0 +1,11 @@
+name=Search Document Via Jump To Id 
+component=Documents
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=doc1002
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=Private

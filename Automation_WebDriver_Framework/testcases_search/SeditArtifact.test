@@ -1,0 +1,16 @@
+name=Ability to Edit comments in artifact
+component=Trackers
+role=Site Admin
+artifact=NA
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_search
+wait=300
+selectCheckBoxFromList=_listItem=0 
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=comment
+typeElementById=comment=Verify Special charecter parsing in artifact
+waitUntilById=viewArtifactForm_Save
+clickElementById=viewArtifactForm_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Artifact data updated successfully.

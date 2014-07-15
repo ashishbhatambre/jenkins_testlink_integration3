@@ -1,0 +1,26 @@
+name=Ability to save Column configuration 
+component=Tracker 
+role=Direct Role
+artifact=NA
+wait=200
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=CloneTracker1
+wait=200
+waitUntilById=columns-icon
+clickElementById=columns-icon
+waitUntilById=saveFolderPreferences
+clickElementById=saveFolderPreferences
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=preferenceName
+typeElementById=preferenceName=NewStyle1
+waitUntilById=folderPreferenceNamePopUpForm_Apply
+clickElementById=folderPreferenceNamePopUpForm_Apply
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=Public#NEXT#Trackers

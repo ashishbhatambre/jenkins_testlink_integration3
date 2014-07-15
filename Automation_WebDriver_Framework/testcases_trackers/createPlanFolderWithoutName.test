@@ -1,0 +1,25 @@
+name=Inability to create Planning Folder if Name is not provided
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfdescription
+typeElementById=pfdescription=Planning Folder for the BoardTest
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=In progress
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=200
+acceptJavaScriptConfirm
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=Trackers

@@ -1,0 +1,16 @@
+name=Ability to set the Rows view from 15 to 75 as user with create only permission in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=rows-icon
+clickElementById=rows-icon
+wait=200
+clickElementById=ipp_75
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Tracker1#NEXT#List Artifacts

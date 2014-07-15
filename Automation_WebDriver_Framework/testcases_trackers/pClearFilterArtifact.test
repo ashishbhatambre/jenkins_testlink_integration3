@@ -1,0 +1,11 @@
+name=Ability to clear the filter values in Tracker for public project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=200
+searchElementValueByTagName=Body=PubProject#NEXT#Trackers#NEXT#Hints#NEXT#List Artifacts

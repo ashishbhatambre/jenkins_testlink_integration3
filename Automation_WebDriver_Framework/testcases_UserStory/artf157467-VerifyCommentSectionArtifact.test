@@ -1,0 +1,21 @@
+name=Verifying the edited artifact comment section with tracker type for artf157467
+component=Tracker
+role=Global Role
+artifact=artf157467
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText=TRACK123##$^#$%
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=600
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=600
+searchElementValueByTagName=Body=Moved from NewTracker to TRACK123##$^#$%
+wait=600
+clickHrefByLinkText=Return
+wait=600

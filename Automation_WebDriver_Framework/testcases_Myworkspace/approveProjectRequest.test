@@ -1,0 +1,14 @@
+name=Approve Project Request
+component=My Workspace
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/userMembership/projects.pproject
+waitUntilById=pendingMembers
+clickElementById=pendingMembers
+wait=300
+selectCheckBoxFromList=_listItem=0
+waitUntilById=processAddRequest_Approve
+clickElementById=processAddRequest_Approve
+wait=300
+searchElementValueByTagName=Body=Add project membership request from#NEXT#tuser2#NEXT#has been approved.

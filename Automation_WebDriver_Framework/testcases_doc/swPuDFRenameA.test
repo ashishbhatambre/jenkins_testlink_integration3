@@ -1,0 +1,28 @@
+name=Rename Document Folder in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= $Public_Document&
+wait=300
+runJavaScriptPopToMain=javascript:NewWindow('/sf/sfmain/do/renameFolder/projects.swpublic/docman.root.public_document', 'sfpfolder', 400, 200, 'no')
+wait=300
+switchToPopupWindow
+waitUntilById=title
+typeElementById=title=$Public_Document$
+wait=300
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=300
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=300
+runJavaScriptPopToMain=javascript:finishFolderRename()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Documents
+wait=300

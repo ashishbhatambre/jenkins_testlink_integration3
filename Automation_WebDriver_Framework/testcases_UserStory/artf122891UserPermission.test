@@ -1,0 +1,26 @@
+name=Ability to set Permissions to users for artf122891
+component=Project Admin
+role=Global Role
+artifact=artf122891
+wait=300
+url=sf/rbac/do/permissionAdmin/projects.protest
+wait=500
+clickHrefByLinkText=RestrictedRole
+wait=500
+waitUntilById=members
+clickElementById=members
+waitUntilById=_userPickerDiv
+clickHrefByLinkText=Add
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=user2_normalPermission
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=user2 was added to the role.

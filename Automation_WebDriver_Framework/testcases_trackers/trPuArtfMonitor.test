@@ -1,0 +1,17 @@
+name=Ability to monitor Artifact 
+component=Tracker 
+role=Direct Role
+artifact=NA
+wait=200
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickHrefByLinkText=QA:ClosedArtf
+wait=200
+waitUntilById=button_monitor_object
+clickElementById=button_monitor_object
+wait=200
+searchElementValueByTagName=body=Artifact is now being monitored.

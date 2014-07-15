@@ -1,0 +1,20 @@
+name=Search Document and Verifying the details of searched document for child public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=titleQuery
+typeElementById=titleQuery=Doc1
+wait=300
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=Child_Pub_Project#NEXT#Documents#NEXT#Root Folder#NEXT#Search Documents
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+searchElementValueByTagName=Body=Child_Pub_Project#NEXT#Documents#NEXT#Root Folder#NEXT#Doc_Folder#NEXT#Document Details
+wait=300

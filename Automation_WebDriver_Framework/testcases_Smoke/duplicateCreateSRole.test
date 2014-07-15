@@ -1,0 +1,21 @@
+name=Inability to create duplicate SiteWide Role
+component=Roles
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Roles
+wait=500
+waitUntilById=siteWideRoles
+clickElementById=siteWideRoles
+wait=300
+waitUntilById=listSiteRoles_create
+clickElementById=listSiteRoles_create
+waitUntilById=title
+typeElementById=title=SWEditOnlyRole
+waitUntilById=description
+typeElementById=description=setting Edit only Permissions to Project.
+waitUntilById=createSiteWideRoleForm_submit
+clickElementById=createSiteWideRoleForm_submit
+wait=300
+searchElementValueByTagName=Body=A role with that name already exists.

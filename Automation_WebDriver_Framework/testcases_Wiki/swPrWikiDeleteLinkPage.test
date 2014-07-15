@@ -1,0 +1,14 @@
+name=Ability to delete wiki link page in private project
+component=Wiki
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.swprivate/wiki/HomePage
+wait=300
+clickHrefByLinkText=LinkPage1
+wait=300
+waitUntilById=view_wiki_page.delete
+clickElementById=view_wiki_page.delete
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=Wiki Page deleted successfully.

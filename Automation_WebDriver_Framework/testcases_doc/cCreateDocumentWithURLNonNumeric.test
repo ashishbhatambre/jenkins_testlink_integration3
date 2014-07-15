@@ -1,0 +1,25 @@
+name=Ability to Create document with url "https://localhost:new/any" that contains numeric port value for private child project
+component=Documents
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/child_prv_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_URL
+waitUntilById=description
+typeElementById=description=Private Project Document created using URL with numeric port number
+wait=400
+selectButtonByValue=fromUrl
+waitUntilById=urlContent
+typeElementById=urlContent=http://8080:new
+wait=400
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body=Document created successfully.

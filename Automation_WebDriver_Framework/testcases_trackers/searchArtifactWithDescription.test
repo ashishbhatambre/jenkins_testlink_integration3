@@ -1,0 +1,18 @@
+name=Ability to searching the tracker with Description
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Search Trackers
+wait=200
+waitUntilById=searchText
+typeElementById=searchText=artifact5
+waitUntilById=inDescription
+clickElementById=inDescription
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+searchElementValueByTagName=Body=(1 Item)

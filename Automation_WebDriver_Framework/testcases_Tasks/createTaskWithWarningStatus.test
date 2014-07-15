@@ -1,0 +1,24 @@
+name=Creating Task with Warning Status and priority 1 in child Folder
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= C_Task
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=TaskWithWarning
+waitUntilById=description
+typeElementById=description=Task Created with warning Status with Highest Priority
+selectOptionValueByNameValue=priority=1 - Highest
+selectOptionValueByNameValue=status=Warning
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.

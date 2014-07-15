@@ -1,0 +1,46 @@
+name=Creating Task (task1-task1_2)
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= task1
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=t1
+waitUntilById=description
+typeElementById=description=task1
+selectOptionValueByNameValue=priority=3 - Medium
+selectOptionValueByNameValue=status=OK
+typeElementByName=startDate=03/18/2013
+typeElementByName=endDate=04/19/2013
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.
+wait=300
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=300
+waitUntilByName=title
+typeElementByName=title=t2
+waitUntilByName=description
+typeElementByName=description=task1_2
+selectOptionValueByNameValue=priority=4 - Low
+selectOptionValueByNameValue=status=OK
+typeElementByName=startDate=03/18/2013
+typeElementByName=endDate=04/19/2013
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.

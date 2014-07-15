@@ -1,0 +1,7 @@
+name=Login As Restricted User (tester2)
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=tester2
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=My Page

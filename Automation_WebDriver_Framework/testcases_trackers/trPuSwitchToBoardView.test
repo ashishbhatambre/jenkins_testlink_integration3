@@ -1,0 +1,11 @@
+name=Ability to change Tracker view from List to Board View in public project
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Plan
+wait=200
+searchElementValueByTagName=body=Board View

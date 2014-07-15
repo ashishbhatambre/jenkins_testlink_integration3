@@ -1,0 +1,8 @@
+name=Ability to view Project Task in private project
+component=Tasks
+role=NA
+artifact=NA
+wait=300
+url=sf/taskmgr/do/viewSummary/projects.private/taskmgr
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Tasks

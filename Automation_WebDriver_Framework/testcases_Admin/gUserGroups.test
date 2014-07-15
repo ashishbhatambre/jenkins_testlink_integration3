@@ -1,0 +1,57 @@
+name=Ability to create User Groups as SiteAdmin
+component=User Group
+role=Admin
+artifact=NA
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=User Groups
+wait=500
+waitUntilById=allGroups
+clickElementById=allGroups
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=fullName
+typeElementById=fullName=RoleUsers
+waitUntilById=description
+typeElementById=description=users tested under project and user groups.
+waitUntilById=createGroup_submit
+clickElementById=createGroup_submit
+searchElementValueByTagName=Body=User Group RoleUsers has been created successfully.
+wait=500
+clickHrefByLinkText=RoleUsers
+wait=500
+waitUntilById=_SfButton_adduser
+clickHrefByLinkText=Add
+switchToPopupWindow
+wait=500
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=You must select at least one user.
+wait=300
+waitUntilById=_SfButton_adduser
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+selectOptionValueByIdValue=foundMultipleTemp=user1_adminPermission
+wait=300
+selectOptionValueByIdValue=foundMultipleTemp=tester2_normalPermission
+wait=300
+selectOptionValueByIdValue=foundMultipleTemp=newuser1_createOnlyPermission
+wait=300
+selectOptionValueByIdValue=foundMultipleTemp=newuser2_editOnlyPermission
+wait=300
+selectOptionValueByIdValue=foundMultipleTemp=newuser3_DeleteOnlyPermission
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Selected users were added to the user group.

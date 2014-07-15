@@ -1,0 +1,21 @@
+name=Ability to delete file in release.
+component=FRS
+role=Sitewide Role
+artifact=NA
+wait=400
+url=sf/projects/swprivate/
+wait=1000
+clickHrefByLinkText=File Releases
+wait=300
+clickHrefByLinkText=Private_Package
+wait=300
+clickHrefByLinkText=Private_Release1
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=frsFilesSelection_Delete
+clickElementById=frsFilesSelection_Delete
+wait=300
+acceptJavaScriptConfirm
+wait=700
+searchElementValueByTagName=Body=File(s) deleted successfully.

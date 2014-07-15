@@ -1,0 +1,33 @@
+name=Remove Selected Users in Document Folder Monitoring in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic/docman.root.document1
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Users Monitoring Folder
+wait=300
+switchToPopupWindow
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+wait=300
+waitUntilById=name
+typeElementById=name=swuser2
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+wait=300
+clickHrefByLinkText=Remove
+wait=300
+runJavaScriptPopToMain=javascript: window.close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Documents

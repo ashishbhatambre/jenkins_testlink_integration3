@@ -1,0 +1,27 @@
+name=Create Task Report with name ${}
+component=Reports
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+clickHrefByLinkText=Reports
+wait=300
+waitUntilById=reports
+clickElementById=reports
+waitUntilByName=reporttype
+selectOptionValueByNameValue=reporttype=Task Report
+waitUntilById=createReport_submit
+clickElementById=createReport_submit
+waitUntilById=name
+typeElementById=name=${TaskReport1}
+waitUntilById=description
+typeElementById=description=${Task Report} ${test}
+waitUntilById=status
+selectOptionValueByIdValue=status=OK
+selectOptionValueByIdValue=status=Complete
+waitUntilById=priority
+selectOptionValueByIdValue=priority=4 - Low
+waitUntilById=taskReport_generate
+clickElementById=taskReport_generate
+wait=300
+searchElementValueByTagName=Body=${test test}#NEXT#Reports#NEXT#Modify Task Report

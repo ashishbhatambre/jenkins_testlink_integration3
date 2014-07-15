@@ -1,0 +1,25 @@
+name=Create File Release_&&
+component=FRS
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test
+wait=300
+clickHrefByLinkText=File Releases
+wait=300
+clickHrefByLinkText=File Package
+wait=300
+waitUntilById=releaseList_create
+clickElementById=releaseList_create
+waitUntilById=title
+typeElementById=title=&Release_A&
+waitUntilById=description
+typeElementById=description=&NewProjectRelease 1&
+waitUntilById=status
+selectOptionValueByIdIndex=status=0
+waitUntilById=maturity
+selectOptionValueByIdIndex=maturity=6
+waitUntilById=createRelease_submit
+clickElementById=createRelease_submit
+wait=500
+searchElementValueByTagName=Body=Release created successfully.

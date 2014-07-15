@@ -1,0 +1,14 @@
+name=Ability to download the Package from FRS in private project
+component=FRS
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/frs/do/listReleases/projects.private/frs.package1
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectReleases_Download
+clickElementById=selectReleases_Download
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#File Releases
+

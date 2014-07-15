@@ -1,0 +1,23 @@
+name=Filter Document by Document ID in Child folder for usergroup public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Child_Folder
+wait=500
+waitUntilByName=_filter!!contains!!id
+typeElementByName=_filter!!contains!!id=doc1205
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=doc1205:
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

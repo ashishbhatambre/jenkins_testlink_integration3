@@ -1,0 +1,24 @@
+name=Search using an artifact ID and Search can be done only a full artifact 
+component=Trackers
+role=Site Admin
+artifact=artf161261 
+wait=300
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=artifactId
+typeElementById=artifactId=artf1001
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=(1 Item)
+wait=300
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=artifactId
+typeElementById=artifactId=artf10*
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=No results found.

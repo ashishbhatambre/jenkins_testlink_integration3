@@ -1,0 +1,30 @@
+name=Ability to create Linked application and Verifying the TaskBoard
+component=LinkedApps-TaskBoard
+role=Global Role
+aritfact=TC - artf175547
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Project Toolbar
+waitUntilById=linkedApplications
+clickElementById=linkedApplications
+wait=300
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=CollabNet
+waitUntilById=applicationUrl
+typeElementById=applicationUrl=http://www.collab.net/products/teamforge
+waitUntilById=linkedApplicationForm_Save
+clickElementById=linkedApplicationForm_Save
+wait=300
+searchElementValueByTagName=Body=Linked Application has been created successfully.
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Track
+wait=500
+searchElementValueByTagName=Body=CollabNet
+wait=500

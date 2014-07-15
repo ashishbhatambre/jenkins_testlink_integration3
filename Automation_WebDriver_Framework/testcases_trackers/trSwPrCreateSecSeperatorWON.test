@@ -1,0 +1,21 @@
+name=Ability to add Section separator without name in private project
+component=Tracker Admin
+role=Sitewide Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/editProject/projects.swprivate
+wait=500
+clickHrefByLinkText=Tracker Settings
+wait=500
+clickHrefByLinkText=Tracker1
+wait=500
+waitUntilById=selectionMenuButton_separatorMenu
+clickElementById=selectionMenuButton_separatorMenu
+wait=200
+switchToPopupWindow
+wait=500
+clickHrefByLinkText=Save
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=body=Section separator created successfully.

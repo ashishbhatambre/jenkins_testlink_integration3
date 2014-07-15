@@ -1,0 +1,22 @@
+name=Delete file in File Release in Public project
+component=FRS
+role=Sitewide Role_Delete Permission
+artifact=NA
+wait=400
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=File Releases
+wait=300
+clickHrefByLinkText=Public_Package
+wait=300
+wait=300
+clickHrefByLinkText=Public_Release1
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=frsFilesSelection_Delete
+clickElementById=frsFilesSelection_Delete
+wait=300
+acceptJavaScriptConfirm
+wait=700
+searchElementValueByTagName=Body=File(s) deleted successfully.

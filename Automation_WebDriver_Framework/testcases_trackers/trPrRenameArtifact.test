@@ -1,0 +1,19 @@
+name=Ability to rename artifact in Private Project
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickHrefByLinkText=QA:OpenArtf
+waitUntilById=viewArtifact_edit
+clickElementById=viewArtifact_edit
+waitUntilById=title
+typeElementById=title=QA:Artfact
+waitUntilById=editArtifactForm_Save
+clickElementById=editArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact data updated successfully.

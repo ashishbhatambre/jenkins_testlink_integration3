@@ -1,0 +1,15 @@
+name=Inability to paste the Planning Folder to the same location for private project by siteadmin user
+component=Planning Folder
+wait=500
+clickHrefByLinkText= Root Folder
+wait=500
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+wait=500
+waitUntilById=editCategory_paste
+clickHrefByLinkText=Paste
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Unable to paste items to this location.
+searchElementValueByTagName=Body=The items were cut from and pasted to the same folder.

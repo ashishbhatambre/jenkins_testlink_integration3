@@ -1,0 +1,15 @@
+name=Cancel inline edit mode
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickHrefByLinkText=Edit Inline
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+searchElementValueByTagName=Body=Public#NEXT#Trackers

@@ -1,0 +1,41 @@
+name=Ability to create Discussion Topics in private project as site admin user
+component=Wiki
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Discussions
+wait=500
+clickHrefByLinkText=Forum_Discussions
+wait=500
+waitUntilById=listTopic_create
+clickElementById=listTopic_create
+waitUntilById=title
+typeElementById=title=Topic2
+waitUntilById=content
+typeElementById=content=Test process for project.
+waitUntilById=createTopic_submit
+clickElementById=createTopic_submit
+wait=500
+clickHrefByLinkText=Forum_Discussions
+wait=500
+waitUntilById=listTopic_create
+clickElementById=listTopic_create
+waitUntilById=title
+typeElementById=title=ForumDiscussion1
+waitUntilById=content
+typeElementById=content=Forum for story filter.
+wait=500
+clickHrefByLinkText=Attach another file
+wait=500
+clickHrefByLinkText=Attach another file
+wait=500
+typeFileFieldValueForName=file[1]=D:\link.txt
+wait=500
+typeFileFieldValueForName=file[2]=D:\Test.doc
+wait=500
+typeFileFieldValueForName=file[3]=D:\UserStory Reports\artf139712.jpg
+wait=500
+waitUntilById=createTopic_submit
+clickElementById=createTopic_submit
+wait=800
+searchElementValueByTagName=Body=Topic created successfully.

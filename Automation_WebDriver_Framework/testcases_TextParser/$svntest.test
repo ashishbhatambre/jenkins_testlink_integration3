@@ -1,0 +1,3 @@
+name=subversion repo checkout
+runCommands=vcscript/svnrun1.cmd
+verifyCommandOutput=Committed revision 6.

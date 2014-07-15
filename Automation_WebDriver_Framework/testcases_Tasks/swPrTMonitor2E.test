@@ -1,0 +1,13 @@
+name=Stop Monitoring Task 
+component=Tasks
+role=Sitewide Role_Edit Permission
+artifact=NA
+wait=900
+selectCheckBoxFromList=_listItem=2 
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+waitUntilById=listTasksSelect_UnMonitor
+clickElementById=listTasksSelect_UnMonitor
+wait=700
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.

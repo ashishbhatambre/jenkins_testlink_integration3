@@ -1,0 +1,16 @@
+name=Navigate to Next Document in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugpproject/docman.root.ugpfolder
+wait=300
+clickHrefByLinkText=Doc_Final
+wait=800
+clickHrefByLinkText=Next >
+wait=300
+searchElementValueByTagName=Body=ugpProject#NEXT#Documents
+wait=300
+
+
+

@@ -1,0 +1,17 @@
+name=Create new Documents Component
+wait=300
+waitUntilById=CreatePageComponentLink
+clickElementById=CreatePageComponentLink
+waitUntilById=title
+typeElementById=title=DocumentsComponent
+wait=300
+selectButtonByValue=documents
+wait=300
+selectButtonByValue=0
+wait=300
+selectButtonByValue=false
+wait=300
+waitUntilById=component_html
+clickElementById=component_html
+wait=300
+searchElementValueByTagName=Body= NewProject#NEXT# Project Home 

@@ -1,0 +1,13 @@
+name=View Selected Document Details in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root.folder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+searchElementValueByTagName=Body=SWPublic_Sub#NEXT#Documents

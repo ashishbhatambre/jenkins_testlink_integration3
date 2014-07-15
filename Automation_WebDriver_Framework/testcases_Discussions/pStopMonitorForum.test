@@ -1,0 +1,19 @@
+name=Monitoring the Discussion Forum for public project
+component=Discussions
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Discussions
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectForumsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectForumsForm
+wait=300
+waitUntilById=selectForumsForm_UnMonitor
+clickElementById=selectForumsForm_UnMonitor
+wait=300
+searchElementValueByTagName=Body=Item forum1003 is not being monitored.

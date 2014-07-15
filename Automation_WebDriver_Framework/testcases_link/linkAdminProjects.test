@@ -1,0 +1,10 @@
+name=Verify Project Link via Admin
+component=Admin
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/listProjectsAdmin
+wait=300
+clickHrefByLinkText=All Projects
+wait=500
+searchElementValueByTagName=Body=My#NEXT#Workspace

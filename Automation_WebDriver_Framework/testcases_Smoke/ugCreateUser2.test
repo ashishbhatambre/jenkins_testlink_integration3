@@ -1,0 +1,27 @@
+name=Abiltiy to create user
+component=Users
+role=Admin
+artifact=NA
+wait=400
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=400
+clickHrefByLinkText=Users
+wait=400
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+wait=400
+waitUntilByName=username
+typeElementByName=username=ypchandran
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=yp_adminPermission
+typeElementByName=email=yp@collab.net
+typeElementByName=companyName=cspl
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+wait=400
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=400
+searchElementValueByTagName=Body=User#NEXT#ypchandran#NEXT#has been created successfully.

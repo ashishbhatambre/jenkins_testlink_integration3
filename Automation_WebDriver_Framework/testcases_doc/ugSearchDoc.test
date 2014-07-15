@@ -1,0 +1,13 @@
+name=Search Document using search query for user group - > private project
+wait=300
+waitUntilById=titleQuery
+typeElementById=titleQuery=projectDoc3
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+searchElementValueByTagName=Body=UG_Prv_Project#NEXT#Documents#NEXT#Root Folder#NEXT#Document Details

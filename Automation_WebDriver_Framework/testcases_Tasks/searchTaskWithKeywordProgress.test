@@ -1,0 +1,18 @@
+name=Search task by "Search Keywords" with "Search Name and Description" and "Search Within task progress" enabled
+component=Task
+role=Global Role
+artifact=NA
+wait=500
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Search Tasks
+wait=500
+waitUntilById=searchText
+typeElementById=searchText=date
+wait=300
+waitUntilById=searchTasks_Search
+runJavaScriptPopToMain=javascript:submitForm(document.searchTasks, 'Search')
+wait=300
+searchElementValueByTagName=Body=(3 Items)

@@ -1,0 +1,9 @@
+name=Ability to view WorkLoad Link in public project
+component=Tasks
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=workload
+clickElementById=workload
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Tasks

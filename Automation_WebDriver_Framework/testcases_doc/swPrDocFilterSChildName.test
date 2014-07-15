@@ -1,0 +1,19 @@
+name=Filter Document by Document Name in Sub Child folder 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate/docman.root.document1.ddddforname_to_attach_more_than.sw_pr_subchilddf
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Doc_1
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#ocuments
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300

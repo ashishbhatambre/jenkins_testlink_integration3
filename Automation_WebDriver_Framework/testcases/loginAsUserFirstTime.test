@@ -1,0 +1,16 @@
+name=Login As Admin user
+component=Login
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=wuser2
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+waitUntilByName=newPassword
+typeElementByName=newPassword=Collabnet@1!
+typeElementByName=confirmNewPassword=Collabnet@1!
+clickHrefByLinkText=Update
+wait=300
+searchElementValueByTagName=Body=My Page

@@ -1,0 +1,23 @@
+name=Ability to filter Artifact by Multiple Status in public project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=$Tracker2&
+wait=300
+waitUntilById=btn_filter!!string!!status
+clickElementById=btn_filter!!string!!status
+waitUntilById=ui-multiselect-_filter!!string!!status-option-3
+clickElementById=ui-multiselect-_filter!!string!!status-option-3
+waitUntilById=ui-multiselect-_filter!!string!!status-option-4
+clickElementById=ui-multiselect-_filter!!string!!status-option-4
+wait=300
+clickHrefByLinkText=Filter
+wait=700
+searchElementValueByTagName=body= (2 Items)
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

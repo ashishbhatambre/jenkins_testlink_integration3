@@ -1,0 +1,32 @@
+name=Ability to Add Field using "Select Date" in Tracker settings
+component=Project Admin
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=TRACK123##$^#$%
+wait=200
+waitUntilById=admin
+clickElementById=admin
+wait=200
+clickHrefByLinkText=Add Field
+wait=200
+waitUntilById=fieldname
+typeElementById=fieldname=Schedule
+waitUntilById=selectedDisplayType
+selectOptionValueByIdValue=selectedDisplayType=Select Date
+wait=200
+waitUntilById=helpText
+typeElementById=helpText=Select the Date for shedule the artifact.
+wait=200
+waitUntilById=fieldForm_Save
+clickElementById=fieldForm_Save
+wait=200
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Field created successfully.

@@ -1,0 +1,15 @@
+name=Login As DeleteOnly Role User newuser3
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=newuser3
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Invalid Login
+typeElementByName=username=newuser3
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page

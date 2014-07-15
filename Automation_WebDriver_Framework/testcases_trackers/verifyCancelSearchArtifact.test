@@ -1,0 +1,17 @@
+name=Ability to Cancel searching the Artifact in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Search Trackers
+wait=200
+waitUntilById=priorities
+selectOptionValueByIdValue=priorities=3 - Medium
+waitUntilById=cancelSearch
+clickElementById=cancelSearch
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#List Trackers and Planning Folders

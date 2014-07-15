@@ -1,0 +1,26 @@
+name=Creating task Folder with 256 characters in public project
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+waitUntilById=newTaskGroup
+clickElementById=newTaskGroup
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilByName=title
+typeElementByName=title=${TheProfessionalServicesteamatCollabNet} often finds many creative ways of using the TeamForge platform. This section, as with any wiki page, is under development so please feel free to *#monitor these pages fo#$%#^%^&@#r updates.Advanced Wiki Features# In this section$%^^&@#$ you will find some creative ways to take advantage of the "out of the box" features of the Wiki built 3254into TeamForge. &The& real power of the wiki pages in TeamForge come #$^$%&from the ability use and define your own style sheets (CSS). For exa3465w34mple, this page is using a 2 column 436layout with fancy title boxes and this is all done with custom styles, s$#%#$^$^%tyles you can use in your own wiki pages today.$
+wait=600
+waitUntilById=createTaskGroupForm_submit
+clickElementById=createTaskGroupForm_submit
+wait=600
+searchElementValueByTagName=Body=Task folder created successfully.
+wait=600
+runJavaScriptPopToMain=javascript:finishCreateTaskGroup()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600

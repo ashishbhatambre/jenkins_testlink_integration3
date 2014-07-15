@@ -1,0 +1,15 @@
+name=Setting Categories to be enabled
+component=Categories
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Categories
+wait=500
+waitUntilById=enableCategory
+clickElementById=enableCategory
+wait=500
+waitUntilById=adminCategories_updateEnable
+runJavaScriptPopToMain=javascript:submitForm(document.adminCategories, 'updateEnable')
+wait=500
+searchElementValueByTagName=Body=Categorization enabled site-wide.

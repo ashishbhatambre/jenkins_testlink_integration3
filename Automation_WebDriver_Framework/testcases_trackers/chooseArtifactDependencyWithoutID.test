@@ -1,0 +1,31 @@
+name=Choosing the parent dependency without entering Artifact Id
+component=Tracker
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Board_Plan1
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=200
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=200
+waitUntilById=dependencies
+clickElementById=dependencies
+waitUntilById=choose_parent
+clickHrefByLinkText=Choose Parent
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=addDependencyForm_submitItems
+clickElementById=addDependencyForm_submitItems
+wait=200
+searchElementValueByTagName=Body=No (correct) artifact IDs were input. 
+wait=200
+runJavaScriptPopToMain=javascript:window.close()
+wait=200
+withoutPopCloseSwitchToMainWindow

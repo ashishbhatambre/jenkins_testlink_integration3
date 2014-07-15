@@ -1,0 +1,29 @@
+name=Ability to create task Dependency in public project
+component=Tasks
+role=Sitewide_Admin Role
+artifact=NA
+wait=300
+waitUntilById=dependencies
+clickElementById=dependencies
+wait=300
+waitUntilById=add_predecessor
+clickElementById=add_predecessor
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=associationIdString
+typeElementById=associationIdString=task1003
+wait=300
+waitUntilById=addDependency_submitItems
+clickElementById=addDependency_submitItems
+wait=300
+waitUntilById=addDependency_submitDescription
+clickElementById=addDependency_submitDescription
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=1 dependency(ies) were created successfully. Click Close to return to the main window.
+wait=300
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=300
+url=sf/taskmgr/do/listTasks/projects.swpublic/taskmgr.swa_taskfolder
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

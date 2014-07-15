@@ -1,0 +1,72 @@
+name=Ability to Verify the Differentiation between Open and Close status artifact
+component=Boards
+role=Global Role
+aritfact=artf146163
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=user1
+waitUntilByName=password
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText= Plan_Folder2
+wait=300
+selectOptionValueByIdValue=planning_folder_view_select=All
+wait=300
+selectCheckBoxFromList=_listItem=1
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=300
+selectOptionValueByIdValue=selectedStatus=Pending
+waitUntilById=viewArtifactForm_Save
+clickElementById=viewArtifactForm_Save
+wait=300
+searchElementValueByTagName=Body=Artifact data updated successfully.
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText= Plan_Folder3
+wait=300
+waitUntilById=planning_folder_view_select
+selectOptionValueByIdValue=planning_folder_view_select=All
+wait=300
+clickHrefByLinkText=artifact5
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=Closed
+waitUntilById=viewArtifactForm_Save
+clickElementById=viewArtifactForm_Save
+wait=300
+searchElementValueByTagName=Body=Artifact data updated successfully.
+wait=300
+waitUntilById=planning_folder_view_select
+selectOptionValueByIdValue=planning_folder_view_select=All
+wait=300
+clickHrefByLinkText=Board View
+wait=300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder2
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan1
+wait=400
+clickSpanElementByCssSelector=combo-arrow=3
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan2
+wait=400
+clickElementByName=includeClosed
+wait=400
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Board View
+wait=400

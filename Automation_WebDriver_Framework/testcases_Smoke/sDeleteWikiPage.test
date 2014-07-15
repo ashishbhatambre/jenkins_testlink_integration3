@@ -1,0 +1,15 @@
+name=Ability to delete Linked wiki Page in private project as site admin user
+component=Wiki
+wait=200
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Wiki
+wait=500
+clickHrefByLinkText=Wiki Page
+wait=500
+waitUntilById=view_wiki_page.delete
+clickElementById=view_wiki_page.delete
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=Wiki Page deleted successfully.

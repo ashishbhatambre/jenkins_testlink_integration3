@@ -1,0 +1,20 @@
+name=Filter Document by "Last Edited By" in Sub Child folder 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate/docman.root.document1.ddddforname_to_attach_more_than.sw_pr_subchilddf
+waitUntilById=btn_filter!!string!!lastModifiedBy
+clickElementById=btn_filter!!string!!lastModifiedBy
+wait=300
+clickElementById=ui-multiselect-_filter!!string!!lastModifiedBy-option-1
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300

@@ -1,0 +1,21 @@
+name=Ability to filter Task By Name
+component=Tasks
+role=Create Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.private/taskmgr.pra_taskfolder
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=TA1
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Tasks
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Tasks
+wait=300

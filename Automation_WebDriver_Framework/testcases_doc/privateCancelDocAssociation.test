@@ -1,0 +1,29 @@
+name=Cancel Create Association 
+component=Documents
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/projects/private/
+wait=500
+clickHrefByLinkText=Documents
+wait=800
+clickHrefByLinkText= Document1
+wait=500
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+selectOptionValueByIdIndex=recentlyViewedIds=0
+wait=300
+runJavaScriptPopToMain=javascript:window.close()
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Documents

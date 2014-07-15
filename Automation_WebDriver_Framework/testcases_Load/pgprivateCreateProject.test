@@ -1,0 +1,15 @@
+name=Ability to create Project with private access permission
+component=Projects
+role=Admin
+artifact=NA
+url=sf/sfmain/do/myProjects
+wait=300
+clickElementById=createProject
+waitUntilById=title
+typeElementById=title=pgProject
+waitUntilById=description
+typeElementById=description=This is a Project Group Project
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=500
+searchElementValueByTagName=Body=pgProject#NEXT#Project Home  

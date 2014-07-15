@@ -1,0 +1,28 @@
+name=Delete Card from Swim Lanes in Agile Planning Board for Artifact artf157809
+component=Boards
+role=Global Role
+artifact=artf157809
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Board View
+wait=400
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder1
+wait=400
+clickElementByName=includeClosed
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder2
+wait=400
+clickElementByCssSelector=item-key-icon trackerIcon
+wait=400
+clickSpanElementByCssSelector=icon-trash
+wait=400
+acceptJavaScriptConfirm
+wait=400
+searchElementValueByTagName=Body=Artifact deleted successfully.

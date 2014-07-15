@@ -1,0 +1,28 @@
+name=Ability to create user
+component=Users
+role=Admin
+artifact=NA
+url=ctf/main/listUsersAdmin
+wait=1000
+clickHrefByLinkText=Single
+wait=10000
+custom=qa-name=username=type=pguser1
+wait=300
+custom=qa-name=password=type=Collabnet1!
+wait=300
+custom=qa-name=confirmPassword=type=Collabnet1!
+wait=300
+custom=qa-name=fullName=type=pguser1_adminPermission	
+wait=300
+custom=qa-name=email=type=pguser1@collab.net
+wait=300
+custom=qa-name=organization=type=cspl
+wait=300
+custom=qa-name=licenseType=select=ALM
+wait=300
+custom=qa-name=restrictedUser=checkboxclick=1
+wait=300
+clickSpanElementByCssSelector=widgets-btn-grouped ng-scope
+wait=300
+searchElementValueByTagName=Body=The user "pguser1" was successfully created.
+wait=500

@@ -1,0 +1,19 @@
+name=Monitoring the Package for public project
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectPackages
+clickElementById=selectionMenuButton_MonitorMenu_selectPackages
+wait=300
+waitUntilById=selectPackages_Monitor
+clickElementById=selectPackages_Monitor
+wait=300
+searchElementValueByTagName=Body=1 item(s) are now being monitored.

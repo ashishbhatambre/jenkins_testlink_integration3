@@ -1,0 +1,23 @@
+name=Filter Document by Document ID in root folder 
+component=Documents
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/projects/public/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilById=_filter!!contains!!id
+typeElementById=_filter!!contains!!id=doc1001
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300

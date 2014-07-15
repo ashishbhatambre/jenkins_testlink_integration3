@@ -1,0 +1,42 @@
+name=Ability to Stop Monitoring object in FRS with adding users and removing users for artifact artf142540 
+component=FRS
+role=Global Role
+artifact=artf142540
+wait=300
+clickHrefByLinkText=FilePackage#123
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectReleases
+clickElementById=selectionMenuButton_MonitorMenu_selectReleases
+wait=300
+waitUntilById=selectReleases_who
+clickElementById=selectReleases_who
+wait=300
+switchToPopupWindow
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=user2_normalPermission
+selectOptionValueByIdValue=foundMultipleTemp=yy_admin_per
+wait=300
+clickHrefByLinkText=Add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=500
+selectButtonByValue=user2
+wait=500
+waitUntilById=selectUsers_removeUsers
+clickElementById=selectUsers_removeUsers
+wait=300
+acceptJavaScriptConfirm
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+clickHrefByLinkText=Stop Monitoring Folder
+wait=300
+searchElementValueByTagName=Body=FRS Package is no longer monitored.

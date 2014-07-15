@@ -1,0 +1,39 @@
+name=Ability to add users and view users monitoring the task in private project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=700
+clickHrefByLinkText= SWA_TaskFolder
+wait=500
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+runJavaScriptPopToMain=javascript:openWinForId()
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+wait=300
+waitUntilById=name
+typeElementById=name=swuser4
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=1300
+searchElementValueByTagName=Body=Users Monitoring This Item 
+wait=1300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+

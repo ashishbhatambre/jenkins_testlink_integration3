@@ -1,0 +1,33 @@
+name=Ability to Export "search result" in Public Project
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=name
+waitUntilById=inAttachments
+clickElementById=inAttachments
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+searchElementValueByTagName=body= (2 Items)
+wait=200
+clickHrefByLinkText=Export
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=addAll
+clickElementById=addAll
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=200
+searchElementValueByTagName=body=Export Complete
+wait=200
+clickHrefByLinkText=Close
+wait=200
+withoutPopCloseSwitchToMainWindow

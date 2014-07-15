@@ -1,0 +1,13 @@
+name=Inability to download files from empty package in public project
+component=FRS
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/frs/do/listReleases/projects.public/frs.package1
+wait=300
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectReleases_Download
+clickElementById=selectReleases_Download
+wait=600
+searchElementValueByTagName=Body=The selected release does not contain any files.

@@ -1,0 +1,21 @@
+name=Search Root Folder-Child Folder-Sub Child Folder via Jump To Id 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1025
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1026
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1027
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=pgProject#NEXT#Documents

@@ -1,0 +1,39 @@
+name=Ability to add Attachment to artifact
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=1000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=200
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=attachments
+clickElementById=attachments
+waitUntilById=_SfButton_AddAttachment
+wait=200
+clickHrefByLinkText=Add Attachments
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=comment
+typeElementById=comment=Test case
+wait=300
+typeValueForFileField=C:\Uploaded_Files\link.txt
+waitUntilById=addAttachment_submit
+clickHrefByLinkText=Add
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=Public
+wait=200

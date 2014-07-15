@@ -1,0 +1,27 @@
+name=Task Report creation for public project
+component=Report
+role=Global Role
+artifact=NA
+wait=400
+url=sf/projects/pubproject/
+wait=400
+clickHrefByLinkText=Reports
+wait=400
+waitUntilById=reports
+clickElementById=reports
+waitUntilByName=reporttype
+selectOptionValueByNameValue=reporttype=Task Report
+waitUntilById=createReport_submit
+clickElementById=createReport_submit
+waitUntilById=name
+typeElementById=name=Task_Report1
+waitUntilById=status
+selectOptionValueByIdValue=status=OK
+selectOptionValueByIdValue=status=Complete
+waitUntilById=priority
+selectOptionValueByIdValue=priority=4 - Low
+wait=400
+waitUntilById=taskReport_generate
+clickElementById=taskReport_generate
+wait=400
+searchElementValueByTagName=Body=Reports

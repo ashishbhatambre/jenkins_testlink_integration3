@@ -1,0 +1,13 @@
+name=Document Search_Using 'Search Keywords' field with a valid full word with only 'Search within document' enabled.
+component=Documents
+role=Site Admin
+artifact=artf155297
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+typeElementById=keywordQuery=runSEL.cmd
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=Document Search Results

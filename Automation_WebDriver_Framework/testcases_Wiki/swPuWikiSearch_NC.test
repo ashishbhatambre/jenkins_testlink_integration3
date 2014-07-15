@@ -1,0 +1,13 @@
+name=Inability to perform Wiki Search without providing search critetia in public project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+waitUntilByid=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+wait=300
+waitUntilById=searchWikiPages_submit
+clickElementById=searchWikiPages_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=You have not entered any search criteria.
+

@@ -1,0 +1,18 @@
+name=Monotor Multi Documents in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root.folder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+selectCheckBoxFromList=_listItem=1
+wait=300
+selectCheckBoxFromList=_listItem=2
+wait=300
+waitUntilById=selectDocuments_Monitor
+clickHrefByLinkText=Monitor
+wait=300
+searchElementValueByTagName=Body= monitored.
+wait=300

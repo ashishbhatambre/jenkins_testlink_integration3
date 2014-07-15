@@ -1,0 +1,18 @@
+name=Ability to set Artifact Row Count as 25 in private project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+wait=200
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=rows-icon
+clickElementById=rows-icon
+wait=200
+waitUntilById=ipp_25
+clickElmentById=ipp_25
+wait=200
+searchElementValueByTagName=body=SWPrivate#NEXT#Trackers

@@ -1,0 +1,20 @@
+name=Navigate to Next Document 
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/pgproject/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= pgPFolder
+wait=300
+clickHrefByLinkText=Doc_Final
+wait=300
+clickHrefByLinkText=Next >
+wait=300
+searchElementValueByTagName=Body=pgProject#NEXT#Documents
+wait=300
+
+
+

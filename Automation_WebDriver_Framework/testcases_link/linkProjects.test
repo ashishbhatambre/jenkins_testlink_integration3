@@ -1,0 +1,10 @@
+name=Verify the Projects Link
+component=My Workspace
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/myPage
+wait=300
+clickHrefByLinkText=Projects
+wait=500
+searchElementValueByTagName=Body=My#NEXT#Workspace

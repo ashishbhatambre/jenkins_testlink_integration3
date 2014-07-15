@@ -1,0 +1,13 @@
+name=Ability to paste Document folder in private project as site admin user
+component=Document
+wait=500
+clickHrefByLinkText= Doc2
+wait=500
+clickHrefByLinkText=Edit
+wait=500
+waitUntilById=editCategory_paste
+clickHrefByLinkText=Paste
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Folder pasted successfully.

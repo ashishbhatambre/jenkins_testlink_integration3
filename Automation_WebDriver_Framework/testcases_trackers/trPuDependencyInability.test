@@ -1,0 +1,28 @@
+name=Inability to create dependency "without document Id" in Public Project
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickHrefByLinkText=QA:PendingArtf
+wait=200
+waitUntilById=dependencies
+clickElementById=dependencies
+waitUntilById=choose_parent
+clickElementById=choose_parent
+wait=200
+switchToPopupWindow
+waitUntilById=addDependencyForm_submitItems
+clickElementById=addDependencyForm_submitItems
+wait=200
+searchElementValueByTagName=Body=No (correct) artifact IDs were input.
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=Public#NEXT#Trackers

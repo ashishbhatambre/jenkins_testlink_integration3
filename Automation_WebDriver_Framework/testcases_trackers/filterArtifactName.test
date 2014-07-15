@@ -1,0 +1,21 @@
+name=Ability to filter the artifact with Artifact Name
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=10000
+waitUntilByName=_filter!!contains!!title
+typeElementByName=_filter!!contains!!title=BoardArtifact1
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=200
+searchElementValueByTagName=Body=BoardArtifact1
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

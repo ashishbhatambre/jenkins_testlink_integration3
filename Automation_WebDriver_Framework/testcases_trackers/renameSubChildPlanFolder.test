@@ -1,0 +1,30 @@
+name=Ability to rename the Sub Child Planning Folder
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickImage=sf-images/nanotree/images/plus_last.gif.pagespeed.ce.zUGhBwR7b_.gif
+wait=200
+clickHrefByLinkText= Board_Plan3
+wait=200
+clickHrefByLinkText=Edit
+wait=200
+waitUntilById=edit_planning
+clickElementById=edit_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=Board_SubChild
+waitUntilById=pfdescription
+typeElementById=pfdescription=The Board_Plan3 renamed as Board_SubChild
+wait=200
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Planning Folders#NEXT#Board_Plan1#NEXT#Board_ChildPlan#NEXT#Board_SubChild#NEXT#List Artifacts

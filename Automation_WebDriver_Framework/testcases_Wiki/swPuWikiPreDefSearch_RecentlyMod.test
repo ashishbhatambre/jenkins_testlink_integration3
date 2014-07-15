@@ -1,0 +1,12 @@
+name=Ability to Wiki Predefined Search of Recently Modified Pages in public project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+waitUntilById=predefinedSearchToggle
+clickElementById=predefinedSearchToggle
+wait=300
+waitUntilById=predefined_recent
+clickElementById=predefined_recent
+wait=700
+searchElementValueByTagName=Body=SWPublic#NEXT#Wiki

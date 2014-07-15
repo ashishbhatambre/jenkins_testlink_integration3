@@ -1,0 +1,16 @@
+name=Ability to search user name via Jump to id after navigating to a Users
+component=Users
+role=Global Role
+artifact=artf165997
+wait=300
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=400
+clickElementByName=User
+wait=400
+waitUntilById=idsString
+typeElementById=idsString=user1
+wait=400
+runJavaScriptPopToMain=javascript:quickJump()
+wait=400
+searchElementValueByTagName=Body=(2 Items)

@@ -1,0 +1,40 @@
+name=Add associations to artifact using string ${}
+component=Trackers
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=400
+clickHrefByLinkText=Trackers
+wait=400
+clickHrefByLinkText=${NewTracker<I>}
+wait=400
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=400
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=400
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=associationIdString
+typeElementById=associationIdString=task1015
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+waitUntilById=description
+typeElementById=description=${artifact <associate>} &to& $artifact$inTracker
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=1000
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=1000
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+searchElementValueByTagName=Body=${test test}#NEXT#Trackers#NEXT#${NewTracker<I>}#NEXT#View Artifact

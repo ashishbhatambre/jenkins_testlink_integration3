@@ -1,0 +1,16 @@
+name=Ability to set Column Configuration As Default 
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=CloneTracker1
+wait=200
+waitUntilById=columns-icon
+clickElementById=columns-icon
+waitUntilById=defaultFolderPreferences
+clickElementById=defaultFolderPreferences
+wait=200
+searchElementValueByTagName=Body=Public#NEXT#Trackers

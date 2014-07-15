@@ -1,0 +1,39 @@
+name=Add users to document Users Monitoring Selected list from List Documents > Monitor > Stop Monitoring Selected option for project group public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= P_DocFolder
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+waitUntilById=selectDocuments_who
+clickElementById=selectDocuments_who
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+wait=300
+selectOptionValueByIdValue=foundMultipleTemp=site_admin_per
+wait=500
+clickHrefByLinkText=Add
+wait=500
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=1000
+runJavaScriptPopToMain=javascript:close()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+waitUntilById=selectDocuments_unmonitor
+clickElementById=selectDocuments_unmonitor
+wait=1000
+searchElementValueByTagName=Body=Item doc1150 is not being monitored.

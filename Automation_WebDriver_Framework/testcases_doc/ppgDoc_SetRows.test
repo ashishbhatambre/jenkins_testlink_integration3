@@ -1,0 +1,14 @@
+name=Set Rows Count as 15 in public project
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgfolder
+wait=300
+waitUntilById=rows-icon
+clickElementById=rows-icon
+waitUntilById=ipp_15
+clickElementById=ipp_15
+wait=800
+searchElementValueByTagName=Body=ppgProject#NEXT#Documents
+wait=300

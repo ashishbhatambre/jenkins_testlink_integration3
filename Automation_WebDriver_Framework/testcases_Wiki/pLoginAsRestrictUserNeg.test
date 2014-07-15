@@ -1,0 +1,11 @@
+name=Inability to login As Restricted User with wrong Password
+component=Wiki
+role=NA
+artifact=NA
+wait=300
+url=sf/sfmain/do/home
+wait=300
+typeElementByName=username=tester1
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Invalid Login

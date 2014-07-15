@@ -1,0 +1,20 @@
+name=Ability to copy the task in private project as site admin
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= session_task
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+waitUntilById=listTasksSelect_Copy
+clickElementById=listTasksSelect_Copy
+wait=500
+searchElementValueByTagName=Body=1 task(s) copied to clipboard.

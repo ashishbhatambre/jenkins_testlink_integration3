@@ -1,0 +1,9 @@
+name=Verify WorkLoad functionality Link SW_Pu_All
+component=Tasks
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=workload
+clickElementById=workload
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

@@ -1,0 +1,25 @@
+name=Filter Artifact by selecting multiple Priority 
+component=Trackers 
+role=Direct Role_Create Permission
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=ExtCloneTracker1
+wait=200
+waitUntilById=btn_filter!!numeric!!priority
+clickElementById=btn_filter!!numeric!!priority
+waitUntilById=ui-multiselect-_filter!!numeric!!priority-option-3
+clickElementById=ui-multiselect-_filter!!numeric!!priority-option-3
+waitUntilById=ui-multiselect-_filter!!numeric!!priority-option-4
+clickElementById=ui-multiselect-_filter!!numeric!!priority-option-4
+wait=200
+clickHrefByLinkText=Filter
+wait=200
+searchElementValueByTagName=body= (3 Items)
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=200
+searchElementValueByTagName=body=Private#NEXT#Trackers

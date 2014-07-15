@@ -1,0 +1,16 @@
+name=Ability to create public Project as site admin
+component=Projects
+wait=300
+url=sf/sfmain/do/createProject
+wait=500
+waitUntilById=createProject
+clickElementById=createProject
+wait=500
+waitUntilByName=title
+typeElementByName=title=FT_Pub_Project
+waitUntilByName=description
+typeElementByName=description=Project which has Public Access permission created by site admin.
+wait=500
+clickHrefByLinkText=Create
+wait=500
+searchElementValueByTagName=Body=FT_Pub_Project#NEXT#Project Home

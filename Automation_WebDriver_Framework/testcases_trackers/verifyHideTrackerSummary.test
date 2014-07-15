@@ -1,0 +1,15 @@
+name=Ability to Hide of the Tracker summary Via toggle image in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=200
+waitUntilById=showHideChartButton
+clickElementById=showHideChartButton
+wait=200
+searchElementValueByTagName=Body=tracker1001 : NewTracker Summary

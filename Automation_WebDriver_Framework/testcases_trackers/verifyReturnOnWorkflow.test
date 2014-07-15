@@ -1,0 +1,19 @@
+name=Ability to Return from workflow tab in private project
+component=Tracker Admin
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=workflow
+clickElementById=workflow
+wait=200
+clickHrefByLinkText=Return
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Project Admin#NEXT#Tracker Settings

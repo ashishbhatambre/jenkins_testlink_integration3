@@ -1,0 +1,55 @@
+name=Dont Show closed Planning Folder in Board View
+component=Boards
+role=Global Role
+aritfact=artf148004
+wait=300
+url=sf/sfmain/do/home
+wait=300
+waitUntilByName=username
+typeElementByName=username=user1
+waitUntilByName=password
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText= Plan_Folder1
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=edit_planning
+clickElementById=edit_planning
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=Closed
+wait=300
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Plan
+wait=400
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder2
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan1
+wait=400
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Board View
+wait=400
+url=sf/sfmain/do/logout
+wait=400
+searchElementValueByTagName=Body=Home

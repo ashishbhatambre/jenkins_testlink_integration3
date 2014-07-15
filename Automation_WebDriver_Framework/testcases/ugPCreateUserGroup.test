@@ -1,0 +1,21 @@
+name=Ability to create User Groups in publid project as Site Admin
+component=User Groups
+role=NA
+artifact=NA
+wait=500
+clickHrefByLinkText=User Groups
+wait=500
+waitUntilById=allGroups
+clickElementById=allGroups
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=fullName
+typeElementById=fullName=UG_Pub_Project_Users
+waitUntilById=description
+typeElementById=description=users are under testing work to the pu project processed by user group.
+wait=300
+waitUntilById=createGroup_submit
+clickElementById=createGroup_submit
+wait=300
+searchElementValueByTagName=Body=User Group#NEXT#UG_Pub_Project_Users#NEXT#has been created successfully.

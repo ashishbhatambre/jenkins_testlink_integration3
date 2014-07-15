@@ -1,0 +1,13 @@
+name=Ability to Verify Cancel button in Creating Topic to Forum
+component=Discussions
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=NewForum
+wait=500
+waitUntilById=listTopic_create
+clickElementById=listTopic_create
+wait=500
+clickHrefByLinkText=Cancel
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Discussion#NEXT#NewForum#NEXT#Topic Summary 

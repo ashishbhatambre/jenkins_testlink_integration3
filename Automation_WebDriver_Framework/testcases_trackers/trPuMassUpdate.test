@@ -1,0 +1,23 @@
+name=Ability to do Mass update in public project
+component=Trackers
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+selectCheckBoxFromList=_listItem=2
+wait=200
+waitUntilById=selectArtifactsForm_massUpdate
+clickElementById=selectArtifactsForm_massUpdate
+waitUntilById=comment
+typeElementById=comment=Fast action Required
+wait=200
+waitUntilById=massUpdateArtifactsForm_submit
+clickElementById=massUpdateArtifactsForm_submit
+wait=800
+searchElementValueByTagName=body=2 Artifact(s) were successfully updated

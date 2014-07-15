@@ -1,0 +1,27 @@
+name=Ability to edit the Planning Folder
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder1
+wait=200
+clickHrefByLinkText=Edit
+wait=200
+waitUntilById=edit_planning
+clickElementById=edit_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=startDate
+typeElementById=startDate=07/18/2013
+waitUntilById=endDate
+typeElementById=endDate=08/14/2013
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Planning Folders#NEXT#Plan_Folder1#NEXT#List Artifacts

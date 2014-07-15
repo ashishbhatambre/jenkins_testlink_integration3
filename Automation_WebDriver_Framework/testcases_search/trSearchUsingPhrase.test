@@ -1,0 +1,14 @@
+name=Tracker Search_For exact match
+component=Trackers
+role=Site Admin
+artifact=artf161263
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_new
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText="701 planning"
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=300
+searchElementValueByTagName=body=Tracker Search Results

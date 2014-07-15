@@ -1,0 +1,27 @@
+name=Ability to do status Rollup in Task Manager settings in private project as site admin user
+component=Task
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Task Manager Settings
+wait=300
+waitUntilById=rollup
+clickElementById=rollup
+wait=300
+waitUntilById=alertpercentage
+typeElementById=alertpercentage=40
+waitUntilById=warningpercentage
+typeElementById=warningpercentage=30
+waitUntilById=okpercentage
+typeElementById=okpercentage=50
+waitUntilById=completepercentage
+typeElementById=completepercentage=100
+waitUntilById=notstartedpercentage
+typeElementById=notstartedpercentage=20
+wait=300
+waitUntilById=taskStatusRollupPreference_submit
+clickElementById=taskStatusRollupPreference_submit
+wait=300
+searchElementValueByTagName=Body=Task status rollup percentages saved.

@@ -1,0 +1,26 @@
+name=Ability to remove users from wiki monitor in private project as site admin user
+component=Wiki
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Wiki
+wait=500
+clickHrefByLinkText=Users Monitoring
+wait=500
+switchToPopupWindow
+wait=500
+selectButtonByValue=admin
+wait=500
+waitUntilById=selectUsers_removeUsers
+clickElementById=selectUsers_removeUsers
+wait=500
+acceptJavaScriptConfirm
+wait=500
+clickHrefByLinkText=Cancel
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+waitUntilById=button_monitor_object
+clickElementById=button_monitor_object
+wait=500
+searchElementValueByTagName=Body=Wiki Page is no longer monitored.

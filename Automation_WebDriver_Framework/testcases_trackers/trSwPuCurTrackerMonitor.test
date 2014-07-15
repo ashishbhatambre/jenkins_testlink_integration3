@@ -1,0 +1,16 @@
+name=Ability to Monitor Current Tracker in public project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+waitUntilById=monitor_current_folder
+clickElementById=monitor_current_folder
+wait=200
+searchElementValueByTagName=body=Tracker is now being monitored.

@@ -1,0 +1,24 @@
+name=Ability to filter the Maximum of Selected Options above 10
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=10000
+waitUntilById=btn_filter!!numeric!!priority
+clickElementById=btn_filter!!numeric!!priority
+waitUntilByName=multiselect__filter!!numeric!!priority
+selectButtonByValue=1
+selectButtonByValue=2
+selectButtonByValue=3
+selectButtonByValue=4
+selectButtonByValue=5
+selectButtonByValue=0
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Trackers
+wait=500

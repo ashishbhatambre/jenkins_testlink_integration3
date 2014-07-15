@@ -1,0 +1,23 @@
+name=Ability to update tracker Status field in private project as site admin user
+component=Tracker
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Tracker Settings
+wait=300
+clickHrefByLinkText=traqueur2
+wait=300
+clickHrefByLinkText=Status
+waitUntilById=helpText
+typeElementById=helpText=Select any one among the values.
+wait=300
+runJavaScriptPopToMain=JavaScript: alphabetizeRows()
+wait=300
+waitUntilById=fieldForm_save
+clickElementById=fieldForm_save
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=Field data updated successfully.

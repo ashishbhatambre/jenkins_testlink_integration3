@@ -1,0 +1,16 @@
+name=Return to list documents page by clicking Return button from document view page for public child project with global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Child_Doc_Folder
+wait=500
+clickHrefByLinkText=document_Renamed
+wait=500
+clickHrefByLinkText=Return
+wait=500
+searchElementValueByTagName=Body=Child_Pub_Project#NEXT#Documents#NEXT#Doc_Str_View#NEXT#Doc_List#NEXT#Child_Doc_Folder#NEXT#List Documents 

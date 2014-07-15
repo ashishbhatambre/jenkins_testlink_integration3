@@ -1,0 +1,31 @@
+name=Inability to create Planning Folder with Invalid Start date
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=testplan
+waitUntilById=pfdescription
+typeElementById=pfdescription=testPlan is a planning folder created by uesr1
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=In progress
+waitUntilByName=startDate
+typeElementByName=startDate=234234
+wait=500
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=500
+searchElementValueByTagName=Body=Dates must be entered in MM/dd/yyyy format. 
+wait=500
+clickHrefByLinkText=Cancel
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500

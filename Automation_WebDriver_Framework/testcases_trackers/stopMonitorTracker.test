@@ -1,0 +1,16 @@
+name=Ability to Stop Monitoring the Tracker
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+wait=200
+clickHrefByLinkText=Stop Monitoring Folder
+wait=200
+searchElementValueByTagName=Body=Tracker is no longer monitored.

@@ -1,0 +1,25 @@
+name=Ability to cancel tracker field creation
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.public
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Add Field
+waitUntilById=fieldname
+typeElementById=fieldname=Test Effort
+wait=200
+selectOptionValueByIdIndex=selectedDisplayType=0
+wait=200
+waitUntilById=isRequiredCheckbox
+clickElementById=isRequiredCheckbox
+wait=200
+waitUntilById=defaultTextValue
+typeElementById=defaultTextValue=TEXT
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+searchElementValueByTagName=body=Public#NEXT#Project Admin

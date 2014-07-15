@@ -1,0 +1,32 @@
+name=Ability to edit Planning Folder field in artifact
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=200
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=assignedPlanningFolderDisplay
+clickElementById=assignedPlanningFolderDisplay
+wait=200
+switchToPopupWindow
+wait=200
+clickHrefByLinkText= Plan_Folder2
+wait=200
+waitUntilById=planningFolderPopup_submit
+clickElementById=planningFolderPopup_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=4 - Low
+wait=200
+clickHrefByLinkText=Update
+wait=200
+searchElementValueByTagName=Body=Artifact data updated successfully.

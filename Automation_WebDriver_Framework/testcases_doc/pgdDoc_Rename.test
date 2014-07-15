@@ -1,0 +1,23 @@
+name=Rename Document 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgdfolder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=500
+clickHrefByLinkText=Edit / Update
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_DraftR
+wait=300
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+wait=500
+searchElementValueByTagName=Body=Document updated successfully.
+

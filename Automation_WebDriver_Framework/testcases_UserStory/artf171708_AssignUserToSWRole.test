@@ -1,0 +1,37 @@
+name=Verify that ability to approve SCM Adapter Repository Access request as SCM Integration Permission user when requires approval is enabled in Integration
+component=Integration
+role=NA
+artifact= Tasks artf171712 TC - artf171708  [Associate user to above create sitewide role]
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Roles
+wait=500
+waitUntilById=siteWideRoles
+clickElementById=siteWideRoles
+wait=500
+clickHrefByLinkText=SW1
+wait=300
+waitUntilById=members
+clickElementById=members
+waitUntilById=_userPickerDiv
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+waitUntilById=name
+typeElementById=name=usr1
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=usr1 was added to the role.

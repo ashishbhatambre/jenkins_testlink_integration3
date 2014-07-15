@@ -1,0 +1,39 @@
+name=Inability to Associate the task without adding Recently Edited objects
+component=Tasks
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= C_Task
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+wait=300
+waitUntilById=editTask_Cancel
+clickElementById=editTask_Cancel
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+selectButtonByValue=recentlyEditedBox
+wait=300
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+wait=300
+searchElementValueByTagName=Body=Please select at least one item from the list. 
+wait=1000
+runJavaScriptPopToMain=javascript:window.close()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000

@@ -1,0 +1,28 @@
+name=Inability to Edit the profile picture with file other than image.
+component=MySettings
+role=NA
+artifact= TC - artf172984
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=neha
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+clickHrefByLinkText=My Settings
+wait=300
+waitUntilById=view_user.edit
+clickElementById=view_user.edit
+wait=300
+waitUntilById=picture
+typeValueForFileField=C:\Uploaded_Files\index.html
+wait=300
+waitUntilById=editUser_submit
+clickElementById=editUser_submit
+wait=300
+searchElementValueByTagName=Body=
+wait=300
+url=sf/sfmain/do/logout
+wait=300

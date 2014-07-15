@@ -1,0 +1,14 @@
+name=Login As Restricted User with setting Password (user2)
+component=Login
+role=NA
+artifact=NA
+wait=300
+url=sf/sfmain/do/home
+typeElementByName=username=user2
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+searchElementValueByTagName=Body=User Password changed successfully.

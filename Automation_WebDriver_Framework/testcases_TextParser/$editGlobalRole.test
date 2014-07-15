@@ -1,0 +1,27 @@
+name=Edit Global role with text &text&
+component=Roles
+role=NA
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Roles
+wait=300
+waitUntilById=globalRoles
+clickElementById=globalRoles
+wait=300
+clickHrefByLinkText=${Role to project}
+wait=300
+waitUntilById=edit_button
+clickElementById=edit_button
+wait=300
+waitUntilById=title
+typeElementById=title=&Role to project&
+waitUntilById=description
+typeElementById=description=&RestrictPermission&
+wait=300
+waitUntilById=editRoleInformationForm_submit
+clickElementById=editRoleInformationForm_submit
+wait=300
+searchElementValueByTagName=Body=Role updated successfully.

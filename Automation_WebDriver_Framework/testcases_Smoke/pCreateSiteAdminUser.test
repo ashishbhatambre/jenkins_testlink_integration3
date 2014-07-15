@@ -1,0 +1,23 @@
+name=Ability to creating Site Admin user
+component=Users
+wait=300
+clickElementById=admin_link
+clickHrefByLinkText=Users
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilByName=username
+typeElementByName=username=siteAdmin
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=site_admin_per
+typeElementByName=email=siteadmin@collab.net
+typeElementByName=companyName=cspl
+waitUntilById=superUser
+clickElementById=superUser
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+cancelJavaScriptConfirm
+typeElementByName=username=siteadmin
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+searchElementValueByTagName=Body=User#NEXT#siteadmin#NEXT#has been created successfully.

@@ -1,0 +1,10 @@
+name=Verify Task Change Request
+component=Tasks
+role=Direct Role_Edit Permission
+artifact=NA
+wait=300
+url=sf/taskmgr/do/viewSummary/projects.private/taskmgr
+waitUntilById=changeRequests
+clickElementById=changeRequests
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Tasks

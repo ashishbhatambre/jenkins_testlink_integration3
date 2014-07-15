@@ -1,0 +1,25 @@
+name=Edit Task Report with text ${}
+component=Reports
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=Reports
+waitUntilById=reports
+clickElementById=reports
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=name
+typeElementById=name=&TaskReport1&
+waitUntilById=description
+typeElementById=description=${<b>Task Report</b> Modified the &status& to Alert}
+wait=300
+waitUntilById=taskReport_generate
+clickElementById=taskReport_generate
+wait=300
+searchElementValueByTagName=Body=${test test}#NEXT#Reports#NEXT#Modify Task Report

@@ -1,0 +1,18 @@
+name=Ability to monitoring the Release File in FileReleases for private project by siteadmin
+component=FRS
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=YTDF
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectionMenuButton_MonitorMenu_selectReleases
+clickElementById=selectionMenuButton_MonitorMenu_selectReleases
+wait=500
+waitUntilById=selectReleases_Monitor
+clickElementById=selectReleases_Monitor
+wait=500
+searchElementValueByTagName=Body=1 item(s) are now being monitored.

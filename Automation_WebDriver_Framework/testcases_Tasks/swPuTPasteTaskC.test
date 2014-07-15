@@ -1,0 +1,11 @@
+name=Paste Copied Task(s) 
+component=Tasks
+role=Sitewide Role_Create Permission
+artifact=NA
+wait=300
+waitUntilById=listTasksSelect_Paste
+clickElementById=listTasksSelect_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=1 task(s) pasted from clipboard.

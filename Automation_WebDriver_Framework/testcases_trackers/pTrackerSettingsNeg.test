@@ -1,0 +1,27 @@
+name=Ability to add Fields to the Tracker via Tracker settings for public project
+component=Tracker Admin
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Hints
+wait=200
+waitUntilById=admin
+clickElementById=admin
+wait=200
+clickHrefByLinkText=Add Field
+waitUntilById=fieldname
+typeElementById=fieldname=Photo
+waitUntilById=selectedDisplayType
+selectOptionValueByIdValue=selectedDisplayType=Single Select (Specify Field Values)
+waitUntilById=isRequiredCheckbox
+clickElementById=isRequiredCheckbox
+waitUntilById=helpText
+typeElementById=helpText=Select any one among the values.
+wait=200
+searchElementValueByTagName=Body=PubProject#NEXT#Project Admin #NEXT#Tracker Settings #NEXT#Hints Administration #NEXT#Create Field 

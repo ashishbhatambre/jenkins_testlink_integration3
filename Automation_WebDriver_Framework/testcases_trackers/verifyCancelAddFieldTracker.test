@@ -1,0 +1,29 @@
+name=Ability to Cancel adding fields to tracker in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=TRACK123##$^#$%
+wait=200
+waitUntilById=admin
+clickElementById=admin
+wait=200
+clickHrefByLinkText=Add Field
+wait=200
+waitUntilById=fieldname
+typeElementById=fieldname=Message
+waitUntilById=selectedDisplayType
+selectOptionValueByIdValue=selectedDisplayType=Text Entry
+wait=200
+waitUntilById=helpText
+typeElementById=helpText=Text entry Field used to post your messages.
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Project Admin#NEXT#Tracker Settings#NEXT#TRACK123##$^#$% Administration

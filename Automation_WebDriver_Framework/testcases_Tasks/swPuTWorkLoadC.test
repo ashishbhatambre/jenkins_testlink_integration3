@@ -1,0 +1,9 @@
+name=Verify WorkLoad functionality Link 
+component=Tasks
+role=Sitewide Role_Create Permission
+artifact=NA
+wait=300
+waitUntilById=workload
+clickElementById=workload
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

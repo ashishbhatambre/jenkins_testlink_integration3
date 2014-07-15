@@ -1,0 +1,31 @@
+name=Ability to Create Artifact via Planning Folder for Tracker1
+component=Tracker
+role=Global Role
+artifact=artf139713
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Board_Plan1
+wait=4000
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen1
+wait=200
+waitUntilById=title
+typeElementById=title=BoardArtifact1
+waitUntilById=description
+typeElementById=description=artifact for the Tracker folder
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=2 - High
+waitUntilByName=assignedUser
+selectOptionValueByNameValue=assignedUser=user2_normalPermission
+wait=1000
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.
+wait=200

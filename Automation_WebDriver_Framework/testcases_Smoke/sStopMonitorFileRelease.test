@@ -1,0 +1,16 @@
+name=Ability to stop Monitoring the Pacakge in private project as site admin user
+component=FRS
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=File Releases
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectionMenuButton_MonitorMenu_selectPackages
+clickElementById=selectionMenuButton_MonitorMenu_selectPackages
+wait=300
+waitUntilById=selectPackages_UnMonitor
+clickElementById=selectPackages_UnMonitor
+wait=500
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.

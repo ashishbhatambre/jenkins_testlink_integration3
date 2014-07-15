@@ -1,0 +1,15 @@
+name=Delete Document Folder in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugpproject/docman.root.ugplivefolder
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Delete
+wait=300
+acceptJavaScriptConfirm
+wait=600
+searchElementValueByTagName=Body=Folder deleted successfully.
+

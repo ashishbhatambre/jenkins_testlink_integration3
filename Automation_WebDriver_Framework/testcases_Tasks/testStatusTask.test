@@ -1,0 +1,15 @@
+name=Verifying the Task Status via RootFolder
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Summary
+wait=500
+clickHrefByLinkText= test_task
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Tasks#NEXT#test_task#NEXT#List Tasks
+wait=500 

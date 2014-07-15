@@ -1,0 +1,53 @@
+name=Create Document Review in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root.folder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=review
+clickElementById=review
+wait=800
+clickHrefByLinkText=Start a Review
+wait=300
+waitUntilById=title
+typeElementById=title=Review1
+wait=300
+waitUntilById=dueDate
+typeElementById=dueDate=12/24/2014
+wait=300
+clickElementById=createDocumentReview_userPicker
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=name
+typeElementById=name=swuser1
+wait=300
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+withoutPopCloseSwitchToMainWindow
+wait=300
+waitUntilById=description
+typeElementById=description=Review Complete
+wait=300
+waitUntilById=attachDocument
+clickElementById=attachDocument
+wait=300
+waitUntilById=createDocumentReview_submit
+clickElementById=createDocumentReview_submit
+wait=300
+searchElementValueByTagName=Body=Document review created successfully.

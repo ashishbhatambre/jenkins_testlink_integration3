@@ -1,0 +1,15 @@
+name=Ability to search Artifact by Submitted User by public project
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=submittedBy
+selectOptionValueByIdIndex=submittedBy=3
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+searchElementValueByTagName=body= (4 Items)

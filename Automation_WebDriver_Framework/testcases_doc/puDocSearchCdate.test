@@ -1,0 +1,24 @@
+name=Search Docuement by "Created On date values" 
+component=Documents
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/projects/public/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Document
+waitUntilById=createdStartDate
+typeElementById=createdStartDate=08/21/2013
+waitUntilById=createdEndDate
+typeElementById=createdEndDate=08/22/2013
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Documents

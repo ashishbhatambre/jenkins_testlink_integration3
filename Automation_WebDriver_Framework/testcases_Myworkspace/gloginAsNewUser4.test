@@ -1,0 +1,16 @@
+name=Login As NewUser4
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=newuser4
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Invalid Login
+wait=300
+typeElementByName=username=newuser4
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page

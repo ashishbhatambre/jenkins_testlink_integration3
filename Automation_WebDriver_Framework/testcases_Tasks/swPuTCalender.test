@@ -1,0 +1,16 @@
+name=Ability to set up calender in task in public project
+component=Tasks
+role=Sitewide_Admin Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/adminGeneralSettings/projects.swpublic/taskmgr
+wait=300
+waitUntilById=task_calendar
+clickElementById=task_calendar
+wait=300
+selectOptionValueByIdIndex=includeWeekends=1
+wait=300
+waitUntilById=adminCalendar_submit
+clickElementById=adminCalendar_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=The default calendar has been updated.

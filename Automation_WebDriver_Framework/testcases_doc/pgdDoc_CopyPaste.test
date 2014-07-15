@@ -1,0 +1,20 @@
+name=Copy & Paste a Document 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgdfolder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Copy
+clickElementById=selectDocuments_Copy
+wait=800
+searchElementValueByTagName=Body=1 document(s) copied to clipboard.
+wait=300
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+acceptJavaScriptConfirm
+wait=800
+searchElementValueByTagName=Body=1 document(s) pasted.

@@ -1,0 +1,28 @@
+name=Better Search Artifact for Tracker[jump to id- adcance search]-> artf142542
+wait=300
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+waitUntilByName=Tracker
+clickElementByName=Tracker
+waitUntilById=idsString
+typeElementById=idsString=tracker1002
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=Tracker
+clickElementById=Tracker
+waitUntilById=idsString
+typeElementById=idsString=artf1004
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=300
+clickHrefByLinkText=Advanced Search
+waitUntilByName=term
+typeElementByName=term=Tracker1
+waitUntilById=applications
+selectOptionValueByIdValue=applications=Trackers
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+wait=300
+searchElementValueByTagName=Body=Search

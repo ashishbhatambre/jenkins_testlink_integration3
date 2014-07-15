@@ -1,0 +1,12 @@
+name=Ability to wearch wiki page predefined_recent search
+component=Wiki
+role=Global Role
+artifact=NA
+wait=200
+waitUntilById=predefinedSearchToggle
+clickElementById=predefinedSearchToggle
+wait=200
+waitUntilById=predefined_recent
+clickElementById=predefined_recent
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Wiki#NEXT#Search Wiki Pages

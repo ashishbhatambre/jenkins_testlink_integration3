@@ -1,0 +1,15 @@
+name=Verify Root Task Folder Status in Task Summary
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Summary
+wait=500
+waitUntilById=summary
+clickElementById=summary
+wait=500
+searchElementValueByTagName=Body= test_task

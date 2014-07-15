@@ -1,0 +1,162 @@
+name=Verifying that Auto focus to search text box once open any one of the multi select widget user with view permission
+component=Tracker
+role=Project Role
+artifact=artf165729 - TestcaseID (artf170505)
+wait=200
+url=sf/sfmain/do/home
+wait=200
+typeElementByName=username=admin
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=200
+searchElementValueByTagName=Body=My Page
+wait=200
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=200
+clickHrefByLinkText=Users
+wait=200
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilByName=username
+typeElementByName=username=user123
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=user123
+typeElementByName=email=user123@collab.net
+typeElementByName=companyName=cspl
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+wait=200
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=200
+searchElementValueByTagName=Body=User user123 has been created successfully.
+wait=200
+url=sf/sfmain/do/myProjects
+wait=200
+waitUntilById=createProject
+clickElementById=createProject
+waitUntilById=title
+typeElementById=title=FilterText
+waitUntilById=description
+typeElementById=description=Project created to test Multi-filter options search text option.
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=200
+url=sf/projects/filtertext/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+waitUntilById=projectAdminTracker_create
+clickHrefByLinkText=Create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=T1
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=Tracker 1 for the filtertext project.
+wait=200
+selectButtonByValue=icon_36.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+wait=200
+searchElementValueByTagName=Body=Tracker created successfully.
+wait=200
+clickHrefByLinkText=User Membership
+wait=200
+clickHrefByLinkText=Add
+wait=200
+selectButtonByValue=user123
+wait=200
+clickElementById=addUser_finish
+wait=200
+searchElementValueByTagName=Body=User(s) added to the project: user123 (user123) .
+wait=200
+url=sf/rbac/do/createRole/projects.filtertext
+waitUntilById=title
+typeElementById=title=TrackerViewRole
+waitUntilById=description
+typeElementById=description=View only Role for this project
+waitUntilById=requestable
+clickElementById=requestable
+wait=200
+clickElementById=blockRecurse
+waitUntilById=createRole_submit
+clickElementById=createRole_submit
+wait=200
+searchElementValueByTagName=Body=Role created successfully.
+wait=200
+waitUntilById=tracker_menu
+runJavaScriptPopToMain=javascript:showSection('tracker')
+clickElementById=trackerViewWildcard
+wait=200
+waitUntilById=editRole_Edit
+clickElementById=editRole_Edit
+wait=200
+searchElementValueByTagName=Body=Role updated successfully.
+wait=200
+clickHrefByLinkText=TrackerViewRole
+wait=200
+waitUntilById=members
+clickElementById=members
+wait=200
+waitUntilById=_userPickerDiv
+clickHrefByLinkText=Add
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=name
+typeElementById=name=user123
+wait=500
+clickElementById=userPicker_find
+wait=500
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=500
+clickHrefByLinkText=Add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=user123 was added to the role.
+wait=200
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home
+wait=200
+url=sf/sfmain/do/home
+wait=200
+typeElementByName=username=user123
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=200
+searchElementValueByTagName=Body=Change User Password
+wait=200
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=200
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=200
+url=sf/projects/filtertext/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=T1
+wait=200
+waitUntilById=btn_filter!!numeric!!priority
+clickElementById=btn_filter!!numeric!!priority
+wait=200
+clickCssSelectorAndValueForSpan=ui-multiselect-filter=None
+typeElementByType=search=None
+wait=200
+waitUntilByName=multiselect__filter!!numeric!!priority
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=200
+searchElementValueByTagName=Body=Enter Keywordsf

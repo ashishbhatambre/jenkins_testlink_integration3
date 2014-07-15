@@ -1,0 +1,22 @@
+name=Filter Document by Name in public project
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Doc_Online
+wait=300
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=ppgProject#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=1000
+searchElementValueByTagName=Body=ppgProject#NEXT#Documents
+wait=300
+ 

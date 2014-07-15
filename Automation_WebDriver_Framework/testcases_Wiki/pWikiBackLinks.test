@@ -1,0 +1,12 @@
+name=Ability to view Wiki BackLinks in Public project
+component=Wiki
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=300
+clickHrefByLinkText=Wiki
+waitUntilById=backlinks
+clickElementById=backlinks
+wait=300
+searchElementValueByTagName=Body=Wiki

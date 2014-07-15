@@ -1,0 +1,16 @@
+name=Ability to search Tracker With Priorites option
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Search Trackers
+wait=200
+waitUntilById=priorities
+selectOptionValueByIdValue=priorities=3 - Medium
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+searchElementValueByTagName=Body=(1 Item)

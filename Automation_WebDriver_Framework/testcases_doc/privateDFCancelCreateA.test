@@ -1,0 +1,22 @@
+name=Cancel create Document Folder 
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/private/
+wait=500
+clickHrefByLinkText=Documents
+wait=400
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=Document1
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Documents

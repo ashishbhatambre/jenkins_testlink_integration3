@@ -1,0 +1,23 @@
+name=User Membership to Private project:NProject,PProject
+wait=300
+url=sf/sfmain/do/userMembership/projects.nproject
+wait=300
+waitUntilById=addUserLink
+clickElementById=addUserLink
+wait=300
+selectButtonByValue=tuser1
+wait=300
+clickElementById=addUser_finish
+wait=300
+searchElementValueByTagName=Body=User(s) added to the project: tuser1_adminPermission (tuser1) . 
+wait=300
+url=sf/sfmain/do/userMembership/projects.pproject
+wait=300
+waitUntilById=addUserLink
+clickElementById=addUserLink
+wait=300
+selectButtonByValue=ptester1
+wait=300
+clickElementById=addUser_finish
+wait=500
+searchElementValueByTagName=Body=User(s) added to the project: ptester1_adminPermission (ptester1) .

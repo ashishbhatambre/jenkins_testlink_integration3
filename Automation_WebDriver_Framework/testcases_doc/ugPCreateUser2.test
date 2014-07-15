@@ -1,0 +1,24 @@
+name=Ability to create user,Admin,ugPCreateUser2.test
+wait=400
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=400
+clickHrefByLinkText=Users
+wait=400
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+wait=400
+waitUntilByName=username
+typeElementByName=username=p1chandran
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=p1_adminPermission
+typeElementByName=email=p1@collab.net
+typeElementByName=companyName=cspl
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+wait=500
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=500
+searchElementValueByTagName=Body=User#NEXT#p1chandran#NEXT#has been created successfully.

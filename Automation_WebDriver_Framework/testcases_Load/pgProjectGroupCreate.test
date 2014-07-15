@@ -1,0 +1,18 @@
+name=Ability to create Project Group
+component=Project Groups
+role=Admin
+artifact=NA
+wait=300
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Project Groups
+wait=300
+clickHrefByLinkText=Create Project Group
+waitUntilById=title
+typeElementById=title=Misc
+waitUntilById=description
+typeElementById=description=Projects residing with public and private access permissions.
+wait=300
+clickElementById=createProjectGroup_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Project Group Misc has been created successfully.

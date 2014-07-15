@@ -1,0 +1,8 @@
+name=Revert Public project Image to default
+component=Project Home
+role=Admin Role
+artifact=NA
+waitUntilById=logo_revert
+clickElementById=logo_revert
+wait=700
+searchElementValueByTagName=Body=The project image was reverted to the system default image.

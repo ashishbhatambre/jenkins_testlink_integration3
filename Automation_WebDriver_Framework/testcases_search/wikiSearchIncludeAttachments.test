@@ -1,0 +1,15 @@
+name=Wiki Search_using 'Search Text' field checkbox 'Include Attachments' selected 
+component=Wiki
+role=Site Admin
+artifact=artf163011
+wait=300
+url=sf/wiki/do/viewPage/projects.project_search/wiki/HomePage
+wait=300
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+wait=300
+waitUntilbyId=keywordQuery
+typeElementById=keywordQuery=PASS
+clickElementById=inAttachments
+clickElementById=searchWikiPages_submit
+searchElementValueByTagName=Body=(1 Item)

@@ -1,0 +1,5 @@
+name=awaititng for my approval
+wait=300
+clickElementById=myApproval
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

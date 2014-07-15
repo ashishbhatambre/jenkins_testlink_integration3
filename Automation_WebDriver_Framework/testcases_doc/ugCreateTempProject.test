@@ -1,0 +1,23 @@
+name=Create projects based on project templates with documents enabled 
+component=Projects
+role=Admin 
+artifact=NA
+wait=300
+url=sf/sfmain/do/myProjects?selectedTab=all
+wait=300
+waitUntilById=createProject
+clickElementById=createProject
+wait=300
+waitUntilByName=title
+typeElementByName=title=ugTempProject
+typeElementByName=description=Project created using template
+wait=500
+selectOptionValueByIdIndex=templateId=3
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=400
+searchElementValueByTagName=Body=Your request to create a project has been sent to the TeamForge administrator.
+wait=300
+clickHrefByLinkText=Return
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

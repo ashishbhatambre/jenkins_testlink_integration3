@@ -1,0 +1,29 @@
+name=Tracker Search_Verify the ability to save a search from the tracker Search page 
+component=Trackers
+role=Site Admin
+artifact=artf165304
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_search
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=track
+waitUntilById=inTitle
+clickElementById=inTitle
+clickElementById=searchTracker_SaveSearch
+wait=300
+switchToPopupWindow
+wait=400
+typeElementByName=searchOrFilterName=Pre_Search
+wait=300
+waitUntilById=saveSearchOrFilter_submit
+clickElementById=saveSearchOrFilter_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=body=Search saved.
+wait=300
+waitUntilById=mySearchesToggle
+clickElementById=mySearchesToggle
+wait=1300
+searchElementValueByTagName=body=Pre_Search

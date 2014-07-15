@@ -1,0 +1,26 @@
+name=Ability to Multi-Select for the dropdown fields in Search Filter for other than List Artifact pages - Task summary page(Change Requests Tab)
+component=Tasks
+role=Global Role
+artifact=artf154930-TC(artf157864)
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+waitUntilById=changeRequests
+clickElementById=changeRequests
+wait=500
+waitUntilById=btn_filter!!string!!folderPathString
+clickElementById=btn_filter!!string!!folderPathString
+waitUntilByName=multiselect__filter!!string!!folderPathString
+selectButtonByValue=taskmgr.task1.childtask
+wait=500
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=No results found.
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

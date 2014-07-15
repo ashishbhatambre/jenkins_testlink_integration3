@@ -1,0 +1,41 @@
+name=Inability to create Planning Folder when negative value is provided for Capacity field
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=Plan_Folder1
+waitUntilById=pfdescription
+typeElementById=pfdescription=Planning Folder for the NewTracker
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=In progress
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=Plan_Folder2
+waitUntilById=pfdescription
+typeElementById=pfdescription=Planning Folder for the NewTracker
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=In progress
+waitUntilById=capacity
+typeElementById=capacity=-45
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=200
+searchElementValueByTagName=Body=Capacity must be non-negative and 6 digits or less.

@@ -1,0 +1,29 @@
+name=Cut & Paste Multiple Documents 
+component=Documents
+role=Direct Role_Admin Permisssion
+artifact=NA
+wait=300
+url=sf/projects/public/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=selectDocuments_Cut
+clickElementById=selectDocuments_Cut
+wait=500
+searchElementValueByTagName=Body=2 document(s) copied to clipboard.
+wait=300
+clickHrefByLinkText= Pu_DocumentFolder_Sub
+wait=300
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=2 document(s) pasted.
+wait=300

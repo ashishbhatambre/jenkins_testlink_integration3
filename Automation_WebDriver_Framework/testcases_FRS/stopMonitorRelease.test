@@ -1,0 +1,17 @@
+name=Stop Monitoring the Releases in File Releases 
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=FilePackage#123
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectReleases
+clickElementById=selectionMenuButton_MonitorMenu_selectReleases
+wait=500
+clickHrefByLinkText=Stop Monitoring Folder
+wait=500
+searchElementValueByTagName=Body=FRS Package is no longer monitored.

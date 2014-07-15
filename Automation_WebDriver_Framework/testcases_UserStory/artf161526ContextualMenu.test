@@ -1,0 +1,11 @@
+name=QA Automation task for Artifact artf155230 : Contextual Menu in Planning Folder List View to Create Parent/Child/ Associate/Attach & Comment artifacts 
+component=Reports
+role=Global Role
+artifact=artf161526
+url=sf/tracker/do/listTrackers/projects.newproject/tracker
+wait=300
+clickHrefByLinkText=Board_Plan1
+wait=300
+clickImage=sf-images/icons/contextmenu_chevron.png
+wait=300
+clickHrefByLinkText=Choose Child

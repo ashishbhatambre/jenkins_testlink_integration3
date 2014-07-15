@@ -1,0 +1,22 @@
+name=Ability to create User
+component=Users
+wait=500
+clickHrefByLinkText=Users
+wait=500
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+wait=400
+waitUntilByName=username
+typeElementByName=username=user2	
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=user2_normalPermission	
+typeElementByName=email=user2@collab.net
+typeElementByName=companyName=cspl
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+wait=400
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=400
+searchElementValueByTagName=Body=User#NEXT#user2#NEXT#has been created successfully.

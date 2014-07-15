@@ -1,0 +1,43 @@
+name=Ability to Export task in private project as  site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= session_task
+wait=500
+clickHrefByLinkText=Export
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=exportType
+selectButtonByValue=.xml
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Task ID
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Task Name
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Task Folder
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Description
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Priority
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=800
+runJavaScriptPopToMain=javascript:close()
+wait=800
+withoutPopCloseSwitchToMainWindow
+wait=800
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Tasks#NEXT#session_task#NEXT#List Tasks 

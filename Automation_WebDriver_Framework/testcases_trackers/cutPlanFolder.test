@@ -1,0 +1,15 @@
+name=Ability to cut the planning folder
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder3
+wait=4000
+clickHrefByLinkText=Edit
+wait=200
+clickHrefByLinkText=Cut
+wait=200
+searchElementValueByTagName=Body=Folder cut successfully.

@@ -1,0 +1,25 @@
+name=Ability to create Sub Task Folder in private project
+component=Tasks
+role=Admin role
+artifact=NA
+wait=300
+clickHrefByLinkText= PRA_TaskFolder
+wait=300
+waitUntilById=newTask
+clickElementById=newTask
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=PRA_SubTaskFolder
+wait=300
+waitUntilById=createTaskGroupForm_submit
+clickElementById=createTaskGroupForm_submit
+wait=300
+searchElementValueByTagName=Body=Task folder created successfully.
+wait=300
+clickHrefByLinkText=Close
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Tasks

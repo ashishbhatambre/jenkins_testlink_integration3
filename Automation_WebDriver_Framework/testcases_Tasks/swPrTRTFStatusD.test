@@ -1,0 +1,10 @@
+name=Verify Root Task Folder Status 
+component=Tasks
+role=Sitewide Role_Delete Permission
+artifact=NA
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Summary
+wait=500
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

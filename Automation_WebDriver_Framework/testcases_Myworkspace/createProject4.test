@@ -1,0 +1,14 @@
+name=project created by newuser1
+url=sf/sfmain/do/myProjects
+wait=300
+clickElementById=createProject
+waitUntilById=title
+typeElementById=title=Project_scm
+waitUntilById=description
+typeElementById=description=This is scm project
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=300
+url=sf/sfmain/do/myProjects/
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

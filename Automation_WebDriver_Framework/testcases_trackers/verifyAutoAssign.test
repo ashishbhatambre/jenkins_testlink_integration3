@@ -1,0 +1,26 @@
+name=Ability to verify auto assignment by clicking on Category and No-Auto Assignment in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=autoAssign
+clickElementById=autoAssign
+wait=200
+waitUntilById=autoAssignByCategory
+selectButtonByValue=C
+wait=200
+waitUntilById=noAutoAssignment
+selectButtonByValue=N
+wait=200
+waitUntilById=adminTrackerForm_Save
+clickElementById=adminTrackerForm_Save
+wait=200
+searchElementValueByTagName=Body=Auto assignment rules updated successfully.

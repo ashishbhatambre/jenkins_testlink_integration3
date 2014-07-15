@@ -1,0 +1,44 @@
+name=Ability to export the list of searched artifacts
+component=Trackers
+role=Global Role
+artifact=NA
+wait=200
+clickHrefByLinkText=Export
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=200
+searchElementValueByTagName=Body=You must select at least one field to export.
+wait=200
+waitUntilById=exportType
+selectButtonByValue=.xml
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Artifact ID
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Title
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Status
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Description
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Priority
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=500
+runJavaScriptPopToMain=javascript:close()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT# Search All Trackers 

@@ -1,0 +1,44 @@
+name=Ability to create Multiple Association 
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=200
+selectCheckBoxFromList=_listItem=2 
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+switchToPopupWindow
+waitUntilById=associationIdString
+typeElementById=associationIdString=artf1005
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+waitUntilById=description
+typeElementById=description=Association via ID
+waitUntilById=addAssociation_submitDescriptionStartAgain
+clickElementById=addAssociation_submitDescriptionStartAgain
+waitUntilById=recentlyEditedIds
+selectOptionValueByIdIndex=recentlyEditedIds=1
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+waitUntilById=description
+typeElementById=description=Association via Recently Viewed items
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=1 associations were created successfully. Click Close to return to the main window.
+wait=200
+clickHrefByLinkText=Close
+withoutPopCloseSwitchToMainWindow
+

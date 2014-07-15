@@ -1,0 +1,16 @@
+name=Locate Doc.Folder(Root-Child-Sub Child) via BreadCrumbs link 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgdfolder.ddddforname_to_attach_more_than.pgdscfolder
+wait=300
+clickHrefByLinkText=pgdSC_Folder
+wait=300
+clickHrefByLinkText=pgdCFolder
+wait=300
+clickHrefByLinkText=pgdPFolder
+wait=300
+clickHrefByLinkText=Root Folder
+wait=300
+searchElementValueByTagName=Body=pgProject#NEXT#Documents

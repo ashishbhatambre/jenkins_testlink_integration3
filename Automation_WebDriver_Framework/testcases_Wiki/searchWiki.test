@@ -1,0 +1,18 @@
+name=Ability to Search wiki page
+component=Wiki
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Wiki
+wait=200
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+wait=200
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Wiki
+wait=200
+waitUntilById=searchWikiPages_submit
+clickElementById=searchWikiPages_submit
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Wiki#NEXT#Search Wiki Pages

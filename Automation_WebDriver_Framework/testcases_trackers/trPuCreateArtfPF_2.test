@@ -1,0 +1,27 @@
+name=Ability to create artifact with open status in Planning Folder
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickHrefByLinkText=Submit New Artifact
+waitUntilById=title
+typeElementById=title=QA:OpenArtf
+waitUntilById=description
+typeElementById=description=Create artifact with open status
+waitUntilById=selectedStatus
+selectOptionValueByIdIndex=selectedStatus=1
+waitUntilById=fldPriority
+selectOptionValueByIdIndex=fldPriority=4
+waitUntilById=fldAssignedTo
+selectOptionValueByIdIndex=fldAssignedTo=1
+waitUntilById=fldPoints
+typeElementById=fldPoints=20
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Artifact submitted successfully.

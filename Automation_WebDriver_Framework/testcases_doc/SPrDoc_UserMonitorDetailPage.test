@@ -1,0 +1,42 @@
+name=Enable User Monitoring Via Doc.Detail Page in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+clickHrefByLinkText=Users Monitoring
+wait=300
+switchToPopupWindow
+wait=300
+clickHrefByLinkText=Add
+wait=300
+clickHrefByLinkText=Show All
+wait=300
+waitUntilById=name
+typeElementById=name=tmuser1
+wait=300
+clickHrefByLinkText=Clear
+wait=300
+waitUntilById=name
+typeElementById=name=tmuser4
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Private_Sub#NEXT#Documents

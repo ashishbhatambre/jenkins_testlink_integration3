@@ -1,0 +1,9 @@
+name=Ability to view Task Change Request in private project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=300
+waitUntilById=changeRequests
+clickElementById=changeRequests
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

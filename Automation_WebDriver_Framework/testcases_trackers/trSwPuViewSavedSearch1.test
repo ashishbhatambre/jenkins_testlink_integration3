@@ -1,0 +1,15 @@
+name=Show "My Saved Tracker Searches"
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+waitUntilById=searchTracker
+clickElementById=searchTracker
+wait=200
+waitUntilById=mySearchesToggle
+clickElementById=mySearchesToggle
+wait=200
+searchElementValueByTagName=body=My Search1

@@ -1,0 +1,28 @@
+name=Ability to filter release in private project
+component=FRS
+role=Sitewide Role
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.swprivate/frs.package1
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Release1
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=1300
+searchElementValueByTagName=Body=No results found.
+wait=300
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Private_Release
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=1300
+searchElementValueByTagName=Body=Private_Release
+wait=600
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

@@ -1,0 +1,38 @@
+name=Ability to create Parent Dependency to the Artifact from Recently Edited object
+component=Tracker Admin
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder3
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=200
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=dependencies
+clickElementById=dependencies
+waitUntilById=choose_parent
+clickHrefByLinkText=Choose Parent
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=dependenciesFromHistoryIds
+selectOptionValueByIdIndex=dependenciesFromHistoryIds=1
+wait=200
+waitUntilById=addDependencyForm_submitItems
+clickElementById=addDependencyForm_submitItems
+wait=800
+waitUntilById=addDependencyForm_submitDescription
+clickElementById=addDependencyForm_submitDescription
+wait=800
+searchElementValueByTagName=Body=Artifact dependency with artf1001 created successfully.
+searchElementValueByTagName=Body=Click Close to return to the main window.
+wait=800
+runJavaScriptPopToMainWindow=javascript:finishAssociation()
+wait=800
+withoutPopCloseSwitchToMainWindow
+wait=800

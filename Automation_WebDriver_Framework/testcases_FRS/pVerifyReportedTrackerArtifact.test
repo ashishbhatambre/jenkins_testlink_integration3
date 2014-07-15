@@ -1,0 +1,17 @@
+name=Verifying Reported Tracker artifact for public project
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=123Package_Notes
+wait=500
+clickHrefByLinkText=Notes
+wait=500
+waitUntilById=foundInArtifacts
+clickElementById=foundInArtifacts
+wait=500
+searchElementValueByTagName=Body=PubProject#NEXT#File Releases#NEXT#123Package_Notes#NEXT#Notes#NEXT#View Release

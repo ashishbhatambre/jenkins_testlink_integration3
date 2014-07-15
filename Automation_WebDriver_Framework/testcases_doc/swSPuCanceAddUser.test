@@ -1,0 +1,26 @@
+name=Cancel Add users in Find a User Page in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root.folder
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Users Monitoring Folder
+wait=300
+switchToPopupWindow
+wait=300
+clickHrefByLinkText=Add
+wait=300
+clickHrefByLinkText=Show All
+wait=300
+waitUntilById=addAll
+clickElementById=addAll
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=SWPublic_Sub#NEXT#Documents
+wait=300

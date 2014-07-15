@@ -1,0 +1,14 @@
+name=Ability to view All artifacts including the closed one by selecting All option in planning Folder
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder1
+wait=10000
+waitUntilById=planning_folder_view_select
+selectOptionValueByIdValue=planning_folder_view_select=All
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Planning Folders#NEXT#Plan_Folder1#NEXT#List Artifacts

@@ -1,0 +1,33 @@
+name=searching documents via jum to id- advance search- searchdocuments link for artifact artf139703
+component=Documents
+role=Global Role
+artifact=artf139703
+url=sf/projects/newproject/
+wait=400
+clickHrefByLinkText=Documents
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=titleQuery
+typeElementById=titleQuery=projectDoc2
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=400
+searchElementValueByTagName=Body=Search Documents
+waitUntilById=idsString
+typeElementById=idsString=doc1001
+wait=400
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=400
+clickHrefByLinkText=Advanced Search
+waitUntilByName=term
+typeElementByName=term=projectDoc1
+waitUntilById=applications
+selectOptionValueByIdValue=applications=Documents
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+wait=400
+clickHrefByLinkText=Return
+wait=400
+searchElementValueByTagName=Body=Search

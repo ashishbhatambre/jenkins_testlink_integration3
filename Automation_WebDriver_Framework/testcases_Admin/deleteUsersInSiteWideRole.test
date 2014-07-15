@@ -1,0 +1,25 @@
+name=Ability to delete users from SiteWide Admin Role
+component=Role
+role=Admin
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Roles
+wait=500
+waitUntilById=siteWideRoles
+clickElementById=siteWideRoles
+wait=500
+clickHrefByLinkText=SWAdminRole
+wait=500
+waitUntilById=members
+clickElementById=members
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=roleUsers_submit
+runJavaScriptPopToMain=javascript:submitForm(document.roleUsers, 'submit')
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=user1 was removed from the role.

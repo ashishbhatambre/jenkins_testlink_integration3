@@ -1,0 +1,11 @@
+name=Global Search_With an invalid word 
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168123 
+clickHrefByLinkText=Jump to ID
+clickElementById=search
+typeElementById=term=suite!!!
+selectOptionValueByIdIndex=applications=1
+selectOptionValueByIdIndex=projects=0
+clickElementById=searchForm_submit
+searchElementValueByTagName=Body=The query string is invalid. 

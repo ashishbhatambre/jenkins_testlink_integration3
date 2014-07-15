@@ -1,0 +1,26 @@
+name=Ability to create artifact
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=10000
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+wait=500
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen2
+wait=200
+waitUntilById=title
+typeElementById=title=artifact2
+waitUntilById=description
+typeElementById=description=artifact for the Tracker1 folder
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=4 - Low
+waitUntilByName=assignedUser
+selectOptionValueByNameValue=assignedUser=user2_normalPermission
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.

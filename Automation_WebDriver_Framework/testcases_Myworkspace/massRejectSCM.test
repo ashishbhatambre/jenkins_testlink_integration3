@@ -1,0 +1,10 @@
+name=Mass Reject SCM repositories without Comment
+waitUntilByName=selectedObjects
+selectCheckBoxFromList=selectedObjects=0
+selectCheckBoxFromList=selectedObjects=1
+waitUntilById=objectSelection_Reject
+clickElementById=objectSelection_Reject
+wait=300
+searchElementValueByTagName=Body=Repository request rejected.
+wait=300
+searchElementValueByTagName=Body=Repository request rejected.

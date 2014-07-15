@@ -1,0 +1,12 @@
+name=Ability to filter the Project with text as site admin user
+component=Project
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/listProjectsAdmin
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=PrvProject
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=Projects

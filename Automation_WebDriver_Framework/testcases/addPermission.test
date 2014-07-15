@@ -1,0 +1,35 @@
+name=Ability to set user Membership via project admin in private project
+component=Project Admin
+role=NA
+artifact=NA
+wait=1000
+url=sf/projects/proj1/
+wait=1000
+clickHrefByLinkText=Project Admin
+wait=1000
+clickHrefByLinkText=Permissions
+wait=1000
+clickHrefByLinkText=Tracker Admin
+wait=1000
+waitUntilById=members
+clickElementById=members
+wait=1000
+clickHrefByLinkText=Add
+wait=1000
+switchToPopupWindow
+wait=1000
+waitUntilById=name
+typeElementById=name=wbuser_full_name2
+wait=1000
+clickElementById=userPicker_find
+wait=1000
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=1000
+clickHrefByLinkText=Add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+searchElementValueByTagName=Body=wuser2 was added to the role.

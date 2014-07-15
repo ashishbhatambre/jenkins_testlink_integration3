@@ -1,0 +1,22 @@
+name=Ability to edit an Artifact in private project as site admin user
+component=Tracker
+wait=300
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText= list1
+wait=10000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=300
+waitUntilById=comment
+typeElementById=comment=The artifact gets modified.
+wait=300
+waitUntilById=viewArtifactForm_Save
+clickElementById=viewArtifactForm_Save
+wait=300
+searchElementValueByTagName=Body=Artifact data updated successfully.

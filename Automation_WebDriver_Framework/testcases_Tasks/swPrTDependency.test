@@ -1,0 +1,10 @@
+name=Ability to view task dependency in private project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=300
+waitUntilById=dependencies
+clickElementById=dependencies
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks
+wait=300

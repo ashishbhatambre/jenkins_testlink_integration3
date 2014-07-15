@@ -1,0 +1,19 @@
+name=Ability to Delete the Sub-Child Document Folder for private Child Project
+component=Documents
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/child_prv_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= ASDFEv#@$
+wait=300
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_delete
+clickHrefByLinkText=Delete
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=Folder deleted successfully.

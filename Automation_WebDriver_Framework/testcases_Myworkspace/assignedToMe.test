@@ -1,0 +1,7 @@
+name=My Page_Assigned to Me
+wait=300
+url=sf/sfmain/do/myPage
+waitUntilById=assignedToMe
+clickElementById=assignedToMe
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

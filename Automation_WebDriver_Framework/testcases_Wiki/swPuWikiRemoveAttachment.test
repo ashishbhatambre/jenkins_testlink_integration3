@@ -1,0 +1,15 @@
+name=Ability to remove Wiki Page Attachment in public project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+waitUntilById=attachments
+clickElementById=attachments
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=removeAttachments_submit
+clickElementById=removeAttachments_submit
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Wiki

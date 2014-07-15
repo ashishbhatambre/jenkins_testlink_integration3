@@ -1,0 +1,19 @@
+name=Ability to create package for file releases in the Private project
+component=FRS
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=File Releases
+wait=200
+clickHrefByLinkText=Create
+wait=200
+waitUntilById=title
+typeElementById=title=Package#
+waitUntilByName=description
+typeElementByName=description=Package used for files in the NewProject
+wait=200
+waitUntilById=createPackage_submit
+clickElementById=createPackage_submit
+wait=200
+searchElementValueByTagName=Body=Package created successfully.

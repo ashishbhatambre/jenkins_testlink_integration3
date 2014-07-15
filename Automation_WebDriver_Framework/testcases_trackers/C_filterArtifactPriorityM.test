@@ -1,0 +1,25 @@
+name=Ability to filter the artifact with Priority using multiselect option from tracker as user with create only permission
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=200
+waitUntilById=btn_filter!!numeric!!priority
+clickElementById=btn_filter!!numeric!!priority
+waitUntilByName=multiselect__filter!!numeric!!priority
+selectButtonByValue=0
+selectButtonByValue=2
+wait=200
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=200
+searchElementValueByTagName=Body=NewTracker    (2 Items)
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

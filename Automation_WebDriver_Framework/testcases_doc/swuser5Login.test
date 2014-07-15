@@ -1,0 +1,10 @@
+name=swuser5[Sitewide Role/Edit permission User]_Login
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=swuser5
+waitUntilById=pwd
+typeElementById=pwd=Collabnet2@
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Workspace

@@ -1,0 +1,14 @@
+name=Set Rows Count as 15 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgdfolder
+wait=300
+waitUntilById=rows-icon
+clickElementById=rows-icon
+waitUntilById=ipp_15
+clickElementById=ipp_15
+wait=800
+searchElementValueByTagName=Body=pgProject
+wait=300

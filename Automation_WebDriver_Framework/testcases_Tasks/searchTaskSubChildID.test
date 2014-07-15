@@ -1,0 +1,15 @@
+name=Searching the Sub-Child folder Task ID via JumpToID
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+waitUntilById=idsString
+typeElementById=idsString=taskgrp1005
+wait=500
+runJavaScriptPopToMain=javascript:quickJump()
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Tasks#NEXT#test_task#NEXT#C_Task#NEXT#Sub_Task#NEXT#List Tasks  

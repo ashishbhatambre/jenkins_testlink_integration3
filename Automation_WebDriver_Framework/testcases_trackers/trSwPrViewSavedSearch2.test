@@ -1,0 +1,14 @@
+name=Show "Shared Tracker Searches" in Private Project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+waitUntilById=searchTracker
+clickElementById=searchTracker
+wait=200
+waitUntilById=sharedSearchesToggle
+clickElementById=sharedSearchesToggle
+wait=200
+searchElementValueByTagName=body=My Search1

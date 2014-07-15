@@ -1,0 +1,21 @@
+name=Ability to create Package To File Releases with published enabled field
+component=FRS
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=File Releases
+wait=200
+clickHrefByLinkText=Create
+wait=200
+waitUntilById=title
+typeElementById=title=Package@
+waitUntilByName=description
+typeElementByName=description=Package used for files in the NewProject
+waitUntilById=isPublished
+clickElementById=isPublished
+wait=200
+waitUntilById=createPackage_submit
+clickElementById=createPackage_submit
+wait=200
+searchElementValueByTagName=Body=Package created successfully.

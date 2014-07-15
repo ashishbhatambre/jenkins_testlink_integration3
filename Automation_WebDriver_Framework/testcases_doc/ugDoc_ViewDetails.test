@@ -1,0 +1,12 @@
+name=View Document Details 
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugproject/docman.root.ugfolder
+wait=300
+selectCheckBoxFromList=_listItem=1
+wait=300
+clickHrefByLinkText=Details
+wait=800
+searchElementValueByTagName=Body=ugProject#NEXT#Documents

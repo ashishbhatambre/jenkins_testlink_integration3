@@ -1,0 +1,11 @@
+name=Ability to click searchWikiPage button in private project as site admin user
+component=Wiki
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Wiki
+wait=500
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+wait=500
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Wiki#NEXT#Search Wiki Pages

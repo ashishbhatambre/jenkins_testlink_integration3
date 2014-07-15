@@ -1,0 +1,5 @@
+name=Verify Discussion link
+wait=300
+url=sf/discussion/do/listForums/projects.pproject/discussion
+wait=300
+searchElementValueByTagName=Body=PProject#NEXT#Discussion

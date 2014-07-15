@@ -1,0 +1,17 @@
+name=Displaydocument Items per page  through Rows button 
+component=Documents
+role=Direct Role_Admin Permisssion
+artifact=NA
+wait=300
+url=sf/projects/Private/
+wait=300
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Document1
+wait=300
+waitUntilById=rows-icon
+clickElementById=rows-icon
+waitUntilById=ipp_15
+clickElementById=ipp_15
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Documents

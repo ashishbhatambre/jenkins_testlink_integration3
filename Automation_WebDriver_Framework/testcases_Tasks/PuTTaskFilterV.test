@@ -1,0 +1,20 @@
+name=Filter Task By Name
+component=Tasks 
+role=Direct Role_View Permission
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.public/taskmgr.pua_taskfolder
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=TAC2
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=300
+searchElementValueByTagName=Body=TAC2
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+s

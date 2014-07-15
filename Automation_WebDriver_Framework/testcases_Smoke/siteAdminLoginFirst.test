@@ -1,0 +1,19 @@
+name= Ability to login as site Admin after changing the password
+component=Login
+wait=300
+url=sf/sfmain/do/home
+wait=500
+waitUntilByName=username
+typeElementByName=username=yadmin
+typeElementByName=password=Collabnet1!
+wait=500
+clickHrefByLinkText=Log In
+wait=500
+waitUntilByName=newPassword
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+wait=500
+clickElementById=forcePasswordChangeForm_submit
+wait=500
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=500

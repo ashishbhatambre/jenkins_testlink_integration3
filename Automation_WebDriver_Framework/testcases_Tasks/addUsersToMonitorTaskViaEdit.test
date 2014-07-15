@@ -1,0 +1,40 @@
+name=Ability to Add user to "Users Monitoring This Item" in task edit page
+component=Tasks
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= Sub_Task
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+waitUntilById=editTask_Cancel
+clickElementById=editTask_Cancel
+wait=500
+clickHrefByLinkText=Users Monitoring
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=newuser1_createOnlyPermission
+selectOptionValueByIdValue=foundMultipleTemp=yy_admin_per
+selectOptionValueByIdValue=foundMultipleTemp=user1_adminPermission
+wait=500
+clickHrefByLinkText=Add
+wait=500
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=1000
+runJavaScriptPopToMain=javascript:close()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+searchElementValueByTagName=Body=NewProject#NEXT#Tasks#NEXT#test_task#NEXT#C_Task#NEXT#Sub_Task#NEXT#View Task Detail

@@ -1,0 +1,15 @@
+name=Ability to edit the page content in public project
+component=Wiki
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+clickHrefByLinkText=LinkPage1
+wait=300
+waitUntilById=editorarea
+typeElementById=editorarea=Wiki Page
+waitUntilById=changenote
+typeElementById=changenote=v2
+waitUntilById=create_wiki_page.save
+clickElementById=create_wiki_page.save
+wait=300
+searchElementValueByTagName=Body=Wiki Page created successfully.

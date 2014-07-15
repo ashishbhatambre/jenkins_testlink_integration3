@@ -1,0 +1,24 @@
+name=Verify that Subprojects are not displayed to the user when Prevent Inheritance is enabled in project role
+component=Users
+role=NA
+artifact= Tasks - artf180125 TC - artf180090 [Goto 'Project3' > Project Admin > Add Parent Project as 'Project1']
+wait=300
+url=sf/projects/project3
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+waitUntilById=project_admin.addparent
+clickElementById=project_admin.addparent
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Project1
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=800
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=800
+waitUntilById=listPotentialParentProjects_edit
+clickElementById=listPotentialParentProjects_edit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Project1 set as parent project successfully.

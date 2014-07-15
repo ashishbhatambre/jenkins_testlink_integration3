@@ -1,0 +1,32 @@
+name=Verify inability to create document review without required fields 
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/pgproject/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= pgPFolder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=review
+clickElementById=review
+wait=300
+clickHrefByLinkText=Start a Review
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_1 Review
+wait=300
+waitUntilById=dueDate
+typeElementById=dueDate=12/24/2014
+wait=300
+waitUntilById=createDocumentReview_submit
+clickElementById=createDocumentReview_submit
+wait=300
+searchElementValueByTagName=Body=At least one reviewer is required. 

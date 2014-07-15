@@ -1,0 +1,25 @@
+name=Ability to view Change Log in public project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+wait=200
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=1000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=200
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=history
+clickElementById=history
+wait=200
+searchElementValueByTagName=body=SWPublic#NEXT#Trackers

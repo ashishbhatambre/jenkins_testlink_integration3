@@ -1,0 +1,30 @@
+name=Add a new file in File Release in Public project
+component=FRS
+role=Sitewide Role_Create Permission
+artifact=NA
+wait=400
+url=sf/projects/swpublic/
+clickHrefByLinkText=File Releases
+searchElementValueByTagName=Body=File Releases
+wait=300
+clickHrefByLinkText=Public_Package
+wait=300
+wait=300
+clickHrefByLinkText=Public_Release1
+wait=300
+waitUntilById=frsfilesList_create
+clickElementById=frsfilesList_create
+wait=300
+typeValueForFileField=C:\Uploaded_Files\Jellyfish.jpg
+waitUntilById=frsFile_submit
+clickElementById=frsFile_submit
+searchElementValueByTagName=Body=File added successfully.
+wait=300
+waitUntilById=frsfilesList_create
+clickElementById=frsfilesList_create
+wait=300
+typeValueForFileField=C:\Uploaded_Files\test.pdf
+waitUntilById=frsFile_submit
+clickElementById=frsFile_submit
+searchElementValueByTagName=Body=File added successfully.
+

@@ -1,0 +1,36 @@
+name=Ability to create Parent Artifact via Dependencies in a public project
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= GroupPlan
+wait=4000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=500
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=dependencies
+clickElementById=dependencies
+wait=200
+waitUntilById=selectionMenuButton_createParentMenu
+clickElementById=selectionMenuButton_createParentMenu
+clickElementById=yui-gen0
+wait=200
+waitUntilById=title
+typeElementById=title=parentArtifact
+waitUntilById=description
+typeElementById=description=artifact for the Tracker1 folder Parent Artifact
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=2 - High
+waitUntilByName=assignedUser
+selectOptionValueByNameValue=assignedUser=tester2_normalPermission
+waitUntilById=createArtifactDependencyForm_Save
+clickElementById=createArtifactDependencyForm_Save
+wait=300
+searchElementValueByTagName=Body=Related artifact created successfully.

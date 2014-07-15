@@ -1,0 +1,35 @@
+name=Ability to Monitor the artifact via "Users Monitoring" as user with create only permission in private project
+component=Tracker
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=CloneTracker
+wait=200
+clickHrefByLinkText=CreateUser_Artifact2
+wait=200
+clickHrefByLinkText=Users Monitoring
+wait=200
+switchToPopUpWindow
+wait=200
+clickHrefByLinkText=Add
+wait=200
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=user1_createOnlyPermission
+selectOptionValueByIdValue=foundMultipleTemp=yy_admin_per
+wait=200
+clickHrefByLinkText=Add
+wait=200
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=500
+runJavaScriptPopToMain=javascript:close()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+waitUntilById=button_monitor_object
+clickElementById=button_monitor_object
+wait=500
+searchElementValueByTagName=Body=Artifact is now being monitored.

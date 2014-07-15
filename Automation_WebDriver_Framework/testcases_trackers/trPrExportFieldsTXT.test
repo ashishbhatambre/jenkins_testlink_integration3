@@ -1,0 +1,33 @@
+name=Ability to export artifacts with selected fields Tab delimited format in private project
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickHrefByLinkText=Export
+wait=200
+switchToPopupWindow
+wait=200
+selectButtonByValue=.txt
+waitUntilById=availableFields
+selectOptionValueByIdIndex=availableFields=0
+wait=200
+selectOptionValueByIdIndex=availableFields=1
+wait=200
+selectOptionValueByIdIndex=availableFields=2
+wait=200
+selectOptionValueByIdIndex=availableFields=3
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=200
+clickHrefByLinkText=Close
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=Private#NEXT#Trackers

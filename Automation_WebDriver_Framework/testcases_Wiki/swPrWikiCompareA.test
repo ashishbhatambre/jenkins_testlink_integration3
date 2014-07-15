@@ -1,0 +1,15 @@
+name=Ability to compare wiki version link as user with admin role in private project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.swprivate/wiki/HomePage
+wait=300
+clickHrefByLinkText=Show Details
+waitUntilById=listTasksSelect_submit
+clickElementById=listTasksSelect_submit
+wait=300
+waitUntilById=edit_wiki_page.cancel
+clickElementById=edit_wiki_page.cancel
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Wiki

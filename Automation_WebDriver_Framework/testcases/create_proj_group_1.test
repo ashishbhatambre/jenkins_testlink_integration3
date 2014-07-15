@@ -1,0 +1,16 @@
+name=create_project_group
+component=Project Groups
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/listProjectGroupsAdmin
+wait=300
+clickHrefByLinkText=Create Project Group
+waitUntilById=title
+typeElementById=title=proj_group1
+typeElementById=description=Test_case
+waitUntilById=createProjectGroup_submit
+clickElementById=createProjectGroup_submit
+Project Group proj_group has been created successfully.
+wait=1000
+searchElementValueByTagName=Body=Project Group proj_group1 has been created successfully.

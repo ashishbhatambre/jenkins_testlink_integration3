@@ -1,0 +1,16 @@
+name=Replace Public Project Image
+component=Project Home
+role=Admin Role
+artifact=NA
+wait=300
+typeValueForFileField=C:\Uploaded_Files\link.txt
+wait=300
+waitUntilById=logo_change
+clickElementById=logo_change
+searchElementValueByTagName=Body=The file you tried to upload is not recognized as a valid image file. Please try again.
+wait=300
+typeValueForFileField=C:\Uploaded_Files\Jellyfish.jpeg
+waitUntilById=logo_change
+clickElementById=logo_change
+wait=300
+searchElementValueByTagName=Body=PProject#NEXT#Project Home 

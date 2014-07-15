@@ -1,0 +1,20 @@
+name=Ability to Search Artifact by Attachments in public project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+waitUntilById=searchTracker
+clickElementById=searchTracker
+wait=200
+waitUntilById=searchText
+typeElementById=searchText=name
+waitUntilById=inAttachments
+clickElementById=inAttachments
+wait=200
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+searchElementValueByTagName=body=Tracker Search Results (2 Items)

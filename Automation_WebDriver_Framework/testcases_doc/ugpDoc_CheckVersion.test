@@ -1,0 +1,14 @@
+name=Check Updated version Number in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugpproject/docman.root.ugpfolder.ddddforname_to_attach_more_than.ugpscfolder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+clickHrefByLinkText=Details
+wait=300
+searchElementValueByTagName=Body=Current Version: 2 
+wait=300

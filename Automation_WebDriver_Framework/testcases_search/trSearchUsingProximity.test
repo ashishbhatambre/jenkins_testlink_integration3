@@ -1,0 +1,22 @@
+name=Tracker Search_Using proximity search
+component=Trackers
+role=Site Admin
+artifact=artf161280  
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText="artifact range"~4
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=400
+searchElementValueByTagName=body=(1 Item)
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=planninh~
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=(1 Item)

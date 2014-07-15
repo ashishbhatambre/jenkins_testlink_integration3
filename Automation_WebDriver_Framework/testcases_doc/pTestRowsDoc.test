@@ -1,0 +1,15 @@
+name=Document Rows from 15 to 75 for public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=rows-icon
+clickElementById=rows-icon
+wait=500
+clickElementById=ipp_75
+wait=500
+searchElementValueByTagName=Body=PubProject#NEXT#Documents#NEXT#$Document_Folder$#NEXT#List Documents 

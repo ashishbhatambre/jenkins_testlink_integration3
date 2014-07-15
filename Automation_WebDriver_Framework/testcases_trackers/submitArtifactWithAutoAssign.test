@@ -1,0 +1,28 @@
+name=Ability to create artifact after setting up the Auto-assignment by release
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Submit New Artifact
+wait=200
+waitUntilById=title
+typeElementById=title=Aritfact_Release
+waitUntilById=description
+typeElementById=description=artifact for the Tracker1 with Report in Release auto assing user
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=3 - Medium
+waitUntilById=fldRelease
+selectOptionValueByIdValue=fldRelease=Package@ > File11
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body= Aritfact_Release
+searchElementValueByTagName=Body=newuser2_editOnlyPermission

@@ -1,0 +1,21 @@
+name=Search Docuement by "Created On date values" 
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgfolder
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Document
+waitUntilById=createdStartDate
+typeElementById=createdStartDate=08/31/2013
+waitUntilById=createdEndDate
+typeElementById=createdEndDate=11/22/2013
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=pgProject#NEXT#Documents
+wait=300

@@ -1,0 +1,32 @@
+name=Ability to add users to the monitor in private project
+component=Wiki
+role=Direct Role
+artifact=NA
+url=sf/wiki/do/viewPage/projects.private/wiki/HomePage
+wait=300
+clickHrefByLinkText=Users Monitoring
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+wait=300
+waitUntilById=name
+typeElementById=name=tmuser1
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=700
+searchElementValueByTagName=Body=Private#NEXT#Wiki
+

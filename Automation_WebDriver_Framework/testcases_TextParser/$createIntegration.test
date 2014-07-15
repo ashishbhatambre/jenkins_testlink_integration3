@@ -1,0 +1,19 @@
+name=Create Integration using letter ${}
+component=Integration
+role=NA
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickHrefByLinkText=Admin
+wait=300
+clickHrefByLinkText=Integrations
+wait=300
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=type
+selectOptionValueByIdValue=type=Subversion
+typeElementById=title=${Posting}
+typeElementById=description=&Integration to subversion&
+waitUntilById=system_submit
+clickElementById=system_submit
+searchElementValueByTagName=Body=The SCM server was added successfully.

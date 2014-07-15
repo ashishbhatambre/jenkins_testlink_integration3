@@ -1,0 +1,15 @@
+name=Ability to Cancel Discssion Topic create in private project as site admin user
+component=Discussions
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Discussions
+wait=500
+clickHrefByLinkText=Forum_Discussions
+wait=500
+waitUntilById=listTopic_create
+clickElementById=listTopic_create
+wait=500
+clickHrefByLinkText=Cancel
+wait=500
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Discussion#NEXT#Forum_Discussions#NEXT#Topic Summary 

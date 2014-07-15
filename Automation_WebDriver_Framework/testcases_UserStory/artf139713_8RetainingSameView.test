@@ -1,0 +1,46 @@
+name=Checking the Board view after retaining from around the components
+component=Boards
+role=Global Role
+artifact=artf139713
+wait=400
+url=sf/projects/newproject/
+wait=400
+clickHrefByLinkText=Trackers
+wait=400
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder1
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Folder_Renamed
+wait=400
+clickHrefByLinkText=Trackers
+wait=400
+searchElementValueByTagName=Body=Board#NEXT#View
+wait=400
+clickHrefByLinkText=List
+wait=400
+clickHrefByLinkText=Plan
+wait=400
+searchElementValueByTagName=Body=Board#NEXT#View
+wait=400
+clickHrefByLinkText=Tasks
+wait=400
+clickHrefByLinkText=Trackers
+wait=400
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder1
+wait=400
+searchElementValueByTagName=Body=Board#NEXT#View
+wait=400
+clickHrefByLinkText=Search Trackers
+wait=400
+clickElementById=cancelSearch
+wait=400
+searchElementValueByTagName=Body=Board#NEXT#View

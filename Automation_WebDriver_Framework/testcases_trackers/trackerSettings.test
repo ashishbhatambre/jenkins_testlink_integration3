@@ -1,0 +1,13 @@
+name=Ability to create a Field to Tracker
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+waitUntilById=defaultValue_dmmy0
+clickElementById=defaultValue_dmmy0
+waitUntilById=fieldForm_Save
+clickElementById=fieldForm_Save
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=Field created successfully.

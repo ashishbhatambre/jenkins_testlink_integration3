@@ -1,0 +1,15 @@
+name=Create Project with text starts with ${}
+component=Projects
+role=NA
+artifact=NA
+url=sf/sfmain/do/myProjects
+wait=300
+clickElementById=createProject
+waitUntilById=title
+typeElementById=title=${test test}
+waitUntilById=description
+typeElementById=description=${This is miscellany project}
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=300
+searchElementValueByTagName=Body=${test test}#NEXT# Project Home 

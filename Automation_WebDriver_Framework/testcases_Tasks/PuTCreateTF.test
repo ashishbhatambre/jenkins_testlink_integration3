@@ -1,0 +1,24 @@
+name=Ability to create Task Folder in public project
+component=Tasks
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/taskmgr/do/viewSummary/projects.public/taskmgr
+wait=300
+waitUntilById=newTaskGroup
+clickElementById=newTaskGroup
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementByName=title=PUA_TaskFolder
+waitUntilById=createTaskGroupForm_submit
+clickElementById=createTaskGroupForm_submit
+wait=600
+searchElementValueByTagName=Body=Task folder created successfully.
+wait=600
+clickHrefByLinkText=Close
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=Public#NEXT#Tasks

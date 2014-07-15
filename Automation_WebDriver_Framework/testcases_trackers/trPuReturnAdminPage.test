@@ -1,0 +1,13 @@
+name=Ability to return to the tracker administration page 
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.public
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Return
+wait=200
+searchElementValueByTagName=Body=Public#NEXT#Project Admin

@@ -1,0 +1,36 @@
+name=Verifying Cancel button on Add Association operation
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= test_task
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=2
+wait=300
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+wait=300
+waitUntilById=editTask_Cancel
+clickElementById=editTask_Cancel
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=recentlyEditedIds
+selectOptionValueByIdIndex=recentlyEditedIds=1
+wait=1000
+runJavaScriptPopToMain=javascript:window.close()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+searchElementValueByTagName=Body=NewProject#NEXT#Tasks#NEXT#test_task#NEXT#View Task Detail 

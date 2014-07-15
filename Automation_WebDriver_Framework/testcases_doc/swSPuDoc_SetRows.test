@@ -1,0 +1,14 @@
+name=Verify the displaying Items per page  through Rows button in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root.folder
+wait=300
+waitUntilById=rows-icon
+clickElementById=rows-icon
+waitUntilById=ipp_15
+clickElementById=ipp_15
+wait=300
+searchElementValueByTagName=Body=SWPublic_Sub#NEXT#Documents
+wait=300

@@ -1,0 +1,8 @@
+name=Ability to click through Wiki in public project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.swpublic/wiki/HomePage
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Wiki

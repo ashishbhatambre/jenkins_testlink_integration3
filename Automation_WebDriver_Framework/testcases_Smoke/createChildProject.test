@@ -1,0 +1,11 @@
+name=Ability to assign a child Private Project to a parent
+component=Projects
+wait=300
+url=sf/sfmain/do/createProject
+waitUntilByName=title
+typeElementByName=title=Child_Prv_Project
+typeElementByName=description=Child Project created with parent as "NewProject"
+wait=500
+clickHrefByLinkText=Create
+wait=500
+searchElementValueByTagName=Body= Child_Prv_Project#NEXT# Project Home 

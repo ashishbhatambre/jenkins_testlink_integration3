@@ -1,0 +1,25 @@
+name=cut and paste the document to same document folder in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic/docman.root.document1.sw_pu_subchilddf
+wait=300
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_cut
+clickHrefByLinkText=Cut
+wait=400
+searchElementValueByTagName=Body= Folder cut successfully.
+wait=500
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_paste
+clickHrefByLinkText=Paste
+wait=300
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body= Unable to paste items to this location.
+searchElementValueByTagName=Body= A folder cannot be pasted into itself.

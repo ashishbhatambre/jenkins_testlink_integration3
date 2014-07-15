@@ -1,0 +1,18 @@
+name=Create Project Group for Public Project
+component=Project Group
+role=Project Group Role_UserGroup User Admin Permission
+wait=300
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Project Groups
+wait=300
+clickHrefByLinkText=Create Project Group
+waitUntilById=title
+typeElementById=title=PMisc
+waitUntilById=description
+typeElementById=description=Projects residing with public access permissions.
+wait=300
+clickElementById=createProjectGroup_submit
+wait=500
+searchElementValueByTagName=Body=Project Group PMisc has been created successfully.
+wait=300

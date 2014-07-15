@@ -1,0 +1,13 @@
+name=Ability to Cut Task in private project
+component=Tasks
+role=Edit role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.private/taskmgr.pra_taskfolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=listTasksSelect_Cut
+clickElementById=listTasksSelect_Cut
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=1 task(s) cut to clipboard.

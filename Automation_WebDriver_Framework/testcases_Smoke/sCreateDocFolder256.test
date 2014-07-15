@@ -1,0 +1,24 @@
+name=Ability to create new Document Folder with 256 characters in private project as site admin
+component=Document
+wait=300
+url=sf/projects/ft_prv_project/
+wait=200
+clickHrefByLinkText=Documents
+wait=300
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=${TheProfessionalServicesteamatCollabNet} often finds many creative ways of using the TeamForge platform. This section, as with any wiki page, is under development so please feel free to *#monitor these pages fo#$%#^%^&@#r updates.Advanced Wiki Features# In this section$%^^&@#$ you will find some creative ways to take advantage of the "out of the box" features of the Wiki built 3254into TeamForge. &The& real power of the wiki pages in TeamForge come #$^$%&from the ability use and define your own style sheets (CSS). For exa3465w34mple, this page is using a 2 column 436layout with fancy title boxes and this is all done with custom styles, s$#%#$^$^%tyles you can use in your own wiki pages today.$
+wait=300
+waitUntilById=createDocumentFolder_submit
+clickElementById=createDocumentFolder_submit
+wait=600
+searchElementValueByTagName=Body=Folder created successfully.
+wait=600
+runJavaScriptPopToMain=javascript:finishDocument()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600

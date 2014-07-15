@@ -1,0 +1,30 @@
+name=Ability to edit artifact priority
+component=Tracker 
+role=Direct Role
+artifact=NA
+wait=200
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=200
+clickHrefByLinkText=Filter
+wait=1000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=priority
+selectOptionValueByIdIndex=priority=2
+wait=200
+waitUntilById=viewArtifactForm_SaveAndView
+clickElementById=viewArtifactForm_SaveAndView
+wait=200
+searchElementValueByTagName=body=Artifact data updated successfully.

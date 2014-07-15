@@ -1,0 +1,19 @@
+name=Filter Document by Last Edited On in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugpproject/docman.root.ugpfolder
+wait=300
+waitUntilById=_filter!!date!!dateLastModified
+typeElementById=_filter!!date!!dateLastModified=09/06/2013
+wait=300
+clickHrefByLinkText=Filter
+wait=1000
+searchElementValueByTagName=Body=ugpProject#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=500

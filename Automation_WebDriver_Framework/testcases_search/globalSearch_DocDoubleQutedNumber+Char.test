@@ -1,0 +1,12 @@
+name=Global Search_for Tasks_with a combination of alphabets and numbers using double quotes       
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168476              
+clickHrefByLinkText=Jump to ID
+waitUntilById=search
+clickElementById=search
+waitUntilById=term
+typeElementById=term="SearchFolder1"
+selectOptionValueByIdIndex=applications=1
+clickElementById=searchForm_submit
+searchElementValueByTagName=Body=Document Folders (1)

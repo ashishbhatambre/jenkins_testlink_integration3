@@ -1,0 +1,22 @@
+name=Package Creation for file releases in the public project
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=title
+typeElementById=title=Package_Notes
+waitUntilByName=description
+typeElementByName=description=Package used for files in the PubProject
+waitUntilById=isPublished
+clickElementById=isPublished
+wait=500
+waitUntilById=createPackage_submit
+clickElementById=createPackage_submit
+wait=500
+searchElementValueByTagName=Body=Package created successfully.

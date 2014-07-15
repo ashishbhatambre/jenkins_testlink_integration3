@@ -1,0 +1,25 @@
+name=Verifying Cancel in Document Asociation using Association Id String for Child Private Project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText=save_document
+wait=500
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+switchToPopupWindow
+wait=300
+waitUntilById=recentlyViewedIds
+selectOptionValueByIdIndex=recentlyViewedIds=3
+wait=1000
+runJavaScriptPopToMain=javascript:window.close()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+searchElementValueByTagName=Body=Child_Prv_Project#NEXT#Documents#NEXT#Child_Doc_Folder#NEXT#Document Details 

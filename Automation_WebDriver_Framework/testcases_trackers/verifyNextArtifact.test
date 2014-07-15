@@ -1,0 +1,16 @@
+name=Ability to move to next artifact view Next > in view artifact page in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=10000
+clickHrefByLinkText=BoardArtifact1
+wait=200
+clickHrefByLinkText=Next >
+wait=200
+searchElementValueByTagName=Body=Artifact artf1001 : artifactNew

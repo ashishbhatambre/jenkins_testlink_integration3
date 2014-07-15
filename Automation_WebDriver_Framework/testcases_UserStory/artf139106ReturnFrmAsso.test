@@ -1,0 +1,50 @@
+name=Artifact story on Returning to Planning Folder after creating association
+component=Tracker
+role=Global Role
+artifact=artf139106
+url=sf/sfmain/do/home
+wait=300
+waitUntilByName=username
+typeElementByName=username=user1
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText= Folder_Renamed
+wait=1000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+waitUntilById=idRadio
+selectButtonById=idBox
+wait=300
+typeElementById=associationIdString=artf1011
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+waitUntilById=description
+typeElementById=description=Association for the Artifact under planFolder2.
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=1000
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=1000
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+clickElementById=associations
+wait=1000
+clickHrefByLinkText=Return
+wait=300

@@ -1,0 +1,19 @@
+name=Delete the Document Root Folder for public folder
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= $Document_Folder$
+wait=500
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_delete
+clickHrefByLinkText=Delete
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=You cannot delete the top-level document folder.

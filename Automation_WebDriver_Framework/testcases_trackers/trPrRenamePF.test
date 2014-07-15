@@ -1,0 +1,25 @@
+name=Ability to rename Planning Folder 
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan1
+wait=4000
+clickHrefByLinkText=Edit
+wait=200
+waitUntilById=edit_planning
+clickElementById=edit_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=prPlan
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=Private#NEXT#Trackers

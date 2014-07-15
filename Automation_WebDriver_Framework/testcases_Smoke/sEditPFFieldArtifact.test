@@ -1,0 +1,30 @@
+name=Ability to edit artifact Planning Folder field in private project as site admin
+component=Tracker
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=traqueur2
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=300
+waitUntilById=assignedPlanningFolderDisplay
+clickElementById=assignedPlanningFolderDisplay
+wait=300
+switchToPopupWindow
+wait=300
+selectButtonByValue=true
+wait=300
+waitUntilById=planningFolderPopup_submit
+clickElementById=planningFolderPopup_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+waitUntilById=viewArtifactForm_Save
+clickElementById=viewArtifactForm_Save
+wait=1000
+searchElementValueByTagName=Body=Artifact data updated successfully.

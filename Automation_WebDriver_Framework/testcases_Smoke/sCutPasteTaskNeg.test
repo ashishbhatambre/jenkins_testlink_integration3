@@ -1,0 +1,25 @@
+name=Ability to cut and paste Task to the same folder in private project as site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= session2
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+clickHrefByLinkText=Cut
+wait=500
+waitUntilById=listTasksSelect_Paste
+clickElementById=listTasksSelect_Paste
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Unable to paste items to this location.
+searchElementValueByTagName=Body=The items were cut from and pasted to the same folder.

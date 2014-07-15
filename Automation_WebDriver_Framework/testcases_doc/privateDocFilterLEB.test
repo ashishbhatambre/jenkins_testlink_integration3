@@ -1,0 +1,21 @@
+name=Filter Document by "Last Edited By" in root folder 
+component=Documents
+role=Direct Role
+artifact=NA
+wait=3000
+url=sf/docman/do/listDocuments/projects.private/docman.root.document1
+wait=300
+clickElementById=btn_filter!!string!!lastModifiedBy
+wait=300
+clickElementById=ui-multiselect-_filter!!string!!lastModifiedBy-option-1
+wait=300
+clickHrefByLinkText=Filter
+wait=400
+searchElementValueByTagName=Body=Private#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=400
+

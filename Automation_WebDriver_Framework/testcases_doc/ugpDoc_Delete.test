@@ -1,0 +1,15 @@
+name=Delete Single Document in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugpproject/docman.root.ugpfolder
+wait=300
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Delete
+clickElementById=selectDocuments_Delete
+wait=300
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=1 document deleted successfully.

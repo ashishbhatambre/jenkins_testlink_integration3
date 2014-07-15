@@ -1,0 +1,35 @@
+name=Ability to add users to sitewide role
+component=Roles
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/listRolesAdmin
+wait=300
+waitUntilById=siteWideRoles
+clickElementById=siteWideRoles
+wait=500
+clickHrefByLinkText=SW_DeleteOnlyRole
+waitUntilById=members
+clickElementById=members
+waitUntilById=_userPickerDiv
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=name
+typeElementById=name=swuser3
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=swuser3 was added to the role.

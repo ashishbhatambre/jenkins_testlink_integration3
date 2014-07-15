@@ -1,0 +1,12 @@
+name=Ability to create public project via Create Project
+component=Projects
+wait=300
+url=sf/sfmain/do/createProject
+wait=300
+waitUntilByName=title
+typeElementByName=title=PubProject
+typeElementByName=description=Project which has Public Access permission.
+wait=300
+clickHrefByLinkText=Create
+wait=300
+searchElementValueByTagName=Body= PubProject#NEXT#Project Home

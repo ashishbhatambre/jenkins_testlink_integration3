@@ -1,0 +1,9 @@
+name=Ability to View the wiki search result for predefined orphaned page for public project
+component=Wiki
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=predefined_orphaned
+clickElementById=predefined_orphaned
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Wiki#NEXT#Search Wiki Pages

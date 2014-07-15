@@ -1,0 +1,17 @@
+name=Ability to save the searched artifacts
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+waitUntilByName=searchOrFilterName
+typeElementByName=searchOrFilterName=SearchResult1
+wait=200
+waitUntilById=type
+selectButtonByValue=public_search
+wait=200
+waitUntilById=saveSearchOrFilter_submit
+clickHrefByLinkText=Save
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=Search saved.

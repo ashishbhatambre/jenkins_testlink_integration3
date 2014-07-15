@@ -1,0 +1,26 @@
+name=creating the File for the package using ${}
+component=FRS
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=File Releases
+wait=300
+clickHrefByLinkText=${Package}
+wait=300
+clickHrefByLinkText=Add
+waitUntilById=title
+typeElementById=title=&File1&
+typeElementByName=description=${File created <b>for</b> Package FilePackage}
+clickElementById=createRelease_submit
+wait=300
+searchElementValueByTagName=Body=Release created successfully.
+wait=300
+clickHrefByLinkText=Add
+waitUntilById=title
+typeElementById=title=$File$3
+typeElementByName=description=$Filecreated $Package FilePackage
+clickElementById=createRelease_submit
+wait=300
+searchElementValueByTagName=Body=Release created successfully.

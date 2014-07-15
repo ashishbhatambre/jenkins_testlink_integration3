@@ -1,0 +1,25 @@
+name=Ability to remove monitor in File Release in private project
+component=FRS
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/frs/do/viewSummary/projects.private/frs
+wait=800
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectPackages
+clickElementById=selectionMenuButton_MonitorMenu_selectPackages
+waitUntilById=selectPackages_Monitor
+clickElementById=selectPackages_Monitor
+wait=900
+searchElementValueByTagName=Body=1 item(s) are now being monitored.
+wait=800
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectPackages
+clickElementById=selectionMenuButton_MonitorMenu_selectPackages
+waitUntilById=selectPackages_UnMonitor
+clickElementById=selectPackages_UnMonitor
+wait=900
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.
+

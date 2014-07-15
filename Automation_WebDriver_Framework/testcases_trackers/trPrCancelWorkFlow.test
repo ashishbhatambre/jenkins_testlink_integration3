@@ -1,0 +1,23 @@
+name=Ability to cancel the work flow update
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.private
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=workflow
+clickElementById=workflow
+wait=200
+clickHrefByLinkText=(New Artifact)
+wait=200
+waitUntilById=noroles_fldv-any
+clickElementById=noroles_fldv-any
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+searchElementValueByTagName=body=Private#NEXT#Project Admin

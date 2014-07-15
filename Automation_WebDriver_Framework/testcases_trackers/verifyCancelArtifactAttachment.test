@@ -1,0 +1,38 @@
+name=Ability to Cancel Attaching File to Tracker Artifact in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Folder_Renamed
+wait=10000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=500
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=attachments
+clickElementById=attachments
+wait=200
+waitUntilById=_SfButton_AddAttachment
+clickHrefByLinkText=Add Attachments
+wait=200
+switchToPopupWindow
+wait=200
+clickHrefByLinkText=Attach another file
+wait=200
+typeFileFieldValueForName=file[1]=C:\Uploaded_Files\link.txt
+wait=200
+typeFileFieldValueForName=file[2]=C:\Uploaded_Files\Test.doc
+wait=200
+runJavaScriptPopToMain=javascript:cancelAddAttachment()
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+waitUntilById=attachments
+clickElementById=attachments
+wait=200
+searchElementValueByTagName=Body=Trackers

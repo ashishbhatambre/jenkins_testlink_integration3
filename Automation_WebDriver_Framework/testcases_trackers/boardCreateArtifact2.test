@@ -1,0 +1,34 @@
+name=Ability to Create Artifact via Child_planning folder
+component=Tracker
+role=Global Role
+artifact=artf139713
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+url=sf/planning/do/viewPlanningFolder/projects.newproject/planning.board_plan1.board_plan2
+wait=200
+clickHrefByLinkText= Board_Plan2
+wait=4000
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+wait=200
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen2
+wait=200
+waitUntilById=title
+typeElementById=title=BoardArtifact2
+waitUntilById=description
+typeElementById=description=artifact for the NewTracker folder
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=3 - Medium
+waitUntilByName=assignedUser
+selectOptionValueByNameValue=assignedUser=user2_normalPermission
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.
+wait=200

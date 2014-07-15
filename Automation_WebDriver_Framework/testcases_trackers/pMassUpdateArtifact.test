@@ -1,0 +1,37 @@
+name=Ability to mass update in tracker for public project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= GroupPlan
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+selectCheckBoxFromList=_listItem=2
+wait=200
+clickHrefByLinkText=Mass Update
+wait=200
+waitUntilById=comment
+typeElementById=comment=This are the artifact which is under test.
+waitUntilById=assignedPlanningFolderDisplay
+clickElementById=assignedPlanningFolderDisplay
+switchToPopupWindow
+wait=200
+clickHrefByLinkText= TeamPlan
+wait=200
+waitUntilById=planningFolderPopup_submit
+clickElementById=planningFolderPopup_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+waitUntilById=updatePlanningFolder
+clickElementById=updatePlanningFolder
+wait=200
+waitUntilById=massUpdateArtifactsForm_submit
+clickElementById=massUpdateArtifactsForm_submit
+wait=500
+searchElementValueByTagName=Body=2 Artifact(s) were successfully updated

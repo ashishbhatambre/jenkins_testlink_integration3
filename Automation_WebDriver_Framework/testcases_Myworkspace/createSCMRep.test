@@ -1,0 +1,119 @@
+name=Create 8 SCM repository for Approval
+url=sf/sfmain/do/myProjects
+wait=300
+clickHrefByLinkText=NewProject
+wait=200
+clickHrefByLinkText=Source Code
+waitUntilByID=create_repo
+clickElementById=create_repo
+wait=300
+waitUntilById=systemId
+selectOptionValueByIdIndex=systemId=1
+waitUntilById=directoryName
+typeElementById=directoryName=scm
+waitUntilById=repositoryName
+typeElementById=repositoryName=Rep1
+waitUntilById=description
+typeElementById=description=SCM Repository created by user1
+waitUntilById=createRepositoryForm_Save
+clickElementById=createRepositoryForm_Save
+wait=300
+searchElementValueByTagName=Body=Repository Rep1 was requested.
+waitUntilByID=create_repo
+clickElementById=create_repo
+wait=300
+selectOptionValueByIdIndex=systemId=1
+waitUntilById=directoryName
+typeElementById=directoryName=scm
+waitUntilById=repositoryName
+typeElementById=repositoryName=Rep2
+waitUntilById=description
+typeElementById=description=SCM Repository created by user1
+waitUntilById=createRepositoryForm_Save
+clickElementById=createRepositoryForm_Save
+wait=300
+searchElementValueByTagName=Body=Repository Rep2 was requested.
+waitUntilByID=create_repo
+clickElementById=create_repo
+wait=300
+selectOptionValueByIdIndex=systemId=1
+waitUntilById=directoryName
+typeElementById=directoryName=scm
+waitUntilById=repositoryName
+typeElementById=repositoryName=Rep3
+waitUntilById=description
+typeElementById=description=SCM Repository created by user1
+waitUntilById=createRepositoryForm_Save
+clickElementById=createRepositoryForm_Save
+wait=300
+searchElementValueByTagName=Body=Repository Rep3 was requested.
+waitUntilByID=create_repo
+clickElementById=create_repo
+wait=300
+selectOptionValueByIdIndex=systemId=1
+waitUntilById=directoryName
+typeElementById=directoryName=scm
+waitUntilById=repositoryName
+typeElementById=repositoryName=Rep4
+waitUntilById=description
+typeElementById=description=SCM Repository created by user1
+waitUntilById=createRepositoryForm_Save
+clickElementById=createRepositoryForm_Save
+wait=300
+searchElementValueByTagName=Body=Repository Rep4 was requested.
+waitUntilByID=create_repo
+clickElementById=create_repo
+wait=300
+selectOptionValueByIdIndex=systemId=1
+waitUntilById=directoryName
+typeElementById=directoryName=scm
+waitUntilById=repositoryName
+typeElementById=repositoryName=Rep5
+waitUntilById=description
+typeElementById=description=SCM Repository created by user1
+waitUntilById=createRepositoryForm_Save
+clickElementById=createRepositoryForm_Save
+wait=300
+searchElementValueByTagName=Body=Repository Rep5 was requested.
+waitUntilByID=create_repo
+clickElementById=create_repo
+wait=300
+selectOptionValueByIdIndex=systemId=1
+waitUntilById=directoryName
+typeElementById=directoryName=scm
+waitUntilById=repositoryName
+typeElementById=repositoryName=Rep6
+waitUntilById=description
+typeElementById=description=SCM Repository created by user1
+waitUntilById=createRepositoryForm_Save
+clickElementById=createRepositoryForm_Save
+wait=300
+searchElementValueByTagName=Body=Repository Rep6 was requested.
+waitUntilByID=create_repo
+clickElementById=create_repo
+wait=300
+selectOptionValueByIdIndex=systemId=1
+waitUntilById=directoryName
+typeElementById=directoryName=scm
+waitUntilById=repositoryName
+typeElementById=repositoryName=Rep7
+waitUntilById=description
+typeElementById=description=SCM Repository created by user1
+waitUntilById=createRepositoryForm_Save
+clickElementById=createRepositoryForm_Save
+wait=300
+searchElementValueByTagName=Body=Repository Rep7 was requested.
+waitUntilByID=create_repo
+clickElementById=create_repo
+wait=300
+selectOptionValueByIdIndex=systemId=1
+waitUntilById=directoryName
+typeElementById=directoryName=scm
+waitUntilById=repositoryName
+typeElementById=repositoryName=Rep8
+waitUntilById=description
+typeElementById=description=SCM Repository created by user1
+waitUntilById=createRepositoryForm_Save
+clickElementById=createRepositoryForm_Save
+wait=300
+searchElementValueByTagName=Body=Repository Rep8 was requested.

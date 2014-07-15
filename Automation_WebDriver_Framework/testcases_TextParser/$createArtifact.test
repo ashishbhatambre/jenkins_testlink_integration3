@@ -1,0 +1,25 @@
+name=Creating artifact with name starts ${}
+component=Tracker
+role=Global Role
+artifact=NA
+wait=400
+url=sf/projects/test_test/
+wait=400
+clickHrefByLinkText=Trackers
+wait=400
+clickHrefByLinkText=$New$Tracker
+wait=500
+clickHrefByLinkText=Submit New Artifact
+wait=500
+waitUntilById=title
+typeElementById=title=${artf1}
+waitUntilById=description
+typeElementById=description=${checking <Artifact> with text}
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=3 - Medium
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=300
+searchElementValueByTagName=Body=Artifact submitted successfully.

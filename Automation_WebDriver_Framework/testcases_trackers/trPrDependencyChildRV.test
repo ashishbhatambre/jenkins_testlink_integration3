@@ -1,0 +1,39 @@
+name=Ability to create Child Dependency via Recently viewed
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=200
+selectCheckBoxFromList=_listItem=1
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=dependencies
+clickElementById=dependencies
+waitUntilById=choose_children
+clickElementById=choose_children
+switchToPopupWindow
+waitUntilById=selectRadio
+clickElementById=selectRadio
+waitUntilById=dependenciesIds
+selectOptionValueByIdIndex=dependenciesIds=0
+waitUntilById=addDependencyForm_submitItems
+clickElementById=addDependencyForm_submitItems
+waitUntilById=forwardDescription
+typeElementById=forwardDescription=Child Dependency via Recently viewed object
+waitUntilById=addDependencyForm_submitDescription
+clickElementById=addDependencyForm_submitDescription
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=created successfully.
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Click Close to return to the main window.
+waitUntilById=close
+clickElementById=close
+withoutPopCloseSwitchToMainWindow

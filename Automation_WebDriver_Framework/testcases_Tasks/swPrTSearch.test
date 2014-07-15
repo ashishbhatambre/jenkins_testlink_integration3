@@ -1,0 +1,20 @@
+name=Ability to Search Task by name in private project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=300
+sf/taskmgr/do/searchTasks/projects.swprivate/taskmgr
+waitUntilById=searchText
+typeElementById=searchText=TA1
+wait=300
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks 
+wait=300
+waitUntilById=searchCriteriaToggle
+clickElementById=searchCriteriaToggle
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

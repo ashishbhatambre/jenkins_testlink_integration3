@@ -1,0 +1,37 @@
+name=Edit ProjectGroup with ${<letters>}
+component=Project Groups
+role=NA
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Project Groups
+wait=300
+clickHrefByLinkText=${Group4}
+wait=300
+waitUntilById=edit_group.edit
+clickElementById=edit_group.edit
+wait=300
+waitUntilById=title
+typeElementById=title=${$Project<Group4>}$
+waitUntilById=description
+typeElementById=description=${{Project}<Group4>}${test}
+wait=300
+clickElementById=projectGroupAdmins_userPickerDiv
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=${User1<o>}
+waitUntilById=add
+clickElementById=add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600
+clickElementById=editProjectGroup_submit
+wait=600
+searchElementValueByTagName=Body=Site Administration#NEXT#Project Groups#NEXT#${$Project<Group4>}$

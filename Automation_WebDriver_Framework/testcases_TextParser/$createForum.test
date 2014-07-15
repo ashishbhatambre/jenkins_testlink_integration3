@@ -1,0 +1,20 @@
+name=creating Forum with text ${}
+component=Discussions
+role=NA
+artifact=NA
+wait=200
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=Discussions
+wait=300
+waitUntilById=listForums_create
+clickElementById=listForums_create
+waitUntilById=title
+typeElementById=title=${Forum*!}
+waitUntilById=description
+typeElementById=description=Forum creation for ${project}
+wait=300
+waitUntilById=forumForm_submit
+clickElementById=forumForm_submit
+wait=300
+searchElementValueByTagName=Body=Forum created successfully.

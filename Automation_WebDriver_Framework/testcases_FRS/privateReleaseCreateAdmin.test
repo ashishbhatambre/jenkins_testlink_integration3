@@ -1,0 +1,20 @@
+name=Ability to create Release in Package by user with admin role in private project
+component=FRS
+role=Direct Role_Admin Permission
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.private/frs.package1
+wait=300
+waitUntilById=releaseList_create
+clickElementById=releaseList_create
+waitUntilById=title
+typeElementById=title=Release1
+waitUntilById=description
+typeElementById=description=Release created by Private_Package
+wait=300
+selectOptionValueByIdIndex=maturity=7
+wait=300
+waitUntilById=createRelease_submit
+clickElementById=createRelease_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Release created successfully.

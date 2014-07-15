@@ -1,0 +1,21 @@
+name=Monitor Selected task from List tasks > Monitor > Monitor Selected option
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= C_Task
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+waitUntilById=listTasksSelect_Monitor
+clickElementById=listTasksSelect_Monitor
+wait=300
+searchElementValueByTagName=Body=1 item(s) are now being monitored.

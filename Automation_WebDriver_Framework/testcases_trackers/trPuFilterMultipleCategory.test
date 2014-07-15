@@ -1,0 +1,25 @@
+name=Ability to filter Artifact by Multiple Categories in public project
+component=Trackers
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=btn_filter!!string!!category
+clickElementById=btn_filter!!string!!category
+waitUntilById=ui-multiselect-_filter!!string!!category-option-1
+clickElementById=ui-multiselect-_filter!!string!!category-option-1
+waitUntilById=ui-multiselect-_filter!!string!!category-option-2
+clickElementById=ui-multiselect-_filter!!string!!category-option-2
+wait=200
+clickHrefByLinkText=Filter
+wait=200
+searchElementValueByTagName=body=Tracker1
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

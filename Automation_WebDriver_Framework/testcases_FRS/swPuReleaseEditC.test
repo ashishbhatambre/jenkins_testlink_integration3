@@ -1,0 +1,21 @@
+name=Ability to edit release as user with create role in public project
+component=FRS
+role=Sitewide Role_Create Permission
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.swpublic/frs.package1
+wait=300
+selectCheckBoxFromList=_listItem=0
+wait=300
+runJavaScriptPopToMain=javascript:submitForm(document.selectReleases, 'Edit')
+waitUntilById=title
+typeElementById=title=Public_Release1
+waitUntilById=description
+typeElementById=description=Release created under Public_Package
+wait=300
+selectOptionValueByIdIndex=maturity=6
+wait=300
+waitUntilById=editRelease_submit
+clickElementById=editRelease_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Release edited successfully.

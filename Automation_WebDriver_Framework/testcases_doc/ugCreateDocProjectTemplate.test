@@ -1,0 +1,23 @@
+name=Create Project Template with Documents enabled by global role admin permission user private project via usergroup 
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_prv_project/
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+clickHrefByLinkText=Create Project Template
+wait=500
+waitUntilById=titleField
+typeElementById=titleField=UG_Project_Doc_Template
+waitUntilById=description
+typeElementById=description=Project template with Document enabled
+wait=300
+waitUntilById=doccontent
+clickElementById=doccontent
+wait=300
+waitUntilById=createTemplate_submit
+clickElementById=createTemplate_submit
+wait=300
+searchElementValueByTagName=Body=Project Template created.

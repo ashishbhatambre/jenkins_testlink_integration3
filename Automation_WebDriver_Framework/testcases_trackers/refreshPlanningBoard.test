@@ -1,0 +1,17 @@
+name=Ability to refresh the artifact cards in planning board
+component=Trackers(Boards)
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickSpanElementByCssSelector=combo-arrow=0
+wait=200
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder1
+wait=200
+clickElementByCssSelector=i=icon-refresh
+wait=200
+clickElementByName=includeClosed
+wait=200
+searchElementValueByTagName=Body=1 Cards

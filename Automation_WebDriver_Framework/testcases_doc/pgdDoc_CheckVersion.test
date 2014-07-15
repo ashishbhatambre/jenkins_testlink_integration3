@@ -1,0 +1,13 @@
+name=Check Updated version Number 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgdfolder.ddddforname_to_attach_more_than.pgdscfolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+clickHrefByLinkText=Details
+wait=300
+searchElementValueByTagName=Body=Current Version: 2 
+wait=300

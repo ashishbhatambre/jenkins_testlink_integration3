@@ -1,0 +1,42 @@
+name=Creating User Group(s) -> Site Admin User
+component=User Groups
+role=NA
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=User Groups
+wait=500
+waitUntilById=allGroups
+clickElementById=allGroups
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=fullName
+typeElementById=fullName=ugUserGroup
+waitUntilById=description
+typeElementById=description=users who having user group admin role belongs
+waitUntilById=createGroup_submit
+clickElementById=createGroup_submit
+wait=500
+searchElementValueByTagName=Body=User Group ugUserGroup has been created successfully.
+wait=500
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=User Groups
+wait=500
+waitUntilById=allGroups
+clickElementById=allGroups
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=fullName
+typeElementById=fullName=ugpUserGroup
+waitUntilById=description
+typeElementById=description=users who having user group admin role for public project
+waitUntilById=createGroup_submit
+clickElementById=createGroup_submit
+wait=500
+searchElementValueByTagName=Body=User Group ugpUserGroup has been created successfully.

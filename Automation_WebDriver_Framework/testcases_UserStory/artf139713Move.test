@@ -1,0 +1,41 @@
+name=View of Boards artf139713 Moving Cards
+component=Boards
+role=Global Role
+artifact=artf139713
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Plan
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Folder_Renamed
+wait=400
+clickElementByName=includeClosed
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=6000
+dragElementToByCSS=item ui-corner-all ui-draggable=artifact9=scroll-area=artifact1
+wait=400
+searchElementValueByTagName=Body=Artifact artf1009 moved successfully
+wait=400
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder1
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan1
+wait=400
+clickElementByName=includeClosed
+wait=6000
+dragElementToByCSS=item ui-corner-all ui-draggable=parentArtifact=scroll-area=artifact1
+wait=400
+searchElementValueByTagName=Body=Artifact artf1003 moved successfully
+wait=400
+clickHrefByLinkText=List
+wait=400

@@ -1,0 +1,22 @@
+name=Ability to create User Groups in Private Project as Site Admin
+component=User Groups
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=User Groups
+wait=500
+waitUntilById=allGroups
+clickElementById=allGroups
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=fullName
+typeElementById=fullName=UG_Prv_Project_Users
+waitUntilById=description
+typeElementById=description=users are under testing work to the Private project processed by user group.
+wait=300
+waitUntilById=createGroup_submit
+clickElementById=createGroup_submit
+wait=300
+searchElementValueByTagName=Body=User Group#NEXT#UG_Prv_Project_Users#NEXT#has been created successfully.

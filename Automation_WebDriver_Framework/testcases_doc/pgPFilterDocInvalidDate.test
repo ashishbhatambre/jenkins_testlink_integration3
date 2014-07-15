@@ -1,0 +1,22 @@
+name=Filter document usign invalid date Formate for project group->public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= P_DocFolder
+wait=500
+waitUntilByName=_filter!!date!!dateLastModified
+typeElementByName=_filter!!date!!dateLastModified=2013/04/03
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=The filter provided was invalid. Please ensure that all fields are in a valid format.
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

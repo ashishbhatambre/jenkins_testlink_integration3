@@ -1,0 +1,20 @@
+name=Ability to create membership to public project
+component=Projects
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/userMembership/projects.public
+wait=500
+waitUntilById=addUserLink
+clickElementById=addUserLink
+wait=500
+selectButtonByValue=tmuser1
+selectButtonByValue=tmuser2
+selectButtonByValue=tmuser3
+selectButtonByValue=tmuser4
+selectButtonByValue=tmuser5
+wait=500
+waitUntilById=addUser_finish
+clickElementById=addUser_finish
+wait=500
+searchElementValueByTagName=Body=User(s) added to the project: tmuser1_adminPermission (tmuser1) , tmuser2_createEditPermission (tmuser2) , tmuser3_DeletePermission (tmuser3) , tmuser4_viewPermission (tmuser4) , tmuser5_editPermission (tmuser5) .

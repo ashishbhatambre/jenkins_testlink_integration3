@@ -1,0 +1,34 @@
+name=Ability to create File Release_Associatoin by user with admin role in private project
+component=FRS
+role=Direct Role_Admin Permission
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.private/frs.package1
+wait=300
+clickHrefByLinkText=Private_Release
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+switchToPopupWindow
+wait=300
+waitUntilById=associationIdString
+typeElementById=associationIdString=page1004
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+wait=300
+waitUntilById=description
+typeElementById=description=Association
+wait=300
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=300
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=300
+runJavaScriptPopToMain=javascript:finishAssociation()
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#File Releases
+

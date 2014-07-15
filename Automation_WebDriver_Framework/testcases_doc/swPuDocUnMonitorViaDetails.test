@@ -1,0 +1,16 @@
+name=Stop Monitor Document via Details in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic/docman.root.document1
+wait=300
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+waitUntilById=button_monitor_object
+clickElementById=button_monitor_object
+wait=300
+searchElementValueByTagName=Body=Document is no longer monitored.
+wait=300

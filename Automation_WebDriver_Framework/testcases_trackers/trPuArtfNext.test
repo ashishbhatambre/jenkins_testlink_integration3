@@ -1,0 +1,16 @@
+name=Ability to go to next artifact via Next> button 
+component=Tracker 
+role=Direct Role
+artifact=NA
+wait=200
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickHrefByLinkText=QA:ClosedArtf
+wait=200
+clickHrefByLinkText=Next >
+wait=200
+searchElementValueByTagName=body=Public#NEXT#Trackers

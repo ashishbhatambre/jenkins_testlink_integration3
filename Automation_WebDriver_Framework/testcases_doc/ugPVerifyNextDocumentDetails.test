@@ -1,0 +1,14 @@
+name=View Next document by clicking "Next" button from document details page for usergroup public project with global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_pub_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText=save_document
+wait=300
+clickHrefByLinkText=Next >
+wait=300
+searchElementValueByTagName=Body=UG_Pub_Project#NEXT#Documents#NEXT#$Document_Folder$#NEXT#Document Details 

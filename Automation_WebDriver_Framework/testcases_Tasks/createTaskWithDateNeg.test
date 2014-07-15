@@ -1,0 +1,29 @@
+name=TaskCreation with invalid Date Formate
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= task1
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=dateTask
+waitUntilById=description
+typeElementById=description=creating Task with invalid Date /Formate
+selectOptionValueByNameValue=priority=4 - Low
+selectOptionValueByNameValue=status=Alert
+typeElementByName=startDate=2013/18/03
+typeElementByName=endDate=2013/27/04
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body= Dates must be entered in MM/dd/yyyy format. 
+wait=300

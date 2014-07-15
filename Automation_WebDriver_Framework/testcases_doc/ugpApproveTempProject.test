@@ -1,0 +1,14 @@
+name=Approving the public project created using Document project template 
+component=Projects
+role=Admin
+artifact=NA
+wait=300
+clickHrefByLinkText=Pending Projects
+wait=300
+clickHrefByLinkText=ugpTempProject - Project created using template
+wait=300
+waitUntilById=projectRequest_submit
+clickElementById=projectRequest_submit
+wait=600
+searchElementValueByTagName=Body=Approved request to create project "ugpTempProject".
+wait=300

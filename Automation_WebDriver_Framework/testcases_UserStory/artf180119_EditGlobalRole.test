@@ -1,0 +1,25 @@
+name=Verify that Subprojects are displayed to the user when Prevent Inheritance is unchecked in project role
+component=Users
+role=NA
+artifact= Tasks - artf180125 TC - artf180119 [Goto Admin > Roles, Edit Global Project Role as 'GR1' with 'Project Admin Permissions'(uncheck the Prevent 
+Inheritance)]
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Roles
+wait=500
+waitUntilById=globalRoles
+clickElementById=globalRoles
+wait=500
+clickHrefByLinkText=GR1
+wait=500
+waitUntilById=edit_button
+clickElementById=edit_button
+wait=300
+waitUntilById=blockRecurse
+clickElementById=blockRecurse
+wait=300
+waitUntilById=editRoleInformationForm_submit
+clickElementById=editRoleInformationForm_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Role updated successfully.

@@ -1,0 +1,20 @@
+name=Filter Document by Last Edited 
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugproject/docman.root.ugfolder
+wait=300
+selectOptionValueByIdIndex=_filter!!string!!lastModifiedBy=1
+wait=300
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=ugProject#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=800
+searchElementValueByTagName=Body=ugProject#NEXT#Documents
+wait=300

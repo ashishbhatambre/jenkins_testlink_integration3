@@ -1,0 +1,66 @@
+name=Ability to create artifact(s)
+component=Trackers
+role=Site Admin
+artifact=NA
+wait=300
+url=sf/planning/do/viewPlanningFolder/projects.project_search/planning.plan_search
+waitUntilById=createArtifact
+clickElementById=createArtifact
+waitUntilById=title
+typeElementById=title=artifact &search$
+waitUntilById=description
+typeElementById=description=Create artifact for search cases $artifact& range 100
+waitUntilById=selectedStatus
+selectOptionValueByIdIndex=selectedStatus=0
+waitUntilById=fldPriority
+selectOptionValueByIdIndex=fldPriority=2
+waitUntilById=fldAssignedTo
+selectOptionValueByIdIndex=fldAssignedTo=1
+waitUntilById=fldPoints
+typeElementById=fldPoints=25
+wait=300
+typeValueForFileField=C:\Uploaded_Files\README_7_10_13.txt
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Artifact submitted successfully.
+wait=300
+url=sf/planning/do/viewPlanningFolder/projects.project_search/planning.plan_search.plan_710_701
+waitUntilById=createArtifact
+clickElementById=createArtifact
+waitUntilById=title
+typeElementById=title=artifact 710 701
+waitUntilById=description
+typeElementById=description=submit artifact to 710 to 701 planning range 200
+waitUntilById=selectedStatus
+selectOptionValueByIdIndex=selectedStatus=1
+waitUntilById=fldPriority
+selectOptionValueByIdIndex=fldPriority=4
+waitUntilById=fldAssignedTo
+selectOptionValueByIdIndex=fldAssignedTo=1
+waitUntilById=fldPoints
+typeElementById=fldPoints=25
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Artifact submitted successfully.
+wait=300
+url=sf/planning/do/viewPlanningFolder/projects.project_search/planning.plan_701
+waitUntilById=createArtifact
+clickElementById=createArtifact
+waitUntilById=title
+typeElementById=title=artifact_search case
+waitUntilById=description
+typeElementById=description=artifact explains search case of tracker component
+waitUntilById=selectedStatus
+selectOptionValueByIdIndex=selectedStatus=2
+waitUntilById=fldPriority
+selectOptionValueByIdIndex=fldPriority=3
+waitUntilById=fldAssignedTo
+selectOptionValueByIdIndex=fldAssignedTo=1
+waitUntilById=fldPoints
+typeElementById=fldPoints=25
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Artifact submitted successfully.

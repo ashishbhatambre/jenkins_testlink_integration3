@@ -1,0 +1,27 @@
+name=Inability to create association "without providing document Id" in Public Project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickHrefByLinkText=QA:PendingArtf
+wait=200
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+switchToPopupWindow
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+wait=200
+searchElementValueByTagName=body=Please enter one or more item IDs.
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=SWPublic#NEXT#Trackers

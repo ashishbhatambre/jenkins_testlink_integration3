@@ -1,0 +1,312 @@
+name=Ability to Click on Rank button user with Tracker view and Rank permissions when Planning folders and artifacts are in collapse state
+component=Trackers
+role=Global Role
+artifact=artf169647 TestcaseID (artf169643)
+wait=300
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+waitUntilById=projectAdminTracker_create
+clickHrefByLinkText=Create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=T1
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=Tracker 1 for the filtertext project.
+wait=200
+selectButtonByValue=icon_36.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+wait=200
+searchElementValueByTagName=Body=Tracker created successfully.
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan1
+wait=200
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen5
+waitUntilById=title
+typeElementById=title=art11
+waitUntilById=description
+typeElementById=description=art11
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.
+wait=200
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen5
+waitUntilById=title
+typeElementById=title=art12
+waitUntilById=description
+typeElementById=description=art12
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.
+wait=200
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen5
+waitUntilById=title
+typeElementById=title=art13
+waitUntilById=description
+typeElementById=description=art13
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.
+wait=200
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen5
+waitUntilById=title
+typeElementById=title=art14
+waitUntilById=description
+typeElementById=description=art14
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.
+wait=200
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen5
+waitUntilById=title
+typeElementById=title=art15
+waitUntilById=description
+typeElementById=description=art15
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.
+wait=200
+url=sf/planning/do/viewPlanningFolder/projects.newproject/planning.plan1.plan2
+wait=200
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen5
+waitUntilById=title
+typeElementById=title=art16
+waitUntilById=description
+typeElementById=description=art16
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.
+wait=200
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen5
+waitUntilById=title
+typeElementById=title=art17
+waitUntilById=description
+typeElementById=description=art17
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.
+wait=200
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen5
+waitUntilById=title
+typeElementById=title=art18
+waitUntilById=description
+typeElementById=description=art18
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.
+wait=200
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen5
+waitUntilById=title
+typeElementById=title=art19
+waitUntilById=description
+typeElementById=description=art19
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.
+wait=200
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen5
+waitUntilById=title
+typeElementById=title=art20
+waitUntilById=description
+typeElementById=description=art20
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.
+wait=200
+clickHrefByLinkText= Plan1
+wait=200
+clickHrefByLinkText=art12
+wait=200
+waitUntilById=dependencies
+clickElementById=dependencies
+waitUntilById=choose_parent
+clickHrefByLinkText=Choose Parent
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=dependenciesFromHistoryIds
+selectOptionValueByIdIndex=dependenciesFromHistoryIds=8
+wait=200
+waitUntilById=addDependencyForm_submitItems
+clickElementById=addDependencyForm_submitItems
+wait=200
+waitUntilById=addDependencyForm_submitDescription
+clickElementById=addDependencyForm_submitDescription
+wait=500
+searchElementValueByTagName=Body=Click Close to return to the main window.
+wait=500
+runJavaScriptPopToMain=javascript:window.close()
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+waitUntilById=choose_children
+clickHrefByLinkText=Choose Child
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=dependenciesFromHistoryIds
+selectOptionValueByIdIndex=dependenciesFromHistoryIds=7
+wait=200
+waitUntilById=addDependencyForm_submitItems
+clickElementById=addDependencyForm_submitItems
+wait=200
+waitUntilById=addDependencyForm_submitDescription
+clickElementById=addDependencyForm_submitDescription
+wait=500
+searchElementValueByTagName=Body=Click Close to return to the main window.
+wait=500
+runJavaScriptPopToMain=javascript:window.close()
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan1
+wait=200
+clickHrefByLinkText=art14
+wait=300
+waitUntilById=dependencies
+clickElementById=dependencies
+waitUntilById=choose_parent
+clickHrefByLinkText=Choose Parent
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=dependenciesFromHistoryIds
+selectOptionValueByIdIndex=dependenciesFromHistoryIds=6
+wait=200
+waitUntilById=addDependencyForm_submitItems
+clickElementById=addDependencyForm_submitItems
+wait=200
+waitUntilById=addDependencyForm_submitDescription
+clickElementById=addDependencyForm_submitDescription
+wait=500
+searchElementValueByTagName=Body=Click Close to return to the main window.
+wait=500
+runJavaScriptPopToMain=javascript:window.close()
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan2
+wait=200
+clickHrefByLinkText=art17
+wait=200
+waitUntilById=dependencies
+clickElementById=dependencies
+waitUntilById=choose_parent
+clickHrefByLinkText=Choose Parent
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=dependenciesFromHistoryIds
+selectOptionValueByIdIndex=dependenciesFromHistoryIds=3
+wait=200
+waitUntilById=addDependencyForm_submitItems
+clickElementById=addDependencyForm_submitItems
+wait=200
+waitUntilById=addDependencyForm_submitDescription
+clickElementById=addDependencyForm_submitDescription
+wait=500
+searchElementValueByTagName=Body=Click Close to return to the main window.
+wait=500
+runJavaScriptPopToMain=javascript:window.close()
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+waitUntilById=choose_children
+clickHrefByLinkText=Choose Child
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=dependenciesFromHistoryIds
+selectOptionValueByIdIndex=dependenciesFromHistoryIds=2
+wait=200
+waitUntilById=addDependencyForm_submitItems
+clickElementById=addDependencyForm_submitItems
+wait=200
+waitUntilById=addDependencyForm_submitDescription
+clickElementById=addDependencyForm_submitDescription
+wait=500
+searchElementValueByTagName=Body=Click Close to return to the main window.
+wait=500
+runJavaScriptPopToMain=javascript:window.close()
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200

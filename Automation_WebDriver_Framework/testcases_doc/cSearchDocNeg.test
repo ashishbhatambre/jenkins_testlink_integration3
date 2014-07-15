@@ -1,0 +1,29 @@
+name=creating new doc and Searching the Document with no text for child private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText=Add Document
+wait=500
+waitUntilById=title
+typeElementById=title=Doc2
+waitUntilById=description
+typeElementById=description=child private Project Document2
+wait=300
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=This is Document 3 for the Project "Child_Prv_Project" which is inherited from NewProject
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=You have not entered any search criteria.

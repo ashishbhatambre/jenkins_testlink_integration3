@@ -1,0 +1,15 @@
+name=Ability to add Users to the Project group
+component=Project Groups
+wait=300
+url=sf/sfmain/do/userMembership/pgroups.pg_prv_project
+wait=500
+waitUntilById=addUserLink
+clickElementById=addUserLink
+wait=500
+selectButtonByValue=yp1
+selectButtonByValue=yp2
+wait=500
+waitUntilById=addUser_finish
+runJavaScriptPopToMain=javascript:submitForm(document.addUser, 'finish')
+wait=500
+searchElementValueByTagName=Body=User(s) added to the Project Group: yp (yp1) , yp (yp2) .

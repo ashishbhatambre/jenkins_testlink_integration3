@@ -1,0 +1,27 @@
+name=Ability to export from Fixed Tracker Artifact tab as user with create role in private project
+component=FRS
+role=Direct Role
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.private/frs.package1
+wait=300
+clickHrefByLinkText=Private_Release1
+wait=600
+waitUntilById=resolvedInArtifacts
+clickElementById=resolvedInArtifacts
+wait=600
+clickHrefByLinkText=Export
+wait=600
+switchToPopupWindow
+wait=600
+waitUntilById=addAll
+clickElementById=addAll
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=600
+searchElementValueByTagName=Body=Export Complete
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300

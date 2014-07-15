@@ -1,0 +1,43 @@
+name=adding dependencies to artifact with $letter$letter
+component=Trackers
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=400
+clickHrefByLinkText=Trackers
+wait=400
+clickHrefByLinkText=${NewTracker<I>}
+wait=400
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=400
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=dependencies
+clickElementById=dependencies
+wait=400
+waitUntilById=choose_parent
+clickElementById=choose_parent
+wait=400
+switchToPopupWindow
+wait=400
+waitUntilById=dependencyIdString
+typeElementById=dependencyIdString=artf1020
+wait=400
+waitUntilById=addDependencyForm_submitItems
+clickElementById=addDependencyForm_submitItems
+wait=400
+waitUntilById=forwardDescription
+typeElementById=forwardDescription=${Adding &Parent& Dependency}
+waitUntilById=addDependencyForm_submitDescription
+clickElementById=addDependencyForm_submitDescription
+wait=1000
+searchElementValueByTagName=Body=Artifact dependency with artf1020 created successfully.
+wait=1000
+searchElementValueByTagName=Body=Click Close to return to the main window.
+wait=1000
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000

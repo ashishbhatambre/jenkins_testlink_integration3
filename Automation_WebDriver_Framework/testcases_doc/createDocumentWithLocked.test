@@ -1,0 +1,27 @@
+name=Creating Document wiht locked option enable
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+wait=500
+waitUntilById=title
+typeElementById=title=Lock_document
+waitUntilById=description
+typeElementById=description=Document is locked from editing
+wait=300
+waitUntilById=createLocked
+clickElementById=createLocked
+wait=300
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=This is Document for the Project "New Project" which cant be edited.
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body=Document created successfully.

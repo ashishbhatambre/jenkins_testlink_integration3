@@ -1,0 +1,10 @@
+name=Ability to view My Task Progress link in Tasks in private project
+component=Tasks
+role=Edit role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/viewSummary/projects.private/taskmgr
+waitUntilById=myProgress
+clickElementById=myProgress
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Tasks

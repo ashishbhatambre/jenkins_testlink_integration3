@@ -1,0 +1,27 @@
+name=Ability to filter release in public project
+component=FRS
+role=Sitewide Role
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.swpublic/frs.package1
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Release1
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=300
+searchElementValueByTagName=Body=No results found.
+wait=300
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Public_Release
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=800
+searchElementValueByTagName=Body=Public_Release
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

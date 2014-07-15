@@ -1,0 +1,19 @@
+name=Monitor& Stop Monitor Current Folder in public project
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=500
+clickHrefByLinkText=Stop Monitoring Folder
+wait=800
+searchElementValueByTagName=Body=Document Folder is no longer monitored.
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=500
+clickHrefByLinkText=Monitor Current Folder
+wait=800
+searchElementValueByTagName=Body=Document Folder is now being monitored.

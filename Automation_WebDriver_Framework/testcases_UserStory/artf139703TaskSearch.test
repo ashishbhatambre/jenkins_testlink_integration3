@@ -1,0 +1,38 @@
+name=Tasks Search via jum to id- advance search- search tasks link for an aritfact artf139703
+component=Tasks
+role=Global Role
+artifact=artf139703
+wait=300
+url=sf/projects/newproject/
+wait=400
+clickHrefByLinkText=Tasks
+wait=400
+clickHrefByLinkText=Search Tasks
+waitUntilById=searchText
+typeElementById=searchText=t3
+waitUntilById=status
+selectOptionValueByIdValue=status=Alert
+waitUntilById=priority
+selectOptionValueByIdValue=priority=2 - High
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+waitUntilById=idsString
+typeElementById=idsString=taskgrp1001
+wait=400
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=idsString
+typeElementById=idsString=task1002
+wait=400
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=400
+clickHrefByLinkText=Advanced Search
+waitUntilByName=term
+typeElementByName=term=task1
+waitUntilById=applications
+selectOptionValueByIdValue=applications=Tasks
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+wait=400
+searchElementValueByTagName=Body=Search

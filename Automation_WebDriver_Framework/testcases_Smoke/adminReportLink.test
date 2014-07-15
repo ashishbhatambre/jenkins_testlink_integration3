@@ -1,0 +1,9 @@
+name=Ability to view the Report by site admin
+component=System Tools
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Reports
+wait=500
+searchElementValueByTagName=Body=Site#NEXT#Administration

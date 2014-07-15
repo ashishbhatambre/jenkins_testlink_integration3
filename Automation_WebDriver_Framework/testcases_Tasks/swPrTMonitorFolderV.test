@@ -1,0 +1,27 @@
+name=Verify Folder Monitoring Functionality 
+component=Tasks
+role=Sitewide Role_View Permission
+artifact=NA
+wait=300
+url=sf/projects/swprivate/
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+clickHrefByLinkText= SWA_TaskFolder
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+clickHrefByLinkText=Monitor Current Folder
+wait=300
+searchElementValueByTagName=Body=Task Folder is now being monitored.
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+clickHrefByLinkText=Stop Monitoring Folder
+wait=300
+searchElementValueByTagName=Body=Task Folder is no longer monitored.
+wait=300
+
+

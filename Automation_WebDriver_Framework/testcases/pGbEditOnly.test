@@ -1,0 +1,48 @@
+name=Ability to create Global Roles with EditOnly Permissions
+component=Roles
+role=Admin
+artifact=NA
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=title
+typeElementById=title=EditOnlyRole
+waitUntilById=description
+typeElementById=description=Role with EditOnly Permission
+waitUntilById=blockRecurse
+clickElementById=blockRecurse
+waitUntilById=requestable
+clickElementById=requestable
+waitUntilById=createSiteWideRoleForm_submit
+clickElementById=createSiteWideRoleForm_submit
+wait=500
+searchElementValueByTagName=Body=Global Project Role created successfully.
+wait=500
+waitUntilById=projectInfoWildcard
+clickElementById=projectInfoWildcard
+clickHrefByLinkText=Project Pages
+waitUntilById=htmlEditWildcard
+clickElementById=htmlEditWildcard
+clickHrefByLinkText=Trackers
+waitUntilById=trackerEditWildcard
+clickElementById=trackerEditWildcard
+clickHrefByLinkText=Planning Folders
+waitUntilById=planningAdminWildcard
+clickElementById=planningAdminWildcard
+clickHrefByLinkText=Documents
+waitUntilById=docmanEditWildcard
+clickElementById=docmanEditWildcard
+clickHrefByLinkText=Tasks
+waitUntilById=taskmgrEditWildcard
+clickElementById=taskmgrEditWildcard
+clickHrefByLinkText=File Releases
+waitUntilById=frsCreateWildcard
+clickElementById=frsCreateWildcard
+clickHrefByLinkText=Wiki
+waitUntilById=wikiCreateWildcard
+clickElementById=wikiCreateWildcard
+wait=500
+waitUntilById=editRole_Edit
+clickElementById=editRole_Edit
+wait=500
+searchElementValueByTagName=Body=Global Project Role updated successfully.

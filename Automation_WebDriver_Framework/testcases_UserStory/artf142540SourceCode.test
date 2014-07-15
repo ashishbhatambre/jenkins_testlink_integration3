@@ -1,0 +1,55 @@
+name=Ability to Monitoring the objects by adding and removing users in SourceCode for artf142540
+component=Source Code
+role=Global Role
+aritfact=artf142540
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=admin
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Source Code
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_objectSelection
+clickElementById=selectionMenuButton_MonitorMenu_objectSelection
+wait=300
+waitUntilById=objectSelection_who
+clickHrefByLinkText=Users Monitoring Selected
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+wait=500
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=user2_normalPermission
+selectOptionValueByIdValue=foundMultipleTemp=yy_admin_per
+selectOptionValueByIdValue=foundMultipleTemp=user1_adminPermission
+wait=300
+clickHrefByLinkText=Add
+wait=300
+clickElementById=userPicker_ok
+selectButtonByValue=yadmin
+wait=500
+waitUntilById=selectUsers_removeUsers
+clickElementById=selectUsers_removeUsers
+wait=300
+acceptJavaScriptConfirm
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+waitUntilById=objectSelection_Monitor
+clickElementById=objectSelection_Monitor
+wait=300
+searchElementValueByTagName=Body=1 item(s) are now being monitored.
+wait=300
+url=sf/sfmain/do/logout

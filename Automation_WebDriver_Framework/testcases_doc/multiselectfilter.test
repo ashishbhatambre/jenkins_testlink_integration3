@@ -1,0 +1,17 @@
+name=Filter Document by Document Last Edit By in root folder
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/test/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=btn_filter!!string!!lastModifiedBy
+clickElementById=btn_filter!!string!!lastModifiedBy
+clickElementByCssSelector=ui-multiselect-filter=admin
+waitUntilByName=multiselect__filter!!string!!lastModifiedBy
+selectButtonByValue=admin
+wait=500
+searchElementValueByTagName=Body=Enter Keywords
+wait=500

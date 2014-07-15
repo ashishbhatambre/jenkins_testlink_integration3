@@ -1,0 +1,44 @@
+name=Creating task and updating MyTask Progress for public Project
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=EventTask1
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=NewEventTask2
+waitUntilById=description
+typeElementById=description=task under test
+selectOptionValueByNameValue=priority=3 - Medium
+waitUntilById=assignedto
+selectOptionValueByIdValue=assignedto=tester1_adminPermission
+selectOptionValueByNameValue=status=Alert
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.
+wait=500
+clickHrefByLinkText=Summary
+wait=500
+clickHrefByLinkText=My Task Progress
+wait=500
+selectOptionValueByIdValue=status_task1061=Warning
+waitUntilByName=accomplished_task1061
+typeElementByName=accomplished_task1061=Testtask
+waitUntilByName=planned_task1061
+typeElementByName=planned_task1061=Plan for the Folder EventFolder1
+waitUntilByName=issues_task1061
+typeElementByName=issues_task1061=No Issues
+wait=300
+runJavaScriptPopToMain=javascript:submitForm(document.myTaskProgress, 'Save')
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Tasks#NEXT#Summary

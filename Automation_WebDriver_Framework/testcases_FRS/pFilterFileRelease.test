@@ -1,0 +1,28 @@
+name=Filter File Releases in public project
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/frs/do/viewSummary/projects.pubproject/frs
+wait=500
+clickHrefByLinkText=123Package_Notes
+wait=500
+clickHrefByLinkText=Add
+wait=500
+waitUntilById=title
+typeElementById=title=File
+typeElementByName=description=File created for Package Package_Notes.
+waitUntilById=createRelease_submit
+clickElementById=createRelease_submit
+wait=300
+searchElementValueByTagName=Body=Release created successfully.
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=File
+wait=500
+clickHrefByLinkText=Filter
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=500

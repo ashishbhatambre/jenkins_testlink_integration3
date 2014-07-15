@@ -1,0 +1,22 @@
+name=delete File from file releases
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=File Releases
+wait=300
+clickHrefByLinkText=FilePackage#123
+wait=300
+clickHrefByLinkText=File3
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=frsFilesSelection_Delete
+clickElementById=frsFilesSelection_Delete
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=File(s) deleted successfully.

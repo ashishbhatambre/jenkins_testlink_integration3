@@ -1,0 +1,21 @@
+name=Doc Search Keyword with Doc_Name & Description + Search Within Document enabled in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugpproject/docman.root.ugpfolder
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+wait=300
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Doc_Online
+waitUntilById=metaDataScope
+clickElementById=metaDataScope
+wait=300
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=500
+searchElementValueByTagName=Body=ugpProject#NEXT#Documents
+wait=300

@@ -1,0 +1,19 @@
+name=Ability to delete the Topics in private project as site admin user
+component=Discussions
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Discussions
+wait=500
+clickHrefByLinkText=Forum_Discussions
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+selectCheckBoxFromList=_listItem=1
+wait=500
+waitUntilById=selectTopicsForm_Delete
+clickElementById=selectTopicsForm_Delete
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=2 topic(s) deleted successfully.

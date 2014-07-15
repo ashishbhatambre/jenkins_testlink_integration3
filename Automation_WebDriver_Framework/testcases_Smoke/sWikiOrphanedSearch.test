@@ -1,0 +1,25 @@
+name=Ability to Search wiki Orphaned page in private project as site admin user
+component=Wiki
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Wiki
+wait=500
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+wait=500
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Wiki
+wait=500
+waitUntilById=searchWikiPages_submit
+clickElementById=searchWikiPages_submit
+wait=500
+waitUntilById=predefinedSearchToggle
+clickElementById=predefinedSearchToggle
+wait=500
+waitUntilById=predefined_orphaned
+clickElementById=predefined_orphaned
+wait=500
+clickHrefByLinkText=Return
+wait=500
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Wiki#NEXT#Home page#NEXT#View Wiki Page

@@ -1,0 +1,25 @@
+name=Ability to filter Artifact using Priority in private project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+wait=200
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=btn_filter!!numeric!!priority
+clickElementById=btn_filter!!numeric!!priority
+waitUntilById=ui-multiselect-_filter!!numeric!!priority-option-4
+clickElementById=ui-multiselect-_filter!!numeric!!priority-option-4
+wait=200
+clickHrefByLinkText=Filter
+wait=200
+searchElementValueByTagName=body=SWPrivate#NEXT#Trackers
+clickSpanElementByCssSelector=caret
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=200
+searchElementValueByTagName=body=SWPrivate#NEXT#Trackers

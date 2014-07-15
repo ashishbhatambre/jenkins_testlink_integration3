@@ -1,0 +1,31 @@
+name=Ability to move artifact between the projects [private-private] in private project as site admin user
+component=Tracker
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText= list1
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+waitUntilById=selectArtifactsForm_Cut
+clickHrefByLinkText=Cut
+wait=300
+searchElementValueByTagName=Body=1 artifact(s) cut to the clipboard.
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=PubProject
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText= TeamPlan
+wait=500
+waitUntilById=selectArtifactsForm_Paste
+clickHrefByLinkText=Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=One or more artifacts could not be assigned to the selected planning folder because their parent artifact is assigned to a planning folder in a different folder hierarchy.

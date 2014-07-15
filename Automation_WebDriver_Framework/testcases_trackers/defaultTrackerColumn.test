@@ -1,0 +1,17 @@
+name= Ability to selecting the Default configuring option from Columns field in Tracker
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=200
+waitUntilById=columns-icon
+clickElementById=columns-icon
+wait=200
+waitUntilById=defaultFolderPreferences
+clickElementById=defaultFolderPreferences
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#NewTracker#NEXT#List Artifacts

@@ -1,0 +1,19 @@
+name=Ability tp create subversion integration
+component=Integrations
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Integrations
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=type
+selectOptionValueByIdValue=type=Subversion
+typeElementById=title=Posting
+typeElementById=description=Integration to subversion
+wait=300
+waitUntilById=system_submit
+clickElementById=system_submit
+wait=300
+searchElementValueByTagName=Body=The SCM server was added successfully.

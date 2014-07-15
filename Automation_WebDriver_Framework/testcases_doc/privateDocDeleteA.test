@@ -1,0 +1,19 @@
+name=Delete Single Document 
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/private/
+wait=300
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Document1
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectDocuments_Delete
+clickElementById=selectDocuments_Delete
+wait=300
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=1 document deleted successfully.

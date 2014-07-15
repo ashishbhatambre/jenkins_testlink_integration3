@@ -1,0 +1,8 @@
+name=Navigate to Root folder from breadcrumbs link
+component=Task
+role=Global Role
+artifact=NA
+wait=1000
+clickHrefByLinkText=test_task
+wait=1000
+searchElementValueByTagName=Body=NewProject#NEXT#Tasks#NEXT#test_task#NEXT#List Tasks 

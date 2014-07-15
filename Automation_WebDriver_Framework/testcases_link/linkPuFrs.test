@@ -1,0 +1,5 @@
+name=Verify File Releases link
+wait=300
+url=sf/frs/do/viewSummary/projects.pproject/frs
+wait=700
+searchElementValueByTagName=Body=PProject#NEXT#Project Home#NEXT#File#NEXT#Releases 

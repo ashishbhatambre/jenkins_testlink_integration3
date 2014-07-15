@@ -1,0 +1,11 @@
+name=Verify Search Posts link in public project
+component=Project
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+wait=300
+waitUntilById=submitSearchPosts
+clickElementById=submitSearchPosts
+wait=700
+searchElementValueByTagName=Body=PProject#NEXT#Discussion
+wait=300 

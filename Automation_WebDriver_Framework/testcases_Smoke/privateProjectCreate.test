@@ -1,0 +1,15 @@
+name=Ability to create project with private access permission
+component=Projects
+role=Admin
+artifact=NA
+url=sf/sfmain/do/myProjects
+wait=300
+clickElementById=createProject
+waitUntilById=title
+typeElementById=title=Private
+waitUntilById=description
+typeElementById=description=This is Private project
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=300
+searchElementValueByTagName=Body=Private

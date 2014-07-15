@@ -1,0 +1,21 @@
+name=Ability to rename Sub Child Planning Folder 
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/planning/do/viewPlanningFolder/projects.private/planning.plan1.plan2.plan3
+wait=4000
+clickHrefByLinkText=Edit
+wait=200
+waitUntilById=edit_planning
+clickElementById=edit_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=prSCPlan
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=Private#NEXT#Trackers

@@ -1,0 +1,35 @@
+name=Ability to Save filter in public project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+waitUntilById=btn_filter!!numeric!!priority
+clickElementById=btn_filter!!numeric!!priority
+waitUntilById=ui-multiselect-_filter!!numeric!!priority-option-1
+clickElementById=ui-multiselect-_filter!!numeric!!priority-option-1
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilbyId=saveNamedFilter
+clickElementById=saveNamedFilter
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=searchOrFilterName
+typeElementById=searchOrFilterName=DefaultFilter
+waitUntilById=saveSearchOrFilter_submit
+typeElementById=saveSearchOrFilter_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=SWPublic#NEXT#Trackers
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

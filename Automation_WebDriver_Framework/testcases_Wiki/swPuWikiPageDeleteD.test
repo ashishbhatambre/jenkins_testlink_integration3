@@ -1,0 +1,12 @@
+name=Ability to delete Wiki Page as user with delete role in public project
+component=Wiki
+role=Sitewide Role_Delete Permission
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.swpublic/wiki/LinkPage2
+waitUntilById=view_wiki_page.delete
+clickElementById=view_wiki_page.delete
+wait=300
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Wiki Page deleted successfully.

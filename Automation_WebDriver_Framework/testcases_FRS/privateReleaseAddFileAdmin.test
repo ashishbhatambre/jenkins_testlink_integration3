@@ -1,0 +1,27 @@
+name=Ability to add a new file to File Release in private project
+component=FRS
+role=Direct Role_Admin Permission
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.private/frs.package1
+wait=300
+clickHrefByLinkText=Private_Release
+wait=300
+waitUntilById=frsfilesList_create
+clickElementById=frsfilesList_create
+wait=300
+typeValueForFileField=C:\Uploaded_Files\Jellyfish.jpg
+waitUntilById=frsFile_submit
+clickElementById=frsFile_submit
+wait=500
+searchElementValueByTagName=Body=File added successfully.
+wait=300
+waitUntilById=frsfilesList_create
+clickElementById=frsfilesList_create
+wait=300
+typeValueForFileField=C:\Uploaded_Files\test.pdf
+waitUntilById=frsFile_submit
+clickElementById=frsFile_submit
+wait=600
+searchElementValueByTagName=Body=File added successfully.
+

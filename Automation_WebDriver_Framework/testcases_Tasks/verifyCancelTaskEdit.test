@@ -1,0 +1,24 @@
+name=Verifying the cancel button on editing the Task 
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= test_task
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+wait=300
+waitUntilById=includeWeekends
+selectOptionValueByIdValue=includeWeekends=7 Day (Includes Weekends)
+wait=500
+waitUntilById=editTask_Cancel
+clickElementById=editTask_Cancel
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Tasks#NEXT#test_task#NEXT#View Task Detail

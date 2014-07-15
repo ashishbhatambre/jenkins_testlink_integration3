@@ -1,0 +1,17 @@
+name=Search Task 
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=searchText
+typeElementById=searchText=t2
+wait=300
+waitUntilById=status
+selectOptionValueByIdValue=status=OK
+waitUntilById=priority
+selectOptionValueByIdValue=priority=4 - Low
+wait=300
+waitUntilById=searchTasks_Search
+runJavaScriptPopToMain=javascript:submitForm(document.searchTasks, 'Search')
+wait=300
+searchElementValueByTagName=Body=NewProject#NEXT#Tasks#NEXT#Search Tasks

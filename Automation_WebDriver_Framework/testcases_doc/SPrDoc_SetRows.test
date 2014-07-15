@@ -1,0 +1,13 @@
+name=Verify the displaying Items per page  through Rows button in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+waitUntilById=rows-icon
+clickElementById=rows-icon
+waitUntilById=ipp_15
+clickElementById=ipp_15
+wait=300
+searchElementValueByTagName=Body=Private_Sub#NEXT#Documents

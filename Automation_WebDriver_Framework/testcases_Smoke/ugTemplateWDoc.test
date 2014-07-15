@@ -1,0 +1,19 @@
+name=Create Project template For Private Project
+component=Project Admin
+role=NA
+artifact=NA
+wait=300
+url=sf/sfmain/do/createTemplate/projects.ugproject
+wait=300
+waitUntilById=titleField
+typeElementById=titleField=ugProject_Template
+wait=300
+waitUntilById=description
+typeElementById=description=Project Template for user group project
+wait=500
+selectCheckBoxFromList=contentChoices=5
+wait=500
+waitUntilByid=createTemplate_submit
+clickElementById=createTemplate_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Project Template created.

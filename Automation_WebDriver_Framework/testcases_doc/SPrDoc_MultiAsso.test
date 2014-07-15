@@ -1,0 +1,47 @@
+name=Create multiple Association in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=recentlyEditedIds
+selectOptionValueByIdIndex=recentlyEditedIds=3
+wait=300
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+wait=300
+waitUntilById=addAssociation_submitDescriptionStartAgain
+clickElementById=addAssociation_submitDescriptionStartAgain
+wait=300
+waitUntilById=recentlyEditedIds
+selectOptionValueByIdIndex=recentlyEditedIds=2
+wait=300
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+wait=300
+waitUntilById=description
+typeElementById=description=Association_2
+wait=300
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=300
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=300
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=300
+withoutPopCloseSwitchToMainWindow

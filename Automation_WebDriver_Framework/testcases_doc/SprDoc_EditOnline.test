@@ -1,0 +1,19 @@
+name=Edit Document Text Content in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+clickHrefByLinkText=Doc_Online
+wait=300
+clickHrefByLinkText=Edit / Update
+wait=300
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=Document_Online
+wait=300
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Document updated successfully.

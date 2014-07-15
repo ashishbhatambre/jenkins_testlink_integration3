@@ -1,0 +1,29 @@
+name=Add Document in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_4
+waitUntilById=description
+typeElementById=description=This is document generated from text
+wait=300
+selectButtonByValue=fromText
+wait=300
+waitUntilById=textContent
+typeElementById=textContent=Public Project Document
+wait=300
+waitUntilById=versionComment
+typeElementById=versionComment=Version1
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body=Document created successfully.

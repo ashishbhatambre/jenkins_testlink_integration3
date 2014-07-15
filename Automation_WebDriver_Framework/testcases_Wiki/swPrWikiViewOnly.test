@@ -1,0 +1,8 @@
+name=Ability to view the wiki link in private page
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.swprivate/wiki/HomePage
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Wiki

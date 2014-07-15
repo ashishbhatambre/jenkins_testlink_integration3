@@ -1,0 +1,20 @@
+name=Default Calender update to 7days in Task Manager settings for public project
+component=Project Admin
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Task Manager Settings
+wait=300
+waitUntilById=task_calendar
+clickElementById=task_calendar
+wait=300
+waitUntilById=includeWeekends
+selectOptionValueByIdValue=includeWeekends=7 Day (Includes Weekends)
+waitUntilById=adminCalendar_submit
+clickElementById=adminCalendar_submit
+wait=300
+searchElementValueByTagName=Body=The default calendar has been updated.

@@ -1,0 +1,8 @@
+name=Ability to View Wiki Page in HTML Format in public project
+component=Wiki
+role=Direct Role
+artifact=NA
+waitUntilById=view_wiki_page.html
+clickElementById=view_wiki_page.html
+wait=300
+searchElementValueByTagName=Body=Wiki

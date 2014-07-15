@@ -1,0 +1,13 @@
+name=Create tracker
+component=Project Admin
+role=NA
+artifact=NA
+url=sf/sfmain/do/myProjects
+clickHrefByLinkText=proj1
+clickHrefByLinkText=Project Admin
+clickHrefByLinkText=Tracker Settings
+clickElementById=projectAdminTracker_create
+typeElementById=trackerTitle=test
+typeElementById=trackerDescription=test
+clickElementById=createTrackerForm_Save
+searchElementValueByTagName=Body=Tracker created successfully.

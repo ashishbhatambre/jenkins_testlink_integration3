@@ -1,0 +1,27 @@
+name=Create new tracker Matrix Component for Public Project
+component=Project Home
+role=Admin Role
+artifact=NA
+clickElementById=CreatePageComponentLink
+waitUntilById=title
+typeElementById=title=pTracker1_Matrix
+wait=300
+selectButtonByValue=chart
+wait=300
+selectButtonByValue=0
+wait=300
+selectButtonByValue=false
+wait=300
+selectOptionValueByIdIndex=numChart=0
+waitUntilById=chartLabel_1
+typeElementById=chartLabel_1=Open
+wait=300
+selectOptionValueByIdIndex=chartType_1=2
+wait=300
+selectRadioButton=chartSourceType_1_tracker
+wait=300
+selectOptionValueByIdIndex=chartSourceTracker_1=1
+waitUntilById=component_html
+clickElementById=component_html
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Project Home 

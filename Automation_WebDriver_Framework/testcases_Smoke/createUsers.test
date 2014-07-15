@@ -1,0 +1,37 @@
+name=Ability to create users
+component=Users
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Users
+wait=500
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilByName=username
+typeElementByName=username=user1	
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=user1_adminPermission	
+typeElementByName=email=user1@collab.net
+typeElementByName=companyName=cspl
+wait=500
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=1000
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+wait=500
+waitUntilByName=username
+typeElementByName=username=user2	
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=user2_normalPermission	
+typeElementByName=email=user2@collab.net
+typeElementByName=companyName=cspl
+wait=500
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=1000
+searchElementValueByTagName=Body=User#NEXT#user2#NEXT#has been created successfully.
+wait=800

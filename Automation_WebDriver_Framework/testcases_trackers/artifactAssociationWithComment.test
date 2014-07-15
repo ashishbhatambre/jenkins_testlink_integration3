@@ -1,0 +1,38 @@
+name=Ability to Add Association with Comment to the Artifact via Recently Edited Items
+component=Tracker
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Folder_Renamed
+wait=4000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=2
+wait=500
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=recentlyEditedIds
+selectOptionValueByIdIndex=recentlyEditedIds=5
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+waitUntilById=description
+typeElementById=description=Association for the Artifact added with Comments.
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=500
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=500
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500

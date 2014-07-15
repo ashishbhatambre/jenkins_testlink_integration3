@@ -1,0 +1,16 @@
+name=Verifying the "Help Info" in inline edit for artifacts 
+component=Tracker
+role=Global Role
+artifact=artf157469
+wait=500
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText= Plan_Folder1
+wait=4000
+waitUntilById=editMode
+clickHrefByLinkText=Edit Inline
+wait=1000
+waitUntilById=EditInlineHelpText
+searchElementValueByTagName=Body=Click on the fields to "Edit Inline"

@@ -1,0 +1,13 @@
+name=Ability to delete Task Folder in public project
+component=Tasks
+role=Sitewide_Delet Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.swpublic/taskmgr.swa_taskfolder
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=deleteGroupLink
+clickElementById=deleteGroupLink
+wait=600
+searchElementValueByTagName=Body=Task folder deleted successfully.

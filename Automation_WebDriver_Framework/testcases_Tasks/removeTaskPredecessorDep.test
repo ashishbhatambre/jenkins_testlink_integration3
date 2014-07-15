@@ -1,0 +1,32 @@
+name=Removing the task Predecessor Dependency
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= test_task
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=listTasksSelect_Edit
+runJavaScriptPopToMain=javascript:submitForm(document.listTasksSelect, 'Edit')
+wait=300
+waitUntilById=editTask_Cancel
+runJavaScriptPopToMain=javascript:submitForm(document.editTask, 'Cancel')
+wait=300
+waitUntilById=dependencies
+clickElementById=dependencies
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=predecessorListForm_remove
+clickElementById=predecessorListForm_remove
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=1 dependency(ies) were deleted successfully.

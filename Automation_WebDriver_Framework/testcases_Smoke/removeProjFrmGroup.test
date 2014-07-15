@@ -1,0 +1,18 @@
+name=Ability to remove the project from the project group
+component=Project Groups
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Project Groups
+wait=500
+clickHrefByLinkText=TestedProjects
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=viewProjectGroupDetails_remove
+clickElementById=viewProjectGroupDetails_remove
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Selected project(s) were removed from the Project Group.

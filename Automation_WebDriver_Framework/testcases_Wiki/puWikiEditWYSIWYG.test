@@ -1,0 +1,16 @@
+name=Ability to edit Wiki Page using WYSIWYG Editor in public project
+component=Wiki
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+waitUntilById=view_wiki_page.edit
+clickElementById=view_wiki_page.edit
+wait=300
+waitUntilById=editorPrefSelect
+selectOptionValueByIdIndex=editorPrefSelect=0
+waitUntilById=changenote
+typeElementById=changenote=v3
+waitUntilById=edit_wiki_page.update
+clickElementById=edit_wiki_page.update
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Wiki Page updated.

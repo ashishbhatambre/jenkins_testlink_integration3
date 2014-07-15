@@ -1,0 +1,9 @@
+name=Global Search_Without entering any keyword    
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168124         
+clickHrefByLinkText=Jump to ID
+clickElementById=search
+clickElementById=searchForm_submit
+acceptJavaScriptConfirm
+searchElementValueByTagName=Body=Search Criteria

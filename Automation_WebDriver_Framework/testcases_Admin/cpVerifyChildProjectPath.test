@@ -1,0 +1,9 @@
+name=Ability to view the Child public project Path
+component=Project 
+role=Project Admin
+artifact=NA
+wait=300
+url=sf/projects/child_pub_project
+wait=500
+searchElementValueByTagName=Body=[Hide Project Path] PubProject 		
+Child_Pub_Project/ Project Home 

@@ -1,0 +1,26 @@
+name=Create Document Folder 
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugproject/docman.root
+wait=300
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=ugFolder
+wait=300
+clickHrefByLinkText=Save
+wait=300
+searchElementValueByTagName=Body=Folder created successfully.
+wait=500
+runJavaScriptPopToMain=javascript:finishDocument()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=ugProject#NEXT#Documents
+wait=300
+

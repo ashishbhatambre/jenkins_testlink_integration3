@@ -1,0 +1,16 @@
+name=Ability to View the artifact as user with create only permission in private project
+component=Tracker
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Folder_Renamed
+wait=200
+clickHrefByLinkText=artifact5
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Tracker1#NEXT#View Artifact
+wait=200
+clickHrefByLinkText=Return
+wait=200

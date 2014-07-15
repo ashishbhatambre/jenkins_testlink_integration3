@@ -1,0 +1,27 @@
+name=TaskCreation with ${}
+component=Tasks
+role=NA
+artifact=NA
+wait=200
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+clickHrefByLinkText= ${dollarTask}
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=${newTask}
+waitUntilById=description
+typeElementById=description=${task created with $symbol@!$@#}
+selectOptionValueByNameValue=priority=2 - High
+selectOptionValueByNameValue=status=OK
+typeElementByName=startDate=06/18/2013
+typeElementByName=endDate=09/19/2013
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=300
+clickHrefByLinkText=Save
+wait=300
+searchElementValueByTagName=Body=Task created successfully.

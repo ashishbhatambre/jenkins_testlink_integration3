@@ -1,0 +1,16 @@
+name=To search for an incomplete word using wildcard at the end of the word using any search criteria
+component=Tasks
+role=Site Admin
+artifact=artf168904
+wait=300
+url=sf/taskmgr/do/listTasks/projects.project_search/taskmgr.searchfolder
+wait=300
+clickHrefByLinkText=Search Tasks
+waitUntilById=searchText
+typeElementById=searchText=pars*
+waitUntilById=inProgress
+clickElementById=inProgress
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=500
+searchElementValueByTagName=Body=(1 Item)

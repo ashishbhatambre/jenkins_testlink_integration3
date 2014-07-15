@@ -1,0 +1,29 @@
+name=creating Sub-Child Document Folder for Test_Doc->*123Doc
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+url=sf/docman/do/listDocuments/projects.newproject/docman.root.test_doc.child_folder
+wait=500
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=SubDocFolder
+wait=300
+waitUntilById=createDocumentFolder_submit
+clickElementById=createDocumentFolder_submit
+wait=600
+searchElementValueByTagName=Body=Folder created successfully.
+wait=600
+runJavaScriptPopToMain=javascript:finishDocument()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=NewProject#NEXT#Documents#NEXT#&Document_Folder&#NEXT#Tree_View#NEXT#Child_Folder#NEXT#List Documents 

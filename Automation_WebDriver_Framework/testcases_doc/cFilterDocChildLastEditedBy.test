@@ -1,0 +1,25 @@
+name=Filter Document by Document Last Edited by in Child folder for private child project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_prv_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Child_Folder
+wait=500
+waitUntilById=btn_filter!!string!!lastModifiedBy
+clickElementById=btn_filter!!string!!lastModifiedBy
+waitUntilByName=multiselect__filter!!string!!lastModifiedBy
+selectButtonByValue=user1
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=Child_Folder (2 Items)
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

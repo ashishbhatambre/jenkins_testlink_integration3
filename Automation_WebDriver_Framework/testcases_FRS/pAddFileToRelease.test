@@ -1,0 +1,25 @@
+name=Adding Files to releases in File Release for public project
+component=FRS
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=Package_Notes
+wait=500
+clickHrefByLinkText=Notes
+wait=500
+clickHrefByLinkText=Add
+wait=500
+waitUntilById=file
+typeValueForFileField=C:\Uploaded_Files\link.txt
+waitUntilById=frsFile_submit
+clickElementById=frsFile_submit
+wait=300
+waitUntilById=frsfilesList_create
+clickElementById=frsfilesList_create
+waitUntilById=file
+typeValueForFileField=C:\Uploaded_Files\Jellyfish.jpg
+wait=300
+waitUntilById=frsFile_submit
+runJavaScriptPopToMain=javascript:submitForm(document.frsFile, 'submit')
+wait=300
+searchElementValueByTagName=Body=File added successfully.

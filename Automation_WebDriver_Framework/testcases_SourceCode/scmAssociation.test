@@ -1,0 +1,42 @@
+name=Source code Association -> associate the commit2 to commit4
+component=Sourcecode
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Source Code
+wait=500
+clickHrefByLinkText=9
+wait=500
+selectButtonByValue=cmmt1004
+waitUntilById=selectCommit_submit
+clickElementById=selectCommit_submit
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=500
+waitUntilById=addAssociationLink
+clickHrefByLinkText=Add
+wait=500
+switchToPopupWindow
+wait=500
+typeElementById=associationIdString=cmmt1002
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+waitUntilById=description
+typeElementById=description=Repository Associate to Commit document cmmt1006.
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=1000
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=1000
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+searchElementValueByTagName=Body=NewProject#NEXT#Source Code#NEXT#NewRepo01#NEXT#Commit Details
+wait=1000
+clickHrefByLinkText=Return
+wait=1000
+searchElementValueByTagName=Body=NewProject#NEXT#Source Code#NEXT#NewRepo01#NEXT#Repository Details

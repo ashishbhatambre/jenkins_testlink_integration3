@@ -1,0 +1,27 @@
+name=Check version number is incremented when a document is edited and updated.
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText=save_document
+wait=300
+clickHrefByLinkText=Edit / Update
+wait=300
+waitUntilById=versionComment
+typeElementById=versionComment=Testing the version count after updating.
+wait=300
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+wait=300
+searchElementValueByTagName=Body=Document updated successfully.
+wait=300
+waitUntilById=documentPropertiesVersion_submit
+clickElementById=documentPropertiesVersion_submit
+wait=300
+searchElementValueByTagName=Body=Active document version updated.
+wait=300
+searchElementValueByTagName=Body=Current Version: 	1 

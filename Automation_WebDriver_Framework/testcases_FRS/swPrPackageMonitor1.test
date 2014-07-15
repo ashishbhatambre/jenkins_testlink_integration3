@@ -1,0 +1,38 @@
+name=Ability to view users monitoring the folder in private project
+component=FRS
+role=Sitewide Role
+artifact=NA
+wait=300
+url=sf/frs/do/viewSummary/projects.swprivate/frs
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectionMenuButton_MonitorMenu_selectPackages
+clickElementById=selectionMenuButton_MonitorMenu_selectPackages
+wait=300
+clickHrefByLinkText=Users Monitoring Selected
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+wait=300
+waitUntilById=name
+typeElementById=name=swuser4
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#File Releases

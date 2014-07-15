@@ -1,0 +1,13 @@
+name=Open Document in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root.folder
+wait=300
+clickHrefByLinkText=Doc_Online
+wait=300
+clickHrefByLinkText=Open Document
+wait=300
+searchElementValueByTagName=Body=Online
+wait=300

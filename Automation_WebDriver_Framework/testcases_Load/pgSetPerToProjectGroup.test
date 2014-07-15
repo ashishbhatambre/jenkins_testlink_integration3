@@ -1,0 +1,35 @@
+name=Ability to add Users group to the project in the project group
+component=Project Groups
+role=Admin
+artifact=NA
+wait=300
+url=sf/rbac/do/permissionAdmin/pgroups.private_proj_group
+wait=500
+waitUntilById=groupRoleMatrix
+clickElementById=groupRoleMatrix
+wait=500
+waitUntilById=addGroupButtonLink
+clickElementById=addGroupButtonLink
+wait=500
+waitUntilByName=searchString
+typeElementByName=searchString=prv_proj_users
+wait=500
+waitUntilById=addGroup_search
+clickElementById=addGroup_search
+wait=500
+waitUntilByName=_listItem
+clickElementByName=_listItem
+wait=500
+waitUntilById=addGroup_roles
+clickElementById=addGroup_roles
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+waitUntilById=addGroupRoles_finish
+clickElementById=addGroupRoles_finish
+wait=500
+waitUntilById=groupRoleMatrix_Save
+clickElementById=groupRoleMatrix_Save
+wait=500
+searchElementValueByTagName=Body=Updated role assignments for 0 user group(s). Total role assignments: 0 added, 0 deleted.

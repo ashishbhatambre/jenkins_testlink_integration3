@@ -1,0 +1,14 @@
+name=Ability to list All artifacts in planning folders in Private Project
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan1
+wait=4000
+waitUntilById=planning_folder_view_select
+selectOptionValueByIdIndex=planning_folder_view_select=0
+wait=200
+searchElementValueByTagName=body=Plan1

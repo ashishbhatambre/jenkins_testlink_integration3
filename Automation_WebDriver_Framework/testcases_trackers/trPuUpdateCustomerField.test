@@ -1,0 +1,22 @@
+name=Ability to update Tracker Customer Field 
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.public
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Customer
+wait=200
+waitUntilById=displayLinesMultiselect
+typeElementById=displayLinesMultiselect=5
+waitUntilById=helpText
+typeElementById=helpText=Updated Customer Field
+wait=200
+clickHrefByLinkText=Save Field
+wait=200
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Field data updated successfully.

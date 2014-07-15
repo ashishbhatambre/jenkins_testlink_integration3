@@ -1,0 +1,24 @@
+name=Verify Change Request tab in task edit Page
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= task2
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+wait=300
+waitUntilById=editTask_Cancel
+clickElementById=editTask_Cancel
+wait=300
+waitUntilById=changerequest
+clickElementById=changerequest
+wait=300
+searchElementValueByTagName=Body=No results found.

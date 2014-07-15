@@ -1,0 +1,24 @@
+name=Ability to Rank the Artifact cards in Boards as user with create only permission in private project
+component=Boards
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Plan
+wait=200
+clickSpanElementByCssSelector=combo-arrow=0
+wait=200
+clickCssSelectorAndValueForSpan=tree-title=Folder_Renamed
+wait=200
+clickElementByName=includeClosed
+wait=200
+clickSpanElementByCssSelector=combo-arrow=1
+wait=200
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=500
+dragElementToByCSS=item ui-corner-all ui-draggable=artifact8=scroll-area=artifactNew
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Board View
+wait=200

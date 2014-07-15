@@ -1,0 +1,23 @@
+name=Create Document with Final State in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_Final
+wait=300
+waitUntilById=description
+typeElementById=description=Doc_Final
+wait=300
+selectOptionValueByIdIndex=status=1
+wait=300
+typeValueForFileField=C:\Uploaded_Files\test.pdf
+wait=300
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body=Document created successfully.

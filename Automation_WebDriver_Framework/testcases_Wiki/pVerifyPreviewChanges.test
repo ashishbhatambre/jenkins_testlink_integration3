@@ -1,0 +1,21 @@
+name=Ability to Preview changes in wiki link Page in Public project
+component=Wiki
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=300
+clickHrefByLinkText=Wiki
+wait=300
+clickHrefByLinkText=Pub Project
+wait=300
+waitUntilById=view_wiki_page.edit
+clickElementById=view_wiki_page.edit
+wait=300
+waitUntilById=edit_wiki_page.preview
+clickElementById=edit_wiki_page.preview
+wait=500
+waitUntilById=edit_wiki_page.cancel
+clickElementById=edit_wiki_page.cancel
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Wiki#NEXT#PubProject#NEXT#View Wiki Page 

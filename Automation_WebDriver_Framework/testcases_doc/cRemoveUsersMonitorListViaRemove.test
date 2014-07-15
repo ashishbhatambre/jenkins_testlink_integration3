@@ -1,0 +1,35 @@
+name=Remove users to Users Monitoring folder list in document folder by "Remove" option from User to Add list for private child Project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=500
+clickHrefByLinkText=Users Monitoring Folder
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+wait=300
+waitUntilById=addAll
+clickHrefByLinkText=Add All
+wait=300
+waitUntilById=foundMultiple
+selectOptionValueByIdValue=foundMultiple=newuser1_createOnlyPermission
+wait=1000
+clickHrefByLinkText=Remove
+wait=1000
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=1000
+runJavaScriptPopToMain=javascript:close()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+searchElementValueByTagName=Body=Child_Prv_Project#NEXT#Documents#NEXT#Child_Doc_Folder#NEXT#List Documents 

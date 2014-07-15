@@ -1,0 +1,19 @@
+name=Inability to filter from project group by providing invalid filter criteria
+component=Project Groups
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Project Groups
+wait=500
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Group
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=No results found.
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

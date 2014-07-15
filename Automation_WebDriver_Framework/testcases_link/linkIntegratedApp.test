@@ -1,0 +1,10 @@
+name=Verify  the Integrated Apps Link 
+component=Admin
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/listProjectsAdmin
+wait=300
+clickHrefByLinkText=Integrated Apps
+wait=500
+searchElementValueByTagName=Body=Site#NEXT#Administration

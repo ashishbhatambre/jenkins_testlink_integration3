@@ -1,0 +1,15 @@
+name=Remove monitor for selected Applications
+clickHrefByLinkText=Monitoring
+wait=300
+clickHrefByLinkText=All
+wait=300
+clickHrefByLinkText=NewProject
+wait=300
+waitUntilById=apps
+clickElementById=apps
+wait=300
+selectCheckBoxFromList=applicationMonitored(Tracker)
+waitUntilById=editMonitoredApplications_Cancel
+clickElementById=editMonitoredApplications_Cancel
+wait=300
+searchElementValueByTagName=Body=My Workspace

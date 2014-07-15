@@ -1,0 +1,10 @@
+name=Verify Search Documents link in public project
+component=Project
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=500
+searchElementValueByTagName=Body=PProject
+wait=300

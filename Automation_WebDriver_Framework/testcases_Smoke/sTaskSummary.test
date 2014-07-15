@@ -1,0 +1,41 @@
+name=Ability to create the task and edit TaskProgress for private project as site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= session2
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+waitUntilById=title
+typeElementById=title=testTask
+waitUntilById=description
+typeElementById=description=task under test
+selectOptionValueByNameValue=priority=3 - Medium
+waitUntilById=status
+selectOptionValueByNameValue=status=Complete
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.
+wait=500
+clickHrefByLinkText=testTask
+wait=500
+clickHrefByLinkText=Task Progress
+wait=500
+selectOptionValueByIdValue=taskstatus=Warning
+waitUntilByName=accomplished
+typeElementByName=accomplished=Testtask
+waitUntilByName=planned
+typeElementByName=planned=Plan for the Folder Session
+waitUntilByName=issues
+typeElementByName=issues=No Issues
+wait=500
+waitUntilById=viewTask_Save
+runJavaScriptPopToMain=javascript:submitForm(document.viewTask, 'Save')
+wait=500
+searchElementValueByTagName=Body=Task updated successfully.

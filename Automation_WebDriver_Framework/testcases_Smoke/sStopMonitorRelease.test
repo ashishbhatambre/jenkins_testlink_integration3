@@ -1,0 +1,15 @@
+name=Ability to stop Monitoring the Releases in File Releases in private project as site admin user
+component=FRS
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=YTDF
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectReleases
+clickElementById=selectionMenuButton_MonitorMenu_selectReleases
+wait=500
+clickHrefByLinkText=Stop Monitoring Folder
+wait=500
+searchElementValueByTagName=Body=FRS Package is no longer monitored.

@@ -1,0 +1,20 @@
+name=Enter a keyword under 'Search Text' but don't select any checkbox. 
+component=Tasks
+role=Site Admin
+artifact=artf168901
+wait=300
+url=sf/taskmgr/do/listTasks/projects.project_search/taskmgr.searchfolder
+wait=300
+clickHrefByLinkText=Search Tasks
+waitUntilById=searchText
+typeElementById=searchText=Read
+waitUntilById=inTitle
+clickElementById=inTitle
+waitUntilById=inDescription
+clickElementById=inDescription
+waitUntilById=inProgress
+clickElementById=inProgress
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=You have not entered any search criteria.

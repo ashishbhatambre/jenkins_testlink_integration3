@@ -1,0 +1,26 @@
+name=cut and paste the document into another document folder 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate/docman.root.document1.ddddforname_to_attach_more_than.sw_pr_subchilddf
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_cut
+clickHrefByLinkText=Cut
+wait=400
+searchElementValueByTagName=Body= Folder cut successfully.
+wait=500
+url=sf/docman/do/listDocuments/projects.swprivate/docman.root.private_document
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_paste
+clickHrefByLinkText=Paste
+wait=300
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body= Folder pasted successfully.
+wait=500
+

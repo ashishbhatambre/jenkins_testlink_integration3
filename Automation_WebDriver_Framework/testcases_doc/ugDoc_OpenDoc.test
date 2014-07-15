@@ -1,0 +1,16 @@
+name=Open Document 
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugproject/docman.root.ugfolder
+wait=300
+selectCheckBoxFromList=_listItem=3
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+clickHrefByLinkText=Open Document
+wait=300
+searchElementValueByTagName=Body=Online
+wait=300

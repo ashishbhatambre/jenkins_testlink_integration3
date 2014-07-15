@@ -1,0 +1,23 @@
+name=Ability to create SCM Adapter Integration
+component=Integrations
+role=Admin
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Integrations
+wait=300
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=type
+selectOptionValueByIdValue=type=SCM Adapter
+typeElementById=title=Adapter
+typeElementById=description=Integration to SCM Adapter
+waitUntilById=RequireApproval
+clickElementById=RequireApproval
+wait=300
+waitUntilById=system_submit
+clickElementById=system_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=The SCM server was added successfully.

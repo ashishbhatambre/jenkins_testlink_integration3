@@ -1,0 +1,19 @@
+name=Ability to set alerts in task in public project
+component=Tasks
+role=Direct permission_Admin role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/adminGeneralSettings/projects.public/taskmgr
+wait=300
+clickElementById=alert
+wait=300
+clickElementById=sendAlertsWhen
+wait=300
+waitUntilById=daysOverdue
+typeElementById=daysOverdue=1
+wait=300
+clickElementById=sendToRole
+waitUntilById=adminAlert_submit
+clickElementById=adminAlert_submit
+wait=400
+searchElementValueByTagName=Body=Alert preferences have been saved.

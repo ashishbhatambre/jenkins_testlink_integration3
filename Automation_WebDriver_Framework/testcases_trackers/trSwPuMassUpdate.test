@@ -1,0 +1,24 @@
+name=Update artifacts using Mass update
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+selectCheckBoxFromList=_listItem=1 
+wait=200
+selectCheckBoxFromList=_listItem=2 
+waitUntilById=selectArtifactsForm_massUpdate
+clickElementById=selectArtifactsForm_massUpdate
+waitUntilById=comment
+typeElementById=comment=Fast action Required
+waitUntilById=massUpdateArtifactsForm_submit
+clickElementById=massUpdateArtifactsForm_submit
+wait=200
+searchElementValueByTagName=body=SWPublic#NEXT#Trackers
+wait=200
+searchElementValueByTagName=body=2 Artifact(s) were successfully updated
+

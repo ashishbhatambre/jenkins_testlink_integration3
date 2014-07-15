@@ -1,0 +1,24 @@
+name=Create document folder in a project created based on project template in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.sw_sub_private_template_project/docman.root
+wait=300
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=Sw_Sub_Pr_Temp_Document
+wait=100
+waitUntilById=createDocumentFolder_submit
+clickElementById=createDocumentFolder_submit
+wait=300
+searchElementValueByTagName=Body=Folder created successfully.
+wait=300
+runJavaScriptPopToMain=javascript:finishDocument()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=SW_Sub_Private Template Project

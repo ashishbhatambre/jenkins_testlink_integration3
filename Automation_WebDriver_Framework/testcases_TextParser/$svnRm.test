@@ -1,0 +1,3 @@
+name=Svn File Removed from repository
+runCommands=vcscript/svnrm1.cmd
+verifyCommandOutput=Committed revision 7.

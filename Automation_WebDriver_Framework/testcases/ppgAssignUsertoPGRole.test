@@ -1,0 +1,46 @@
+name=Ability to assign User to Project Group
+component=Project Groups
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/listProjectGroupsAdmin
+wait=500
+clickHrefByLinkText=PMisc
+wait=500
+clickHrefByLinkText=User Membership
+wait=500
+waitUntilById=addUserLink
+clickHrefByLinkText=Add
+wait=500
+selectButtonByValue=ppgduser1
+waitUntilById=addUser_finish
+clickElementById=addUser_finish
+wait=500
+searchElementValueByTagName=Body=User(s) added to the Project Group: ppgduser1_pgadminPermission (pgduser1) .
+wait=500
+clickHrefByLinkText=Permissions
+wait=500
+clickHrefByLinkText=pProjectGroup_AdminRole
+wait=500
+waitUntilById=members
+clickElementById=members
+wait=500
+clickHrefByLinkText=Add
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=name
+typeElementById=name=ppgduser1
+wait=500
+clickElementById=userPicker_find
+wait=500
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=500
+clickHrefByLinkText=Add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=ppgduser1 was added to the role.

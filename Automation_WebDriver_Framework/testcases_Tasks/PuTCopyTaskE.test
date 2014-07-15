@@ -1,0 +1,13 @@
+name=Copy Task
+component=Tasks 
+role=Direct Role_Edit Permission
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.public/taskmgr.pua_taskfolder
+wait=300
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=listTasksSelect_Copy
+clickElementById=listTasksSelect_Copy
+wait=800
+searchElementValueByTagName=Body=1 task(s) copied to clipboard.

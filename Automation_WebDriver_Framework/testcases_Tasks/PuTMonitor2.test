@@ -1,0 +1,16 @@
+name=Ability to unmonitor task in public project
+component=Tasks
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.public/taskmgr.pua_taskfolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+runJavaScriptPopToMain=javascript:submitForm(document.listTasksSelect, 'UnMonitor')
+wait=300
+searchElementValueByTagName=Body=not being monitored.
+wait=300

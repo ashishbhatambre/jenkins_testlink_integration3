@@ -1,0 +1,30 @@
+name=Ability to save the Filterd artifact in public project
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Stories
+wait=200
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=parentArtifact
+wait=200
+clickHrefByLinkText=Filter
+wait=200
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=saveNamedFilter
+clickHrefByLinkText=Save...
+wait=500
+switchToPopupWindow
+wait=200
+waitUntilById=searchOrFilterName
+typeElementById=searchOrFilterName=FilterParent
+waitUntilById=saveSearchOrFilter_submit
+clickElementById=saveSearchOrFilter_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=Trackers

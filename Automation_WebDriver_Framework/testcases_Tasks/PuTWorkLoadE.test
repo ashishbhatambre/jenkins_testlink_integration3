@@ -1,0 +1,9 @@
+name=Verify WorkLoad functionality Link
+component=Tasks 
+role=Direct Role_Edit Permission
+artifact=NA
+wait=300
+waitUntilById=workload
+clickElementById=workload
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Tasks

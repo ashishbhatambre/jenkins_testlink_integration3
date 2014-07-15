@@ -1,0 +1,16 @@
+name=Ability to edit Wiki Link Page in private project
+component=Wiki
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+clickHrefByLinkText=LinkPage1
+wait=300
+waitUntilById=editorarea
+typeElementById=editorarea=Wiki Page
+waitUntilById=changenote
+typeElementById=changenote=v2
+wait=300
+waitUntilById=create_wiki_page.save
+clickElementById=create_wiki_page.save
+wait=300
+searchElementValueByTagName=Body=Wiki Page created successfully.

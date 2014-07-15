@@ -1,0 +1,26 @@
+name=Ability to create File Release to the package in private project as site admin user
+component=FRS
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=YTDF
+wait=500
+waitUntilById=releaseList_create
+clickHrefByLinkText=Add
+wait=300
+waitUntilById=title
+typeElementById=title=Releases_YTDF
+waitUntilById=description
+typeElementById=description=Releases for the package YTDF created by site admin
+waitUntilById=status
+selectOptionValueByIdIndex=status=0
+waitUntilById=maturity
+selectOptionValueByIdIndex=maturity=3
+wait=300
+waitUntilById=createRelease_submit
+clickElementById=createRelease_submit
+wait=500
+searchElementValueByTagName=Body=Release created successfully.
+wait=500

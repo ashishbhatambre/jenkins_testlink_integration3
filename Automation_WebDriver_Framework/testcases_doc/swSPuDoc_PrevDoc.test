@@ -1,0 +1,13 @@
+name=Navigate to Previous document in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root.folder
+wait=300
+clickHrefByLinkText=Doc_Final
+wait=600
+clickHrefByLinkText=< Previous
+wait=300
+searchElementValueByTagName=Body=SWPublic_Sub#NEXT#Documents
+wait=300

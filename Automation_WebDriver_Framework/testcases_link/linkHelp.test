@@ -1,0 +1,16 @@
+name=Verify Help Link
+component=Admin
+role=Admin Role
+artifact=NA
+wait=500
+clickSpanElementByCssSelector=ctf-help-icon
+wait=500
+clickHrefByLinkText=About TeamForge
+wait=500
+switchToPopupWindow
+wait=500
+runJavaScriptPopToMain=javascript: window.close()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=My#NEXT#Workspace

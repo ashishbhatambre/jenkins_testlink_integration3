@@ -1,0 +1,19 @@
+name=Ability to edit Wiki Link Page in private project
+component=Wiki
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.swprivate/wiki/HomePage
+wait=300
+clickHrefByLinkText=LinkPage1
+waitUntilById=editorPrefSelect
+selectOptionValueByIdValue=editorPrefSelect=Plain Editor
+waitUntilById=editorarea
+typeElementById=editorarea=Wiki Page
+waitUntilById=changenote
+typeElementById=changenote=v2
+waitUntilById=create_wiki_page.save
+clickElementById=create_wiki_page.save
+wait=600
+searchElementValueByTagName=Body=Wiki Page created successfully.
+wait=300

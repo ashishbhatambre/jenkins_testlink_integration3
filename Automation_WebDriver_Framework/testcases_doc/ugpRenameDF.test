@@ -1,0 +1,25 @@
+name=Rename Root Folder in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugpproject/docman.root.ugpfolder
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Rename
+wait=300
+switchToPopupWindow
+waitUntilById=title
+typeElementById=title=ugpMFolder
+wait=300
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=400
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=300
+clickHrefByLinkText=Close
+wait=400
+withoutPopCloseSwitchToMainWindow
+wait=600
+

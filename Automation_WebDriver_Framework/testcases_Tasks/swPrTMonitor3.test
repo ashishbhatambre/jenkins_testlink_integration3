@@ -1,0 +1,14 @@
+name=Ability to create Task Monitoring in private project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+runJavaScriptPopToMain=javascript:submitForm(document.listTasksSelect, 'Monitor')
+wait=300
+searchElementValueByTagName=Body=1 item(s) are now being monitored.
+wait=300

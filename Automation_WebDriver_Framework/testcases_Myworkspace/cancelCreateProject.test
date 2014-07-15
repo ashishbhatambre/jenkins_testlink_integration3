@@ -1,0 +1,16 @@
+name=Cancel Create Project 
+component=Project
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/myProjects?selectedTab=all
+waitUntilById=createProject
+clickElementById=createProject
+waitUntilById=title
+typeElementById=title=pProject
+waitUntilById=description
+typeElementById=description=This is Code project
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace
+wait=300

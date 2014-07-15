@@ -1,0 +1,23 @@
+name=Ability to Create Project Template with Documents enabled for private child project
+component=Project Admin
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/child_prv_project/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Create Project Template
+wait=300
+waitUntilById=titleField
+typeElementById=titleField=ChildProject_Doc_Template
+waitUntilById=description
+typeElementById=description=Project template with Document enabled
+wait=300
+waitUntilById=doccontent
+clickElementById=doccontent
+wait=300
+waitUntilById=createTemplate_submit
+clickElementById=createTemplate_submit
+wait=300
+searchElementValueByTagName=Body=Project Template created.

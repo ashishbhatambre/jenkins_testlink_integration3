@@ -1,0 +1,25 @@
+name=Filter Document by Document Last Edit By in root folder
+component=Documents
+role=Global Role
+artifact=artf154930-TC(artf157867)
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Tree_View
+wait=500
+waitUntilById=btn_filter!!string!!lastModifiedBy
+clickElementById=btn_filter!!string!!lastModifiedBy
+waitUntilByName=multiselect__filter!!string!!lastModifiedBy
+selectButtonByValue=newuser1
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body= No results found.
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

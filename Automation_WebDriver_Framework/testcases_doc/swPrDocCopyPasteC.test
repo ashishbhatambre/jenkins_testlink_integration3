@@ -1,0 +1,30 @@
+name=Copy & Paste a Docuement 
+component=Documents
+role=SitewideRole_Create Permission
+artifact=NA
+wait=300
+By Admin Role User
+wait=300
+url=sf/projects/swprivate/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectDocuments_Copy
+clickElementById=selectDocuments_Copy
+wait=500
+searchElementValueByTagName=Body=1 document(s) copied to clipboard.
+wait=500
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=pasted successfully.
+wait=300
+searchElementValueByTagName=Body=1 document(s) pasted.
+wait=300

@@ -1,0 +1,18 @@
+name=Monitoring the Releases in FileReleases component for public poroject
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=123Package_Notes
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectReleases
+clickElementById=selectionMenuButton_MonitorMenu_selectReleases
+wait=300
+waitUntilById=monitor_current_folder
+clickElementById=monitor_current_folder
+wait=300
+searchElementValueByTagName=Body=FRS Package is now being monitored.

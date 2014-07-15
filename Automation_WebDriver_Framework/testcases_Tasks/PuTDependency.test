@@ -1,0 +1,10 @@
+name=Ability to verify Dependency Link in public project
+component=Tasks
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=dependencies
+clickElementById=dependencies
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Tasks
+wait=300

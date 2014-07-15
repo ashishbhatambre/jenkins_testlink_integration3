@@ -1,0 +1,19 @@
+name=Ability to create Project Group
+component=Project Groups
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Project Groups
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Create Project Group
+wait=500
+waitUntilById=title
+typeElementById=title=PGRP
+waitUntilById=description
+typeElementById=description=EWDF
+waitUntilById=createProjectGroup_submit
+clickElementById=createProjectGroup_submit
+wait=500
+searchElementValueByTagName=Body=Project Group PGRP has been created successfully.

@@ -1,0 +1,28 @@
+name=Ability to search Tracker Via Jump To ID and Advance Search for tracker 
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+waitUntilById=idsString
+typeElementById=idsString=tracker1002
+wait=200
+runJavaScriptPopToMain=javascript:quickJump()
+wait=200
+waitUntilById=idsString
+typeElementById=idsString=artf1002
+wait=200
+runJavaScriptPopToMain=javascript:quickJump()
+wait=200
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=200
+clickHrefByLinkText=Advanced Search
+wait=200
+waitUntilByName=term
+typeElementByName=term=Tracker1
+waitUntilById=applications
+selectOptionValueByIdValue=applications=Trackers
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+wait=200
+searchElementValueByTagName=Body=(7 Items)

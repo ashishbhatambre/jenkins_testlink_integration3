@@ -1,0 +1,12 @@
+name=Ability to view Task History in private project
+component=Tasks
+role=Create role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.private/taskmgr.pra_taskfolder
+wait=300
+clickHrefByLinkText=TA2
+waitUntilById=history
+clickElementById=history
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Tasks

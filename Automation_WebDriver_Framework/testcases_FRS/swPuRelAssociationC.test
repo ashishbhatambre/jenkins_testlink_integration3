@@ -1,0 +1,35 @@
+name=Ability Verify Association functionality by SW_Pu_Create Role User
+component=FRS
+role=Sitewide Role_Create Permission
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.swpublic/frs.package1
+wait=300
+clickHrefByLinkText=Public_Release1
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+switchToPopupWindow
+wait=300
+waitUntilById=associationIdString
+typeElementById=associationIdString=rel1022
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+wait=300
+waitUntilById=description
+typeElementById=description=Association
+wait=300
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=300
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=100
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#File Releases
+

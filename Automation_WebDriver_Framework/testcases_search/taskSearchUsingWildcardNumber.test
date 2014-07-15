@@ -1,0 +1,14 @@
+name=Search using a wild card for numbers
+component=Tasks
+role=Site Admin
+artifact=artf168908
+wait=300
+url=sf/taskmgr/do/listTasks/projects.project_search/taskmgr.searchfolder
+wait=300
+clickHrefByLinkText=Search Tasks
+waitUntilById=searchText
+typeElementById=searchText=7*
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=800
+searchElementValueByTagName=Body=(1 Item)

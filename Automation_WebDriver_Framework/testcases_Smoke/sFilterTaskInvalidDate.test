@@ -1,0 +1,20 @@
+name=Inability to edit Task using invalid date Format for private project by site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= session2
+wait=500
+waitUntilByName=_filter!!date!!startDate
+typeElementByName=_filter!!date!!startDate=2013/09/08
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=The filter provided was invalid. Please ensure that all fields are in a valid format.
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

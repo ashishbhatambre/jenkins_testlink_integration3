@@ -1,0 +1,25 @@
+name=Ability to Clone Tracker 
+component=Tracker Admin
+role=Sitewide Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.swprivate
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+waitUntilById=Tracker1
+clickElementById=Tracker1
+waitUntilById=selectionMenuButton_CloneMenu_selectTrackers
+clickElementById=selectionMenuButton_CloneMenu_selectTrackers
+waitUntilById=selectTrackers_cloneTracker
+clickElementById=selectTrackers_cloneTracker
+wait=200
+switchToPopupWindow
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=CloneTracker1
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=Internal Cloned Tracker
+waitUntilById=cloneTrackerForm_submit
+clickElementById=cloneTrackerForm_submit
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=SWPrivate#NEXT#Project Admin

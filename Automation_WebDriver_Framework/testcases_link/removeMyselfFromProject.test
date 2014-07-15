@@ -1,0 +1,18 @@
+name=Remove Myself From the project
+component=Project
+role=Admin Role
+artifact=NA
+url=sf/sfmain/do/myProjects
+waitUntilById=my
+clickElementById=my
+wait=500
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectProjects_Leave
+clickElementById=selectProjects_Leave
+waitUntilById=comment
+typeElementById=comment=I want to Leave this project
+waitUntilById=leaveProject_submit
+clickElementById=leaveProject_submit
+wait=700
+searchElementValueByTagName=Body=Your request to leave this project has been submitted.

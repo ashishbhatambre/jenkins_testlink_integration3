@@ -1,0 +1,22 @@
+name=Search Keywords with "Search Name and Description" enabled in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root.folder
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Doc_Online
+waitUntilById=metaDataScope
+clickElementById=metaDataScope
+waitUntilById=documentScope
+clickElementById=documentScope
+wait=300
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=500
+searchElementValueByTagName=Body=SWPublic_Sub#NEXT#Documents
+wait=300

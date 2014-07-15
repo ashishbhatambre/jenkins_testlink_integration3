@@ -1,0 +1,21 @@
+name=Filter Document by Last Edited By 
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+clickHrefByLinkText= pgPFolder
+wait=300
+waitUntilById=btn_filter!!string!!lastModifiedBy
+clickElementById=btn_filter!!string!!lastModifiedBy
+waitUntilByName=multiselect__filter!!string!!lastModifiedBy
+selectButtonByValue=pguser1
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+searchElementValueByTagName=Body=pgProject#NEXT#Documents

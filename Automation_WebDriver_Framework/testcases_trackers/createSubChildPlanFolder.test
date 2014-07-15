@@ -1,0 +1,30 @@
+name=Ability to creating the Sub Child Planning folder for tracker
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickImage=sf-images/nanotree/images/plus_last.gif.pagespeed.ce.zUGhBwR7b_.gif
+wait=200
+clickHrefByLinkText= Board_Plan2
+wait=4000
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=Board_Plan3
+waitUntilById=pfdescription
+typeElementById=pfdescription=Creating the Sub-child plan folder
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=In progress
+wait=200
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Planning Folders#NEXT#Board_Plan1#NEXT#Board_Plan2#NEXT#List Artifacts

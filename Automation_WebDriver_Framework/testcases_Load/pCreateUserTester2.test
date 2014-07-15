@@ -1,0 +1,25 @@
+name=Ability to create restricted user
+component=Users
+role=Admin
+artifact=NA
+wait=300
+clickHrefByLinkText=Users
+wait=500
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+wait=300
+waitUntilByName=username
+typeElementByName=username=tester2
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=tester2_normalPermission	
+typeElementByName=email=tester2@collab.net
+typeElementByName=companyName=cspl
+wait=300
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+wait=300
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=300
+searchElementValueByTagName=Body=User#NEXT#tester2#NEXT#has been created successfully.

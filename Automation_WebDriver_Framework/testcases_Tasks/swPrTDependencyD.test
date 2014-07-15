@@ -1,0 +1,10 @@
+name=Verify Task Dependency Link 
+component=Tasks
+role=Sitewide Role_Delete Permission
+artifact=NA
+wait=300
+waitUntilById=dependencies
+clickElementById=dependencies
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks
+

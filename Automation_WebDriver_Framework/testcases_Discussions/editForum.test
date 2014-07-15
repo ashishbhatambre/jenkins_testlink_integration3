@@ -1,0 +1,37 @@
+name=Editing the Forum by adding users to moderator list.
+component=Discussions
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Discussions
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectForumsForm_Edit
+clickElementById=selectForumsForm_Edit
+wait=300
+waitUntilById=isModerated
+clickElementById=isModerated
+wait=300
+waitUntilById=forumForm_userPicker
+clickElementById=forumForm_userPicker
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=user2_normalPermission
+waitUntilById=add
+clickElementById=add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+waitUntilById=forumForm_submit
+clickElementById=forumForm_submit
+wait=500
+searchElementValueByTagName=Body=Forum updated successfully.

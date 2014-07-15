@@ -1,0 +1,43 @@
+name=QA Automation Task for artf26144 : Change site (JBoss) log level from UI
+component=System Tools
+role=Site Admin Permission
+artifact=artf162810
+wait=300
+url=sf/sfmain/do/home
+wait=300
+waitUntilByName=username
+typeElementByName=username=yadmin
+waitUntilByName=password
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=System Tools
+wait=300
+clickHrefByLinkText=Configure Logging
+wait=1300
+selectOptionValueByNameValue=LogLevel=DEBUG
+wait=300
+waitUntilById=configureLogging_submit
+clickElementById=configureLogging_submit
+wait=300
+cancelJavaScriptConfirm
+wait=300
+waitUntilById=configureLogging_submit
+clickElementById=configureLogging_submit
+wait=300
+acceptJavaScriptConfirm
+wait=800
+searchElementValueByTagName=Body=Log level updated successfully.
+wait=1300
+selectOptionValueByNameValue=LogLevel=INFO
+wait=300
+waitUntilById=configureLogging_submit
+clickElementById=configureLogging_submit
+wait=300
+acceptJavaScriptConfirm
+wait=800
+searchElementValueByTagName=Body=Log level updated successfully.

@@ -1,0 +1,20 @@
+name=Create Document Folder using special charectors in name
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/Private/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+switchToPopupWindow
+waitUntilById=title
+typeElementById=title=$Private_Document&
+waitUntilById=createDocumentFolder_submit
+clickElementById=createDocumentFolder_submit
+wait=300
+searchElementValueByTagName=Body=Folder created successfully.
+runJavaScriptPopToMain=javascript:finishDocument()
+withoutPopCloseSwitchToMainWindow
+wait=300

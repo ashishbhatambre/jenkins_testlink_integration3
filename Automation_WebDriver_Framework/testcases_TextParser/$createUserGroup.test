@@ -1,0 +1,22 @@
+name=Creating User Groups as Admin for Private project using letters starts with &text&
+component=User Groups
+role=NA
+artifact=NA
+wait=300
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=User Groups
+wait=300
+waitUntilById=allGroups
+clickElementById=allGroups
+wait=300
+clickHrefByLinkText=Create
+waitUntilById=fullName
+typeElementById=fullName=&textuser&
+waitUntilById=description
+typeElementById=description=${users created for <Text>parser &issue&}.
+waitUntilById=createGroup_submit
+clickElementById=createGroup_submit
+wait=300
+searchElementValueByTagName=Body=User Group#NEXT#&textuser&#NEXT#has been created successfully.
+wait=300

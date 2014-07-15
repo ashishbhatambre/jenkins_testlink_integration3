@@ -1,0 +1,17 @@
+name=Search Task by task name
+component=Tasks 
+role=Direct Role_Edit Permission
+artifact=NA
+wait=300
+url=sf/taskmgr/do/viewSummary/projects.public/taskmgr
+wait=300
+clickHrefByLinkText=Search Tasks
+wait=300
+waitUntilById=searchText
+typeElementById=searchText=TA1
+wait=300
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=900
+searchElementValueByTagName=Body=TA1
+wait=300

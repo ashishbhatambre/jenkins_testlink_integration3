@@ -1,0 +1,26 @@
+name=Edit Tracker with text starts with ${<>}
+component=Tracker Admin
+role=NA
+artifact=NA
+wait=200
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Tracker Settings
+wait=300
+waitUntilById=projectAdminTracker_create
+clickHrefByLinkText=${NewTracker}
+waitUntilById=admin_tracker.edit
+clickElementById=admin_tracker.edit
+waitUntilById=title
+typeElementById=title=$New$Tracker&
+waitUntilById=description
+typeElementById=description=$Version <*> 2&
+wait=300
+selectButtonByValue=icon_05.png
+wait=300
+waitUntilById=editTracker_submit
+clickElementById=editTracker_submit
+wait=300
+searchElementValueByTagName=Body=Tracker updated successfully.

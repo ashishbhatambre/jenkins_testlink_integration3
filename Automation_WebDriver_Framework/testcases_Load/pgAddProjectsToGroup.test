@@ -1,0 +1,19 @@
+name=Ability to add Project to the Project group
+component=Project Groups
+role=Admin
+artifact=NA
+wait=300
+url=sf/rbac/do/viewProjectGroupDetails/pgroups.private_proj_group
+wait=300
+waitUntilById=add_member_project
+clickHrefByLinkText=Add
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=pg_prv_project
+wait=500
+clickHrefByLinkText=Filter
+wait=500
+selectCheckBoxFromList=_listCheckAll
+clickElementById=addProjectToProjectGroup_add
+wait=500
+searchElementValueByTagName=Body=Selected project(s) are added to the Project Group.

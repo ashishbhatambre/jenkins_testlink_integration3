@@ -1,0 +1,32 @@
+name=Ability to refresh Boards,Boards
+component=Tracker
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/home
+wait=300
+waitUntilByName=username
+typeElementByName=username=admin
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Board View
+wait=400
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder1
+wait=400
+clickElementByCssSelector=i=icon-refresh=0
+wait=600
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Folder_Renamed
+wait=400
+clickElementByCssSelector=i=icon-refresh=1
+wait=600
+searchElementValueByTagName=Body=Trackers

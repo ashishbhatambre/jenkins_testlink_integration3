@@ -1,0 +1,31 @@
+name=Delete Task
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= task1
+wait=500
+waitUntilByName=_filter!!contains!!title
+typeElementByName=_filter!!contains!!title=t2
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+waitUntilByName=_listCheckAll
+selectCheckBoxFromList=_listCheckAll
+wait=300
+waitUntilById=listTasksSelect_Delete
+clickElementById=listTasksSelect_Delete
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=1 task(s) deleted successfully.
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300

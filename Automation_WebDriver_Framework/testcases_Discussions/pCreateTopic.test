@@ -1,0 +1,28 @@
+name=Creating Topics to the discussion in public project
+component=Discussions
+role=Global Role
+artifact=NA
+wait=300
+clickHrefByLinkText=GroupDiscussion
+wait=300
+waitUntilById=listTopic_create
+clickElementById=listTopic_create
+waitUntilById=title
+typeElementById=title=Automation
+waitUntilById=content
+typeElementById=content=Automation on product of Collabnet.
+waitUntilById=createTopic_submit
+clickElementById=createTopic_submit
+searchElementValueByTagName=Body=Topic created successfully.
+wait=300
+clickHrefByLinkText=GroupDiscussion
+waitUntilById=listTopic_create
+clickElementById=listTopic_create
+waitUntilById=title
+typeElementById=title=ExploratoryTest
+waitUntilById=content
+typeElementById=content=Forum for Exploratory Testing to Artifact.
+waitUntilById=createTopic_submit
+clickElementById=createTopic_submit
+wait=400
+searchElementValueByTagName=Body=Topic created successfully.

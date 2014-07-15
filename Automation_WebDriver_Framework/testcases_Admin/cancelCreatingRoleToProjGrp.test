@@ -1,0 +1,16 @@
+name=Ability to cancel creating Role to project Group
+component=Project Group
+role=Admin
+artifact=NA
+wait=300
+url=sf/rbac/do/permissionAdmin/pgroups.testedprojects
+wait=300
+waitUntilById=displayList
+selectOptionValueByIdValue=displayList=Roles created for this project group
+wait=300
+waitUntilById=listRoles_create
+clickElementById=listRoles_create
+wait=500
+clickHrefByLinkText=Cancel
+wait=500
+searchElementValueByTagName=Body=Site Administration#NEXT#Project Groups#NEXT#TestedProjects 

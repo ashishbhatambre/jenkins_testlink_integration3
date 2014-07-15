@@ -1,0 +1,14 @@
+name=Search text with a combination of numbers and words. 
+component=Tasks
+role=Site Admin
+artifact=artf168909
+wait=300
+url=sf/taskmgr/do/listTasks/projects.project_search/taskmgr.searchfolder
+wait=300
+clickHrefByLinkText=Search Tasks
+waitUntilById=searchText
+typeElementById=searchText=task 701
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=500
+searchElementValueByTagName=Body=(2 Items)

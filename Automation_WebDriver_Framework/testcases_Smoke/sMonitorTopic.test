@@ -1,0 +1,19 @@
+name=Ability to monitor Discussion Topic in private project as site admin user
+component=Discussions
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Discussions
+wait=500
+clickHrefByLinkText=Forum_Discussions
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectTopicsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectTopicsForm
+wiat=500
+waitUntilById=selectTopicsForm_Monitor
+clickElementById=selectTopicsForm_Monitor
+wait=500
+searchElementValueByTagName=Body=1 item(s) are now being monitored.

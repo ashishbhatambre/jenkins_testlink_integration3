@@ -1,0 +1,10 @@
+name=Configure Project Home in private project
+component=Project Home
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickSpanElementByCssSelector=labelRight
+wait=300
+searchElementValueByTagName=Body=NewProject#NEXT#Project Home 

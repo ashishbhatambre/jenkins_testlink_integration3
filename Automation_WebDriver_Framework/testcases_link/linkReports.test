@@ -1,0 +1,10 @@
+name=Verify  the Reports Link 
+component=Admin
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/listProjectsAdmin
+wait=300
+clickHrefByLinkText=Reports
+wait=500
+searchElementValueByTagName=Body=Site#NEXT#Administration

@@ -1,0 +1,8 @@
+name=Verify My Page Link
+component=My Workspace
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/myPage
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

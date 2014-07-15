@@ -1,0 +1,22 @@
+name=Verify that ability to Reject multiple SCM Adapter Repository Access requests as SCM Integration Permission user when requires approval is enabled in Integrations
+component=Integration
+role=NA
+artifact= Tasks artf171712 TC - artf171710 [Go to Source Code,Create repository as 'scmatest1' with SCM Adapter Server]
+wait=300
+url=sf/projects/project1/
+wait=400
+clickHrefByLinkText=Source Code
+wait=400
+waitUntilById=create_repo
+clickHrefByLinkText=Create Repository
+waitUntilById=systemId
+selectOptionValueByIdValue=systemId=scm
+waitUntilById=directoryName
+typeElementById=directoryName=scmatest1
+waitUntilById=repositoryName
+typeElementById=repositoryName=repository created for SCM Adapter.
+wait=400
+waitUntilById=createRepositoryForm_Save
+clickElementById=createRepositoryForm_Save
+wait=400
+searchElementValueByTagName=Body=Repository repository created for SCM Adapter. was requested.

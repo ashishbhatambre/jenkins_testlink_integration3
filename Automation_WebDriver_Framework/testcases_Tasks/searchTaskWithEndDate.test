@@ -1,0 +1,16 @@
+name=Search task by task End Date
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+clickHrefByLinkText=Search Tasks
+wait=300
+waitUntilById=endDateAfter
+typeElementById=endDateAfter=03/05/2013
+wait=300
+waitUntilById=searchTasks_Search
+runJavaScriptPopToMain=javascript:submitForm(document.searchTasks, 'Search')
+wait=300
+searchElementValueByTagName=Body=(4 Items)

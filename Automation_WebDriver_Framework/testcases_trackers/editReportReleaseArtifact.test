@@ -1,0 +1,21 @@
+name=Ability to edit Report Release field in artifact
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=NewTracker
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=500
+waitUntilById=repRelease
+selectOptionValueByIdValue=repRelease=Package@ > File11
+wait=500
+clickHrefByLinkText=Update
+wait=500
+searchElementValueByTagName=Body=Artifact data updated successfully.

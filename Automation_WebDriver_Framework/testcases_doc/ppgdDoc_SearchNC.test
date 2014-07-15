@@ -1,0 +1,15 @@
+name=Search Docuement without any criteria in public project
+component=Documents
+role=Project Group Role
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=You have not entered any 
+search criteria.
+wait=300

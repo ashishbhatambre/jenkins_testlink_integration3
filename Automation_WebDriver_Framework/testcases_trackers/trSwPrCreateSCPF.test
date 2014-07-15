@@ -1,0 +1,26 @@
+name=Ability to create Sub Child Planning Folder in private project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+url=sf/planning/do/viewPlanningFolder/projects.swprivate/planning.plan1.plan2
+wait=200
+waitUntilById=new_planning
+clickElementById=new_planning
+switchToPopupWindow
+waitUntilById=pfname
+typeElementById=pfname=Plan3
+waitUntilById=pfdescription
+typeElementById=pfdescription=Sub child Planning Folder for QA Testing
+waitUntilById=selectedStatus
+selectOptionValueByIdIndex=selectedStatus=1
+waitUntilById=capacity
+typeElementById=capacity=30
+waitUntilById=startDate
+typeElementById=startDate=12/28/2013
+waitUntilById=endDate
+typeElementById=endDate=10/28/2014
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+withoutPopCloseSwitchToMainWindow
+wait=700
+searchElementValueByTagName=body=SWPrivate#NEXT#Trackers

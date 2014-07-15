@@ -1,0 +1,23 @@
+name=create_user
+component=Users
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/listUsersAdmin
+wait=300
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilById=UsernameField
+typeElementById=UsernameField=user1
+typeElementById=pwd=collabnet1!
+typeElementById=confirmpwd=collabnet1!
+typeElementById=fullName=user_full_name
+typeElementById=email=ashish@collab.net
+typeElementById=companyName=collabnet
+clickElementById=restrictedUser
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=500
+searchElementValueByTagName=Body=User user1 has been created successfully.
+
+

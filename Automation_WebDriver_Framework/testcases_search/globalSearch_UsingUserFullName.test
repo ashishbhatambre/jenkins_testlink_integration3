@@ -1,0 +1,12 @@
+name=Global Search_Search for users using user Full Name using double quotes 
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168347     
+clickHrefByLinkText=Jump to ID
+waitUntilById=search
+clickElementById=search
+waitUntilById=term
+typeElementById=term=newuser1_createOnlyPermission
+selectOptionValueByIdIndex=applications=9
+clickElementById=searchForm_submit
+searchElementValueByTagName=Body=Users (1)

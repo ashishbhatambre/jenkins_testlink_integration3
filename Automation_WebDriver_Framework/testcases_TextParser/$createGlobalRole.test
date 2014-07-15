@@ -1,0 +1,26 @@
+name=Creating Global Roles with text ${}
+component=Roles
+role=NA
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Roles
+wait=300
+waitUntilById=globalRoles
+clickElementById=globalRoles
+wait=300
+waitUntilById=listSiteRoles_create
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=${Role to project}
+waitUntilById=description
+typeElementById=description=${Restrict Permission}
+waitUntilById=requestable
+clickElementById=requestable
+waitUntilById=createSiteWideRoleForm_submit
+clickElementById=createSiteWideRoleForm_submit
+wait=300
+searchElementValueByTagName=Body=Global Project Role created successfully.

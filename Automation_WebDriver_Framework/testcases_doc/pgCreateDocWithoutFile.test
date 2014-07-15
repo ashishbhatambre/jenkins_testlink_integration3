@@ -1,0 +1,22 @@
+name=Creating document without adding document for project group -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+waitUntilById=title
+typeElementById=title=save_document
+waitUntilById=description
+typeElementById=description=Document is saved by option "Save"
+wait=300
+selectButtonByValue=fromFile
+wait=300
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body= File is required. 

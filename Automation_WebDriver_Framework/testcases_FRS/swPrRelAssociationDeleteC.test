@@ -1,0 +1,20 @@
+name=Ability to remove Association as user with create role in private project
+component=FRS
+role=Sitewide Role_Create Permission
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.swprivate/frs.package1
+wait=1300
+clickHrefByLinkText=Private_Release1
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=1300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=associationListForm_remove
+clickElementById=associationListForm_remove
+wait=300
+acceptJavaScriptConfirm
+wait=800
+searchElementValueByTagName=Body=1 association(s) were deleted.

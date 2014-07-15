@@ -1,0 +1,8 @@
+name=Private Project Creation
+wait=300
+url=sf/sfmain/do/createProject
+waitUntilByName=title
+typeElementByName=title=NProject
+typeElementByName=description=New Project for QA Testing
+clickHrefByLinkText=Create
+searchElementValueByTagName=Body=NProject#NEXT#Project Home 

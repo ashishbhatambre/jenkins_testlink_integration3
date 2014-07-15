@@ -1,0 +1,31 @@
+name=Edit Task
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= task1
+wait=500
+waitUntilByName=_filter!!contains!!title
+typeElementByName=_filter!!contains!!title=t1
+waitUntilById=applyfilterbutton
+wait=500
+clickHrefByLinkText=Filter
+wait=500
+waitUntilByName=_listCheckAll
+selectCheckBoxFromList=_listCheckAll
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=4 - Low
+waitUntilByName=assignedTo
+selectOptionValueByNameValue=assignedTo=user2_normalPermission
+waitUntilByName=status
+selectOptionValueByNameValue=status=Complete
+wait=500
+clickHrefByLinkText=Update
+wait=500
+searchElementValueByTagName=Body=Task updated successfully.

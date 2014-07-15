@@ -1,0 +1,43 @@
+name=Ability to create restrict user and logIn 
+component=Users
+role=Admin
+artifact=NA
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Users
+wait=300
+clickHrefByLinkText=Single
+wait=4000
+custom=qa-name=username=type=neha
+custom=qa-name=password=type=Collabnet1!
+custom=qa-name=confirmPassword=type=Collabnet1!
+custom=qa-name=fullName=type=neha
+custom=qa-name=email=type=neha@collab.net
+custom=qa-name=organization=type=cspl
+custom=qa-name=licenseType=select=ALM
+custom=qa-name=restrictedUser=checkboxclick=1
+clickSpanElementByCssSelector=widgets-btn-grouped ng-scope
+wait=500
+searchElementValueByTagName=Body=The user "neha" was successfully created.
+wait=500
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=neha
+waitUntilByName=password
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+wait=300
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300

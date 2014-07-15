@@ -1,0 +1,23 @@
+name=Monitor the Multiple documents 
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+selectCheckBoxFromList=_listItem=1
+selectCheckBoxFromList=_listItem=2
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=500
+waitUntilById=selectDocuments_monitor
+clickElementById=selectDocuments_monitor
+wait=500
+searchElementValueByTagName=Body=Item doc1007 is already being monitored.
+searchElementValueByTagName=Body=Item doc1008 is already being monitored.
+searchElementValueByTagName=Body=Item doc1009 is already being monitored.

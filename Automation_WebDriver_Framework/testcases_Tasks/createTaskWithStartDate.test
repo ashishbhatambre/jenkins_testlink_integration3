@@ -1,0 +1,25 @@
+name=Creating Task with Start Date in Sub-Child Folder
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= Sub_Task
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=TaskWithStartDate
+waitUntilById=description
+typeElementById=description=Task Created with Start Date
+selectOptionValueByNameValue=priority=5 - Lowest
+selectOptionValueByNameValue=status=Not Started
+typeElementByName=startDate=09/16/2013
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.

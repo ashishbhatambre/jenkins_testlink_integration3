@@ -1,0 +1,8 @@
+name=Verify Public Project Home Link
+component=Project
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/pproject
+wait=300
+searchElementValueByTagName=Body=PProject#NEXT#Project Home

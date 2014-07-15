@@ -1,0 +1,24 @@
+name=Filter Task By Name 
+component=Tasks
+role=Sitewide Role_Delete Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Tasks
+wait=900
+clickHrefByLinkText= SWA_TaskFolder
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=TA2
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=1000
+searchElementValueByTagName=Body=SWPublic
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=900
+

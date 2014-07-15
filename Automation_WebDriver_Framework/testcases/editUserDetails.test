@@ -1,0 +1,44 @@
+name=Ability to Edit the user details via my settings
+component=MySettings
+role=NA
+artifact= TC - artf172978
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=neha
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+clickHrefByLinkText=My Settings
+wait=300
+waitUntilById=view_user.edit
+clickElementById=view_user.edit
+wait=300
+waitUntilById=fullName
+typeElementById=fullName=nehachandran
+waitUntilById=email
+typeElementById=email=neha1@collab.net
+waitUntilById=alternateEmail1
+typeElementById=alternateEmail1=neha2@cspl.net
+waitUntilByName=alternateEmail2
+typeElementByName=alternateEmail2=neha3@cspl.net
+waitUntilById=companyName
+typeElementById=companyName=CollabNet
+waitUntilById=userDatePattern
+selectOptionValueByIdValue=userDatePattern=yyyy/MM/dd
+waitUntilByName=userTimePattern
+selectOptionValueByNameValue=userTimePattern=HH:mm
+wait=300
+waitUntilById=picture
+typeValueForFileField=C:\Uploaded_Files\Tulips.jpg
+wait=300
+waitUntilById=editUser_submit
+clickElementById=editUser_submit
+wait=500
+searchElementValueByTagName=Body=User information updated for user neha.
+searchElementValueByTagName=Body=An email has been sent to confirm the email change.
+wait=500
+url=sf/sfmain/do/logout
+wait=500

@@ -1,0 +1,23 @@
+name=Ability to create Trackers with special Characters
+component=Tracker Admin 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+waitUntilById=projectAdminTracker_create
+clickHrefByLinkText=Create
+wait=200
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=TRACK123##$^#$%
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=Tracker with 42564326%^!@3235#$56$%^$653$^%#@$%$
+wait=200
+selectButtonByValue=icon_59.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+wait=200
+searchElementValueByTagName=Body=Tracker created successfully.

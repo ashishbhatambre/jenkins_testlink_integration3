@@ -1,0 +1,24 @@
+name=Ability to assign users to user group to access the public project via project group
+component=User Groups
+wait=300
+url=sf/global/do/listGroupsAdmin
+wait=500
+clickHrefByLinkText=Pub_Proj_Users
+wait=500
+waitUntilById=_SfButton_adduser
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=user2_normalPermission
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=newuser4_AlternativePermissions
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Selected users were added to the user group.

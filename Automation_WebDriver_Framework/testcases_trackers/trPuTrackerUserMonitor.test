@@ -1,0 +1,39 @@
+name=Ability to add user to tracker monitor 
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+waitUntilById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+wait=200
+clickHrefByLinkText=Users Monitoring Folder
+wait=200
+switchToPopupWindow
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+waitUntilById=userPicker_showAll
+clickElementById=userPicker_showAll
+waitUntilById=name
+typeElementById=name=admin
+clickHrefByLinkText=Clear
+waitUntilById=name
+typeElementById=name=tmuser1
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdIndex=foundMultipleTemp=0
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=Public#NEXT#Trackers

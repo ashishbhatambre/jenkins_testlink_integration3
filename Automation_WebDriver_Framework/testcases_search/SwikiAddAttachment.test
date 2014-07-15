@@ -1,0 +1,16 @@
+name=Ability to add attachment to wiki link page
+component=Wiki
+role=Site Admin
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.project_search/wiki/HomePage
+wait=300
+clickHrefByLinkText=Link1
+waitUntilById=view_wiki_page.edit
+clickElementById=view_wiki_page.edit
+wait=300
+typeValueForFileField=C:\Uploaded_Files\index.html
+waitUntilById=edit_wiki_page.update
+clickElementById=edit_wiki_page.update
+wait=800
+searchElementValueByTagName=Body=Attachment added.No changes made to wiki page content.

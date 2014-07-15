@@ -1,0 +1,12 @@
+name=Search Document Via Jump To Id 
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=doc1002
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=pgProject
+wait=300

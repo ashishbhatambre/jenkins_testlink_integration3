@@ -1,0 +1,9 @@
+name=Site Admin Login
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=yadmin
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=400
+searchElementValueByTagName=Body=My#NEXT#Workspace

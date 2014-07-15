@@ -1,0 +1,20 @@
+name=Creating document without document name for usergroup public project global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+waitUntilById=description
+typeElementById=description=Document is saved by option "Save"
+wait=400
+typeValueForFileField=C:\Uploaded_Files\index.html
+wait=300
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body= Document Name is required. 

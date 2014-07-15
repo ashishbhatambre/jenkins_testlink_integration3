@@ -1,0 +1,24 @@
+name=Ability to edit Global Project Role
+component=Role
+role=Admin
+artifact=NA
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Roles
+wait=500
+waitUntilById=globalRoles
+clickElementById=globalRoles
+wait=500
+clickHrefByLinkText=EditOnlyRole
+wait=500
+waitUntilById=edit_button
+clickElementById=edit_button
+wait=300
+waitUntilById=description
+typeElementById=description=Creating Edit Only permissions to users for all projects.
+wait=300
+waitUntilById=editRoleInformationForm_submit
+clickElementById=editRoleInformationForm_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Role updated successfully.

@@ -1,0 +1,25 @@
+name=Abiltiy to create user,Admin,ugCreateUser.test
+wait=400
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=400
+clickHrefByLinkText=Users
+wait=400
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+wait=400
+waitUntilByName=username
+typeElementByName=username=yoga
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=yoga_adminPermission
+typeElementByName=email=yoga@collab.net
+typeElementByName=companyName=cspl
+wait=400
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+wait=400
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=400
+searchElementValueByTagName=Body=User#NEXT#yoga#NEXT#has been created successfully.

@@ -1,0 +1,16 @@
+name=Remove task Dependency SW_Pu_All
+component=Tasks
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=dependencies
+clickElementById=dependencies
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=predecessorListForm_remove
+clickElementById=predecessorListForm_remove
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=1 dependency(ies) were deleted successfully.

@@ -1,0 +1,49 @@
+name=QA Automation for Edit/Add Planning Folder flows to support Story Point Capacity Field
+component=Tracker
+role=Global Role
+artifact=artf164106
+wait=300
+url=sf/tracker/do/listTrackers/projects.newproject/tracker
+wait=300
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=300
+switchToPopupWindow
+waitUntilById=pfname
+typeElementById=pfname=Plan_Backlog
+wait=300
+waitUntilById=capacity
+typeElementById=capacity=50
+wait=300
+waitUntilById=pointsCapacity
+typeElementById=pointsCapacity=36
+wait=300
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=800
+clickHrefByLinkText= Plan_Backlog
+wait=4000
+searchElementValueByTagName=Body=36 Capacity
+wait=300
+clickHrefByLinkText= Plan_Backlog
+wait=400
+clickHrefByLinkText=Edit
+wait=300
+clickElementById=edit_planning
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=pointsCapacity
+typeElementById=pointsCapacity=81
+wait=300
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=800
+clickHrefByLinkText= Plan_Backlog
+wait=4000
+searchElementValueByTagName=Body=81 Capacity
+

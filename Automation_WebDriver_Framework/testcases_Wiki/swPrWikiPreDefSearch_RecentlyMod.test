@@ -1,0 +1,12 @@
+name=Ability to perform Wiki Predefined Search with Recently Modified Pages in private project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+waitUntilById=predefinedSearchToggle
+clickElementById=predefinedSearchToggle
+wait=300
+waitUntilById=predefined_recent
+clickElementById=predefined_recent
+wait=300
+searchElementValueByTagName=Body=Home page

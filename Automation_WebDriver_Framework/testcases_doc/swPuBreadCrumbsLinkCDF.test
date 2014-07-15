@@ -1,0 +1,8 @@
+name=Navigate to child folder from breadcrumbs link in public project
+component=Projects
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+clickHrefByLinkText=Document1
+wait=300
+searchElementValueByTagName=Body=SWPublic/Documents/Root Folder/Document1/List Documents 

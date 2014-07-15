@@ -1,0 +1,27 @@
+name=Ability to rename the Document Root Folder in private project as site admin user
+component=Document
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText=Root Folder
+wait=500
+clickHrefByLinkText=Edit
+wait=500
+waitUntilById=editCategory_new
+clickHrefByLinkText=Rename
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=title
+typeElementById=title=Str_View
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=600
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=600
+runJavaScriptPopToMain=javascript:finishFolderRename()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600

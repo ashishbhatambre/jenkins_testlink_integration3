@@ -1,0 +1,17 @@
+name=Ability to delete Task Report in private project as site admin user
+component=Task
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Reports
+wait=300
+waitUntilById=reports
+clickElementById=reports
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=listReports_Delete
+clickElementById=listReports_Delete
+wait=500
+searchElementValueByTagName=Body=Deleted 1 report(s)

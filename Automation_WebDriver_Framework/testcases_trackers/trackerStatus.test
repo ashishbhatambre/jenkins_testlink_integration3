@@ -1,0 +1,27 @@
+name=Ability to update Comments and attach the Files [doc,txt] to an artifact
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder2
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=200
+waitUntilById=comment
+typeElementById=comment=This is the artifact which is under QA test.
+wait=200
+clickHrefByLinkText=Attach another file
+wait=200
+typeFileFieldValueForName=file[1]=D:\Test.doc
+wait=200
+typeFileFieldValueForName=file[2]=D:\links.txt
+wait=200
+clickElementById=viewArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact data updated successfully.

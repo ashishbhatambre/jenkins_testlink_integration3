@@ -1,0 +1,24 @@
+name=Ability to monitoring release in public project
+component=FRS
+role=Direct Role
+artifact=NA
+url=sf/frs/do/listReleases/projects.public/frs.package1
+wait=600
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectReleases
+clickElementById=selectionMenuButton_MonitorMenu_selectReleases
+waitUntilById=selectReleases_Monitor
+clickElementById=selectReleases_Monitor
+wait=800
+searchElementValueByTagName=Body=1 item(s) are now being monitored.
+wait=600
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectReleases
+clickElementById=selectionMenuButton_MonitorMenu_selectReleases
+waitUntilById=selectReleases_UnMonitor
+clickElementById=selectReleases_UnMonitor
+wait=800
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.
+wait=300

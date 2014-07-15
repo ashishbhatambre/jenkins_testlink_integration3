@@ -1,0 +1,29 @@
+name=Add Document(pdf) 
+component=Documents
+role=Direct Role_Admin Permisssion
+artifact=NA
+wait=300
+url=sf/projects/Public/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=$Doc_3&
+waitUntilById=description
+typeElementById=description=This is .pdf document
+wait=300
+waitUntilById=createLocked
+clickElementById=createLocked
+wait=300
+typeValueForFileField=C:\Uploaded_Files\test.pdf
+wait=300
+waitUntilById=versionComment
+typeElementById=versionComment=Version1
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body=Document created successfully.

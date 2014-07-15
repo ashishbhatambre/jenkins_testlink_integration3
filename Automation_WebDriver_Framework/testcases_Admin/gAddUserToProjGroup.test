@@ -1,0 +1,20 @@
+name=Ability to add more than one user to Project Group
+component=Project Group
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/userMembership/pgroups.projectrolegroup
+wait=300
+waitUntilById=addUserLink
+clickElementById=addUserLink
+wait=300
+selectButtonByValue=newuser1
+selectButtonByValue=newuser2
+selectButtonByValue=newuser3
+selectButtonByValue=user1
+selectButtonByValue=user2
+wait=300
+waitUntilById=addUser_finish
+runJavaScriptPopToMain=javascript:submitForm(document.addUser, 'finish')
+wait=300
+searchElementValueByTagName=Body=User(s) added to the Project Group: newuser1_createOnlyPermission (newuser1) , newuser2_editOnlyPermission (newuser2) , newuser3_DeleteOnlyPermission (newuser3) , user1_adminPermission (user1) , user2_normalPermission (user2) .

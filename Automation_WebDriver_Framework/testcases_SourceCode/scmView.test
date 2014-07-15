@@ -1,0 +1,26 @@
+name=Source code Views after commit with folders wise
+component=Sourcecode
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Source Code
+wait=500
+clickHrefByLinkText=NewRepo01
+wait=500
+clickHrefByLinkText=Version1/
+wait=500
+searchElementValueByTagName=Body=[repo1]#NEXT#Version1
+wait=500
+clickHrefByLinkText=Version2/
+wait=500
+searchElementValueByTagName=Body=[repo1]#NEXT#Version1#NEXT#Version2
+wait=500
+clickHrefByLinkText=Version3/
+wait=500
+searchElementValueByTagName=Body=[repo1]#NEXT#Version1#NEXT#Version2#NEXT#Version3
+wait=500
+clickHrefByLinkText=Third.txt
+wait=500
+searchElementValueByTagName=Body=[repo1]#NEXT#Version1#NEXT#Version2#NEXT#Version3#NEXT#Third.txt

@@ -1,0 +1,26 @@
+name=Updating File in File Release Positive case for public proj
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=123Package_Notes
+wait=500
+clickHrefByLinkText=Notes
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=frsFilesSelection_Edit
+clickHrefByLinkText=Update
+wait=300
+waitUntilById=file
+typeValueForFileField=C:\Uploaded_Files\Report.csv
+wait=800
+waitUntilById=frsFile_submit
+runJavaScriptPopToMain=javascript:submitForm(document.frsFile, 'submit')
+wait=800
+searchElementValueByTagName=Body=File edited successfully.

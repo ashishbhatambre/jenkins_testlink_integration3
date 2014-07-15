@@ -1,0 +1,24 @@
+name=Deleting the Documents by filtering it for Child public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Doc_List
+wait=500
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Doc3
+wait=500
+clickHrefByLinkText=Filter
+wait=500
+waitUntilByName=_listCheckAll
+clickElementByName=_listCheckAll
+waitUntilById=selectDocuments_Delete
+clickElementById=selectDocuments_Delete
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=1 document deleted successfully.

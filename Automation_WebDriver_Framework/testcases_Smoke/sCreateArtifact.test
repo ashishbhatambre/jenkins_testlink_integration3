@@ -1,0 +1,28 @@
+name=Ability to create artifact with default status in private project as site admin
+component=Tracker
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText= list1
+wait=500
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+wait=500
+clickElementByCssSelector=DropDownRight=0
+wait=500
+clickElementById=yui-gen1
+wait=500
+waitUntilById=title
+typeElementById=title=ARTIFACT1
+waitUntilById=description
+typeElementById=description=artifact for the list1 PlanFolder
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=3 - Medium
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=1000
+searchElementValueByTagName=Body=Artifact submitted successfully.

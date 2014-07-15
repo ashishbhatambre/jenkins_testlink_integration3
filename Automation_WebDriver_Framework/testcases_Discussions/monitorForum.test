@@ -1,0 +1,18 @@
+name=Monitor the Topics for the Discussion 
+component=Discussions
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Discussions
+wait=500
+clickHrefByLinkText=NewForum
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectTopicsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectTopicsForm
+wiat=300
+waitUntilById=monitor_current_folder
+clickElementById=monitor_current_folder
+wait=300
+searchElementValueByTagName=Body=Discussion Forum is now being monitored.

@@ -1,0 +1,15 @@
+name=Checking the Case1 Result Activity Reports-No Task and/or Tracker-No.
+component=Reports
+role=Global Role
+artifact=artf122891
+wait=300
+url=sf/projects/protest/
+wait=300
+url=sf/reporting/do/listMetrics/projects.protest/reporting?selectedTab=reports
+wait=300
+searchElementValueByTagName=Body=You do not have permission to view this page.
+wait=300
+url=sf/reporting/do/listMetrics/projects.protest/reporting?selectedTab=datamart
+wait=300
+searchElementValueByTagName=Body=You do not have permission to view this page.
+wait=300

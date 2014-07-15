@@ -1,0 +1,26 @@
+name=Add Document in Child Folder 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate/docman.root.document1.ddddforname_to_attach_more_than
+wait=300
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=CFDoc
+waitUntilById=description
+typeElementById=description=This is document having URL
+wait=300
+selectButtonByValue=fromUrl
+wait=300
+waitUntilById=urlContent
+typeElementById=urlContent=https://localhost:new/any
+wait=300
+waitUntilById=versionComment
+typeElementById=versionComment=Version1
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body=Document created successfully.

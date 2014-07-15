@@ -1,0 +1,17 @@
+name=Ability to create project
+component=Projects
+role=Site Admin
+artifact=NA
+url=sf/sfmain/do/myProjects
+wait=300
+clickElementById=createProject
+waitUntilById=title
+typeElementById=title=Project_Search
+waitUntilById=description
+typeElementById=description=The project is used to automate seach cases in all components
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=300
+url=sf/sfmain/do/myProjects/
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

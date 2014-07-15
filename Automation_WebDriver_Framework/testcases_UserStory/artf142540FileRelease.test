@@ -1,0 +1,54 @@
+name=Ability to Monitoring the objects which is already monitored by adding and removing users in FRS for artf142540
+component=FRS
+role=Global Role
+aritfact=artf142540
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=admin
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=File Releases
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectPackages
+clickElementById=selectionMenuButton_MonitorMenu_selectPackages
+wait=300
+waitUntilById=selectPackages_who
+clickHrefByLinkText=Users Monitoring Selected
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=tester2_normalPermission
+selectOptionValueByIdValue=foundMultipleTemp=yy_admin_per
+wait=300
+clickHrefByLinkText=Add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+selectButtonByValue=yadmin
+wait=500
+waitUntilById=selectUsers_removeUsers
+clickElementById=selectUsers_removeUsers
+wait=500
+acceptJavaScriptConfirm
+wait=500
+runJavaScriptPopToMain=javascript:close()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+waitUntilById=selectPackages_Monitor
+clickElementById=selectPackages_Monitor
+wait=500
+searchElementValueByTagName=Body=1 Item(s) are now being monitored.

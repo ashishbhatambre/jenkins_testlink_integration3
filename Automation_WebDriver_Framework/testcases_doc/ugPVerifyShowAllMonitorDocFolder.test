@@ -1,0 +1,27 @@
+name=Add users to Users Monitoring folder list in document folder by Show all option for usergroup public project with global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_pub_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Users Monitoring Folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+waitUntilById=userPicker_showAll
+clickElementById=userPicker_showAll
+wait=300
+searchElementValueByTagName=Body=yy_admin_per
+wait=300
+runJavaScriptPopToMain=javascript: window.close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300

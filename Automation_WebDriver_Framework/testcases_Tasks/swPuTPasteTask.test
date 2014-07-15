@@ -1,0 +1,11 @@
+name=Paste Copied Task(s) SW_Pu_All
+component=Tasks
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=listTasksSelect_Paste
+clickElementById=listTasksSelect_Paste
+wait=300
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=1 task(s) pasted from clipboard.

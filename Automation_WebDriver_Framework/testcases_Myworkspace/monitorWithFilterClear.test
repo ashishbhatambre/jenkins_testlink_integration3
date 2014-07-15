@@ -1,0 +1,14 @@
+name=monitorObjects_Filter_Clear
+url=sf/sfmain/do/myMonitoringSettings
+wait=300
+clickHrefByLinkText=All Monitored Objects
+waitUntilById=_filter!!contains!!objectTitle
+typeElementById=_filter!!contains!!objectTitle=task
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+clickSpanElementByCssSelector=caret=0
+wait=300
+clickHrefByLinkText=Clear
+wait=300
+searchElementValueByTagName=Body=My Workspace

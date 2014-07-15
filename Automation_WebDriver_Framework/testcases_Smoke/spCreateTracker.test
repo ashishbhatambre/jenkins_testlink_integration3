@@ -1,0 +1,34 @@
+name=Ability to create Tracker in public project as site admin user
+component=Tracker
+wait=200
+url=sf/projects/ft_pub_project/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Tracker Settings
+wait=300
+waitUntilById=projectAdminTracker_create
+clickElementById=projectAdminTracker_create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=TRACK1
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=tracker created in private project as site admin user
+wait=300
+selectButtonByValue=icon_83.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+wait=300
+searchElementValueByTagName=Body=Tracker created successfully.
+wait=300
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=TRACK2
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=tracker2 Created in private project as site admin user
+wait=300
+selectButtonByValue=icon_36.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+wait=300
+searchElementValueByTagName=Body=Tracker created successfully.

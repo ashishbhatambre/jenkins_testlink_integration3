@@ -1,0 +1,9 @@
+name=Ability to View Wiki search result for predefined all page in public project
+component=Wiki
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=predefined_all
+clickElementById=predefined_all
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Wiki#NEXT#Search Wiki Pages

@@ -1,0 +1,29 @@
+name=Ability to create users
+component=Users
+role=Admin
+artifact=NA
+wait=300
+clickElementById=admin_link
+clickHrefByLinkText=Users
+wait=500
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilByName=username
+typeElementByName=username=ppguser1
+wait=500
+typeElementByName=password=Collabnet1!
+wait=500
+typeElementByName=confirmPassword=Collabnet1!
+wait=500
+typeElementByName=fullName=ppguser1_pgadminPermission	
+wait=500
+typeElementByName=email=ppgdser1@collab.net
+wait=500
+typeElementByName=companyName=CSPL
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+wait=500
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=500
+searchElementValueByTagName=Body=User #NEXT#ppguser1#NEXT# has been created successfully.

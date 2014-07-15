@@ -1,0 +1,24 @@
+name=Search document by "Search Keywords" with "Search Name and Description" enabled for usergroup -> private project
+component=Documents
+role=Global Role
+artifact=NA
+url=sf/projects/ug_prv_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=PDF
+wait=300
+waitUntilById=metaDataScope
+clickElementById=metaDataScope
+wait=300
+waitUntilById=documentScope
+clickElementById=documentScope
+wait=300
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=PDF_File

@@ -1,0 +1,24 @@
+name=Ability to login as admin and set the Site Mode to ALM
+component=Login
+role=Admin
+artifact=NA
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=admin
+waitUntilByName=password
+typeElementByName=password=admin
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+wait=300
+typeElementByName=newPassword=Collabnet1!
+typeElementByName=confirmNewPassword=Collabnet1!
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+waitUntilById=setSiteMode_submit
+clickElementById=setSiteMode_submit
+wait=300
+searchElementValueByTagName=Body=Site Mode has been set to ALM

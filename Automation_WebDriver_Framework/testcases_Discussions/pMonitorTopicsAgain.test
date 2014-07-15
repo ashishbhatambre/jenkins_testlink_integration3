@@ -1,0 +1,21 @@
+name=Monitoring the Topic 1 again for the Discussion for public project
+component=Discussions
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Discussions
+wait=200
+clickHrefByLinkText=GroupDiscussion
+wait=200
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=200
+waitUntilById=selectionMenuButton_MonitorMenu_selectTopicsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectTopicsForm
+wiat=200
+waitUntilById=selectTopicsForm_Monitor
+clickElementById=selectTopicsForm_Monitor
+wait=200
+searchElementValueByTagName=Body=Item topc1004 is already being monitored.

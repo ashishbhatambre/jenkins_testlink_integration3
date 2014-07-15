@@ -1,0 +1,21 @@
+name=Ability to preview changes in wiki link Page
+component=Wiki
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Wiki
+wait=300
+clickHrefByLinkText=Project which is under Testing.
+wait=300
+waitUntilById=view_wiki_page.edit
+clickElementById=view_wiki_page.edit
+wait=300
+waitUntilById=edit_wiki_page.preview
+clickElementById=edit_wiki_page.preview
+wait=300
+waitUntilById=edit_wiki_page.cancel
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=NewProject#NEXT#Wiki#NEXT#ProjectwhichIsUnderTesting.#NEXT#View Wiki Page 

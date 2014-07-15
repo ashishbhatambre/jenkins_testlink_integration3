@@ -1,0 +1,16 @@
+name=View Next task by clicking "Next" button from task edit page
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= test_task
+wait=500
+clickHerfByLinkText=Task_renamed
+wait=500
+clickHrefByLinkText=Next >
+wait=500
+searchElementValueByTagName=Body=Task Name:	 TaskWith7Days

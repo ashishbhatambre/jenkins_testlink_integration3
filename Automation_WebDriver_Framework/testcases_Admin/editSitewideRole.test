@@ -1,0 +1,25 @@
+name=Ability to edit SiteWide Role
+component=Role
+role=Admin
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Roles
+wait=500
+waitUntilById=siteWideRoles
+clickElementById=siteWideRoles
+wait=500
+clickHrefByLinkText=role1
+wait=500
+waitUntilById=edit_button
+clickElementById=edit_button
+wait=500
+waitUntilById=title
+typeElementById=title=SiteWideRole*!@$
+wait=500
+waitUntilById=editRoleInformationForm_submit
+clickElementById=editRoleInformationForm_submit
+wait=500
+searchElementValueByTagName=Body=Role updated successfully.

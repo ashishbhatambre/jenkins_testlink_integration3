@@ -1,0 +1,12 @@
+name=Ability to create Private Project as SiteAdmin user
+component=Projects
+wait=300
+url=sf/sfmain/do/createProject
+wait=300
+waitUntilByName=title
+typeElementByName=title=FT_Prv_Project
+typeElementByName=description=Creating Private Project by site Admin user
+wait=300
+clickHrefByLinkText=Create
+wait=300
+searchElementValueByTagName=Body= FT_Prv_Project#NEXT#Project Home 

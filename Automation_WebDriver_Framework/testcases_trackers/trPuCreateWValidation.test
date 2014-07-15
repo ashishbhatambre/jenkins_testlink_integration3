@@ -1,0 +1,38 @@
+name=Ability to create Tracker Field with Text Entry Input Type and Validation 
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.public
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Add Field
+wait=200
+waitUntilById=fieldname
+typeElementById=fieldname=Validation
+wait=200
+selectOptionValueByIdIndex=selectedDisplayType=0
+wait=200
+waitUntilById=useFieldValidation
+clickElementById=useFieldValidation
+wait=200
+waitUntilById=helpText
+typeElementById=helpText=Text Input Type with validation
+wait=200
+waitUntilById=pattern
+typeElementById=pattern=abcd
+waitUntilById=testString
+typeElementById=testString=[abc]
+wait=200
+searchElementValueByTagName=body=Match Results
+wait=200
+searchElementValueByTagName=body=No match found.
+wait=200
+waitUntilById=fieldForm_Save
+clickElementById=fieldForm_Save
+wait=200
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Field created successfully.

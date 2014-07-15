@@ -1,0 +1,17 @@
+name=Stop Monitor the Task Folder for public project
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= EventTask2
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=500
+clickHrefByLinkText=Stop Monitoring Folder
+wait=500
+searchElementValueByTagName=Body=Task Folder is no longer monitored.

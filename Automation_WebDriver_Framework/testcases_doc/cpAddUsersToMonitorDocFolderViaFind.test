@@ -1,0 +1,35 @@
+name=Add users to Users Monitoring folder list in document folder by Find User option for public child project with global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=500
+clickHrefByLinkText=Users Monitoring Folder
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+waitUntilById=name
+typeElementById=name=site_admin_per
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=site_admin_per
+wait=500
+clickHrefByLinkText=Add
+wait=500
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=800
+runJavaScriptPopToMain=javascript:close()
+wait=800
+withoutPopCloseSwitchToMainWindow
+wait=800
+searchElementValueByTagName=Body=Child_Pub_Project#NEXT#Documents#NEXT#Doc_Str_View#NEXT#Doc_List#NEXT#List Documents 

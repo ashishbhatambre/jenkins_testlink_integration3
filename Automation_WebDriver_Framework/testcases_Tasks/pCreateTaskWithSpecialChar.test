@@ -1,0 +1,29 @@
+name=creating the Task with special character in public project
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+clickHrefByLinkText=EventTask2
+wait=300
+clickHrefByLinkText=Create
+wait=300
+waitUntilByName=title
+typeElementByName=title=$452t4%#@$%@$RF$#%RFR@#$RWewW#$rwfw3
+waitUntilByName=description
+typeElementByName=description=@$#%ERF$%&RGTWS$%G#$%%$^WEFRW$#@W
+selectOptionValueByNameValue=priority=2 - High
+waitUntilByName=status
+selectOptionValueByNameValue=status=Alert
+waitUntilByName=startDate
+typeElementByName=startDate=05/8/2013
+typeElementByName=endDate=06/11/2013
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=300
+clickHrefByLinkText=Save
+wait=300
+searchElementValueByTagName=Body=Task created successfully.

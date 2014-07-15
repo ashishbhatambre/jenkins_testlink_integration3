@@ -1,0 +1,25 @@
+name=Ability to monitor file release in private project
+component=FRS
+role=Sitewide Role
+artifact=NA
+wait=300
+url=sf/frs/do/listReleases/projects.swprivate/frs.package1
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectReleases
+clickElementById=selectionMenuButton_MonitorMenu_selectReleases
+waitUntilById=selectReleases_UnMonitor
+clickElementById=selectReleases_UnMonitor
+wait=800
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectionMenuButton_MonitorMenu_selectReleases
+clickElementById=selectionMenuButton_MonitorMenu_selectReleases
+waitUntilById=selectReleases_Monitor
+clickElementById=selectReleases_Monitor
+wait=800
+searchElementValueByTagName=Body=1 item(s) are now being monitored.

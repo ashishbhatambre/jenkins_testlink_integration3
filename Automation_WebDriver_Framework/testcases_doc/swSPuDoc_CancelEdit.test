@@ -1,0 +1,20 @@
+name=Cancel Rename Document Description in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root.folder
+wait=300
+clickHrefByLinkText=Doc_VersionComment
+wait=300
+clickHrefByLinkText=Edit / Update
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_VerComment
+wait=300
+waitUntilById=description
+typeElementById=description=Doc_VerComment
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=SWPublic_Sub#NEXT#Documents

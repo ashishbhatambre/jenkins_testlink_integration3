@@ -1,0 +1,23 @@
+name=Delete the Searched Document for child-private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=titleQuery
+typeElementById=titleQuery=Doc2
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=Child_Prv_Project#NEXT#Documents#NEXT#Root Folder#NEXT#Search Documents
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+clickHrefByLinkText=Delete
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=1 document deleted successfully.

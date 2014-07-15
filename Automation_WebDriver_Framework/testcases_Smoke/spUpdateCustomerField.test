@@ -1,0 +1,32 @@
+name=Ability to update tracker Customer field in public project as site admin user
+component=Tracker
+wait=300
+url=sf/projects/ft_pub_project/
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+clickHrefByLinkText=Tracker Settings
+wait=600
+clickHrefByLinkText=TRACK1
+wait=600
+clickHrefByLinkText=Customer
+wait=600
+waitUntilById=helpText
+typeElementById=helpText=Select any one among the values.
+wait=300
+runJavaScriptPopToMain=JavaScript:{addNewRow();changeParentDisplay();changeDefaultColumnDisplay()}
+wait=300
+typeElementById=value_dmmy0=Seller
+wait=300
+runJavaScriptPopToMain=JavaScript:{addNewRow();changeParentDisplay();changeDefaultColumnDisplay()}
+waitUntilById=value_dmmy1
+typeElementById=value_dmmy1=User
+wait=300
+waitUntilById=defaultValue_dmmy0
+clickElementById=defaultValue_dmmy0
+waitUntilById=fieldForm_save
+clickElementById=fieldForm_save
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=Field data updated successfully.

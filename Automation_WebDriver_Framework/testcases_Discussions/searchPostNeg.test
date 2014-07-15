@@ -1,0 +1,16 @@
+name=Search Posts without text
+component=Discussions
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Discussions
+wait=300
+waitUntilById=submitSearchPosts
+clickElementById=submitSearchPosts
+wait=300
+waitUntilById=searchPosts_Search
+clickElementById=searchPosts_Search
+wait=300
+searchElementValueByTagName=Body= Enter some text to search for.

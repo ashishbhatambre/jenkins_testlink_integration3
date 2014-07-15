@@ -1,0 +1,8 @@
+name=Get into Wiki Page
+component=Wiki
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.private/wiki/HomePage
+
+

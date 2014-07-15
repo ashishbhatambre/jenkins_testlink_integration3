@@ -1,0 +1,3 @@
+name=subversion repo update
+runCommands=vcscript/svnup1.cmd
+verifyCommandOutput=Committed revision 4.

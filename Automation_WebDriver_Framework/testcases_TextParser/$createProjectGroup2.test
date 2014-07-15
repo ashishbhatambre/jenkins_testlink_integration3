@@ -1,0 +1,18 @@
+name=Creating Project Group with text ${<letters>}
+component=Project Group
+role=NA
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Project Groups
+clickHrefByLinkText=Create Project Group
+wait=300
+waitUntilById=title
+typeElementById=title=${<project>Group}
+waitUntilById=description
+typeElementById=description=${Group <b>name </b>starts with $}
+clickElementById=createProjectGroup_submit
+wait=300
+searchElementValueByTagName=Body=Project Group#NEXT#${<project>Group}#NEXT#has been created successfully.

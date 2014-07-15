@@ -1,0 +1,22 @@
+name=Edit Document description 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgdfolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=500
+clickHrefByLinkText=Edit / Update
+wait=300
+waitUntilById=description
+typeElementById=description=This is updated description
+wait=300
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Document updated successfully.
+

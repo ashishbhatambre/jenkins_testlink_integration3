@@ -1,0 +1,14 @@
+name=Ability to save the searched artifact without name for the searched results
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+waitUntilById=_SfButton_SaveSearch
+clickHrefByLinkText=Save Search from Results
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=saveSearchOrFilter_submit
+clickElementById=saveSearchOrFilter_submit
+wait=200
+searchElementValueByTagName=Body=Search name to be saved is empty. Please enter a valid search name.

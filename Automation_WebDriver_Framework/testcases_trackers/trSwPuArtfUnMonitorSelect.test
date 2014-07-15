@@ -1,0 +1,20 @@
+name=Ability to stop Monitoring selected artifact in public project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+wait=200
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=1000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=200
+waitUntilById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+waitUntilById=selectArtifactsForm_UnMonitor
+clickElementById=selectArtifactsForm_UnMonitor
+wait=200
+searchElementValueByTagName=body=1 item(s) are no longer monitored.

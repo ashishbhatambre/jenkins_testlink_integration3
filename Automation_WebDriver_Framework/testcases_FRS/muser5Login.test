@@ -1,0 +1,13 @@
+name=Ability to login as user with edit permission
+component=FRS
+role=
+artifact=NA
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=tmuser5
+waitUntilById=pwd
+typeElementById=pwd=Collabnet2@
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

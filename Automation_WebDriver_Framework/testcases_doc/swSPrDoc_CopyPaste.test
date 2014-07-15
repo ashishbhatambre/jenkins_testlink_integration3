@@ -1,0 +1,20 @@
+name=Copy & Paste a document in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root.folder
+wait=300
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectDocuments_Copy
+clickElementById=selectDocuments_Copy
+wait=300
+searchElementValueByTagName=Body=1 document(s) copied to clipboard.
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root.folder.ddddforname_to_attach_more_than.scfolder
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=1 document(s) pasted.

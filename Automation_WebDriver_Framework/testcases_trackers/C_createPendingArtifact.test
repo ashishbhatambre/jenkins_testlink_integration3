@@ -1,0 +1,40 @@
+name=Ability to create Artifact with pending status as user with create only permission in private project
+component=Tracker
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=TRACK123##$^#$%
+wait=200
+clickHrefByLinkText=Submit New Artifact
+wait=200
+waitUntilById=title
+typeElementById=title=PendingArtifact
+waitUntilById=description
+typeElementById=description=Aritfact created with Pending status
+waitUntilByName=status
+selectOptionValueByNameValue=status=Pending
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=1 - Highest
+waitUntilById=createArtifactForm_userPicker
+clickElementById=createArtifactForm_userPicker
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=newuser1_createOnlyPermission
+selectOptionValueByIdValue=foundMultipleTemp=user1_adminPermission
+wait=200
+clickHrefByLinkText=Add
+wait=200
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.

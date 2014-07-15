@@ -1,0 +1,23 @@
+name=Create Document with File Type:Online 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgdfolder
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_Online
+wait=300
+waitUntilById=description
+typeElementById=description=Doc_Online
+wait=300
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=Online Document
+wait=300
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=500
+searchElementValueByTagName=Body=Document created successfully.

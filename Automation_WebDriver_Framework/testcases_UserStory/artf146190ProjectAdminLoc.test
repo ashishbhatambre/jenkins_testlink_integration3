@@ -1,0 +1,54 @@
+name=Ability to create Linked application and Verifying the Link for aritfact artf146190
+component=LinkedApps
+role=Global Role
+aritfact=artf146190
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Project Home
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+clickHrefByLinkText=Source Code
+wait=300
+clickHrefByLinkText=Build & Test
+wait=300
+clickHrefByLinkText=File Releases
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText=Wiki
+wait=300
+clickHrefByLinkText=Discussions
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+clickHrefByLinkText=Reports
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Project Toolbar
+waitUntilById=linkedApplications
+clickElementById=linkedApplications
+wait=300
+clickHrefByLinkText=Create
+wait=300
+typeElementById=title=ApplicationTest
+wait=300
+typeElementById=applicationUrl=http://www.collab.net/products/teamforge
+wait=300
+clickElementById=linkedApplicationForm_Save
+wait=300
+searchElementValueByTagName=Body=Linked Application has been created successfully.
+wait=300
+clickHrefByLinkText=Reports
+wait=300
+clickHrefByLinkText=ApplicationTest
+wait=300
+searchElementValueByTagName=Body=NewProject#NEXT#Project Home#NEXT#ApplicationTest
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+searchElementValueByTagName=Body=Project Admin

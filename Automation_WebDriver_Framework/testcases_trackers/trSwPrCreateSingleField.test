@@ -1,0 +1,31 @@
+name=Ability to create Tracker Field with Single Select Input Type in private project
+component=Tracker Admin
+role=Sitewide Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.swprivate
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Add Field
+wait=200
+waitUntilById=fieldname
+typeElementById=fieldname=Text Effort
+wait=200
+selectOptionValueByIdIndex=selectedDisplayType=1
+waitUntilById=helpText
+typeElementById=helpText=Single Input Type
+wait=200
+clickHrefByLinkText=Add
+wait=200
+waitUntilById=value_dmmy0
+typeElementById=value_dmmy0=High
+wait=200
+clickElementById=defaultValue_dmmy0
+waitUntilById=fieldForm_Save
+clickElementById=fieldForm_Save
+wait=200
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Field created successfully.

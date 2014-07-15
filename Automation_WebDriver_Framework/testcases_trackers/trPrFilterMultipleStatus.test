@@ -1,0 +1,23 @@
+name=Ability to filter Artifact by Multiple Status in private project
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+waitUntilById=btn_filter!!string!!status
+clickElementById=btn_filter!!string!!status
+waitUntilById=ui-multiselect-_filter!!string!!status-option-3
+clickElementById=ui-multiselect-_filter!!string!!status-option-3
+waitUntilById=ui-multiselect-_filter!!string!!status-option-4
+clickElementById=ui-multiselect-_filter!!string!!status-option-4
+wait=200
+clickHrefByLinkText=Filter
+wait=200
+searchElementValueByTagName=body= (2 Items)
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

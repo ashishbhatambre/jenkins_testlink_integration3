@@ -1,0 +1,21 @@
+name=Ability to remove user from monitoring wiki page in public project
+component=Wiki
+role=Direct Role
+artifact=NA
+wait=500
+clickHrefByLinkText=Users Monitoring
+wait=500
+switchToPopupWindow
+wait=500
+selectButtonByValue=tmuser1
+wait=500
+waitUntilById=selectUsers_removeUsers
+clickElementById=selectUsers_removeUsers
+wait=500
+acceptJavaScriptConfirm
+wait=500
+runJavaScriptPopToMain=javascript:close()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=Public#NEXT#Wiki

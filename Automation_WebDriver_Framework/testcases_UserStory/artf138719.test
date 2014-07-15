@@ -1,0 +1,62 @@
+name=Ability to upload [html-exec-pdf]files and downloading if in FRS for an artifact artf138719-
+component=FRS
+role=Global Role
+artifact=artf138719
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=user1
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=File Releases
+wait=300
+clickHrefByLinkText=File Package
+wait=300
+clickHrefByLinkText=Add
+waitUntilById=title
+typeElementById=title=File
+typeElementByName=description=File created for Package FilePackage
+wait=300
+clickElementById=createRelease_submit
+wait=300
+searchElementValueByTagName=Body=Release created successfully.
+wait=300
+clickHrefByLinkText=File
+wait=300
+clickHrefByLinkText=Add
+waitUntilById=file
+typeValueForFileField=D:\UserStory Reports\artf122891.html
+waitUntilById=frsFile_submit
+runJavaScriptPopToMain=javascript:submitForm(document.frsFile, 'submit')
+wait=300
+searchElementValueByTagName=Body=File added successfully.
+waitUntilById=frsfilesList_create
+clickElementById=frsfilesList_create
+waitUntilById=file
+typeValueForFileField=D:\Software\jdk6windowsi586zip\jdk-6-windows-i586.exe
+wait=300
+runJavaScriptPopToMain=javascript:submitForm(document.frsFile, 'submit')
+wait=300
+searchElementValueByTagName=Body=File added successfully.
+wait=300
+clickHrefByLinkText=Add
+waitUntilById=file
+typeValueForFileField=D:\Software\15_02_2013_001.pdf
+wait=300
+clickElementById=frsFile_submit
+wait=300
+searchElementValueByTagName=Body=File added successfully.
+wait=300
+selectCheckBoxFromList=_listItem=0
+wait=300
+selectCheckBoxFromList=_listItem=1
+waitUntilById=frsFilesSelection_Download
+clickElementById=frsFilesSelection_Download
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=File Releases

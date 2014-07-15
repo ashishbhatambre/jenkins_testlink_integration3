@@ -1,0 +1,19 @@
+name=Ability to cancel separator creation in public project
+component=Tracker Admin
+role=Sitewide Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.swpublic
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+waitUntilById=adminTrackerForm_AddSeparator
+clickElementById=adminTrackerForm_AddSeparator
+wait=200
+switchToPopupWindow
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=SWPublic#NEXT#Project Admin

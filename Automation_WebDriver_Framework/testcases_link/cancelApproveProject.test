@@ -1,0 +1,11 @@
+name=Approve Project Request
+component=My Workspace
+role=Admin Role
+artifact=NA
+url=sf/sfmain/do/myPage?selectedTab=myApproval
+wait=500
+clickHrefByLinkText=tuser2 want to join this project
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

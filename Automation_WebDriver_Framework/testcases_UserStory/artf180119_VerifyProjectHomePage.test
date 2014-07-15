@@ -1,0 +1,12 @@
+name=Verify that Subprojects are displayed to the user when Prevent Inheritance is unchecked in project role
+component=Users
+role=NA
+artifact= Tasks - artf180125 TC - artf180119 [Goto 'Project1' > Project Home and verify Project Toolbar]
+wait=300
+url=sf/projects/project1/
+wait=300
+searchElementValueByTagName=Body=Total Subprojects: 1
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+searchElementValueByTagName=Body=Project1/Project Admin/Project Settings

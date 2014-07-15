@@ -1,0 +1,10 @@
+name=Ability to view the Root Task Folder Status in private project
+component=Tasks
+role=Delete role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/viewSummary/projects.private/taskmgr
+wait=300
+clickElementById=summary
+wait=500
+searchElementValueByTagName=Body=Private#NEXT#Tasks

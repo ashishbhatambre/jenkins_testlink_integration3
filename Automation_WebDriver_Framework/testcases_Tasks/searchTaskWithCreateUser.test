@@ -1,0 +1,27 @@
+name=Search task by Created User
+component=Task
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Search Tasks
+wait=500
+clickImage=sf-images/icons/user_picker_icon.png.pagespeed.ce.u4aP3C3kYZ.png
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=user1_adminPermission
+wait=500
+clickHrefByLinkText=Add
+wait=500
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=600
+searchElementValueByTagName=Body=(1 Item)

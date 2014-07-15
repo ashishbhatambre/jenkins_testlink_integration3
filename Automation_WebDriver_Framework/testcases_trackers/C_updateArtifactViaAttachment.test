@@ -1,0 +1,25 @@
+name=Ability to attach a File to artifact as user with create only permission in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Board_Plan1
+wait=200
+clickHrefByLinkText=BoardArtifact2
+wait=200
+waitUntilById=attachments
+clickElementById=attachments
+wait=200
+clickHrefByLinkText=Attach another file
+wait=200
+typeFileFieldValueForName=file[1]=C:\Uploaded_Files\index.html
+wait=200
+typeFileFieldValueForName=file[2]=C:\Uploaded_Files\Test.doc
+wait=200
+waitUntilById=viewArtifactForm_Save
+clickElementById=viewArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact data updated successfully.

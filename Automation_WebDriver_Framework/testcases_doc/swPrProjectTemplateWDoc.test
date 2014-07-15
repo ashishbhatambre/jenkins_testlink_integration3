@@ -1,0 +1,19 @@
+name=Create Project Template with documents enabled 
+component=Projects
+role=Admin Permission
+artifact=NA
+wait=300
+url=sf/sfmain/do/createTemplate/projects.swprivate
+wait=300
+waitUntilById=titleField
+typeElementById=titleField=SWPrivate_Template
+wait=300
+waitUntilById=description
+typeElementById=description=Project Template
+wait=500
+selectCheckBoxFromList=contentChoices=5
+wait=500
+waitUntilByid=createTemplate_submit
+clickElementById=createTemplate_submit
+wait=300
+searchElementValueByTagName=Body=Project Template created.

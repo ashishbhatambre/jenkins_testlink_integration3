@@ -1,0 +1,31 @@
+name=Inabiltiy to create Planning Folder with Invalid End date
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=testplan
+waitUntilById=pfdescription
+typeElementById=pfdescription=testPlan is a planning folder created by uesr1
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=In progress
+waitUntilByName=endDate
+typeElementByName=endDate=2013/10/24
+wait=200
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=500
+searchElementValueByTagName=Body=Dates must be entered in MM/dd/yyyy format. 
+wait=500
+clickHrefByLinkText=Cancel
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=200

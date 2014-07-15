@@ -1,0 +1,33 @@
+name=Ability to rename the Planning Folder
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder2
+wait=200
+clickHrefByLinkText=Edit
+wait=200
+waitUntilById=edit_planning
+clickElementById=edit_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=Folder_Renamed
+waitUntilById=pfdescription
+typeElementById=pfdescription=The Plan_Folder2 renamed as Folder_Renamed
+waitUntilById=startDate
+typeElementById=startDate=07/18/2013
+wait=200
+waitUntilById=endDate
+typeElementById=endDate=08/14/2013
+wait=200
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Planning Folders#NEXT#Folder_Renamed#NEXT#List Artifacts

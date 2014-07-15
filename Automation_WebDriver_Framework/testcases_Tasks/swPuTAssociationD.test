@@ -1,0 +1,10 @@
+name=Verify Task Assocition link 
+component=Tasks
+role=Sitewide Role_Delete Permission
+artifact=NA
+wait=300
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

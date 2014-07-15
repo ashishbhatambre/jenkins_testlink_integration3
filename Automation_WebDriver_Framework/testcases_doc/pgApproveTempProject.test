@@ -1,0 +1,13 @@
+name=Approve the project which created using project template which enabled Document
+component=Projects
+role=Admin
+artifact=NA
+wait=300
+clickHrefByLinkText=Pending Projects
+wait=300
+clickHrefByLinkText=pgTempProject - Project created using template
+wait=300
+waitUntilById=projectRequest_submit
+clickElementById=projectRequest_submit
+wait=800
+searchElementValueByTagName=Body=Approved request to create project "pgTempProject".

@@ -1,0 +1,44 @@
+name=Search Tracker via jump to Id- advance search- search tracker link for an aritfact artf139703
+component=Tracker
+role=Global Role
+artifact=artf139703
+wait=300
+url=sf/projects/newproject/
+wait=400
+clickHrefByLinkText=Trackers
+wait=400
+clickHrefByLinkText=Search Trackers
+waitUntilById=priorities
+selectOptionValueByIdValue=priorities=2 - High
+waitUntilById=assignedTo
+selectOptionValueByIdValue=assignedTo=user2_normalPermission
+waitUntilById=submittedBy
+selectOptionValueByIdValue=submittedBy=user1_adminPermission
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+waitUntilById=idsString
+typeElementById=idsString=tracker1002
+wait=400
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=idsString
+typeElementById=idsString=plan1001
+wait=400
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=idsString
+typeElementById=idsString=artf1001
+wait=400
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=400
+clickHrefByLinkText=Advanced Search
+waitUntilByName=term
+typeElementByName=term=Tracker1
+waitUntilById=applications
+selectOptionValueByIdValue=applications=Trackers
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+wait=400
+clickHrefByLinkText=Return
+wait=400
+searchElementValueByTagName=Body=Search

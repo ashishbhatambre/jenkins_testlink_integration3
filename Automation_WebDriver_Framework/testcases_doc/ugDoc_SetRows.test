@@ -1,0 +1,14 @@
+name=Set Rows Count as 15 
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugproject/docman.root.ugfolder
+wait=300
+waitUntilById=rows-icon
+clickElementById=rows-icon
+waitUntilById=ipp_15
+clickElementById=ipp_15
+wait=800
+searchElementValueByTagName=Body=ugProject#NEXT#Documents
+wait=300

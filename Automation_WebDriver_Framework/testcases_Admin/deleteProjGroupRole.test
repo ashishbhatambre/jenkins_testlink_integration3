@@ -1,0 +1,20 @@
+name=Ability to delete role in a project group
+component=Project Group
+role=Admin
+artifact=NA
+wait=300
+url=sf/rbac/do/permissionAdmin/pgroups.testedprojects
+wait=500
+waitUntilById=displayList
+selectOptionValueByIdValue=displayList=Roles created for this project group
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+waitUntilById=selectRole_delete
+clickElementById=selectRole_delete
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Role(s) deleted successfully.
+wait=500

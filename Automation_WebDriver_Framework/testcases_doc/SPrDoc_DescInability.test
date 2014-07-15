@@ -1,0 +1,19 @@
+name=Inability to create document without description in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_Inability
+wait=300
+selectButtonByValue=fromUrl
+wait=300
+typeElementById=urlContent=https://localhost:new/any
+wait=300
+clickHrefByLinkText=Save
+wait=300
+searchElementValueByTagName=Body=Description is required. 

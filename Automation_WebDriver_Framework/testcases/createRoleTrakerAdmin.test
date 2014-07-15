@@ -1,0 +1,15 @@
+name=create a role by admin
+component=Roles
+role=Admin
+artifact=NA
+url=sf/sfmain/do/listRolesAdmin
+wait=300
+clickElementById=globalRoles
+waitUntilById=listSiteRoles_create
+clickElementById=listSiteRoles_create
+waitUntilById=title
+typeElementById=title=Tracker Admin
+typeElementById=description=create a role Tracker Admin
+clickElementById=createSiteWideRoleForm_submit
+wait=300
+searchElementValueByTagName=Body=Global Project Role created successfully.

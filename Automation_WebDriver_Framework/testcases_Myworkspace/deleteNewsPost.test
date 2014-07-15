@@ -1,0 +1,8 @@
+name=Delete News Post
+wait=300
+waitUntilById=deleteNewsPost
+clickElementById=deleteNewsPost
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=News post deleted successfully.

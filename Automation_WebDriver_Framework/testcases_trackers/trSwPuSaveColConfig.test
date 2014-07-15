@@ -1,0 +1,22 @@
+name=Ability to Save Column configuration in public project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=CloneTracker1
+wait=200
+waitUntilById=columns-icon
+clickElementById=columns-icon
+waitUntilById=saveFolderPreferences
+clickElementById=saveFolderPreferences
+switchToPopupWindow
+waitUntilById=preferenceName
+typeElementById=preferenceName=NewStyle1
+waitUntilById=folderPreferenceNamePopUpForm_Apply
+clickElementById=folderPreferenceNamePopUpForm_Apply
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=SWPublic#NEXT#Trackers

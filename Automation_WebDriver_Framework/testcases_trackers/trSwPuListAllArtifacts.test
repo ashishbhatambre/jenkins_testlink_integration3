@@ -1,0 +1,15 @@
+name=Ability to List "All" artifacts in planning folders in Public Project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan1
+wait=4000
+waitUntilById=planning_folder_view_select
+selectOptionValueByIdIndex=planning_folder_view_select=0
+wait=200
+searchElementValueByTagName=body=QA:PendingArtf
+

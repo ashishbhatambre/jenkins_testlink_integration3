@@ -1,0 +1,23 @@
+name=Ability to create subversion integration
+component=Integrations
+role=Admin
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickHrefByLinkText=Admin
+wait=300
+clickHrefByLinkText=Integrations
+wait=300
+clickHrefByLinkText=Create
+waitUntilById=type
+selectOptionValueByIdValue=type=CVS Pserver
+wait=300
+typeElementById=title=Server2
+typeElementById=description=Integration to CVS Pserver
+waitUntilById=RequireApproval
+clickElementById=RequireApproval
+wait=300
+waitUntilById=system_submit
+clickElementById=system_submit
+wait=300
+searchElementValueByTagName=Body=The SCM server was added successfully.

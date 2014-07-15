@@ -1,0 +1,15 @@
+name=Ability to paste the artifact to the Planning Folder
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder3
+wait=4000
+waitUntilById=selectArtifactsForm_Paste
+clickHrefByLinkText=Paste
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=2 artifact(s) pasted from the clipboard.

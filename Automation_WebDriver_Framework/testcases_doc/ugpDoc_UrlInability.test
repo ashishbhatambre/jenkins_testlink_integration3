@@ -1,0 +1,21 @@
+name=Verify inability to create doc withpout URL in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugpproject/docman.root.ugpfolder
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_Inability
+wait=300
+waitUntilById=description
+typeElementById=description=Doc_Inability
+wait=300
+selectButtonByValue=fromUrl
+wait=300
+clickHrefByLinkText=Save
+wait=300
+searchElementValueByTagName=Body= Warning: This does not appear to be a valid URL. 
+wait=300

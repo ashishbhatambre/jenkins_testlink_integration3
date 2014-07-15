@@ -1,0 +1,16 @@
+name=Ability to search commits via Jump to id after navigating to a sourcecode
+component=SourceCode
+role=Global Role
+artifact=artf165997
+wait=300
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=400
+clickElementByName=Scm
+wait=400
+waitUntilById=idsString
+typeElementById=idsString=cmmt1004
+wait=400
+runJavaScriptPopToMain=javascript:quickJump()
+wait=400
+searchElementValueByTagName=Body=(1 Item)

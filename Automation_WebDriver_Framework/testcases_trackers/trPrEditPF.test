@@ -1,0 +1,32 @@
+name=Ability to edit Planning Folder 
+component=Tracker 
+role=Direct Role
+artifact=NA
+wait=200
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan1
+wait=200
+clickHrefByLinkText=Edit
+wait=200
+waitUntilById=edit_planning
+clickElementById=edit_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=selectedStatus
+selectOptionValueByIdIndex=selectedStatus=2
+waitUntilById=capacity
+typeElementById=capacity=70
+waitUntilById=startDate
+typeElementById=startDate=10/28/2013
+waitUntilById=endDate
+typeElementById=endDate=11/28/2014
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=Private#NEXT#Trackers

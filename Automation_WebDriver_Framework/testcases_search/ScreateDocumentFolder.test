@@ -1,0 +1,65 @@
+name=Ability to create Document folder
+component=Documents
+role=Site Admin
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root
+wait=300
+waituntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=SearchFolder1
+waitUntilById=createDocumentFolder_submit
+clickElementById=createDocumentFolder_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Folder created successfully.
+wait=300
+clickHrefByLinkText=Close
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Project_Search#NEXT#Documents
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+wait=300
+waituntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=SearchFolder2
+waitUntilById=createDocumentFolder_submit
+clickElementById=createDocumentFolder_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Folder created successfully.
+wait=300
+clickHrefByLinkText=Close
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Project_Search#NEXT#Documents
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1.searchfolder2
+wait=300
+waituntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=SearchFolder3
+waitUntilById=createDocumentFolder_submit
+clickElementById=createDocumentFolder_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Folder created successfully.
+wait=300
+clickHrefByLinkText=Close
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Project_Search#NEXT#Documents
+

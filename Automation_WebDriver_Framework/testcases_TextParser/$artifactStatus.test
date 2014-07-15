@@ -1,0 +1,24 @@
+name=Edit the Status of artifact with $letter$letter
+component=Tracker
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=400
+clickHrefByLinkText=Trackers
+wait=400
+clickHrefByLinkText=${NewTracker<I>}
+wait=400
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=400
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=400
+waitUntilById=comment
+typeElementById=comment=$artifact$Text$Changes
+wait=400
+waitUntilById=viewArtifactForm_SaveAndView
+clickElementById=viewArtifactForm_SaveAndView
+wait=400
+searchElementValueByTagName=Body=Artifact data updated successfully.

@@ -1,0 +1,12 @@
+name=Ability to verify the user role matrix in project group
+component=Project Admin
+wait=300
+url=sf/rbac/do/permissionAdmin/pgroups.testedprojects
+wait=300
+waitUntilById=userRoleMatrix
+clickElementById=userRoleMatrix
+wait=300
+waitUntilById=userRoleMatrix_Save
+runJavaScriptPopToMain=javascript:submitForm(document.userRoleMatrix, 'Save')
+wait=300
+searchElementValueByTagName=Body=Updated role assignments for 0 user(s). Total role assignments: 0 added, 0 deleted.

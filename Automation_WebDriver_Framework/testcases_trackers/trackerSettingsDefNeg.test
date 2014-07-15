@@ -1,0 +1,37 @@
+name=Inability to add a reqiured field without providing default value
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=admin
+clickElementById=admin
+clickHrefByLinkText=Add Field
+waitUntilById=fieldname
+typeElementById=fieldname=Photo
+waitUntilById=selectedDisplayType
+selectOptionValueByIdValue=selectedDisplayType=Single Select (Specify Field Values)
+waitUntilById=isRequiredCheckbox
+clickElementById=isRequiredCheckbox
+waitUntilById=helpText
+typeElementById=helpText=Select any one among the values.
+wait=200
+runJavaScriptPopToMain=JavaScript:{addNewRow();changeParentDisplay();changeDefaultColumnDisplay()}
+wait=200
+typeElementById=value_dmmy0=Lion
+wait=200
+runJavaScriptPopToMain=JavaScript:{addNewRow();changeParentDisplay();changeDefaultColumnDisplay()}
+typeElementById=value_dmmy1=Tiger
+wait=200
+waitUntilById=fieldForm_Save
+clickElementById=fieldForm_Save
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=You must select a default value for a required field.

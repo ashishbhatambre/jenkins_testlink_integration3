@@ -1,0 +1,16 @@
+name=Ability to check the already monitored Pacakge for private project by site admin user
+component=FRS
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectionMenuButton_MonitorMenu_selectPackages
+clickElementById=selectionMenuButton_MonitorMenu_selectPackages
+wait=500
+waitUntilById=selectPackages_Monitor
+clickElementById=selectPackages_Monitor
+wait=500
+searchElementValueByTagName=Body=Item pkg1002 is already being monitored.

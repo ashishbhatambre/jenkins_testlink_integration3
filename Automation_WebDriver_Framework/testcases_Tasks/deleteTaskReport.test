@@ -1,0 +1,16 @@
+name=Delete Task Report
+component=Report
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=Reports
+wait=500
+waitUntilById=reports
+clickElementById=reports
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+clickHrefByLinkText=Delete
+wait=500
+searchElementValueByTagName=Body=Deleted 1 report(s)

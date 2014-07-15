@@ -1,0 +1,10 @@
+name=Verify Search Wiki Pages link in public project
+component=Project
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+waitUntilbyId=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+wait=700
+searchElementValueByTagName=Body=PProject
+wait=300

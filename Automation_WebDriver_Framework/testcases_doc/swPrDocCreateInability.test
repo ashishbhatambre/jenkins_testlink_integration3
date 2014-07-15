@@ -1,0 +1,25 @@
+name=Verify the inability to create document without providing required fields
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+url=sf/projects/swprivate/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+wait=300
+selectButtonByValue=fromText
+wait=300
+waitUntilById=textContent
+typeElementById=textContent=Private Project Document
+wait=300
+waitUntilById=versionComment
+typeElementById=versionComment=Version1
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body= Document Name is required. 
+wait=300
+searchElementValueByTagName=Body= Description is required. 

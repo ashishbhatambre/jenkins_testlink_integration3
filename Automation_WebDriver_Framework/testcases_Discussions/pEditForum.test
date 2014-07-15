@@ -1,0 +1,20 @@
+name=Edit Forum for Public Project
+component=Discussions
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=300
+clickHrefByLinkText=Discussions
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectForumsForm_Edit
+clickElementById=selectForumsForm_Edit
+wait=300
+selectButtonByValue=private
+wait=300
+waitUntilById=forumForm_submit
+clickElementById=forumForm_submit
+wait=300
+searchElementValueByTagName=Body=Forum updated successfully.

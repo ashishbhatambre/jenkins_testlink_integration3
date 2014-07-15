@@ -1,0 +1,11 @@
+name=Ability to Paste Copied Task in private project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=300
+waitUntilById=listTasksSelect_Paste
+clickElementById=listTasksSelect_Paste
+wait=300
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=1 task(s) pasted from clipboard.

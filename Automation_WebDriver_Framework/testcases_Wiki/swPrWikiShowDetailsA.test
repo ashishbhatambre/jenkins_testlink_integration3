@@ -1,0 +1,11 @@
+name=Ability to view Wiki Show Details as user with admin role in private project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.swprivate/wiki/HomePage
+wait=300
+waitUntilById=view_wiki_page.showPageDetails
+clickElementById=view_wiki_page.showPageDetails
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Wiki

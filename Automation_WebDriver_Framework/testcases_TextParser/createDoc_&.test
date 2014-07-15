@@ -1,0 +1,24 @@
+name=Create Document with text starts with &text&
+component=Documents
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= &DocumentF&
+clickHrefByLinkText=Add Document
+waitUntilById=title
+typeElementById=title=&Document1&
+waitUntilById=description
+typeElementById=description=&New Document&
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=&D://Folde2&
+waitUntilById=versionComment
+typeElementById=versionComment=&version1&
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body=Document created successfully.

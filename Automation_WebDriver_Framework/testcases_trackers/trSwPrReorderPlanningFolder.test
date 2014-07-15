@@ -1,0 +1,27 @@
+name=Ability to reorder sub planning folders in Private Project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/planning/do/viewPlanningFolder/projects.swprivate/planning.plan1.plan2
+wait=200
+clickHrefByLinkText=Edit
+waitUntilById=reorder_planning
+clickElementById=reorder_planning
+wait=200
+switchToPopupWindow
+waitUntilById=folderSelectList
+selectOptionValueByIdIndex=folderSelectList=0
+wait=200
+clickHrefByLinkText=Alphabetize
+wait=200
+selectOptionValueByIdIndex=folderSelectList=0
+wait=200
+clickHrefByLinkText=Move Down
+wait=200
+waitUntilById=reorderObjects_submit
+clickElementById=reorderObjects_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=SWPrivate#NEXT#Trackers
+

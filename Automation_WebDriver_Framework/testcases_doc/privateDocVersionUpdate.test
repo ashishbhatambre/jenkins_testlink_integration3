@@ -1,0 +1,15 @@
+name=Check version number is incremented when a document is edited 
+and updated
+component=Documents
+role=Direct Role_Admin Permisssion
+artifact=NA
+wait=300
+url=sf/projects/private/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Document1
+wait=500
+clickHrefByLinkText=Private_Document
+wait=300
+searchElementValueByTagName=Body=Current Version: 2 

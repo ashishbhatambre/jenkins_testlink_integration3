@@ -1,0 +1,22 @@
+name=Ability to create a Page in wiki in private project as site admin user
+component=Wiki
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Wiki
+wait=500
+clickHrefByLinkText=Wiki Page
+wait=500
+waitUntilById=editorPrefSelect
+selectOptionValueByIdValue=editorPrefSelect=Plain Editor
+wait=500
+waitUntilById=editorarea
+typeElementById=editorarea=!!! %%( background-color: rgb(255, 204, 0); )%%( font-family: georgia; )Wiki Link page 2%%%%%%( font-family: georgia; ) %%was created as the %%( color: rgb(153, 51, 102); )second link%% to the page.
+wait=500
+waitUntilById=editorPrefSelect
+selectOptionValueByIdValue=editorPrefSelect=WYSIWYG Editor
+wait=500
+waitUntilById=create_wiki_page.save
+clickElementById=create_wiki_page.save
+wait=1000
+searchElementValueByTagName=Body=Wiki Page created successfully.

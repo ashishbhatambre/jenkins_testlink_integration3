@@ -1,0 +1,31 @@
+name=Verify that Subprojects are not displayed to the user when Prevent Inheritance is enabled in project role
+component=Project
+role=NA
+artifact= Tasks - artf180125 TC - artf180090 [Create three Projects as 'Project1' 'Project2' and 'Project3']
+wait=300
+url=sf/sfmain/do/createProject
+wait=300
+waitUntilByName=title
+typeElementByName=title=Project1
+typeElementByName=description=P1
+clickHrefByLinkText=Create
+wait=300
+searchElementValueByTagName=Body=Project1/ Project Home
+wait=300
+url=sf/sfmain/do/createProject
+wait=300
+waitUntilByName=title
+typeElementByName=title=Project2
+typeElementByName=description=P2
+clickHrefByLinkText=Create
+wait=300
+searchElementValueByTagName=Body=Project2/ Project Home
+wait=300
+url=sf/sfmain/do/createProject
+wait=300
+waitUntilByName=title
+typeElementByName=title=Project3
+typeElementByName=description=P3
+clickHrefByLinkText=Create
+wait=300
+searchElementValueByTagName=Body=Project3/ Project Home

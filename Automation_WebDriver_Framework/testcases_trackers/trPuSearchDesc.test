@@ -1,0 +1,19 @@
+name=Ability to search Artifact by description in public project
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=Closed
+waitUntilById=inDescription
+clickElementById=inDescription
+waitUntilById=inAllTextFields
+clickElementById=inAllTextFields
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+searchElementValueByTagName=body= (1 Item)

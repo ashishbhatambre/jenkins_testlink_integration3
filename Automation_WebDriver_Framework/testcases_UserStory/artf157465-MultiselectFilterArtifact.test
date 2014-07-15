@@ -1,0 +1,27 @@
+name=Ability to Multi-Select for the dropdown fields in Search Filter for List Artifacts page
+component=Tracker
+role=Global Role
+artifact=artf157465
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText=NewTracker
+wait=500
+waitUntilById=btn_filter!!numeric!!priority
+clickElementById=btn_filter!!numeric!!priority
+waitUntilByName=multiselect__filter!!numeric!!priority
+selectButtonByValue=1
+selectButtonByValue=2
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+clickHrefByLinkText=Filter
+wait=1000
+searchElementValueByTagName=Body=(1 Item)
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

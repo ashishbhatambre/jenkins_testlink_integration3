@@ -1,0 +1,27 @@
+name=cut and Paste Multiple Task to other folder
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= C_Task
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+selectCheckBoxFromList=_listItem=1
+wait=500
+clickHrefByLinkText=Cut
+wait=500
+searchElementValueByTagName=Body=2 task(s) cut to clipboard.
+wait=500
+clickHrefByLinkText= Sub_Task
+wait=500
+waitUntilById=listTasksSelect_Paste
+clickElementValueById=listTasksSelect_Paste
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=2 task(s) pasted from clipboard.

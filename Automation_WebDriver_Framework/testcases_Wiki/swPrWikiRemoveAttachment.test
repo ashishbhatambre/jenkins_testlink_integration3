@@ -1,0 +1,15 @@
+name=Ability to remove Wiki Page Attachment as user with admin role in private project
+component=Wiki
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.swprivate/wiki/HomePage
+wait=300
+waitUntilById=attachments
+clickElementById=attachments
+wait=500
+selectCheckBoxFromList=_listItem=0 
+waitUntilById=removeAttachments_submit
+clickElementById=removeAttachments_submit
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Wiki

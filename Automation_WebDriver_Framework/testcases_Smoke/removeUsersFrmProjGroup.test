@@ -1,0 +1,14 @@
+name=Ability to remove the users from the project group
+component=Project Groups
+wait=300
+url=sf/sfmain/do/userMembership/pgroups.testedprojects
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=userMembership_submit
+clickElementById=userMembership_submit
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=User(s) removed from the Project Group :#NEXT#user2#NEXT#.

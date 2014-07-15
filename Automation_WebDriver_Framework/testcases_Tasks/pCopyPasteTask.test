@@ -1,0 +1,23 @@
+name=copy and paste the task for public project
+component=Task
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText= EventTask1
+wait=500
+selectCheckBoxFromList=_listItem=1
+wait=500
+clickHrefByLinkText=Copy
+wait=500
+searchElementValueByTagName=Body=1 task(s) copied to clipboard.
+wait=500
+clickHrefByLinkText= EventTask2
+wait=500
+waitUntilById=listTasksSelect_Paste
+wait=500
+clickHrefByLinkText=Paste
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Task "NewEventTask2" pasted successfully.
+searchElementValueByTagName=Body=1 task(s) pasted from clipboard.

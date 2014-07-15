@@ -1,0 +1,19 @@
+name=Ability to create project template for public project
+component=Projects
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/createTemplate/projects.ppgproject
+wait=300
+waitUntilById=titleField
+typeElementById=titleField=ppgProject_Template
+wait=300
+waitUntilById=description
+typeElementById=description=Public Project Template for project group project
+wait=500
+selectCheckBoxFromList=contentChoices=5
+wait=500
+waitUntilByid=createTemplate_submit
+clickElementById=createTemplate_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Project Template created.

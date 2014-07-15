@@ -1,0 +1,38 @@
+name=Ability to create restricted users
+component=Users
+role=Admin
+artifact=NA
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Users
+wait=300
+clickHrefByLinkText=Single
+wait=4000
+custom=qa-name=username=type=tuser1
+custom=qa-name=password=type=Collabnet1!
+custom=qa-name=confirmPassword=type=Collabnet1!
+custom=qa-name=fullName=type=tuser1_adminPermission
+custom=qa-name=email=type=tuser1@collab.net
+custom=qa-name=organization=type=cspl
+custom=qa-name=licenseType=select=ALM
+custom=qa-name=restrictedUser=checkboxclick=1
+clickSpanElementByCssSelector=widgets-btn-grouped ng-scope
+wait=500
+searchElementValueByTagName=Body=The user "tuser1" was successfully created.
+wait=300
+url=ctf/main/listUsersAdmin
+wait=300
+clickHrefByLinkText=Single
+wait=4000
+custom=qa-name=username=type=tuser2
+custom=qa-name=password=type=Collabnet1!
+custom=qa-name=confirmPassword=type=Collabnet1!
+custom=qa-name=fullName=type=tuser2_normalPermission
+custom=qa-name=email=type=tuser2@collab.net
+custom=qa-name=organization=type=cspl
+custom=qa-name=licenseType=select=ALM
+custom=qa-name=restrictedUser=checkboxclick=1
+clickSpanElementByCssSelector=widgets-btn-grouped ng-scope
+wait=500
+searchElementValueByTagName=Body=The user "tuser2" was successfully created.

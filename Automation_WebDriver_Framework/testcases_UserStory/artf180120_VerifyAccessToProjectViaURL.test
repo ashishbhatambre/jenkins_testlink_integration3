@@ -1,0 +1,12 @@
+name=Verify that Changing Parent project does remove all inherited rights from Project Role
+component=Project admin
+role=NA
+artifact= Tasks - artf180125 TC - artf180120 [Access this url of the project sf/projects/project3 in same browser(Project Home url) and /sf/sfmain/do/projectAdmin/projects.project3 in same browser(Project Admin url)
+wait=300
+url=sf/projects/project3
+wait=300
+searchElementValueByTagName=Body=The page you requested cannot be found.
+wait=300
+url=sf/sfmain/do/projectAdmin/projects.project3
+wait=300
+searchElementValueByTagName=Body=The page you requested cannot be found.

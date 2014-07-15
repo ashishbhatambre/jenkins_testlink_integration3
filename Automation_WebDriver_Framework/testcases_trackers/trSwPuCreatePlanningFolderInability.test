@@ -1,0 +1,18 @@
+name=Inability to create planning without providing name in public project
+component=Tracker Admin 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=200
+switchToPopupWindow
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=Create Planning Folder
+wait=200
+switchToMainWindow

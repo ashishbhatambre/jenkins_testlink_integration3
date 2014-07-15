@@ -1,0 +1,19 @@
+name=Verify that ability to approve SCM Adapter Repository Access request as SCM Integration Permission user when requires approval is enabled in Integration
+component=Integration
+role=NA
+artifact= Tasks artf171712 TC - artf171708  [Go to Admin > Integrations >Pending SCM Integrations,select repo check box and click on approve]
+wait=300
+waitUntilById=admin_link
+clickHrefByLinkText=Admin
+wait=500
+clickHrefByLinkText=Integrations
+wait=500
+waitUntilById=integrationRequests
+clickElementById=integrationRequests
+wait=500
+clickElementByName=selectedObjects
+wait=500
+waitUntilById=objectSelection_Approve
+clickElementById=objectSelection_Approve
+wait=500
+searchElementValueByTagName=Body=Repository created successfully.

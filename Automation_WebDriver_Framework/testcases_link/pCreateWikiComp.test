@@ -1,0 +1,23 @@
+name=Create Wiki Component for Public Project
+component=Project Home
+role=Admin Role
+artifact=NA
+wait=300
+waitUntilById=CreatePageComponentLink
+clickElementById=CreatePageComponentLink
+wait=300
+waitUntilById=title
+typeElementById=title=pWikiComponent
+wait=300
+selectButtonByValue=wiki
+wait=300
+selectButtonByValue=0
+wait=300
+selectButtonByValue=false
+wait=300
+typeElementById=wikiTopic=HomePage
+waitUntilById=component_html
+clickElementById=component_html
+wait=300
+searchElementValueByTagName=Body=PProject#NEXT#/#NEXT#Project Home  
+

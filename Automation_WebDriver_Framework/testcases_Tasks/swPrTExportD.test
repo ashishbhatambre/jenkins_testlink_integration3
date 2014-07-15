@@ -1,0 +1,17 @@
+name=Verify Task Export Functionality 
+component=Tasks
+role=Sitewide Role_Delete Permission
+artifact=NA
+clickHrefByLinkText=Export
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=addAll
+clickElementByID=addAll
+wait=300
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

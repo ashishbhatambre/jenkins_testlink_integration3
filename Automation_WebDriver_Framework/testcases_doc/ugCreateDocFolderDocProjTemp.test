@@ -1,0 +1,27 @@
+name=Create document folder in a project created based on project template for usergroup - >private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/myProjects
+wait=500
+clickHrefByLinkText=UG_Doc_Project
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=Test_Doc
+waitUntilById=createDocumentFolder_submit
+clickElementById=createDocumentFolder_submit
+wait=800
+searchElementValueByTagName=Body=Folder created successfully.
+wait=800
+runJavaScriptPopToMain=javascript:finishDocument()
+wait=800
+withoutPopCloseSwitchToMainWindow
+wait=800

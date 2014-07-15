@@ -1,0 +1,19 @@
+name=Login As EditOnly Role User newuser2
+component=Login
+role=NA
+aritfact=NA
+wait=300
+url=sf/sfmain/do/home
+typeElementByName=username=newuser2
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Invalid Login
+wait=300
+typeElementByName=username=newuser2
+typeElementByName=password=Collabnet2@
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page

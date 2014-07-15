@@ -1,0 +1,25 @@
+name=Document Asociation using Association Id String for public project with global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText=save_document
+wait=500
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+switchToPopupWindow
+wait=300
+waitUntilById=recentlyViewedIds
+selectOptionValueByIdIndex=recentlyViewedIds=3
+wait=1000
+runJavaScriptPopToMain=javascript:window.close()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+searchElementValueByTagName=Body=PubProject#NEXT#Documents#NEXT#$Document_Folder$#NEXT#Document Details 

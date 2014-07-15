@@ -1,0 +1,24 @@
+name=Create Document with Final State in public project
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgfolder
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_Final
+wait=300
+waitUntilById=description
+typeElementById=description=Doc_Final
+wait=300
+selectOptionValueByIdIndex=status=1
+wait=300
+typeValueForFileField=C:\Uploaded_Files\test.pdf
+wait=300
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=600
+searchElementValueByTagName=Body=Document created successfully.
+wait=300

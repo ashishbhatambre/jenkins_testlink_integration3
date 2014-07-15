@@ -1,0 +1,23 @@
+name=Searching the Document via Jump To ID->DocFolders ID
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1005
+wait=500
+runJavaScriptPopToMain=javascript:quickJump()
+wait=500
+waitUntilById=idsString
+typeElementById=idsString=docf1008
+wait=500
+runJavaScriptPopToMain=javascript:quickJump()
+wait=500
+searchElementValueByTagName=Body=Documents

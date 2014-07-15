@@ -1,0 +1,25 @@
+name=Search Root Folder,Child Folder,Sub Child Folder via Jump To Id in public project
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1043
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=ppgProject#NEXT#Documents
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1045
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=ppgProject#NEXT#Documents
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1046
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=ppgProject#NEXT#Documents
+wait=300

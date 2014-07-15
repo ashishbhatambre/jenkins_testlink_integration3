@@ -1,0 +1,18 @@
+name=Ability to cancel artifact update
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=200
+clickHrefByLinkText=Edit
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+searchElementValueByTagName=body=Private#NEXT#Trackers

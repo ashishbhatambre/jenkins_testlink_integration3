@@ -1,0 +1,13 @@
+name=Verifing Cancel in Creating Topic to Forum for public project
+component=Discussions
+role=Global Role
+artifact=NA
+wait=300
+clickHrefByLinkText=GroupDiscussion
+wait=300
+waitUntilById=listTopic_create
+clickElementById=listTopic_create
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Discussion#NEXT#GroupDiscussion#NEXT#Topic Summary 

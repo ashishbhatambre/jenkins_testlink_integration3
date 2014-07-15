@@ -1,0 +1,10 @@
+name=Reject the project with comment
+clickHrefByLinkText=Project_Task - This is Task project
+wait=300
+selectButtonByValue=reject
+waitUntilById=comment
+typeElementById=comment=Your project rejected
+waitUntilById=projectRequest_submit
+clickElementById=projectRequest_submit
+wait=300
+searchElementValueByTagName=Body=Rejected request to create project "Project_Task".

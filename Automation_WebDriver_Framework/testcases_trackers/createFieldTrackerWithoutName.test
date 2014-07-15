@@ -1,0 +1,23 @@
+name=Inability to create Field if Field Name is not provided
+component=Tracker Admin
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=TRACK123##$^#$%
+wait=200
+waitUntilById=admin
+clickElementById=admin
+wait=200
+clickHrefByLinkText=Add Field
+wait=200
+waitUntilById=fieldForm_Save
+clickElementById=fieldForm_Save
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Project Admin #NEXT#Tracker Settings #NEXT#TRACK123##$^#$% Administration 

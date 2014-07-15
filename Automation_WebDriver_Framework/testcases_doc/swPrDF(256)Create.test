@@ -1,0 +1,25 @@
+name=Create Document Folder(256 chars) as Child 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate/docman.root.document1
+wait=300
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+switchToPopupWindow
+wait=600
+waitUntilById=title
+typeElementById=title=DDDDForName.To attach more than one file in Attachments, click on the "Attach another file" options for the number of files which is need to attach. Then use this command and specify the file number along with the method to define the multiple attachments.
+wait=600
+waitUntilById=createDocumentFolder_submit
+clickElementById=createDocumentFolder_submit
+wait=300
+searchElementValueByTagName=Body=Folder created successfully.
+wait=300
+clickHrefByLinkText=Close
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Documents
+wait=300

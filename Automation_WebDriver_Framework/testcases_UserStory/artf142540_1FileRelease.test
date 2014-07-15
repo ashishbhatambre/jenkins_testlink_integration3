@@ -1,0 +1,16 @@
+name=Ability to Monitoring the File Releases folder for artifact artf142540
+component=FRS
+role=Global Role
+artifact=artf142540
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectReleases
+clickElementById=selectionMenuButton_MonitorMenu_selectReleases
+wait=500
+waitUntilById=monitor_current_folder
+clickElementById=monitor_current_folder
+wait=500
+searchElementValueByTagName=Body=FRS Package is now being monitored.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home

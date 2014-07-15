@@ -1,0 +1,26 @@
+name=Ability to cut and paste artifact from one planning folder to other in Public Project
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/public/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText= Plan1
+wait=4000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=selectArtifactsForm_Cut
+clickElementById=selectArtifactsForm_Cut
+wait=300
+searchElementValueByTagName=Body=1 artifact(s) cut to the clipboard.
+wait=300
+url=sf/planning/do/viewPlanningFolder/projects.public/planning.plan1.plan2
+wiat=300
+waitUntilById=selectArtifactsForm_Paste
+clickElementById=selectArtifactsForm_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=1 artifact(s) pasted from the clipboard.

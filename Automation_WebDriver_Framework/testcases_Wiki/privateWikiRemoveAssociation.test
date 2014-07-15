@@ -1,0 +1,17 @@
+name=Ability to remove Wiki Association in private project
+component=Wiki
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=associationListForm_remove
+clickElementById=associationListForm_remove
+wait=300
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=1 association(s) were deleted.

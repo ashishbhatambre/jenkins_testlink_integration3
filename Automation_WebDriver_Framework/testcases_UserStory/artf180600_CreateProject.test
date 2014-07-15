@@ -1,0 +1,17 @@
+name=ProjectInfopage should not remove the project name from the breadcrumbs when valid URL appended with javascript
+component=Project
+role=NA
+artifact=Tasks artf180600 TC - artf180599 [create Project LG Project]
+wait=300
+url=sf/sfmain/do/myProjects
+wait=300
+waitUntilById=createProject
+clickElementById=createProject
+waitUntilById=title
+typeElementById=title=LG Project
+waitUntilById=description
+typeElementById=description=Testing for tasks artf172681
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=300
+searchElementValueByTagName=Body=LG Project/ Project Home

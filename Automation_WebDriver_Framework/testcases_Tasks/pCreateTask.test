@@ -1,0 +1,46 @@
+name=Creating 2 task in EventTask1 folder
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=EventTask1
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=title
+typeElementById=title=ET1
+waitUntilById=description
+typeElementById=description=Event Task 1
+selectOptionValueByNameValue=priority=3 - Medium
+selectOptionValueByNameValue=status=OK
+typeElementByName=startDate=04/18/2013
+typeElementByName=endDate=05/22/2013
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=500
+waitUntilByName=title
+typeElementByName=title=ET2
+waitUntilByName=description
+typeElementByName=description=EventTask1
+selectOptionValueByNameValue=priority=4 - Low
+selectOptionValueByNameValue=status=OK
+typeElementByName=startDate=04/18/2013
+typeElementByName=endDate=05/22/2013
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.

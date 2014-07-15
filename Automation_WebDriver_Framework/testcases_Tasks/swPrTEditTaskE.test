@@ -1,0 +1,24 @@
+name=Edit Task 
+component=Tasks
+role=Sitewide Role_Edit Permission
+artifact=NA
+wait=300
+url=sf/projects/swprivate/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= SWA_TaskFolder
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+wait=500
+waitUntilById=comment
+typeElementById=comment=v2
+wait=500
+waitUntiById=editTask_Save
+clickElementById=editTask_Save
+wait=500
+searchElementValueByTagName=Body=Task updated successfully.

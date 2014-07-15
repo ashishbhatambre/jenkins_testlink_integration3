@@ -1,0 +1,24 @@
+name=Create Child Document Folder in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+wait=500
+typeElementById=title=DDDDForName.To attach more than one file in Attachments, click on the "Attach another file" options for the number of files which is need to attach. Then use this command and specify the file number along with the method to define the multiple attachments.
+wait=300
+waitUntilById=createDocumentFolder_submit
+clickElementById=createDocumentFolder_submit
+wait=1000
+searchElementValueByTagName=Body=Folder created successfully.
+wait=1000
+runJavaScriptPopToMain=javascript:finishDocument()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+

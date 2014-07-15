@@ -1,0 +1,24 @@
+name=Remove File Association in file releases for public project
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=123Package_Notes
+wait=500
+clickHrefByLinkText=Notes
+wait=500
+waitUntilById=associations
+clickElementById=associations
+wait=500
+selectCheckBoxFromList=_listItem=0
+wait=500
+waitUntilById=associationListForm_remove
+clickHrefByLinkText=Remove
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=1 association(s) were deleted.

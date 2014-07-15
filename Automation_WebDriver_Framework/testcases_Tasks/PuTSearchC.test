@@ -1,0 +1,19 @@
+name=Search Task by task name
+component=Tasks 
+role=Direct Role_Create Permission
+artifact=NA
+wait=300
+waitUntilById=searchText
+typeElementById=searchText=TA1
+wait=300
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Tasks
+wait=300
+waitUntilById=searchCriteriaToggle
+clickElementById=searchCriteriaToggle
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Tasks

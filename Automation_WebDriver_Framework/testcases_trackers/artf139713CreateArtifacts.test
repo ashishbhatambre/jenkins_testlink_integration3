@@ -1,0 +1,30 @@
+name=Creating artifact for the artf139713->with pending artifact
+component=Tracker
+role=Global Role
+artifact=artf139713
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder3
+wait=4000
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+wait=500
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen2
+wait=300
+waitUntilById=title
+typeElementById=title=artifact8
+waitUntilById=description
+typeElementById=description=artifact for the tracker
+waitUntilByName=status
+selectOptionValueByNameValue=status=Pending
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=None
+wait=500
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=500
+searchElementValueByTagName=Body=Artifact submitted successfully.

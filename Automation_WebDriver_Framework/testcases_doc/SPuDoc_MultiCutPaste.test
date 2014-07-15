@@ -1,0 +1,24 @@
+name=Cut & Paste Multiple documents in inherited public project
+component=Documents
+role=DirectRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.public_sub/docman.root.folder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=selectDocuments_Cut
+clickElementById=selectDocuments_Cut
+wait=300
+searchElementValueByTagName=Body=2 document(s) copied to clipboard.
+wait=300
+url=sf/docman/do/listDocuments/projects.public_sub/docman.root.folder.ddddforname_to_attach_more_than
+wait=300
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=2 document(s) pasted.

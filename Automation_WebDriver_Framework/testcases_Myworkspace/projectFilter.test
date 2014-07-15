@@ -1,0 +1,20 @@
+name=Project Filter by Title
+component=Project
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/myProjects?selectedTab=all
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=pProject
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=500
+searchElementValueByTagName=Body=My#NEXT#Workspace
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=500
+searchElementValueByTagName=Body=My#NEXT#Workspace

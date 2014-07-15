@@ -1,0 +1,24 @@
+name=Ability to modify users field in Tracker settings
+component=Trackers
+role=Global Role
+artifact= TC-artf174716
+wait=300
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=TRACK123##$^#$%
+wait=200
+clickHrefByLinkText=UsersField
+wait=200
+waitUntilById=fieldname
+typeElementById=fieldname=Owners
+wait=200
+waitUntilById=fieldForm_save
+clickElementById=fieldForm_save
+wait=200
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Field data updated successfully.

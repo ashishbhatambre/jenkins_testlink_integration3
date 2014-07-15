@@ -1,0 +1,29 @@
+name=Renaming the Document Child Folder for project group-> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= *123Doc
+wait=500
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_new
+clickHrefByLinkText=Rename
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=*3456DOCS
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=600
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=600
+runJavaScriptPopToMain=javascript:finishFolderRename()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600

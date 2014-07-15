@@ -1,0 +1,27 @@
+name=Ability to Add "Section Seperator Field" without Name in Tracker settings
+component=Project Admin
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=NewTracker
+wait=200
+waitUntilById=selectionMenuButton_separatorMenu
+clickElementByCssSelector=DropDownRight=1
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilByName=separatorLabel
+typeElementByName=separatorLabel=Test
+wait=200
+waitUntilById=separatorPopup_create
+clickElementById=separatorPopup_create
+wait=200
+withoutPopCloseSwitchToMainWindow
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Field data updated successfully.

@@ -1,0 +1,53 @@
+name=Ability to Add Fields in Tracker settings via Multiple select
+component=Project Admin
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=TRACK123##$^#$%
+wait=200
+waitUntilById=admin
+clickElementById=admin
+wait=200
+clickHrefByLinkText=Add Field
+wait=200
+waitUntilById=fieldname
+typeElementById=fieldname=Favorate
+waitUntilById=selectedDisplayType
+selectOptionValueByIdValue=selectedDisplayType=Multiple Select (Specify Field Values)
+waitUntilById=isRequiredCheckbox
+clickElementById=isRequiredCheckbox
+waitUntilById=helpText
+typeElementById=helpText=Select multiple values for the field
+wait=200
+runJavaScriptPopToMain=JavaScript:{addNewRow();changeParentDisplay();changeDefaultColumnDisplay()}
+wait=200
+waitUntilById=value_dmmy0
+typeElementById=value_dmmy0=Chocolate
+wait=200
+runJavaScriptPopToMain=JavaScript:{addNewRow();changeParentDisplay();changeDefaultColumnDisplay()}
+waitUntilById=value_dmmy1
+typeElementById=value_dmmy1=Biscuts
+wait=200
+runJavaScriptPopToMain=JavaScript:{addNewRow();changeParentDisplay();changeDefaultColumnDisplay()}
+waitUntilById=value_dmmy2
+typeElementById=value_dmmy2=Cakes
+wait=200
+runJavaScriptPopToMain=JavaScript:{addNewRow();changeParentDisplay();changeDefaultColumnDisplay()}
+waitUntilById=value_dmmy3
+typeElementById=value_dmmy3=IceCreams
+wait=200
+waitUntilById=defaultValue_dmmy0
+clickElementById=defaultValue_dmmy0
+wait=200
+waitUntilById=fieldForm_Save
+clickElementById=fieldForm_Save
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=Field created successfully.

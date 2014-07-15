@@ -1,0 +1,22 @@
+name=Ability to filter the artifact with Artifact Name as user with create only permission
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=200
+waitUntilByName=_filter!!contains!!title
+typeElementByName=_filter!!contains!!title=artifactNew
+wait=200
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=200
+searchElementValueByTagName=Body=artifactNew
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

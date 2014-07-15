@@ -1,0 +1,20 @@
+name=Ability to create Link Page in wiki
+component=Wiki
+role=Global Role
+artifact=NA
+wait=400
+clickHrefByLinkText=Project which is under Testing.
+wait=400
+waitUntilById=editorPrefSelect
+selectOptionValueByIdValue=editorPrefSelect=Plain Editor
+wait=400
+waitUntilById=editorarea
+typeElementById=editorarea=!!! %%( text-align: right; )%%( background-color: rgb(204, 255, 255); )%%( color: rgb(128, 0, 0); )%%( font-size: larger; )''__This is new page created inside the Project Link.__''%%%%%%%%
+wait=400
+waitUntilById=editorPrefSelect
+selectOptionValueByIdValue=editorPrefSelect=WYSIWYG Editor
+wait=400
+waitUntilById=create_wiki_page.save
+clickElementById=create_wiki_page.save
+wait=400
+searchElementValueByTagName=Body=Wiki Page created successfully.

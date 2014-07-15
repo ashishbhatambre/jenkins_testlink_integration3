@@ -1,0 +1,17 @@
+name=Creating 2nd Package To File Releases for Public Project
+component=FRS
+role=Global Role
+artifact=NA
+wait=200
+clickHrefByLinkText=Create
+wait=200
+waitUntilById=title
+typeElementById=title=Package@
+waitUntilByName=description
+typeElementByName=description=Package used for files in the NewProject
+waitUntilById=isPublished
+clickElementById=isPublished
+waitUntilById=createPackage_submit
+clickElementById=createPackage_submit
+wait=200
+searchElementValueByTagName=Body=Package created successfully.

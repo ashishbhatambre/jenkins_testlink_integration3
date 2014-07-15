@@ -1,0 +1,9 @@
+name=Login As Admin with wrong password
+component=login
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=admin
+typeElementByName=password=Collabnet1*
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Invalid Login 

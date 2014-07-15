@@ -1,0 +1,16 @@
+name=Copy Task 
+component=Tasks
+role=Sitewide Role_Edit Permission
+artifact=NA
+url=sf/projects/swprivate/
+wait=400
+clickHrefByLinkText=Tasks
+wait=800
+clickHrefByLinkText= SWA_TaskFolder
+wait=500
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=listTasksSelect_Copy
+clickElementById=listTasksSelect_Copy
+wait=900
+searchElementValueByTagName=Body=1 task(s) copied to clipboard.

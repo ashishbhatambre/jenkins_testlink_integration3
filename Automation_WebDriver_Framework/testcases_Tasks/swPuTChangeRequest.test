@@ -1,0 +1,8 @@
+name=Ability to view Task Change Request in public project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=300
+clickElementById=changerequest
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

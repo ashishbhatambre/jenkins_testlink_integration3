@@ -1,0 +1,22 @@
+name=Ability to create user 
+component=Users
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/listUsersAdmin
+wait=500
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilByName=username
+typeElementByName=username=swuser5
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=swuser5_EditPermission	
+typeElementByName=email=swuser5@collab.net
+typeElementByName=companyName=CSPL
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=500
+searchElementValueByTagName=Body=User #NEXT#swuser5#NEXT# has been created successfully.

@@ -1,0 +1,18 @@
+name=Monitor and Stop Monitor a document via Details Page in public project
+component=Documents
+role=Project Group Role
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder
+wait=300
+selectCheckBoxFromList=_listItem=2
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+clickHrefByLinkText=Stop Monitoring
+wait=600
+searchElementValueByTagName=Body=Document is no longer monitored.
+wait=300
+clickHrefByLinkText=Monitor
+wait=600
+searchElementValueByTagName=Body=Document is now being monitored.

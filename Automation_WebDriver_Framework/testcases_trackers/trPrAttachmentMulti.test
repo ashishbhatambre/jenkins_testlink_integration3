@@ -1,0 +1,37 @@
+name=Ability to add Multiple Attachments to a artifact
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=1000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=attachments
+clickElementById=attachments
+waitUntilById=_SfButton_AddAttachment
+clickHrefByLinkText=Add Attachments
+switchToPopupWindow
+wait=200
+clickHrefByLinkText=Attach another file
+wait=200
+typeFileFieldValueForName=file[1]=C:\Uploaded_Files\Test.rtf
+wait=200
+typeFileFieldValueForName=file[2]=C:\Uploaded_Files\test.pdf
+wait=200
+waitUntilById=addAttachment_submit
+runJavaScriptPopToMain=javascript:submitForm(document.addAttachment, 'submit')
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=Private

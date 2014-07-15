@@ -1,0 +1,12 @@
+name=Inability to the Task without search criteria in private project as site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Search Tasks
+wait=500
+clickElementById=searchTasks_Search
+wait=500
+searchElementValueByTagName=Body=You have not entered any search criteria.

@@ -1,0 +1,26 @@
+name=Creating Task with Alert Status and priority 3 in child Folder
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= C_Task
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=TaskWithAlert
+waitUntilById=description
+typeElementById=description=Task Created with Alert Status
+waitUntilById=priority
+selectOptionValueByNameValue=priority=3 - Medium
+waitUntilById=status
+selectOptionValueByNameValue=status=Alert
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.

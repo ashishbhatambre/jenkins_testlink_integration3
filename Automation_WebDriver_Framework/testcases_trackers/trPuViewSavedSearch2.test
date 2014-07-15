@@ -1,0 +1,13 @@
+name=Show "Shared Tracker Searches"
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+waitUntilById=searchTracker
+clickElementById=searchTracker
+wait=200
+clickElementById=mySearchesToggle
+wait=200
+searchElementValueByTagName=body=My Search1

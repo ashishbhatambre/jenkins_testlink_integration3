@@ -1,0 +1,10 @@
+name=Ability to view Wiki Page in PDF Format in private project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+url=sf/wiki/do/viewPage/projects.swprivate/wiki/HomePage
+wait=300
+waitUntilById=view_wiki_page.viewpdf
+clickElementById=view_wiki_page.viewpdf
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Wiki

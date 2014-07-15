@@ -1,0 +1,15 @@
+name=Reject Project Membership by FPA
+component=My Workspace
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/userMembership/projects.pproject
+wait=300
+waitUntilById=pendingMembers
+clickElementById=pendingMembers
+wait=600
+selectCheckBoxFromList=_listItem=0
+waitUntilById=processAddRequest_Reject
+clickElementById=processAddRequest_Reject
+wait=500
+searchElementValueByTagName=Body=Add project membership request from #NEXT#tuser2#NEXT#has been rejected

@@ -1,0 +1,26 @@
+name=Ability to create Global role
+component=Roles
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Roles
+wait=500
+waitUntilById=globalRoles
+clickElementById=globalRoles
+wait=500
+waitUntilById=listSiteRoles_create
+clickElementById=listSiteRoles_create
+wait=500
+waitUntilById=title
+typeElementById=title=GlobalPerRole
+waitUntilById=description
+typeElementById=description=Role created Globally.
+waitUntilById=requestable
+clickElementById=requestable
+wait=500
+waitUntilById=createSiteWideRoleForm_submit
+clickElementById=createSiteWideRoleForm_submit
+wait=500
+searchElementValueByTagName=Body=Global Project Role created successfully.
+wait=500

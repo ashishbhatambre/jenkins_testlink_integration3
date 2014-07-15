@@ -1,0 +1,5 @@
+name=Verify Documents link 
+wait=300
+url=sf/docman/do/listDocuments/projects.pproject/docman.root
+wait=300
+searchElementValueByTagName=Body=PProject#NEXT#Documents

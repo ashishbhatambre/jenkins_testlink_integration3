@@ -1,0 +1,31 @@
+name=Rename Subchild Document Folder in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic/docman.root.document1.sw_pu_subchilddf
+wait=300
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_new
+clickHrefByLinkText=Rename
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=SW_Pu_SubChildDF
+wait=300
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=300
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=300
+runJavaScriptPopToMain=javascript:finishFolderRename()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300

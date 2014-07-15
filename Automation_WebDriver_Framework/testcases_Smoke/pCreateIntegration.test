@@ -1,0 +1,19 @@
+name=Ability to create CVS Pserver integration
+component=Integrations
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Integrations
+wait=500
+clickHrefByLinkText=Create
+waitUntilById=type
+selectOptionValueByIdValue=type=CVS Pserver
+wait=500
+typeElementById=title=Server2
+typeElementById=description=Integration to CVS Pserver
+waitUntilById=system_submit
+clickElementById=system_submit
+wait=500
+searchElementValueByTagName=Body=The SCM server was added successfully.
+wait=500

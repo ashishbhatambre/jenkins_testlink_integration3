@@ -1,0 +1,16 @@
+name=Ability to change Approval parameter in Task in private project
+component=Tasks
+role=Sitewide_Admin Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/adminGeneralSettings/projects.swprivate/taskmgr
+wait=300
+waitUntilById=change_approval
+clickElementById=change_approval
+waitUntilById=priority
+clickElementById=priority
+wait=300
+waitUntilById=adminChangeApproval_submit
+clickElementById=adminChangeApproval_submit
+wait=500
+searchElementValueByTagName=Body=Change approval fields have been updated successfully.

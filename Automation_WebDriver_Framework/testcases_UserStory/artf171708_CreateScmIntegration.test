@@ -1,0 +1,22 @@
+name=Verify that ability to approve SCM Adapter Repository Access request as SCM Integration Permission user when requires approval is enabled in Integration
+component=Integration
+role=NA
+artifact= Tasks artf171712 TC - artf171708  [Go to Admin > Integrations,Create SCM Adapter Integration with requires approval enabled]
+wait=300
+waitUntilById=admin_link
+clickHrefByLinkText=Admin
+wait=500
+clickHrefByLinkText=Integrations
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=type
+selectOptionValueByIdValue=type=SCM Adapter
+typeElementById=title=scm
+typeElementById=description=Integration to SCM Adapter
+waitUntilById=RequireApproval
+clickElementById=RequireApproval
+waitUntilById=system_submit
+clickElementById=system_submit
+wait=300
+searchElementValueByTagName=Body=The SCM server was added successfully.

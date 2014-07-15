@@ -1,0 +1,27 @@
+name=cut and paste the document folder into another document folder 
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private/docman.root.document1.ddddforname_to_attach_more_than.pr_subchilddf
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_cut
+clickHrefByLinkText=Cut
+wait=300
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body= Folder cut successfully.
+wait=500
+url=sf/docman/do/listDocuments/projects.private/docman.root.private_document
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_paste
+clickHrefByLinkText=Paste
+wait=300
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Folder pasted successfully.
+
+

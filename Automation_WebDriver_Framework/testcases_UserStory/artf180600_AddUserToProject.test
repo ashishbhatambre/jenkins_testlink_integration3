@@ -1,0 +1,17 @@
+name=ProjectInfopage should not remove the project name from the breadcrumbs when valid URL appended with javascript
+component=Project Admin
+role=NA
+artifact=Tasks artf180600 TC - artf180599 [Assign users to Project]
+url=sf/projects/lg_project/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=User Membership
+wait=500
+clickHrefByLinkText=Add
+wait=500
+selectButtonByValue=usr1
+waitUntilById=addUser_finish
+clickElementById=addUser_finish
+wait=300
+searchElementValueByTagName=Body=User(s) added to the project: usr1 (usr1) .

@@ -1,0 +1,17 @@
+name=Ability to creating the tracker in private project
+component=Tracker Admin
+role=Global Role
+artifact=NA
+wait=200
+clickHrefByLinkText=Create
+wait=200
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=Tracker1
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=New Tracker for the project New Project
+wait=200
+selectButtonByValue=icon_45.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+wait=200
+searchElementValueByTagName=Body=Tracker created successfully.

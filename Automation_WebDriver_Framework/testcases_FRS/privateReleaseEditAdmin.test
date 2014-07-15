@@ -1,0 +1,24 @@
+name=Ability to edit Release Info as user with admin role in private project
+component=FRS
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/frs/do/listReleases/projects.private/frs.package1
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectReleases_Edit
+clickElementById=selectReleases_Edit
+wait=300
+waitUntilById=title
+typeElementById=title=Private_Release
+waitUntilById=description
+typeElementById=description=Release created under Private_Package
+wait=300
+selectOptionValueByIdIndex=maturity=6
+wait=300
+waitUntilById=editRelease_submit
+clickElementById=editRelease_submit
+wait=300
+searchElementValueByTagName=Body=Release edited successfully.

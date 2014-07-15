@@ -1,0 +1,22 @@
+name=Ability to create user
+component=Users
+role=Admin
+artifact=NA
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Users
+wait=300
+clickHrefByLinkText=Single
+wait=4000
+custom=qa-name=username=type=user1
+custom=qa-name=password=type=Collabnet1!
+custom=qa-name=confirmPassword=type=Collabnet1!
+custom=qa-name=fullName=type=user1_adminPermission
+custom=qa-name=email=type=user1@collab.net
+custom=qa-name=organization=type=cspl
+custom=qa-name=licenseType=select=ALM
+custom=qa-name=restrictedUser=checkboxclick=1
+clickSpanElementByCssSelector=widgets-btn-grouped ng-scope
+wait=500
+searchElementValueByTagName=Body=The user "user1" was successfully created.

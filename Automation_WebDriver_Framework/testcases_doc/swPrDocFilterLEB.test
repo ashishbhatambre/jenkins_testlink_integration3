@@ -1,0 +1,19 @@
+name=Filter Document by "Last Edited By" in root folder 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate/docman.root.document1
+wait=300
+selectOptionValueByIdIndex=_filter!!string!!lastModifiedBy=1
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+

@@ -1,0 +1,17 @@
+name=Ability to modify the user Status from Active to pending.
+component=Users
+role=NA
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Users
+wait=4000
+clickElementByCssSelector=ng-scope
+wait=300
+custom=data-ng-change=checkboxChange(element, row, 0)=checkboxclick=5
+wait=300
+custom=data-ng-change=checkboxChange(element, row, 0)=checkboxclick=1
+wait=300
+searchElementByTagName=Body=Users

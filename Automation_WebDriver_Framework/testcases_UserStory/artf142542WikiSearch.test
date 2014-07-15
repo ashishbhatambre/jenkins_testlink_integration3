@@ -1,0 +1,22 @@
+name=Better Search Artifact for Wiki [jump to id- adcance search]-> artf142542
+wait=300
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+waitUntilByName=Wiki
+clickElementByName=Wiki
+waitUntilById=idsString
+typeElementById=idsString=wiki1007
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=300
+clickHrefByLinkText=Advanced Search
+waitUntilByName=term
+typeElementByName=term=wiki
+waitUntilById=applications
+selectOptionValueByIdValue=applications=Wiki
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+wait=300
+searchElementValueByTagName=Body=Search

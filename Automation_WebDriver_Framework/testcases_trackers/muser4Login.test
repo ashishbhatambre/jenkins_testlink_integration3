@@ -1,0 +1,13 @@
+name=Ability to login as restricted user
+component=Login
+role=NA
+artifact=NA
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=tmuser4
+waitUntilById=pwd
+typeElementById=pwd=Collabnet2@
+wait=200
+clickHrefByLinkText=Log In
+wait=200
+searchElementValueByTagName=Body=My#NEXT#Workspace

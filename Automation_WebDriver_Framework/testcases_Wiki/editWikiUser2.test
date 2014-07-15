@@ -1,0 +1,27 @@
+name=Ability to edit the Wiki Link Page as restricted user
+component=Wiki
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=400
+clickHrefByLinkText=Wiki
+wait=300
+clickHrefByLinkText=Project which is under Testing.
+wait=300
+waitUntilById=view_wiki_page.edit
+clickElementById=view_wiki_page.edit
+wait=300
+waitUntilById=editorPrefSelect
+selectOptionValueByIdValue=editorPrefSelect=Plain Editor
+wait=300
+waitUntilById=editorarea
+typeElementById=editorarea=%%( color: rgb(255, 255, 153); )%%( background-color: rgb(153, 51, 0); )%%( font-size: larger; )%%( font-family: georgia; )__Hai Hello,__%%%%%%%% !!! %%( font-size: larger; )%%( text-align: right; )''This is the %%( background-color: rgb(255, 204, 0); )Wiki Page%% created for the%%( color: rgb(255, 102, 0); ) %%( color: rgb(153, 51, 102); )%%( text-decoration: underline; )Project %%which is under Testing.%%%%%%%%''%%%%
+wait=300
+waitUntilById=editorPrefSelect
+selectOptionValueByIdValue=editorPrefSelect=WYSIWYG Editor
+wait=300
+waitUntilById=edit_wiki_page.update
+clickElementById=edit_wiki_page.update
+wait=300
+searchElementValueByTagName=Body=Wiki Page updated.

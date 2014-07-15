@@ -1,0 +1,37 @@
+name=Edit the task by setting Task Progress
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= C_Task
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+wait=300
+waitUntilById=editTask_Cancel
+clickElementById=editTask_Cancel
+wait=300
+waitUntilById=status
+clickElementById=status
+wait=300
+waitUntilById=taskstatus
+selectOptionValueByIdValue=taskstatus=Warning
+wait=300
+waitUntilById=accomplished
+typeElementById=accomplished=Task changed to Warning state
+waitUntilById=planned
+typeElementById=planned=Planned for Child Task C_Task
+waitUntilById=issues
+typeElementById=issues=No more Issues yet
+wait=500
+waitUntilById=viewTask_Save
+clickElementById=viewTask_Save
+wait=500
+searchElementValueByTagName=Body=Task updated successfully.

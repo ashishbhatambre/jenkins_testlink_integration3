@@ -1,0 +1,27 @@
+name=Add users to Users Monitoring folder list in document folder by Show all option for private child project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=500
+clickHrefByLinkText=Users Monitoring Folder
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+waitUntilById=userPicker_showAll
+clickElementById=userPicker_showAll
+wait=800
+searchElementValueByTagName=Body=yy_admin_per
+wait=800
+runJavaScriptPopToMain=javascript: window.close()
+wait=800
+withoutPopCloseSwitchToMainWindow
+wait=800

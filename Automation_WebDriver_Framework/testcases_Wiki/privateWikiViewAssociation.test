@@ -1,0 +1,9 @@
+name=Ability to view the association of a Wiki in private project
+component=Wiki
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Wiki

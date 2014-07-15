@@ -1,0 +1,19 @@
+name=Verify Monitoring Functonality_No Longer Monitored
+component=Tasks 
+role=Direct Role_View Permission
+artifact=NA
+url=sf/projects/public/
+wait=300
+clickHrefByLinkText=Tasks
+wait=900
+clickHrefByLinkText= PUA_TaskFolder
+wait=500
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+waitUntilById=listTasksSelect_Monitor
+clickElementById=listTasksSelect_Monitor
+wait=700
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.

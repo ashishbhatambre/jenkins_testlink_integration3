@@ -1,0 +1,8 @@
+name=Ability to logout from TF
+component=Logout
+role=NA
+artifact=NA
+wait=200
+url=sf/sfmain/do/logout
+wait=200
+searchElementValueByTagName=Body=Home

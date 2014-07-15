@@ -1,0 +1,16 @@
+name=Ability to search Wikipage via Jump to id after navigating to a Wiki
+component=Wiki
+role=Global Role
+artifact=artf165997
+wait=300
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=400
+clickElementByName=Wiki
+wait=400
+waitUntilById=idsString
+typeElementById=idsString=wiki1021
+wait=400
+runJavaScriptPopToMain=javascript:quickJump()
+wait=400
+searchElementValueByTagName=Body=(1 Item)

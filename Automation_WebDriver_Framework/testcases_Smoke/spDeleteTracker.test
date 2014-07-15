@@ -1,0 +1,17 @@
+name=Ability to delete tracker in public project as site admin
+component=Tracker
+wait=300
+url=sf/projects/ft_pub_project/
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+clickHrefByLinkText=Tracker Settings
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=3
+waitUntilById=selectTrackers_delete
+clickHrefByLinkText=Delete
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Tracker deleted successfully.

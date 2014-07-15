@@ -1,0 +1,47 @@
+name=Ability to set DeleteOnly and ViewOnly role to the user
+component=Roles
+wait=300
+url=sf/rbac/do/permissionAdmin/projects.newproject
+wait=500
+clickHrefByLinkText=DeleteOnlyRole
+wait=500
+waitUntilById=members
+clickElementById=members
+waitUntilById=_userPickerDiv
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=newuser3_DeleteOnlyPermission
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=newuser3 was added to the role.
+wait=300
+waitUntilById=listRoles_create
+clickElementById=listRoles_create
+wait=500
+clickHrefByLinkText=ViewOnlyRole
+wait=500
+waitUntilById=members
+clickElementById=members
+waitUntilById=_userPickerDiv
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=tester2_normalPermission
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=tester2 was added to the role.
+wait=300

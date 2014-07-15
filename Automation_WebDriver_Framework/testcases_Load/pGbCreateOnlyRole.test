@@ -1,0 +1,55 @@
+name=Ability to creating Global Roles with CreateOnly Permissions
+component=Roles
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/listRolesAdmin
+wait=300
+waitUntilById=globalRoles
+clickElementById=globalRoles
+wait=300
+waitUntilById=listSiteRoles_create
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=CreateOnlyRole
+waitUntilById=description
+typeElementById=description=Role with CreateOnly Permission
+waitUntilById=blockRecurse
+clickElementById=blockRecurse
+waitUntilById=requestable
+clickElementById=requestable
+waitUntilById=createSiteWideRoleForm_submit
+clickElementById=createSiteWideRoleForm_submit
+wait=500
+searchElementValueByTagName=Body=Global Project Role created successfully.
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+waitUntilById=trackerCreateWildcard
+clickElementById=trackerCreateWildcard
+clickHrefByLinkText=Tasks
+waitUntilById=taskmgrCreateWildcard
+clickElementById=taskmgrCreateWildcard
+clickHrefByLinkText=Source Code
+waitUntilById=scmCommitWildcard
+clickElementById=scmCommitWildcard
+clickHrefByLinkText=File Releases
+waitUntilById=frsCreateWildcard
+clickElementById=frsCreateWildcard
+clickHrefByLinkText=Documents
+waitUntilById=docmanCreateWildcard
+clickElementById=docmanCreateWildcard
+clickHrefByLinkText=Wiki
+waitUntilById=wikiCreateWildcard
+clickElementById=wikiCreateWildcard
+clickHrefByLinkText=Discussions
+waitUntilById=discussionPostWildcard
+clickElementById=discussionPostWildcard
+waitUntilById=discussionPrivatePostWildcard
+clickElementById=discussionPrivatePostWildcard
+wait=500
+waitUntilById=editRole_Edit
+clickElementById=editRole_Edit
+wait=500
+searchElementValueByTagName=Body=Global Project Role updated successfully.

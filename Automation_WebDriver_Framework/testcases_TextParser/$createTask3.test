@@ -1,0 +1,21 @@
+name=TaskCreation with $letter$letter
+component=Tasks
+role=NA
+artifact=NA
+wait=200
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+clickHrefByLinkText= $task$details
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+waitUntilById=title
+typeElementById=title=$task$test
+waitUntilById=description
+typeElementById=description=${<task created></event>}
+selectOptionValueByNameValue=priority=3 - Medium
+selectOptionValueByNameValue=status=OK
+clickHrefByLinkText=Save
+wait=300
+searchElementValueByTagName=Body=Task created successfully.

@@ -1,0 +1,36 @@
+name=Artifact story on Returning to Planning Folder after verifying history and association
+component=Tracker
+role=Global Role
+artifact=artf139106
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Tracker1
+wait=300
+selectCheckBoxFromList=_listItem=2
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=associations
+clickElementById=associations
+wait=300
+clickHrefByLinkText=Return
+wait=300
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Tracker1#NEXT#List Artifacts
+wait=300
+clickHrefByLinkText= Folder_Renamed
+wait=1000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=300
+waitUntilById=history
+clickElementById=history
+wait=300
+clickHrefByLinkText=Return
+wait=300
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Tracker1#NEXT#List Artifacts
+wait=300

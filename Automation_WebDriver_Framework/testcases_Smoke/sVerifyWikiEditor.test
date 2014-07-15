@@ -1,0 +1,17 @@
+name=Ability to set the editor options in the Wiki Editor in private project as site admin user
+component=Wiki
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Wiki
+wait=300
+waitUntilById=view_wiki_page.edit
+clickElementById=view_wiki_page.edit
+wait=300
+waitUntilById=editorPrefSelect
+selectOptionValueByIdValue=editorPrefSelect=Plain Editor
+wait=300
+waitUntilById=editorPrefSelect
+selectOptionValueByIdValue=editorPrefSelect=WYSIWYG Editor
+wait=300
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Wiki#NEXT# HomePage#NEXT#Edit Wiki Page 

@@ -1,0 +1,29 @@
+name=Ability to cancel the create attachment to the artifact
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/tracker/do/listTrackers/projects.private/tracker
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=attachments
+clickElementById=attachments
+waitUntilById=_SfButton_AddAttachment
+clickHrefByLinkText=Add Attachments
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=comment
+typeElementById=comment=Test case
+wait=200
+typeValueForFileField=C:\Uploaded_Files\link.txt
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=Private

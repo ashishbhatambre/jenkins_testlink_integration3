@@ -1,0 +1,56 @@
+name=Project admin role creation for Public Project
+wait=300
+url=sf/rbac/do/createRole/projects.pproject
+wait=300
+typeElementById=title=pProject_AdminRole
+typeElementById=description=Roles for this project
+wait=300
+clickElementById=requestable
+wait=300
+clickElementById=createRole_submit
+wait=300
+searchElementValueByTagName=Body=Role created successfully.
+waitUntilById=project_admin_menu
+runJavaScriptPopToMain=javascript:showSection('project_admin')
+clickElementById=projectAdminWildcard
+waitUntilById=page_menu
+runJavaScriptPopToMain=javascript:showSection('page')
+wait=300
+clickElementById=pageAdminWildcard
+waitUntilById=tracker_menu
+runJavaScriptPopToMain=javascript:showSection('tracker')
+wait=300
+clickElementById=trackerAdminWildcard
+waitUntilById=planning_menu
+runJavaScriptPopToMain=javascript:showSection('planning')
+wait=300
+clickElementById=planningAdminWildcard
+waitUntilById=taskmgr_menu
+runJavaScriptPopToMain=javascript:showSection('taskmgr')
+wait=300
+clickElementById=taskmgrAdminWildcard
+waitUntilById=scm_menu
+runJavaScriptPopToMain=javascript:showSection('scm')
+wait=300
+clickElementById=scmAdminWildcard
+waitUntilById=frs_menu
+runJavaScriptPopToMain=javascript:showSection('frs')
+wait=300
+clickElementById=frsAdminWildcard
+waitUntilById=docman_menu
+runJavaScriptPopToMain=javascript:showSection('docman')
+wait=300
+clickElementById=docmanAdminWildcard
+waitUntilById=wiki_menu
+runJavaScriptPopToMain=javascript:showSection('wiki')
+wait=300
+clickElementById=wikiAdminWildcard
+waitUntilById=discussion_menu
+runJavaScriptPopToMain=javascript:showSection('discussion')
+wait=300
+clickElementById=discussionAdminWildcard
+waitUntilById=editRole_Edit
+clickElementById=editRole_Edit
+wait=400
+searchElementValueByTagName=Body=Role updated successfully.
+

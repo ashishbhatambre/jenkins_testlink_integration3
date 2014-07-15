@@ -1,0 +1,13 @@
+name=Verify that only top level open and closed artifact count is displayed when 'Closed artifact' icon is clicked
+component=Tracker
+role=Global Role
+artifact=(UserStory - artf145097) artf159315
+clickHrefByLinkText=Trackers
+wait=300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=PlanFolder3
+wait=400
+clickElementByName=includeClosed
+wait=400
+searchElementValueByTagName=Body=2 Cards

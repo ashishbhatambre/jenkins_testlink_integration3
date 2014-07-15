@@ -1,0 +1,27 @@
+name=Ability to update artifacts by updating PlanFor field
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+selectCheckBoxFromList=_listItem=2
+wait=200
+wiatUntilById=_SfButton_PlanFor
+clickHrefByLinkText=Plan For
+wait=200
+switchToPopupWindow
+wait=200
+clickHrefByLinkText= Plan_Folder2
+wait=500
+runJavaScriptPopToMain=javascript:setArtifacts()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=2 artifact(s) and children, if any, have been moved to planning folder Folder_Renamed.

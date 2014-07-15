@@ -1,0 +1,16 @@
+name=Ability to preview Changes and Cancel preview in private project
+component=Wiki
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/wiki/do/viewPage/projects.private/wiki/HomePage
+wait=300
+waitUntilById=view_wiki_page.edit
+clickElementById=view_wiki_page.edit
+wait=300
+waitUntilById=edit_wiki_page.preview
+clickElementById=edit_wiki_page.preview
+wait=300
+waitUntilById=edit_wiki_page.cancel
+clickElementById=edit_wiki_page.cancel
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Wiki

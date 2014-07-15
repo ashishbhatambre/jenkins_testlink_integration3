@@ -1,0 +1,26 @@
+name=Verify that Subprojects are displayed to the user when Prevent Inheritance is unchecked in project role
+component=Users
+role=NA
+artifact= Tasks - artf180125 TC - artf180119 [Goto 'Project1' > Project Admin > Permissions, edit a Project Role as 'PR1' with 'Project Admin Permissions'(uncheck
+ the Prevent Inheritance)
+url=sf/projects/project1/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Permissions
+wait=300
+waitUntilById=displayList
+selectOptionValueByIdValue=displayList=Roles created for this project
+wait=300
+clickHrefByLinkText=PR1
+wait=300
+waitUntilById=edit_button
+clickElementById=edit_button
+wait=300
+waitUntilById=blockRecurse
+clickElementById=blockRecurse
+wait=500
+waitUntilById=editRoleInformationForm_submit
+clickElementById=editRoleInformationForm_submit
+wait=500
+searchElementValueByTagName=Body=Role updated successfully.

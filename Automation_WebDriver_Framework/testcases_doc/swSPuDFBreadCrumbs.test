@@ -1,0 +1,17 @@
+name=Locate Doc.Folder(Root-Child-Sub Child) via BreadCrumbs link in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root.folder.ddddforname_to_attach_more_than.scfolder
+wait=300
+clickHrefByLinkText=SubChildFolder
+wait=400
+clickHrefByLinkText=ChildFolder
+wait=400
+clickHrefByLinkText=ParentFolder
+wait=400
+clickHrefByLinkText=Root Folder
+wait=400
+searchElementValueByTagName=Body=SWPublic_Sub#NEXT#Documents
+wait=400

@@ -1,0 +1,25 @@
+name=Rename Child Document Folder 
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private/docman.root.document1.ddddforname_to_attach_more_than
+wait=500
+clickHrefByLinkText=Edit
+wait=400
+clickHrefByLinkText=Rename
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=Pr_DocumentFolder_Sub
+wait=300
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=300
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=300
+clickHrefByLinkText=Close
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300

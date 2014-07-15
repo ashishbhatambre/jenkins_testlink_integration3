@@ -1,0 +1,37 @@
+name=Cancel Create Association 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swprivate/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+wait=300
+selectOptionValueByIdIndex=recentlyViewedIds=0
+wait=300
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+wait=500
+clickHrefByLinkText=< Previous
+wait=300
+runJavaScriptPopToMain=javascript:window.close()
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Documents
+wait=300

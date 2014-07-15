@@ -1,0 +1,33 @@
+name=Ability to edit Forum in private project as site admin user
+component=Discussions
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Discussions
+wait=1000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectForumsForm_Edit
+clickElementById=selectForumsForm_Edit
+wait=300
+waitUntilById=isModerated
+clickElementById=isModerated
+wait=300
+waitUntilById=forumForm_userPicker
+clickElementById=forumForm_userPicker
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=yy_admin_per
+waitUntilById=add
+clickElementById=add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+clickElementById=forumForm_submit
+wait=300
+searchElementValueByTagName=Body=Forum updated successfully.

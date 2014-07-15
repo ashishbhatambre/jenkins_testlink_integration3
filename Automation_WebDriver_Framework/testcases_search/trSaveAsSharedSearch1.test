@@ -1,0 +1,71 @@
+name= Tracker Search_Verify the ability to save search as a shared search from tracker search results page 
+component=Trackers
+role=Site Admin
+artifact=artf165305  
+wait=300
+url=sf/sfmain/do/home 
+waitUntilByName=username
+typeElementByName=username=suser1
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace
+wait=300
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=google
+wait=300
+waitUntilById=inTitle
+clickElementById=inTitle
+waitUntilById=inAttachments
+clickElementById=inAttachments
+wait=300
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=(1 Item)
+wait=300
+clickHrefByLinkText=Save Search from Results
+wait=300
+switchToPopupWindow
+wait=400
+typeElementByName=searchOrFilterName=Shared_NewSearch
+wait=300
+waitUntilById=type
+clickElementById=type
+wait=300
+waitUntilById=saveSearchOrFilter_submit
+clickElementById=saveSearchOrFilter_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=body=Search saved.
+wait=300
+waitUntilById=sharedSearchesToggle
+clickElementById=sharedSearchesToggle
+wait=1300
+searchElementValueByTagName=body=Shared_NewSearch
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home
+wait=300
+url=sf/sfmain/do/home 
+waitUntilByName=username
+typeElementByName=username=yadmin
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace
+wait=300
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=searchTracker
+clickElementById=searchTracker
+wait=300
+waitUntilById=sharedSearchesToggle
+clickElementById=sharedSearchesToggle
+wait=1300
+searchElementValueByTagName=body=Shared_NewSearch
+wait=300

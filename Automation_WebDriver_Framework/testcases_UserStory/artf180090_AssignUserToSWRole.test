@@ -1,0 +1,37 @@
+name=Verify that Subprojects are not displayed to the user when Prevent Inheritance is enabled in project role
+component=Users
+role=NA
+artifact= Tasks - artf180125 TC - artf180090 [Associate Site wide Role 'SR1' to 'user3']
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Roles
+wait=500
+waitUntilById=siteWideRoles
+clickElementById=siteWideRoles
+wait=500
+clickHrefByLinkText=SR1
+wait=300
+waitUntilById=members
+clickElementById=members
+waitUntilById=_userPickerDiv
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+waitUntilById=name
+typeElementById=name=usr3
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=usr3 was added to the role.

@@ -1,0 +1,16 @@
+name=Document Search_Using “created on” field.
+component=Documents
+role=Site Admin
+artifact=artf155447
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=createdStartDate
+typeElementById=createdStartDate=10/10/2013
+waitUntilById=createdEndDate
+typeElementById=createdEndDate=10/11/2013
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=500
+searchElementValueByTagName=Body=Document Search Results 

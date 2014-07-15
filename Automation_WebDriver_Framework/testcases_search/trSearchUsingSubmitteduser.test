@@ -1,0 +1,14 @@
+name=Search using 'Submitted By' field: Select either a single or multiple value.
+component=Trackers
+role=Site Admin
+artifact=artf161288 
+wait=300
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=searchTracker
+clickElementById=searchTracker
+wait=300
+selectOptionValueByIdIndex=submittedBy=3
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=800
+searchElementValueByTagName=body=(3 Items)

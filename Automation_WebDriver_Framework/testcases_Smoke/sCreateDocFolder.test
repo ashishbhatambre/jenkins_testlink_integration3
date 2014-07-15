@@ -1,0 +1,24 @@
+name=Ability to create new Document Folder in private project as site admin
+component=Document
+wait=300
+url=sf/projects/ft_prv_project/
+wait=200
+clickHrefByLinkText=Documents
+wait=300
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=Doc1
+waitUntilById=createDocumentFolder_submit
+clickElementById=createDocumentFolder_submit
+wait=600
+searchElementValueByTagName=Body=Folder created successfully.
+wait=600
+runJavaScriptPopToMain=javascript:finishDocument()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=FT_Prv_Project/Documents/Root Folder/List Documents

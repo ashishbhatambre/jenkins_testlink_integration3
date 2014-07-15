@@ -1,0 +1,40 @@
+name=Verify that Changing Parent project does remove all inherited rights from Project Role
+component=Project admin
+role=NA
+artifact= Tasks - artf171873 TC - artf180120 [Goto 'Project1' > Project Home and  Goto My Workspace > Projects > All Projects]
+url=sf/sfmain/do/myProjects
+wait=300
+waitUntilById=all
+clickElementById=all
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Project1
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=Project1
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Project3
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=No results found.
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+url=sf/projects/project1/
+wait=300
+searchElementValueByTagName=Body=Project1/ Project Home
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+searchElementValueByTagName=Body=Project1/Project Admin/Project Settings

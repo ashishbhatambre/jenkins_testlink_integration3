@@ -1,0 +1,20 @@
+name=Ability to export task in public project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.swpublic/taskmgr.swa_taskfolder
+wait=300
+clickHrefByLinkText=Export
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=addAll
+clickElementByID=addAll
+wait=300
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

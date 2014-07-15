@@ -1,0 +1,12 @@
+name=Navigate to Next document in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+clickHrefByLinkText=Doc_Draft
+wait=600
+clickHrefByLinkText=Next >
+wait=300
+searchElementValueByTagName=Body=Private_Sub#NEXT#Documents
+wait=300

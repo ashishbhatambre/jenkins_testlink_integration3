@@ -1,0 +1,24 @@
+name=Cut & Paste Docuemnt Folder(Sub Child Folder) into Another Folder 
+in public project
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder.ddddforname_to_attach_more_than.pgdscfolder
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Cut
+wait=600
+searchElementValueByTagName=Body=Folder cut successfully.
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdlivefolder
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Paste
+wait=300
+acceptJavaScriptConfirm
+wait=600
+searchElementValueByTagName=Body=Folder pasted successfully.
+

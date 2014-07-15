@@ -1,0 +1,14 @@
+name=Approving the project created using Document project template 
+component=Projects
+role=Admin Permission
+artifact=NA
+wait=300
+clickHrefByLinkText=Pending Projects
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=handleProjectRequests_Approve
+clickElementById=handleProjectRequests_Approve
+wait=300
+searchElementValueByTagName=Body=Approved request to create project: SWPrivate Template Project
+wait=300

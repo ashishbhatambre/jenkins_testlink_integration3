@@ -1,0 +1,9 @@
+name=Ability to Hide wiki Details as user with admin role in private project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+waitUntilById=view_wiki_page.hidePageDetails
+clickElementById=view_wiki_page.hidePageDetails
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Wiki

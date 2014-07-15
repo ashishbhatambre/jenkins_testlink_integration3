@@ -1,0 +1,48 @@
+name=Ability to create Trackers
+component=Tracker Admin 
+role=Direct Role
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+waitUntilById=projectAdminTracker_create
+clickElementById=projectAdminTracker_create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=Tracker1
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=Tracker for the project Private
+wait=200
+selectButtonByValue=icon_01.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Tracker created successfully.
+wait=200
+waitUntilById=projectAdminTracker_create
+clickElementById=projectAdminTracker_create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=$Tracker2&
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=Tracker for the project Private
+wait=200
+selectButtonByValue=icon_05.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Tracker created successfully.
+wait=200
+waitUntilById=projectAdminTracker_create
+clickElementById=projectAdminTracker_create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=${Tracker3}
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=Tracker for the project Private
+wait=200
+selectButtonByValue=icon_12.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Tracker created successfully.

@@ -1,0 +1,8 @@
+name=ProjectInfopage should not remove the project name from the breadcrumbs when valid URL appended with javascript
+component=Project Home
+role=NA
+artifact=Tasks artf180600 TC - artf180599 [Enter below url in same browser "sf/sfmain/do/projectInfo/projects.lg_project/javascript:prompt(901677);"]
+wait=300
+url=sf/sfmain/do/projectInfo/projects.lg_project/javascript:prompt(901677);
+wait=300
+searchElementValueByTagName=Body=The page you requested cannot be found.

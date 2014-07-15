@@ -1,0 +1,13 @@
+name=Wiki Search_using wildcard for alphanumeric keywords 
+component=Wiki
+role=Site Admin
+artifact=artf163031    
+wait=300
+url=sf/wiki/do/viewPage/projects.project_search/wiki/HomePage
+wait=300
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+typeElementById=keywordQuery=7*
+clickElementById=searchWikiPages_submit
+searchElementValueByTagName=Body=link2
+

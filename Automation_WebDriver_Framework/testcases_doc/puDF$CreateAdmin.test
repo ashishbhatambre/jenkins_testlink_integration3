@@ -1,0 +1,20 @@
+name=Create Document Folder with special character name in public project
+wait=300
+url=sf/docman/do/listDocuments/projects.public/docman.root
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=$Public_Document&
+waitUntilById=createDocumentFolder_submit
+clickElementById=createDocumentFolder_submit
+wait=300
+searchElementValueByTagName=Body=Folder created successfully.
+wait=300
+runJavaScriptPopToMain=javascript:finishDocument()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Documents

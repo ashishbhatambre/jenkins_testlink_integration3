@@ -1,0 +1,27 @@
+name=Delete the Package in Release for public project
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=%$#Discussion&$@
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectPackages_Delete
+clickElementById=selectPackages_Delete
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Package deleted successfully.
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

@@ -1,0 +1,35 @@
+name=Ability to create Tracker in private project as siteadmin user
+component=Tracker
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+clickHrefByLinkText=Tracker Settings
+wait=500
+waitUntilById=projectAdminTracker_create
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=traqueur1
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=traqueur1 created by siteadmin
+wait=500
+selectButtonByValue=icon_83.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+wait=500
+searchElementValueByTagName=Body=Tracker created successfully.
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=traqueur2
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=traqueur2 created by siteadmin
+wait=500
+selectButtonByValue=icon_36.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+wait=500
+searchElementValueByTagName=Body=Tracker created successfully.

@@ -1,0 +1,55 @@
+name=Ability to add User(s) into User Group
+component=User Groups
+role=Admin
+artifact=NA
+wait=300
+url=sf/global/do/listGroupsAdmin/
+wait=300
+clickHrefByLinkText=ugUserGroup
+wait=300
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=name
+typeElementById=name=uguser1
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Selected users were added to the user group.
+wait=300
+url=sf/global/do/listGroupsAdmin/
+wait=300
+clickHrefByLinkText=ugpUserGroup
+wait=300
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=name
+typeElementById=name=ugpuser1
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Selected users were added to the user group.
+wait=300

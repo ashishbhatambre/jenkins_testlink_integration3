@@ -1,0 +1,25 @@
+name=Search document by "Search Keywords" with "Search Name and Description" enabled for public child project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=PDF
+wait=300
+waitUntilById=metaDataScope
+clickElementById=metaDataScope
+wait=300
+waitUntilById=documentScope
+clickElementById=documentScope
+wait=300
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=500
+searchElementValueByTagName=Body=PDF

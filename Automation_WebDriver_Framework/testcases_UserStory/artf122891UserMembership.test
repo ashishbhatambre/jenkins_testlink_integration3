@@ -1,0 +1,15 @@
+name=Ability to assinging users to updated role for an artifact artf122891
+component=Project Admin
+role=Global Role
+artifact=artf122891
+wait=300
+url=sf/sfmain/do/userMembership/projects.protest
+wait=300
+clickHrefByLinkText=Add
+wait=300
+selectButtonByValue=user2
+wait=300
+waitUntilById=addUser_finish
+clickElementById=addUser_finish
+wait=300
+searchElementValueByTagName=Body=User(s) added to the project: user2_normalPermission (user2) .

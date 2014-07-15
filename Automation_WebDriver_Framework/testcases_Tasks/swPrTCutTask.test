@@ -1,0 +1,14 @@
+name=Ability to Cut in private project
+component=Tasks
+role=Sitewide_Admin Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.swprivate/taskmgr.swa_taskfolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=listTasksSelect_Cut
+clickElementById=listTasksSelect_Cut
+wait=300
+searchElementValueByTagName=Body=1 task(s) cut to clipboard.
+wait=300

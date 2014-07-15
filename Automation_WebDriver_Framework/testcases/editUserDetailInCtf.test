@@ -1,0 +1,17 @@
+name=Ability to edit the user details
+component=Users
+role=NA
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Users
+wait=4000
+clickHrefByLinkText=yy_admin_per
+wait=1000
+clickHrefByLinkText=Personal Profile
+wait=1000
+custom=data-ng-repeat=button in buttonGroup.elements | hide=submit
+wait=1000
+searchElementValueByTagName=Body=Save

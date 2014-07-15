@@ -1,0 +1,14 @@
+name=Monitor Task
+component=Tasks
+role=Sitewide Role_Create Permission
+artifact=NA
+wait=300
+waitUntilById=button_monitor_object
+clickElementById=button_monitor_object
+wait=500
+searchElementValueByTagName=Body=Task is no longer monitored.
+wait=300
+waitUntilById=button_monitor_object
+clickElementById=button_monitor_object
+wait=500
+searchElementValueByTagName=Body=Task is now being monitored.

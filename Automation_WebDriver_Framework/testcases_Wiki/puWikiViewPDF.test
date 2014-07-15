@@ -1,0 +1,8 @@
+name=Ability to View Wiki Page in PDF Format in public project
+component=Wiki
+role=Direct Role
+artifact=NA
+waitUntilById=view_wiki_page.viewpdf
+clickElementById=view_wiki_page.viewpdf
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Wiki

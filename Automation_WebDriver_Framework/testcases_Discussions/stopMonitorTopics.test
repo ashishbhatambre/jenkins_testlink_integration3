@@ -1,0 +1,21 @@
+name=Stop Monitor the Topic 1 for the Discussion
+component=Discussions
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Discussions
+wait=500
+clickHrefByLinkText=NewForum
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectTopicsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectTopicsForm
+wait=500
+waitUntilById=selectTopicsForm_UnMonitor
+clickElementById=selectTopicsForm_UnMonitor
+wait=500
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.

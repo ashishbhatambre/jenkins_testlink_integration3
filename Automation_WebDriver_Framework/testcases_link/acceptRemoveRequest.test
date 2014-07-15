@@ -1,0 +1,16 @@
+name=Accept Remove User Request from Project Member
+component=My Workspace
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/userMembership/projects.pproject
+wait=300
+waitUntilById=pendingMembers
+clickElementById=pendingMembers
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=processRemoveRequest_Approve
+clickElementById=processRemoveRequest_Approve
+wait=300
+searchElementValueByTagName=Body=Remove project membership request from#NEXT#tuser2#NEXT#has been approved

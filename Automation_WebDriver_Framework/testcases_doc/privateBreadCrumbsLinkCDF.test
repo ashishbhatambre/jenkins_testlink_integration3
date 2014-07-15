@@ -1,0 +1,8 @@
+name=Navigate to chil document folder using breadcrumbs link 
+component=Documents
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private/docman.root.document1.ddddforname_to_attach_more_than
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Documents

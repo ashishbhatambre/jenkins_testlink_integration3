@@ -1,0 +1,10 @@
+name=Save Monitored Applications user2
+clickHrefByLinkText=NewProject
+wait=300
+clickElementById=apps
+wait=300
+selectCheckBoxFromList=applicationMonitored(Scm)
+waitUntilById=editMonitoredApplications_Save
+clickElementById=editMonitoredApplications_Save
+wait=300
+searchElementValueByTagName=Body=Created monitoring subscription for application Source Code.

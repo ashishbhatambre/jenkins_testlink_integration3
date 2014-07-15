@@ -1,0 +1,34 @@
+name=Forum Search via jum to id- advance search- searchposts link for artifact artf139703
+component=Discussions
+role=Global Role
+artifact=artf139703
+wait=300
+url=sf/projects/newproject/
+wait=400
+clickHrefByLinkText=Discussions
+wait=400
+clickHrefByLinkText=Search Posts
+waitUntilById=searchText
+typeElementById=searchText=NewForum
+waitUntilById=selectedForums
+selectOptionValueByIdValue=selectedForums=NewForum
+waitUntilById=selectedPosters
+selectOptionValueByIdValue=selectedPosters=user1_adminPermission
+waitUntilById=searchPosts_Search
+clickElementById=searchPosts_Search
+waitUntilById=idsString
+typeElementById=idsString=forum1001
+wait=400
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=400
+clickHrefByLinkText=Advanced Search
+waitUntilByName=term
+typeElementByName=term=NewForum
+waitUntilById=applications
+selectOptionValueByIdValue=applications=Discussions
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+wait=400
+searchElementValueByTagName=Body=Search

@@ -1,0 +1,36 @@
+name=Editing Artifacts using Mass Update
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText= Plan_Folder2
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+selectCheckBoxFromList=_listItem=2
+wait=500
+clickHrefByLinkText=Mass Update
+wait=500
+waitUntilById=comment
+typeElementById=comment=This are the artifact which is under test.
+wait=300
+waitUntilById=assignedPlanningFolderDisplay
+clickElementById=assignedPlanningFolderDisplay
+wait=500
+switchToPopupWindow
+wait=500
+clickHrefByLinkText= Plan_Folder1
+wait=500
+waitUntilById=planningFolderPopup_submit
+clickElementById=planningFolderPopup_submit
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+waitUntilById=updatePlanningFolder
+clickHrefByLinkText=Update
+wait=500
+waitUntilById=massUpdateArtifactsForm_submit
+clickHrefByLinkText=Update
+wait=8000
+searchElementValueByTagName=Body=2 Artifact(s) were successfully updated

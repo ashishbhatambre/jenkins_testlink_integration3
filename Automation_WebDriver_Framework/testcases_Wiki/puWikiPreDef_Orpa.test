@@ -1,0 +1,9 @@
+name=Ability to perform predefined search on all orphaned pages in public project
+component=Wiki
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=predefined_orphaned
+clickElementById=predefined_orphaned
+wait=700
+searchElementValueByTagName=Body=Public#NEXT#Wiki

@@ -1,0 +1,11 @@
+name=Ability to verify Root Task Folder Status in public project
+component=Tasks
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/viewSummary/projects.public/taskmgr
+wait=300
+clickElementById=summary
+waitUntilById=summary
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Tasks

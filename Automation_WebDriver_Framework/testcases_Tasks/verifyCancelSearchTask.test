@@ -1,0 +1,14 @@
+name=Verifying the Cancel on Searching the Task
+component=Task
+role=Global Role
+artifact=NA
+wait=500
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Search Tasks
+wait=500
+clickHrefByLinkText=Cancel
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Tasks#NEXT#Summary 

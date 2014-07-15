@@ -1,0 +1,8 @@
+name=Ability to Hide Wiki Details in private project
+component=Wiki
+role=Direct Role
+artifact=NA
+wait=300
+clickHrefByLinkText=Hide Details
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Wiki

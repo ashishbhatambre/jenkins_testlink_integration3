@@ -1,0 +1,5 @@
+name=Verify Build & Test link for Public Project
+wait=300
+url=sf/sfmain/do/viewIframed/projects.pproject
+wait=300
+searchElementValueByTagName=Body=PProject#NEXT#Project Home#NEXT#Build#NEXT#&#NEXT#Test 

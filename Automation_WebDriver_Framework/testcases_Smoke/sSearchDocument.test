@@ -1,0 +1,17 @@
+name=Ability to search document in private project as site admin user
+component=Document Search
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=500
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=File
+wait=500
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=500
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Documents#NEXT#Str_View#NEXT#Search Documents

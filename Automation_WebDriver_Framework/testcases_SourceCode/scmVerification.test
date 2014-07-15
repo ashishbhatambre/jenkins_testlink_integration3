@@ -1,0 +1,32 @@
+name=Verifying the repository commits in Source code 
+component=Sourcecode
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Source Code
+wait=500
+clickHrefByLinkText=9
+wait=500
+selectButtonByValue=cmmt1001
+waitUntilById=selectCommit_submit
+clickElementById=selectCommit_submit
+wait=500
+clickHrefByLinkText=Version1/
+wait=500
+waitUntilByName=pathrev
+typeElementByName=pathrev=2
+selectButtonByValue=Go
+wait=500
+searchElementValueByTagName=Body=[repo1]#NEXT#Version1
+wait=500
+clickHrefByLinkText=First.txt
+wait=500
+typeElementByName=r1=3
+typeElementByName=r2=5
+wait=300
+selectOptionValueByNameValue=diff_format=Full Colored Diff
+selectButtonByValue=Show
+wait=300
+searchElementValueByTagName=Body=[repo1] #NEXT# Version1 #NEXT# First.txt

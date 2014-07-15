@@ -1,0 +1,14 @@
+name=Add alternative mail id to user
+component=Users
+role=Site Admin
+artifact=NA
+wait=300
+url=sf/global/do/viewUser/suser1
+wait=300
+waitUntilById=view_user.edit
+clickHrefByLinkText=Edit
+wait=300
+typeElementById=alternateEmail1=altsuser1@collab.net
+clickElementById=editUser_submit
+wait=300
+searchElementValueByTagName=Body=User information updated for user suser1.

@@ -1,0 +1,15 @@
+name=Delete Multiple Document in public project
+component=Documents
+role=Project Group Role
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder
+wait=300
+selectCheckBoxFromList=_listItem=0
+wait=300
+selectCheckBoxFromList=_listItem=1
+waitUntilById=selectDocuments_Delete
+clickElementById=selectDocuments_Delete
+wait=300
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=2 documents deleted successfully.

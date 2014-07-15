@@ -1,0 +1,42 @@
+name=Ability to move artifact planning folder in private project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+wait=200
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=200
+clickHrefByLinkText=Filter
+wait=1000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=priority
+selectOptionValueByIdIndex=priority=3
+waitUntilById=assignedPlanningFolderDisplay
+clickElementById=assignedPlanningFolderDisplay
+wait=200
+switchToPopupWindow
+wait=200
+waituntilById=isNoneSelectedFalse
+clickElementById=isNoneSelectedFalse
+wait=200
+clickHrefByLinkText= Plan1
+waitUntilById=planningFolderPopup_submit
+clickElementById=planningFolderPopup_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+waitUntilById=viewArtifactForm_Save
+clickElementById=viewArtifactForm_Save
+wait=200
+searchElementValueByTagName=body=Artifact data updated successfully.

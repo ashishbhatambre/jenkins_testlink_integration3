@@ -1,0 +1,19 @@
+name=Verify task Process Functionality 
+component=Tasks
+role=Sitewide Role_View Permission
+artifact=NA
+wait=500
+url=sf/projects/swprivate/
+wait=800
+clickHrefByLinkText=Tasks
+wait=800
+clickHrefByLinkText= SWA_TaskFolder
+wait=900
+clickHrefByLinkText=TAC1
+wait=300
+waitUntilById=status
+clickElementById=status
+wait=300
+selectOptionValueByNameValue=status=Warning
+wait=500
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

@@ -1,0 +1,21 @@
+name=Ability to set a parent to the project
+component=Project Admin
+wait=300
+url=sf/projects/child_prv_project
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+waitUntilById=project_admin.addparent
+clickElementById=project_admin.addparent
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=NewProject
+clickHrefByLinkText=Filter
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=listPotentialParentProjects_edit
+clickElementById=listPotentialParentProjects_edit
+wait=300
+searchElementValueByTagName=Body=NewProject set as parent project successfully.

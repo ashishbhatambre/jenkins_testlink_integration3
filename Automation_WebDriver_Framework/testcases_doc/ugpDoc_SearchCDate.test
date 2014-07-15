@@ -1,0 +1,21 @@
+name=Search Docuement by "Created On date values" in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugpproject/docman.root.ugpfolder
+wait=300
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Document
+waitUntilById=createdStartDate
+typeElementById=createdStartDate=08/31/2013
+waitUntilById=createdEndDate
+typeElementById=createdEndDate=11/22/2013
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=ugpProject#NEXT#Documents
+wait=300

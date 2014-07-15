@@ -1,0 +1,35 @@
+name=setting the artifact dependency for Parent-child planning folders
+component=Tracker
+role=Global Role
+artifact=artf139713
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+url=sf/planning/do/viewPlanningFolder/projects.newproject/planning.board_plan1.board_plan2
+wait=500
+clickHrefByLinkText= Board_Plan1
+wait=4000
+clickHrefByLinkText=BoardArtifact2
+wait=500
+waitUntilById=dependencies
+clickElementById=dependencies
+waitUntilById=choose_parent
+clickElementById=choose_parent
+wait=500
+switchToPopupWindow
+wait=500
+selectButtonByValue=entry
+waitUntilById=dependencyIdString
+typeElementById=dependencyIdString=artf1011
+waitUntilById=addDependencyForm_submitItems
+waitUntilById=addDependencyForm_submitDescription
+clickElementById=addDependencyForm_submitDescription
+wait=1000
+searchElementValueByTagName=Body=Artifact dependency with artf1006 created successfully. Click Close to return to the main window.
+wait=1000
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000

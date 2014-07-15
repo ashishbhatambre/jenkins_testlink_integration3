@@ -1,0 +1,14 @@
+name=Search Posts in Discussion for public project
+component=Discussions
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=searchText
+typeElementById=searchText=forum
+wait=300
+selectOptionValueByIdValue=selectedForums=All forums
+wait=300
+waitUntilById=searchPosts_Search
+clickElementById=searchPosts_Search
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Discussion#NEXT#Search Posts

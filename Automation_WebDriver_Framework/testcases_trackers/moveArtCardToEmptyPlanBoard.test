@@ -1,0 +1,20 @@
+name=Ability to Move artifact card to Empty planning board.
+component=Trackers(Boards)
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickSpanElementByCssSelector=combo-arrow=0
+wait=200
+clickCssSelectorAndValueForSpan=tree-title=Board_ChildPlan
+wait=200
+clickSpanElementByCssSelector=combo-arrow=1
+wait=200
+clickCssSelectorAndValueForSpan=tree-title=Board_SubChild
+wait=5000
+dragElementToByCSS=item ui-corner-all ui-draggable=artf1007=scroll-area=No results found.
+wait=500
+searchElementValueByTagName=Body=Artifact artf1007 moved successfully
+wait=200

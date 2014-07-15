@@ -1,0 +1,28 @@
+name=Ability to cancel Planning Folder creation
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+waitUntilById=new_planning
+clickElementById=new_planning
+switchToPopupWindow
+waitUntilById=pfname
+typeElementById=pfname=Plan1
+waitUntilById=pfdescription
+typeElementById=pfdescription=Planning Folder for QA Testing
+waitUntilById=selectedStatus
+selectOptionValueByIdIndex=selectedStatus=1
+waitUntilById=capacity
+typeElementById=capacity=50
+waitUntilById=startDate
+typeElementById=startDate=12/28/2013
+waitUntilById=endDate
+typeElementById=endDate=12/28/2014
+wait=200
+clickHrefByLinkText=Cancel
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=Public#NEXT#Trackers

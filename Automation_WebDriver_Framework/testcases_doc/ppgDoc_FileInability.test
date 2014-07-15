@@ -1,0 +1,21 @@
+name=Document Creation File Type->File_inability in public project
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgfolder
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_Inability
+wait=300
+waitUntilById=description
+typeElementById=description=Doc_Inability
+wait=300
+selectButtonByValue=fromFile
+wait=300
+clickHrefByLinkText=Save
+wait=300
+searchElementValueByTagName=Body= File is required.  
+wait=300

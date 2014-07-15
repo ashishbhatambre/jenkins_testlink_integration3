@@ -1,0 +1,15 @@
+name=Ability to Cancel status Rollup in Task Manager settings in private project as site admin user
+component=Task
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Task Manager Settings
+wait=300
+waitUntilById=rollup
+clickElementById=rollup
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Project Admin#NEXT#Task Manager Settings 

@@ -1,0 +1,37 @@
+name=Updating the Document With attaching .xls file and Update Version for usergroup public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Books
+wait=500
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Page1
+wait=500
+clickHrefByLinkText=Filter
+wait=500
+waitUntilByName=_listCheckAll
+clickElementByName=_listCheckAll
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+waitUntilById=documentPropertiesVersion_submit
+clickElementById=documentPropertiesVersion_submit
+wait=500
+clickHrefByLinkText=Edit / Update
+wait=500
+selectButtonByValue=fromFile
+waitUntilById=file
+typeValueForFileField=C:\Uploaded_Files\Matrix_TestCase_new.xls
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+wait=500
+searchElementValueByTagName=Body=Document updated successfully.
+wait=500
+waitUntilById=documentPropertiesVersion_submit
+clickElementById=documentPropertiesVersion_submit
+wait=500
+searchElementValueByTagName=Body=Active document version updated.

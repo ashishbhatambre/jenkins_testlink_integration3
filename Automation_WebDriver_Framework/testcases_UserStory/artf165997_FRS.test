@@ -1,0 +1,16 @@
+name=Ability to search file via Jump to id after navigating to a FRS
+component=FRS
+role=Global Role
+artifact=artf165997
+wait=300
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=400
+clickElementByName=Frs
+wait=400
+waitUntilById=idsString
+typeElementById=idsString=frs1002
+wait=400
+runJavaScriptPopToMain=javascript:quickJump()
+wait=400
+searchElementValueByTagName=Body=FRS Files (1)

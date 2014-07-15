@@ -1,0 +1,26 @@
+name=View Project Request-> Join projects by adding comments starts with ${<>}
+component=MyWorkspace
+role=NA
+artifact=NA
+url=sf/sfmain/do/myProjects
+wait=300
+waitUntilById=all
+clickElementById=all
+wait=300
+clickHrefByLinkText=${test test}
+wait=300
+clickHrefByLinkText=Join this Project
+waitUntilById=comment
+wait=300
+typeElementById=comment=${<B><I>I want to join this project}
+waitUntilById=joinProject_submit
+clickElementById=joinProject_submit
+wait=300
+searchElementValueByTagName=Body=Your request to join this project has been submitted.
+wait=500
+clickHrefByLinkText=My Workspace
+wait=300
+waitUntilById=myApproval
+clickElementById=myApproval
+wait=300
+searchElementValueByTagName=Body=My Workspace

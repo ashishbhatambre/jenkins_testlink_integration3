@@ -1,0 +1,37 @@
+name=Document Association using Association Id String for user group -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Test_Doc
+wait=500
+clickElementByCssSelector=FilterRight
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=500
+clickHrefByLinkText=projectDoc1
+wait=500
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+switchToPopupWindow
+wait=300
+waitUntilById=recentlyViewedIds
+selectOptionValueByIdIndex=recentlyViewedIds=3
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+wait=300
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=1000
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=1000
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000

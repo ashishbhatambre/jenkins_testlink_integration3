@@ -1,0 +1,17 @@
+name=Ability to delete role in a project group
+component=Projects
+wait=300
+url=sf/rbac/do/permissionAdmin/pgroups.testedprojects
+wait=300
+waitUntilById=displayList
+selectOptionValueByIdValue=displayList=Roles created for this project group
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectRole_delete
+clickElementById=selectRole_delete
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=Role(s) deleted successfully.

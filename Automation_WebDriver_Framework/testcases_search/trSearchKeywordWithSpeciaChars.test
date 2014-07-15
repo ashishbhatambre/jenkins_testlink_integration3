@@ -1,0 +1,14 @@
+name=Tracker Search_Using only a special character in the "Search Text"
+component=Trackers
+role=Site Admin
+artifact=artf161262 
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_search
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=$@&
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=No results found.

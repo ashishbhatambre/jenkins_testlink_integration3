@@ -1,0 +1,16 @@
+name=Ability to display Task Rows from 15 to 75 in private project as site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= session_task
+wait=500
+waitUntilById=rows-icon
+clickElementById=rows-icon
+wait=500
+waitUntilById=ipp_75
+clickElementById=ipp_75
+wait=500
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Tasks#NEXT#session_task#NEXT#List Tasks 

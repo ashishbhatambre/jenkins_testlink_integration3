@@ -1,0 +1,25 @@
+name=Verify Task Folder Monitoring Functionality 
+component=Tasks
+role=Sitewide Role_Create Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Tasks
+wait=900
+clickHrefByLinkText= SWA_TaskFolder
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+clickHrefByLinkText=Monitor Current Folder
+wait=900
+searchElementValueByTagName=Body=Task Folder is now being monitored.
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+clickHrefByLinkText=Stop Monitoring Folder
+wait=900
+searchElementValueByTagName=Body=Task Folder is no longer monitored.
+

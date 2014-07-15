@@ -1,0 +1,19 @@
+name=Ability to edit a file as user with sitewide create role in private project
+component=FRS
+role=Sitewide Role_Create Permission
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.swprivate/frs.package1
+wait=1300
+clickHrefByLinkText=Private_Release1
+wait=1300
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=frsFilesSelection_Edit
+clickElementById=frsFilesSelection_Edit
+wait=300
+typeValueForFileField=C:\Uploaded_Files\index.html
+waitUntilById=frsFile_submit
+clickElementById=frsFile_submit
+wait=700
+searchElementValueByTagName=Body=File edited successfully.

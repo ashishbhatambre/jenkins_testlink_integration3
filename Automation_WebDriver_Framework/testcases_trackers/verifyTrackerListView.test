@@ -1,0 +1,12 @@
+name=Ability to change the View from Boards to List in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=List
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#List Trackers and Planning Folders

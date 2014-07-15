@@ -1,0 +1,8 @@
+name=Logout
+component=Logout
+role=NA
+artifact=NA
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home

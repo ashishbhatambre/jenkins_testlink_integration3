@@ -1,0 +1,26 @@
+name=Create Document Folder in Sub Project in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root
+wait=300
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=Folder
+wait=300
+clickHrefByLinkText=Save
+wait=300
+searchElementValueByTagName=Body=Folder created successfully.
+wait=300
+clickHrefByLinkText=Close
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=SWPublic_Sub#NEXT#Documents
+wait=300
+

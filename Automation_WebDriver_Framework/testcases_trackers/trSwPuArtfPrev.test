@@ -1,0 +1,16 @@
+name=Ability to move previous artifact via < Previous button in public project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+wait=200
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickHrefByLinkText=QA:PendingArtf
+wait=200
+clickHrefByLinkText=< Previous
+wait=200
+searchElementValueByTagName=body=SWPublic#NEXT#Trackers

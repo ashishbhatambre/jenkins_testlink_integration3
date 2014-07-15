@@ -1,0 +1,16 @@
+name=Filter a Document with an Invalid Date Format 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swprivate/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+waitUntilByName=_filter!!date!!dateLastModified
+typeElementByName=_filter!!date!!dateLastModified=2013/04/03
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=300
+searchElementValueByTagName=Body=The filter provided was invalid. Please ensure that all fields are in a valid format.
+wait=300

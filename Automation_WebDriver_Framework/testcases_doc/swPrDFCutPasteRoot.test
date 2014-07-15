@@ -1,0 +1,26 @@
+name=cut and paste the document into Root document folder 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate/docman.root.private_document.sw_pr_subchilddf
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_cut
+clickHrefByLinkText=Cut
+wait=400
+searchElementValueByTagName=Body= Folder cut successfully.
+wait=500
+url=sf/docman/do/listDocuments/projects.swprivate/docman.root
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_paste
+clickHrefByLinkText=Paste
+wait=300
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body= Folder pasted successfully.
+wait=500
+

@@ -1,0 +1,17 @@
+name=Ability to stop Monitoring the Current Tracker 
+component=Tracker 
+role=Direct Role
+artifact=NA
+wait=200
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+wait=200
+clickHrefByLinkText=Stop Monitoring Folder
+wait=200
+searchElementValueByTagName=body=Tracker is no longer monitored.

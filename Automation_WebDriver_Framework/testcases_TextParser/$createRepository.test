@@ -1,0 +1,19 @@
+name=Create Repository using ${}
+component=Source Code
+role=NA
+artifact=NA
+wait=300
+url=sf/scm/do/listRepositories/projects.test_test/scm
+waitUntilById=create_repo
+clickHrefByLinkText=Create Repository
+wait=300
+waitUntilById=systemId
+selectOptionValueByIdValue=systemId=${Posting}
+wait=300
+typeElementById=directoryName=repo1
+typeElementById=repositoryName=NewRepo01
+typeElementById=description=repository created for subversion.
+wait=300
+clickElementById=createRepositoryForm_Save
+wait=300
+searchElementValueByTagName=Body=Repository NewRepo01 was created successfully.

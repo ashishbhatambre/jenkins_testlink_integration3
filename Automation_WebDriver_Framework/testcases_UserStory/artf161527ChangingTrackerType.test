@@ -1,0 +1,28 @@
+name=Prompt with Warning Message on Changing the Tracker Type in Edit artifact
+role=Global Role
+artifact=artf161527
+wait=300
+url=sf/projects/newproject
+wait=300
+clickHrefByLinkText=Trackers
+wait=800
+clickHrefByLinkText=NewTracker
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=300
+waitUntilById=viewArtifact_edit
+clickElementById=viewArtifact_edit
+wait=300
+waitUntilById=trkType
+selectOptionValueByIdValue=trkType=TRACK123##$^#$%
+wait=300
+waitUntilById=editArtifactForm_Save
+clickElementById=editArtifactForm_Save
+wait=300
+acceptJavaScriptConfirm
+wait=600
+searchElementValueByTagName=Body=Artifact moved from NewTracker to TRACK123##$^#$%.

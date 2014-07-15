@@ -1,0 +1,28 @@
+name=Creating Child Task Folder for private project
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= test_task
+wait=500
+waitUntilById=newTask
+clickElementById=newTask
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementByName=title=ChildTask
+waitUntilById=createTaskGroupForm_submit
+clickElementById=createTaskGroupForm_submit
+wait=600
+searchElementValueByTagName=Body=Task Folder created successfully.
+wait=600
+runJavaScriptPopToMain=javascript:finishCreateTaskGroup()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=Tasks

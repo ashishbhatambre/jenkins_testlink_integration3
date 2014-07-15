@@ -1,0 +1,20 @@
+name=Filtering File in FileRelease with Results for public project
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=123Package_Notes
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=PubProject#NEXT#File Releases#NEXT#File Release Summary 
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

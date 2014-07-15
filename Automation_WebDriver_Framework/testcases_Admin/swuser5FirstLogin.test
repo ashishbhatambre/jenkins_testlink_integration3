@@ -1,0 +1,22 @@
+name=bility to reset password when login first time
+component=Login
+role=Site-wide Edit Role
+artifact=NA
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=swuser5
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+wait=300
+typeElementByName=newPassword=Collabnet2@
+wait=300
+typeElementByName=confirmNewPassword=Collabnet2@
+wait=300
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300

@@ -1,0 +1,19 @@
+name=Create User Groups 
+component=Projects
+role=Admin
+artifact=NA
+wait=300
+clickElementById=admin_link
+clickHrefByLinkText=User Groups
+waitUntilById=allGroups
+clickElementById=allGroups
+wait=300
+clickHrefByLinkText=Create
+waitUntilById=fullName
+typeElementById=fullName=pgUserGroup
+waitUntilById=description
+typeElementById=description=users who having direct admin role belongs
+waitUntilById=createGroup_submit
+clickElementById=createGroup_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=User Group pgUserGroup has been created successfully.

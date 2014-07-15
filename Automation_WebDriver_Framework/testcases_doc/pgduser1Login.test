@@ -1,0 +1,13 @@
+name=pgduser1_Login
+component=Login
+role=Admin
+artifact=NA
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=pgduser1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet2@
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Workspace

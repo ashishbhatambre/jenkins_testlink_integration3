@@ -1,0 +1,45 @@
+name=Ability to export tracker
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder1
+wait=200
+clickHrefByLinkText=Export
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=exportType
+selectButtonByValue=.xml
+wait=200
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Artifact ID
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Title
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Submitted By
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Description
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=availableFields
+selectOptionValueByIdValue=availableFields=Submitted On
+waitUntilById=addOne
+clickElementById=addOne
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Planning Folders#NEXT#Plan_Folder1#NEXT#List Artifacts

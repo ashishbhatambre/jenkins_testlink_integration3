@@ -1,0 +1,284 @@
+name=Verify that ability to Reject CVS repository deletion request as SCM Integration Permission user when requires approval is enabled in Integration
+component=Integration-SourceCode
+role=SiteWide Role/Project Role
+artifact=artf171056 Testcase Id(artf170869)
+wait=200
+url=sf/sfmain/do/home
+wait=200
+typeElementByName=username=admin
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=200
+searchElementValueByTagName=Body=My Page
+wait=200
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=200
+clickHrefByLinkText=Users
+wait=200
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilByName=username
+typeElementByName=username=scmadmin
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=scmadmin
+typeElementByName=email=scmadmin@collab.net
+typeElementByName=companyName=cspl
+waitUntilById=superUser
+clickElementById=superUser
+wait=200
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=200
+searchElementValueByTagName=Body=User#NEXT#scmadmin#NEXT#has been created successfully.
+wait=200
+clickHrefByLinkText=Roles
+wait=200
+waitUntilById=siteWideRoles
+clickElementById=siteWideRoles
+wait=300
+waitUntilById=listSiteRoles_create
+clickElementById=listSiteRoles_create
+waitUntilById=title
+typeElementById=title=scmrole
+waitUntilById=description
+typeElementById=description=creating SiteWide Role for scm integration permission.
+wait=300
+waitUntilById=createSiteWideRoleForm_submit
+clickElementById=createSiteWideRoleForm_submit
+wait=300
+searchElementValueByTagName=Body=Site-wide Role created successfully.
+waitUntilById=permissions
+clickElementById=permissions
+waitUntilById=site_integrations_menu
+runJavaScriptPopToMain=javascript:showSection('site_integrations')
+waitUntilById=sitewideIntScmAdminWildcard
+clickElementById=sitewideIntScmAdminWildcard
+waitUntilById=editRole_Edit
+runJavaScriptPopToMain=javascript:submitForm(document.editRole, 'Edit')
+wait=300
+searchElementValueByTagName=Body=Site-wide Role updated successfully.
+wait=300
+clickHrefByLinkText=scmrole
+wait=500
+waitUntilById=members
+clickElementById=members
+wait=300
+waitUntilById=_userPickerDiv
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=scmadmin
+wait=300
+waitUntilById=add
+clickHrefByLinkText=Add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=scmadmin was added to the role.
+wait=300
+url=sf/scm/do/listRepositories/projects.newproject/scm
+wait=300
+waitUntilById=create_repo
+clickHrefByLinkText=Create Repository
+wait=300
+waitUntilById=systemId
+selectOptionValueByIdValue=systemId=Server2
+typeElementById=directoryName=scmdir
+typeElementById=repositoryName=scmrepo
+typeElementById=description=repository created for cvs.
+wait=300
+waitUntilById=createRepositoryForm_Save
+clickElementById=createRepositoryForm_Save
+wait=300
+searchElementValueByTagName=Body=Repository scmrepo was requested.
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=200
+clickHrefByLinkText=Integrations
+wait=200
+waitUntilById=integrationRequests
+clickElementById=integrationRequests
+wait=300
+waitUntilByName=selectedObjects
+selectCheckBoxFromList=selectedObjects=0
+wait=300
+waitUntilById=objectSelection_Approve
+clickElementById=objectSelection_Approve
+wait=300
+searchElementValueByTagName=Body=Repository created successfully.
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=200
+clickHrefByLinkText=Users
+wait=200
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilByName=username
+typeElementByName=username=scmuser123
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=scmuser123
+typeElementByName=email=user123@collab.net
+typeElementByName=companyName=cspl
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+wait=200
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=200
+searchElementValueByTagName=Body=User#NEXT#scmuser123#NEXT#has been created successfully.
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=User Membership
+wait=200
+clickHrefByLinkText=Add
+wait=200
+selectButtonByValue=scmuser123
+wait=200
+clickElementById=addUser_finish
+wait=200
+searchElementValueByTagName=Body=User(s) added to the project: scmuser123 (scmuser123) .
+wait=200
+url=sf/rbac/do/createRole/projects.newproject
+waitUntilById=title
+typeElementById=title=SCMDeleteRole
+waitUntilById=description
+typeElementById=description=Delete only Role for this project
+waitUntilById=requestable
+clickElementById=requestable
+wait=200
+clickElementById=blockRecurse
+waitUntilById=createRole_submit
+clickElementById=createRole_submit
+wait=200
+searchElementValueByTagName=Body=Role created successfully.
+wait=200
+clickHrefByLinkText=Source Code
+waitUntilById=scmDeleteWildcard
+clickElementById=scmDeleteWildcard
+wait=200
+waitUntilById=editRole_Edit
+clickElementById=editRole_Edit
+wait=200
+searchElementValueByTagName=Body=Role updated successfully.
+wait=200
+clickHrefByLinkText=SCMDeleteRole
+wait=200
+waitUntilById=members
+clickElementById=members
+wait=200
+waitUntilById=_userPickerDiv
+clickHrefByLinkText=Add
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=name
+typeElementById=name=scmuser123
+wait=500
+clickElementById=userPicker_find
+wait=500
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=500
+clickHrefByLinkText=Add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=scmuser123 was added to the role.
+wait=200
+url=sf/sfmain/do/logout
+wait=200
+searchElementValueByTagName=Body=Home
+wait=200
+url=sf/sfmain/do/home
+wait=200
+typeElementByName=username=scmuser123
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=200
+searchElementValueByTagName=Body=Change User Password
+wait=200
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=200
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Source Code
+wait=200
+waitUntilByName=_listItem
+SelectCheckBoxFromList=_listItem=2
+wait=200
+waitUntilById=objectSelection_Delete
+clickElementById=objectSelection_Delete
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=Repository deletion request submitted.
+wait=200
+url=sf/sfmain/do/logout
+wait=200
+searchElementValueByTagName=Body=Home
+wait=200
+url=sf/sfmain/do/home
+wait=200
+typeElementByName=username=scmadmin
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=200
+searchElementValueByTagName=Body=Change User Password
+wait=200
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=200
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=200
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=200
+clickHrefByLinkText=Integrations
+wait=200
+waitUntilById=scmAccessRequests
+clickElementById=scmAccessRequests
+wait=200
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=200
+waitUntilById=systemRequestForm_Reject
+clickElementById=systemRequestForm_Reject
+wait=200
+searchElementValueByTagName=Body=System requests rejected: 1
+wait=200
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home
+wait=200
+url=sf/sfmain/do/home
+wait=200
+typeElementByName=username=scmuser123
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=200
+searchElementValueByTagName=Body=My Page
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Source Code
+wait=200
+searchElementValueByTagName=Body=scmrepo

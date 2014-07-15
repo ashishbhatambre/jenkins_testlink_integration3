@@ -1,0 +1,25 @@
+name=Ability to create Artifact with closed status as user with create only permission in private project
+component=Tracker
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=CloneTracker
+wait=200
+clickHrefByLinkText=Submit New Artifact
+wait=200
+waitUntilById=title
+typeElementById=title=Closed_Artifact
+waitUntilById=description
+typeElementById=description=Create Closed Artifact
+waitUntilByName=status
+selectOptionValueByNameValue=status=Closed
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=2 - High
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.

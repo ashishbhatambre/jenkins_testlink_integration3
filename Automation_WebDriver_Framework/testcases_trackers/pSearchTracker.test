@@ -1,0 +1,41 @@
+name=Ability to search Tracker for public project [component- Jump To Id- Advanced search]
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Search Trackers
+wait=200
+waitUntilById=priorities
+selectOptionValueByIdValue=priorities=2 - High
+waitUntilById=assignedTo
+selectOptionValueByIdValue=assignedTo=tester2_normalPermission
+waitUntilById=submittedBy
+selectOptionValueByIdValue=submittedBy=tester1_adminPermission
+wait=200
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+waitUntilById=idsString
+typeElementById=idsString=tracker1006
+wait=200
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=idsString
+typeElementById=idsString=artf1012
+wait=200
+runJavaScriptPopToMain=javascript:quickJump()
+wait=200
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=200
+clickHrefByLinkText=Advanced Search
+waitUntilByName=term
+typeElementByName=term=TeamPlan
+waitUntilById=applications
+selectOptionValueByIdValue=applications=Trackers
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+clickElementById=Tracker
+wait=200
+searchElementValueByTagName=Body=Search

@@ -1,0 +1,15 @@
+name=Searching the Document via Sub-Child folder ID for usergroup -> public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_pub_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1128
+wait=500
+runJavaScriptPopToMain=javascript:quickJump()
+wait=500
+searchElementValueByTagName=Body=Documents 

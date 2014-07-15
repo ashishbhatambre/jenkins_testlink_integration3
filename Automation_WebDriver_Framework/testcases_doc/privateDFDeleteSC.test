@@ -1,0 +1,18 @@
+name=Delet Sub child Document Folder 
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private/docman.root.document1.ddddforname_to_attach_more_than.pr_subchilddf
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_delete
+clickHrefByLinkText=Delete
+wait=300
+acceptJavaScriptConfirm
+wait=300
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Folder deleted successfully.
+
+ 

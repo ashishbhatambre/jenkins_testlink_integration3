@@ -1,0 +1,8 @@
+name=Inability to access a private project belonging to the project group by a project group member even if they have permission via global project role with 'Prevent Inheritance' checked.
+component=Project Group [Project home page]
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/pg_prv_project/
+wait=300
+searchElementValueByTagName=Body=The page you requested cannot be found.

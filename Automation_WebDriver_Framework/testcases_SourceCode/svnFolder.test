@@ -1,0 +1,9 @@
+name=subversion repo Folders with commiting documents
+component=SourceCode
+role=Global Role
+artifact=NA
+runCommands=vcscript/svnFolder.cmd
+verifyCommandOutput=Checked out revision 1.
+verifyCommandOutput=Committed revision 1.
+verifyCommandOutput=Committed revision 2.
+verifyCommandOutput=Committed revision 3.

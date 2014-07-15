@@ -1,0 +1,10 @@
+name=Verify Search Posts link
+component=Project
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+waitUntilById=submitSearchPosts
+clickElementById=submitSearchPosts
+wait=500
+searchElementValueByTagName=Body=NProject#NEXT#Discussion 
+wait=300 

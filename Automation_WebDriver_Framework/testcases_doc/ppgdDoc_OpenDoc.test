@@ -1,0 +1,14 @@
+name=Open Document in public project
+component=Documents
+role=Project Group Role
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder
+wait=300
+clickHrefByLinkText=Doc_Online
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+clickHrefByLinkText=Open Document
+wait=800
+searchElementValueByTagName=Body=Online

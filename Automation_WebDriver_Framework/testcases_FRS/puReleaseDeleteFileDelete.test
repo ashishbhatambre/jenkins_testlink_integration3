@@ -1,0 +1,17 @@
+name=Ability to delete file in File Release as user with delete role in public project
+component=FRS
+role=Direct Role_Delete Permission
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.public/frs.package1
+wait=300
+wait=300
+clickHrefByLinkText=Public_Release1
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=frsFilesSelection_Delete
+clickElementById=frsFilesSelection_Delete
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=File(s) deleted successfully.

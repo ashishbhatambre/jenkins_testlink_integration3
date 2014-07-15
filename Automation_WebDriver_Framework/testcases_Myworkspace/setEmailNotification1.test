@@ -1,0 +1,33 @@
+name=Set Email Notifications for User2 [tracker-taskMgr-scm-frs-docman-wiki-discussion]
+waitUntilById=notification
+clickElementById=notification
+wait=500
+selectOptionValueByIdIndex=value(Tracker)=3
+wait=500
+selectOptionValueByIdIndex=value(TaskMgr)=2
+wait=400
+selectOptionValueByIdIndex=value(Scm)=1
+wait=500
+selectOptionValueByIdIndex=value(Frs)=3
+wait=500
+selectOptionValueByIdIndex=value(DocMan)=2
+wait=500
+selectOptionValueByIdIndex=value(Wiki)=1
+wait=500
+selectOptionValueByIdIndex=value(Discussion)=2
+waitUntilById=mapForm_Save
+clickElementById=mapForm_Save
+wait=500
+searchElementValueByTagName=Body=The notification preference for Source Code has been updated.
+wait=500
+searchElementValueByTagName=Body=The notification preference for Discussions has been updated.
+wait=500
+searchElementValueByTagName=Body=The notification preference for Trackers has been updated.
+wait=500
+searchElementValueByTagName=Body=The notification preference for Documents has been updated.
+wait=500
+searchElementValueByTagName=Body=The notification preference for Wiki has been updated.
+wait=500
+searchElementValueByTagName=Body=The notification preference for Tasks has been updated.
+wait=500
+searchElementValueByTagName=Body=The notification preference for File Releases has been updated.

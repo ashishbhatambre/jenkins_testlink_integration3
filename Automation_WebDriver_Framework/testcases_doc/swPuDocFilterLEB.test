@@ -1,0 +1,25 @@
+name=Filter Document by "Last Edited By" in root folder in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilById=btn_filter!!string!!lastModifiedBy
+clickElementById=btn_filter!!string!!lastModifiedBy
+wait=300
+clickElementById=ui-multiselect-_filter!!string!!lastModifiedBy-option-1
+wait=300
+clickHrefByLinkText=Filter
+wait=400
+searchElementValueByTagName=Body=SWPublic#NEXT#Documents
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300

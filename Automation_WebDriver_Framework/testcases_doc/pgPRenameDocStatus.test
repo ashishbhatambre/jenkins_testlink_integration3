@@ -1,0 +1,25 @@
+name=Edit the Document Status->Draft to Final for project group->public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= P_Child_Folder
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=500
+clickHrefByLinkText=Edit / Update
+wait=500
+selectOptionValueByIdValue=status=Final
+wait=500
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+wait=500
+searchElementValueByTagName=Body=Document updated successfully.

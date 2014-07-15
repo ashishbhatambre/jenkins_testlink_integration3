@@ -1,0 +1,12 @@
+name=Verify My Task Progress link
+component=Tasks
+role=Sitewide Role_Edit Permission
+artifact=NA
+wait=300
+url=sf/projects/swprivate/
+wait=300
+clickHrefByLinkText=Tasks
+waitUntilById=myProgress
+clickElementById=myProgress
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

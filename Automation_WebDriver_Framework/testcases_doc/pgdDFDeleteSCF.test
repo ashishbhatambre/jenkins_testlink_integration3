@@ -1,0 +1,15 @@
+name=Delete Sub Child Document Folder 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pglivefolder.pgdscfolder.ddddforname_to_attach_more_than
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Delete
+wait=300
+acceptJavaScriptConfirm
+wait=600
+searchElementValueByTagName=Body=Folder deleted successfully.
+

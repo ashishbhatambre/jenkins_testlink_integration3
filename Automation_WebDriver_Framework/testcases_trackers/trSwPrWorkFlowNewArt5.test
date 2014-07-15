@@ -1,0 +1,30 @@
+name=Ability to create Work flow NewArtifact -> Open -> Select Roles (admin role) in private project
+component=Tracker Admin
+role=Sitewide Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.swprivate
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=workflow
+clickElementById=workflow
+wait=200
+clickHrefByLinkText=(New Artifact)
+wait=200
+selectOptionValueByIdIndex=newToValue=0
+wait=200
+waitUntilById=editTransitionForm_add
+clickElementById=editTransitionForm_add
+wait=200
+selectOptionValueByIdIndex=rolesfldv1311=2
+wait=200
+selectOptionValueByIdIndex=requiredFieldsfldv1311=0
+selectOptionValueByIdIndex=requiredFieldsfldv1311=1
+selectOptionValueByIdIndex=requiredFieldsfldv1311=2
+selectOptionValueByIdIndex=requiredFieldsfldv1311=3
+waitUntilById=editTransitionForm_save
+clickElementById=editTransitionForm_save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Workflow transition roles updated successfully

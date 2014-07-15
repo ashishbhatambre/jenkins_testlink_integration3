@@ -1,0 +1,19 @@
+name=Ability to edit Package as user with site wide admin role in private project
+component=FRS
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=400
+url=sf/frs/do/viewSummary/projects.swprivate/frs
+wait=300
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectPackages_Edit
+clickElementById=selectPackages_Edit
+waitUntilById=title
+typeElementById=title=Private_Package
+waitUntilByName=description
+typeElementByName=description=Edit private project package by SW_Admin Project Role User
+wait=300
+waitUntilById=editPackage_submit
+clickElementById=editPackage_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Package details updated successfully.

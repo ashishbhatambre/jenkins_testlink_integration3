@@ -1,0 +1,24 @@
+name=Rename Sub Child Folder in public project
+component=Documents
+role=Project Group Role
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder.ddddforname_to_attach_more_than.pgdscfolder
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Rename
+wait=300
+switchToPopupWindow
+waitUntilById=title
+typeElementById=title=pgdSC_Folder
+wait=300
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=400
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=300
+clickHrefByLinkText=Close
+wait=400
+withoutPopCloseSwitchToMainWindow
+wait=600
+

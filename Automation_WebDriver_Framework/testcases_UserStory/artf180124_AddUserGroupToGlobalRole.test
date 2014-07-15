@@ -1,0 +1,34 @@
+name=Verify that Changing Parent project does remove all inherited rights from Global Role is associated usergroup
+component=ProjectAdmin
+role=NA
+artifact= Tasks - artf180125 TC - artf180124 [Associate 'QA Group' to Global Role 'GR1']
+wait=300
+url=sf/projects/project1/
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+clickHrefByLinkText=Permissions
+wait=500
+waitUntilById=groupRoleMatrix
+clickElementById=groupRoleMatrix
+wait=500
+clickHrefByLinkText=GR1
+wait=300
+waitUntilById=groups
+clickElementById=groups
+wait=300
+waitUntilById=addGroupsToRoleButtonLink
+clickElementById=addGroupsToRoleButtonLink
+wait=300
+waitUntilById=searchString
+typeElementById=searchString=QA Group
+wait=300
+clickElementById=addGroup_search
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=addGroup_groups
+clickElementById=addGroup_groups
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=QA Group was added to the role.

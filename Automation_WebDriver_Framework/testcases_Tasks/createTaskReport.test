@@ -1,0 +1,30 @@
+name=Task Report creation
+component=Report
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Reports
+wait=500
+waitUntilById=reports
+clickElementById=reports
+wait=300
+waitUntilByName=reporttype
+selectOptionValueByNameValue=reporttype=Task Report
+wait=300
+waitUntilById=createReport_submit
+clickElementById=createReport_submit
+wait=300
+waitUntilById=name
+typeElementById=name=TaskReport1
+waitUntilById=status
+selectOptionValueByIdValue=status=OK
+selectOptionValueByIdValue=status=Complete
+waitUntilById=priority
+selectOptionValueByIdValue=priority=4 - Low
+wait=300
+waitUntilById=taskReport_generate
+clickElementById=taskReport_generate
+wait=300
+searchElementValueByTagName=Body=NewProject#NEXT#Reports#NEXT#Modify Task Report

@@ -1,0 +1,27 @@
+name=Create Task folder in a private project created based on project template
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/myProjects
+wait=500
+clickHrefByLinkText=Tasks_Project
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+waitUntilById=newTaskGroup
+clickElementById=newTaskGroup
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementByName=title=New_task
+waitUntilById=createTaskGroupForm_submit
+clickElementById=createTaskGroupForm_submit
+wait=600
+searchElementValueByTagName=Body=Task folder created successfully.
+wait=600
+runJavaScriptPopToMain=javascript:finishCreateTaskGroup()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600

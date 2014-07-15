@@ -1,0 +1,9 @@
+name=Replace Project Image with document file
+wait=300
+waitUntilById=logo
+typeValueForFileField=D:\Test.doc
+wait=300
+waitUntilById=logo_change
+clickElementById=logo_change
+wait=300
+searchElementValueByTagName=Body=The file you tried to upload is not recognized as a valid image file. Please try again.

@@ -1,0 +1,19 @@
+name=Verify Monitor & Stop Monitor Functionality in Document Details Page in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+clickHrefByLinkText=Stop Monitoring
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Document is no longer monitored.
+wait=300
+clickHrefByLinkText=Monitor
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Document is now being monitored.

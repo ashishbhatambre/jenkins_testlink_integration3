@@ -1,0 +1,9 @@
+name=Ability to view the licence info by site admin
+component=License Info
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=1000
+clickHrefByLinkText=License Info
+wait=1000
+searchElementValueByTagName=Body=Site#NEXT#Administration

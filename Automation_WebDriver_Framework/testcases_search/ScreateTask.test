@@ -1,0 +1,76 @@
+name=Create Tasks
+component=Tasks
+role=Site Admin
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.project_search/taskmgr.searchfolder
+waitUntilById=listTasksSelect_Create
+clickElementById=listTasksSelect_Create
+waitUntilById=title
+typeElementById=title=@Read&
+waitUntilById=description
+typeElementById=description=Task:Read the document carefully.It shares knowledge about text parsing
+wait=300
+selectOptionValueByNameValue=priority=3 - Medium
+wait=300
+selectOptionValueByNameValue=status=OK
+wait=300
+typeElementByName=startDate=12/12/2013
+wait=300
+typeElementByName=endDate=12/13/2013
+wait=300
+typeElementByName=estimatedHours=4
+wait=300
+typeElementByName=requiredHours=3
+waitUntilById=createTask_Save
+clickElementById=createTask_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Task created successfully.
+wait=300
+url=sf/taskmgr/do/listTasks/projects.project_search/taskmgr.searchfolder.searchfolder1
+waitUntilById=listTasksSelect_Create
+clickElementById=listTasksSelect_Create
+waitUntilById=title
+typeElementById=title=Write 701 777
+waitUntilById=description
+typeElementById=description=Task:Write the document carefully.It will give knowledge about combination of numeber and text 701 doc 707
+wait=300
+selectOptionValueByNameValue=priority=2 - High
+wait=300
+selectOptionValueByNameValue=status=OK
+wait=300
+typeElementByName=startDate=12/12/2013
+wait=300
+typeElementByName=endDate=12/13/2013
+wait=300
+typeElementByName=estimatedHours=7
+wait=300
+typeElementByName=requiredHours=6
+waitUntilById=createTask_Save
+clickElementById=createTask_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Task created successfully.
+wait=300
+url=sf/taskmgr/do/listTasks/projects.project_search/taskmgr.searchfolder.searchfolder1.searchfolder2
+waitUntilById=listTasksSelect_Create
+clickElementById=listTasksSelect_Create
+waitUntilById=title
+typeElementById=title=Listen Task
+waitUntilById=description
+typeElementById=description=Task:Listen the text
+wait=300
+selectOptionValueByNameValue=priority=5 - Lowest
+wait=300
+selectOptionValueByNameValue=status=OK
+wait=300
+typeElementByName=startDate=12/12/2013
+wait=300
+typeElementByName=endDate=12/13/2013
+wait=300
+typeElementByName=estimatedHours=7
+wait=300
+typeElementByName=requiredHours=6
+waitUntilById=createTask_Save
+clickElementById=createTask_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Task created successfully.

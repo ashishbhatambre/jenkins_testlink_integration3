@@ -1,0 +1,12 @@
+name=Search Document Review Via Jump To Id UG_PR_Admin Role
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docr1002
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=ugProject
+wait=300

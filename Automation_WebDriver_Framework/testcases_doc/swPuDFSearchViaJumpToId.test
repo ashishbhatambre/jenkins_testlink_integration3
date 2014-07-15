@@ -1,0 +1,21 @@
+name=Search Document Folder By Via Jump To Id in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1004
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1005
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1029
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=Documents

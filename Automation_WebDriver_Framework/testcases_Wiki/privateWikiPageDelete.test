@@ -1,0 +1,12 @@
+name=Ability to delete Wiki Page 
+component=Wiki
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.private/wiki/LinkPage1
+waitUntilById=view_wiki_page.delete
+clickElementById=view_wiki_page.delete
+wait=300
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Wiki Page deleted successfully.

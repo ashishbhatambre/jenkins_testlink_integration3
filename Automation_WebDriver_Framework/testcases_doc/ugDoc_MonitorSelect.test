@@ -1,0 +1,16 @@
+name=Monitor Selected Docuement 
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugproject/docman.root.ugfolder
+wait=300
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Monitor Selected
+wait=600
+searchElementValueByTagName=Body=1 item(s) are now being monitored.
+wait=300

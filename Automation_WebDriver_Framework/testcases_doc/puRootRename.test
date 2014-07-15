@@ -1,0 +1,29 @@
+name=Rename Document Root Folder 
+component=Documents
+role=Direct Role_Admin Permisssion
+artifact=NA
+wait=300
+url=sf/projects/Public/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Root Folder
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_new
+clickHrefByLinkText=Rename
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=Public_Root
+wait=300
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=300
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=300
+runJavaScriptPopToMain=javascript:finishFolderRename()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300

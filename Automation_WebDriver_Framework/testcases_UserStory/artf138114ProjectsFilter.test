@@ -1,0 +1,21 @@
+name=Ability to Filter on Projects for an artifact artf138114
+component=Projects
+role=NA
+artifact=artf138114
+wait=300
+waitUntilByName=username
+typeElementByName=username=admin
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+url=sf/sfmain/do/listProjectsAdmin
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=NewProject
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=Projects
+wait=300

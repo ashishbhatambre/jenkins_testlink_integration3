@@ -1,0 +1,11 @@
+name=Ability to compare wiki version Link in public project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.swpublic/wiki/HomePage
+wait=300
+waitUntilById=listTasksSelect_submit
+clickElementById=listTasksSelect_submit
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Wiki

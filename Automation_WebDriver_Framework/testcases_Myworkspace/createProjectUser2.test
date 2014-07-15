@@ -1,0 +1,17 @@
+name=create project by user2
+component=Project
+role=Admin Role
+artifact=NA
+url=sf/sfmain/do/myProjects
+wait=300
+clickElementById=createProject
+waitUntilById=title
+typeElementById=title=Project_Track
+waitUntilById=description
+typeElementById=description=This is Tracker project
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=300
+url=sf/sfmain/do/myProjects/
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

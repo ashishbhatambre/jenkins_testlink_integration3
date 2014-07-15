@@ -1,0 +1,11 @@
+name=Ability to edit wiki link as user with admin role in private project
+component=Wiki
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.swprivate/wiki/HomePage
+wait=300
+waitUntilByid=view_wiki_page.edit
+clickElementById=view_wiki_page.edit
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Wiki

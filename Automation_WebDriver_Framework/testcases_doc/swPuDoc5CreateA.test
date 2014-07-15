@@ -1,0 +1,29 @@
+name=Add Document with URL attachment in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_5
+waitUntilById=description
+typeElementById=description=This is document having URL
+wait=300
+selectButtonByValue=fromUrl
+wait=300
+waitUntilById=urlContent
+typeElementById=urlContent=https://localhost:new/any
+wait=300
+waitUntilById=versionComment
+typeElementById=versionComment=Version1
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body=Document created successfully.

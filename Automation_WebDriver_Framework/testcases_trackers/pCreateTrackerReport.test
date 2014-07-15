@@ -1,0 +1,57 @@
+name=Ability to create Tracker Report in the public project
+component=Report
+role=Global Role
+artifact=NA
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Reports
+wait=200
+waitUntilById=reports
+clickElementById=reports
+waitUntilByName=reporttype
+selectOptionValueByNameValue=reporttype=Tracker Report
+waitUntilById=createReport_submit
+clickElementById=createReport_submit
+waitUntilByName=name
+typeElementByName=name=TrackerReport11
+waitUntilById=trackers
+selectOptionValueByIdValue=trackers=Stories
+waitUntilById=priority
+selectOptionValueByIdValue=priority=2 - High
+waitUntilById=assignedPlanningFolderDisplay
+clickElementById=assignedPlanningFolderDisplay
+wait=200
+switchToPopupWindow
+wait=200
+clickHrefByLinkText= GroupPlan
+wait=200
+waitUntilById=planningFolderPopup_submit
+clickElementById=planningFolderPopup_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+waitUntilById=trackerReport_next
+clickElementById=trackerReport_next
+wait=200
+waitUntilById=statuses(tracker1006)
+selectOptionValueByIdValue=statuses(tracker1006)=All Open
+waitUntilById=categories(tracker1006)
+selectOptionValueByIdValue=categories(tracker1006)=Any
+waitUntilById=displaycolumns(tracker1006)
+selectOptionValueByIdValue=displaycolumns(tracker1006)=All Fields
+waitUntilById=statuses(tracker1007)
+selectOptionValueByIdValue=statuses(tracker1007)=All Open
+waitUntilById=categories(tracker1007)
+selectOptionValueByIdValue=categories(tracker1007)=Any
+waitUntilById=displaycolumns(tracker1007)
+selectOptionValueByIdValue=displaycolumns(tracker1007)=All Fields
+waitUntilById=statuses(tracker1008)
+selectOptionValueByIdValue=statuses(tracker1008)=All Open
+waitUntilById=categories(tracker1008)
+selectOptionValueByIdValue=categories(tracker1008)=Any
+waitUntilById=displaycolumns(tracker1008)
+selectOptionValueByIdValue=displaycolumns(tracker1008)=All Fields
+waitUntilById=trackerReport_generate
+runJavaScriptPopToMain=javascript:submitForm(document.trackerReport, 'generate')
+wait=200
+searchElementValueByTagName=Body=Reports

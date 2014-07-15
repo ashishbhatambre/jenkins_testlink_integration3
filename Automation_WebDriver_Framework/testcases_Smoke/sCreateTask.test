@@ -1,0 +1,26 @@
+name=Ability to create Task in private project as site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= session_task
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=title
+typeElementById=title=S1
+waitUntilById=description
+typeElementById=description=Session task 1
+selectOptionValueByNameValue=priority=5 - Lowest
+selectOptionValueByNameValue=status=OK
+typeElementByName=startDate=03/18/2013
+typeElementByName=endDate=04/19/2013
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=500
+clickHrefByLinkText=Save
+wait=800
+searchElementValueByTagName=Body=Task created successfully.

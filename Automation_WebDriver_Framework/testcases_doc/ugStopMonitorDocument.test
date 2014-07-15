@@ -1,0 +1,21 @@
+name=Stop Monitoring document by clicking "Stop Monitor" button from document details page for usergroup -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_prv_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Tree_View
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=button_monitor_object
+clickElementById=button_monitor_object
+wait=300
+searchElementValueByTagName=Body=Document is no longer monitored.

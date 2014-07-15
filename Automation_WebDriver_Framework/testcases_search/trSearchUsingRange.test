@@ -1,0 +1,14 @@
+name=Tracker Search_to search within a specific range 
+component=Trackers
+role=Site Admin
+artifact=artf161281
+wait=300
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=range 100 TO range 200
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=(2 Items)

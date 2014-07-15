@@ -1,0 +1,8 @@
+name=Ability to verify the wiki link page in private project
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+clickHrefByLinkText=LinkPage2
+wait=300
+searchElementValueByTagName=Body=LinkPage2 

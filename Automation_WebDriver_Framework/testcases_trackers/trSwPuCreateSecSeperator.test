@@ -1,0 +1,22 @@
+name=Ability to Add Section separator in public project
+component=Tracker Admin
+role=Sitewide Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.swpublic
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+waitUntilById=selectionMenuButton_separatorMenu
+clickElementById=selectionMenuButton_separatorMenu
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=separatorLabel
+typeElementById=separatorLabel=Seperator:Section
+wait=200
+clickHrefByLinkText=Save
+wait=200
+withoutPopCloseSwitchToMainWindow
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Section separator created successfully.

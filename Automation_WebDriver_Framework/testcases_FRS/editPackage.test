@@ -1,0 +1,23 @@
+name=Edit the Package
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectPackages_Edit
+clickElementById=selectPackages_Edit
+wait=300
+waitUntilById=title
+typeElementById=title=FilePackage#123
+waitUntilByName=description
+typeElementByName=description=Package used for files in the NewProject Edited
+wait=300
+waitUntilById=editPackage_submit
+clickElementById=editPackage_submit
+wait=300
+searchElementValueByTagName=Body=Package details updated successfully.

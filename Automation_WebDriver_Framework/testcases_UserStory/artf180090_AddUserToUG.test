@@ -1,0 +1,47 @@
+name=Verify that Subprojects are not displayed to the user when Prevent Inheritance is enabled in project role
+component=Users
+role=NA
+artifact= Tasks - artf180125 TC - artf180090 [Create a user Group as 'QA Group' and add 'user4' as member of 'QA Group']
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=User Groups
+wait=500
+waitUntilById=allGroups
+clickElementById=allGroups
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=fullName
+typeElementById=fullName=QA Group
+waitUntilById=description
+typeElementById=description=usr4 is added with this group.
+wait=300
+waitUntilById=createGroup_submit
+clickElementById=createGroup_submit
+wait=300
+searchElementValueByTagName=Body=User Group#NEXT#QA Group#NEXT#has been created successfully.
+wait=300
+clickHrefByLinkText=QA Group
+wait=300
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=name
+typeElementById=name=usr4
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Selected users were added to the user group.

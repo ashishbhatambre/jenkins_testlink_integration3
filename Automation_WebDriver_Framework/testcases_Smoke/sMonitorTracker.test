@@ -1,0 +1,16 @@
+name=Ability to monitor the Tracker in private project as site admin user
+component=Tracker
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=traqueur2
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+wait=300
+waitUntilById=monitor_current_folder
+clickHrefByLinkText=Monitor Current Folder
+wait=800
+searchElementValueByTagName=Body=Tracker is now being monitored.

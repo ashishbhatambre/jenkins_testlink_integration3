@@ -1,0 +1,17 @@
+name=Ability to Hide and view tracker summary in private project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+runJavaScriptPopToMain=javascript:showHideChart(true)
+wait=200
+searchElementValueByTagName=body=SWPrivate#NEXT#Trackers
+wait=200
+runJavaScriptPopToMain=javascript:showHideChart(true)
+wait=200
+searchElementValueByTagName=body=SWPrivate#NEXT#Trackers

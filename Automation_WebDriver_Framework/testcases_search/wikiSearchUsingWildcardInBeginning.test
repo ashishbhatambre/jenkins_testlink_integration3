@@ -1,0 +1,14 @@
+name=Wiki Search_with wild card at the beginning of the keyword  
+component=Wiki
+role=Site Admin
+artifact=artf163034    
+wait=300
+url=sf/wiki/do/viewPage/projects.project_search/wiki/HomePage
+wait=300
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+wait=300
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=*te
+clickElementById=searchWikiPages_submit
+searchElementValueByTagName=Body=Invalid search syntax. Please check the search text for syntax errors. 

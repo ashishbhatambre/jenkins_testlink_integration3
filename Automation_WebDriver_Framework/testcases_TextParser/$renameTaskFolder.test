@@ -1,0 +1,30 @@
+name=Renaming the task Folder wtih ${}
+component=Tasks
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+clickHrefByLinkText= ${dollarTask}
+wait=300
+clickHrefByLinkText=Edit
+waitUntilById=TaskGroupList_rename
+clickHrefByLinkText=Rename
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=${dollar<b><s>Task</s></b>}
+wait=300
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=600
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=600
+runJavaScriptPopToMain=javascript:finishFolderRename()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600
+url=sf/taskmgr/do/viewSummary/projects.test_test/taskmgr

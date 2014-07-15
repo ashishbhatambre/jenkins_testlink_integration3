@@ -1,0 +1,28 @@
+name=Document Search_Using a combination of numbers and alphabets
+component=Documents
+role=Site Admin
+artifact=artf155321
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=titleQuery
+typeElementById=titleQuery="701 file"
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=800
+searchElementValueByTagName=Body=701 File
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=701 solution
+waitUntilById=metaDataScope
+clickElementById=metaDataScope
+waitUntilById=documentScope
+clickElementById=documentScope
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=800
+searchElementValueByTagName=Body=701 File

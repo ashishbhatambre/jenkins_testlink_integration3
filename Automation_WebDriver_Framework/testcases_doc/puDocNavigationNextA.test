@@ -1,0 +1,17 @@
+name=Navigate Document to "Next" 
+component=Documents
+role=Direct Role_Admin Permisssion
+artifact=NA
+wait=300
+url=sf/projects/public/
+wait=300
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Document1
+wait=300
+clickHrefByLinkText=Doc_4
+wait=400
+clickHrefByLinkText=Next >
+wait=600
+searchElementValueByTagName=Body=Public#NEXT#Documents
+wait=300

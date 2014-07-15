@@ -1,0 +1,21 @@
+name=Cut & Paste a Document in public project
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgfolder
+wait=300
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectDocuments_Cut
+clickElementById=selectDocuments_Cut
+wait=600
+searchElementValueByTagName=Body=1 document(s) cut to clipboard.
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgfolder.ddddforname_to_attach_more_than
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=600
+searchElementValueByTagName=Body=1 document(s) pasted.
+wait=300

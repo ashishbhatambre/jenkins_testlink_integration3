@@ -1,0 +1,22 @@
+name=Verifying Cancel Button on creating the Document Folder for usergroup -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=test
+wait=300
+runJavaScriptPopToMain=javascript:cancelFolderCreate()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=UG_Prv_Project#NEXT#Documents#NEXT#&Document_Folder&#NEXT#List Documents 

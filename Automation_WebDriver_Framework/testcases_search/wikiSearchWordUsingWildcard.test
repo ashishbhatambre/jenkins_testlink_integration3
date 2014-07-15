@@ -1,0 +1,13 @@
+name=Wiki Search_using wildcards for incomplete words  
+component=Wiki
+role=Site Admin
+artifact=artf163030     
+wait=300
+url=sf/wiki/do/viewPage/projects.project_search/wiki/HomePage
+wait=300
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+typeElementById=keywordQuery=Li*
+clickElementById=searchWikiPages_submit
+searchElementValueByTagName=Body=link1
+searchElementValueByTagName=Body=link2

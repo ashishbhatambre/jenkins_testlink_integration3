@@ -1,0 +1,50 @@
+name=Edit a Docuement in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=documentPropertiesVersion_submit
+clickElementById=documentPropertiesVersion_submit
+wait=300
+searchElementValueByTagName=Body=Active document version updated.
+wait=300
+clickHrefByLinkText=Edit / Update
+wait=300
+waitUntilById=title
+typeElementById=title=Public_Document
+wait=300
+waitUntilById=description
+typeElementById=description=Document updated 
+wait=300
+selectOptionValueByIdIndex=status=1
+wait=300
+waitUntilById=locked
+clickElementById=locked
+wait=300
+selectButtonByValue=fromText
+wait=300
+waitUntilById=textContent
+typeElementById=textContent=Private Project Document
+wait=300
+waitUntilById=versionComment
+typeElementById=versionComment=U_Version1
+wait=300
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+wait=300
+clickHrefByLinkText=Return
+wait=300
+searchElementValueByTagName=Body=Document updated successfully.
+wait=300

@@ -1,0 +1,19 @@
+name=Inability to create duplicate Project Group
+component=Project Group
+role=Admin
+artifact=NA
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Project Groups
+wait=500
+clickHrefByLinkText=Create Project Group
+wait=500
+waitUntilById=title
+typeElementById=title=TestedProjects
+waitUntilById=description
+typeElementById=description=Projects which is under test with public and private access permissions.
+waitUntilById=createProjectGroup_submit
+clickElementById=createProjectGroup_submit
+wait=300
+searchElementValueByTagName=Body=A project group with this name already exists. 

@@ -1,0 +1,25 @@
+name=Create document via "Enter Document url" option for usergroup public project global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_using_url
+waitUntilById=description
+typeElementById=description=Public Project Document created using URL
+wait=400
+selectButtonByValue=fromUrl
+waitUntilById=urlContent
+typeElementById=urlContent=http://localhost:new
+wait=400
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body=Document created successfully.

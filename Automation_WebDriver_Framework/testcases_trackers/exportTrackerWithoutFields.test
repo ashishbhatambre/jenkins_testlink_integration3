@@ -1,0 +1,26 @@
+name=Inability to export the tracker without selecting the fields
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder1
+wait=10000
+clickHrefByLinkText=Export
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=exportType
+selectButtonByValue=.xml
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=200
+searchElementValueByTagName=Body=You must select at least one field to export. 
+wait=200
+runJavaScriptPopToMain=javascript:close()
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Planning Folders#NEXT#Plan_Folder1#NEXT#List Artifacts

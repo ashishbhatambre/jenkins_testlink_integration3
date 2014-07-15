@@ -1,0 +1,23 @@
+name=Ability to rename Tracker 
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.private
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=admin_tracker.edit
+clickElementById=admin_tracker.edit
+wait=200
+waitUntilById=title
+typeElementById=title=prTracker
+wait=200
+waitUntilById=description
+typeElementById=description=Tracker for Private Project
+wait=200
+waitUntilById=editTracker_submit
+clickElementById=editTracker_submit
+wait=200
+searchElementValueByTagName=body=Private#NEXT#Project Admin

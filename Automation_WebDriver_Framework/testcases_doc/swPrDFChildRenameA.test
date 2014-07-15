@@ -1,0 +1,26 @@
+name=Rename Child Document Folder 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate/docman.root.document1.ddddforname_to_attach_more_than
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Rename
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=SW_Pr_DocumentFolder_Sub
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=400
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=400
+runJavaScriptPopToMain=javascript:finishFolderRename()
+wait=400
+withoutPopCloseSwitchToMainWindow
+wait=400
+searchElementValueByTagName=Body=SWPrivate#NEXT#Documents
+wait=400

@@ -1,0 +1,23 @@
+name=Tracker Creation with text starts with ${<>}
+component=Tracker Admin
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Tracker Settings
+wait=300
+waitUntilById=projectAdminTracker_create
+clickHrefByLinkText=Create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=${NewTracker<I>}
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=${New Tracker for the project New Project<b>}
+selectButtonByValue=icon_01.png
+wait=300
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+wait=300
+searchElementValueByTagName=Body=Tracker created successfully.

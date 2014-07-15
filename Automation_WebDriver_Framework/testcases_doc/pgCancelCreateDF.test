@@ -1,0 +1,21 @@
+name=Verift Cancel button in Create Document Folder page
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root
+wait=300
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+waitUntilById=title
+typeElementById=title=Folder
+wait=300
+clickHrefByLinkText=Cancel
+wat=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=pgProject#NEXT#Documents
+
+

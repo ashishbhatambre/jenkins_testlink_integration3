@@ -1,0 +1,15 @@
+name=Verify Document "Details" options for project group -> public project
+component=Documents
+role=Global Role
+artifact=NA
+url=sf/projects/pg_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+searchElementValueByTagName=Body=PG_Pub_Project#NEXT#Documents#NEXT#P_RootFolder#NEXT#Document Details 

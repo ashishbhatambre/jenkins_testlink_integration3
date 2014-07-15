@@ -1,0 +1,19 @@
+name=Ability to cancel Global role creation
+component=Role
+role=Admin
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Roles
+wait=500
+waitUntilById=globalRoles
+clickElementById=globalRoles
+wait=300
+waitUntilById=listSiteRoles_create
+clickElementById=listSiteRoles_create
+wait=500
+clickHrefByLinkText=Cancel
+wait=500
+searchElementValueByTagName=Body=Site Administration

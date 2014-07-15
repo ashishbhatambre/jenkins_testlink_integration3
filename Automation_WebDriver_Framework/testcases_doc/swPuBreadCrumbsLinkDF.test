@@ -1,0 +1,8 @@
+name=Navigate to document folder from breadcrumbs link in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+clickHrefByLinkText=RootFolder
+wait=300
+searchElementValueByTagName=Body=SWPublic/Documents/Root Folder/List Documents 

@@ -1,0 +1,17 @@
+name=Ability to delete the artifact from the Tracker
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText= Plan_Folder2
+wait=4000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=500
+clickHrefByLinkText=Delete
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=1 artifact(s) deleted successfully.

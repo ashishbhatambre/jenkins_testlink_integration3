@@ -1,0 +1,25 @@
+name=Cut & Paste Docuemnt Folder in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_cut
+clickHrefByLinkText=Cut
+wait=500
+searchElementValueByTagName=Body=Folder cut successfully.
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.infolder
+wait=300
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_paste
+clickHrefByLinkText=Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=Folder pasted successfully.
+

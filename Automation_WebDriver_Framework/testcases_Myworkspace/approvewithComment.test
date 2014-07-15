@@ -1,0 +1,12 @@
+name=Approve the pending project with comment
+clickHrefByLinkText=Pending Projects
+wait=300
+clickHrefByLinkText=Project_Wiki - This is wiki project
+wait=300
+selectButtonByValue=approve
+waitUntilById=comment
+typeElementById=comment=Your project approved
+waitUntilById=projectRequest_submit
+clickElementById=projectRequest_submit
+wait=300
+searchElementValueByTagName=Body=Site#NEXT#Administration

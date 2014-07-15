@@ -1,0 +1,27 @@
+name=Copy and paste the Mulitple Documents to another Document folder for public project with global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+selectCheckBoxFromList=_listItem=2
+wait=300
+waitUntilById=selectDocuments_Copy
+clickHrefByLinkText=Copy
+wait=500
+searchElementValueByTagName=Body=2 document(s) copied to clipboard.
+wait=500
+clickHrefByLinkText= Child_Folder
+wait=500
+waitUntilById=selectDocuments_Paste
+clickHrefByLinkText=Paste
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Document "PDF_File" pasted successfully.
+searchElementValueByTagName=Body=2 document(s) pasted.

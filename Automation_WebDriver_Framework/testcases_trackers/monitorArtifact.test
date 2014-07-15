@@ -1,0 +1,17 @@
+name=Ability to monitor the artifact as Admin user with global role
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=200
+waitUntilById=selectArtifactsForm_Monitor
+clickHrefByLinkText=Monitor
+wait=200
+searchElementValueByTagName=Body=Item artf1006 is already being monitored.

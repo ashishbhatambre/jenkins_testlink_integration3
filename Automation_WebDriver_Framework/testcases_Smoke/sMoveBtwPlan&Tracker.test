@@ -1,0 +1,15 @@
+name=Ability to move artifact between planning folder and Tracker in private project as site admin user
+component=Planning Folder
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=traqueur2
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectArtifactsForm_Cut
+clickHrefByLinkText=Cut
+wait=1000
+searchElementValueByTagName=Body=1 artifact(s) cut to the clipboard.

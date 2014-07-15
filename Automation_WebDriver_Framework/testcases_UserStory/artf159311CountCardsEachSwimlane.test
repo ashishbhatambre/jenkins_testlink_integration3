@@ -1,0 +1,23 @@
+name=Verify that planning folder's artifact count is displayed at each swim lane
+component=Tracker
+role=Global Role
+artifact=(UserStory - artf145097) artf159311,artf159312
+clickHrefByLinkText=Trackers
+wait=300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=PlanFolder3
+wait=400
+searchElementValueByTagName=Body=1 Cards
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Folder_Renamed
+wait=400
+searchElementValueByTagName=Body=2 Cards
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_ChildPlan
+wait=400
+searchElementValueByTagName=Body=2 Cards

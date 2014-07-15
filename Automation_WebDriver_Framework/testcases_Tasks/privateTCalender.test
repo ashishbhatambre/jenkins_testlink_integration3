@@ -1,0 +1,16 @@
+name=Ability to set up Calender in task in private project
+component=Tasks
+role=Admin role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/adminGeneralSettings/projects.private/taskmgr
+wait=300
+waitUntilById=task_calendar
+clickElementById=task_calendar
+wait=300
+selectOptionValueByIdIndex=includeWeekends=1
+wait=300
+waitUntilById=adminCalendar_submit
+clickElementById=adminCalendar_submit
+wait=400
+searchElementValueByTagName=Body=The default calendar has been updated.

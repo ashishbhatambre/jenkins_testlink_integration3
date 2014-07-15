@@ -1,0 +1,24 @@
+name= create document to Child Doc Folder by uploding .xls file for project group -> public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= P_Child_Folder
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+wait=500
+waitUntilById=title
+typeElementById=title=PG_ExcelFile
+waitUntilById=description
+typeElementById=description=Document with excel file attached.
+wait=300
+typeValueForFileField=C:\Uploaded_Files\Report.csv
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body=Document created successfully.

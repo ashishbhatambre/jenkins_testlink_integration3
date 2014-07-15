@@ -1,0 +1,25 @@
+name=Creating Task with Estimated Hours in Sub-Child Folder
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= Sub_Task
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=TaskWithEstimatedDate
+waitUntilById=description
+typeElementById=description=Task Created with Estimated Hours
+selectOptionValueByNameValue=priority=4 - Low
+selectOptionValueByNameValue=status=OK
+typeElementByName=estimatedHours=4
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.

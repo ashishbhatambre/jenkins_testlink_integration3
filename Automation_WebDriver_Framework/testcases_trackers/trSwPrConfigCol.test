@@ -1,0 +1,24 @@
+name=Ability to configure Tracker Columns 
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=CloneTracker1
+wait=200
+waitUntilById=columns-icon
+clickElementById=columns-icon
+waitUntilById=configureFolderPreferences
+clickElementById=configureFolderPreferences
+switchToPopupWindow
+waitUntilById=selectTrackerColumns_ApplyAndSave
+clickElementById=selectTrackerColumns_ApplyAndSave
+waitUntilById=preferenceName
+typeElementById=preferenceName=ColStyle1
+waitUntilById=folderPreferenceNamePopUpForm_Apply
+clickElementById=folderPreferenceNamePopUpForm_Apply
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=SWPrivate#NEXT#Trackers

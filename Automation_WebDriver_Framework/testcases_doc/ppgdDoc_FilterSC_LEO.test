@@ -1,0 +1,20 @@
+name=Filter Sub Child Document by Last Edited On in public project
+component=Documents
+role=Project Group Role
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder.ddddforname_to_attach_more_than.pgdscfolder
+wait=300
+waitUntilById=_filter!!date!!dateLastModified
+typeElementById=_filter!!date!!dateLastModified=09/06/2013
+wait=300
+clickHrefByLinkText=Filter
+wait=1000
+searchElementValueByTagName=Body=ppgProject#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=1000
+searchElementValueByTagName=Body=ppgProject#NEXT#Documents
+wait=300

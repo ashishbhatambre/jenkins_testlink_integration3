@@ -1,0 +1,29 @@
+name=Ability to edit the Planning Folder in private project as siteadmin
+component=Planning Folder
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText= list1
+wait=500
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+wait=500
+waitUntilById=edit_planning
+clickElementById=edit_planning
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=startDate
+typeElementById=startDate=07/18/2013
+wait=300
+waitUntilById=endDate
+typeElementById=endDate=08/14/2013
+wait=300
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Trackers#NEXT#Planning Folders#NEXT#list1#NEXT#List Artifacts

@@ -1,0 +1,27 @@
+name=Creating Planning Folder with text starts with ${<>}
+component=Tracker
+role=NA
+artifact=NA
+wait=200
+url=sf/projects/test_test/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=pfname
+typeElementById=pfname=$Session$no1
+waitUntilById=pfdescription
+typeElementById=pfdescription=${<folder>}for &session&
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=In progress
+wait=300
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=${test test}#NEXT#Trackers#NEXT#List Trackers and Planning Folders

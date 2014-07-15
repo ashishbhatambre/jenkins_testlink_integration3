@@ -1,0 +1,36 @@
+name=Ability to create a project and add selected project as parent
+component=Projects
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/myProjects
+wait=300
+clickElementById=createProject
+waitUntilById=title
+typeElementById=title=Private_Sub
+waitUntilById=description
+typeElementById=description=This is sub project for Private project
+wait=300
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Project Home 
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+waitUntilbyId=project_admin.addparent
+clickElementById=project_admin.addparent
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Private
+wait=500
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+clickElementByName=_listItem
+wait=500
+waitUntilById=listPotentialParentProjects_edit
+clickElementById=listPotentialParentProjects_edit
+wait=500
+searchElementValueByTagName=Body=Private set as parent project successfully.
+wait=500

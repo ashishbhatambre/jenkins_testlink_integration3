@@ -1,0 +1,47 @@
+name=Ability to create Multiple Doc Association via Finish and Add Another
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Folder_Renamed
+wait=4000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=500
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=200
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=associationIdString
+typeElementById=associationIdString=artf1009
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+waitUntilById=description
+typeElementById=description=Test Association
+waitUntilById=addAssociation_submitDescriptionStartAgain
+clickElementById=addAssociation_submitDescriptionStartAgain
+wait=500
+waitUntilById=associationIdString
+typeElementById=associationIdString=rel1002
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+waitUntilById=description
+typeElementById=description=Test Association
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=500
+searchElementValueByTagName=Body=1 associations were created successfully. Click Close to return to the main window.
+wait=500
+runJavaScriptPopToMain=javascript:finishAssociation()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500

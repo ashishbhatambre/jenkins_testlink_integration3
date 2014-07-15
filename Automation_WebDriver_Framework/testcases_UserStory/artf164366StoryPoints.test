@@ -1,0 +1,36 @@
+name=[SPA-07] QA Automation task for artf161563 : Display Current and Total Swim Lane Point Capacity
+component=Tracker
+role=Global Role
+artifact=artf164366
+wait=300
+url=sf/tracker/do/listTrackers/projects.newproject/tracker
+wait=300
+clickHrefByLinkText= Plan_Backlog
+wait=4000
+waitUntilById=createArtifact
+clickElementById=createArtifact
+waitUntilById=title
+typeElementById=title=Story_Points
+wait=300
+waitUntilById=description
+typeElementById=description=Story points
+waitUntilById=fldPoints
+typeElementById=fldPoints=21
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=800
+searchElementValueByTagName=Body=Artifact submitted successfully.
+wait=400
+clickHrefByLinkText=Plan
+wait=300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=1300
+clickCssSelectorAndValueForSpan=tree-title=Plan_Backlog
+wait=1300
+searchElementValueByTagName=Body=21 / 81 Pts 
+wait=300
+clickSpanElementByCssSelector=combo-arrow=0
+wait=1300
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder1
+wait=1300
+searchElementValueByTagName=Body=0 / 0 Pts 

@@ -1,0 +1,25 @@
+name=Inability to export data "without selecting document columns" in Private Project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=200
+clickHrefByLinkText=Export
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=200
+searchElementValueByTagName=Body=You must select at least one field to export.
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+withoutPopCloseSwitchToMainWindow

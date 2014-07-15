@@ -1,0 +1,15 @@
+name=Ability to Cut the Sub Category to clipboard
+component=Categories
+wait=500
+clickImage=cat_plus_last.gif
+wait=500
+clickHrefByLinkText= category1
+wait=500
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_cut
+wait=500
+clickHrefByLinkText=Cut
+wait=500
+searchElementValueByTagName=Body=Category and subcategories cut to clipboard successfully.
+wait=500

@@ -1,0 +1,24 @@
+name=Search with either a full word or an incomplete word using wild cards by selecting the checkbox 'All Text Fields'.
+component=Trackers
+role=Site Admin
+artifact=artf161259
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_search
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=artifact
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=(3 Items)
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_701
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=se*h
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=Tracker Search Results

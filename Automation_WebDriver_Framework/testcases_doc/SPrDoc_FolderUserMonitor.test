@@ -1,0 +1,40 @@
+name=Add Users in Folder Monitoring via List Documents Page in Private Inherited Project
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.private_sub/docman.root.folder
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Users Monitoring Folder
+wait=300
+switchToPopupWindow
+wait=300
+clickHrefByLinkText=Add
+wait=300
+clickHrefByLinkText=Show All
+wait=300
+waitUntilById=name
+typeElementById=name=swuser1
+wait=300
+clickHrefByLinkText=Clear
+wait=300
+waitUntilById=name
+typeElementById=name=swuser4
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Private_Sub#NEXT#Documents

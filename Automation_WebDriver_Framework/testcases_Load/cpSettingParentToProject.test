@@ -1,0 +1,22 @@
+name=Ability to assign Parent To public project
+component=Project Admin
+role=Project Admin
+artifact=NA
+url=sf/projects/child_pub_project
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+waitUntilById=project_admin.addparent
+clickElementById=project_admin.addparent
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=PubProject
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=800
+clickElementByName=_listItem
+wait=800
+waitUntilById=listPotentialParentProjects_edit
+clickElementById=listPotentialParentProjects_edit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=PubProject set as parent project successfully.

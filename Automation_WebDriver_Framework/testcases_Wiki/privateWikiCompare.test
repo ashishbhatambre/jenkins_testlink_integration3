@@ -1,0 +1,17 @@
+name=Ability to compare version in private project
+component=Wiki
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.private/wiki/HomePage
+wait=300
+waitUntilById=view_wiki_page.showPageDetails
+clickElementById=view_wiki_page.showPageDetails
+wait=800
+waitUntilById=listTasksSelect_submit
+clickElementById=listTasksSelect_submit
+wait=300
+waitUntilById=edit_wiki_page.cancel
+clickElementById=edit_wiki_page.cancel
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Wiki

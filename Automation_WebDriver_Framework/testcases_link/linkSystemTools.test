@@ -1,0 +1,10 @@
+name=Verify  the System Tools Link 
+component=Admin
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/listProjectsAdmin
+wait=300
+clickHrefByLinkText=System Tools
+wait=500
+searchElementValueByTagName=Body=Site#NEXT#Administration

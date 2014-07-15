@@ -1,0 +1,12 @@
+name=Search Document Review Via Jump To Id 
+component=Documents
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docr1003
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=Public
+wait=300

@@ -1,0 +1,20 @@
+name=Cancel Rename Document Description in inherited public project
+component=Documents
+role=DirectRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.public_sub/docman.root.folder
+wait=300
+clickHrefByLinkText=Doc_VersionComment
+wait=300
+clickHrefByLinkText=Edit / Update
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_VerComment
+wait=300
+waitUntilById=description
+typeElementById=description=Doc_VerComment
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=Public_Sub#NEXT#Documents

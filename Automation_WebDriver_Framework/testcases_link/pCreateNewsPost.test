@@ -1,0 +1,11 @@
+name=create news post-Plain
+wait=300
+clickHrefByLinkText=Create News Post
+waitUntilById=title
+typeElementById=title=pProject_News Post
+waitUntilById=body
+typeElementById=body=New Project Related functionality automation going to complete
+waitUntilById=createNewsPost_submit
+clickElementById=createNewsPost_submit
+wait=300
+searchElementValueByTagName=Body=News Post created successfully.

@@ -1,0 +1,11 @@
+name=Check Updated version Number in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root.folder
+wait=300
+clickHrefByLinkText=Doc_VerComment
+wait=800
+searchElementValueByTagName=Body=Current Version: 2 
+wait=300

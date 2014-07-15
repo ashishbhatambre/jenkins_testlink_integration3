@@ -1,0 +1,20 @@
+name=Ability to Create projects based on project templates with documents enabled for private child project
+component=Documents
+role=Global Role
+artifact=NA
+wait=200
+url=sf/sfmain/do/createProject
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_Child_Prv_Project
+waitUntilById=description
+typeElementById=description=Project Created by admin permission user using Document enabled Template
+waitUntilById=templateId
+selectOptionValueByIdValue=templateId=ChildProject_Doc_Template
+waitUntilById=createProject_submit
+clickElementById=createProject_submit
+wait=300
+searchElementValueByTagName=Body=Create#NEXT#Project
+wait=300
+clickHrefByLinkText=Return
+wait=300

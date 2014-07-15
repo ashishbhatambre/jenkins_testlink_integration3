@@ -1,0 +1,19 @@
+name=Ability to cancel Auto Assignment in public project
+component=Tracker Admin
+role=Sitewide Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.swpublic
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+waitUntilById=autoAssign
+clickElementById=autoAssign
+wait=200
+waitUntilById=noAutoAssignment
+clickElementById=noAutoAssignment
+wait=200
+waitUntilById=adminTrackerForm_Cancel
+clickElementById=adminTrackerForm_Cancel
+wait=200
+searchElementValueByTagName=body=SWPublic#NEXT#Project Admin

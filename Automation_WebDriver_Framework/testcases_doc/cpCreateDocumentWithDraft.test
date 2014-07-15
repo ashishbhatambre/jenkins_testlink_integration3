@@ -1,0 +1,28 @@
+namename=Creating Document with Draft State for public child project by global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Doc_List
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+wait=500
+waitUntilById=title
+typeElementById=title=DocWithDraftState
+waitUntilById=description
+typeElementById=description=Creating Document with Draft state
+waitUntilById=status
+selectOptionValueByIdValue=status=Draft
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=This is Document for the Public Project under draft state.
+wait=500
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=500
+searchElementValueByTagName=Body=Document created successfully.

@@ -1,0 +1,28 @@
+name=Document Review using past due date for public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Books
+wait=500
+clickHrefByLinkText=Page1
+wait=500
+waitUntilById=review
+clickElementById=review
+wait=500
+clickHrefByLinkText=Start a Review
+wait=500
+waitUntilById=title
+typeElementById=title=Review1
+waitUntilById=dueDate
+typeElementById=dueDate=06/12/2013
+waitUntilById=description
+typeElementById=description=Document for the project "PrvProject" are under review.
+waitUntilById=createDocumentReview_submit
+clickElementById=createDocumentReview_submit
+wait=500
+searchElementValueByTagName=Body= The due date cannot be a date in the past.

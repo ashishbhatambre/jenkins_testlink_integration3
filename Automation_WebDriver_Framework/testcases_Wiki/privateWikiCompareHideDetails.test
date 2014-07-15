@@ -1,0 +1,9 @@
+name=Ability to Hide Details of Wiki Page in private project when pages are compared
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+waitUntilById=compare_wiki_page.hidePageDetails
+clickElementById=compare_wiki_page.hidePageDetails
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Wiki

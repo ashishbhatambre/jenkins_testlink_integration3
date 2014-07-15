@@ -1,0 +1,39 @@
+name=Better Search Artifact for Discussion [jump to id- adcance search]-> artf142542
+component=Discussion
+role=Global Role
+aritfact=artf142542
+wait=300
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+waitUntilByName=Discussion
+clickElementByName=Discussion
+waitUntilById=idsString
+typeElementById=idsString=forum1001
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=Forum
+clickElementById=Forum
+waitUntilById=idsString
+typeElementById=idsString=topc1001
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=Topic
+clickElementById=Topic
+waitUntilById=idsString
+typeElementById=idsString=post1001
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=Post
+clickElementById=Post
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=300
+clickHrefByLinkText=Advanced Search
+waitUntilByName=term
+typeElementByName=term=NewForum
+waitUntilById=applications
+selectOptionValueByIdValue=applications=Discussions
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+wait=300
+searchElementValueByTagName=Body=Search

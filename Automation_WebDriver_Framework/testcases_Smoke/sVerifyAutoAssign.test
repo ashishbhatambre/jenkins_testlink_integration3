@@ -1,0 +1,24 @@
+name=Ability to do auto assignment for private project by site admin
+component=Tracker
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+clickHrefByLinkText=Tracker Settings
+wait=500
+clickHrefByLinkText=traqueur2
+wait=500
+waitUntilById=autoAssign
+clickElementById=autoAssign
+wait=500
+waitUntilById=autoAssignByCategory
+selectButtonByValue=C
+wait=500
+waitUntilById=noAutoAssignment
+selectButtonByValue=N
+wait=500
+waitUntilById=adminTrackerForm_Save
+clickElementById=adminTrackerForm_Save
+wait=500
+searchElementValueByTagName=Body=Auto assignment rules updated successfully.

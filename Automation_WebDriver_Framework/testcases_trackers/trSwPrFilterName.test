@@ -1,0 +1,21 @@
+name=Ability to filter Artifact by Title in private project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=QA:PendingArtf
+wait=200
+clickHrefByLinkText=Filter
+wait=200
+searchElementValueByTagName=body= (1 Item)
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=200
+searchElementValueByTagName=body=SWPrivate#NEXT#Trackers

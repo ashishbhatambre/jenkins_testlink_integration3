@@ -1,0 +1,11 @@
+name=Search Document Via Jump To Id 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=doc1137
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=Documents

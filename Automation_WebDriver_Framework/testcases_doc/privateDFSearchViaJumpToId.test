@@ -1,0 +1,25 @@
+name=Search Document Folder By Via Jump To Id 
+component=Documents
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1062
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=Private
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1063
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=Private
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1064
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=Private

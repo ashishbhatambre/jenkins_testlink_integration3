@@ -1,0 +1,13 @@
+name=Document Search_To verify a warning message when  keyword is specified.
+role=Site Admin
+artifact=artf155293
+wait=300
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=You have not entered any search criteria.
+
+

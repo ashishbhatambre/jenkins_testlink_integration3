@@ -1,0 +1,15 @@
+name=Ability to view Inline Edit Button
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder1
+wait=10000
+waitUntilById=editMode
+runJavaScriptPopToMain=javascript:changeToEditMode()
+wait=500
+searchElementValueByTagName=Body=Trackers

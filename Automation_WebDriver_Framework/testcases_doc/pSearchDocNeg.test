@@ -1,0 +1,28 @@
+name=create document and search it without search criteria in Public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText=Add Document
+wait=500
+waitUntilById=title
+typeElementById=title=Page3
+waitUntilById=description
+typeElementById=description=New Project Document Page3
+wait=300
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=This is Document 3 for the Project "PrvProject"
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=You have not entered any search criteria.

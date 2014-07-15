@@ -1,0 +1,10 @@
+name=Ability to view Task Dependency Link
+component=Tasks
+role=Create role
+artifact=NA
+wait=300
+waitUntilById=dependencies
+clickElementById=dependencies
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Tasks
+wait=300

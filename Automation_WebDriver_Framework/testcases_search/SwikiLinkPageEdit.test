@@ -1,0 +1,15 @@
+name=Ability to edit wiki link page
+component=Wiki
+role=Site Admin
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.project_search/wiki/HomePage
+wait=300
+clickHrefByLinkText=Link3
+waitUntilById=view_wiki_page.edit
+clickElementById=view_wiki_page.edit
+wait=300
+typeElementById=editorarea=test value added &status$ [subpage]
+waitUntilById=edit_wiki_page.update
+clickElementById=edit_wiki_page.update
+searchElementValueByTagName=Body=Wiki Page updated.

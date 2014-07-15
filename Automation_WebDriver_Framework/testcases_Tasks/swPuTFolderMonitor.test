@@ -1,0 +1,19 @@
+name=Ability to monitor Task Folder in public project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+clickHrefByLinkText=Monitor Current Folder
+wait=300
+searchElementValueByTagName=Body=Task Folder is now being monitored.
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+clickHrefByLinkText=Stop Monitoring Folder
+wait=300
+searchElementValueByTagName=Body=Task Folder is no longer monitored.
+

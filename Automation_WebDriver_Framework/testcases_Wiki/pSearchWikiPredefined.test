@@ -1,0 +1,15 @@
+name=Ability to View search in predefined search in public project
+component=Wiki
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+wait=300
+waitUntilById=predefinedSearchToggle
+clickElementById=predefinedSearchToggle
+wait=300
+waitUntilById=predefined_recent
+clickElementById=predefined_recent
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Wiki#NEXT#Search Wiki Pages

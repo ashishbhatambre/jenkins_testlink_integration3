@@ -1,0 +1,28 @@
+name=Ability to update Tracker Group Field 
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.public
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Group
+wait=200
+waitUntilById=displayLinesMultiselect
+typeElementById=displayLinesMultiselect=3
+waitUntilById=helpText
+typeElementById=helpText=Updated Group Field
+wait=200
+clickHrefByLinkText=Add
+waitUntilById=value_dmmy0
+typeElementById=value_dmmy0=Low
+waitUntilById=defaultValue_dmmy0
+clickElementById=defaultValue_dmmy0
+wait=200
+clickHrefByLinkText=Save Field
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=body=Field data updated successfully.

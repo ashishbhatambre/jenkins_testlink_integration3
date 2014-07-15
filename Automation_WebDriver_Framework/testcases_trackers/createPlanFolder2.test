@@ -1,0 +1,26 @@
+name=Ability to create Planning Folder
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=pfname
+typeElementById=pfname=testPlan
+waitUntilById=pfdescription
+typeElementById=pfdescription=testPlan is a planning folder created by uesr1
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=In progress
+wait=200
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#List Trackers and Planning Folders

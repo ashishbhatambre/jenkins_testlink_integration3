@@ -1,0 +1,29 @@
+name=Ability to create user
+component=Users
+role=Site Admin
+artifact=NA
+wait=300
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Users
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilById=UsernameField
+typeElementById=UsernameField=suser1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+waitUntilById=confirmpwd
+typeElementById=confirmpwd=Collabnet1!
+waitUntilById=fullName
+typeElementById=fullName=suser1_AdminPermission	
+waitUntilById=email
+typeElementById=email=suser1@collab.net
+waitUntilById=companyName
+typeElementById=companyName=cspl
+waitUntilById=superUser
+clickElementById=superUser
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=300
+searchElementValueByTagName=Body=User#NEXT#suser1#NEXT#has been created successfully.
+wait=300

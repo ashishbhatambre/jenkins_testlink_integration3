@@ -1,0 +1,12 @@
+name=Global Search_By selecting the checkbox "Search Attachments" 
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168143  
+clickHrefByLinkText=Jump to ID
+clickElementById=search
+typeElementById=term=Automation
+clickElementById=searchAttachments
+selectOptionValueByIdIndex=applications=10
+selectOptionValueByIdIndex=projects=0
+clickElementById=searchForm_submit
+searchElementValueByTagName=Body=Wiki (3)

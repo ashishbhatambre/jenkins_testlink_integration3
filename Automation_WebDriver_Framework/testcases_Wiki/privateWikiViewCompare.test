@@ -1,0 +1,9 @@
+name=Ability to view the Wiki Version Compare Link in private project
+component=Wiki
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=listTasksSelect_submit
+clickElementById=listTasksSelect_submit
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Wiki 

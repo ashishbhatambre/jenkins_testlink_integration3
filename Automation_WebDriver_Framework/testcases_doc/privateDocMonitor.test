@@ -1,0 +1,21 @@
+name=Enable document monitoring
+component=Documents
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/projects/private/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+waitUntilById=selectDocuments_Monitor
+clickElementById=selectDocuments_Monitor
+wait=500
+searchElementValueByTagName=Body=1 item(s) are now being monitored.
+

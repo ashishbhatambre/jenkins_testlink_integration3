@@ -1,0 +1,32 @@
+name=Ability to create Package in private project as site admin user
+component=FRS
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=title
+typeElementById=title=QWR243@
+waitUntilByName=description
+typeElementByName=description=ETD348#
+waitUntilById=isPublished
+clickElementById=isPublished
+wait=500
+waitUntilById=createPackage_submit
+clickElementById=createPackage_submit
+wait=800
+clickHrefByLinkText=Create
+wait=800
+waitUntilById=title
+typeElementById=title=YTDF
+waitUntilByName=description
+typeElementByName=description=ERHJN
+waitUntilById=isPublished
+clickElementById=isPublished
+wait=500
+waitUntilById=createPackage_submit
+clickElementById=createPackage_submit
+wait=500
+searchElementValueByTagName=Body=Package created successfully.

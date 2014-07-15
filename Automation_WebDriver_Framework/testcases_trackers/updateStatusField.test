@@ -1,0 +1,26 @@
+name=Ability to update Status field in tracker in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=NewTracker
+wait=200
+clickHrefByLinkText=Status
+wait=200
+waitUntilById=helpText
+typeElementById=helpText=Select any one among the values.
+wait=200
+runJavaScriptPopToMain=JavaScript: alphabetizeRows()
+wait=200
+waitUntilById=fieldForm_save
+clickElementById=fieldForm_save
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=Field data updated successfully.

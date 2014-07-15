@@ -1,0 +1,23 @@
+name=Ability to create SubCategory
+component=Category
+role=Admin
+artifact=NA
+waitUntilById=new_category
+clickElementById=new_category
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=category1
+waitUntilById=description
+typeElementById=description=Category are created to test project.
+waitUntilById=createCategory_submit
+clickElementById=createCategory_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Category created successfully.
+wait=500
+runJavaScriptPopToMain=javascript:finishDocument()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=Site Administration#NEXT#Project Categories#NEXT#ProjectCategory#NEXT#Edit Category

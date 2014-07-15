@@ -1,0 +1,52 @@
+name=Ability to set up Project with Public access permission
+component=Project Admin
+role=Admin
+artifact=NA
+wait=300
+url=sf/projects/pg_pub_project/
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+clickHrefByLinkText=Permissions
+wait=500
+waitUntilById=defaultAccessPermissions
+clickElementById=defaultAccessPermissions
+waitUntilById=editDefaultPermissions
+clickElementById=editDefaultPermissions
+waitUntilById=public
+selectButtonByValue=1
+waitUntilById=editDefaultAccessPermissions_submit
+clickElementById=editDefaultAccessPermissions_submit
+searchElementValueByTagName=Body=Project access level was updated successfully.
+waitUntilById=projectInfoWildcard
+selectOptionValueByIdValue=projectInfoWildcard=All logged in users
+waitUntilById=pageViewWildcard
+selectOptionValueByIdValue=pageViewWildcard=All project members
+waitUntilById=trackerViewWildcard
+selectOptionValueByIdValue=trackerViewWildcard=All project members
+waitUntilById=trackerCreateWildcard
+selectOptionValueByIdValue=trackerCreateWildcard=All project members
+waitUntilById=scmViewWildcard
+selectOptionValueByIdValue=scmViewWildcard=All project members
+waitUntilById=scmCommitWildcard
+selectOptionValueByIdValue=scmCommitWildcard=All project members
+waitUntilById=docmanViewWildcard
+selectOptionValueByIdValue=docmanViewWildcard=All project members
+waitUntilById=taskmgrViewWildcard
+selectOptionValueByIdValue=taskmgrViewWildcard=All project members
+waitUntilById=discussionViewWildcard
+selectOptionValueByIdValue=discussionViewWildcard=All project members
+waitUntilById=discussionPostWildcard
+selectOptionValueByIdValue=discussionPostWildcard=All project members
+waitUntilById=discussionPrivateViewWildcard
+selectOptionValueByIdValue=discussionPrivateViewWildcard=All project members
+waitUntilById=discussionPrivatePostWildcard
+selectOptionValueByIdValue=discussionPrivatePostWildcard=All project members
+waitUntilById=frsViewWildcard
+selectOptionValueByIdValue=frsViewWildcard=All project members
+waitUntilById=wikiCreateWildcard
+selectOptionValueByIdValue=wikiCreateWildcard=All project members
+waitUntilById=editDefaultAccessApplicationPermissions_submit
+clickElementById=editDefaultAccessApplicationPermissions_submit
+wait=500
+searchElementValueByTagName=Body=Application permissions updated successfully.

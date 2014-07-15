@@ -1,0 +1,18 @@
+name=Login To CTF [usr1]
+component=Login
+role=NA
+artifact=TC - artf180090
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=usr1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+wait=300
+clickElementById=forcePasswordChangeForm_submit
+searchElementValueByTagName=Body=User Password changed successfully.

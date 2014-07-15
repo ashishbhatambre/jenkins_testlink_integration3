@@ -1,0 +1,18 @@
+name=Searching Posts with text ${}
+component=Discussions
+role=NA
+artifact=NA
+wait=100
+url=sf/projects/test_test
+wait=100
+clickHrefByLinkText=Discussions
+wait=100
+clickElementById=submitSearchPosts
+wait=100
+waitUntilById=searchText
+typeElementById=searchText=$Testing$
+wait=100
+waitUntilById=searchPosts_Search
+clickElementById=searchPosts_Search
+wait=100
+searchElementValueByTagName=Body=${test test}#NEXT#Discussion#NEXT#Search Posts

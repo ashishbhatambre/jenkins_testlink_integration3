@@ -1,0 +1,9 @@
+name=Ability to view association link in private project
+component=Tasks
+role=View Role
+artifact=NA
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Tasks

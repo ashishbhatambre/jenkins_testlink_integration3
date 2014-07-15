@@ -1,0 +1,21 @@
+name=View of Boards artf139713 Moving Cards
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=admin
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Board View
+wait=300
+clickSpanElementByCssSelector=combo-arrow=1
+wait=300
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder1
+wait=300
+clickElementByCssSelector=i=icon-refresh=0
+wait=300
+searchElementValueByTagName=Body=Trackers

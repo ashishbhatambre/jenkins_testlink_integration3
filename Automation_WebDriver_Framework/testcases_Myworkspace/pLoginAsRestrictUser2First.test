@@ -1,0 +1,10 @@
+name=Login As Restricted User with setting the Password (tester2)
+url=sf/sfmain/do/home
+typeElementByName=username=tester2
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+searchElementValueByTagName=Body=User Password changed successfully.

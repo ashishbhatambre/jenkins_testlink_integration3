@@ -1,0 +1,6216 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TeamForge 7.2.0.0.182</title>
+<script type="text/javascript">
+ var GB_ROOT_DIR = "greybox/";
+</script>
+<script type="text/javascript" src="greybox/AJS.js"></script>
+<script type="text/javascript" src="greybox/AJS_fx.js"></script>
+<script type="text/javascript" src="greybox/gb_scripts.js"></script>
+<link href="greybox/gb_styles.css" rel="stylesheet" type="text/css" media="all" />
+<style type="text/css">
+<!--
+.style1 {
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.style3 {font-family: Verdana, Arial, Helvetica, sans-serif}
+-->
+</style>
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0">
+<tr>
+<td height="44" bgcolor="#666666"><table width="100%" border="0" cellspacing="10">
+<tr>
+ <td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" bgcolor="#660000">
+<tr>
+<td width="73%" height="32"><div align="center"><span class="style1">[Smoke Test]TeamForge 7.2.0.0.182 against FF 24.0</span></div></td>
+ <td width="27%"><div align="center" class="style1">Generated on 2014-07-09T09:01:21</div></td>
+ </tr>
+ </table></td>
+  </tr>
+ </table></td>
+</tr>
+<tr>
+<td><table width="100%" border="0" cellspacing="5">
+<tr bgcolor="#F0F0F0">
+ <td width="18%"><span class="style2">Test Case</span></td>
+<td width="7%"><span class="style2">Component</span></td>
+<td width="7%"><span class="style2">Status</span></td>
+<td width="47%"><span class="style2">Test File</span></td>
+<td width="28%"><span class="style2">Page Output</span></td>
+ </tr>
+ <tr>
+ <td><span class="style3">Ability to login as admin and set the Site Mode to ALM</span></td>
+ <td>
+ Login
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ loginFirst.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to creating Site Admin user</span></td>
+ <td>
+ Users
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createSiteAdminUser.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to login as site Admin after changing the password</span></td>
+ <td>
+ Login
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ siteAdminLoginFirst.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create users</span></td>
+ <td>
+ Users
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createUsers.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Abilitu to create private project via Create project</span></td>
+ <td>
+ Projects
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ projCreate.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Global Roles with Admin Permissions</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createRoleAdminPer.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Global Roles with Restricted Permissions</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createRoleRestricPer.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to set user Membership via project admin in private project</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ userMembership.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign the users to admin role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ userPermission.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign restricted role to the user</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ userPermission2.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to filter the Project with text as site admin user</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ filterProject.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create User Groups as Site Admin</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createUserGroups.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Setting Users to user group-Negative Case</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ settingUsersToGroupNeg.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign users to the user group</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ settingUsersToGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete user group</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ deleteUserGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update User Group name</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ updateUserGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to filter  user group with inavalid filter</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ filterUserGroupWithoutResult.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to filter User group with valid filter criteria</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ filterUserGroupWithResult.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cancel user group creation</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ cancelCreatingUserGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to filter Users in user group with invalid filter criteria</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ filterUsersInUserGroupWithoutResult.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to filter Users in user group with valid filter</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ filterUsersInUserGroupWithResult.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete the users from user group</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ deleteUsersInUserGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability tp create subversion integration</span></td>
+ <td>
+ Integrations
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createIntegration.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create SCM Adapter Integration</span></td>
+ <td>
+ Integrations
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createScmIntegration.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to disable categories</span></td>
+ <td>
+ Categories
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ setCategoryDisable.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Setting Categories to be enabled</span></td>
+ <td>
+ Categories
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ setCategoryEnable.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Category</span></td>
+ <td>
+ Categories
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createCategory.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update category tilte and description</span></td>
+ <td>
+ Categories
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ updateCategory.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create SubCategory</span></td>
+ <td>
+ Categories
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createSubCategory.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to Cut the Sub Category to clipboard</span></td>
+ <td>
+ Categories
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ editCategory.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to paste the sub category to the source location</span></td>
+ <td>
+ Categories
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ editCategoryNeg.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cut Category to clipboard</span></td>
+ <td>
+ Categories
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ cutCategory.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to paste sub category in the source location</span></td>
+ <td>
+ Categories
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pasteCategoryToItself.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cut and paste Category</span></td>
+ <td>
+ Categories
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ cutPasteCategory.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete category</span></td>
+ <td>
+ Categories
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ deleteCategory.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to create duplicate category</span></td>
+ <td>
+ Categories
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createDuplicateCategory.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to remove the broadcast message</span></td>
+ <td>
+ BroadCast Message
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ verifyClear.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to add Broadcast message</span></td>
+ <td>
+ System Tools
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ broadCastMsg.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to clear Boardcast message</span></td>
+ <td>
+ Broadcast message
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ clearBoardCastMsg.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to query from non existing table via Ad hoc database query</span></td>
+ <td>
+ System Tools
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ adhocDatabaseNeg.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to view the Adhoc Database result and server status</span></td>
+ <td>
+ System Tools
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ adhocDatabase.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to view system log</span></td>
+ <td>
+ System Tools
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ verifySystemLogs.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to view the build info</span></td>
+ <td>
+ System Tools
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ verifyBuildInfo.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to view the Report by site admin</span></td>
+ <td>
+ System Tools
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ adminReportLink.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to view the licence info by site admin</span></td>
+ <td>
+ License Info
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ adminLicenseLink.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to change site mode from ALM to SCM</span></td>
+ <td>
+ License Info
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ changeSiteModeToSCM.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to change site mode from SCM to ALM</span></td>
+ <td>
+ License Info
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ changeSiteModeToALM.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to creating Project Group as site admin user</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createProjectGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to add Projects to the Project group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ addProjectToGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to add Users to the Project group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ addUsersToProjGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to add users to the project group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ settingPerToProjGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign permission to the project group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ settingPerToProjGroup2.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to set the role via UserGroup Matrix</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ userGroupMatrix.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to create duplicate Project Group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ duplicateProjectGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Project Group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createProjectGroup2.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete Project Group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ deleteProjectGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cancel Project Group creation</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ cancelCreatingProjectGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cancel Project Group description update</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ cancelEditProjGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit the Project Group description</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ editProjectGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to remove the project from the project group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ removeProjFrmGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to remove the users from the project group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ removeUsersFrmProjGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cancel creating Role to project Group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ cancelCreatingRoleToProjGrp.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Role to project Group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createRoleToProjGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit role assigned to a project group</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ editProjGroupRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete role in a project group</span></td>
+ <td>
+ Projects
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ deleteProjGroupRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to verify the user role matrix in project group</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ verifyUserRoleMatrix.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to filter from project group by providing invalid filter criteria</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ filterProjGroupWithoutResult.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to filter in project group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ filterProjGroupWithResult.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create restricted user</span></td>
+ <td>
+ Users
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pCreateUserTester1.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create restricted user</span></td>
+ <td>
+ Users
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pCreateUserTester2.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to filter the Restricted users</span></td>
+ <td>
+ Users
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ filterUsers.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Global Roles with DeleteOnly Permissions</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pGbDeleteOnly.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to creating Global Roles with CreateOnly Permissions</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pGbCreateOnlyRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Global Roles with EditOnly Permissions</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pGbEditOnly.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Global Roles with ViewOnly Permissions</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pGbViewOnly.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit Global Project Role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ editGlobalRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Global role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createGlobalRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cancel Global role creation</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ cancelCreatingGlobalRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete Global Role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ deleteGlobalRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to create duplicate Global Role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ duplicateCreateGRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create User Groups as Admin</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pCreateUserGroups.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to view the alert message if the users are not selecting while assigning users to User Group</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pSettingUsersToGroupNeg.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign users to project group</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pSettingUsersToGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create a site wide admin role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ siteWideAdminRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create site wide restricted role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ siteWideRestrictRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create site wide Create only role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ siteWideCreateOnly.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create site wide Edit Only Role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ siteWideEditOnly.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Site Wide View Only Role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ siteWideViewOnly.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Site Wide Delete Only Role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ siteWideDeleteOnly.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create SiteWide Role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createSiteWideRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit SiteWide Role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ editSiteWideRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cancel SiteWide Role creation</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ cancelCreatingSiteWideRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete SiteWide Role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ deleteSiteWideRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to add users to siteWide Admin role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ addUsersToSiteRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete users from SiteWide Admin Role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ deleteUsersInSiteWideRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to create duplicate SiteWide Role</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ duplicateCreateSRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create restricted user for Create only permission</span></td>
+ <td>
+ Users
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ gCreateUserNewuser1.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create restricted user for Edit Only permission</span></td>
+ <td>
+ Users
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ gCreateUserNewuser2.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create restricted user for Delete only permission</span></td>
+ <td>
+ Users
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ gCreateUserNewuser3.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create restricted User to provide different permission around all components</span></td>
+ <td>
+ Users
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createNewUser4.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to set user membership to more than one user  via project admin</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ userMemArtf139713.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to set create only and edit only role to user</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ userPerArtf139713.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to set DeleteOnly and ViewOnly role to the user</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ userPer2Artf139713.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Global Roles with different Permissions against each component</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createAlternativeRole.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create public project via Create Project</span></td>
+ <td>
+ Projects
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pProjectCreation.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to set project with Public access permission</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pPublicPermission.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign user Membership to the public project</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pUserMembership.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign user permission to the project for Admin and restricted Role</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pUserPermission.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create CVS Pserver integration</span></td>
+ <td>
+ Integrations
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pCreateIntegration.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Abiliyt to create Project Group For User Roles group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ gCreateProjectGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to add Projects to project group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ gAddProjToGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to add more than one user to Project Group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ gAddUserToProjGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign users to Project Group specific role</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ gSettingPerToProjGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign users via Permissions to Project Group</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ gSettingPerToProjGroup2.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create User Groups as SiteAdmin</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ gUserGroups.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign a child Private Project to a parent</span></td>
+ <td>
+ Projects
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createChildProject.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to set a parent to the project</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ settingParentToProject.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to view the child project Path</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ verifyChildProjectPath.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign child Public Project to a parent Public Project</span></td>
+ <td>
+ Projects
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ createChildPubProject.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to set Project with Public access permission</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ cpPublicPermission.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign Parent To public project</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ cpSettingParentToProject.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create private project for Project group</span></td>
+ <td>
+ Projects
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pgCreateProject.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to Create User Groups to project group-project</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pgCreateUserGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign Users to user group for private project</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pgSettingUsersToUserGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Project Group for private project</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pgCreateProjectGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to add Private Project to the Project group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pgAddProjectsToGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to add Users group to the project in the project group</span></td>
+ <td>
+ Roles
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pgSetPerToProjectGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create public project for project Group</span></td>
+ <td>
+ Projects
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pgPCreateProject.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to set up Project with Public access permission</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pgPPublicPermission.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create User Groups for users assigned to Public project</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pgPCreateUserGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign users to user group to access the public project via project group</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pgPSettingUsersToUserGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Project Group for public project group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pgPCreateProjectGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to add public Project to the Project group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pgPAddProjectsToGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to add User group to the project in public project group</span></td>
+ <td>
+ Project Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pgPSetPerToProjectGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Abiltiy to create user</span></td>
+ <td>
+ Users
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ ugCreateUser.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create User Groups in Private Project as Site Admin</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ ugCreateUserGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign users to user group in private project</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ ugSettingUsersToGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create private project to access it via User group</span></td>
+ <td>
+ Projects
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ ugCreateProject.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign the User group to private project</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ ugSettingUserGroupMatrix.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create user</span></td>
+ <td>
+ Users
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ ugPCreateUser.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create User Groups in publid project as Site Admin</span></td>
+ <td>
+ User Groups
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ ugPCreateUserGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign users to user group in public project</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ ugPSettingUsersToGroup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create public project to access it via User group</span></td>
+ <td>
+ Projects
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ ugPCreateProject.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to assign the User group in public project</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ ugPSettingUserGroupMatrix.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Private Project as SiteAdmin user</span></td>
+ <td>
+ Projects
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateProject.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Tracker in private project as siteadmin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateTracker.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to clone Tracker in private project as site admin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCloneTracker.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to clone external Tracker without source Id in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCloneExternalTrackerNeg.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to clone External tracker in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCloneExternalTracker.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete tracker in private project as site admin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sDeleteTracker.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update tracker Group field in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sUpdateGroupField.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update tracker Status field in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sUpdateStatusField.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update tracker Category field in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sUpdateCategoryField.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update tracker Customer field in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sUpdateCustomerField.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to do auto assignment for private project by site admin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sVerifyAutoAssign.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Planning Folder in private project by site admin user</span></td>
+ <td>
+ Planning Folder
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreatePlanFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit the Planning Folder in private project as siteadmin</span></td>
+ <td>
+ Planning Folder
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditPlanFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cut the planning folder as private project as site admin user</span></td>
+ <td>
+ Planning Folder
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCutPlanFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to paste the Planning Folder to the same location for private project by siteadmin user</span></td>
+ <td>
+ Planning Folder
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sPastePlanFolderNeg.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cut & Paste the planning folder for private project by site admin</span></td>
+ <td>
+ Planning Folder
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sPastePlanFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete Planning folder in private project as site admin user</span></td>
+ <td>
+ Planning Folder
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sDeletePlanFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create artifact with default status in private project as site admin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create arifact with open status in private project as site admin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateArtifact2.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update artifact Name and Description in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sUpdateArtifactName.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update artifact Group field in private project as site admin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditGroupFieldArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update artifact Status in private project as siteadmin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditStatusFieldArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update artifact Category field in private project as siteadmin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditCategoryFieldArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update artifact Customer Field in private project as siteadmin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditCustomerFieldArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit artifact Priority in private project as siteadmin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditPriorityFieldArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Package in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreatePackage.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create File Release for package (without files) in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateRelease.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create File Release to the package in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateRelease2.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit the Package in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditPackage.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit the Release in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditRelease.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete the Release in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sDeleteRelease.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete the package in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sDeletePackage.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to add Files to Releases in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sAddFileToRelease.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit artifact Planning Folder field in private project as site admin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditPFFieldArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit artifact Estimated Effort field in private project as site admin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditEstimateFieldArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit artifact Remaining Effort field in private project by site admin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditRemFieldArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit artifact Actual Effort field in private project as site admin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditActualFieldArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit artifact Story Points field in private project as site admin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditPointsFieldArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to monitor the Tracker in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMonitorTracker.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to stop monitoring the Tracker in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sStopMonitorTracker.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cut the artifact in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCutArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to paste the artifact in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sPasteArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit an Artifact in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to export Tracker in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sExportTracker.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Planning Folder in private project by site admin user</span></td>
+ <td>
+ Planning Folder
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreatePlanFolder3.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to move artifacts between planning folder in private project as site admin user</span></td>
+ <td>
+ Planning Folder
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMoveArtToPlan.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to move artifact between planning folder and Tracker in private project as site admin user</span></td>
+ <td>
+ Planning Folder
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMoveBtwPlan&Tracker.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to move the artifact to Tracker in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMoveArtToTracker.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete the artifact as private project in site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sDeleteArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create artifact in planning folder in private project as site admin user</span></td>
+ <td>
+ Planning Folder
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sSubmitArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to creating artifact in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sSubmitArtifact2.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to filter with non existing artifact id in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFilterArtifactNeg.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to filter the artifact with results in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFilterArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit artifact Report Release field in private project by site admin</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditReportReleaseArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit artifact Fixed Release field in private project as site admin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditFixedReleaseArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create new Document Folder in private project as site admin</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateDocFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Document Folder under root in private project as site admin</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateDocFolder2.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to rename the Document Folder in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditDocFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cut the Document Folder in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCutDocFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to paste Document folder in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sPasteDocFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to rename the Document Root Folder in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditDocRootFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create new Document Folder with special characters in private project by site admin</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateDocFolderSpecial.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create new Document Folder with 256 characters in private project as site admin</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateDocFolder256.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to edit document using invalid date Format in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFilterDocInvalidDate.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete Document folder in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sDeleteDocFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Document with Word file in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateWordDoc.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Document with excel file in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateExcelDoc.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Document by uploading a PDF file in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreatePdfDoc.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to creating Document with Excel-CSV file in private project as site admin</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateCSVDoc.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Online Document in  private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateOnlineDoc.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Document with special characters in private project as site admin</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateDocumentSpecial.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cut the document in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCutDocument.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to paste Document to another folder for private project by  site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sPasteDocument.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to copy a document in private project as site admin</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCopyDocument.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to paste Document to another folder for private project by  site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sPasteDocument.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit Document by uploading jpg file in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditDocument.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to Filter Documents with non existing doc id in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFilterDocumentNeg.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to filter Documents in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFilterDocument.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to document Rows from 15 to 25 for private project by site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditDocRow.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to monitor the Document Folder for private project by site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMonitorDocFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to stop Monitoring the Document Folder  in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sStopMonitorDocFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to mark document version active in private project as site admin</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sActiveDocVersion.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create document asociation in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sDocAssociation.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to search document in private project as site admin user</span></td>
+ <td>
+ Document Search
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sSearchDocument.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete the Document Root Folder in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sDeleteDocRootFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cut the Document Folder and paste to Root folder in private project as site admin user</span></td>
+ <td>
+ Document
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCutDocFolderToRoot.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Task Folder in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateTaskFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to rename the Task Folder in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditTaskFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to Cancel status Rollup in Task Manager settings in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sVerifyCancelStatusRollup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to do status Rollup in Task Manager settings in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sStatusRollup.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to Cancel update in Task Calender in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sVerifyCancelDefaultTaskCal.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to set default Calender to 7days in Task Manager settings in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sUpdate7DaysCalender.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update default Calender to 5days in Task Manager settings in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sUpdate5DaysCalender.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Task in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateTask.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit Task in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditTask.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to create Task with invalid Date Format in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateTaskWithDateNeg.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Task with special characters in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateTaskWithSpecialChar.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to the Task without search criteria in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sSearchTaskNeg.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to search task in private project as site admin user</span></td>
+ <td>
+ Task search
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sSearchTask.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create the task and edit TaskProgress for private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sTaskSummary.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cut the Task in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCutTask.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to paste the task in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sPasteTask.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to copy the task in private project as site admin</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCopyTask.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to paste the task in to task folder in private project as site admin</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCopyPasteTask.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete Task in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sDeleteTask.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Task Dependency in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sTaskDependencies.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create task Folder with 256 characters in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateTaskFolder256.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete Task Folder in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sDeleteTaskFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to Export task in private project as  site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sExportTask.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to monitor the Task in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMonitorTaskFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to stop monitoring the Task Folder in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sStopMonitorTaskFolder.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Verify the task Status via RootFolder in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditStatusTask.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to display Task Rows from 15 to 75 in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditTaskRow.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create task Folder with special characters in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateTaskFolderSpecialChar.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cut and paste Task to the same folder in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCutPasteTaskNeg.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cut and paste Task in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCutPasteTask.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to edit Task using invalid date Format for private project by site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFilterTaskInvalidDate.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to filter Task using status for private project by site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFilterTask.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Task Report in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateTaskReport.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit Task Report in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditTaskReport.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to export Task Report in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sExportTaskReport.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete Task Report in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sDeleteTaskReport.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Task Report with special characters in private project as site admin user</span></td>
+ <td>
+ Task
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateTaskReportSpecial.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to set the editor options in the Wiki Editor in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sVerifyWikiEditor.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Wiki Page in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateWiki.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Page (with Link syntax) in wiki in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateLinkPage1.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create a Page in wiki in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateLinkPage2.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to add attachment to the Wiki Page  in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sWikiAttachmentToLinkPage.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to preview changes in wiki Page in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sVerifyPerviewChanges.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to cancel the Edit Wiki page in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCancelEditWiki.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete Linked wiki Page in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sDeleteWikiPage.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to show Details of a wiki page in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sWikiShowDetails.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to Hide Details in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sWikiHideDetails.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to associate Wiki page in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sWikiAssociation.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to verify Wiki BackLinks in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sWikiBackLinks.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to click searchWikiPage button in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sVerifyWikiSearch.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to Search wiki page with predefined recent page in private project as site admin user (check)</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sWikiPredefinedRecentSearch.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to Search wiki Orphaned page in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sWikiOrphanedSearch.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to Search wiki  predefined all page in private project as site admin user (check)</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sWikiPredefinedAllSearch.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to click through the Version Tab in wiki  in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sVerifyWikiVersionTab.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to view the attachment Tab in wiki in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sVerifyWikiAttachmentTab.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to monitor the Wiki component by adding users to monitor list in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sAddUsersToMonitorWiki.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to remove users from wiki monitor in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sRemoveUsersFromMonitorWiki.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to change the configuration of the Wiki settings in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sSettingConfigWiki.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to filter File in FileReleases in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFilterFileWithResult.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to filter File in File Release with non existing id in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFilterFileWithoutResult.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to stop Monitoring the Pacakge in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sStopMonitorFileRelease.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to monitor the Package for private project by site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMonitorFileRelease.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to check the already monitored Pacakge for private project by site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMonitorFileReleaseAgain.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to view the users monitoring the Pacakge in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sVerifyUserMonitorFileRelease.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to filtering File in FileRelease in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFilterPackageWithoutResult.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to filter File in FileRelease for private project by site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFilterPackageWithResult.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to stop Monitoring the Releases in File Releases in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sStopMonitorRelease.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to monitor the Releases in FileReleases for private project by site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMonitorRelease.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to stop Monitoring the File in File Releases in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sStopMonitorFile.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to Monitor the File in Releases for private project by site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMonitorFile.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to stop Monitoring the Release File in FileReleases in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sStopMonitorSeperateRelease.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to monitoring the Release File in FileReleases for private project by siteadmin</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMonitorSeperateRelease.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to monitor the Release File which is already monitored in FileReleases for private project by site admin users</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMonitorSeperateReleaseAgain.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to view the users monitoring the Releases in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sVerifyUserMonitorRelease.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete Files from the releases in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sDeleteFile.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to Export file from reported Tracker Artifact in FRS in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sReportedTrackerArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to export from Fixed Tracker Artifact in FRS for private project by site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFixedTrackerArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to export File from Fixed Tracker Artifact in FRS in private project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sPlannedTrackerArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to associate the files to File Releases in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFileAssociation.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to remove File Association in FRS in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sRemoveFileAssociation.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Release into the package in private project as site admin user</span></td>
+ <td>
+ FRS
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateRelease3.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to monitor the artifact for private project by site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMonitorArtifact.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Forum in private project as site admin user</span></td>
+ <td>
+ Discussions
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateForum.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to edit Forum in private project as site admin user</span></td>
+ <td>
+ Discussions
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sEditForum.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete Forum in private project as site admin user</span></td>
+ <td>
+ Discussions
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sDeleteForum.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to monitor the Discussion Forum in private project as site admin user</span></td>
+ <td>
+ Discussions
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sStopMonitorForum.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to view the users monitoring the Discussion Forum  in private project as site admin user</span></td>
+ <td>
+ Discussions
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sVerifyUserMonitorForum.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Discussion Topics in private project as site admin user</span></td>
+ <td>
+ Wiki
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sCreateTopic.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to filter Topics for private project by site admin user</span></td>
+ <td>
+ Discussions
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFilterTopicsWithResult.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to filtering Topics with non existing id for private project by site admin user</span></td>
+ <td>
+ Discussions
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFilterTopicsWithoutResult.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to monitor the Discussion Topics for private project by site admin user</span></td>
+ <td>
+ Discussions
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMonitorForum.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to stop monitoring the Discussion Topics in private project as site admin user</span></td>
+ <td>
+ Discussions
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sStopMonitorForumTopics.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to stop monitoring Discussion Topic in private project as site admin user</span></td>
+ <td>
+ Discussions
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sStopMonitorTopic.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to monitor Discussion Topic in private project as site admin user</span></td>
+ <td>
+ Discussions
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMonitorTopic.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to monitor the discussion that is already monitored in private project as site admin user</span></td>
+ <td>
+ Discussions
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sMonitorTopicAgain.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to Cancel Discssion Topic create in private project as site admin user</span></td>
+ <td>
+ Discussions
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sVerifyCancelCreatingTopics.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete the Topics in private project as site admin user</span></td>
+ <td>
+ Discussions
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sDeleteMultipleTopics.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Abilit to filter Topics in private project as site admin users</span></td>
+ <td>
+ Discussions
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sFilterForumWithResult.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to refresh Boards</span></td>
+ <td>
+ Boards
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sRefreshBoard.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Verifying the Board View with Listed Planning Folders</span></td>
+ <td>
+ Boards
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ sVerifyBoardPlanList.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create public Project as site admin</span></td>
+ <td>
+ Projects
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ spCreateProject.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to set project with Public access permission</span></td>
+ <td>
+ Project Admin
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ pPublicPermission.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to create Tracker in public project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ spCreateTracker.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to clone tracker in public project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ spCloneTracker.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Inability to clone external Tracker without source Id in public project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ spCloneExternalTrackerNeg.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to clone External tracker in public project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ spCloneExternalTracker.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to delete tracker in public project as site admin</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ spDeleteTracker.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update tracker Group field in public project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ spUpdateGroupField.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update tracker Status field in public project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ spUpdateStatusField.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update category field in tracker in public project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ spUpdateCategoryField.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to update tracker Customer field in public project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ spUpdateCustomerField.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+ <td><span class="style3">Ability to do auto assignment in public project as site admin user</span></td>
+ <td>
+ Tracker
+ </td>
+ <td><p class="style3">FAIL</p>
+  <p class="style3"><img src="fail.gif" width="48" height="48" /></p></td>
+ <td>
+ spVerifyAutoAssign.test
+ </td>
+<td><ol class="style3">
+ null
+ </ol></td>
+ </tr>
+ <tr>
+ <tr>
+  <td colspan="4"><hr  size="1" color="#333333"/></td>
+  </tr>
+ <tr>
+   <td colspan="4"><b>Total Test Cases :<b> 342<b>  Total Test Cases Run :<b> 342 Passed : 0 Failed : 342</td>
+  </tr>
+ </table></td>
+ </tr>
+ <tr>
+   <td bgcolor="#666666">&nbsp;&nbsp;<span class="style1">&copy; CollabNet</span></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+name=Save the Task With Save and View Button
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= task2
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=TaskSave&View
+waitUntilById=description
+typeElementById=description=Save it using Save and View button
+selectOptionValueByNameValue=priority=2 - High
+selectOptionValueByNameValue=status=Alert
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=300
+waitUntilById=createTask_SaveAndView
+clickElementById=createTask_SaveAndView
+wait=500
+searchElementValueByTagName=Body=Task created successfully.

@@ -1,0 +1,16 @@
+name=Ability to set new password after first log as restricted user
+component=Login
+role=NA
+artifact=NA
+url=sf/sfmain/do/home
+wait=200
+typeElementByName=username=tester1
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=200
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=200
+searchElementValueByTagName=Body=User Password changed successfully.

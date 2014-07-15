@@ -1,0 +1,7 @@
+name=Reject SCM repo without Comment
+selectCheckBoxFromList=selectedObjects=0
+waitUntilById=objectSelection_Reject
+clickElementById=objectSelection_Reject
+wait=300
+searchElementValueByTagName=Body=Repository request rejected.
+

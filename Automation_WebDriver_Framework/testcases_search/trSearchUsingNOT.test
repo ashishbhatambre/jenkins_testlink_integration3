@@ -1,0 +1,14 @@
+name=Tracker Search_Using Boolean Character NOT
+component=Trackers
+role=Site Admin
+artifact=artf161272   
+wait=300
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=explains NOT planning
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=(1 Item)

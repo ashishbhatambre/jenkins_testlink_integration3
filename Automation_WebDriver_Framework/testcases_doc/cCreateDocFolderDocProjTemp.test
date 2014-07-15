@@ -1,0 +1,30 @@
+name=Ability to Create document folder in a project created based on project template for child_project
+component=Documents
+role=Global Role
+artifact=NA
+wait=200
+url=sf/sfmain/do/myProjects
+wait=200
+waitUntilById=all
+clickElementById=all
+wait=200
+clickHrefByLinkText=Doc_Child_Prv_Project
+wait=200
+clickHrefByLinkText=Documents
+wait=200
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=title
+typeElementById=title=Test_Doc
+waitUntilById=createDocumentFolder_submit
+clickElementById=createDocumentFolder_submit
+wait=200
+searchElementValueByTagName=Body=Folder created successfully.
+wait=200
+runJavaScriptPopToMain=javascript:finishDocument()
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200

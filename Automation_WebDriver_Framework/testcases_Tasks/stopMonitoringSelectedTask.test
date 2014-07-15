@@ -1,0 +1,41 @@
+name=Add users to Task Users Monitoring Selected list from List Tasks > Monitor > Stop Monitoring Selected option
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= C_Task
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+waitUntilById=listTasksSelect_who
+clickHrefByLinkText=Users Monitoring Selected
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+wait=300
+selectOptionValueByIdValue=foundMultipleTemp=newuser1_createOnlyPermission
+selectOptionValueByIdValue=foundMultipleTemp=yy_admin_per
+selectOptionValueByIdValue=foundMultipleTemp=user1_adminPermission
+wait=500
+clickHrefByLinkText=Add
+wait=500
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=500
+runJavaScriptPopToMain=javascript:close()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+waitUntilById=listTasksSelect_UnMonitor
+clickHrefByLinkText=Stop Monitoring Selected
+wait=500
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.

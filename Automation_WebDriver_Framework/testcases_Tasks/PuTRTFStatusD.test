@@ -1,0 +1,11 @@
+name=Verify Root Task Folder Status Link
+component=Tasks 
+role=Direct Role_Delete Permission
+artifact=NA
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+clickElementById=summary
+waitUntilById=summary
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Tasks

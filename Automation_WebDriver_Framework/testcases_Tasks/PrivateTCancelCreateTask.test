@@ -1,0 +1,13 @@
+name=Ability to cancel task creation in private project
+component=Tasks
+role=Admin role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.private/taskmgr.pra_taskfolder
+wait=300
+waitUntilById=listTasksSelect_Create
+clickElementById=listTasksSelect_Create
+wait=300
+clickHrefByLinkText=Cancel
+wait=500
+searchElementValueByTagName=Body=Private#NEXT#Tasks

@@ -1,0 +1,21 @@
+name=Search Root Folder/Child Folder/Sub Child Folder via Jump To Id UG_PR_Admin Role
+component=Document Search
+role=NA
+artifact=NA
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1021
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1023
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docf1024
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=Documents

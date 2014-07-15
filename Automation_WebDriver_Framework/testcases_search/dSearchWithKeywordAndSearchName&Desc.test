@@ -1,0 +1,18 @@
+name=Document Search_Using 'Search Keywords' field with a valid full word with 'Search Name and Description' enabled.
+component=Documents
+role=Site Admin
+artifact=artf155296
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Test_Document
+waitUntilById=metaDataScope
+clickElementById=metaDataScope
+waitUntilById=documentScope
+clickElementById=documentScope
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=500
+searchElementValueByTagName=Body=Test_Document
+

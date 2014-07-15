@@ -1,0 +1,12 @@
+name=ppguser1_Login
+component=Login
+role=Project Group Role_UserGroup User Admin Permission
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=ppguser1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet2@
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Workspace

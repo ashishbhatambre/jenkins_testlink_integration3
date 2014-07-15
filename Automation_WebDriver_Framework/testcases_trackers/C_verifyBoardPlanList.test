@@ -1,0 +1,14 @@
+name=Ability to verify Board View with Listed Planning Folders as user with create only permission in private project
+component=Boards
+role=GobalRole
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickSpanElementByCssSelector=combo-arrow=0
+wait=200
+searchElementValueByTagName=Body=Plan_Folder1#NEXT#Folder_Renamed#NEXT#Plan_Folder3#NEXT#Board_Plan1#NEXT#Board_ChildPlan
+wait=200
+clickHrefByLinkText=List
+wait=200

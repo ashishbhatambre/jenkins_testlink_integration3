@@ -1,0 +1,18 @@
+name=Ability to create Page (with Link syntax) in wiki in private project as site admin user
+component=Wiki
+wait=500
+clickHrefByLinkText=Project which is under Testing.
+wait=500
+waitUntilById=editorPrefSelect
+selectOptionValueByIdValue=editorPrefSelect=Plain Editor
+wait=500
+waitUntilById=editorarea
+typeElementById=editorarea=!!! %%( text-align: right; )%%( background-color: rgb(204, 255, 255); )%%( color: rgb(128, 0, 0); )%%( font-size: larger; )''__This is new page created inside the Project Link.__''%%%%%%%%
+wait=500
+waitUntilById=editorPrefSelect
+selectOptionValueByIdValue=editorPrefSelect=WYSIWYG Editor
+wait=500
+waitUntilById=create_wiki_page.save
+clickElementById=create_wiki_page.save
+wait=500
+searchElementValueByTagName=Body=Wiki Page created successfully.

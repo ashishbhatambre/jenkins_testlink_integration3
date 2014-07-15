@@ -1,0 +1,11 @@
+name=Search Document Review Via Jump To Id in public project
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=docr1002
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=ppgProject
+wait=300

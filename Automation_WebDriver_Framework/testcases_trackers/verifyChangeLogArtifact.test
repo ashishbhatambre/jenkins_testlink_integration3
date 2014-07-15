@@ -1,0 +1,17 @@
+name=Ability to view Change Log in artifact page in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=10000
+clickHrefByLinkText=BoardArtifact1
+wait=200
+waitUntilById=history
+clickElementById=history
+wait=200
+searchElementValueByTagName=Body=(5 Items)

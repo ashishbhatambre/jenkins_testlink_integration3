@@ -1,0 +1,12 @@
+name=Ability to create wiki sub link page
+component=Wiki
+role=Site Admin
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.project_search/wiki/HomePage
+wait=300
+clickHrefByLinkText=Link3
+clickHrefByLinkText=subpage
+typeElementById=editorarea=ultimate inheritance
+clickElementById=create_wiki_page.save
+searchElementValueByTagName=Body=Wiki Page created successfully.

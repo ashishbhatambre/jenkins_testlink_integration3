@@ -1,0 +1,18 @@
+name=Ability to add Projects to the Project group
+component=Project Groups
+wait=300
+url=sf/rbac/do/viewProjectGroupDetails/pgroups.testedprojects
+wait=500
+waitUntilById=add_member_project
+clickElementById=add_member_project
+wait=500
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=project
+wait=500
+clickHrefByLinkText=Filter
+wait=500
+selectCheckBoxFromList=_listCheckAll
+waitUntilById=addProjectToProjectGroup_add
+clickElementById=addProjectToProjectGroup_add
+wait=800
+searchElementValueByTagName=Body=Selected project(s) are added to the Project Group.

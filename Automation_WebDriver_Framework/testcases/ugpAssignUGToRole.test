@@ -1,0 +1,29 @@
+name=Ability to assign User Group to Project Role
+component=Project Admin
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/editProject/projects.ugpproject
+wait=300
+clickHrefByLinkText=Permissions
+wait=300
+clickHrefByLinkText=pUserGroup_AdminRole
+wait=300
+waitUntilById=groups
+clickElementById=groups
+wait=300
+waitUntilById=addGroupsToRoleButtonLink
+clickElementById=addGroupsToRoleButtonLink
+wait=300
+waitUntilById=searchString
+typeElementById=searchString=ugpusergroup
+wait=300
+clickElementById=addGroup_search
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=addGroup_groups
+clickElementById=addGroup_groups
+wait=300
+searchElementValueByTagName=Body=ugpUserGroup was added to the role.

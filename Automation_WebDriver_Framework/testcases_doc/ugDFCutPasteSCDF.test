@@ -1,0 +1,25 @@
+name=Cut & Paste Docuemnt Folder(Sub Child Folder) into Another Folder 
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugproject/docman.root.ugfolder.ddddforname_to_attach_more_than.ugscfolder
+wait=300
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_cut
+clickHrefByLinkText=Cut
+wait=300
+searchElementValueByTagName=Body=Folder cut successfully.
+wait=300
+url=sf/docman/do/listDocuments/projects.ugproject/docman.root.uglivefolder
+wait=300
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_paste
+clickHrefByLinkText=Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=Folder pasted successfully.
+

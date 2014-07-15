@@ -1,0 +1,22 @@
+name=Verifying Cancel Button on create document
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+wait=500
+waitUntilById=title
+typeElementById=title=save_document
+waitUntilById=description
+typeElementById=description=Document is saved by option "Save"
+wait=500
+typeValueForFileField=D:\Excel File\5_Aug_13_Build 380\Category.html
+wait=500
+clickHrefByLinkText=Cancel
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Documents#NEXT#&Document_Folder&#NEXT#List Documents

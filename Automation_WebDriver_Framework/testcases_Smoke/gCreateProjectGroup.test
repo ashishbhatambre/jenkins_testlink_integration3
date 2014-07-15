@@ -1,0 +1,20 @@
+name=Abiliyt to create Project Group For User Roles group
+component=Project Groups
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Project Groups
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Create Project Group
+wait=500
+waitUntilById=title
+typeElementById=title=ProjectRoleGroup
+typeElementById=description=Projects which is under test with public and private access permissions.
+wait=500
+waitUntilById=createProjectGroup_submit
+clickElementById=createProjectGroup_submit
+wait=500
+searchElementValueByTagName=Body=Project Group ProjectRoleGroup has been created successfully.
+wait=500

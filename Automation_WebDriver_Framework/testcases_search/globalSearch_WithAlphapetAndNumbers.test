@@ -1,0 +1,16 @@
+name=Global Search_for Tasks_with a combination of alphabets and numbers using double quotes 
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168464  
+clickHrefByLinkText=Jump to ID
+waitUntilById=search
+clickElementById=search
+waitUntilById=term
+typeElementById=term="SearchFolder1"
+waitUntilById=applications
+selectOptionValueByIdIndex=applications=8
+waitUntilById=projects
+selectOptionValueByIdIndex=projects=0
+clickElementById=searchForm_submit
+searchElementValueByTagName=Body=Tasks (1) 	 
+searchElementValueByTagName=Body=Task Folders (1)

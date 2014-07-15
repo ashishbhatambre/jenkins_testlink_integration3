@@ -1,0 +1,10 @@
+name=Ability to search task in private project as site admin user
+component=Task search
+wait=500
+waitUntilById=searchText
+typeElementById=searchText=S1
+wait=500
+waitUntilById=searchTasks_Search
+runJavaScriptPopToMain=javascript:submitForm(document.searchTasks, 'Search')
+wait=500
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Tasks#NEXT#Search Tasks 

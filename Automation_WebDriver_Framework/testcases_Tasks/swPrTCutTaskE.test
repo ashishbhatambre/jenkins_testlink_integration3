@@ -1,0 +1,14 @@
+name=Cut Task
+component=Tasks
+role=Sitewide Role_Edit Permission
+artifact=NA 
+wait=1000
+clickHrefByLinkText= SWA_TaskFolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=listTasksSelect_Cut
+clickElementById=listTasksSelect_Cut
+wait=1000
+searchElementValueByTagName=Body=1 task(s) cut to clipboard.
+

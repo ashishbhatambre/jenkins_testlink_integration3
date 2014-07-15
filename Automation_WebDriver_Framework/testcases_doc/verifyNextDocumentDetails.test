@@ -1,0 +1,14 @@
+name=View Next document by clicking "Next" button from document details page
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText=save_document
+wait=500
+clickHrefByLinkText=Next >
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Documents#NEXT#&Document_Folder&#NEXT#Document Details 

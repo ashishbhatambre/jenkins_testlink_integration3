@@ -1,0 +1,23 @@
+name=Update the Task User
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= test_task
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+waitUntilById=assignedUsers
+selectOptionValueByIdValue=assignedUsers=user2_normalPermission
+wait=500
+waitUntilById=editTask_Save
+clickElementById=editTask_Save
+wait=500
+searchElementValueByTagName=Body=Task updated successfully.

@@ -1,0 +1,13 @@
+name=Ability to login as site admin user
+component=Login
+role=Site Admin
+artifact=NA
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=suser1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet2@
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

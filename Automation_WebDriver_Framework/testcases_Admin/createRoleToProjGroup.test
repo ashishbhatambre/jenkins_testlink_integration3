@@ -1,0 +1,22 @@
+name=Ability to create Role to project Group
+component=Project Group
+role=Admin
+artifact=NA
+wait=300
+url=sf/rbac/do/permissionAdmin/pgroups.testedprojects
+wait=300
+waitUntilById=displayList
+selectOptionValueByIdValue=displayList=Roles created for this project group
+wait=300
+waitUntilById=listRoles_create
+clickElementById=listRoles_create
+wait=300
+waitUntilById=title
+typeElementById=title=ProjRole
+waitUntilById=description
+typeElementById=description=Role created for project group
+wait=300
+waitUntilById=createRole_submit
+clickElementById=createRole_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Role created successfully. 

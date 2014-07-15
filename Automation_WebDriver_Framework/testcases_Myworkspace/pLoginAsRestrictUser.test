@@ -1,0 +1,10 @@
+name=Login As Restricted User for public project (tester1)
+wait=300
+url=sf/sfmain/do/home
+wait=300
+typeElementByName=username=tester1
+typeElementByName=password=Collabnet2@
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page

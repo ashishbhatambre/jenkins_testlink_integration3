@@ -1,0 +1,12 @@
+name=Ability to assign child Public Project to a parent Public Project
+component=Projects
+wait=300
+url=sf/sfmain/do/createProject
+wait=300
+waitUntilByName=title
+typeElementByName=title=Child_Pub_Project
+typeElementByName=description=Child Project created with parent as "PubProject"
+wait=300
+clickHrefByLinkText=Create
+wait=300
+searchElementValueByTagName=Body= Child_Pub_Project#NEXT# Project Home 

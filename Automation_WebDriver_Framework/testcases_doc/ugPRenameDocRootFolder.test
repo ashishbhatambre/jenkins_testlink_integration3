@@ -1,0 +1,29 @@
+name=Renaming the Document Root Folder for usergroup public proj
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText=Root Folder
+wait=500
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+waitUntilById=editCategory_new
+clickElementById=editCategory_new
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=$Document_Folder$
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=600
+searchElementValueByTagName=Body=Folder renamed successfully.
+wait=600
+runJavaScriptPopToMain=javascript:finishFolderRename()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600

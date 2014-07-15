@@ -1,0 +1,42 @@
+name=Ability to create Planning Folder in private project by site admin user
+component=Planning Folder
+wait=300
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=pfname
+typeElementById=pfname=list1
+waitUntilById=pfdescription
+typeElementById=pfdescription=list1 is a planning folder created by admin
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=In progress
+wait=600
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=pfname
+typeElementById=pfname=list2
+waitUntilById=pfdescription
+typeElementById=pfdescription=list2 is a planning folder created by admin
+waitUntilById=selectedStatus
+selectOptionValueByIdValue=selectedStatus=In progress
+wait=600
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Trackers#NEXT#List Trackers and Planning Folders

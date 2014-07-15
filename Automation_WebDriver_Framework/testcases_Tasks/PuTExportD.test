@@ -1,0 +1,24 @@
+name=Verify Task Export Functionality
+component=Tasks 
+role=Direct Role_Delete Permission
+artifact=NA
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+clickHrefByLinkText= PUA_TaskFolder
+wait=300
+clickHrefByLinkText=Export
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=addAll
+clickElementByID=addAll
+wait=300
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=800
+withoutPopCloseSwitchToMainWindow
+wait=800
+searchElementValueByTagName=Body=Public

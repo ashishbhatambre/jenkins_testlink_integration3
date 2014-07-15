@@ -1,0 +1,21 @@
+name=Ability to edit the Package in private project as site admin user
+component=FRS
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=File Releases
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectPackages_Edit
+clickElementById=selectPackages_Edit
+wait=300
+waitUntilById=title
+typeElementById=title=E_Package
+waitUntilByName=description
+typeElementByName=description=Package edited by site admin
+wait=300
+waitUntilById=editPackage_submit
+clickElementById=editPackage_submit
+wait=1000
+searchElementValueByTagName=Body=Package details updated successfully.

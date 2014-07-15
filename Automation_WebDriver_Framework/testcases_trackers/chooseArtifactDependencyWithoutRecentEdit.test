@@ -1,0 +1,35 @@
+name=Choosing the parent dependency without selecting Recently viewed ID's
+component=Tracker
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder3
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=200
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=200
+waitUntilById=dependencies
+clickElementById=dependencies
+waitUntilById=choose_parent
+clickHrefByLinkText=Choose Parent
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=selectHistoryRadio
+clickElementById=selectHistoryRadio
+wait=200
+waitUntilById=addDependencyForm_submitItems
+clickElementById=addDependencyForm_submitItems
+wait=200
+searchElementValueByTagName=Body=Select at least one item from the list. 
+wait=200
+runJavaScriptPopToMain=javascript:window.close()
+wait=200
+withoutPopCloseSwitchToMainWindow

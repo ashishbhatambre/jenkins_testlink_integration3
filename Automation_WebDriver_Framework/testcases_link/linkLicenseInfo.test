@@ -1,0 +1,10 @@
+name=Verify  the License Info Link 
+component=Admin
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/listProjectsAdmin
+wait=300
+clickHrefByLinkText=License Info
+wait=500
+searchElementValueByTagName=Body=Site#NEXT#Administration

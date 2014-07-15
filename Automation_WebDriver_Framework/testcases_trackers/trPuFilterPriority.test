@@ -1,0 +1,24 @@
+name=Ability to filter Artifact Priority wise
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=btn_filter!!numeric!!priority
+clickElementById=btn_filter!!numeric!!priority
+waitUntilById=ui-multiselect-_filter!!numeric!!priority-option-4
+clickElementById=ui-multiselect-_filter!!numeric!!priority-option-4
+wait=200
+clickHrefByLinkText=Filter
+wait=200
+searchElementValueByTagName=Body=Public#NEXT#Trackers
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=200
+searchElementValueByTagName=Body=Public#NEXT#Trackers

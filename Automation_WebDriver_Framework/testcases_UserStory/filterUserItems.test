@@ -1,0 +1,24 @@
+name=Ability to Multi-Select for the dropdown fields in Search Filter for other than List Artifact pages - users list admin page
+component=Users
+role=Global Role
+artifact=artf154930-TC(artf157858)
+wait=500
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Users
+wait=500
+waitUntilById=btn_filter!!string!!status
+clickElementById=btn_filter!!string!!status
+waitUntilByName=multiselect__filter!!string!!status
+selectButtonByValue=Active
+wait=500
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=(36 Items)
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

@@ -1,0 +1,9 @@
+name=Ability to view Assocition link in private project
+component=Tasks
+role=Delete role
+artifact=NA
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Tasks

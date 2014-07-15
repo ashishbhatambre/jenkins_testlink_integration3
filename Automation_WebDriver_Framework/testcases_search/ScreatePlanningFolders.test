@@ -1,0 +1,69 @@
+name=Ability to create planning folder(s)
+component=Trackers
+role=Site Admin
+artifact=NA
+wait=300
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=300
+switchToPopupWindow
+waitUntilById=pfname
+typeElementById=pfname=Plan_Search
+waitUntilById=pfdescription
+typeElementById=pfdescription=Planning Folder for QA Search based Testing cases from build 701 to 70...
+waitUntilById=selectedStatus
+selectOptionValueByIdIndex=selectedStatus=1
+waitUntilById=capacity
+typeElementById=capacity=50
+waitUntilById=startDate
+typeElementById=startDate=12/28/2013
+waitUntilById=endDate
+typeElementById=endDate=12/28/2014
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+withoutPopCloseSwitchToMainWindow
+wait=700
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=300
+switchToPopupWindow
+waitUntilById=pfname
+typeElementById=pfname=Plan 701
+waitUntilById=pfdescription
+typeElementById=pfdescription=Planning Folder for QA Search based Testing cases from build 701 to 70...
+waitUntilById=selectedStatus
+selectOptionValueByIdIndex=selectedStatus=1
+waitUntilById=capacity
+typeElementById=capacity=30
+waitUntilById=startDate
+typeElementById=startDate=12/28/2013
+waitUntilById=endDate
+typeElementById=endDate=12/28/2014
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+withoutPopCloseSwitchToMainWindow
+wait=300
+url=sf/planning/do/viewPlanningFolder/projects.project_search/planning.plan_search
+waitUntilById=new_planning
+clickElementById=new_planning
+wait=300
+switchToPopupWindow
+waitUntilById=pfname
+typeElementById=pfname=Plan 710 701
+waitUntilById=pfdescription
+typeElementById=pfdescription=Planning Folder for QA Search based Testing cases with special charectors like $plan plan& from build 701 to 70...
+waitUntilById=selectedStatus
+selectOptionValueByIdIndex=selectedStatus=1
+waitUntilById=capacity
+typeElementById=capacity=30
+waitUntilById=startDate
+typeElementById=startDate=12/28/2013
+waitUntilById=endDate
+typeElementById=endDate=12/28/2014
+waitUntilById=createPlanningFolder_submit
+clickElementById=createPlanningFolder_submit
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=body=Project_Search#NEXT#Trackers

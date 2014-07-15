@@ -1,0 +1,57 @@
+name=Tracker Search_Verify the ability to save search as a shared search from tracker search page  
+component=Trackers
+role=Site Admin
+artifact=artf165306 
+wait=300
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=test
+wait=300
+waitUntilById=inTitle
+clickElementById=inTitle
+waitUntilById=inAttachments
+clickElementById=inAttachments
+wait=300
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=(1 Item)
+wait=300
+clickHrefByLinkText=Save Search from Results
+wait=300
+switchToPopupWindow
+wait=400
+typeElementByName=searchOrFilterName=Shared_Search
+wait=300
+waitUntilById=type
+clickElementById=type
+wait=300
+waitUntilById=saveSearchOrFilter_submit
+clickElementById=saveSearchOrFilter_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=body=Search saved.
+wait=500
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home
+wait=300
+waitUntilByName=username
+typeElementByName=username=yadmin
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace
+wait=300
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=searchTracker
+clickElementById=searchTracker
+wait=300
+waitUntilById=sharedSearchesToggle
+clickElementById=sharedSearchesToggle
+wait=1300
+searchElementValueByTagName=body=Shared_Search
+wait=300

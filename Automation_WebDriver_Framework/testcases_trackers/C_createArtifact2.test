@@ -1,0 +1,25 @@
+name=Ability to create Artifact via Tracker as user with create only permission in private project
+component=Tracker
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=CloneTracker
+wait=200
+clickHrefByLinkText=Submit New Artifact
+wait=200
+waitUntilById=title
+typeElementById=title=CreateUser_Artifact2
+waitUntilById=description
+typeElementById=description=artifact created by create only permission user
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=2 - High
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact submitted successfully.

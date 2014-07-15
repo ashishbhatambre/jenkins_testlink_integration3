@@ -1,0 +1,23 @@
+name=Reviewing the Document for Child public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=createDocumentReview_userPicker
+clickElementById=createDocumentReview_userPicker
+switchToPopupWindow
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=tester2_normalPermission
+waitUntilById=add
+clickElementById=add
+wait=300
+runJavaScriptPopToMain=javascript:submitForm(document.userPicker, 'ok')
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+waitUntilById=attachDocument
+selectButtonByValue=on
+waitUntilById=createDocumentReview_submit
+clickElementById=createDocumentReview_submit
+wait=300
+searchElementValueByTagName=Body=Document review created successfully.

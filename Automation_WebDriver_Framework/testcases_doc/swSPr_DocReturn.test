@@ -1,0 +1,15 @@
+name=Verify Return Functionality in Document Details Page in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root.folder
+wait=300
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+clickHrefByLinkText=Return
+wait=300
+searchElementValueByTagName=Body=SWPrivate_Sub#NEXT#Documents

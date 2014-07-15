@@ -1,0 +1,11 @@
+name=Ability to delete Linked Page in wiki in public project
+component=Wiki
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=view_wiki_page.delete
+clickElementById=view_wiki_page.delete
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=Wiki Page deleted successfully.

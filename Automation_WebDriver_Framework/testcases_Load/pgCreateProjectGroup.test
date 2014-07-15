@@ -1,0 +1,21 @@
+name=Ability to create Project Group
+component=Project Groups
+role=Admin
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Project Groups
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Create Project Group
+wait=300
+waitUntilById=title
+typeElementById=title=private_proj_group
+waitUntilById=description
+typeElementById=description=private projects with global role admin permission by user group users.
+waitUntilById=createProjectGroup_submit
+clickElementById=createProjectGroup_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Project Group private_proj_group has been created successfully.

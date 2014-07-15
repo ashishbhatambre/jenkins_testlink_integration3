@@ -1,0 +1,348 @@
+
+Company,CollabNet
+Product,TeamForge 7.2.0.0.182
+Browser,FF 24.0
+Test Run,Smoke Test
+Test Case,Component,Status,Test File
+Ability to login as admin and set the Site Mode to ALM,Login,Fail,loginFirst.test
+Ability to creating Site Admin user,Users,Fail,createSiteAdminUser.test
+Ability to login as site Admin after changing the password,Login,Fail,siteAdminLoginFirst.test
+Ability to create users,Users,Fail,createUsers.test
+Abilitu to create private project via Create project,Projects,Fail,projCreate.test
+Ability to create Global Roles with Admin Permissions,Roles,Fail,createRoleAdminPer.test
+Ability to create Global Roles with Restricted Permissions,Roles,Fail,createRoleRestricPer.test
+Ability to set user Membership via project admin in private project,Project Admin,Fail,userMembership.test
+Ability to assign the users to admin role,Roles,Fail,userPermission.test
+Ability to assign restricted role to the user,Roles,Fail,userPermission2.test
+Ability to filter the Project with text as site admin user,Project Admin,Fail,filterProject.test
+Ability to create User Groups as Site Admin,User Groups,Fail,createUserGroups.test
+Setting Users to user group-Negative Case,User Groups,Fail,settingUsersToGroupNeg.test
+Ability to assign users to the user group,User Groups,Fail,settingUsersToGroup.test
+Ability to delete user group,User Groups,Fail,deleteUserGroup.test
+Ability to update User Group name,User Groups,Fail,updateUserGroup.test
+Inability to filter  user group with inavalid filter,User Groups,Fail,filterUserGroupWithoutResult.test
+Ability to filter User group with valid filter criteria,User Groups,Fail,filterUserGroupWithResult.test
+Ability to cancel user group creation,User Groups,Fail,cancelCreatingUserGroup.test
+Inability to filter Users in user group with invalid filter criteria,User Groups,Fail,filterUsersInUserGroupWithoutResult.test
+Ability to filter Users in user group with valid filter,User Groups,Fail,filterUsersInUserGroupWithResult.test
+Ability to delete the users from user group,User Groups,Fail,deleteUsersInUserGroup.test
+Ability tp create subversion integration,Integrations,Fail,createIntegration.test
+Ability to create SCM Adapter Integration,Integrations,Fail,createScmIntegration.test
+Ability to disable categories,Categories,Fail,setCategoryDisable.test
+Setting Categories to be enabled,Categories,Fail,setCategoryEnable.test
+Ability to create Category,Categories,Fail,createCategory.test
+Ability to update category tilte and description,Categories,Fail,updateCategory.test
+Ability to create SubCategory,Categories,Fail,createSubCategory.test
+Ability to Cut the Sub Category to clipboard,Categories,Fail,editCategory.test
+Inability to paste the sub category to the source location,Categories,Fail,editCategoryNeg.test
+Ability to cut Category to clipboard,Categories,Fail,cutCategory.test
+Inability to paste sub category in the source location,Categories,Fail,pasteCategoryToItself.test
+Ability to cut and paste Category,Categories,Fail,cutPasteCategory.test
+Ability to delete category,Categories,Fail,deleteCategory.test
+Inability to create duplicate category,Categories,Fail,createDuplicateCategory.test
+Ability to remove the broadcast message,BroadCast Message,Fail,verifyClear.test
+Ability to add Broadcast message,System Tools,Fail,broadCastMsg.test
+Ability to clear Boardcast message,Broadcast message,Fail,clearBoardCastMsg.test
+Inability to query from non existing table via Ad hoc database query,System Tools,Fail,adhocDatabaseNeg.test
+Ability to view the Adhoc Database result and server status,System Tools,Fail,adhocDatabase.test
+Ability to view system log,System Tools,Fail,verifySystemLogs.test
+Ability to view the build info,System Tools,Fail,verifyBuildInfo.test
+Ability to view the Report by site admin,System Tools,Fail,adminReportLink.test
+Ability to view the licence info by site admin,License Info,Fail,adminLicenseLink.test
+Ability to change site mode from ALM to SCM,License Info,Fail,changeSiteModeToSCM.test
+Ability to change site mode from SCM to ALM,License Info,Fail,changeSiteModeToALM.test
+Ability to creating Project Group as site admin user,Project Groups,Fail,createProjectGroup.test
+Ability to add Projects to the Project group,Project Groups,Fail,addProjectToGroup.test
+Ability to add Users to the Project group,Project Groups,Fail,addUsersToProjGroup.test
+Ability to add users to the project group,Project Groups,Fail,settingPerToProjGroup.test
+Ability to assign permission to the project group,Project Groups,Fail,settingPerToProjGroup2.test
+Ability to set the role via UserGroup Matrix,Roles,Fail,userGroupMatrix.test
+Inability to create duplicate Project Group,Project Groups,Fail,duplicateProjectGroup.test
+Ability to create Project Group,Project Groups,Fail,createProjectGroup2.test
+Ability to delete Project Group,Project Groups,Fail,deleteProjectGroup.test
+Ability to cancel Project Group creation,Project Groups,Fail,cancelCreatingProjectGroup.test
+Ability to cancel Project Group description update,Project Groups,Fail,cancelEditProjGroup.test
+Ability to edit the Project Group description,Project Groups,Fail,editProjectGroup.test
+Ability to remove the project from the project group,Project Groups,Fail,removeProjFrmGroup.test
+Ability to remove the users from the project group,Project Groups,Fail,removeUsersFrmProjGroup.test
+Ability to cancel creating Role to project Group,Project Groups,Fail,cancelCreatingRoleToProjGrp.test
+Ability to create Role to project Group,Project Groups,Fail,createRoleToProjGroup.test
+Ability to edit role assigned to a project group,Roles,Fail,editProjGroupRole.test
+Ability to delete role in a project group,Projects,Fail,deleteProjGroupRole.test
+Ability to verify the user role matrix in project group,Project Admin,Fail,verifyUserRoleMatrix.test
+Inability to filter from project group by providing invalid filter criteria,Project Groups,Fail,filterProjGroupWithoutResult.test
+Ability to filter in project group,Project Groups,Fail,filterProjGroupWithResult.test
+Ability to create restricted user,Users,Fail,pCreateUserTester1.test
+Ability to create restricted user,Users,Fail,pCreateUserTester2.test
+Ability to filter the Restricted users,Users,Fail,filterUsers.test
+Ability to create Global Roles with DeleteOnly Permissions,Roles,Fail,pGbDeleteOnly.test
+Ability to creating Global Roles with CreateOnly Permissions,Roles,Fail,pGbCreateOnlyRole.test
+Ability to create Global Roles with EditOnly Permissions,Roles,Fail,pGbEditOnly.test
+Ability to create Global Roles with ViewOnly Permissions,Roles,Fail,pGbViewOnly.test
+Ability to edit Global Project Role,Roles,Fail,editGlobalRole.test
+Ability to create Global role,Roles,Fail,createGlobalRole.test
+Ability to cancel Global role creation,Roles,Fail,cancelCreatingGlobalRole.test
+Ability to delete Global Role,Roles,Fail,deleteGlobalRole.test
+Inability to create duplicate Global Role,Roles,Fail,duplicateCreateGRole.test
+Ability to create User Groups as Admin,User Groups,Fail,pCreateUserGroups.test
+Ability to view the alert message if the users are not selecting while assigning users to User Group,User Groups,Fail,pSettingUsersToGroupNeg.test
+Ability to assign users to project group,User Groups,Fail,pSettingUsersToGroup.test
+Ability to create a site wide admin role,Roles,Fail,siteWideAdminRole.test
+Ability to create site wide restricted role,Roles,Fail,siteWideRestrictRole.test
+Ability to create site wide Create only role,Roles,Fail,siteWideCreateOnly.test
+Ability to create site wide Edit Only Role,Roles,Fail,siteWideEditOnly.test
+Ability to create Site Wide View Only Role,Roles,Fail,siteWideViewOnly.test
+Ability to create Site Wide Delete Only Role,Roles,Fail,siteWideDeleteOnly.test
+Ability to create SiteWide Role,Roles,Fail,createSiteWideRole.test
+Ability to edit SiteWide Role,Roles,Fail,editSiteWideRole.test
+Ability to cancel SiteWide Role creation,Roles,Fail,cancelCreatingSiteWideRole.test
+Ability to delete SiteWide Role,Roles,Fail,deleteSiteWideRole.test
+Ability to add users to siteWide Admin role,Roles,Fail,addUsersToSiteRole.test
+Ability to delete users from SiteWide Admin Role,Roles,Fail,deleteUsersInSiteWideRole.test
+Inability to create duplicate SiteWide Role,Roles,Fail,duplicateCreateSRole.test
+Ability to create restricted user for Create only permission,Users,Fail,gCreateUserNewuser1.test
+Ability to create restricted user for Edit Only permission,Users,Fail,gCreateUserNewuser2.test
+Ability to create restricted user for Delete only permission,Users,Fail,gCreateUserNewuser3.test
+Ability to create restricted User to provide different permission around all components,Users,Fail,createNewUser4.test
+Ability to set user membership to more than one user  via project admin,Project Admin,Fail,userMemArtf139713.test
+Ability to set create only and edit only role to user,Roles,Fail,userPerArtf139713.test
+Ability to set DeleteOnly and ViewOnly role to the user,Roles,Fail,userPer2Artf139713.test
+Ability to create Global Roles with different Permissions against each component,Roles,Fail,createAlternativeRole.test
+Ability to create public project via Create Project,Projects,Fail,pProjectCreation.test
+Ability to set project with Public access permission,Project Admin,Fail,pPublicPermission.test
+Ability to assign user Membership to the public project,Project Admin,Fail,pUserMembership.test
+Ability to assign user permission to the project for Admin and restricted Role,Project Admin,Fail,pUserPermission.test
+Ability to create CVS Pserver integration,Integrations,Fail,pCreateIntegration.test
+Abiliyt to create Project Group For User Roles group,Project Groups,Fail,gCreateProjectGroup.test
+Ability to add Projects to project group,Project Groups,Fail,gAddProjToGroup.test
+Ability to add more than one user to Project Group,Project Groups,Fail,gAddUserToProjGroup.test
+Ability to assign users to Project Group specific role,Project Groups,Fail,gSettingPerToProjGroup.test
+Ability to assign users via Permissions to Project Group,Project Admin,Fail,gSettingPerToProjGroup2.test
+Ability to create User Groups as SiteAdmin,User Groups,Fail,gUserGroups.test
+Ability to assign a child Private Project to a parent,Projects,Fail,createChildProject.test
+Ability to set a parent to the project,Project Admin,Fail,settingParentToProject.test
+Ability to view the child project Path,Project Admin,Fail,verifyChildProjectPath.test
+Ability to assign child Public Project to a parent Public Project,Projects,Fail,createChildPubProject.test
+Ability to set Project with Public access permission,Project Admin,Fail,cpPublicPermission.test
+Ability to assign Parent To public project,Project Admin,Fail,cpSettingParentToProject.test
+Ability to create private project for Project group,Projects,Fail,pgCreateProject.test
+Ability to Create User Groups to project group-project,User Groups,Fail,pgCreateUserGroup.test
+Ability to assign Users to user group for private project,User Groups,Fail,pgSettingUsersToUserGroup.test
+Ability to create Project Group for private project,Project Groups,Fail,pgCreateProjectGroup.test
+Ability to add Private Project to the Project group,Project Groups,Fail,pgAddProjectsToGroup.test
+Ability to add Users group to the project in the project group,Roles,Fail,pgSetPerToProjectGroup.test
+Ability to create public project for project Group,Projects,Fail,pgPCreateProject.test
+Ability to set up Project with Public access permission,Project Admin,Fail,pgPPublicPermission.test
+Ability to create User Groups for users assigned to Public project,User Groups,Fail,pgPCreateUserGroup.test
+Ability to assign users to user group to access the public project via project group,User Groups,Fail,pgPSettingUsersToUserGroup.test
+Ability to create Project Group for public project group,Project Groups,Fail,pgPCreateProjectGroup.test
+Ability to add public Project to the Project group,Project Groups,Fail,pgPAddProjectsToGroup.test
+Ability to add User group to the project in public project group,Project Groups,Fail,pgPSetPerToProjectGroup.test
+Abiltiy to create user,Users,Fail,ugCreateUser.test
+Ability to create User Groups in Private Project as Site Admin,User Groups,Fail,ugCreateUserGroup.test
+Ability to assign users to user group in private project,User Groups,Fail,ugSettingUsersToGroup.test
+Ability to create private project to access it via User group,Projects,Fail,ugCreateProject.test
+Ability to assign the User group to private project,Project Admin,Fail,ugSettingUserGroupMatrix.test
+Ability to create user,Users,Fail,ugPCreateUser.test
+Ability to create User Groups in publid project as Site Admin,User Groups,Fail,ugPCreateUserGroup.test
+Ability to assign users to user group in public project,Project Admin,Fail,ugPSettingUsersToGroup.test
+Ability to create public project to access it via User group,Projects,Fail,ugPCreateProject.test
+Ability to assign the User group in public project,Project Admin,Fail,ugPSettingUserGroupMatrix.test
+Ability to create Private Project as SiteAdmin user,Projects,Fail,sCreateProject.test
+Ability to create Tracker in private project as siteadmin user,Tracker,Fail,sCreateTracker.test
+Ability to clone Tracker in private project as site admin,Tracker,Fail,sCloneTracker.test
+Ability to clone external Tracker without source Id in private project as site admin user,Tracker,Fail,sCloneExternalTrackerNeg.test
+Ability to clone External tracker in private project as site admin user,Tracker,Fail,sCloneExternalTracker.test
+Ability to delete tracker in private project as site admin,Tracker,Fail,sDeleteTracker.test
+Ability to update tracker Group field in private project as site admin user,Tracker,Fail,sUpdateGroupField.test
+Ability to update tracker Status field in private project as site admin user,Tracker,Fail,sUpdateStatusField.test
+Ability to update tracker Category field in private project as site admin user,Tracker,Fail,sUpdateCategoryField.test
+Ability to update tracker Customer field in private project as site admin user,Tracker,Fail,sUpdateCustomerField.test
+Ability to do auto assignment for private project by site admin,Tracker,Fail,sVerifyAutoAssign.test
+Ability to create Planning Folder in private project by site admin user,Planning Folder,Fail,sCreatePlanFolder.test
+Ability to edit the Planning Folder in private project as siteadmin,Planning Folder,Fail,sEditPlanFolder.test
+Ability to cut the planning folder as private project as site admin user,Planning Folder,Fail,sCutPlanFolder.test
+Inability to paste the Planning Folder to the same location for private project by siteadmin user,Planning Folder,Fail,sPastePlanFolderNeg.test
+Ability to cut & Paste the planning folder for private project by site admin,Planning Folder,Fail,sPastePlanFolder.test
+Ability to delete Planning folder in private project as site admin user,Planning Folder,Fail,sDeletePlanFolder.test
+Ability to create artifact with default status in private project as site admin,Tracker,Fail,sCreateArtifact.test
+Ability to create arifact with open status in private project as site admin,Tracker,Fail,sCreateArtifact2.test
+Ability to update artifact Name and Description in private project as site admin user,Tracker,Fail,sUpdateArtifactName.test
+Ability to update artifact Group field in private project as site admin,Tracker,Fail,sEditGroupFieldArtifact.test
+Ability to update artifact Status in private project as siteadmin,Tracker,Fail,sEditStatusFieldArtifact.test
+Ability to update artifact Category field in private project as siteadmin,Tracker,Fail,sEditCategoryFieldArtifact.test
+Ability to update artifact Customer Field in private project as siteadmin,Tracker,Fail,sEditCustomerFieldArtifact.test
+Ability to edit artifact Priority in private project as siteadmin,Tracker,Fail,sEditPriorityFieldArtifact.test
+Ability to create Package in private project as site admin user,FRS,Fail,sCreatePackage.test
+Ability to create File Release for package (without files) in private project as site admin user,FRS,Fail,sCreateRelease.test
+Ability to create File Release to the package in private project as site admin user,FRS,Fail,sCreateRelease2.test
+Ability to edit the Package in private project as site admin user,FRS,Fail,sEditPackage.test
+Ability to edit the Release in private project as site admin user,FRS,Fail,sEditRelease.test
+Ability to delete the Release in private project as site admin user,FRS,Fail,sDeleteRelease.test
+Ability to delete the package in private project as site admin user,FRS,Fail,sDeletePackage.test
+Ability to add Files to Releases in private project as site admin user,FRS,Fail,sAddFileToRelease.test
+Ability to edit artifact Planning Folder field in private project as site admin,Tracker,Fail,sEditPFFieldArtifact.test
+Ability to edit artifact Estimated Effort field in private project as site admin,Tracker,Fail,sEditEstimateFieldArtifact.test
+Ability to edit artifact Remaining Effort field in private project by site admin,Tracker,Fail,sEditRemFieldArtifact.test
+Ability to edit artifact Actual Effort field in private project as site admin,Tracker,Fail,sEditActualFieldArtifact.test
+Ability to edit artifact Story Points field in private project as site admin,Tracker,Fail,sEditPointsFieldArtifact.test
+Ability to monitor the Tracker in private project as site admin user,Tracker,Fail,sMonitorTracker.test
+Ability to stop monitoring the Tracker in private project as site admin user,Tracker,Fail,sStopMonitorTracker.test
+Ability to cut the artifact in private project as site admin user,Tracker,Fail,sCutArtifact.test
+Ability to paste the artifact in private project as site admin user,Tracker,Fail,sPasteArtifact.test
+Ability to edit an Artifact in private project as site admin user,Tracker,Fail,sEditArtifact.test
+Ability to export Tracker in private project as site admin user,Tracker,Fail,sExportTracker.test
+Ability to create Planning Folder in private project by site admin user,Planning Folder,Fail,sCreatePlanFolder3.test
+Ability to move artifacts between planning folder in private project as site admin user,Planning Folder,Fail,sMoveArtToPlan.test
+Ability to move artifact between planning folder and Tracker in private project as site admin user,Planning Folder,Fail,sMoveBtwPlan&Tracker.test
+Ability to move the artifact to Tracker in private project as site admin user,Tracker,Fail,sMoveArtToTracker.test
+Ability to delete the artifact as private project in site admin user,Tracker,Fail,sDeleteArtifact.test
+Ability to create artifact in planning folder in private project as site admin user,Planning Folder,Fail,sSubmitArtifact.test
+Ability to creating artifact in private project as site admin user,Tracker,Fail,sSubmitArtifact2.test
+Ability to filter with non existing artifact id in private project as site admin user,Tracker,Fail,sFilterArtifactNeg.test
+Ability to filter the artifact with results in private project as site admin user,Tracker,Fail,sFilterArtifact.test
+Ability to edit artifact Report Release field in private project by site admin,FRS,Fail,sEditReportReleaseArtifact.test
+Ability to edit artifact Fixed Release field in private project as site admin,Tracker,Fail,sEditFixedReleaseArtifact.test
+Ability to create new Document Folder in private project as site admin,Document,Fail,sCreateDocFolder.test
+Ability to create Document Folder under root in private project as site admin,Document,Fail,sCreateDocFolder2.test
+Ability to rename the Document Folder in private project as site admin user,Document,Fail,sEditDocFolder.test
+Ability to cut the Document Folder in private project as site admin user,Document,Fail,sCutDocFolder.test
+Ability to paste Document folder in private project as site admin user,Document,Fail,sPasteDocFolder.test
+Ability to rename the Document Root Folder in private project as site admin user,Document,Fail,sEditDocRootFolder.test
+Ability to create new Document Folder with special characters in private project by site admin,Document,Fail,sCreateDocFolderSpecial.test
+Ability to create new Document Folder with 256 characters in private project as site admin,Document,Fail,sCreateDocFolder256.test
+Inability to edit document using invalid date Format in private project as site admin user,Document,Fail,sFilterDocInvalidDate.test
+Ability to delete Document folder in private project as site admin user,Document,Fail,sDeleteDocFolder.test
+Ability to create Document with Word file in private project as site admin user,Document,Fail,sCreateWordDoc.test
+Ability to create Document with excel file in private project as site admin user,Document,Fail,sCreateExcelDoc.test
+Ability to create Document by uploading a PDF file in private project as site admin user,Document,Fail,sCreatePdfDoc.test
+Ability to creating Document with Excel-CSV file in private project as site admin,Document,Fail,sCreateCSVDoc.test
+Ability to create Online Document in  private project as site admin user,Document,Fail,sCreateOnlineDoc.test
+Ability to create Document with special characters in private project as site admin,Document,Fail,sCreateDocumentSpecial.test
+Ability to cut the document in private project as site admin user,Document,Fail,sCutDocument.test
+Ability to paste Document to another folder for private project by  site admin user,Document,Fail,sPasteDocument.test
+Ability to copy a document in private project as site admin,Document,Fail,sCopyDocument.test
+Ability to paste Document to another folder for private project by  site admin user,Document,Fail,sPasteDocument.test
+Ability to edit Document by uploading jpg file in private project as site admin user,Document,Fail,sEditDocument.test
+Inability to Filter Documents with non existing doc id in private project as site admin user,Document,Fail,sFilterDocumentNeg.test
+Ability to filter Documents in private project as site admin user,Document,Fail,sFilterDocument.test
+Ability to document Rows from 15 to 25 for private project by site admin user,Document,Fail,sEditDocRow.test
+Ability to monitor the Document Folder for private project by site admin user,Document,Fail,sMonitorDocFolder.test
+Ability to stop Monitoring the Document Folder  in private project as site admin user,Document,Fail,sStopMonitorDocFolder.test
+Ability to mark document version active in private project as site admin,Document,Fail,sActiveDocVersion.test
+Ability to create document asociation in private project as site admin user,Document,Fail,sDocAssociation.test
+Ability to search document in private project as site admin user,Document Search,Fail,sSearchDocument.test
+Ability to delete the Document Root Folder in private project as site admin user,Document,Fail,sDeleteDocRootFolder.test
+Ability to cut the Document Folder and paste to Root folder in private project as site admin user,Document,Fail,sCutDocFolderToRoot.test
+Ability to create Task Folder in private project as site admin user,Task,Fail,sCreateTaskFolder.test
+Ability to rename the Task Folder in private project as site admin user,Task,Fail,sEditTaskFolder.test
+Ability to Cancel status Rollup in Task Manager settings in private project as site admin user,Task,Fail,sVerifyCancelStatusRollup.test
+Ability to do status Rollup in Task Manager settings in private project as site admin user,Task,Fail,sStatusRollup.test
+Ability to Cancel update in Task Calender in private project as site admin user,Task,Fail,sVerifyCancelDefaultTaskCal.test
+Ability to set default Calender to 7days in Task Manager settings in private project as site admin user,Task,Fail,sUpdate7DaysCalender.test
+Ability to update default Calender to 5days in Task Manager settings in private project as site admin user,Task,Fail,sUpdate5DaysCalender.test
+Ability to create Task in private project as site admin user,Task,Fail,sCreateTask.test
+Ability to edit Task in private project as site admin user,Task,Fail,sEditTask.test
+Inability to create Task with invalid Date Format in private project as site admin user,Wiki,Fail,sCreateTaskWithDateNeg.test
+Ability to create Task with special characters in private project as site admin user,Wiki,Fail,sCreateTaskWithSpecialChar.test
+Inability to the Task without search criteria in private project as site admin user,Task,Fail,sSearchTaskNeg.test
+Ability to search task in private project as site admin user,Task search,Fail,sSearchTask.test
+Ability to create the task and edit TaskProgress for private project as site admin user,Task,Fail,sTaskSummary.test
+Ability to cut the Task in private project as site admin user,Task,Fail,sCutTask.test
+Ability to paste the task in private project as site admin user,Task,Fail,sPasteTask.test
+Ability to copy the task in private project as site admin,Task,Fail,sCopyTask.test
+Ability to paste the task in to task folder in private project as site admin,Task,Fail,sCopyPasteTask.test
+Ability to delete Task in private project as site admin user,Task,Fail,sDeleteTask.test
+Ability to create Task Dependency in private project as site admin user,Task,Fail,sTaskDependencies.test
+Ability to create task Folder with 256 characters in private project as site admin user,Task,Fail,sCreateTaskFolder256.test
+Ability to delete Task Folder in private project as site admin user,Task,Fail,sDeleteTaskFolder.test
+Ability to Export task in private project as  site admin user,Task,Fail,sExportTask.test
+Ability to monitor the Task in private project as site admin user,Task,Fail,sMonitorTaskFolder.test
+Ability to stop monitoring the Task Folder in private project as site admin user,Task,Fail,sStopMonitorTaskFolder.test
+Verify the task Status via RootFolder in private project as site admin user,Task,Fail,sEditStatusTask.test
+Ability to display Task Rows from 15 to 75 in private project as site admin user,Task,Fail,sEditTaskRow.test
+Ability to create task Folder with special characters in private project as site admin user,Task,Fail,sCreateTaskFolderSpecialChar.test
+Ability to cut and paste Task to the same folder in private project as site admin user,Task,Fail,sCutPasteTaskNeg.test
+Ability to cut and paste Task in private project as site admin user,Task,Fail,sCutPasteTask.test
+Inability to edit Task using invalid date Format for private project by site admin user,Task,Fail,sFilterTaskInvalidDate.test
+Ability to filter Task using status for private project by site admin user,Task,Fail,sFilterTask.test
+Ability to create Task Report in private project as site admin user,Task,Fail,sCreateTaskReport.test
+Ability to edit Task Report in private project as site admin user,Task,Fail,sEditTaskReport.test
+Ability to export Task Report in private project as site admin user,Task,Fail,sExportTaskReport.test
+Ability to delete Task Report in private project as site admin user,Task,Fail,sDeleteTaskReport.test
+Ability to create Task Report with special characters in private project as site admin user,Task,Fail,sCreateTaskReportSpecial.test
+Ability to set the editor options in the Wiki Editor in private project as site admin user,Wiki,Fail,sVerifyWikiEditor.test
+Ability to create Wiki Page in private project as site admin user,Wiki,Fail,sCreateWiki.test
+Ability to create Page (with Link syntax) in wiki in private project as site admin user,Wiki,Fail,sCreateLinkPage1.test
+Ability to create a Page in wiki in private project as site admin user,Wiki,Fail,sCreateLinkPage2.test
+Ability to add attachment to the Wiki Page  in private project as site admin user,Wiki,Fail,sWikiAttachmentToLinkPage.test
+Ability to preview changes in wiki Page in private project as site admin user,Wiki,Fail,sVerifyPerviewChanges.test
+Ability to cancel the Edit Wiki page in private project as site admin user,Wiki,Fail,sCancelEditWiki.test
+Ability to delete Linked wiki Page in private project as site admin user,Wiki,Fail,sDeleteWikiPage.test
+Ability to show Details of a wiki page in private project as site admin user,Wiki,Fail,sWikiShowDetails.test
+Ability to Hide Details in private project as site admin user,Wiki,Fail,sWikiHideDetails.test
+Ability to associate Wiki page in private project as site admin user,Wiki,Fail,sWikiAssociation.test
+Ability to verify Wiki BackLinks in private project as site admin user,Wiki,Fail,sWikiBackLinks.test
+Ability to click searchWikiPage button in private project as site admin user,Wiki,Fail,sVerifyWikiSearch.test
+Ability to Search wiki page with predefined recent page in private project as site admin user (check),Wiki,Fail,sWikiPredefinedRecentSearch.test
+Ability to Search wiki Orphaned page in private project as site admin user,Wiki,Fail,sWikiOrphanedSearch.test
+Ability to Search wiki  predefined all page in private project as site admin user (check),Wiki,Fail,sWikiPredefinedAllSearch.test
+Ability to click through the Version Tab in wiki  in private project as site admin user,Wiki,Fail,sVerifyWikiVersionTab.test
+Ability to view the attachment Tab in wiki in private project as site admin user,Wiki,Fail,sVerifyWikiAttachmentTab.test
+Ability to monitor the Wiki component by adding users to monitor list in private project as site admin user,Wiki,Fail,sAddUsersToMonitorWiki.test
+Ability to remove users from wiki monitor in private project as site admin user,Wiki,Fail,sRemoveUsersFromMonitorWiki.test
+Ability to change the configuration of the Wiki settings in private project as site admin user,Wiki,Fail,sSettingConfigWiki.test
+Ability to filter File in FileReleases in private project as site admin user,FRS,Fail,sFilterFileWithResult.test
+Inability to filter File in File Release with non existing id in private project as site admin user,FRS,Fail,sFilterFileWithoutResult.test
+Ability to stop Monitoring the Pacakge in private project as site admin user,FRS,Fail,sStopMonitorFileRelease.test
+Ability to monitor the Package for private project by site admin user,FRS,Fail,sMonitorFileRelease.test
+Ability to check the already monitored Pacakge for private project by site admin user,FRS,Fail,sMonitorFileReleaseAgain.test
+Ability to view the users monitoring the Pacakge in private project as site admin user,FRS,Fail,sVerifyUserMonitorFileRelease.test
+Inability to filtering File in FileRelease in private project as site admin user,FRS,Fail,sFilterPackageWithoutResult.test
+Ability to filter File in FileRelease for private project by site admin user,FRS,Fail,sFilterPackageWithResult.test
+Ability to stop Monitoring the Releases in File Releases in private project as site admin user,FRS,Fail,sStopMonitorRelease.test
+Ability to monitor the Releases in FileReleases for private project by site admin user,FRS,Fail,sMonitorRelease.test
+Ability to stop Monitoring the File in File Releases in private project as site admin user,FRS,Fail,sStopMonitorFile.test
+Ability to Monitor the File in Releases for private project by site admin user,FRS,Fail,sMonitorFile.test
+Ability to stop Monitoring the Release File in FileReleases in private project as site admin user,FRS,Fail,sStopMonitorSeperateRelease.test
+Ability to monitoring the Release File in FileReleases for private project by siteadmin,FRS,Fail,sMonitorSeperateRelease.test
+Ability to monitor the Release File which is already monitored in FileReleases for private project by site admin users,FRS,Fail,sMonitorSeperateReleaseAgain.test
+Ability to view the users monitoring the Releases in private project as site admin user,FRS,Fail,sVerifyUserMonitorRelease.test
+Ability to delete Files from the releases in private project as site admin user,FRS,Fail,sDeleteFile.test
+Ability to Export file from reported Tracker Artifact in FRS in private project as site admin user,Tracker,Fail,sReportedTrackerArtifact.test
+Ability to export from Fixed Tracker Artifact in FRS for private project by site admin user,FRS,Fail,sFixedTrackerArtifact.test
+Ability to export File from Fixed Tracker Artifact in FRS in private project as site admin user,Tracker,Fail,sPlannedTrackerArtifact.test
+Ability to associate the files to File Releases in private project as site admin user,FRS,Fail,sFileAssociation.test
+Ability to remove File Association in FRS in private project as site admin user,FRS,Fail,sRemoveFileAssociation.test
+Ability to create Release into the package in private project as site admin user,FRS,Fail,sCreateRelease3.test
+Ability to monitor the artifact for private project by site admin user,Tracker,Fail,sMonitorArtifact.test
+Ability to create Forum in private project as site admin user,Discussions,Fail,sCreateForum.test
+Ability to edit Forum in private project as site admin user,Discussions,Fail,sEditForum.test
+Ability to delete Forum in private project as site admin user,Discussions,Fail,sDeleteForum.test
+Ability to monitor the Discussion Forum in private project as site admin user,Discussions,Fail,sStopMonitorForum.test
+Ability to view the users monitoring the Discussion Forum  in private project as site admin user,Discussions,Fail,sVerifyUserMonitorForum.test
+Ability to create Discussion Topics in private project as site admin user,Wiki,Fail,sCreateTopic.test
+Ability to filter Topics for private project by site admin user,Discussions,Fail,sFilterTopicsWithResult.test
+Inability to filtering Topics with non existing id for private project by site admin user,Discussions,Fail,sFilterTopicsWithoutResult.test
+Ability to monitor the Discussion Topics for private project by site admin user,Discussions,Fail,sMonitorForum.test
+Ability to stop monitoring the Discussion Topics in private project as site admin user,Discussions,Fail,sStopMonitorForumTopics.test
+Ability to stop monitoring Discussion Topic in private project as site admin user,Discussions,Fail,sStopMonitorTopic.test
+Ability to monitor Discussion Topic in private project as site admin user,Discussions,Fail,sMonitorTopic.test
+Ability to monitor the discussion that is already monitored in private project as site admin user,Discussions,Fail,sMonitorTopicAgain.test
+Ability to Cancel Discssion Topic create in private project as site admin user,Discussions,Fail,sVerifyCancelCreatingTopics.test
+Ability to delete the Topics in private project as site admin user,Discussions,Fail,sDeleteMultipleTopics.test
+Abilit to filter Topics in private project as site admin users,Discussions,Fail,sFilterForumWithResult.test
+Ability to refresh Boards,Boards,Fail,sRefreshBoard.test
+Verifying the Board View with Listed Planning Folders,Boards,Fail,sVerifyBoardPlanList.test
+Ability to create public Project as site admin,Projects,Fail,spCreateProject.test
+Ability to set project with Public access permission,Project Admin,Fail,pPublicPermission.test
+Ability to create Tracker in public project as site admin user,Tracker,Fail,spCreateTracker.test
+Ability to clone tracker in public project as site admin user,Tracker,Fail,spCloneTracker.test
+Inability to clone external Tracker without source Id in public project as site admin user,Tracker,Fail,spCloneExternalTrackerNeg.test
+Ability to clone External tracker in public project as site admin user,Tracker,Fail,spCloneExternalTracker.test
+Ability to delete tracker in public project as site admin,Tracker,Fail,spDeleteTracker.test
+Ability to update tracker Group field in public project as site admin user,Tracker,Fail,spUpdateGroupField.test
+Ability to update tracker Status field in public project as site admin user,Tracker,Fail,spUpdateStatusField.test
+Ability to update category field in tracker in public project as site admin user,Tracker,Fail,spUpdateCategoryField.test
+Ability to update tracker Customer field in public project as site admin user,Tracker,Fail,spUpdateCustomerField.test
+Ability to do auto assignment in public project as site admin user,Tracker,Fail,spVerifyAutoAssign.test

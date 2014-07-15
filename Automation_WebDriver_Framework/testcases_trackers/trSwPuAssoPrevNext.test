@@ -1,0 +1,37 @@
+name=Ability to move to next and previous artifacts via Next > and < Previous functionality in Association wizard in public project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=1000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=200
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+switchToPopupWindow
+waitUntilById=associationIdString
+typeElementById=associationIdString=artf1004
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+wait=200
+clickHrefByLinkText=< Previous
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=SWPublic

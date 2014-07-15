@@ -1,0 +1,10 @@
+name=Ability to view Root Task Folder Status in private project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=500
+url=sf/taskmgr/do/listTasks/projects.swprivate/taskmgr
+wait=500
+clickHrefByLinkText=Summary
+wait=500
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

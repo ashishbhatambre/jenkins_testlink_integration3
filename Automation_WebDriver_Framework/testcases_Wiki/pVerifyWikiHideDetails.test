@@ -1,0 +1,11 @@
+name=Ability to Hide Details Option in wiki for public project
+component=Wiki
+role=Global Role
+artifact=NA
+wait=300
+clickHrefByLinkText=Wiki
+wait=300
+waitUntilById=view_wiki_page.hidePageDetails
+clickElementById=view_wiki_page.hidePageDetails
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Wiki#NEXT#Home page#NEXT#View Wiki Page 

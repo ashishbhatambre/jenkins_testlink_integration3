@@ -1,0 +1,19 @@
+name=Ability to add task progress when update task
+component=Tasks
+role=Site Admin
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.project_search/taskmgr.searchfolder
+wait=500
+clickHrefByLinkText=@Read&
+wait=500
+waitUntilById=accomplished
+typeElementById=accomplished=Accomplish request sent to assigned user
+waitUntilById=planned
+typeElementById=planned=Planned to complete within estimated time
+waitUntilById=issues
+typeElementById=issues=Search displays from parent folder also
+waitUntilById=viewTask_Save
+clickElementById=viewTask_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Task updated successfully.

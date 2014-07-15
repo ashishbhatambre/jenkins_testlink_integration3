@@ -1,0 +1,24 @@
+name=Document review creation
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=createDocumentReview_userPicker
+clickElementById=createDocumentReview_userPicker
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=user2_normalPermission
+waitUntilById=add
+clickElementById=add
+wait=300
+runJavaScriptPopToMain=javascript:submitForm(document.userPicker, 'ok')
+withoutPopCloseSwitchToMainWindow
+wait=300
+waitUntilById=attachDocument
+selectButtonByValue=on
+waitUntilById=createDocumentReview_submit
+clickElementById=createDocumentReview_submit
+wait=300
+searchElementValueByTagName=Body=Document review created successfully.

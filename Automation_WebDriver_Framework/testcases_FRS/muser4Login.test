@@ -1,0 +1,13 @@
+name=Ability to login as tmuser4_Login
+component=FRS
+role=
+artifact=NA
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=tmuser4
+waitUntilById=pwd
+typeElementById=pwd=Collabnet2@
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

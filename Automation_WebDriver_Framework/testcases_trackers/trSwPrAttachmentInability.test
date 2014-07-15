@@ -1,0 +1,27 @@
+name=Inability to create attachment "without select file" in Private Project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickHrefByLinkText=QA:PendingArtf
+waitUntilById=attachments
+clickElementById=attachments
+wait=200
+clickHrefByLinkText=Add Attachments
+wait=200
+switchToPopupWindow
+waitUntilById=addAttachment_submit
+clickElementById=addAttachment_submit
+wait=200
+searchElementValueByTagName=Body=Attachment is a required field.
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=Body=SWPrivate#NEXT#Trackers

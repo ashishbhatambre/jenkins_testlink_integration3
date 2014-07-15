@@ -1,0 +1,10 @@
+name=Save Monitored Applications
+clickHrefByLinkText=NewProject
+waitUntilById=apps
+clickElementById=apps
+wait=300
+selectCheckBoxFromList=applicationMonitored(Tracker)
+waitUntilById=editMonitoredApplications_Save
+clickElementById=editMonitoredApplications_Save
+wait=300
+searchElementValueByTagName=Body=Created monitoring subscription for application Trackers.

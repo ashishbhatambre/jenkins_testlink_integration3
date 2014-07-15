@@ -1,0 +1,17 @@
+name=Navigate Document to "Previous" in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+clickHrefByLinkText=Doc_4
+wait=300
+clickHrefByLinkText=< Previous
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Documents
+wait=300

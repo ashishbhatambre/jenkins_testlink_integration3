@@ -1,0 +1,13 @@
+name=Ability to delete Task in private project
+component=Tasks
+role=Sitewide_Delete role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.swprivate/taskmgr.swa_taskfolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+waitUntilById=listTasksSelect_Delete
+clickElementById=listTasksSelect_Delete
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=1 task(s) deleted successfully.

@@ -1,0 +1,22 @@
+name=Ability to Search Document Via Advance Search and GlobalSearch
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=500
+clickHrefByLinkText=Advanced Search
+wait=500
+waitUntilByName=term
+typeElementByName=term=Tree_View
+waitUntilById=applications
+selectOptionValueByIdValue=applications=Documents
+wait=400
+waitUntilById=projects
+selectOptionValueByIdValue=projects=NewProject
+wait=400
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+wait=400
+searchElementValueByTagName=Body=Search

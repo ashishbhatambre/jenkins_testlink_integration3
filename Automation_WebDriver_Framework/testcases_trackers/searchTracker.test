@@ -1,0 +1,20 @@
+name=Ability to search Tracker With Priorites; Assigned users and Submitted Users options
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Search Trackers
+wait=200
+waitUntilById=priorities
+selectOptionValueByIdValue=priorities=3 - Medium
+waitUntilById=assignedTo
+selectOptionValueByIdValue=assignedTo=user2_normalPermission
+waitUntilById=submittedBy
+selectOptionValueByIdValue=submittedBy=user1_adminPermission
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+searchElementValueByTagName=Body=Tracker Search Results    (1 Item)

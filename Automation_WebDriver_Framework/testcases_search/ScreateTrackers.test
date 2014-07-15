@@ -1,0 +1,45 @@
+name=Ability to create Tracker(s)
+component=Trackers
+role=Site Admin
+artifact=NA
+wait=300
+url=sf/tracker/do/adminTrackers/projects.project_search/tracker
+wait=300
+waitUntilById=projectAdminTracker_create
+clickElementById=projectAdminTracker_create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=Tracker_Search
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=Tracker for the search_project
+wait=200
+selectButtonByValue=icon_01.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Tracker created successfully.
+wait=300
+waitUntilById=projectAdminTracker_create
+clickElementById=projectAdminTracker_create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=Tracker_New
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=Tracker for the search_project
+wait=200
+selectButtonByValue=icon_05.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Tracker created successfully.
+wait=300
+waitUntilById=projectAdminTracker_create
+clickElementById=projectAdminTracker_create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=Tracker 701
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=Tracker for the search_project
+wait=200
+selectButtonByValue=icon_12.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Tracker created successfully.

@@ -1,0 +1,26 @@
+name=Inability to create Wiki Component for Invalid Wiki Page
+component=Project Home
+role=Admin Role
+artifact=NA
+wait=300
+waitUntilById=CreatePageComponentLink
+clickElementById=CreatePageComponentLink
+wait=300
+waitUntilById=title
+typeElementById=title=pWiki Component
+wait=300
+selectButtonByValue=wiki
+wait=300
+selectButtonByValue=0
+wait=300
+selectButtonByValue=false
+wait=300
+typeElementById=wikiTopic=WikiPage
+wait=300
+clickElementById=component_html
+wait=300
+searchElementValueByTagName=Body=The wiki page WikiPage is not valid. Please select a wiki page that currently exists for this project.
+wait=300
+clickHrefByLinkText=Cancel
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Project Home 

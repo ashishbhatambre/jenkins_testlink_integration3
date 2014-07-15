@@ -1,0 +1,31 @@
+name=Creating the Task with end date that falls on weekend. for public Project
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=EventTask1
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilByName=title
+typeElementByName=title=ET3
+waitUntilByName=description
+typeElementByName=description=EventTask3
+selectOptionValueByNameValue=priority=2 - High
+waitUntilByName=status
+wait=300
+selectOptionValueByNameValue=status=Alert
+wait=300
+waitUntilByName=startDate
+typeElementByName=startDate=03/4/2013
+typeElementByName=endDate=04/20/2013
+typeElementByName=estimatedHours=4
+typeElementByName=requiredHours=3
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=The end date falls on a weekend, which is not allowed on this task.

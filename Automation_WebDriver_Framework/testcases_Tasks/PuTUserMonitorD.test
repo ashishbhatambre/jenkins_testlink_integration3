@@ -1,0 +1,43 @@
+name=Verify User Monitoring Functionality in Tasks
+component=Tasks 
+role=Direct Role_Delete Permission
+artifact=NA
+wait=300
+wait=300
+url=sf/projects/public/
+wait=300
+clickHrefByLinkText=Tasks
+wait=900
+clickHrefByLinkText= PUA_TaskFolder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+clickHrefByLinkText=Users Monitoring Selected
+wait=300
+switchToPopupWindow
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+wait=300
+waitUntilById=name
+typeElementById=name=tmuser1
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=Public#NEXT#Tasks
+

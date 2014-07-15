@@ -1,0 +1,16 @@
+name=Ability to document Rows from 15 to 25 for private project by site admin user
+component=Document
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Doc2
+wait=500
+waitUntilById=rows-icon
+clickElementById=rows-icon
+wait=500
+waitUntilById=ipp_25
+clickElementById=ipp_25
+wait=500
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Documents#NEXT#Str_View#NEXT#Doc2#NEXT#List Documents 

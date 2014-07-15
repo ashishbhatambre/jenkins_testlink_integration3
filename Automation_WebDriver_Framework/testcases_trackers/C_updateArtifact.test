@@ -1,0 +1,29 @@
+name=Ability to update comments for the artifact which is created by and updated as user with create only permission in private project
+component=Tracker
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=CloneTracker
+wait=200
+waitUntilById=btn_filter!!string!!status
+clickElementById=btn_filter!!string!!status
+waitUntilByName=multiselect__filter!!string!!status
+clickElementById=ui-multiselect-_filter!!string!!status-option-4
+wait=200
+clickHrefByLinkText=Closed_Artifact
+wait=200
+waitUntilById=trf_comment
+typeElementById=trf_comment=Artifact updated by create only user
+wait=200
+waitUntilById=viewArtifactForm_Save
+clickElementById=viewArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact data updated successfully.
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

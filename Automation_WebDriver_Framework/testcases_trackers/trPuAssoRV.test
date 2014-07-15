@@ -1,0 +1,44 @@
+name=Ability to create Association using "Recently viewed" 
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=200
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=200
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=associations
+clickElementById=associations
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=recentlyViewedRadio
+clickElementById=recentlyViewedRadio
+waitUntilById=recentlyViewedIds
+selectOptionValueByIdIndex=recentlyViewedIds=0
+waitUntilById=addAssociation_submitItems
+clickElementById=addAssociation_submitItems
+waitUntilById=description
+typeElementById=description=Association via Recently Viewed items
+waitUntilById=addAssociation_submitDescription
+clickElementById=addAssociation_submitDescription
+wait=200
+searchElementValueByTagName=body=1 associations were created successfully. Click Close to return to the main window.
+wait=200
+clickHrefByLinkText=Close
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200

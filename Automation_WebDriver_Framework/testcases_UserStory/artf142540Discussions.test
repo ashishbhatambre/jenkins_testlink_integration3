@@ -1,0 +1,60 @@
+name=Ability to Stop Monitoring the Forum by adding and removing users for an artifact artf142540
+component=Discussions
+role=Global Role
+aritfact=artf142540
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=admin
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Discussions
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectForumsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectForumsForm
+wait=300
+waitUntilById=selectForumsForm_who
+clickHrefByLinkText=Users Monitoring Selected
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=users
+clickElementById=users
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+wait=300
+selectOptionValueByIdValue=foundMultipleTemp=user2_normalPermission
+selectOptionValueByIdValue=foundMultipleTemp=yy_admin_per
+selectOptionValueByIdValue=foundMultipleTemp=user1_adminPermission
+wait=300
+clickHrefByLinkText=Add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=500
+selectButtonByValue=user1
+wait=300
+waitUntilById=selectUsers_removeUsers
+clickElementById=selectUsers_removeUsers
+wait=300
+acceptJavaScriptConfirm
+wait=500
+runJavaScriptPopToMain=javascript:close()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+waitUntilById=selectForumsForm_unmonitor
+clickElementById=selectForumsForm_unmonitor
+wait=500
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.
+wait=500
+url=sf/sfmain/do/logout
+searchElementValueByTagName=Body=Home

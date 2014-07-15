@@ -1,0 +1,20 @@
+name=Create Project Statistics Component for Public Project
+component=Project Home
+role=Admin Role
+artifact=NA
+waitUntilById=CreatePageComponentLink
+clickElementById=CreatePageComponentLink
+waitUntilById=title
+typeElementById=title=pStatisticsComponent
+wait=300
+selectButtonByValue=graphs
+wait=300
+selectButtonByValue=0
+wait=300
+selectButtonByValue=false
+wait=300
+waitUntilById=component_html
+clickElementById=component_html
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Project Home 
+wait=300

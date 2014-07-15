@@ -1,0 +1,39 @@
+name=Create Child Dependency to the Artifact with Recently edited object
+component=Tracker
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder3
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=200
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=200
+waitUntilById=dependencies
+clickElementById=dependencies
+waitUntilById=choose_children
+clickHrefByLinkText=Choose Child
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=dependenciesFromHistoryIds
+selectOptionValueByIdIndex=dependenciesFromHistoryIds=1
+wait=200
+waitUntilById=addDependencyForm_submitItems
+clickElementById=addDependencyForm_submitItems
+wait=200
+waitUntilById=addDependencyForm_submitDescription
+clickElementById=addDependencyForm_submitDescription
+wait=500
+searchElementValueByTagName=Body=Artifact dependency with artf1002 created successfully.
+searchElementValueByTagName=Body=Click Close to return to the main window.
+wait=500
+runJavaScriptPopToMainWindow=javascript:finishAssociation()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=200

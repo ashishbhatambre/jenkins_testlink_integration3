@@ -1,0 +1,22 @@
+name=Monitor Document via Details 
+component=Documents
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/projects/public/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=button_monitor_object
+clickElementById=button_monitor_object
+wait=300
+searchElementValueByTagName=Body=Document is now being monitored.
+wait=300

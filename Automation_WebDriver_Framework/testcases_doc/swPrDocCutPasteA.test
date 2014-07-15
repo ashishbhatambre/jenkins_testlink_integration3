@@ -1,0 +1,28 @@
+name=Cut & Paste a Docuement 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swprivate/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectDocuments_Cut
+clickElementById=selectDocuments_Cut
+wait=500
+searchElementValueByTagName=Body=1 document(s) cut to clipboard.
+wait=500
+url=sf/docman/do/listDocuments/projects.swprivate/docman.root.document1.ddddforname_to_attach_more_than.sw_pr_subchilddf
+wait=300
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=1 document(s) pasted.
+wait=300

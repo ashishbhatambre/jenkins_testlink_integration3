@@ -1,0 +1,16 @@
+name=Delete Sub Child Document Folder 
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugproject/docman.root.uglivefolder.ugscfolder.ddddforname_to_attach_more_than
+wait=300
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Delete
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=Folder deleted successfully.
+

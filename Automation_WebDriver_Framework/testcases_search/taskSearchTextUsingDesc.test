@@ -1,0 +1,18 @@
+name=Enter a complete valid keyword and select the checkbox Description.
+component=Tasks
+role=Site Admin
+artifact=artf168903
+wait=300
+url=sf/taskmgr/do/listTasks/projects.project_search/taskmgr.searchfolder.searchfolder1
+wait=300
+clickHrefByLinkText=Search Tasks
+waitUntilById=searchText
+typeElementById=searchText=knowledge 
+waitUntilById=inTitle
+clickElementById=inTitle
+waitUntilById=inProgress
+clickElementById=inProgress
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=600
+searchElementValueByTagName=Body=(2 Items)

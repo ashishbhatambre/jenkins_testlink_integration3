@@ -1,0 +1,8 @@
+name=Verify Task History Functionality 
+component=Tasks
+role=Sitewide Role_View Permission
+artifact=NA
+waitUntilById=history
+clickElementById=history
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

@@ -1,0 +1,18 @@
+name=Filter Child Document by Last Edited User
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgdfolder.ddddforname_to_attach_more_than
+wait=300
+waitUntilById=_filter!!string!!lastModifiedBy
+selectOptionValueByIdIndex=_filter!!string!!lastModifiedBy=1
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+searchElementValueByTagName=Body=pgProject#NEXT#Documents

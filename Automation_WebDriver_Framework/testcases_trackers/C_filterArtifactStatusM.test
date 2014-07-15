@@ -1,0 +1,26 @@
+name=Ability to filter the artifact with Status from multiple selection as user with create only user permission
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=NewTracker
+wait=200
+waitUntilById=btn_filter!!string!!status
+clickElementById=btn_filter!!string!!status
+waitUntilByName=multiselect__filter!!string!!status
+selectButtonByValue=Open
+selectButtonByValue=Closed
+selectButtonByValue=Pending
+wait=200
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=200
+searchElementValueByTagName=Body=(4 Items)
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

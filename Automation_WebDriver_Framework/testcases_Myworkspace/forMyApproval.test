@@ -1,0 +1,7 @@
+name=For My Approval
+url=sf/sfmain/do/myPage
+wait=100
+waitUntilById=myApproval
+clickElementById=myApproval
+wait=100
+searchElementValueByTagName=Body=My Workspace

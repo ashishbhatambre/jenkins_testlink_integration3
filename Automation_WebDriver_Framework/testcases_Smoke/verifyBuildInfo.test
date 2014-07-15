@@ -1,0 +1,12 @@
+name=Ability to view the build info
+component=System Tools
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=System Tools
+wait=500
+clickHrefByLinkText=Build Information
+wait=500
+searchElementValueByTagName=Body=Site Administration#NEXT#System Tools#NEXT#Build Information 
+wait=500

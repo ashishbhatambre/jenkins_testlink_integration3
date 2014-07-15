@@ -1,0 +1,22 @@
+name=Abiliyt to add Section separator without name 
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.public
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=selectionMenuButton_separatorMenu
+clickElementById=selectionMenuButton_separatorMenu
+wait=200
+clickHrefByLinkText=Section
+wait=200
+switchToPopupWindow
+wait=200
+clickHrefByLinkText=Save
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=Section separator created successfully.

@@ -1,0 +1,13 @@
+name=Ability to create Project to automate the user story artifact- artf122891
+component=Projects
+role=NA
+artifact=artf122891
+wait=300
+url=sf/sfmain/do/createProject
+wait=300
+waitUntilByName=title
+typeElementByName=title=ProTest
+typeElementByName=description=New Project under Artifact artf122891 Testing
+clickHrefByLinkText=Create
+wait=300
+searchElementValueByTagName=Body=Project#NEXT#Home

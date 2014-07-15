@@ -1,0 +1,15 @@
+name=Searching posts with text
+component=Discussions
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=searchText
+typeElementById=searchText=forum
+wait=300
+waitUntilById=selectedForums
+selectOptionValueByIdValue=selectedForums=NewForum
+wait=300
+waitUntilById=searchPosts_Search
+clickElementById=searchPosts_Search
+wait=300
+searchElementValueByTagName=Body=NewProject#NEXT#Discussion#NEXT#Search Posts

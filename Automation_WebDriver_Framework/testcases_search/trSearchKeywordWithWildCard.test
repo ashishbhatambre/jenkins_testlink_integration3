@@ -1,0 +1,32 @@
+name=To search for an incomplete word use wildcard at the end of the word.
+component=Trackers
+role=Site Admin
+artifact=artf161258 
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_search
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=arti*
+waitUntilById=inTitle
+clickElementById=inTitle
+waitUntilById=inDescription
+clickElementById=inDescription
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=(3 Items)
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_701
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=se*h
+waitUntilById=inTitle
+clickElementById=inTitle
+waitUntilById=inDescription
+clickElementById=inDescription
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=Tracker Search Results

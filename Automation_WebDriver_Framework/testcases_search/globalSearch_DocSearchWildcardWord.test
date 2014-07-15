@@ -1,0 +1,12 @@
+name=Global Search_documents_using a wildcard for a keyword consisting an incomplete word    
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168479          
+clickHrefByLinkText=Jump to ID
+waitUntilById=search
+clickElementById=search
+waitUntilById=term
+typeElementById=term=num*
+selectOptionValueByIdIndex=applications=1
+clickElementById=searchForm_submit
+searchElementValueByTagName=Body=701 File

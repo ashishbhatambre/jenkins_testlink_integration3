@@ -1,0 +1,4 @@
+name=Monitor objects for a private project->Newproject
+clickHrefByLinkText=NewProject
+wait=300
+searchElementValueByTagName=Body=My Workspace

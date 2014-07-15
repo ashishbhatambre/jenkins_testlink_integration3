@@ -1,0 +1,21 @@
+name=Search document by "Search Keywords" with "Search Name and Description" and "Search Within Document" enabled for project group-> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+wait=300
+waitUntilById=keywordQuery
+typeElementById=keywordQuery=Doc
+waitUntilById=metaDataScope
+clickElementById=metaDataScope
+wait=300
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+searchElementValueByTagName=Body=(2 Items)

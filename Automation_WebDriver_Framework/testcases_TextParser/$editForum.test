@@ -1,0 +1,21 @@
+name=Edit Forum using ${}
+component=Discussions
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=400
+clickHrefByLinkText=Discussions
+wait=400
+clickHrefByLinkText=${Forum*!}
+wait=400
+waitUntilById=list_topics_page.edit
+clickElementById=list_topics_page.edit
+waitUntilById=title
+typeElementById=title=&Forum&
+waitUntilById=description
+typeElementById=description=$Forum$creation$for ${<project>}
+waitUntilById=forumForm_submit
+clickElementById=forumForm_submit
+wait=300
+searchElementValueByTagName=Body=Forum updated successfully.

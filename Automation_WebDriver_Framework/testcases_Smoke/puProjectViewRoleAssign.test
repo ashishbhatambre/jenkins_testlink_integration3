@@ -1,0 +1,31 @@
+name=Ability to assign project role to Member(s)
+component=Project Admin
+role=Admin
+artifact=NA
+wait=300
+url=sf/rbac/do/permissionAdmin/projects.public
+wait=300
+clickHrefByLinkText=pProjectViewOnlyRole
+wait=300
+waitUntilById=members
+clickElementById=members
+wait=500
+clickHrefByLinkText=Add
+wait=500
+switchToPopupWindow
+wait=500
+typeElementById=name=tmuser4
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickHrefByLinkText=Add
+wait=300
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=tmuser4 was added to the role.

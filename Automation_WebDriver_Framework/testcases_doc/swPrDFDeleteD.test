@@ -1,0 +1,17 @@
+name=Delete a Document Folder 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swprivate/
+wait=300
+clickHrefByLinkText=Documents
+wait=600
+clickHrefByLinkText= $Private_Document$
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickhrefBylinkText=Delete
+wait=300
+searchElementValueByTagName=Body=Folder deleted successfully.
+wait=300

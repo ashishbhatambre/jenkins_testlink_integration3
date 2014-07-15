@@ -1,0 +1,29 @@
+name=Cancel Create Association in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root.folder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=associationIdString
+typeElementById=associationIdString=wiki1031
+wait=300
+clickHrefByLinkText=Cancel
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=SWPublic_Sub#NEXT#Documents
+wait=300

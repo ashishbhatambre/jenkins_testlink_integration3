@@ -1,0 +1,21 @@
+name=Filter Task using Name 
+component=Tasks
+role=Sitewide Role_Delete Permission
+artifact=NA
+wait=300
+clickHrefByLinkText= SWA_TaskFolder
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=TA1
+wait=500
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body= (2 Items)
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+

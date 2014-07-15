@@ -1,0 +1,30 @@
+name=Remove the selected users in users monitoring Folder list for document folder for usergroup -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_prv_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Users Monitoring Folder
+wait=300
+switchToPopupWindow
+wait=300
+selectButtonByValue=user1
+selectButtonByValue=yoga
+selectButtonByValue=yadmin
+wait=300
+waitUntilById=selectUsers_removeUsers
+clickElementById=selectUsers_removeUsers
+wait=300
+acceptJavaScriptConfirm
+wait=1000
+runJavaScriptPopToMain=javascript:close()
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+searchElementValueByTagName=Body=UG_Prv_Project#NEXT#Documents#NEXT#&Document_Folder&#NEXT#List Documents 

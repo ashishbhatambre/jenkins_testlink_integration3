@@ -1,0 +1,25 @@
+name=Search using 'Planning Folder By' field: Select either a single or multiple value.
+component=Trackers
+role=Site Admin
+artifact=artf161289 
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_search
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=assignedPlanningFolderDisplay
+clickElementById=assignedPlanningFolderDisplay
+wait=300
+switchToPopupWindow
+waitUntilById=isNoneSelectedFalse
+clickElementById=isNoneSelectedFalse
+wait=600
+clickHrefByLinkText= Plan_Search
+wait=300
+waitUntilById=planningFolderPopup_submit
+clickElementById=planningFolderPopup_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=(1 Item)

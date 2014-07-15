@@ -1,0 +1,31 @@
+name=Ability to delete the saved filter in tracker in public project
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Stories
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+clickHrefByLinkText= FilterParent
+wait=1000
+clickElementByCssSelector=FilterRight
+wait=500
+clickHrefByLinkText=Delete...
+switchToPopupWindow
+wait=500
+waitUntilByName=deleteSearchOrFilterList
+selectOptionValueByNameValue=deleteSearchOrFilterList=FilterParent
+waitUntilById=deleteSearchOrFilter_submit
+clickElementById=deleteSearchOrFilter_submit
+wait=200
+searchElementValueByTagName=Body=1 tracker filter(s) have been deleted successfully..
+wait=200
+waitUntilById=close
+clickElementById=close
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200

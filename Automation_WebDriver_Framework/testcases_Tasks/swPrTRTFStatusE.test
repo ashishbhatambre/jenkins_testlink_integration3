@@ -1,0 +1,12 @@
+name=Verify Root Task Folder Status 
+component=Tasks
+role=Sitewide Role_Edit Permission
+artifact=NA
+wait=500
+url=sf/projects/swprivate/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Summary
+wait=500
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

@@ -1,0 +1,20 @@
+name=Cancel Create Document Folder in Public project
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root
+wait=300
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+waitUntilById=title
+typeElementById=title=Folder
+wait=300
+runJavaScriptPopToMain=javascript:cancelFolderCreate()
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=ppgProject#NEXT#Documents
+wait=300
+

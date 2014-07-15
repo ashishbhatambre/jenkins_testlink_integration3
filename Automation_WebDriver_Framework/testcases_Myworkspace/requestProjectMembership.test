@@ -1,0 +1,23 @@
+name=Request Membership for a project
+component=Project
+role=Admin Role
+artifact=NA
+wait=300
+url=sf/sfmain/do/myProjects?selectedTab=all
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=PProject
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectProjects_join
+clickElementById=selectProjects_join
+waitUntilById=comment
+typeElementById=comment=tuser2 want to join this project
+waitUntilById=joinProject_submit
+clickElementById=joinProject_submit
+wait=300
+searchElementValueByTagName=Body=Your request to join this project has been submitted.

@@ -1,0 +1,11 @@
+name=Ability to paste Document to another folder for private project by  site admin user
+component=Document
+wait=500
+clickHrefByLinkText= *(1234567890)*abcdefghijklmnopqrstuvwxyz&%&@()$!@#%$^&*(^&^&(*#$%%^&^*
+wait=500
+waitUntilById=selectDocuments_Paste
+clickHrefByLinkText=Paste
+wait=500
+acceptJavaScriptConfirm
+wait=1000
+searchElementValueByTagName=Body=1 document(s) pasted.

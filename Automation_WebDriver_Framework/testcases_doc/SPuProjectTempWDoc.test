@@ -1,0 +1,19 @@
+name=Create Project Template with documents enabled in inherited public project
+component=Documents
+role=DirectRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/sfmain/do/createTemplate/projects.public_sub
+wait=300
+waitUntilById=titleField
+typeElementById=titleField=Public_Sub_Template
+wait=300
+waitUntilById=description
+typeElementById=description=Project Template for a sub project
+wait=500
+selectCheckBoxFromList=contentChoices=5
+wait=500
+waitUntilByid=createTemplate_submit
+clickElementById=createTemplate_submit
+wait=300
+searchElementValueByTagName=Body=Project Template created.

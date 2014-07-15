@@ -1,0 +1,14 @@
+name=Cut the Document Folder in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+url=sf/docman/do/moveDocumentFolder/projects.swpublic/docman.root.document1?moveAction=Cut
+wait=300
+searchElementValueByTagName=Body=You do not have permission to view this page.

@@ -1,0 +1,19 @@
+name=Edit text Content 
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pgfolder
+wait=300
+clickHrefByLinkText=Doc_Online
+wait=300
+clickHrefByLinkText=Edit / Update
+wait=300
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=Document_Online
+wait=300
+waitUntilById=editDocument_submit
+clickElementById=editDocument_submit
+wait=300
+searchElementValueByTagName=Body=Document updated successfully.

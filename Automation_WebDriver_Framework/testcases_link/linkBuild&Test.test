@@ -1,0 +1,10 @@
+name=Verify Build & Test link
+component=Project
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/nproject/
+wait=300
+clickHrefByLinkText=Build & Test
+wait=700
+searchElementValueByTagName=Body=NProject#NEXT#Project Home#NEXT#Build#NEXT#&#NEXT#Test

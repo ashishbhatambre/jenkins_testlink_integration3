@@ -1,0 +1,28 @@
+name=Create Category with text starts with $text$text
+component=Category
+role=NA
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=300
+url=sf/categorization/do/adminCategories
+wait=300
+waitUntilById=new_category
+clickElementById=new_category
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=$New$Categrory
+waitUntilById=description
+typeElementById=description=$new$category
+waitUntilById=createCategory_submit
+clickElementById=createCategory_submit
+wait=500
+searchElementValueByTagName=Body=Category created successfully.
+wait=300
+runJavaScriptPopToMain=javascript:finishDocument()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=Site Administration#NEXT#Project Categories#NEXT#Edit Category 

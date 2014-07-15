@@ -1,0 +1,17 @@
+name=Login As CreateOnly Role User with setting password newuser1
+wait=300
+url=sf/sfmain/do/home
+wait=300
+typeElementByName=username=newuser1
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+wait=300
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+wait=300
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=My Page

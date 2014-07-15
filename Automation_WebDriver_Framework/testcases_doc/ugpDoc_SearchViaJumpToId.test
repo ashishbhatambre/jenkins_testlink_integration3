@@ -1,0 +1,12 @@
+name=Search Document Via Jump To Id in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=doc1455
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=Documents
+wait=300

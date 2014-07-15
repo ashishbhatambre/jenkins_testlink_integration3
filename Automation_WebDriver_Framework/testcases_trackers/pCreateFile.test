@@ -1,0 +1,28 @@
+name=creating 2 File for the package in public package
+component=FRS
+role=Global Role
+artifact=NA
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=File Releases
+wait=200
+clickHrefByLinkText=Package#
+wait=200
+clickHrefByLinkText=Add
+wait=200
+waitUntilById=title
+typeElementById=title=Notes11
+typeElementByName=description=File created for Package Package_Notes
+clickElementById=createRelease_submit
+wait=200
+searchElementValueByTagName=Body=Release created successfully.
+wait=200
+clickHrefByLinkText=Add
+wait=200
+waitUntilById=title
+typeElementById=title=Notes21
+typeElementByName=description=File created for Package Package_Notes
+waitUntilById=createRelease_submit
+clickElementById=createRelease_submit
+wait=200
+searchElementValueByTagName=Body=Release created successfully.

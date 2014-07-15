@@ -1,0 +1,27 @@
+name=pgduser1 Creation
+component=Users
+role=Admin
+artifact=NA
+wait=400
+clickElementById=admin_link
+clickHrefByLinkText=Users
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+waitUntilByName=username
+typeElementByName=username=pgduser1
+wait=300	
+typeElementByName=password=Collabnet1!
+wait=300
+typeElementByName=confirmPassword=Collabnet1!
+wait=300
+typeElementByName=fullName=pgduser1_pgadminPermission	
+wait=300
+typeElementByName=email=pgdser1@collab.net
+wait=300
+typeElementByName=companyName=CSPL
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=500
+searchElementValueByTagName=Body=User pgduser1 has been created successfully.

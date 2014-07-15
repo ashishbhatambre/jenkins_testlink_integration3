@@ -1,0 +1,24 @@
+name=Reviewing the Document for usergroup public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=createDocumentReview_userPicker
+clickElementById=createDocumentReview_userPicker
+switchToPopupWindow
+wait=500
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=priya_adminPermission
+waitUntilById=add
+clickElementById=add
+wait=300
+runJavaScriptPopToMain=javascript:submitForm(document.userPicker, 'ok')
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+waitUntilById=attachDocument
+selectButtonByValue=on
+waitUntilById=createDocumentReview_submit
+clickElementById=createDocumentReview_submit
+wait=300
+searchElementValueByTagName=Body=Document review created successfully.

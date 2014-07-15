@@ -1,0 +1,24 @@
+name=Ability to Multi-Select for the dropdown fields in Search Filter for other than List Artifact pages - Monitoring Page
+component=Monitoring
+role=Global Role
+artifact=artf154930-TC(artf157859)
+wait=500
+clickHrefByLinkText=Monitoring
+wait=500
+waitUntilById=btn_filter!!object-type!!objectTypeName
+clickElementById=btn_filter!!object-type!!objectTypeName
+waitUntilByName=multiselect__filter!!object-type!!objectTypeName
+selectButtonByValue=Document
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=All Monitored Objects:  (13 Items)
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=500
+clickHrefByLinkText=My Page
+wait=500

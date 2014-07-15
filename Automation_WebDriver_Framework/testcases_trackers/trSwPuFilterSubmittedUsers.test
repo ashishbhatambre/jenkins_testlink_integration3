@@ -1,0 +1,27 @@
+name=Ability to filter artifact by multiple submitted users in public project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=200
+url=sf/projects/swpublic
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+waitUntilById=btn_filter!!string!!submittedByUsername
+clickElementById=btn_filter!!string!!submittedByUsername
+waitUntilById=ui-multiselect-_filter!!string!!submittedByUsername-option-1
+clickElementById=ui-multiselect-_filter!!string!!submittedByUsername-option-1
+waitUntilById=ui-multiselect-_filter!!string!!submittedByUsername-option-2
+clickElementById=ui-multiselect-_filter!!string!!submittedByUsername-option-2
+wait=200
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=200
+searchElementValueByTagName=Body=(3 Items)
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

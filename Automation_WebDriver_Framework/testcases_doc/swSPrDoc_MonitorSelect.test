@@ -1,0 +1,15 @@
+name=Monitor Selected Document in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root.folder
+wait=300
+selectCheckBoxFromList=_listItem=4
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Monitor Selected
+wait=500
+searchElementValueByTagName=Body=1 item(s) are now being monitored.
+wait=300

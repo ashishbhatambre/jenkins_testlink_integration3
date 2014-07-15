@@ -1,0 +1,7 @@
+name=Ability to change site mode from ALM to SCM
+component=License Info
+wait=300
+waitUntilById=displayLicense_submit
+clickElementById=displayLicense_submit
+wait=300
+searchElementValueByTagName=Body=Site Mode has been changed to SCM

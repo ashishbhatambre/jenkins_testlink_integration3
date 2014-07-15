@@ -1,0 +1,11 @@
+name=View all planning folders in Public Project
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=All
+wait=200
+searchElementValueByTagName=Body=List Trackers and Planning Folders

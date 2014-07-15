@@ -1,0 +1,16 @@
+name=Ability to change the configuration of the Wiki settings in private project as site admin user
+component=Wiki
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Wiki Settings
+wait=300
+waitUntilById=commentRequired
+clickElementById=commentRequired
+wait=300
+waitUntilById=adminWiki_save
+clickElementById=adminWiki_save
+wait=300
+searchElementValueByTagName=Body=FT_Prv_Project#NEXT#Project Admin#NEXT#Wiki Settings

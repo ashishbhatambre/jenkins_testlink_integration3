@@ -1,0 +1,17 @@
+name=Ability to monitor the Discussion Forum in private project as site admin user
+component=Discussions
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Discussions
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectForumsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectForumsForm
+wait=300
+waitUntilById=selectForumsForm_UnMonitor
+clickElementById=selectForumsForm_UnMonitor
+wait=300
+searchElementValueByTagName=Body=Item forum1001 is not being monitored.

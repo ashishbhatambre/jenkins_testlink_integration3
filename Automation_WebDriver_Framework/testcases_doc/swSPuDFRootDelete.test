@@ -1,0 +1,15 @@
+name=Delete Document Root Folder in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root
+wait=300
+clickHrefByLinkText=Edit
+wait=500
+clickHrefByLinkText=Delete
+wait=500
+acceptJavaScriptConfirm
+wait=800
+searchElementValueByTagName=Body=You cannot delete the top-level document folder.
+wait=300

@@ -1,0 +1,19 @@
+name=Delete the Task Folder
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= SaveTask@#$@#
+wait=500
+clickHrefByLinkText=Edit
+wait=500
+waitUntilById=TaskGroupList_delete
+clickHrefByLinkText=Delete
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Task folder deleted successfully.

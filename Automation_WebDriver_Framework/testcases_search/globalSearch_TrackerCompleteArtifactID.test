@@ -1,0 +1,12 @@
+name=Global Search_Tracker_using a valid and a complete artifact ID      
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168641                 
+clickHrefByLinkText=Jump to ID
+waitUntilById=search
+clickElementById=search
+waitUntilById=term
+typeElementById=term=artf1023
+selectOptionValueByIdIndex=applications=8
+clickElementById=searchForm_submit
+searchElementValueByTagName=Body=(1 Item)

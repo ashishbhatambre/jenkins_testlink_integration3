@@ -1,0 +1,25 @@
+name=Ability to update Tracker Status Field 
+component=Tracker Admin
+role=Direct Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.public
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Status
+wait=200
+waitUntilById=displayLinesMultiselect
+typeElementById=displayLinesMultiselect=5
+wait=200
+waitUntilById=helpText
+typeElementById=helpText=Updated Status Field
+wait=200
+clickHrefByLinkText=Alphabetize
+wait=200
+clickHrefByLinkText=Save Field
+wait=200
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Field data updated successfully.

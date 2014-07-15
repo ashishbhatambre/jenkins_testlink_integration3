@@ -1,0 +1,19 @@
+name=Ability to create project group
+component=Project Groups
+role=Admin
+artifact=NA
+wait=300
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=Project Groups
+wait=300
+clickHrefByLinkText=Create Project Group
+waitUntilById=title
+typeElementById=title=PMisc
+waitUntilById=description
+typeElementById=description=Projects residing with public access permissions.
+wait=300
+clickElementById=createProjectGroup_submit
+wait=500
+searchElementValueByTagName=Body=Project Group PMisc has been created successfully.
+wait=300

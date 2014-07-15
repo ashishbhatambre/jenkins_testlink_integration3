@@ -1,0 +1,17 @@
+name=Ability to filter the Restricted users
+component=Users
+role=Admin
+artifact=NA
+url=sf/sfmain/do/listUsersAdmin
+wait=300
+waitUntilById=_filter!!boolean!!isRestrictedUser
+selectOptionValueByIdValue=_filter!!boolean!!isRestrictedUser=Restricted
+wait=500
+clickHrefByLinkText=Filter
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+searchElementValueByTagName=Body=Users

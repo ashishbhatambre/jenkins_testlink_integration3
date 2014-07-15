@@ -1,0 +1,47 @@
+name=Create new tracker Matrix Component
+wait=300
+waitUntilById=CreatePageComponentLink
+clickElementById=CreatePageComponentLink
+wait=300
+waitUntilById=title
+typeElementById=title=Tracker1_Matrix
+wait=300
+selectButtonByValue=chart
+wait=300
+selectButtonByValue=0
+wait=300
+selectButtonByValue=false
+wait=300
+selectOptionValueByIdIndex=numChart=1
+waitUntilById=chartLabel_1
+typeElementById=chartLabel_1=Open
+wait=300
+selectOptionValueByIdIndex=chartType_1=2
+wait=300
+selectRadioButton=chartSourceType_1_tracker
+wait=300
+selectOptionValueByIdIndex=chartSourceTracker_1=1
+waitUntilById=chartLabel_2
+typeElementById=chartLabel_2=Closed
+wait=300
+selectOptionValueByIdIndex=chartType_2=1
+wait=300
+selectRadioButton=chartSourceType_2_planning
+wait=300
+selectOptionValueByIdIndex=chartSourceTracker_1=1
+waitUntilById=assignedPlanningFolderDisplay_2
+clickElementById=assignedPlanningFolderDisplay_2
+wait=300
+switchToPopupWindow
+wait=300
+clickHrefByLinkText= Folder_Renamed
+wait=300
+waitUntilById=planningFolderPopup_submit
+clickElementById=planningFolderPopup_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+waitUntilById=component_html
+clickElementById=component_html
+wait=300
+searchElementValueByTagName=Body= NewProject#NEXT# Project Home 

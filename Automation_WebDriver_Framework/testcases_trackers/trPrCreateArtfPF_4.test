@@ -1,0 +1,47 @@
+name=Ability to create artifact with customized required field 
+component=Tracker 
+role=Direct Role
+artifact=NA
+wait=200
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Submit New Artifact
+wait=200
+waitUntilById=title
+typeElementById=title=QA:ReqArtf
+waitUntilById=description
+typeElementById=description=Create artifact with customized required field
+waitUntilById=selectedStatus
+selectOptionValueByIdIndex=selectedStatus=0
+waitUntilById=fldPriority
+selectOptionValueByIdIndex=fldPriority=3
+waitUntilById=fldAssignedTo
+selectOptionValueByIdIndex=fldAssignedTo=1
+waitUntilById=fldPoints
+typeElementById=fldPoints=25
+waitUntilById=createArtifactForm_userPicker
+clickElementById=createArtifactForm_userPicker
+wait=200
+switchToPopupWindow
+wait=200
+waitUntilById=name
+typeElementById=name=tmuser1
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdIndex=foundMultipleTemp=0
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=body=Artifact submitted successfully.

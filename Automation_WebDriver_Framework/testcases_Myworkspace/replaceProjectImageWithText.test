@@ -1,0 +1,6 @@
+name=Replace Project Image with txt file
+typeValueForFileField=C:\Uploaded_Files\link.txt
+wait=300
+waitUntilById=logo_change
+clickElementById=logo_change
+searchElementValueByTagName=Body=The file you tried to upload is not recognized as a valid image file. Please try again.

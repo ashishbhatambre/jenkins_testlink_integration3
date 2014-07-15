@@ -1,0 +1,25 @@
+name=Creating Task with 7 Days Calendar to task in Sub-Child Folder
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= test_task
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=TaskWith7Days
+waitUntilById=description
+typeElementById=description=Task Created with 7 Days Calender to the task
+selectOptionValueByNameValue=priority=2 - High
+selectOptionValueByNameValue=status=OK
+selectOptionValueByIdValue=includeWeekends=7 Day (Includes Weekends)
+wait=500
+clickHrefByLinkText=Save
+wait=500
+searchElementValueByTagName=Body=Task created successfully.

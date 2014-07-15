@@ -1,0 +1,61 @@
+name=Verify that Subprojects are not displayed to the user when Prevent Inheritance is enabled in project role
+component=Users
+role=NA
+artifact= Tasks - artf180125 TC - artf180090 [Associate 'user1' to Project Role 'PR1' and Associate 'user2' to Global Role 'GR2' in 'Project1']
+wait=300
+url=sf/projects/project1/
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+clickHrefByLinkText=Permissions
+wait=500
+clickHrefByLinkText=GR1
+wait=500
+waitUntilById=members
+clickElementById=members
+waitUntilById=_userPickerDiv
+clickHrefByLinkText=Add
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=usr2
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500
+searchElementValueByTagName=Body=usr2 was added to the role.
+wait=500
+waitUntilById=listRoles_create
+clickElementById=listRoles_create
+wait=500
+waitUntilById=displayList
+selectOptionValueByIdValue=displayList=Roles created for this project
+wait=300
+clickHrefByLinkText=PR1
+wait=300
+waitUntilById=members
+clickElementById=members
+wait=300
+clickHrefByLinkText=Add
+wait=300
+switchToPopupWindow
+wait=300
+typeElementById=name=usr1
+waitUntilById=userPicker_find
+clickElementById=userPicker_find
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdIndex=foundMultipleTemp=0
+wait=300
+waitUntilById=add
+clickElementById=add
+waitUntilById=userPicker_ok
+clickElementById=userPicker_ok
+wait=300
+withoutPopCloseSwitchToMainWindow
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=usr1 was added to the role.

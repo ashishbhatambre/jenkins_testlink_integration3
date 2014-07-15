@@ -1,0 +1,21 @@
+name=Editing the Release [set to Pending]
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=FilePackage
+wait=500
+clickHrefByLinkText=File3
+wait=500
+clickHrefByLinkText=Edit
+wait=500
+waitUntilById=status
+selectOptionValueByIdValue=status=Pending
+waitUntilById=editRelease_submit
+clickElementById=editRelease_submit
+wait=300
+searchElementValueByTagName=Body=Release edited successfully.

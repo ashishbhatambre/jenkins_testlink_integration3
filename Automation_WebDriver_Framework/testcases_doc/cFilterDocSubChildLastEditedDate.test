@@ -1,0 +1,23 @@
+name=Filter Document by Document Last Edited On in Sub-Child folder for private child project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_prv_project/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= ASDFEv#@$
+wait=300
+waitUntilByName=_filter!!date!!dateLastModified
+typeElementByName=_filter!!date!!dateLastModified=08/20/2013
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body= No results found.
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

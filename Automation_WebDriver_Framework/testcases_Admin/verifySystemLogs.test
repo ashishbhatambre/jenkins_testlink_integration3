@@ -1,0 +1,13 @@
+name=Ability to view system logs
+component=Admin
+role=NA
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=System Tools
+wait=500
+clickHrefByLinkText=System Logs
+wait=500
+searchElementValueByTagName=Body=Site Administration#NEXT#System Tools#NEXT#System Logs 

@@ -1,0 +1,10 @@
+name=Verify Task WorkLoad functionality
+component=Tasks
+role=Direct Role_Create Permission
+artifact=NA
+wait=300
+url=sf/taskmgr/do/viewSummary/projects.private/taskmgr
+waitUntilById=workload
+clickElementById=workload
+wait=700
+searchElementValueByTagName=Body=Private#NEXT#Tasks

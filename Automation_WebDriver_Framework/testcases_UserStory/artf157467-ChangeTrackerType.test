@@ -1,0 +1,29 @@
+name=Change Tracker Type in Artifact Edit Page for an artifact artf157467
+component=Tracker
+role=Global Role
+artifact=artf157467
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+clickHrefByLinkText= Folder_Renamed
+wait=4000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=500
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=500
+waitUntilById=viewArtifact_edit
+clickElementById=viewArtifact_edit
+wait=500
+waitUntilById=trkType
+selectOptionValueByIdValue=trkType=TRACK123##$^#$%
+wait=500
+waitUntilById=editArtifactForm_Save
+clickElementById=editArtifactForm_Save
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Artifact moved from NewTracker to TRACK123##$^#$%.

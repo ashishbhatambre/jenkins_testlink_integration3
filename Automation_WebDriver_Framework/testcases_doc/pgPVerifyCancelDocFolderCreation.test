@@ -1,0 +1,22 @@
+name=Verifying Cancel Button on creating the Document Folder for project group -> public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=500
+switchToPopupWindow
+wait=500
+waitUntilById=title
+typeElementById=title=test
+wait=300
+runJavaScriptPopToMain=javascript:cancelFolderCreate()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=PG_Pub_Project#NEXT#Documents#NEXT#P_RootFolder#NEXT#List Documents 

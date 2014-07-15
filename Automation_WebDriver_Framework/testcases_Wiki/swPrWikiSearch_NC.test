@@ -1,0 +1,14 @@
+name=Inability to search wiki page without providing search criteria
+component=Wiki
+role=Sitewide Role
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.swprivate/wiki/HomePage
+wait=300
+waitUntilByid=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+waitUntilById=searchWikiPages_submit
+clickElementById=searchWikiPages_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=You have not entered any search criteria.
+

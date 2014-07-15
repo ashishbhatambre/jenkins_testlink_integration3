@@ -1,0 +1,21 @@
+name=Ability to clone External tracker in public project as site admin user
+component=Tracker
+wait=300
+waitUntilById=sourceTrackerId
+typeElementById=sourceTrackerId=tracker1002
+wait=300
+waitUntilById=cloneTrackerAcrossProjectIdForm_next
+clickElementById=cloneTrackerAcrossProjectIdForm_next
+wait=300
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=cloneExtTracker
+wait=300
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=clone the external tracker Tracker1
+wait=800
+waitUntilById=cloneTrackerAcrossProjectDetailsForm_create
+runJavaScriptPopToMain=javascript:submitForm(document.cloneTrackerAcrossProjectDetailsForm, 'create')
+wait=800
+withoutPopCloseSwitchToMainWindow
+wait=800
+searchElementValueByTagName=Body=Tracker cloned successfully.

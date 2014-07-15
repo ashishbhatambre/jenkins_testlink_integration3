@@ -1,0 +1,24 @@
+name=Ability to Cut & Paste artifact from one planning folder to another
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder1
+wait=4000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=200
+waitUntilById=selectArtifactsForm_Cut
+clickHrefByLinkText=Cut
+wait=4000
+clickHrefByLinkText= Plan_Folder2
+wait=4000
+waitUntilById=selectArtifactsForm_Paste
+clickHrefByLinkText=Paste
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=1 artifact(s) pasted from the clipboard.

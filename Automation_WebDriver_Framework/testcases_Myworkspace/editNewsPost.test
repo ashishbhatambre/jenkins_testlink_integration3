@@ -1,0 +1,12 @@
+name=News Post Edit with text ${} and ${<>}
+wait=300
+waitUntilById=editNewsPost
+clickElementById=editNewsPost
+waitUntilById=title
+typeElementById=title=${NewProject_News Post}
+waitUntilById=body
+typeElementById=body=${functionality<H>}
+waitUntilById=createNewsPost_submit
+clickElementById=createNewsPost_submit
+wait=300
+searchElementValueByTagName=Body=News Post modified successfully.

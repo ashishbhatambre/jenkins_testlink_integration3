@@ -1,0 +1,24 @@
+name=Ability to update artifacts by Mass update in private project
+component=Trackers
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+selectCheckBoxFromList=_listItem=1
+wait=200
+waitUntilById=selectArtifactsForm_massUpdate
+clickElementById=selectArtifactsForm_massUpdate
+waitUntilById=comment
+typeElementById=comment=Fast action Required
+waitUntilById=massUpdateArtifactsForm_submit
+clickElementById=massUpdateArtifactsForm_submit
+wait=200
+searchElementValueByTagName=body=Private#NEXT#Trackers
+wait=200
+searchElementValueByTagName=body=2 Artifact(s) were successfully updated

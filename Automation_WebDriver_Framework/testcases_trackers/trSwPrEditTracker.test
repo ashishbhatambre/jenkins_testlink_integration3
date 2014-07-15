@@ -1,0 +1,20 @@
+name=Ability to edit Tracker Name in private project
+component=Tracker Admin
+role=Sitewide Role
+artifact=NA
+wait=200
+url=sf/sfmain/do/editProject/projects.swprivate
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+waitUntilById=admin_tracker.edit
+clickElementById=admin_tracker.edit
+waitUntilById=title
+typeElementById=title=swprTracker
+waitUntilById=description
+typeElementById=description=Tracker for Private Project
+waitUntilById=editTracker_submit
+clickElementById=editTracker_submit
+wait=200
+searchElementValueByTagName=body=SWPrivate#NEXT#Project Admin

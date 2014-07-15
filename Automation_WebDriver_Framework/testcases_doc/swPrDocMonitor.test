@@ -1,0 +1,21 @@
+name=Stop Document Monitor 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swprivate/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0 
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+runJavaScriptPopToMain=javascript:submitForm(document.selectDocuments, 'Monitor');
+wait=300
+searchElementValueByTagName=Body=item doc1239 is already being monitored.
+wait=300

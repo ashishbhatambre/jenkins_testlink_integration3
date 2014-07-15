@@ -1,0 +1,15 @@
+name=Ability to Monitor the File in Releases for private project by site admin user
+component=FRS
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=YTDF
+wait=500
+clickHrefByLinkText=Releases_YTDF
+wait=500
+waitUntilById=button_monitor_object
+clickElementById=button_monitor_object
+wait=500
+searchElementValueByTagName=Body=FRS Release is now being monitored.

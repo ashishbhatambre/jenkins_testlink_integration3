@@ -1,0 +1,8 @@
+name=View Previous task by clicking "< Previous" button from task edit page
+component=Task
+role=Global Role
+artifact=NA
+wait=600
+clickHrefByLinkText=< Previous
+wait=600
+searchElementValueByTagName=Body=Task Name:	 Task_renamed 

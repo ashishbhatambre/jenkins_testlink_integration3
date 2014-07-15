@@ -1,0 +1,18 @@
+name=Ability to assign user Membership to the public project
+component=Project Admin
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+clickHrefByLinkText=User Membership
+wait=500
+clickHrefByLinkText=Add
+wait=500
+selectButtonByValue=tester1
+selectButtonByValue=tester2
+wait=300
+waitUntilById=addUser_finish
+clickElementById=addUser_finish
+wait=300
+searchElementValueByTagName=Body=User(s) added to the project: Tester1_adminPermission (tester1) , Tester2_normalPermission (tester2) .

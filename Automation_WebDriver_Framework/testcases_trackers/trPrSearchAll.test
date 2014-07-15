@@ -1,0 +1,21 @@
+name=Ability to search Artifact using Title-Description and All Text Fields in Private project
+component=Trackers 
+role=Direct Role_Admin Permission
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=status
+waitUntilById=inTitle
+clickElementById=inTitle
+waitUntilById=inDescription
+clickElementById=inDescription
+wait=200
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+searchElementValueByTagName=body= (3 Items)

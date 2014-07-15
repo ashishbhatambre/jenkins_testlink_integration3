@@ -1,0 +1,42 @@
+name=Creating 2 Documents for public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Books
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Page1
+waitUntilById=description
+typeElementById=description=Document1 under Books
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=This is Document for the Project "PubProject" which is under Document Folder.
+wait=300
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=500
+searchElementValueByTagName=Body=Document created successfully.
+wait=500
+clickHrefByLinkText=Add Document
+wait=500
+waitUntilById=title
+typeElementById=title=Page2
+waitUntilById=description
+typeElementById=description=Document2 under page2
+wait=300
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=This is Document for the Project "PubProject"
+wait=300
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body=Document created successfully.

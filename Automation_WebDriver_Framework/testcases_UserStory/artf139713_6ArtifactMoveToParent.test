@@ -1,0 +1,18 @@
+name=Moving the artifact card to its parent artifact which have Parent-child Planning folder relationship
+component=Boards
+role=Global Role
+artifact=artf139713
+wait=400
+url=sf/projects/newproject/
+wait=400
+clickHrefByLinkText=Trackers
+wait=400
+clickHrefByLinkText=Plan
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_ChildPlan
+wait=6000
+dragElementToByCSS=item ui-corner-all ui-draggable=BoardArtifact2=scroll-area=SubChildArtifact
+wait=1000
+searchElementValueByTagName=Body=artf1007 was successfully moved under its parent in Board_ChildPlan.

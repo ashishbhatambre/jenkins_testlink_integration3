@@ -1,0 +1,26 @@
+namename=Creating Document with Draft State for usergroup -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Tree_View
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+waitUntilById=title
+typeElementById=title=DocWithDraft
+waitUntilById=description
+typeElementById=description=Creating Document with Draft state
+waitUntilById=status
+selectOptionValueByIdValue=status=Draft
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=This is Document for the private Project under draft state.
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=300
+searchElementValueByTagName=Body=Document created successfully.

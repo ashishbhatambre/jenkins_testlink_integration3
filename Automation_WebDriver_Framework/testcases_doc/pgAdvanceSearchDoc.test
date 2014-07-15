@@ -1,0 +1,23 @@
+name=Search Document Via Advance Search for project group->private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=400
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=400
+clickHrefByLinkText=Advanced Search
+wait=400
+waitUntilByName=term
+typeElementByName=term=PG_DocFolder
+waitUntilById=applications
+selectOptionValueByIdValue=applications=Documents
+wait=400
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+wait=300
+waitUntilById=DocumentFolder
+clickElementById=DocumentFolder
+wait=300
+searchElementValueByTagName=Body=PG_Prv_Project
+wait=300

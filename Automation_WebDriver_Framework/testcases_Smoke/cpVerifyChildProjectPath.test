@@ -1,0 +1,9 @@
+name=Ability to view the Child public project Path
+component=Projects
+wait=3f00
+url=sf/projects/child_pub_project
+wait=800
+clickHrefByLinkText=[Show Project Path]
+wait=800
+searchElementValueByTagName=Body=[Hide Project Path] PubProject 		
+Child_Pub_Project#NEXT#Project Home 

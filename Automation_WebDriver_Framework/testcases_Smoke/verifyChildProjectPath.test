@@ -1,0 +1,10 @@
+name=Ability to view the child project Path
+component=Project Admin
+wait=300
+url=sf/projects/child_prv_project
+wait=500
+clickHrefByLinkText=[Show Project Path]
+wait=1000
+searchElementValueByTagName=Body=[Hide Project Path] NewProject 
+		
+Child_Prv_Project/ Project Home 

@@ -1,0 +1,21 @@
+name=Monitor Selected document from List Documents > Monitor > Monitor Selected option for usergroup public project with global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Child_Folder
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+waitUntilById=selectDocuments_Monitor
+clickElementById=selectDocuments_Monitor
+wait=300
+searchElementValueByTagName=Body=Item doc1205 is already being monitored.

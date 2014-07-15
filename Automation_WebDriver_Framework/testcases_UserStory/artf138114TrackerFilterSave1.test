@@ -1,0 +1,33 @@
+name=Filter option in Tracker component->save the Filtered Item
+component=Tracker
+role=Global Role
+artifact=artf138114
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Tracker1
+wait=300
+waitUntilById=btn_filter!!numeric!!priority
+clickElementById=btn_filter!!numeric!!priority
+waitUntilByName=multiselect__filter!!numeric!!priority
+selectButtonByValue=4
+wait=300
+clickHrefByLinkText=Filter
+wait=1000
+clickElementByCssSelector=FilterRight
+wait=1000
+waitUntilById=saveNamedFilter
+clickHrefByLinkText=Save...
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=searchOrFilterName
+typeElementById=searchOrFilterName=TestFilter
+waitUntilById=saveSearchOrFilter_submit
+clickElementById=saveSearchOrFilter_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Tracker1#NEXT#List Artifacts

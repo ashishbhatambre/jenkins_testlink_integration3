@@ -1,0 +1,27 @@
+name=Ability to creating artifact in private project as site admin user
+component=Tracker
+wait=200
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText= list1
+wait=10000
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+wait=500
+clickElementByCssSelector=DropDownRight=2
+clickElementById=yui-gen2
+wait=300
+waitUntilById=title
+typeElementById=title=artifact4
+waitUntilById=description
+typeElementById=description=artifact 4 for the list1 PlanFolder
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=1 - Highest
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=1000
+searchElementValueByTagName=Body=Artifact submitted successfully.

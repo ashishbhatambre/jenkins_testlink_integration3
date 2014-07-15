@@ -1,0 +1,41 @@
+name=Ability to add Multiple Attachment to a artifact in public project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+wait=200
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickElementByCssSelector=FilterRight
+wait=200
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=1000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=200
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=attachments
+clickElementById=attachments
+waitUntilById=_SfButton_AddAttachment
+clickHrefByLinkText=Add Attachments
+wait=200
+switchToPopupWindow
+wait=200
+clickHrefByLinkText=Attach another file
+wait=200
+typeFileFieldValueForName=file[1]=C:\Uploaded_Files\README_7_10_13
+wait=200
+typeFileFieldValueForName=file[2]=C:\Uploaded_Files\Test.doc
+wait=200
+waitUntilById=addAttachment_submit
+runJavaScriptPopToMain=javascript:submitForm(document.addAttachment, 'submit')
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+searchElementValueByTagName=body=SWPublic
+wait=200

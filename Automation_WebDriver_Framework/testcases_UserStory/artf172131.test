@@ -1,0 +1,36 @@
+name=Ability to verify that Diff - Side by Side and Hide of Title and description Changes from comment of the artifact
+component=Trackers
+role=GlobalRole
+artifact=artf172126 - TC-Id[artf172131]
+wait=300
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder1
+wait=4000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=200
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=200
+waitUntilById=viewArtifact_edit
+clickElementById=viewArtifact_edit
+wait=200
+waitUntilById=title
+typeElementById=title=artifactUpdated
+waitUntilById=description
+typeElementById=description=artifact updated by editing title and description.
+wait=200
+waitUntilById=editArtifactForm_Save
+clickElementById=editArtifactForm_Save
+wait=200
+searchElementValueByTagName=Body=Artifact data updated successfully.
+wait=200
+clickHrefByLinkText=Diff
+wait=200
+clickHrefByLinkText=Side by Side
+wait=200
+clickHrefByLinkText=Hide
+wait=200

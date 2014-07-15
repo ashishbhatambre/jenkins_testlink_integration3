@@ -1,0 +1,22 @@
+name=Ability to create Wiki Attachment in public project
+component=Wiki
+role=Sitewide Role_Create Permission
+artifact=NA
+wait=300
+waitUntilById=attachments
+clickElementById=attachments
+waitUntilById=_SfButton_AddAttachment
+clickHrefByLinkText=Add Attachments
+wait=300
+switchToPopupWindow
+wait=300
+typeValueForFileField=C:\Uploaded_Files\test.pdf
+waitUntilById=addAttachment_submit
+clickElementById=addAttachment_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+waitUntilById=attachments
+clickElementById=attachments
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Wiki

@@ -1,0 +1,15 @@
+name=Stop Monitor Selected Document in inherited public project
+component=Documents
+role=DirectRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.public_sub/docman.root.folder
+wait=300
+selectCheckBoxFromList=_listItem=4
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Stop Monitoring Selected
+wait=300
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.
+wait=300

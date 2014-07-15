@@ -1,0 +1,22 @@
+name=Copy and Paste task
+component=Task
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText= task1
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+clickHrefByLinkText=Copy
+wait=500
+searchElementValueByTagName=Body=1 task(s) copied to clipboard.
+wait=500
+clickHrefByLinkText= task2
+wait=500
+waitUntilById=listTasksSelect_Paste
+clickHrefByLinkText=Paste
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=1 task(s) pasted from clipboard.

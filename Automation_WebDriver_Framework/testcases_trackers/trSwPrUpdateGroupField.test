@@ -1,0 +1,29 @@
+name=Ability to update Tracker Group Field in private project
+component=Tracker Admin
+role=Sitewide Role
+artifact=NA
+url=sf/sfmain/do/editProject/projects.swprivate
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+clickHrefByLinkText=Group
+wait=200
+waitUntilById=displayLinesMultiselect
+typeElementById=displayLinesMultiselect=3
+wait=200
+waitUntilById=helpText
+typeElementById=helpText=Updated Group Field
+wait=200
+clickHrefByLinkText=Add
+waitUntilById=value_dmmy0
+typeElementById=value_dmmy0=Low
+wait=200
+clickElementById=defaultValue_dmmy0
+wait=800
+clickHrefByLinkText=Save Field
+wait=200
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Field data updated successfully.

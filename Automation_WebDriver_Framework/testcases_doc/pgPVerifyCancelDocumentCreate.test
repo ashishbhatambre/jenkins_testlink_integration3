@@ -1,0 +1,21 @@
+name=Verifying Cancel Button on create document for project group -> public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+waitUntilById=title
+typeElementById=title=save_document
+waitUntilById=description
+typeElementById=description=Document is saved by option "Save"
+wait=400
+typeValueForFileField=D:\Excel File\5_Aug_13_Build 380\Category.html
+wait=500
+clickHrefByLinkText=Cancel
+wait=500
+searchElementValueByTagName=Body=PG_Pub_Project#NEXT#Documents#NEXT#P_RootFolder#NEXT#List Documents

@@ -1,0 +1,19 @@
+name=Filter Document by Name in Child Folder in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root.folder.ddddforname_to_attach_more_than
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Doc_Online
+wait=300
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=SWPrivate_Sub#NEXT#Documents
+wait=300
+clickSpanElementByCssSelector=caret
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300

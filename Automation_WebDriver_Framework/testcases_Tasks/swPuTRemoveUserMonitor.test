@@ -1,0 +1,28 @@
+name=Verify Remove User Monitoring Functionality in Tasks SW_Pu_All
+component=Tasks
+role=Direct Role
+artifact=NA
+wait=300
+clickHrefByLinkText= SWA_TaskFolder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_listTasksSelect
+clickElementById=selectionMenuButton_MonitorMenu_listTasksSelect
+wait=300
+runJavaScriptPopToMain=javascript:openWinForId()
+wait=300
+switchToPopupWindow
+wait=300
+selectButtonByValue=swuser1
+wait=300
+waitUntilById=selectUsers_removeUsers
+clickElementById=selectUsers_removeUsers
+acceptJavaScriptConfirm
+wait=300
+runJavaScriptPopToMain=javascript:close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

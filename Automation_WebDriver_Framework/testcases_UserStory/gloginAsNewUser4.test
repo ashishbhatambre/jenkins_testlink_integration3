@@ -1,0 +1,12 @@
+name=Login As NewUser4
+component=login
+role=NA
+artifact=NA
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=newuser4
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page

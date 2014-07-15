@@ -1,0 +1,20 @@
+name=Open document by clicking "Open Document" button from document details page
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Tree_View
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=500
+clickHrefByLinkText=Open Document
+wait=500
+searchElementValueByTagName=Body=This is Document for the private Project under draft state.

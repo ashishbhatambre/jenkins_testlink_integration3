@@ -1,0 +1,30 @@
+name=Better Search Artifact for Tasks[jump to id- adcance search]-> artf142542
+wait=300
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+waitUntilByName=TaskMgr
+clickElementByName=TaskMgr
+waitUntilById=idsString
+typeElementById=idsString=taskgrp1002
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=TaskGroup
+clickElementById=TaskGroup
+waitUntilById=idsString
+typeElementById=idsString=task1004
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=Task
+clickElementById=Task
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=300
+clickHrefByLinkText=Advanced Search
+waitUntilByName=term
+typeElementByName=term=task1
+waitUntilById=applications
+selectOptionValueByIdValue=applications=Tasks
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+wait=300
+searchElementValueByTagName=Body=Search

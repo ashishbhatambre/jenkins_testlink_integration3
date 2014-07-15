@@ -1,0 +1,23 @@
+name=Ability to assign user Membership to the private project
+component=Projects 
+role=Admin
+artifact=NA
+wait=300
+url=sf/projects/restroleproject/
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+clickHrefByLinkText=User Membership
+wait=500
+clickHrefByLinkText=Add
+wait=500
+selectButtonByValue=user1
+selectButtonByValue=tester2
+selectButtonByValue=newuser1
+selectButtonByValue=newuser2
+selectButtonByValue=newuser3
+selectButtonByValue=user2
+wait=500
+clickElementById=addUser_finish
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=User(s) added to the project: newuser1_createOnlyPermission (newuser1) , newuser2_editOnlyPermission (newuser2) , newuser3_DeleteOnlyPermission (newuser3) , tester2_normalPermission (tester2) , user1_adminPermission (user1) , user2_normalPermission (user2) .

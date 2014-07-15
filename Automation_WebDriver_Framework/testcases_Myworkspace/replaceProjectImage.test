@@ -1,0 +1,6 @@
+name=Replace Project Image with jpg file
+typeValueForFileField=C:\Uploaded_Files\Jellyfish.jpg
+wait=300
+waitUntilById=logo_change
+clickElementById=logo_change
+searchElementValueByTagName=Body=NewProject#NEXT#Project Home

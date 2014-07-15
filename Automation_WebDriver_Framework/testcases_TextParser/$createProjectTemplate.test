@@ -1,0 +1,37 @@
+name=Creating Project Template using string ${}
+component=Project Admin
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+waitUntilById=_SfButton_button.create_project_template
+clickHrefByLinkText=Create Project Template
+wait=300
+waitUntilById=titleField
+typeElementById=titleField=${Proj_<template>}
+wait=300
+typeElementById=description=${creating new}${<project>}&template&
+wait=300
+clickElementById=projectpages
+wait=300
+clickElementById=trackercontent
+wait=300
+clickElementById=planningfolders
+wait=300
+clickElementById=taskcontent
+wait=300
+clickElementById=doccontent
+wait=300
+clickElementById=wikicontent
+wait=300
+clickElementById=discussioncontent
+wait=300
+clickElementById=reportscontent
+wait=300
+waitUntilById=createTemplate_submit
+clickElementById=createTemplate_submit
+wait=300
+searchElementValueByTagName=Body=Project Template created

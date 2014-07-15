@@ -1,0 +1,17 @@
+name=Ability to Hide and view tracker summary 
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+runJavaScriptPopToMain=javascript:showHideChart(true)
+wait=200
+searchElementValueByTagName=body=Public#NEXT#Trackers
+wait=200
+runJavaScriptPopToMain=javascript:showHideChart(true)
+wait=200
+searchElementValueByTagName=body=Public#NEXT#Trackers

@@ -1,0 +1,21 @@
+name=Document Creation File Type->Text_inability in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugpproject/docman.root.ugpfolder
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_Inability
+wait=300
+waitUntilById=description
+typeElementById=description=Doc_Inability
+wait=300
+selectButtonByValue=fromText
+wait=300
+clickHrefByLinkText=Save
+wait=300
+searchElementValueByTagName=Body= Text is required. 
+wait=300

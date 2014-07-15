@@ -1,0 +1,28 @@
+name=Ability to export from Planned Tracker Artifact in public project
+component=FRS
+role=Direct Role
+artifact=NA
+wait=400
+url=sf/frs/do/listReleases/projects.public/frs.package1
+wait=300
+clickHrefByLinkText=Public_Release1
+wait=600
+waitUntilById=plannedTrackerArtifacts
+clickElementById=plannedTrackerArtifacts
+wait=600
+clickHrefByLinkText=Export
+wait=300
+switchToPopupWindow
+wait=600
+waitUntilById=addAll
+clickElementById=addAll
+waitUntilById=exportItemsForm_submit
+clickElementById=exportItemsForm_submit
+wait=600
+searchElementValueByTagName=Body=Export Complete
+wait=600
+runJavaScriptPopToMain=javascript:close()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600
+

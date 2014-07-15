@@ -1,0 +1,18 @@
+name=Locate Doc.Folder(Root,Child,Sub Child) via BreadCrumbs link 
+in public project
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgdfolder.ddddforname_to_attach_more_than.pgdscfolder
+wait=300
+clickHrefByLinkText=pgdSC_Folder
+wait=400
+clickHrefByLinkText=pgdCFolder
+wait=400
+clickHrefByLinkText=pgdPFolder
+wait=400
+clickHrefByLinkText=Root Folder
+wait=800
+searchElementValueByTagName=Body=ppgProject#NEXT#Documents
+wait=400

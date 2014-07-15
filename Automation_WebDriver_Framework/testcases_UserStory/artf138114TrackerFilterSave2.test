@@ -1,0 +1,32 @@
+name=saving the Filtered artifact in Tracker for artf138114
+component=Tracker
+role=Global Role
+artifact=artf138114
+wait=1000
+clickElementByCssSelector=FilterRight
+wait=1000
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+clickHrefByLinkText=NewTracker
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=parentArtifact
+wait=300
+clickHrefByLinkText=Filter
+wait=1000
+clickElementByCssSelector=FilterRight
+wait=1000
+waitUntilById=saveNamedFilter
+clickHrefByLinkText=Save...
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=searchOrFilterName
+typeElementById=searchOrFilterName=FilterSave
+waitUntilById=saveSearchOrFilter_submit
+clickElementById=saveSearchOrFilter_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Tracker1#NEXT#List Artifacts

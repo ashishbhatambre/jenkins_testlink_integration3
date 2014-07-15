@@ -1,0 +1,20 @@
+name=Ability to filter User group with valid filter criteria
+component=User Groups
+role=Admin
+artifact=NA
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=User Groups
+wait=500
+waitUntilById=_filter!!contains!!fullName
+typeElementById=_filter!!contains!!fullName=PrvProjUsers
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=Site#NEXT#Administration
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

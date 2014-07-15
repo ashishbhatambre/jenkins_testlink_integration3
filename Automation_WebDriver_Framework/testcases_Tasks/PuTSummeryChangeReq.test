@@ -1,0 +1,9 @@
+name=Ability to view task Summary Change Request in public project
+component=Tasks
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=changeRequests
+clickElementById=changeRequests
+wait=300
+searchElementValueByTagName=Body=Public#NEXT#Tasks

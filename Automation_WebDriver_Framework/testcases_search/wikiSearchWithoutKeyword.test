@@ -1,0 +1,12 @@
+name=Wiki Search_Without entering any search criteria  
+component=Wiki
+role=Site Admin
+artifact=artf163013   
+wait=300
+url=sf/wiki/do/viewPage/projects.project_search/wiki/HomePage
+wait=300
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+wait=300
+clickElementById=searchWikiPages_submit
+searchElementValueByTagName=Body=You have not entered any search criteria.

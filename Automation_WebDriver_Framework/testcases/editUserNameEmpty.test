@@ -1,0 +1,27 @@
+name=Inability to Edit the user name as blank.
+component=MySettings
+role=NA
+artifact= TC - artf172982
+wait=300
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=neha
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=300
+clickHrefByLinkText=My Settings
+wait=300
+waitUntilById=view_user.edit
+clickElementById=view_user.edit
+wait=300
+waitUntilById=fullName
+typeElementById=fullName=      
+waitUntilById=editUser_submit
+clickElementById=editUser_submit
+acceptJavaScriptConfirm
+searchElementValueByTagName=Body=Edit User
+wait=500
+url=sf/sfmain/do/logout
+wait=300

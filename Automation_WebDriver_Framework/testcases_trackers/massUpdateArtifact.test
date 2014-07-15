@@ -1,0 +1,35 @@
+name=Ability to Mass Update the artifacts
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder2
+wait=4000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+selectCheckBoxFromList=_listItem=2
+wait=200
+clickHrefByLinkText=Mass Update
+wait=200
+waitUntilById=comment
+typeElementById=comment=This are the artifact which is under test.
+wait=200
+waitUntilById=assignedPlanningFolderDisplay
+clickElementById=assignedPlanningFolderDisplay
+wait=200
+switchToPopupWindow
+wait=200
+clickHrefByLinkText= Plan_Folder1
+wait=200
+waitUntilById=planningFolderPopup_submit
+clickElementById=planningFolderPopup_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=500
+waitUntilById=massUpdateArtifactsForm_submit
+clickHrefByLinkText=Update
+wait=500
+searchElementValueByTagName=Body=2 Artifact(s) were successfully updated

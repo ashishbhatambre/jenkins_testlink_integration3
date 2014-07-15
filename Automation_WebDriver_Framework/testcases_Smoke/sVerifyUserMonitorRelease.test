@@ -1,0 +1,26 @@
+name=Ability to view the users monitoring the Releases in private project as site admin user
+component=FRS
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=File Releases
+wait=500
+clickHrefByLinkText=YTDF
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+waitUntilById=selectionMenuButton_MonitorMenu_selectReleases
+clickElementById=selectionMenuButton_MonitorMenu_selectReleases
+wait=500
+waitUntilById=selectReleases_who
+clickHrefByLinkText=Users Monitoring Selected
+wait=500
+switchToPopupWindow
+wait=500
+searchElementValueByTagName=Body=Users Monitoring This Folder 
+wait=500
+runJavaScriptPopToMain=javascript:close()
+wait=500
+withoutPopCloseSwitchToMainWindow
+wait=500

@@ -1,0 +1,24 @@
+name=Ability to create task Folder with special characters in private project as site admin user
+component=Task
+wait=300
+url=sf/projects/ft_prv_project/
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+waitUntilById=newTaskGroup
+clickElementById=newTaskGroup
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementByName=title=$*rkt*%#@#$
+wait=300
+waitUntilById=createTaskGroupForm_submit
+clickElementById=createTaskGroupForm_submit
+wait=600
+searchElementValueByTagName=Body=Task folder created successfully.
+wait=600
+runJavaScriptPopToMain=javascript:finishCreateTaskGroup()
+wait=600
+withoutPopCloseSwitchToMainWindow
+wait=600

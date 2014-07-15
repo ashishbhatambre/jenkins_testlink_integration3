@@ -1,0 +1,33 @@
+name=Inability to submit the artifact without Artifact Description
+component=Tracker
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan_Folder1
+wait=4000
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+wait=200
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen2
+wait=200
+waitUntilById=title
+typeElementById=title=artifact1
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=3 - Medium
+waitUntilByName=assignedUser
+selectOptionValueByNameValue=assignedUser=user2_normalPermission
+wait=200
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+acceptJavaScriptConfirm
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Planning Folders#NEXT#Plan_Folder1#NEXT#List Artifacts

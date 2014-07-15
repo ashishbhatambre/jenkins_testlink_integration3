@@ -1,0 +1,10 @@
+name=Verify Source code link
+component=Project
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/pproject/
+wait=300
+clickHrefByLinkText=Source Code
+wait=500
+searchElementValueByTagName=Body=PProject#NEXT#Source Code

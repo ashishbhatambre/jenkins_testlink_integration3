@@ -1,0 +1,24 @@
+name=Cut & Paste Multiple documents in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root.folder.ddddforname_to_attach_more_than
+wait=300
+selectCheckBoxFromList=_listItem=0
+wait=300
+selectCheckBoxFromList=_listItem=1
+waitUntilById=selectDocuments_Cut
+clickElementById=selectDocuments_Cut
+wait=600
+searchElementValueByTagName=Body=2 document(s) copied to clipboard.
+wait=600
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root.folder
+wait=600
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=600
+acceptJavaScriptConfirm
+wait=800
+searchElementValueByTagName=Body=2 document(s) pasted.
+wait=300

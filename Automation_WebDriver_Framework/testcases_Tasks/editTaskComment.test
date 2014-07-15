@@ -1,0 +1,24 @@
+name=Update the Task by entering Comments for the task
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= test_task
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=listTasksSelect_Edit
+clickElementById=listTasksSelect_Edit
+wait=300
+waitUntilById=comment
+typeElementById=comment=This task is being edited by admin user
+wait=300
+waitUntilById=editTask_Save
+clickElementById=editTask_Save
+wait=300
+searchElementValueByTagName=Body=Task updated successfully.

@@ -1,0 +1,19 @@
+name=Filter Document by "Last Edited By" in sub child folder in Public Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic_sub/docman.root.folder.ddddforname_to_attach_more_than.scfolder
+wait=300
+waitUntilById=btn_filter!!string!!lastModifiedBy
+clickElementById=btn_filter!!string!!lastModifiedBy
+clickElementById=ui-multiselect-_filter!!string!!lastModifiedBy-option-1
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=SWPublic_Sub#NEXT#Documents
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

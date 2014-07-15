@@ -1,0 +1,12 @@
+name=Login As Admin with wrong password
+component=Login
+role=Admin
+artifact=NA
+url=sf/sfmain/do/home
+waitUntilByName=username
+typeElementByName=username=admin
+typeElementByName=password=Collabnet1*
+wait=500
+clickHrefByLinkText=Log In
+wait=500
+searchElementValueByTagName=Body=Invalid Login 

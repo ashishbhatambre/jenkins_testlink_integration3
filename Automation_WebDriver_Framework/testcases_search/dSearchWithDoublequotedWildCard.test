@@ -1,0 +1,13 @@
+name=Document Search_Using wild card with double quotes.
+component=Documents
+role=Site Admin
+artifact=artf155315
+url=sf/docman/do/listDocuments/projects.project_search/docman.root.searchfolder1.searchfolder2
+waitUntilById=searchDocumentsLink
+clickElementById=searchDocumentsLink
+waitUntilById=keywordQuery
+typeElementById=keywordQuery="*"
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=600
+searchElementValueByTagName=Body=No results found.

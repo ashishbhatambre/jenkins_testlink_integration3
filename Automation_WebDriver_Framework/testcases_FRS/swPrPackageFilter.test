@@ -1,0 +1,29 @@
+name=Ability to filter in File Release as user with sitewide role in private project
+component=FRS
+role=Sitewide Role
+artifact=NA
+wait=400
+url=sf/frs/do/viewSummary/projects.swprivate/frs
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=release
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=1500
+searchElementValueByTagName=Body=No results found.
+wait=300
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Private_Package
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=1000
+searchElementValueByTagName=Body=Private_Package
+wait=300
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=300

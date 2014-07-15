@@ -1,0 +1,20 @@
+name=Monitor Multiple Documents in public project
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ppgproject/docman.root.pgfolder
+wait=300
+selectCheckBoxFromList=_listItem=0 
+wait=300
+selectCheckBoxFromList=_listItem=1 
+wait=300
+selectCheckBoxFromList=_listItem=2 
+wait=800
+clickHrefByLinkText=Monitor
+wait=1000
+searchElementValueByTagName=Body=being monitored.
+wait=1000
+searchElementValueByTagName=Body=being monitored.
+wait=1000
+searchElementValueByTagName=Body=being monitored.

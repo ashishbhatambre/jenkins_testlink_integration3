@@ -1,0 +1,9 @@
+name=Veryfiy link to Search
+component=Project
+role=Direct Role_Admin Permission
+artifact=NA
+waitUntilById=idsString
+typeElementById=idsString=page1001
+runJavaScriptPopToMain=javascript:quickJump()
+wait=300
+searchElementValueByTagName=Body=look#NEXT#Project Home 

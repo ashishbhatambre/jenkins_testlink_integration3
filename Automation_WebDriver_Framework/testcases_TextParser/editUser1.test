@@ -1,0 +1,18 @@
+name=Edit User with text starts with ${}
+component=Users
+role=NA
+artifact=NA
+wait=200
+url=sf/global/do/viewUser/muser1
+wait=300
+clickElementById=view_user.edit
+waitUntilById=fullName
+typeElementById=fullName=${User1<o>}
+waitUntilById=email
+typeElementById=email=muser@collab.net
+waitUntilById=companyName
+typeElementById=companyName=&CSPL&
+waitUntilById=editUser_submit
+clickElementById=editUser_submit
+wait=300
+searchElementValueByTagName=Body=User information updated for user#NEXT#muser1#NEXT#.

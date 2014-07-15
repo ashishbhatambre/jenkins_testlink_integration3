@@ -1,0 +1,16 @@
+name=Ability to monitor current Tracker 
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/private/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+waitUntilById=monitor_current_folder
+clickElementById=monitor_current_folder
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Tracker is now being monitored.

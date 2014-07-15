@@ -1,0 +1,9 @@
+name=Ability to associate task in private project
+component=Tasks
+role=Sitewide_Direct Role
+artifact=NA
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Tasks

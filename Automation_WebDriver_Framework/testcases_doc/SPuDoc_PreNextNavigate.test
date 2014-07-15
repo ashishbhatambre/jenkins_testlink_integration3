@@ -1,0 +1,33 @@
+name=Previous & Next Navigation in document association wizard in inherited public project
+component=Documents
+role=DirectRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.public_sub/docman.root.folder
+wait=300
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+waitUntilById=addAssociationLink
+clickElementById=addAssociationLink
+wait=300
+switchToPopupWindow
+wait=300
+selectOptionValueByIdIndex=recentlyEditedIds=0
+wait=800
+clickHrefByLinkText=Next >
+wait=300
+waitUntilById=description
+typeElementById=description=Association_1
+wait=800
+clickHrefByLinkText=< Previous
+wait=300
+runJavaScriptPopToMain=javascript:window.close()
+wait=300
+searchElementValueByTagName=Body=Public_Sub#NEXT#Documents
+wait=300

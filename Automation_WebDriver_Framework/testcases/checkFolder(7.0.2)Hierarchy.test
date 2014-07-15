@@ -1,0 +1,10 @@
+name=check Document folder(7.0.2) Hierarchy
+component=Project Admin
+role=NA
+artifact=NA
+url=sf/sfmain/do/myProjects
+clickHrefByLinkText=proj1
+clickHrefByLinkText=Documents
+clickHrefByLinkText=Root Folder
+clickHrefByLinkText= 7.0.2
+searchElementValueByTagName=Body=proj1/Documents/Root Folder/7.0/7.0.2/List Documents 

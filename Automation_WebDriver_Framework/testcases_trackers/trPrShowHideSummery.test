@@ -1,0 +1,13 @@
+name=Ability to Hide and view tracker summary
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/tracker/do/listArtifacts/projects.private/tracker.tracker1
+wait=200
+runJavaScriptPopToMain=javascript:showHideChart(true)
+wait=200
+searchElementValueByTagName=body=Private#NEXT#Trackers
+wait=200
+runJavaScriptPopToMain=javascript:showHideChart(true)
+wait=200
+searchElementValueByTagName=body=Private#NEXT#Trackers

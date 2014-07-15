@@ -1,0 +1,21 @@
+name=Monitor Selected document from List Documents > Monitor > Monitor Selected option for usergroup -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/ug_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Tree_View
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+waitUntilById=selectDocuments_Monitor
+clickElementById=selectDocuments_Monitor
+wait=300
+searchElementValueByTagName=Body=1 item(s) are now being monitored.

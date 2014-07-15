@@ -1,0 +1,23 @@
+name=Ability to add Public Project(s) into project group
+component=Project Groups
+role=Admin
+artifact=NA
+wait=300
+url=sf/rbac/do/viewProjectGroupDetails/pgroups.pmisc
+wait=300
+waitUntilById=add_member_project
+clickElementById=add_member_project
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=ppgProject
+wait=300
+clickHrefByLinkText=Filter
+wait=300
+waitUntilByName=_listCheckAll
+selectCheckBoxFromList=_listCheckAll
+wait=300
+waitUntilById=addProjectToProjectGroup_add
+clickElementById=addProjectToProjectGroup_add
+wait=300
+searchElementValueByTagName=Body=Selected project(s) are added to the Project Group.
+wait=300

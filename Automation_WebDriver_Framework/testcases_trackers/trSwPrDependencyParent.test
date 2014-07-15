@@ -1,0 +1,37 @@
+name=Ability to create Parent dependency in private project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickSpanElementByCssSelector=caret
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=200
+selectCheckBoxFromList=_listItem=0 
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=dependencies
+clickElementById=dependencies
+waitUntilById=choose_parent
+clickElementById=choose_parent
+switchToPopupWindow
+waitUntilById=dependencyIdString
+typeElementById=dependencyIdString=artf1009
+waitUntilById=addDependencyForm_submitItems
+clickElementById=addDependencyForm_submitItems
+waitUntilById=forwardDescription
+typeElementById=forwardDescription=Parent Dependency
+waitUntilById=addDependencyForm_submitDescription
+clickElementById=addDependencyForm_submitDescription
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=created successfully.
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=body=Click Close to return to the main window.
+waitUntilById=close
+clickElementById=close
+withoutPopCloseSwitchToMainWindow

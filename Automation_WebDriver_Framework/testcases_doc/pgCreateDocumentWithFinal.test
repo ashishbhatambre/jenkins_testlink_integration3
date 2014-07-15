@@ -1,0 +1,26 @@
+name=Creating Document with Final State for project group -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= PG_DocFolder
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+waitUntilById=title
+typeElementById=title=DocWithFinal
+waitUntilById=description
+typeElementById=description=Creating Document with Final State
+waitUntilById=status
+selectOptionValueByIdValue=status=Final
+selectButtonByValue=fromText
+waitUntilById=textContent
+typeElementById=textContent=This is Document for the private Project under final state.
+waitUntilById=createDocument_Save
+clickElementById=createDocument_Save
+wait=500
+searchElementValueByTagName=Body=Document created successfully.

@@ -1,0 +1,22 @@
+name=Create new document inside Sub Child Folder in public project
+component=Documents
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.ugpproject/docman.root.ugpfolder.ddddforname_to_attach_more_than.ugpscfolder
+wait=300
+clickHrefByLinkText=Add Document
+wait=300
+waitUntilById=title
+typeElementById=title=Doc_ViewVersion
+wait=300
+waitUntilById=description
+typeElementById=description=Doc_ViewVersion
+wait=300
+typeValueForFileField=C:\Uploaded_Files\Test.doc
+wait=300
+waitUntilById=createDocument_submit
+clickElementById=createDocument_submit
+wait=700
+searchElementValueByTagName=Body=Document created successfully.
+wait=300

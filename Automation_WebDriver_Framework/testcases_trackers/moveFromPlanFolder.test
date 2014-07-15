@@ -1,0 +1,19 @@
+name=Ability to cut artifact from planning folder to Tracker 
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Trackers
+wait=500
+url=sf/planning/do/viewPlanningFolder/projects.newproject/planning.plan_folder2.plan_folder3
+wait=500
+clickHrefByLinkText= Plan_Folder3
+wait=4000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=500
+waitUntilById=selectArtifactsForm_Cut
+clickHrefByLinkText=Cut
+wait=500
+searchElementValueByTagName=Body=1 artifact(s) cut to the clipboard.

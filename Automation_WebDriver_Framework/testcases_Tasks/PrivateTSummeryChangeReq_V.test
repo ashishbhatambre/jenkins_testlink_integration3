@@ -1,0 +1,10 @@
+name=Ability to view Task Change Request in private project
+component=Tasks
+role=Direct Role_View Permission
+artifact=NA
+wait=300
+url=sf/taskmgr/do/viewSummary/projects.private/taskmgr
+waitUntilById=changeRequests
+clickElementById=changeRequests
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Tasks

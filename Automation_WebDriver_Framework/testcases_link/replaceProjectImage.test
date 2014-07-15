@@ -1,0 +1,13 @@
+name=Replace Project Image
+wait=300
+typeValueForFileField=C:\Program Files\Java\jdk1.7.0\THIRDPARTYLICENSEREADME.txt
+wait=300
+waitUntilById=logo_change
+clickElementById=logo_change
+searchElementValueByTagName=Body=The file you tried to upload is not recognized as a valid image file. Please try again.
+wait=300
+typeValueForFileField=C:\Users\Public\Pictures\Sample Pictures\Hydrangeas.jpg
+waitUntilById=logo_change
+clickElementById=logo_change
+wait=300
+searchElementValueByTagName=Body=NProject#NEXT#Project Home 

@@ -1,0 +1,10 @@
+name=Abilitu to create private project via Create project
+component=Projects
+wait=300
+url=sf/sfmain/do/createProject
+waitUntilByName=title
+typeElementByName=title=NewProject
+typeElementByName=description=New Project under Testing
+clickHrefByLinkText=Create
+wait=300
+searchElementValueByTagName=Body= NewProject#NEXT#Project Home 

@@ -1,0 +1,23 @@
+name=Create Document Folder in public project
+component=Documents
+role=Sitewide_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swpublic/docman.root
+wait=300
+waituntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=Document1
+waitUntilById=createDocumentFolder_submit
+clickElementById=createDocumentFolder_submit
+wait=300
+searchElementValueByTagName=Body=Folder created successfully.
+wait=300
+clickHrefByLinkText=Close
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300

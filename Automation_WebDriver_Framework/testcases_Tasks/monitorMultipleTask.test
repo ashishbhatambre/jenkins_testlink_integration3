@@ -1,0 +1,20 @@
+name=Monitor Multiple Task by Clicking Monitor button in Task List Page
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= C_Task
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=2
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=listTasksSelect_monitor
+clickHrefByLinkText=Monitor
+wait=500
+searchElementValueByTagName=Body=Item task1006 is already being monitored.
+searchElementValueByTagName=Body=Item task1007 is already being monitored.

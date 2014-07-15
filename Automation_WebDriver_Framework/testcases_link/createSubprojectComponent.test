@@ -1,0 +1,16 @@
+name=Create SubProjects Component
+waitUntilById=CreatePageComponentLink
+clickElementById=CreatePageComponentLink
+waitUntilById=title
+typeElementById=title=SubProject_Component
+wait=300
+selectButtonByValue=subprojects
+wait=300
+selectButtonByValue=0
+wait=300
+selectButtonByValue=false
+selectOptionValueByIdIndex=subprojects=1
+waitUntilById=component_html
+clickElementById=component_html
+wait=300
+searchElementValueByTagName=Body=NProject#NEXT#Project Home

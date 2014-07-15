@@ -1,0 +1,20 @@
+name=Document Folder Delete
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= *(1234567890)*abcdefghijklmnopqrstuvwxyz&%&@()$!@#%$^&*(^&^&(*#$%%^&^*
+wait=500
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+wait=500
+waitUntilById=editCategory_delete
+clickHrefByLinkText=Delete
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Folder deleted successfully.

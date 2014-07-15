@@ -1,0 +1,29 @@
+name=Ability to Delete the saved Filter option on tracker for artifact artf138114
+component=Tracker
+role=Global Role
+artifact=artf138114
+wait=300
+clickHrefByLinkText=Tracker1
+wait=1000
+clickElementByCssSelector=FilterRight
+wait=1000
+clickHrefByLinkText= TestFilter
+wait=1000
+clickElementByCssSelector=FilterRight
+wait=1000
+clickHrefByLinkText=Delete...
+wait=300
+switchToPopupWindow
+wait=500
+waitUntilByName=deleteSearchOrFilterList
+selectOptionValueByNameValue=deleteSearchOrFilterList=TestFilter
+waitUntilById=deleteSearchOrFilter_submit
+clickElementById=deleteSearchOrFilter_submit
+wait=300
+searchElementValueByTagName=Body=1 tracker filter(s) have been deleted successfully..
+wait=300
+waitUntilById=close
+runJavaScriptPopToMain=javascript: forwardAndCloseWindow()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300

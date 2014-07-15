@@ -1,0 +1,17 @@
+name=Delete document child folder in public project
+component=Documents
+role=Direct Role_Admin Permisssion
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.public/docman.root.document1.ddddforname_to_attach_more_than
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_delete
+clickHrefByLinkText=Delete
+wait=300
+acceptJavaScriptConfirm
+wait=400
+searchElementValueByTagName=Body= Folder deleted successfully.
+
+ 

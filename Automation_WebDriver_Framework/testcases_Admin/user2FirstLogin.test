@@ -1,0 +1,21 @@
+name=tuser2_FirstLogin
+component=Login
+role=NA
+artifact=NA
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=tuser2
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+wait=300
+typeElementByName=newPassword=Collabnet2@
+wait=300
+typeElementByName=confirmNewPassword=Collabnet2@
+wait=300
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.

@@ -1,0 +1,27 @@
+name= Ability to Multi-Select for the dropdown fields in Search Filter for other than List Artifact pages - My Page: Items Awaiting My Approval
+component=My Page
+role=Global Role
+artifact=artf154930-TC(artf157862)
+wait=500
+waitUntilById=myApproval
+clickElementById=myApproval
+wait=500
+clickHrefByLinkText=View All
+wait=500
+waitUntilById=btn_filter!!string!!projectTitle
+clickElementById=btn_filter!!string!!projectTitle
+waitUntilByName=multiselect__filter!!string!!projectTitle
+selectButtonByValue=Doc_Project
+wait=300
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=500
+searchElementValueByTagName=Body=No results found.
+wait=500
+clickElementByCssSelector=FilterRight
+wait=500
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter
+wait=500
+clickHrefByLinkText=My Page
+wait=500

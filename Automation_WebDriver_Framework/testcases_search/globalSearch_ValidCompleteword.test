@@ -1,0 +1,11 @@
+name= Global Search_With a valid complete word 
+component=Global Search
+role=Sitewide Role_View Permission
+artifact=artf168119
+clickHrefByLinkText=Jump to ID
+clickElementById=search
+typeElementById=term=project_search
+selectOptionValueByIdIndex=applications=5
+selectOptionValueByIdIndex=projects=0
+clickElementById=searchForm_submit
+searchElementValueByTagName=Body=(1 Item)

@@ -1,0 +1,16 @@
+name=Ability to edit Wiki Page using Plain Editor as user with create role
+component=Wiki
+role=Sitewide Role_Create Permission
+artifact=NA
+wait=300
+clickHrefByLinkText=Edit
+waitUntilById=editorPrefSelect
+selectOptionValueByIdValue=editorPrefSelect=Plain Editor
+waitUntilById=editorarea
+typeElementById=editorarea=%%( color: rgb(255, 255, 153); )%%( background-color: rgb(153, 51, 0); )%%( font-size: larger; )%%( font-family: georgia; )__Wiki Page,__%%%%%%%% !!! %%[LinkPage2]
+waitUntilById=changenote
+typeElementById=changenote=v2
+waitUntilById=edit_wiki_page.update
+clickElementById=edit_wiki_page.update
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Wiki Page updated.

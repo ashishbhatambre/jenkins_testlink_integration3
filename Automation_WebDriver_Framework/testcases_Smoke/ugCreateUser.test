@@ -1,0 +1,28 @@
+name=Abiltiy to create user
+component=Users
+role=Admin
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Users
+wait=500
+waitUntilById=allUsers_create
+clickElementById=allUsers_create
+wait=500
+waitUntilByName=username
+typeElementByName=username=yoga
+typeElementByName=password=Collabnet1!
+typeElementByName=confirmPassword=Collabnet1!
+typeElementByName=fullName=yoga_adminPermission
+typeElementByName=email=yoga@collab.net
+typeElementByName=companyName=cspl
+wait=500
+waitUntilById=restrictedUser
+clickElementById=restrictedUser
+wait=500
+waitUntilById=createUser_submit
+clickElementById=createUser_submit
+wait=500
+searchElementValueByTagName=Body=User#NEXT#yoga#NEXT#has been created successfully.

@@ -1,0 +1,20 @@
+name=Stop Monitor the Topics for the Discussion for public project
+component=Discussions
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Discussions
+wait=200
+clickHrefByLinkText=GroupDiscussion
+wait=200
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=200
+waitUntilById=selectionMenuButton_MonitorMenu_selectTopicsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectTopicsForm
+waitUntilById=selectTopicsForm_unmonitor
+clickElementById=selectTopicsForm_unmonitor
+wait=200
+searchElementValueByTagName=Body=1 item(s) are no longer monitored.

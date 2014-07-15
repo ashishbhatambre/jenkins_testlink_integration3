@@ -1,0 +1,30 @@
+name=SCM project role creation
+component=Sourcecode
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Permissions
+wait=300
+selectOptionValueByIdValue=displayList=Roles created for this project
+waitUntilById=listRoles_create
+clickHrefByLinkText=Create
+wait=300
+typeElementById=title=scmRole
+typeElementById=description=Role for Source Code component in this project
+wait=300
+clickElementById=createRole_submit
+wait=300
+searchElementValueByTagName=Body=Project Role created successfully.
+wait=300
+waitUntilById=scm_menu
+runJavaScriptPopToMain=javascript:showSection('scm')
+wait=300
+selectButtonByValue=scm_fgp__folder__scm.NewRepo01
+wait=300
+clickElementById=_SfButton_add_reps1004
+wait=300
+typeElementByName=fgpSetting[0][path]=/Version1/*/Version3

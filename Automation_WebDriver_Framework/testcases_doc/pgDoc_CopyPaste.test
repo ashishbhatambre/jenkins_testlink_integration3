@@ -1,0 +1,25 @@
+name=Copy & Paste a Document 
+component=Documents
+role=Project Group Role_UserGroup User Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/pgproject/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= pgPFolder
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Copy
+clickElementById=selectDocuments_Copy
+wait=800
+searchElementValueByTagName=Body=1 document(s) copied to clipboard.
+wait=300
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=800
+searchElementValueByTagName=Body=1 document(s) pasted.

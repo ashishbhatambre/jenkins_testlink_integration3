@@ -1,0 +1,20 @@
+name=Ceate Tracker in SW_Pr_Admin Role Project
+wait=300
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=300
+clickHrefByLinkText=Tracker Settings
+waitUntilById=projectAdminTracker_create
+clickHrefByLinkText=Create
+waitUntilById=trackerTitle
+typeElementById=trackerTitle=SWPrTracker
+waitUntilById=trackerDescription
+typeElementById=trackerDescription=New Tracker for the project SWPrivate
+wait=200
+selectButtonByValue=icon_01.png
+waitUntilById=createTrackerForm_Save
+clickElementById=createTrackerForm_Save
+wait=200
+searchElementValueByTagName=Body=Tracker created successfully.
+wait=200

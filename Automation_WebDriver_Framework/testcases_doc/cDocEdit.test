@@ -1,0 +1,22 @@
+name=cut and paste the document for child private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=500
+clickHrefByLinkText= DocumentFolder1
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+clickHrefByLinkText=Cut
+wait=500
+searchElementValueByTagName=Body=1 document(s) cut to clipboard.
+wait=500
+clickHrefByLinkText=Root Folder
+wait=500
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=1 document(s) pasted.

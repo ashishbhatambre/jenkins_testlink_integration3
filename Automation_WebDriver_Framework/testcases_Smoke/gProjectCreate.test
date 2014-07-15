@@ -1,0 +1,12 @@
+name=Ability to creating Private Project
+component=Projects
+wait=300
+url=sf/sfmain/do/createProject
+wait=300
+waitUntilByName=title
+typeElementByName=title=RestRoleProject
+typeElementByName=description=Restricted Roles with restrict users under this project
+wait=500
+clickHrefByLinkText=Create
+wait=500
+searchElementValueByTagName=Body=RestRoleProject#NEXT#Project Home

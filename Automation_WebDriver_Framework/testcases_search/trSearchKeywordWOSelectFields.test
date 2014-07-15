@@ -1,0 +1,16 @@
+name=Tracker Search_Using only a keyword without selecting any checkbox
+component=Trackers
+role=Site Admin
+artifact=artf161256 
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_search
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=artifact
+waitUntilById=inAllTextFields
+clickElementById=inAllTextFields
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=Specify which fields to search: Title, Description, or All Text Fields.

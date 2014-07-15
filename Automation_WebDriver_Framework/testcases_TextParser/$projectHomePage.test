@@ -1,0 +1,16 @@
+name=Configure Project Home for text parser issue in project ${test test}
+component=Projects
+role=NA
+artifact=NA
+wait=300
+url=sf/sfmain/do/myProjects
+wait=300
+waitUntilById=all
+clickElementById=all
+wait=1000
+clickHrefByLinkText=${test test}
+wait=1000
+waitUntilById=EnableProjectPageConfigLink
+clickElementById=EnableProjectPageConfigLink
+wait=1000
+searchElementValueByTagName=Body=${test test}#NEXT#Project Home 

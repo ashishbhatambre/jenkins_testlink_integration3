@@ -1,0 +1,21 @@
+name=Edit Repository with name Starting ${}
+component=Source Code
+role=NA
+artifact=NA
+wait=300
+url=sf/scm/do/listRepositories/projects.test_test/scm
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=objectSelection_Edit
+clickElementById=objectSelection_Edit
+wait=300
+waitUntilById=title
+typeElementById=title=${<repository>}
+waitUntilById=description
+typeElementById=description=$repository$test &with& symbol
+waitUntilById=createRepositoryForm_Save
+clickElementById=createRepositoryForm_Save
+wait=300
+searchElementValueByTagName=Body=Repository updated successfully.

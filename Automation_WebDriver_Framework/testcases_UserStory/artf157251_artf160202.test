@@ -1,0 +1,54 @@
+name=Refresh Swim lanes independently (UserStory - artf157251) : Verify that clicking the refresh icon refresh the cards in swimlane,Test case id:artf160202
+component=Tracker
+role=Global Role
+artifact=artf157251
+wait=300
+url=sf/sfmain/do/home
+wait=300
+waitUntilByName=username
+typeElementByName=username=user1
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My Page
+wait=500
+url=sf/projects/newproject/
+ wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText= Folder_Renamed
+wait=1800
+selectCheckBoxFromList=_listItem=1
+wait=700
+clickElementById=selectArtifactsForm_edit
+wait=1300
+selectOptionValueByIdIndex=priority=3
+wait=300
+waitUntilById=viewArtifactForm_Save
+clickElementById=viewArtifactForm_Save
+wait=700
+searchElementValueByTagName=Body=Artifact data updated successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+searchElementValueByTagName=Body=Home
+wait=300
+url=sf/sfmain/do/home
+wait=300
+waitUntilByName=username
+typeElementByName=username=tester2
+typeElementByName=password=Collabnet2@
+clickHrefByLinkText=Log In
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickHrefByLinkText=Board View
+wait=400
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Folder_Renamed
+wait=400
+clickElementByCssSelector=i=icon-refresh=0
+wait=400
+searchElementValueByTagName=Body=NewProject#NEXT#Trackers#NEXT#Board View

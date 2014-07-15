@@ -1,0 +1,15 @@
+name=Ability to search Tracker With Submitted Users option
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Search Trackers
+waitUntilById=submittedBy
+selectOptionValueByIdValue=submittedBy=user1_adminPermission
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=200
+searchElementValueByTagName=Body=(10 Items)

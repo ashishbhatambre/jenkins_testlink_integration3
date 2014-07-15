@@ -1,0 +1,14 @@
+name=Tracker search_to verify the warning message when no keyword is entered but a checkbox is selected.
+component=Trackers
+role=Site Admin
+artifact=artf161292 
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_search
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=inDescription
+clickElementById=inDescription
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=Enter some text to search for.

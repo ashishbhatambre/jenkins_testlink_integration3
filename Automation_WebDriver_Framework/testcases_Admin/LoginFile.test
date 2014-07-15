@@ -1,0 +1,444 @@
+name=Ability to change password for restricted users
+component=Login
+role=NA
+artifact=NA
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=tmuser1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+wait=300
+clickElementById=forcePasswordChangeForm_submit
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=tmuser2
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=tmuser3
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=tmuser4
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=tmuser5
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=pgduser1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=pguser1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=ppgduser1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=ppguser1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=tuser1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=tuser2
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=ptester1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=ptester2
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=swuser1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=swuser2
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=swuser3
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=swuser4
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=swuser5
+waitUntilById=pwd
+typeElementById=pwd=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+typeElementByName=username=user1
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+wait=300
+typeElementByName=username=tester1
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+typeElementByName=username=user2
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+typeElementByName=username=tester2
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+wait=300
+typeElementByName=username=newuser1
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+wait=300
+typeElementByName=username=newuser3
+typeElementByName=password=Collabnet1!
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+wait=300
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+typeElementByName=username=newuser2
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+searchElementValueByTagName=Body=Change User Password
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+typeElementByName=username=newuser4
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+wait=300
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+typeElementByName=username=uguser1
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+wait=300
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300
+url=sf/sfmain/do/home
+typeElementByName=username=ugpuser1
+typeElementByName=password=Collabnet1!
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=Change User Password
+wait=300
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+clickElementById=forcePasswordChangeForm_submit
+wait=300
+searchElementValueByTagName=Body=User Password changed successfully.
+wait=300
+url=sf/sfmain/do/logout
+wait=300

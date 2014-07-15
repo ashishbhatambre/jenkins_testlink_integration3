@@ -1,0 +1,27 @@
+name=Edit task Summary using text ${}
+component=Tasks
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=300
+clickHrefByLinkText=Tasks
+wait=300
+clickHrefByLinkText= ${<$^%^&^dollar%^&%>}
+wait=300
+clickHrefByLinkText=${<event1>}
+wait=300
+waitUntilById=taskstatus
+selectOptionValueById=taskstatus=Warning
+wait=300
+waitUntilById=accomplished
+typeElementById=accomplished=${eventTask}
+waitUntilById=planned
+typeElementById=planned=${eventTask}
+waitUntilById=issues
+typeElementById=issues=${eventTask}
+wait=300
+waitUntilById=viewTask_SaveAndView
+runJavaScriptPopToMain=javascript:submitForm(document.viewTask, 'SaveAndView')
+wait=300
+searchElementValueByTagName=Body=Task updated successfully.

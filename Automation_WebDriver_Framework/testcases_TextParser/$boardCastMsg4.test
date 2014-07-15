@@ -1,0 +1,22 @@
+name=Creating Broadcast message using text $text$text
+component=SystemTools
+role=NA
+artifact=NA
+wait=300
+clickElementById=admin_link
+wait=300
+clickHrefByLinkText=System Tools
+wait=300
+clickHrefByLinkText=Broadcast Message
+wait=300
+waitUntilById=broadcastMessageField
+typeElementById=broadcastMessageField=$Check$text$parser
+waitUntilById=broadcastMessage_submit
+wait=300
+clickHrefByLinkText=Broadcast
+clickHrefByLinkText=Broadcast Message
+wait=300
+waitUntilById=broadcastMessage_clear
+clickElementById=broadcastMessage_clear
+wait=300
+searchElementValueByTagName=Body=System#NEXT#Tools

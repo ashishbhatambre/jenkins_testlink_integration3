@@ -1,0 +1,17 @@
+name=Ability to remove Wiki Association as user with admin role in private project
+component=Wiki
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/wiki/do/viewPage/projects.swprivate/wiki/HomePage
+wait=300
+waitUntilById=associations
+clickElementById=associations
+wait=300
+selectCheckBoxFromList=_listItem=0 
+waitUntilById=associationListForm_remove
+clickElementById=associationListForm_remove
+wait=300
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=1 association(s) were deleted.

@@ -1,0 +1,9 @@
+name=Verify Search Tracker link in public project
+component=Project
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+waitUntilbyId=searchTracker
+clickElementById=searchTracker
+wait=500
+searchElementValueByTagName=Body=PProject#NEXT#Trackers 

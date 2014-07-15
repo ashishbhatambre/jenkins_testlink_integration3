@@ -1,0 +1,32 @@
+name=Ability to set the role via UserGroup Matrix
+component=Roles
+wait=300
+url=sf/rbac/do/permissionAdmin/pgroups.testedprojects
+wait=500
+waitUntilById=groupRoleMatrix
+clickElementById=groupRoleMatrix
+wait=500
+waitUntilById=addGroupButtonLink
+clickElementById=addGroupButtonLink
+wait=500
+waitUntilById=searchString
+typeElementById=searchString=prvprojusers
+waitUntilById=addGroup_search
+clickElementById=addGroup_search
+wait=500
+clickElementByName=_listItem
+wait=500
+waitUntilById=addGroup_roles
+runJavaScriptPopToMain=javascript:submitForm(document.addGroup, 'roles')
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=500
+waitUntilById=addGroupRoles_finish
+clickElementById=addGroupRoles_finish
+waitUntilById=groupRoleMatrix_Save
+clickElementById=groupRoleMatrix_Save
+wait=500
+searchElementValueByTagName=Body=Updated role assignments for 0 user group(s). Total role assignments: 0 added, 0 deleted.

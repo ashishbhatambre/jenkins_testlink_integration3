@@ -1,0 +1,14 @@
+name=Rollup setting in task 
+component=Tasks
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/adminGeneralSettings/projects.swpublic/taskmgr
+wait=300
+waitUntilById=warningpercentage
+typeElementById=warningpercentage=15
+wait=300
+waitUntilById=taskStatusRollupPreference_submit
+clickElementById=taskStatusRollupPreference_submit
+wait=400
+searchElementValueByTagName=Body=Task status rollup percentages saved.

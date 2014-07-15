@@ -1,0 +1,50 @@
+name=Ability to create Tracker Report for the project
+component=Report
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Reports
+wait=200
+waitUntilById=reports
+clickElementById=reports
+waitUntilByName=reporttype
+selectOptionValueByNameValue=reporttype=Tracker Report
+waitUntilById=createReport_submit
+clickElementById=createReport_submit
+waitUntilByName=name
+typeElementByName=name=TrackerReport1
+waitUntilById=trackers
+selectOptionValueByIdValue=trackers=NewTracker
+waitUntilById=priority
+selectOptionValueByIdValue=priority=2 - High
+waitUntilById=assignedPlanningFolderDisplay
+clickElementById=assignedPlanningFolderDisplay
+wait=200
+switchToPopupWindow
+wait=200
+clickHrefByLinkText= Plan_Folder2
+waitUntilById=planningFolderPopup_submit
+clickElementById=planningFolderPopup_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+waitUntilById=trackerReport_next
+clickElementById=trackerReport_next
+wait=200
+waitUntilById=statuses(tracker1001)
+selectOptionValueByIdValue=statuses(tracker1001)=All Open
+waitUntilById=categories(tracker1001)
+selectOptionValueByIdValue=categories(tracker1001)=Any
+waitUntilById=displaycolumns(tracker1001)
+selectOptionValueByIdValue=displaycolumns(tracker1001)=All Fields
+waitUntilById=statuses(tracker1002)
+selectOptionValueByIdValue=statuses(tracker1002)=All Open
+waitUntilById=categories(tracker1002)
+selectOptionValueByIdValue=categories(tracker1002)=Any
+waitUntilById=displaycolumns(tracker1002)
+selectOptionValueByIdValue=displaycolumns(tracker1002)=All Fields
+waitUntilById=trackerReport_generate
+clickElementById=trackerReport_generate
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Reports#NEXT#Modify Tracker Report

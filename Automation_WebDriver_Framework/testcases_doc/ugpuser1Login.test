@@ -1,0 +1,13 @@
+name=ugpuser1_Login
+component=Login
+role=Direct Role - User group user - Admin Permission
+artifact=NA
+url=sf/sfmain/do/home
+waitUntilById=username
+typeElementById=username=ugpuser1
+waitUntilById=pwd
+typeElementById=pwd=Collabnet2@
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+searchElementValueByTagName=Body=My#NEXT#Workspace

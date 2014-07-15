@@ -1,0 +1,23 @@
+name=Create Project Template with Tasks enabled by global role admin permission user private project
+component=Project Admin
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Project Admin
+wait=500
+clickHrefByLinkText=Create Project Template
+wait=500
+waitUntilById=titleField
+typeElementById=titleField=Project_Task_Template
+waitUntilById=description
+typeElementById=description=Project template with Tasks enabled
+wait=300
+waitUntilById=taskcontent
+clickElementById=taskcontent
+wait=300
+waitUntilById=createTemplate_submit
+clickElementById=createTemplate_submit
+wait=500
+searchElementValueByTagName=Body=Project Template created.

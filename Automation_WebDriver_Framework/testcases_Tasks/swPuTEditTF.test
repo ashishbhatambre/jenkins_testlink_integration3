@@ -1,0 +1,24 @@
+name=Ability to edit Task Folder in public project
+component=Tasks
+role=Sitewide_Admin Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.swpublic/taskmgr.swa_taskfolder
+wait=300
+clickHrefByLinktText=Edit
+wait=300
+waitUntilById=TaskGroupList_rename
+clickHrefByLinkText=Rename
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=SWA_STaskFolder
+wait=300
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=300
+searchElementValueByTagName=Body=Folder renamed successfully.
+runJavaScriptPopToMain=javascript:finishFolderRename()
+withoutPopCloseSwitchToMainWindow
+wait=300

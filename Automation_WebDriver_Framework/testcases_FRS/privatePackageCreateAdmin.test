@@ -1,0 +1,19 @@
+name=Ability to create Package by user with admin role in private project
+component=FRS
+role=Direct Role_Admin Permission
+artifact=NA
+wait=400
+url=sf/frs/do/viewSummary/projects.private/frs
+wait=300
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=Package1
+waitUntilByName=description
+typeElementByName=description=Package created for private project by Admin Role User
+waitUntilById=isPublished
+clickElementById=isPublished
+waitUntilById=createPackage_submit
+clickElementById=createPackage_submit
+wait=700
+searchElementValueByTagName=Body=Package created successfully.

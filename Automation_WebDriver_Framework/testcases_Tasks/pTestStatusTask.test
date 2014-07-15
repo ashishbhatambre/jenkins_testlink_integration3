@@ -1,0 +1,14 @@
+name=Task Status via RootFolder for public project
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText=Summary
+wait=500
+clickHrefByLinkText=test_EventTask#@
+wait=500
+searchElementValueByTagName=Body=PubProject#NEXT#Tasks#NEXT#test_EventTask#@#NEXT#List Tasks 

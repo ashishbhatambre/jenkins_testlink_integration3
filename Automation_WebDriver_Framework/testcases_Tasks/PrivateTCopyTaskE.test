@@ -1,0 +1,13 @@
+name=Ability to Copy Task
+component=Tasks
+role=Edit role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.private/taskmgr.pra_taskfolder
+wait=300
+selectCheckBoxFromList=_listItem=1
+wait=300
+waitUntilById=listTasksSelect_Copy
+clickElementById=listTasksSelect_Copy
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=1 task(s) copied to clipboard.

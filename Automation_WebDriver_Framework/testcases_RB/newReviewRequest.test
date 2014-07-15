@@ -1,0 +1,22 @@
+name=Create New Review Request
+wait=300
+url=sf/projects/newproject
+wait=300
+clickHrefByLinkText=Review Board
+wait=300
+clickHrefByLinkText=New Review Request
+wait=300
+waitUntilByName=repository
+selectOptionValueByNameValue=repository=NewRepo01
+waitUntilById=id_basedir
+typeElementById=id_basedir=\
+wait=600
+clickElementByCssSelector=prefsbuttons
+wait=600
+clickImage=rb/static/rb/images/edit.4a4cf60e1815.png=0
+wait=600
+clickImage=rb/static/rb/images/edit.4a4cf60e1815.png=1
+wait=600
+clickElementByCssSelector=editicon
+wait=600
+searchElementValueByTagName=Body= Review Board 1.7.17

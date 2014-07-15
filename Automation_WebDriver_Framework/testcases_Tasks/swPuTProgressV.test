@@ -1,0 +1,19 @@
+name=Verify task Process Functionality 
+component=Tasks
+role=Sitewide Role_View Permission
+artifact=NA
+wait=300
+url=sf/projects/swpublic
+wait=300
+clickHrefByLinkText=Tasks
+wait=800
+clickHrefByLinkText= SWA_TaskFolder
+wait=300
+clickHrefByLinkText=TAC1
+wait=300
+waitUntilById=status
+clickElementById=status
+wait=300
+selectOptionValueByNameValue=status=Warning
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Tasks

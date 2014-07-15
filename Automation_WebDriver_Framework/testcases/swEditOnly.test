@@ -1,0 +1,54 @@
+name=Ability to create site-wide role with only edit permission
+component=Roles
+role=Admin
+artifact=NA
+wait=300
+url=sf/sfmain/do/listRolesAdmin
+wait=300
+waitUntilById=siteWideRoles
+clickElementById=siteWideRoles
+wait=300
+waitUntilById=listSiteRoles_create
+clickElementById=listSiteRoles_create
+waitUntilById=title
+typeElementById=title=SW_EditOnlyRole
+waitUntilById=description
+typeElementById=description=Site-Wide Edit only Role Permissions
+waitUntilById=blockRecurse
+clickElementById=blockRecurse
+wait=300
+waitUntilById=createSiteWideRoleForm_submit
+clickElementById=createSiteWideRoleForm_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Site-wide Role created successfully.
+waitUntilById=permissions
+clickElementById=permissions
+waitUntilById=site_user_menu
+runJavaScriptPopToMain=javascript:showSection('site_user')
+waitUntilById=sitewideUserCreateWildcard
+clickElementById=sitewideUserCreateWildcard
+waitUntilById=site_groups_menu
+runJavaScriptPopToMain=javascript:showSection('site_groups')
+waitUntilById=sitewideGroupCreateWildcard
+clickElementById=sitewideGroupCreateWildcard
+waitUntilById=site_roles_menu
+runJavaScriptPopToMain=javascript:showSection('site_roles')
+waitUntilById=sitewideRoleCreateWildcard
+clickElementById=sitewideRoleCreateWildcard
+clickHrefByLinkText=Documents
+waitUntilById=docmanEditWildcard
+clickElementById=docmanEditWildcard
+clickHrefByLinkText=File Releases
+waitUntilById=frsCreateWildcard
+clickElementById=frsCreateWildcard
+clickHrefByLinkText=Tasks
+waitUntilById=taskmgrEditWildcard
+clickElementById=taskmgrEditWildcard
+clickHrefByLinkText=Wiki
+waitUntilById=wikiCreateWildcard
+clickElementById=wikiCreateWildcard
+waitUntilById=editRole_Edit
+wait=300
+runJavaScriptPopToMain=javascript:submitForm(document.editRole, 'Edit')
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Site-wide Role updated successfully.

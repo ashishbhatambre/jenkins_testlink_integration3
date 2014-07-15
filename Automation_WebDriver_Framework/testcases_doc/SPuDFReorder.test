@@ -1,0 +1,27 @@
+name=Reorder SubFolder in inherited public project
+component=Documents
+role=DirectRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.public_sub/docman.root
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+clickHrefByLinkText=Reorder Subfolders
+wait=300
+switchToPopupWindow
+wait=300
+selectOptionValueByIdIndex=folderSelectList=1
+wait=300
+clickHrefByLinkText=Move Up
+wait=300
+selectOptionValueByIdIndex=folderSelectList=1
+clickHrefByLinkText=Move Down
+wait=300
+clickHrefByLinkText=Alphabetize
+wait=300
+clickHrefByLinkText=Save
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=Public_Sub#NEXT#Documents

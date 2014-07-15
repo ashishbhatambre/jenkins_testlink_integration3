@@ -1,0 +1,15 @@
+name=Ability to compare the wiki page versions
+component=Wiki
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=view_wiki_page.showPageDetails
+clickElementById=view_wiki_page.showPageDetails
+wait=300
+waitUntilById=listTasksSelect_submit
+clickElementById=listTasksSelect_submit
+wait=300
+waitUntilById=edit_wiki_page.update
+clickElementById=edit_wiki_page.update
+wait=300
+searchElementValueByTagName=Body=Wiki Page updated.

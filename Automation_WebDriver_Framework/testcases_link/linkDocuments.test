@@ -1,0 +1,10 @@
+name=Verify Documents link 
+component=Project
+role=Direct Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/nproject/
+wait=300
+clickHrefByLinkText=Documents
+wait=500
+searchElementValueByTagName=Body=NProject#NEXT#Documents

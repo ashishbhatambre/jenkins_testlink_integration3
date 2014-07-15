@@ -1,0 +1,26 @@
+name=cut and paste the document to same document folder 
+component=Documents
+role=Project Group Role
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root.pglivefolder
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_cut
+clickHrefByLinkText=Cut
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Folder cut successfully.
+wait=500
+url=sf/docman/do/listDocuments/projects.pgproject/docman.root
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_paste
+clickHrefByLinkText=Paste
+wait=300
+acceptJavaScriptConfirm
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Unable to paste items to this location.
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=The items were cut from and pasted to the same folder.

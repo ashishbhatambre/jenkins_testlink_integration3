@@ -1,0 +1,14 @@
+name=Search using Start Date: input either 'From' or 'To' field or both. 
+component=Tasks
+role=Site Admin
+artifact=artf168911
+wait=300
+url=sf/taskmgr/do/listTasks/projects.project_search/taskmgr.searchfolder
+wait=300
+clickHrefByLinkText=Search Tasks
+waitUntilById=startDateAfter
+typeElementById=startDateAfter=10/18/2013
+waitUntilById=searchTasks_Search
+clickElementById=searchTasks_Search
+wait=500
+searchElementValueByTagName=Body=(3 Items)

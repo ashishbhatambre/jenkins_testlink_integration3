@@ -1,0 +1,32 @@
+name=Ability to creating artifact for the Sub Child Planning Folder
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Board_SubChild
+wait=4000
+waitUntilById=selectionMenuButton_createArtifactMenu
+clickElementById=selectionMenuButton_createArtifactMenu
+wait=200
+clickElementByCssSelector=DropDownRight=1
+clickElementById=yui-gen2
+wait=200
+waitUntilById=title
+typeElementById=title=SubChildArtifact
+waitUntilById=description
+typeElementById=description=artifact for the tracker
+waitUntilByName=status
+selectOptionValueByNameValue=status=Open
+waitUntilByName=priority
+selectOptionValueByNameValue=priority=None
+wait=500
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=500
+searchElementValueByTagName=Body=Artifact submitted successfully.
+wait=500
+waitUntilById=planning_folder_view_select
+selectOptionValueByIdValue=planning_folder_view_select=All

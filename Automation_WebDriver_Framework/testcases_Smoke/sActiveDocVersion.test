@@ -1,0 +1,18 @@
+name=Ability to mark document version active in private project as site admin
+component=Document
+wait=300
+url=sf/projects/ft_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Doc2
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=500
+waitUntilById=documentPropertiesVersion_submit
+clickElementById=documentPropertiesVersion_submit
+wait=500
+searchElementValueByTagName=Body=Active document version updated.

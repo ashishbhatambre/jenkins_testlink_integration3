@@ -1,0 +1,23 @@
+name=Monitor the Multiple documents for project group -> public project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_pub_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+selectCheckBoxFromList=_listItem=1
+selectCheckBoxFromList=_listItem=2
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+waitUntilById=selectDocuments_monitor
+clickElementById=selectDocuments_monitor
+wait=300
+searchElementValueByTagName=Body=Item doc1152 is already being monitored.
+searchElementValueByTagName=Body=Item doc1153 is already being monitored.
+searchElementValueByTagName=Body=Item doc1154 is already being monitored.

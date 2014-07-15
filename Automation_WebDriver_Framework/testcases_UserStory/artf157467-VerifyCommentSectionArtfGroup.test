@@ -1,0 +1,21 @@
+name=Verifying the edited artifact comment section with Groups changed for artf157467
+component=Tracker
+role=Global Role
+artifact=artf157467
+wait=600
+url=sf/projects/newproject
+wait=600
+clickHrefByLinkText=Trackers
+wait=600
+clickHrefByLinkText=TRACK123##$^#$%
+wait=600
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=2
+wait=600
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=600
+searchElementValueByTagName=Body=Group changed from group1 to group2
+wait=600
+clickHrefByLinkText=Return
+wait=600

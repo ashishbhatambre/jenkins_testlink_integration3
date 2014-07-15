@@ -1,0 +1,13 @@
+name=Ability to remove the broadcast message
+component=Admin
+role=NA
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=System Tools
+wait=500
+clickHrefByLinkText=Broadcast Message
+wait=500
+searchElementValueByTagName=Body=Site Administration#NEXT#System Tools#NEXT#Broadcast Message 

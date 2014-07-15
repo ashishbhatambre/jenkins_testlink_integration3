@@ -1,0 +1,11 @@
+name=Ability to perform predefined search of all Wiki page in private project
+component=Wiki
+role=Direct Role
+artifact=NA
+wait=300
+waitUntilById=predefined_all
+clickElementById=predefined_all
+waitUntilById=searchWiki_return
+clickElementById=searchWiki_return
+wait=700
+searchElementValueByTagName=Body=Private#NEXT#Wiki

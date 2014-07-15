@@ -1,0 +1,17 @@
+name=Delete document Folder 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate/docman.root.private_document
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_delete
+clickHrefByLinkText=Delete
+wait=300
+acceptJavaScriptConfirm
+wait=400
+searchElementValueByTagName=Body= Folder deleted successfully.
+wait=300
+ 

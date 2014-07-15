@@ -1,0 +1,15 @@
+name=Wiki Search_using 'Search Text' field checkbox 'Search All Versions' selected  
+component=Wiki
+role=Site Admin
+artifact=artf163010 
+wait=300
+url=sf/wiki/do/viewPage/projects.project_search/wiki/HomePage
+wait=300
+waitUntilById=searchWikiPagesLink
+clickElementById=searchWikiPagesLink
+wait=300
+waitUntilbyId=keywordQuery
+typeElementById=keywordQuery=value
+clickElementById=allVersionsScope
+clickElementById=searchWikiPages_submit
+searchElementValueByTagName=Body=Link3

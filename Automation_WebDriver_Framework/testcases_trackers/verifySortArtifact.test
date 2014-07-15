@@ -1,0 +1,14 @@
+name=Ability to Sort Artifacts in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Folder_Renamed
+wait=10000
+clickElementByCssSelector=TreeListGridButtonOff FirstTLGButton
+wait=500
+searchElementValueByTagName=Body=Trackers

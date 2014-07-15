@@ -1,0 +1,30 @@
+name=Ability to cancel updating the status options in tracker workflow in private project
+component=Tracker Admin
+role=Global Role
+artifact=NA
+wait=200
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Project Admin
+wait=200
+clickHrefByLinkText=Tracker Settings
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=workflow
+clickElementById=workflow
+wait=200
+clickHrefByLinkText=Open
+wait=200
+waitUntilById=roles_fldv-any
+clickElementById=roles_fldv-any
+wait=200
+waitUntilById=rolesfldv-any
+selectOptionValueByIdValue=rolesfldv-any=AdminRole
+wait=200
+waitUntilByName=requiredFields(fldv-any)
+selectOptionValueByNameValue=requiredFields(fldv-any)=Customer
+wait=200
+clickHrefByLinkText=Cancel
+wait=200
+searchElementValueByTagName=Body=NewProject#NEXT#Project Admin#NEXT#Tracker Settings#NEXT#Tracker1 Administration 

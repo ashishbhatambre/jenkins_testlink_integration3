@@ -1,0 +1,26 @@
+name=Ability to cut and paste Category cut and paste
+component=Category
+role=NA
+artifact=NA
+wait=300
+clickHrefByLinkText= category1
+wait=300
+waitUntilById=editCategory
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_cut
+clickHrefByLinkText=Cut
+wait=300
+searchElementValueByTagName=Body=Category and subcategories cut to clipboard successfully.
+wait=300
+clickHrefByLinkText= Division
+waitUntilById=editCategory
+wait=300
+clickHrefByLinkText=Edit
+wait=300
+waitUntilById=editCategory_paste
+clickHrefByLinkText=Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=Category and subcategories pasted successfully.

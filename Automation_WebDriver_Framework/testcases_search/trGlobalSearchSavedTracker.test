@@ -1,0 +1,38 @@
+name=Global Search_using Saved tracker Search ID 
+component=Trackers
+role=Site Admin
+artifact=artf165309
+wait=300
+url=sf/tracker/do/listArtifacts/projects.project_search/tracker.tracker_search
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=searchText
+typeElementById=searchText=google
+waitUntilById=inTitle
+clickElementById=inTitle
+waitUntilById=inAttachments
+clickElementById=inAttachments
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=700
+searchElementValueByTagName=body=(1 Item)
+wait=300
+clickHrefByLinkText=Save Search from Results
+wait=300
+switchToPopupWindow
+wait=400
+typeElementByName=searchOrFilterName=Search_Save 
+wait=300
+waitUntilById=saveSearchOrFilter_submit
+clickElementById=saveSearchOrFilter_submit
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=body=Search saved.
+wait=300
+waitUntilById=idsString
+typeElementById=idsString=srch1009
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+wait=700
+searchElementValueByTagName=body=(1 Item)

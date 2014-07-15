@@ -1,0 +1,25 @@
+name=Create SubChild Document Folder in Sub Project in Private Inherited Project
+component=Documents
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+url=sf/docman/do/listDocuments/projects.swprivate_sub/docman.root.folder.ddddforname_to_attach_more_than
+wait=300
+waitUntilById=new_document_folder
+clickElementById=new_document_folder
+wait=300
+switchToPopupWindow
+waitUntilById=title
+typeElementById=title=SCFolder
+wait=300
+clickHrefByLinkText=Save
+wait=300
+searchElementValueByTagName=Body=Folder created successfully.
+wait=300
+clickHrefByLinkText=Close
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=600
+searchElementValueByTagName=Body=SWPrivate_Sub#NEXT#Documents
+wait=300
+

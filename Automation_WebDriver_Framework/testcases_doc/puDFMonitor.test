@@ -1,0 +1,17 @@
+name=Verify Monitor Functionality of Document Folder 
+component=Documents
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/projects/Public/
+wait=300
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Document1
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+waitUntilById=monitor_current_folder
+clickElementById=monitor_current_folder
+wait=500
+searchElementValueByTagName=Body=Document Folder is now being monitored.

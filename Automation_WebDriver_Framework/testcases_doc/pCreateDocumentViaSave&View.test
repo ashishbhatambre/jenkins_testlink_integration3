@@ -1,0 +1,22 @@
+name=Verifying Save and View button via create document for public project global role admin user
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pubproject/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Add Document
+waitUntilById=title
+typeElementById=title=save&view_document
+waitUntilById=description
+typeElementById=description=Document is saved by option "Save And View"
+wait=500
+typeValueForFileField=C:\Uploaded_Files\index.html
+wait=500
+waitUntilById=createDocument_submit
+clickElementById=createDocument_submit
+wait=300
+searchElementValueByTagName=Body=Document created successfully.

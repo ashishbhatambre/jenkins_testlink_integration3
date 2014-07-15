@@ -1,0 +1,38 @@
+name=Better Search Artifact for document via jump to id- advance search for artf142542
+component=Documents
+role=Global Role
+aritfact=artf142542
+wait=300
+url=sf/sfmain/do/home
+wait=300
+typeElementByName=username=yadmin
+typeElementByName=password=Collabnet2@
+wait=300
+clickHrefByLinkText=Log In
+wait=300
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+waitUntilByName=DocMan
+clickElementByName=DocMan
+waitUntilById=idsString
+typeElementById=idsString=doc1003
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=idsString
+typeElementById=idsString=docf1007
+wait=300
+runJavaScriptPopToMain=javascript:quickJump()
+waitUntilById=DocumentFolder
+clickElementById=DocumentFolder
+waitUntilById=jumpFieldLabel
+clickElementById=jumpFieldLabel
+wait=300
+clickHrefByLinkText=Advanced Search
+waitUntilByName=term
+typeElementByName=term=projectDoc1
+waitUntilById=applications
+selectOptionValueByIdValue=applications=Documents
+waitUntilById=searchForm_submit
+clickElementById=searchForm_submit
+wait=300
+searchElementValueByTagName=Body=Search

@@ -1,0 +1,18 @@
+name=Search Document using search query
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=titleQuery
+typeElementById=titleQuery=projectDoc3
+waitUntilById=metaDataScope
+clickElementById=metaDataScope
+waitUntilById=searchDocuments_submit
+clickElementById=searchDocuments_submit
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=300
+searchElementValueByTagName=Body=NewProject#NEXT#Documents#NEXT#Root Folder#NEXT#Document Details

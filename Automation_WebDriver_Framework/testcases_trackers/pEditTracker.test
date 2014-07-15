@@ -1,0 +1,15 @@
+name=Ability to edit Tracker in public project
+component=Tracker Admin
+role=Global Role
+artifact=NA
+wait=200
+clickHrefByLinkText=Stories
+wait=200
+clickHrefByLinkText=Edit
+wait=200
+selectButtonByValue=icon_33.png
+wait=200
+waitUntilById=editTracker_submit
+clickElementById=editTracker_submit
+wait=200
+searchElementValueByTagName=Body=Tracker updated successfully.

@@ -1,0 +1,23 @@
+name=Ability to create User Groups as Site Admin
+component=User Groups
+role=Admin
+artifact=NA
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=User Groups
+wait=500
+waitUntilById=allGroups
+clickElementById=allGroups
+wait=500
+clickHrefByLinkText=Create
+wait=500
+waitUntilById=fullName
+typeElementById=fullName=PrvUsers
+waitUntilById=description
+typeElementById=description=users who are under testing work to the Private project.
+wait=300
+waitUntilById=createGroup_submit
+clickElementById=createGroup_submit
+wait=300
+searchElementValueByTagName=Body=User Group#NEXT#PrvUsers#NEXT#has been created successfully.

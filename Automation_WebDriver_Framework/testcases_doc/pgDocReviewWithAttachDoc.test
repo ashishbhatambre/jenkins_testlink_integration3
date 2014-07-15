@@ -1,0 +1,49 @@
+name=Selecting Attach document to document review Email for project group -> private project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/pg_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= PG_Child_Folder
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=500
+waitUntilById=selectDocuments_Details
+clickElementById=selectDocuments_Details
+wait=500
+waitUntilById=review
+clickElementById=review
+wait=500
+clickHrefByLinkText=Start a Review
+wait=500
+waitUntilById=title
+typeElementById=title=Doc_Review
+waitUntilById=dueDate
+typeElementById=dueDate=12/27/2013
+wait=300
+waitUntilById=description
+typeElementById=description=Save Document review for the private project by newuser1
+wait=300
+waitUntilById=createDocumentReview_userPicker
+clickElementById=createDocumentReview_userPicker
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=foundMultipleTemp
+selectOptionValueByIdValue=foundMultipleTemp=user1_adminPermission
+waitUntilById=add
+clickElementById=add
+wait=300
+runJavaScriptPopToMain=javascript:submitForm(document.userPicker, 'ok')
+withoutPopCloseSwitchToMainWindow
+wait=300
+waitUntilById=attachDocument
+selectButtonByValue=on
+waitUntilById=createDocumentReview_submit
+clickElementById=createDocumentReview_submit
+wait=300
+searchElementValueByTagName=Body=Document review created successfully.

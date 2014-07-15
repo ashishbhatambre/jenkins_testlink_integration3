@@ -1,0 +1,14 @@
+name=View Next document by clicking "Next" button from document details page for private child project
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/child_prv_project/
+wait=500
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText=save_document
+wait=1000
+clickHrefByLinkText=Next >
+wait=1000
+searchElementValueByTagName=Body=Child_Prv_Project#NEXT#Documents#NEXT#Child_Doc_Folder#NEXT#Document Details 

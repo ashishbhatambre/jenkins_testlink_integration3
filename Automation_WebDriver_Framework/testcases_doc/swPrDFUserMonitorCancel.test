@@ -1,0 +1,25 @@
+name=Add Users in Document Folder Monitoring 
+component=Documents
+role=SitewideRole_Admin Permission
+artifact=NA
+wait=300
+url=sf/projects/swprivate/
+wait=300
+clickHrefByLinkText=Documents
+wait=300
+clickHrefByLinkText= Document1
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectDocuments
+clickElementById=selectionMenuButton_MonitorMenu_selectDocuments
+wait=300
+clickHrefByLinkText=Users Monitoring Folder
+switchToPopupWindow
+waitUntilById=selectUsers_add
+clickElementById=selectUsers_add
+wait=300
+runJavaScriptPopToMain=javascript: window.close()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300
+searchElementValueByTagName=Body=SWPrivate#NEXT#Documents
+wait=300

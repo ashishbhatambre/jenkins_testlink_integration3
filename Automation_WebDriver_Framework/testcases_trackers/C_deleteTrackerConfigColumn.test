@@ -1,0 +1,27 @@
+name=Ability to delete the saved Tracker column configuration as user with create only permission in private project
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/newproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+waitUntilById=columns-icon
+clickElementById=columns-icon
+wait=200
+waitUntilById=deleteFolderPreferences
+clickElementById=deleteFolderPreferences
+switchToPopUpWindow
+wait=200
+selectOptionValueByIdIndex=folderPreferenceNames=1
+wait=200
+waitUntilById=deleteFolderPreferencesForm_submit
+clickElementValueId=deleteFolderPreferencesForm_submit
+searchElementValueByTagName=Body=1 Column Configuration(s) have been deleted successfully.
+wait=200
+runJavaScriptPopToMain=javascript:finish()
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200

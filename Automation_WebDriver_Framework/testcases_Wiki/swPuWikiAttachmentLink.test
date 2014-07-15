@@ -1,0 +1,9 @@
+name=Ability to verify Attachment Link in public project
+component=Wiki
+role=Sitewide Role_Admin Permission
+artifact=NA
+wait=300
+waitUntilById=attachments
+clickElementById=attachments
+wait=300
+searchElementValueByTagName=Body=SWPublic#NEXT#Wiki

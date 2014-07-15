@@ -1,0 +1,17 @@
+name=Ability to Hide and Show tracker summary in public project
+component=Tracker 
+role=Sitewide Role
+artifact=NA
+url=sf/projects/swpublic/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Tracker1
+wait=200
+runJavaScriptPopToMain=javascript:showHideChart(true)
+wait=200
+searchElementValueByTagName=body=SWPublic#NEXT#Trackers
+wait=200
+runJavaScriptPopToMain=javascript:showHideChart(true)
+wait=200
+searchElementValueByTagName=body=SWPublic#NEXT#Trackers

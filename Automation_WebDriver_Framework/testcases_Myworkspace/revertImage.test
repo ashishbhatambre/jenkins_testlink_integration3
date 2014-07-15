@@ -1,0 +1,5 @@
+name=Revert Image to default
+waitUntilById=logo_revert
+clickElementById=logo_revert
+wait=300
+searchElementValueByTagName=Body=The project image was reverted to the system default image.

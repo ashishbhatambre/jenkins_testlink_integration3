@@ -1,0 +1,23 @@
+name=Verify the behavior of count when user changes the rank within the swim lane
+component=Boards
+role=Global Role
+artifact=(UserStory - artf145097) artf159319
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=Trackers
+wait=300
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=400
+clickElementByName=includeClosed
+wait=400
+searchElementValueByTagName=Body=2 Cards
+wait=6000
+dragElementToByCSS=item ui-corner-all ui-draggable=artifact1=scroll-area=artifact5
+wait=400
+searchElementValueByTagName=Body=2 Cards
+wait=400
+clickHrefByLinkText=List View
+wait=400

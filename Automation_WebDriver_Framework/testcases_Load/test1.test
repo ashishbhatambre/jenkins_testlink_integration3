@@ -1,0 +1,11 @@
+wait=300
+url=sf/sfmain/do/userMembership/projects.pproject
+wait=300
+waitUntilById=addUserLink
+clickElementById=addUserLink
+wait=800
+selectButtonByValue=ptester1
+wait=300
+clickElementById=addUser_finish
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=User(s) added to the project: ptester1_pgadminPermission (ptester1) .

@@ -1,0 +1,12 @@
+name=Ability to view Change Request
+component=Tasks
+role=Admin role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.private/taskmgr.pra_taskfolder
+wait=300
+clickHrefByLinkText=TA1
+wait=300
+clickElementById=changerequest
+wait=300
+searchElementValueByTagName=Body=Private#NEXT#Tasks

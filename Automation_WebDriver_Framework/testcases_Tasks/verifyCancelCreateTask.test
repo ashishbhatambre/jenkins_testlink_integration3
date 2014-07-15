@@ -1,0 +1,24 @@
+name=Verifying Cancel button on creating Task 
+component=Task
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=500
+clickHrefByLinkText=Tasks
+wait=500
+clickHrefByLinkText= task2
+wait=500
+waitUntilById=listTasksSelect_Create
+clickHrefByLinkText=Create
+wait=300
+waitUntilById=title
+typeElementById=title=TestTask
+waitUntilById=description
+typeElementById=description=Cancel
+selectOptionValueByNameValue=priority=3 - Medium
+selectOptionValueByNameValue=status=OK
+wait=500
+clickHrefByLinkText=Cancel
+wait=500
+searchElementValueByTagName=Body=NewProject#NEXT#Tasks#NEXT#task2#NEXT#List Tasks

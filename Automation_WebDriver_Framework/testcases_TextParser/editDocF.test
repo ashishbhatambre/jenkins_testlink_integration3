@@ -1,0 +1,26 @@
+name=renaming the Document Folder with text starts with ${<>}
+component=Documents
+role=NA
+artifact=NA
+wait=200
+url=sf/projects/test_test/
+wait=300
+clickImage=sf-images/project/project-documentsicon.png
+wait=300
+clickHrefByLinkText= ${DocumentF}
+wait=300
+runJavaScriptPopToMain=javascript:NewWindow('/sf/sfmain/do/renameFolder/projects.test_test/docman.root.documentf', 'sfpfolder', 400, 200, 'no')
+wait=300
+switchToPopupWindow
+wait=300
+waitUntilById=title
+typeElementById=title=${DocumentF<1>}
+waitUntilById=renameFolder_submit
+clickElementById=renameFolder_submit
+wait=300
+searchElementValueByTagName=Body=Folder renamed successfully
+wait=300
+runJavaScriptPopToMain=javascript:finishFolderRename()
+wait=300
+withoutPopCloseSwitchToMainWindow
+wait=300

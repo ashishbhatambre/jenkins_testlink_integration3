@@ -1,0 +1,26 @@
+name=Cut & Paste a Docuement 
+component=Documents
+role=Direct Role_Admin Permisssion
+artifact=NA
+url=sf/projects/Public/
+wait=300
+clickHrefByLinkText=Documents
+wait=500
+clickHrefByLinkText= Document1
+wait=300
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectDocuments_Cut
+clickElementById=selectDocuments_Cut
+wait=500
+searchElementValueByTagName=Body=1 document(s) cut to clipboard.
+wait=500
+clickHrefByLinkText= $Public_Document$
+wait=300
+waitUntilById=selectDocuments_Paste
+clickElementById=selectDocuments_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=1 document(s) pasted.

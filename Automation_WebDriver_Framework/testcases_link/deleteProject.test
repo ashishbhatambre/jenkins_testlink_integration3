@@ -1,0 +1,19 @@
+name=Delete Project
+component=Project
+role=Admin Role
+artifact=NA
+url=sf/sfmain/do/myProjects?selectedTab=all
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Project_Data
+wait=300
+runJavaScriptPopToMain=javascript:applyOrClearFilter(true)
+wait=700
+selectCheckBoxFromList=_listItem=0
+wait=300
+waitUntilById=selectProjects_delete
+clickElementById=selectProjects_delete
+wait=300
+acceptJavaScriptConfirm
+wait=600
+searchElementValueByTagName=Body=Project Project_Data is now deleted.

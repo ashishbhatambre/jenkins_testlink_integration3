@@ -1,0 +1,15 @@
+name=Ability to list "open only" artifacts in planning folders in Private Project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= Plan1
+wait=4000
+waitUntilById=planning_folder_view_select
+selectOptionValueByIdValue=planning_folder_view_select=Open
+wait=200
+searchElementValueByTagName=body=QA:PendingArtf
+

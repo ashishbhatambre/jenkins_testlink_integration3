@@ -1,0 +1,40 @@
+name=Add attachment to artifact using comment text &text&
+component=Trackers
+role=NA
+artifact=NA
+wait=300
+url=sf/projects/test_test/
+wait=400
+clickHrefByLinkText=Trackers
+wait=400
+clickHrefByLinkText=${NewTracker<I>}
+wait=400
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=400
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+wait=400
+waitUntilById=attachments
+clickElementById=attachments
+wait=400
+waitUntilById=_SfButton_AddAttachment
+clickElementById=_SfButton_AddAttachment
+wait=400
+switchToPopupWindow
+wait=400
+waitUntilById=comment
+typeElementById=comment=&adding& ${files to artifact}
+wait=400
+clickHrefByLinkText=Attach another file
+wait=400
+typeFileFieldValueForName=file[1]=C:\Uploaded_Files\Test.doc
+wait=400
+typeFileFieldValueForName=file[2]=C:\Uploaded_Files\link.txt
+wait=1000
+waitUntilById=addAttachment_submit
+clickElementById=addAttachment_submit
+wait=1000
+withoutPopCloseSwitchToMainWindow
+wait=1000
+searchElementValueByTagName=Body=${test test}#NEXT#Trackers#NEXT#${NewTracker<I>}#NEXT#View Artifact

@@ -1,0 +1,6 @@
+name=subversion repo update
+component=SourceCode
+role=Global Role
+artifact=NA
+runCommands=vcscript/svnup.cmd
+verifyCommandOutput=Committed revision 4.

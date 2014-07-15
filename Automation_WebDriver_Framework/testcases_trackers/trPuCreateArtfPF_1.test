@@ -1,0 +1,28 @@
+name=Ability to create an artifact with closed status
+component=Tracker 
+role=Direct Role
+artifact=NA
+url=sf/projects/public/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=$Tracker2&
+wait=200
+clickHrefByLinkText=Submit New Artifact
+wait=200
+waitUntilById=title
+typeElementById=title=QA:ClosedArtf
+waitUntilById=description
+typeElementById=description=Create artifact with closed status
+waitUntilById=selectedStatus
+selectOptionValueByIdIndex=selectedStatus=0
+waitUntilById=fldPriority
+selectOptionValueByIdIndex=fldPriority=3
+waitUntilById=fldAssignedTo
+selectOptionValueByIdIndex=fldAssignedTo=1
+waitUntilById=fldPoints
+typeElementById=fldPoints=25
+waitUntilById=createArtifactForm_Save
+clickElementById=createArtifactForm_Save
+wait=200
+searchElementValueByTagName=body=Artifact submitted successfully.

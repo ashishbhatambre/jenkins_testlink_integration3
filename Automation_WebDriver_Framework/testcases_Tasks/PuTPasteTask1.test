@@ -1,0 +1,14 @@
+name=Ability to Paste task into another folder in public project
+component=Tasks
+role=Direct Role
+artifact=NA
+wait=300
+url=sf/taskmgr/do/listTasks/projects.public/taskmgr.pua_taskfolder.pua_subtaskfolder
+wait=300
+waitUntilById=listTasksSelect_Paste
+clickElementById=listTasksSelect_Paste
+wait=300
+acceptJavaScriptConfirm
+wait=300
+searchElementValueByTagName=Body=1 task(s) pasted from clipboard.
+wait=300

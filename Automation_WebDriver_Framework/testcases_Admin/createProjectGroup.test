@@ -1,0 +1,21 @@
+name=Ability to creating Project Group as site admin user
+component=ProjectGroup
+role=Admin
+artifact=NA
+wait=300
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Project Groups
+wait=500
+waitUntilById=_SfButton_create
+clickHrefByLinkText=Create Project Group
+wait=300
+waitUntilById=title
+typeElementById=title=TestedProjects
+waitUntilById=description
+typeElementById=description=Projects which is under test with public and private access permissions.
+waitUntilById=createProjectGroup_submit
+clickElementById=createProjectGroup_submit
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Project Group TestedProjects has been created successfully.

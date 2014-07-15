@@ -1,0 +1,17 @@
+name=Ability to delete the saved search artifact
+component=Tracker 
+role=Global Role
+artifact=NA
+wait=200
+waitUntilById=sharedSearchesToggle
+clickElementById=sharedSearchesToggle
+wait=200
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=0
+wait=200
+waitUntilById=sharedSearchesListForm_deleteSearch
+clickHrefByLinkText=Delete
+wait=200
+acceptJavaScriptConfirm
+wait=200
+searchElementValueByTagName=Body=1 saved search(es) were deleted.

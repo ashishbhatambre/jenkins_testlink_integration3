@@ -1,0 +1,17 @@
+name=Ability to delete Project Group
+component=Project Group
+role=Admin
+artifact=NA
+waitUntilById=admin_link
+clickElementById=admin_link
+wait=500
+clickHrefByLinkText=Project Groups
+wait=500
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+waitUntilById=listProjectGroupsAdmin_delete
+clickElementById=listProjectGroupsAdmin_delete
+wait=500
+acceptJavaScriptConfirm
+wait=500
+searchElementValueByTagName=Body=Project Group#NEXT#PGRP#NEXT#is now deleted.

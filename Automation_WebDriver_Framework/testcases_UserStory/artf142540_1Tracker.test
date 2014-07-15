@@ -1,0 +1,13 @@
+name=Ability to Monitoring the Tracker Folder for an artifact artf142540
+component=Tracker
+role=Global Role
+artifact=artf142540
+wait=300
+waitUntilById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+clickElementById=selectionMenuButton_MonitorMenu_selectArtifactsForm
+wait=300
+waitUntilById=monitor_current_folder
+clickElementById=monitor_current_folder
+wait=300
+searchElementValueByTagName=Body=Tracker is now being monitored.
+wait=300

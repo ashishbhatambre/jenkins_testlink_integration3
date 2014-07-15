@@ -1,0 +1,16 @@
+name=Search using "Submitted On" field with 'any date'/ 'Relative Dates' or 'Date Range'
+component=Trackers
+role=Site Admin
+artifact=artf161284 
+wait=300
+url=sf/tracker/do/listTrackers/projects.project_search/tracker
+waitUntilById=searchTracker
+clickElementById=searchTracker
+waitUntilById=submittedDateOption
+clickElementById=submittedDateOption
+waitUntilById=submittedNumberOfPeriods
+typeElementById=submittedNumberOfPeriods=5
+waitUntilById=searchTracker_Search
+clickElementById=searchTracker_Search
+wait=800
+searchElementValueByTagName=body=artifact_search case

@@ -1,0 +1,39 @@
+name=Verifying Board views and  Moving the Artifact cards and verifying it in Planning Folders->List view for artifact139712
+component=Tracker
+role=Global Role
+artifact=artf139712
+wait=400
+url=sf/projects/newproject/
+wait=400
+clickHrefByLinkText=Trackers
+wait=400
+clickHrefByLinkText=Plan
+wait=400
+clickSpanElementByCssSelector=combo-arrow=0
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Plan_Folder3
+wait=400
+clickElementByName=includeClosed
+wait=400
+clickSpanElementByCssSelector=combo-arrow=1
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Folder_Renamed
+wait=400
+clickSpanElementByCssSelector=combo-arrow=2
+wait=400
+clickCssSelectorAndValueForSpan=tree-title=Board_Plan1
+wait=6000
+dragElementToByCSS=item ui-corner-all ui-draggable=artifact9=scroll-area=artifact1
+wait=400
+searchElementValueByTagName=Body=artf1009 was successfully moved under Folder_Renamed.
+wait=400
+clickHrefByLinkText=List
+wait=400
+clickHrefByLinkText= Folder_Renamed
+wait=4000
+waitUntilById=planning_folder_view_select
+selectOptionValueByIdValue=planning_folder_view_select=All
+wait=400
+clickHrefByLinkText=Plan
+wait=400
+searchElementValueByTagName=Body=Trackers

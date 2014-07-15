@@ -1,0 +1,11 @@
+name=Ability to view only Active planning folders in Private Project
+component=Trackers 
+role=Sitewide Role_Admin Permission
+artifact=NA
+url=sf/projects/swprivate/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText=Active
+wait=200
+searchElementValueByTagName=Body=List Trackers and Planning Folders

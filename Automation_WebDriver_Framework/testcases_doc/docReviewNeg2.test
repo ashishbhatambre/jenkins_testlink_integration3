@@ -1,0 +1,11 @@
+name=Reviewing the Document with no reviewer
+component=Documents
+role=Global Role
+artifact=NA
+wait=300
+waitUntilById=dueDate
+typeElementById=dueDate=12/24/2014
+waitUntilById=createDocumentReview_submit
+clickElementById=createDocumentReview_submit
+wait=500
+searchElementValueByTagName=Body= At least one reviewer is required.

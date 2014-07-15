@@ -1,0 +1,17 @@
+name=Verifying Planned Tracker artifact in File releases
+component=FRS
+role=Global Role
+artifact=NA
+wait=300
+url=sf/projects/newproject/
+wait=300
+clickHrefByLinkText=File Releases
+wait=300
+clickHrefByLinkText=Package@
+wait=300
+clickHrefByLinkText=File11
+wait=300
+waitUntilById=plannedTrackerArtifacts
+clickElementById=plannedTrackerArtifacts
+wait=300
+searchElementValueByTagName=Body=NewProject/File Releases/Package@/File11/View Release

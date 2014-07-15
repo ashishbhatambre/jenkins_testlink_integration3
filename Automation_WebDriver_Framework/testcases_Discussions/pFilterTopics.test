@@ -1,0 +1,20 @@
+name=Filter the topics in Discussion ->public project
+component=Discussions
+role=Global Role
+artifact=NA
+wait=300
+url=sf/discussion/do/listForums/projects.pubproject/discussion
+wait=300
+clickHrefByLinkText=GroupDiscussion
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=Automation
+waitUntilById=applyfilterbutton
+clickHrefByLinkText=Filter
+wait=300
+searchElementValueByTagName=Body=PubProject#NEXT#Discussion#NEXT#GroupDiscussion#NEXT#Topic Summary 
+wait=300
+clickElementByCssSelector=FilterRight
+wait=300
+waitUntilById=clearNamedFilter
+clickElementById=clearNamedFilter

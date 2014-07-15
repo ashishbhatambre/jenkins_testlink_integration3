@@ -1,0 +1,16 @@
+name=Ability to add Projects to project group
+component=Project Group
+role=Admin
+artifact=NA
+waitUntilById=add_member_project
+clickHrefByLinkText=Add
+wait=300
+waitUntilById=_filter!!contains!!title
+typeElementById=_filter!!contains!!title=project
+wait=500
+clickHrefByLinkText=Filter
+wait=500
+selectCheckBoxFromList=_listCheckAll
+clickElementById=addProjectToProjectGroup_add
+waitUntilById=Sf_MessageId
+searchElementValueByTagName=Body=Selected project(s) are added to the Project Group.

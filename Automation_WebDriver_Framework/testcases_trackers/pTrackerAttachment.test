@@ -1,0 +1,37 @@
+name=Ability to attach File [doc and exe ]to Tracker Artifact for public project
+component=Tracker 
+role=Global Role
+artifact=NA
+url=sf/projects/pubproject/
+wait=200
+clickHrefByLinkText=Trackers
+wait=200
+clickHrefByLinkText= GroupPlan
+wait=4000
+waitUntilByName=_listItem
+selectCheckBoxFromList=_listItem=1
+wait=500
+waitUntilById=selectArtifactsForm_edit
+clickElementById=selectArtifactsForm_edit
+waitUntilById=attachments
+clickElementById=attachments
+wait=200
+clickHrefByLinkText=Add Attachments
+wait=200
+switchToPopupWindow
+wait=200
+clickHrefByLinkText=Attach another file
+wait=200
+typeFileFieldValueForName=file[1]=C:\Uploaded_Files\Matrix_TestCase_new.xls
+wait=200
+typeFileFieldValueForName=file[2]=C:\Uploaded_Files\Jellyfish.jpg
+wait=200
+waitUntilById=addAttachment_submit
+clickElementById=addAttachment_submit
+wait=200
+withoutPopCloseSwitchToMainWindow
+wait=200
+waitUntilById=attachments
+clickElementById=attachments
+wait=200
+searchElementValueByTagName=Body=Trackers

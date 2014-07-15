@@ -1,0 +1,19 @@
+name=Ability to set a password for user with create only permission [newuser1]
+component=Login
+role=NA
+artifact=NA
+url=sf/sfmain/do/home
+wait=200
+typeElementByName=username=newuser1
+typeElementByName=password=Collabnet1!
+wait=200
+clickHrefByLinkText=Log In
+wait=200
+searchElementValueByTagName=Body=Change User Password
+wait=200
+typeElementByName=newPassword=Collabnet2@
+typeElementByName=confirmNewPassword=Collabnet2@
+wait=200
+clickElementById=forcePasswordChangeForm_submit
+wait=200
+searchElementValueByTagName=Body=User Password changed successfully.
